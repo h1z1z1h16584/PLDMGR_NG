@@ -5,7 +5,6 @@ import re
 import sys
 import requests
 
-GITHUB_API = "https://api.github.com"
 LINKS_FILE = "links.txt"
 OUTPUT_FILE = "payloads.json"
 BROKEN_REPOS_FILE = "broken_repos.txt"
@@ -15,37 +14,66 @@ REPO_CATALOG_NAME = "Custom Payloads Archive"
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
 
 token = os.getenv("GITHUB_TOKEN")
-# Environment variables set automatically in GitHub Actions runner
 gh_repository = os.getenv("GITHUB_REPOSITORY", "your-username/your-repo")
 
-headers = {
+github_headers = {
     "Accept": "application/vnd.github+json"
 }
 if token:
-    headers["Authorization"] = f"Bearer {token}"
+    github_headers["Authorization"] = f"Bearer {token}"
+
+gitea_headers = {
+    "Accept": "application/json"
+}
 
 
-def parse_repo_identifier(line: str):
+def parse_repo_entry(line: str):
+    """
+    Parses a line into (provider, owner, repo):
+      - 'github:owner/repo' or standard GitHub URL -> ('github', owner, repo)
+      - 'etawen:owner/repo' or 'https://git.etawen.dev/owner/repo' -> ('etawen', owner, repo)
+    """
     line = line.strip()
     if not line or line.startswith("#"):
         return None
 
+    # Etawen (Gitea instance)
+    if "git.etawen.dev" in line.lower() or line.lower().startswith("etawen:"):
+        cleaned = re.sub(r"^(?:https?://git\.etawen\.dev/|etawen:)", "", line, flags=re.IGNORECASE)
+        cleaned = cleaned.rstrip("/").removesuffix(".git")
+        parts = cleaned.split("/")
+        if len(parts) >= 2:
+            return ("etawen", parts[0].strip(), parts[1].strip())
+
+    # GitHub or default owner/repo
     cleaned = re.sub(
-        r"^(?:https?://github\.com/|git@github\.com:|github:|etawen:)",
+        r"^(?:https?://github\.com/|git@github\.com:|github:)",
         "",
         line,
         flags=re.IGNORECASE,
     )
     cleaned = cleaned.rstrip("/").removesuffix(".git")
-
     parts = cleaned.split("/")
     if len(parts) >= 2:
-        return f"{parts[0].strip()}/{parts[1].strip()}"
+        return ("github", parts[0].strip(), parts[1].strip())
+
     return None
 
 
-def fetch_target_releases(repo_slug: str):
-    url = f"{GITHUB_API}/repos/{repo_slug}/releases"
+def fetch_target_releases(provider: str, owner: str, repo: str):
+    """
+    Fetches the latest official release and the latest pre-release
+    from either GitHub or Etawen (Gitea API).
+    """
+    if provider == "etawen":
+        # Gitea / Forgejo API format
+        url = f"https://git.etawen.dev/api/v1/repos/{owner}/{repo}/releases"
+        headers = gitea_headers
+    else:
+        # GitHub REST API format
+        url = f"https://api.github.com/repos/{owner}/{repo}/releases"
+        headers = github_headers
+
     try:
         response = requests.get(url, headers=headers, timeout=15)
         if response.status_code == 404:
@@ -104,9 +132,8 @@ def detect_category(repo_slug: str, filename: str, description: str) -> str:
 
 
 def download_binary(url: str, dest_path: str) -> bool:
-    """Downloads a binary payload with auth headers if needed."""
     try:
-        with requests.get(url, headers=headers, stream=True, timeout=60) as r:
+        with requests.get(url, stream=True, timeout=60) as r:
             if r.status_code == 200:
                 with open(dest_path, "wb") as f:
                     for chunk in r.iter_content(chunk_size=65536):
@@ -119,7 +146,6 @@ def download_binary(url: str, dest_path: str) -> bool:
 
 
 def compute_sha256(filepath: str) -> str:
-    """Computes SHA-256 checksum for the downloaded payload."""
     sha = hashlib.sha256()
     with open(filepath, "rb") as f:
         for chunk in iter(lambda: f.read(65536), b""):
@@ -143,7 +169,6 @@ def load_previous_payloads():
 
 
 def sanitize_filename(name: str) -> str:
-    """Cleans up names to avoid invalid path characters."""
     return re.sub(r'[<>:"/\\|?*]', '_', name)
 
 
@@ -157,25 +182,26 @@ def main():
     with open(LINKS_FILE, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
-    repos = []
+    entries = []
     for line in lines:
-        slug = parse_repo_identifier(line)
-        if slug and slug not in repos:
-            repos.append(slug)
+        entry = parse_repo_entry(line)
+        if entry and entry not in entries:
+            entries.append(entry)
 
-    print(f"Found {len(repos)} repositories to process.")
+    print(f"Found {len(entries)} repositories to process.")
 
     previous_payloads = load_previous_payloads()
     payload_list = []
     broken_repos = []
     seen_filenames = set()
 
-    for repo_slug in repos:
-        print(f"\nProcessing: {repo_slug}")
-        owner, repo_name = repo_slug.split("/")
-        releases, err = fetch_target_releases(repo_slug)
+    for provider, owner, repo_name in entries:
+        repo_slug = f"{owner}/{repo_name}"
+        display_slug = f"{provider}:{repo_slug}"
+        print(f"\nProcessing [{provider}]: {repo_slug}")
 
-        # Retain saved payloads if upstream is dead or missing
+        releases, err = fetch_target_releases(provider, owner, repo_name)
+
         saved_fallback = [
             item for item in previous_payloads
             if repo_name.lower() in item.get("name", "").lower()
@@ -183,18 +209,17 @@ def main():
         ]
 
         if err:
-            print(f"[!] Repo unreachable: {repo_slug} ({err})")
+            print(f"[!] Repo unreachable: {display_slug} ({err})")
             if saved_fallback:
-                print(f"[+] Preserving {len(saved_fallback)} existing local payload(s) for {repo_slug}")
+                print(f"[+] Preserving {len(saved_fallback)} existing local payload(s) for {display_slug}")
                 for fb in saved_fallback:
                     fname = fb.get("filename")
-                    # Ensure physical file still exists locally
                     if os.path.exists(os.path.join(PAYLOAD_DIR, fname)) and fname not in seen_filenames:
                         seen_filenames.add(fname)
                         payload_list.append(fb)
-                broken_repos.append(f"{repo_slug} - {err} (Preserved {len(saved_fallback)} stored files)")
+                broken_repos.append(f"{display_slug} - {err} (Preserved {len(saved_fallback)} stored files)")
             else:
-                broken_repos.append(f"{repo_slug} - {err} (No previous files stored)")
+                broken_repos.append(f"{display_slug} - {err} (No previous files stored)")
             continue
 
         repo_payloads = []
@@ -207,7 +232,9 @@ def main():
 
             for asset in assets:
                 orig_filename = asset.get("name", "")
-                download_url = asset.get("browser_download_url", "")
+                
+                # Handle Gitea vs GitHub download URL property
+                download_url = asset.get("browser_download_url") or asset.get("download_url", "")
 
                 if not orig_filename.lower().endswith(VALID_EXTENSIONS):
                     continue
@@ -237,7 +264,6 @@ def main():
 
                 local_dest = os.path.join(PAYLOAD_DIR, file_name)
 
-                # Download only if the file is not yet cached locally
                 if not os.path.exists(local_dest):
                     print(f"[+] Downloading: {orig_filename} -> {local_dest}")
                     success = download_binary(download_url, local_dest)
@@ -249,7 +275,6 @@ def main():
                 checksum = compute_sha256(local_dest)
                 seen_filenames.add(file_name)
 
-                # Direct raw link pointing to this repo's payloads directory
                 hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{file_name}"
                 category = detect_category(repo_slug, orig_filename, desc)
 
@@ -265,20 +290,19 @@ def main():
                 repo_payloads.append(payload_entry)
 
         if not repo_payloads:
-            print(f"[!] No valid payload binaries found for {repo_slug}")
+            print(f"[!] No valid payload binaries found for {display_slug}")
             if saved_fallback:
                 for fb in saved_fallback:
                     fname = fb.get("filename")
                     if os.path.exists(os.path.join(PAYLOAD_DIR, fname)) and fname not in seen_filenames:
                         seen_filenames.add(fname)
                         payload_list.append(fb)
-                broken_repos.append(f"{repo_slug} - No assets in release (Preserved stored files)")
+                broken_repos.append(f"{display_slug} - No assets in release (Preserved stored files)")
             else:
-                broken_repos.append(f"{repo_slug} - No valid binary assets")
+                broken_repos.append(f"{display_slug} - No valid binary assets")
         else:
             payload_list.extend(repo_payloads)
 
-    # Core Rule: "name" must appear before "payloads"
     output_data = {
         "name": REPO_CATALOG_NAME,
         "payloads": payload_list
@@ -291,7 +315,7 @@ def main():
         for b in broken_repos:
             f.write(f"{b}\n")
 
-    print(f"\nCompleted: {len(payload_list)} stored payload(s) indexed in {OUTPUT_FILE}.")
+    print(f"\nDone: {len(payload_list)} stored payload(s) indexed in {OUTPUT_FILE}.")
 
 
 if __name__ == "__main__":
