@@ -1,0 +1,410 @@
+{
+  "name": "Custom Payloads Archive",
+  "payloads": [
+    {
+      "name": "PS5-Game-Compressor",
+      "filename": "game-compressor_v1.0.4.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/game-compressor_v1.0.4.elf",
+      "description": "Game Compressor 1.0.4 by juma-sayeh",
+      "version": "v1.0.4",
+      "category": "Dumping & Backups",
+      "checksum": "e55e90aaade13b6e0d4316c1597ef90a21b67a06475c3e25de054224bc1e941b"
+    },
+    {
+      "name": "apr-emu-updater",
+      "filename": "apr_emu_updater_v2.0.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/apr_emu_updater_v2.0.6.elf",
+      "description": "v2.0.6 by tsuramatsu1",
+      "version": "v2.0.6",
+      "category": "Homebrew",
+      "checksum": "4f04464283a6a551883e40e36b59134ecad0e38ecbb7ea89cbec3f91a3bd9122"
+    },
+    {
+      "name": "garlic-savemgr",
+      "filename": "garlic-savemgr_v1.7.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/garlic-savemgr_v1.7.elf",
+      "description": "v1.7 by earthonion",
+      "version": "v1.7",
+      "category": "Dumping & Backups",
+      "checksum": "124051ab3a762474720ae53187d2920bc96d6be1d69aa298e715667efc385a2f"
+    },
+    {
+      "name": "garlic-savemgr [Pre-release]",
+      "filename": "garlic-savemgr_v1.62b [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/garlic-savemgr_v1.62b [Pre-release].elf",
+      "description": "v1.62b [Pre-release] by earthonion",
+      "version": "v1.62b",
+      "category": "Dumping & Backups",
+      "checksum": "7745f1f82c892c31da11a28574d0f2f27ce0c06f0f7f3cfa532f44460c661b41"
+    },
+    {
+      "name": "unrar-ps5",
+      "filename": "unrar_ps5_v1.4.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/unrar_ps5_v1.4.0.elf",
+      "description": "v1.4.0 by bizkut",
+      "version": "v1.4.0",
+      "category": "Dumping & Backups",
+      "checksum": "2ef04b0bc8fc1932b29da1a53336c40ed0a3f6a945a0746bef2e5dde52149701"
+    },
+    {
+      "name": "onionHEN",
+      "filename": "OnionHEN_v0.0.13.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/OnionHEN_v0.0.13.elf",
+      "description": "OnionHEN v0.0.13 by aydencharles",
+      "version": "v0.0.13",
+      "category": "Kernel & Exploitation",
+      "checksum": "aa3f98847948e2ae8ea600c3f437e28247a0a4f8b73651a046d2859924bf97b3"
+    },
+    {
+      "name": "onionHEN [Pre-release]",
+      "filename": "OnionHEN_v0.9.0-beta1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/OnionHEN_v0.9.0-beta1 [Pre-release].elf",
+      "description": "OnionHEN v0.9.0-beta1 [Pre-release] by aydencharles",
+      "version": "v0.9.0-beta1",
+      "category": "Kernel & Exploitation",
+      "checksum": "c587a0e92158d0a64f1c78e10a9743709b3ab194bee2d4cf8ffdd3147c3a7530"
+    },
+    {
+      "name": "pegasus-dl",
+      "filename": "pegasus_dl_v1.10.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pegasus_dl_v1.10.1.elf",
+      "description": "Pegasus DL 1.10.1 by pegasus-ps5",
+      "version": "v1.10.1",
+      "category": "Homebrew",
+      "checksum": "b24fdc62fc6cad14684b214a9c5be6c1221585afbf9493e387ab90f9dee21138"
+    },
+    {
+      "name": "PoorDS4",
+      "filename": "PoorDS4-status_v0.1.0-rc51.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PoorDS4-status_v0.1.0-rc51.elf",
+      "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
+      "version": "v0.1.0-rc51",
+      "category": "Controllers & Input",
+      "checksum": "d47bb84a6ae05117f095c05b75dfee15d9fbf07864a3e52d0e2e626eab613440"
+    },
+    {
+      "name": "PoorDS4",
+      "filename": "PoorDS4-stop_v0.1.0-rc51.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PoorDS4-stop_v0.1.0-rc51.elf",
+      "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
+      "version": "v0.1.0-rc51",
+      "category": "Controllers & Input",
+      "checksum": "ffdce4964f0d34a2b9be7cb65e6ad345d5beb582dcdf94d0214cde6bc79acd0d"
+    },
+    {
+      "name": "PoorDS4",
+      "filename": "PoorDS4rc51_v0.1.0-rc51.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PoorDS4rc51_v0.1.0-rc51.elf",
+      "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
+      "version": "v0.1.0-rc51",
+      "category": "Controllers & Input",
+      "checksum": "e1b9f257f51678a977edaeafd4ca1f8a03e9df0afda7d5dd84435841fa20795d"
+    },
+    {
+      "name": "PIZZA-HEN",
+      "filename": "PIZZA-HEN-v2.00.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PIZZA-HEN-v2.00.elf",
+      "description": "PIZZA HEN v2.00 - Complete I18N Final Gate by Michele-M-Media",
+      "version": "v2.00",
+      "category": "Kernel & Exploitation",
+      "checksum": "8535d399612d61c50a528b2ae416f2fc3ccfb7480296df99c17302583fb3e345"
+    },
+    {
+      "name": "PS-Play",
+      "filename": "PSPlay-2.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PSPlay-2.1.elf",
+      "description": "2.1 by MounirHero",
+      "version": "2.1",
+      "category": "Homebrew",
+      "checksum": "e3392379d5bc6ca4e44cb0d2a1d8921083b2c3ea480725f68378831874542d8d"
+    },
+    {
+      "name": "ps5-date-time-sync",
+      "filename": "ps5-date-time-sync_v1.0.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5-date-time-sync_v1.0.0.elf",
+      "description": "PS5 Time & Date Sync v1.0.0 by kerrdec97",
+      "version": "v1.0.0",
+      "category": "System Utilities",
+      "checksum": "91806229803845930b2173174e1afeadf509e4c171f6396788f929558fad6849"
+    },
+    {
+      "name": "ps5debug-NG",
+      "filename": "ps5debug-NG_v1.3.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5debug-NG_v1.3.2.elf",
+      "description": "ps5debug-NG v1.3.2 by Pharaoh2k",
+      "version": "1.3.2",
+      "category": "Kernel & Exploitation",
+      "checksum": "949b0e6e0fe3f24f4a820319fd76d9ccb92f9770cbb1a64b09a8eca5c1fc9ff3"
+    },
+    {
+      "name": "CheatRunner",
+      "filename": "CheatRunner_v0.17.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/CheatRunner_v0.17.2.elf",
+      "description": "v0.17.2 by notmaj0r",
+      "version": "v0.17.2",
+      "category": "Cheats",
+      "checksum": "36ad03e236e6603aaaf05d95ed3399c7b54475a9bceba085cbe02899bc88ae0f"
+    },
+    {
+      "name": "CheatRunner [Pre-release]",
+      "filename": "CheatRunner_v0.16 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/CheatRunner_v0.16 [Pre-release].elf",
+      "description": "v0.16 [Pre-release] by notmaj0r",
+      "version": "v0.16",
+      "category": "Cheats",
+      "checksum": "a5483253926a0188c76a68101714cbd9bbc9c2305e0b071fad775d752da995bb"
+    },
+    {
+      "name": "PS5SX2",
+      "filename": "PS5SX2Installer_vk-285-130.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PS5SX2Installer_vk-285-130.elf",
+      "description": "PS5SX2 1.9 by Swordpdf",
+      "version": "vk-285-130",
+      "category": "Homebrew",
+      "checksum": "6b1be3ea24ec8144b27b2a1f3e279cd17574f3093e9431abf8579dcc6c0bfae9"
+    },
+    {
+      "name": "PS5SX2",
+      "filename": "PS5SXHelper_vk-285-130.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PS5SXHelper_vk-285-130.elf",
+      "description": "PS5SX2 1.9 by Swordpdf",
+      "version": "vk-285-130",
+      "category": "Homebrew",
+      "checksum": "737d95a8a1545447c4166b094005704465e420f79f54e882e30e7f9e4cde6210"
+    },
+    {
+      "name": "ftpsrv",
+      "filename": "ftpsrv-ps5_1.16-ng-stable.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5_1.16-ng-stable.elf",
+      "description": "ftpsrv 1.16-ng (stable) by drakmor",
+      "version": "1.16-ng-stable",
+      "category": "Networking",
+      "checksum": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32"
+    },
+    {
+      "name": "ftpsrv [Pre-release]",
+      "filename": "ftpsrv-ps5-autopause_1.6-ng-test2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5-autopause_1.6-ng-test2 [Pre-release].elf",
+      "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
+      "version": "1.6-ng-test2",
+      "category": "Networking",
+      "checksum": "da65f0c5b5dffd2b803e2521d73e96d35db4ff9711e661f49be5795f72da2cd3"
+    },
+    {
+      "name": "ftpsrv [Pre-release]",
+      "filename": "ftpsrv-ps5_1.6-ng-test2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5_1.6-ng-test2 [Pre-release].elf",
+      "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
+      "version": "1.6-ng-test2",
+      "category": "Networking",
+      "checksum": "6364e0529416f400be123c52acdcda68efd5179d971c060286022131fd047b8e"
+    },
+    {
+      "name": "nanoDNS",
+      "filename": "nanodns_0.4.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/nanodns_0.4.elf",
+      "description": "nanoDNS 0.4 by drakmor",
+      "version": "0.4",
+      "category": "Networking",
+      "checksum": "fcfb7d47c3b295560ea1603dc015f7c4950353ef0faca16428bd425680ef1fc5"
+    },
+    {
+      "name": "ShadowMountPlus",
+      "filename": "shadowmountplus_1.7beta3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/shadowmountplus_1.7beta3.elf",
+      "description": "ShadowMountPlus 1.7beta3 by drakmor",
+      "version": "1.7beta3",
+      "category": "System Utilities",
+      "checksum": "2a7427e20ba7a70bd8cd01e47eb00ee7ca82db82dff3da7884f48f9c3fcbe95a"
+    },
+    {
+      "name": "ShadowMountPlus [Pre-release]",
+      "filename": "shadowmountplus_1.7beta4 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/shadowmountplus_1.7beta4 [Pre-release].elf",
+      "description": "ShadowMountPlus 1.7beta4 [Pre-release] by drakmor",
+      "version": "1.7beta4",
+      "category": "System Utilities",
+      "checksum": "fc4e5f715e76660ce34bde2adb10eaf1d069cb2cdf06f7a380896dfb62bd0c4a"
+    },
+    {
+      "name": "kstuff-lite",
+      "filename": "kstuff_v1.11.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/kstuff_v1.11.elf",
+      "description": "Kstuff Lite 1.11 Beta by EchoStretch",
+      "version": "v1.11",
+      "category": "Kernel & Exploitation",
+      "checksum": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779"
+    },
+    {
+      "name": "ps5-app-dumper",
+      "filename": "ps5-app-dumper_v2.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5-app-dumper_v2.10.elf",
+      "description": "PS5 App Dumper 2.00 Beta PS5 App Dumper 2.10 Beta by EchoStretch",
+      "version": "v2.10",
+      "category": "Dumping & Backups",
+      "checksum": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b"
+    },
+    {
+      "name": "etaHEN",
+      "filename": "etaHEN-2.5B.bin",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/etaHEN-2.5B.bin",
+      "description": "etaHEN Update 2.5B by etaHEN",
+      "version": "2.5B",
+      "category": "Kernel & Exploitation",
+      "checksum": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e"
+    },
+    {
+      "name": "etaHEN [Pre-release]",
+      "filename": "etaHEN_2.0b-pre [Pre-release].bin",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/etaHEN_2.0b-pre [Pre-release].bin",
+      "description": "etaHEN 2.0b PRE-RELEASE [Pre-release] by etaHEN",
+      "version": "2.0b-pre",
+      "category": "Kernel & Exploitation",
+      "checksum": "2c4d85c0839d371b39f3f1ea219ed506df2c61d65f5abbef2a69e4bd51e9b383"
+    },
+    {
+      "name": "ps5-payload-manager",
+      "filename": "pldmgr_v0.5.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pldmgr_v0.5.2.elf",
+      "description": "v0.5.2 by itsPLK",
+      "version": "v0.5.2",
+      "category": "System Utilities",
+      "checksum": "62b3ba2a4937c2afc502f9a4e7242cca538610ebb4ae2800c7c6f72e7f268e7c"
+    },
+    {
+      "name": "ps5-pkg-manager",
+      "filename": "pkg-manager_v1.4.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pkg-manager_v1.4.1.elf",
+      "description": "v1.4.1 by itsPLK",
+      "version": "v1.4.1",
+      "category": "System Utilities",
+      "checksum": "09adaff13b858bb3db519faaea673ee3fa67298081e608d32f6501ed6e9f706e"
+    },
+    {
+      "name": "ps5-pkg-manager [Pre-release]",
+      "filename": "pkgmgr_v1.2.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pkgmgr_v1.2.1 [Pre-release].elf",
+      "description": "v1.2.1 [Pre-release] by itsPLK",
+      "version": "v1.2.1",
+      "category": "System Utilities",
+      "checksum": "dff50e27f954e78838e97bcddbb5914bd348572a3caa3b2f9a0880e25a0f5fbc"
+    },
+    {
+      "name": "ps5-webkit-autoloader",
+      "filename": "webkit-autoloader-installer_v0.5.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.5.2.elf",
+      "description": "v0.5.2 by itsPLK",
+      "version": "v0.5.2",
+      "category": "Networking",
+      "checksum": "f990e48e8330231d2066a7b8ab6dc25fda83b2cc36cb426c472b35b33767451a"
+    },
+    {
+      "name": "ps5-webkit-autoloader [Pre-release]",
+      "filename": "webkit-autoloader-installer_v0.3.1-pre-3e9b02d [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.3.1-pre-3e9b02d [Pre-release].elf",
+      "description": "v0.3.1-pre-3e9b02d (pre-release) [Pre-release] by itsPLK",
+      "version": "v0.3.1-pre-3e9b02d",
+      "category": "Networking",
+      "checksum": "db6518263efa7d9cacd7754cb4bc7a27619c2c93b3f82599d6a27010b9c3e401"
+    },
+    {
+      "name": "ps5-web-file-manager",
+      "filename": "web-file-mgr-v1.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/web-file-mgr-v1.10.elf",
+      "description": "Added samba support & Other improvements by owendswang",
+      "version": "v1.10",
+      "category": "Networking",
+      "checksum": "409145ec9a1c338ecb5f6f917c3b057c4ba48bfae2e86d621e19dda7ac129bd3"
+    },
+    {
+      "name": "ps5-web-file-manager",
+      "filename": "wfm-7zip-helper_v1.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/wfm-7zip-helper_v1.10.elf",
+      "description": "Added samba support & Other improvements by owendswang",
+      "version": "v1.10",
+      "category": "Networking",
+      "checksum": "dc28dfd499a97e389c5dbb6c1915404764d5a8f8d35869d2a7a9f5c98c2bc7ff"
+    },
+    {
+      "name": "ps5upload",
+      "filename": "ps5upload-6.1.2_v6.1.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.1.2_v6.1.2.elf",
+      "description": "v6.1.2 by phantomptr",
+      "version": "v6.1.2",
+      "category": "System Utilities",
+      "checksum": "1fdf0a79687a4a823dd7c331c267cf492f849bd2bc6666e2db496fc03e544162"
+    },
+    {
+      "name": "ps5-linux-loader",
+      "filename": "ps5-linux-loader_v2.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5-linux-loader_v2.5.elf",
+      "description": "v2.5 by ps5-linux",
+      "version": "v2.5",
+      "category": "Homebrew",
+      "checksum": "9fc48733077145d1d204a4c9cdb879baaab1e711a604dd73af0dd4a807d6bc49"
+    },
+    {
+      "name": "elfldr",
+      "filename": "elfldr-ps5_v0.26.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/elfldr-ps5_v0.26.elf",
+      "description": "v0.26 by ps5-payload-dev",
+      "version": "v0.26",
+      "category": "Kernel & Exploitation",
+      "checksum": "ed6d587a057c09d6a95b2176e336d9ffc605e547ac56462128b029e47b8ccea1"
+    },
+    {
+      "name": "AnyPad-PS5-English",
+      "filename": "AnyPad-PS5-0.5.5-beta.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/AnyPad-PS5-0.5.5-beta.elf",
+      "description": "0.5.5-beta by Mohammad-Aghayan",
+      "version": "AnyPad",
+      "category": "Controllers & Input",
+      "checksum": "0947a56630c54d763a5999eb6e89c3382e3ecf0234d782b2956418c1f6f87677"
+    },
+    {
+      "name": "orbit-store-ps5",
+      "filename": "orbit_store_v0.7.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/orbit_store_v0.7.0.elf",
+      "description": "Orbit Store 0.7.0 (Beta) by saawant12",
+      "version": "v0.7.0",
+      "category": "Homebrew",
+      "checksum": "12f9f3b7cb66ba45ae6ce3732781a4ae2ed3228f14d4f85fba0cebe6adfa2eb8"
+    },
+    {
+      "name": "ProsperoMgr",
+      "filename": "ProsperoMgr_v1.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ProsperoMgr_v1.1.elf",
+      "description": "v1.1 by notmaj0r",
+      "version": "v1.1",
+      "category": "System Utilities",
+      "checksum": "e7a6bb544adb2fb2a61aa9cc83b0ad15f70b32d7511a3de0f1fb88812f11983c"
+    },
+    {
+      "name": "ProsperoMgr [Pre-release]",
+      "filename": "ProsperoMgr_beta [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ProsperoMgr_beta [Pre-release].elf",
+      "description": "BETA - Prospero Manager [Pre-release] by notmaj0r",
+      "version": "beta",
+      "category": "System Utilities",
+      "checksum": "6cde8d8e97478ff43f69d2c6b22ac6512311d83b1d9ceb09d56796b9200c1b3c"
+    },
+    {
+      "name": "PS5-Custom-Tool-Manager-",
+      "filename": "PS5.Custom.Tool.Manager.V1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PS5.Custom.Tool.Manager.V1.elf",
+      "description": "PS5 Custom Tool by NikoBellikJR31",
+      "version": "Custom",
+      "category": "System Utilities",
+      "checksum": "297824ceaf6ea53fde57550adf9b5c2fc44c63ef60e8196ab92d351d1615d9cb"
+    },
+    {
+      "name": "ps5-dualsense-overlay",
+      "filename": "ps5-dualsense-overlay-v1.0.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5-dualsense-overlay-v1.0.1.elf",
+      "description": "ps5-dualsense-overlay v1.0.1 by erickdavestech",
+      "version": "v1.0.1",
+      "category": "Controllers & Input",
+      "checksum": "3790c590088b275a8d803c7c46394af6c7e0d8ede2546c0507a05a246fbf9747"
+    }
+  ]
+}
