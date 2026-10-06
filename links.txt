@@ -2,7 +2,7 @@
 # --- GitHub repositories ---
 github:juma-sayeh/PS5-Game-Compressor
 github:tsuramatsu1/apr-emu-updater
-github:earthonion/garlic-savemgr
+etawen:earthonion/garlic-savemgr
 github:bizkut/unrar-ps5
 github:aydencharles/onionHEN
 github:pegasus-ps5/pegasus-dl
