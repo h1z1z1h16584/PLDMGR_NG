@@ -1,0 +1,35 @@
+# PS5 Payload Manager - Payload Sources
+# --- GitHub repositories ---
+github:juma-sayeh/PS5-Game-Compressor
+github:tsuramatsu1/apr-emu-updater
+github:earthonion/garlic-savemgr
+github:bizkut/unrar-ps5
+github:aydencharles/onionHEN
+github:pegasus-ps5/pegasus-dl
+github:ItsBlurf/PoorDS4
+github:Michele-M-Media/PIZZA-HEN
+github:MounirHero/PS-Play
+github:pegasus-ps5/pegasus-dl
+github:Phoenixx1202/Spectrum-Library
+github:kerrdec97/ps5-date-time-sync
+github:Pharaoh2k/ps5debug-NG
+github:notmaj0r/CheatRunner
+github:Swordpdf/PS5SX2
+github:drakmor/ftpsrv
+github:drakmor/nanoDNS
+github:drakmor/ShadowMountPlus
+github:EchoStretch/kstuff-lite
+github:EchoStretch/ps5-app-dumper
+github:etaHEN/etaHEN
+github:itsPLK/ps5-payload-manager
+github:itsPLK/ps5-pkg-manager
+github:itsPLK/ps5-webkit-autoloader
+github:owendswang/ps5-web-file-manager
+github:phantomptr/ps5upload
+github:ps5-linux/ps5-linux-loader
+github:ps5-payload-dev/elfldr
+github:Mohammad-Aghayan/AnyPad-PS5-English
+github:saawant12/orbit-store-ps5
+github:notmaj0r/ProsperoMgr
+github:NikoBellikJR31/PS5-Custom-Tool-Manager-
+github:erickdavestech/ps5-dualsense-overlay
