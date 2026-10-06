@@ -21,21 +21,12 @@
     },
     {
       "name": "garlic-savemgr",
-      "filename": "garlic-savemgr_v1.7.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/garlic-savemgr_v1.7.elf",
-      "description": "v1.7 by earthonion",
-      "version": "v1.7",
+      "filename": "garlic-savemgr_v1.13.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/garlic-savemgr_v1.13.1.elf",
+      "description": "v1.13.1 by earthonion",
+      "version": "v1.13.1",
       "category": "Dumping & Backups",
-      "checksum": "124051ab3a762474720ae53187d2920bc96d6be1d69aa298e715667efc385a2f"
-    },
-    {
-      "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.62b [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/garlic-savemgr_v1.62b [Pre-release].elf",
-      "description": "v1.62b [Pre-release] by earthonion",
-      "version": "v1.62b",
-      "category": "Dumping & Backups",
-      "checksum": "7745f1f82c892c31da11a28574d0f2f27ce0c06f0f7f3cfa532f44460c661b41"
+      "checksum": "b0fc2fcdda977d2a1207d77148746859b7ea7f3cfcad02828a7a9b49651807f5"
     },
     {
       "name": "unrar-ps5",
