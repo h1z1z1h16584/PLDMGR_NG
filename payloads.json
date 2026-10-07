@@ -363,12 +363,12 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v0.8.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/orbit_store_v0.8.0.elf",
-      "description": "Orbit Store 0.8.0 (Beta) by saawant12",
-      "version": "v0.8.0",
+      "filename": "orbit_store_v0.9.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/orbit_store_v0.9.0.elf",
+      "description": "Orbit Store 0.9.0 (Beta) by saawant12",
+      "version": "v0.9.0",
       "category": "Homebrew",
-      "checksum": "f8188366e1b6a36cf7ce1c3429df15a1d0fa69c2a93cb9cca36ea5a46cedbb4d"
+      "checksum": "aeef769d81507157837a017886a72c169ee7acb472e7c029a1d5e830735762df"
     },
     {
       "name": "ProsperoMgr",
