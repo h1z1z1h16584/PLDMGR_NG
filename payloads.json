@@ -48,12 +48,12 @@
     },
     {
       "name": "onionHEN [Pre-release]",
-      "filename": "OnionHEN_v0.9.0-beta1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/OnionHEN_v0.9.0-beta1 [Pre-release].elf",
-      "description": "OnionHEN v0.9.0-beta1 [Pre-release] by aydencharles",
-      "version": "v0.9.0-beta1",
+      "filename": "OnionHEN_v0.9.0-beta2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/OnionHEN_v0.9.0-beta2 [Pre-release].elf",
+      "description": "OnionHEN v0.9.0-beta2 [Pre-release] by aydencharles",
+      "version": "v0.9.0-beta2",
       "category": "Kernel & Exploitation",
-      "checksum": "c587a0e92158d0a64f1c78e10a9743709b3ab194bee2d4cf8ffdd3147c3a7530"
+      "checksum": "dd2e78af126d9d115df147a0f2bff6269de7a3eee5a556e06b6c21726a36f087"
     },
     {
       "name": "pegasus-dl",
@@ -291,12 +291,12 @@
     },
     {
       "name": "ps5-webkit-autoloader [Pre-release]",
-      "filename": "webkit-autoloader-installer_v0.3.1-pre-3e9b02d [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.3.1-pre-3e9b02d [Pre-release].elf",
-      "description": "v0.3.1-pre-3e9b02d (pre-release) [Pre-release] by itsPLK",
-      "version": "v0.3.1-pre-3e9b02d",
+      "filename": "webkit-autoloader-installer_v0.6.0-pre-4488577 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.6.0-pre-4488577 [Pre-release].elf",
+      "description": "v0.6.0-pre-4488577 (pre-release) [Pre-release] by itsPLK",
+      "version": "v0.6.0-pre-4488577",
       "category": "Networking",
-      "checksum": "db6518263efa7d9cacd7754cb4bc7a27619c2c93b3f82599d6a27010b9c3e401"
+      "checksum": "7b7e2284c331599a6193cb00fa7d5fd227d784ef95ceda32b1485989ff1d6b21"
     },
     {
       "name": "ps5-web-file-manager",
@@ -318,12 +318,12 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.2.3_v6.2.3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.2.3_v6.2.3.elf",
-      "description": "v6.2.3 by phantomptr",
-      "version": "v6.2.3",
+      "filename": "ps5upload-6.3.1_v6.3.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.3.1_v6.3.1.elf",
+      "description": "v6.3.1 by phantomptr",
+      "version": "v6.3.1",
       "category": "System Utilities",
-      "checksum": "19c0455f2e460badba95021501468dd7b06d3b8b3baa0348c7d3bc777d4c5f74"
+      "checksum": "2ff17e8096fa06c36fe27f4ea28d750733a9d10677ae6c566fd851f07da6b136"
     },
     {
       "name": "ps5upload [Pre-release]",
