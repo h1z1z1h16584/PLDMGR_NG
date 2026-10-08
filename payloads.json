@@ -282,12 +282,12 @@
     },
     {
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.6.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.6.0.elf",
-      "description": "v0.6.0 by itsPLK",
-      "version": "v0.6.0",
+      "filename": "webkit-autoloader-installer_v0.6.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.6.1.elf",
+      "description": "v0.6.1 by itsPLK",
+      "version": "v0.6.1",
       "category": "Networking",
-      "checksum": "b4dc090ea7f22529d507e684909ab4524a21a6a26777a425bf787dbffc5b419c"
+      "checksum": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f"
     },
     {
       "name": "ps5-webkit-autoloader [Pre-release]",
@@ -318,12 +318,12 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.4.0_v6.4.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.4.0_v6.4.0.elf",
-      "description": "v6.4.0 by phantomptr",
-      "version": "v6.4.0",
+      "filename": "ps5upload-6.5.0_v6.5.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.5.0_v6.5.0.elf",
+      "description": "v6.5.0 by phantomptr",
+      "version": "v6.5.0",
       "category": "System Utilities",
-      "checksum": "b0392932ae957821fbaccee44d761a9320655995ccfa80c9ffdcc5cec2497f70"
+      "checksum": "af6aac4acc7776909124eba6b737a9119e587364eeb1f63f9a4382589a8e0b56"
     },
     {
       "name": "ps5upload [Pre-release]",
