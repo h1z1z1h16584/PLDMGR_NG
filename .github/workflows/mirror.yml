@@ -2,7 +2,8 @@ name: Mirror and Store Payloads
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every hour
+    # Set to run at minute 23 of every hour to avoid runner congestion
+    - cron: '23 * * * *'
   workflow_dispatch:
   push:
     branches:
