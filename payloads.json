@@ -318,21 +318,21 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.6.1_v6.6.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.6.1_v6.6.1.elf",
-      "description": "v6.6.1 by phantomptr",
-      "version": "v6.6.1",
+      "filename": "ps5upload-6.6.3_v6.6.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.6.3_v6.6.3.elf",
+      "description": "v6.6.3 by phantomptr",
+      "version": "v6.6.3",
       "category": "System Utilities",
-      "checksum": "bca34345897b4332334c3da7b61b851eca884d3c0db5dca275b3327ac623b17a"
+      "checksum": "0c03c7648eb99b4c63d662198b6cd71df58ee775522bcd20a3d4527b475802ed"
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-6.5.2_v6.5.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.5.2_v6.5.2 [Pre-release].elf",
-      "description": "v6.5.2 [Pre-release] by phantomptr",
-      "version": "v6.5.2",
+      "filename": "ps5upload-6.6.2_v6.6.2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.6.2_v6.6.2 [Pre-release].elf",
+      "description": "v6.6.2 [Pre-release] by phantomptr",
+      "version": "v6.6.2",
       "category": "System Utilities",
-      "checksum": "bc95c23288272cfd669a062affc0e6886f0008dd0d869cc1f7f87ab2c6af3481"
+      "checksum": "9bd7077f2a80af8c87ff1423771732e8ad99fe7ebfd8f1e7923b6d5f389edc6f"
     },
     {
       "name": "ps5-linux-loader",
@@ -363,12 +363,12 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v1.0.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/orbit_store_v1.0.0.elf",
-      "description": "Orbit Store 1.0.0 (Beta) by saawant12",
-      "version": "v1.0.0",
+      "filename": "orbit_store_v1.0.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/orbit_store_v1.0.5.elf",
+      "description": "Orbit Store 1.0.5 (Beta) by saawant12",
+      "version": "v1.0.5",
       "category": "Homebrew",
-      "checksum": "8ac8d13e3855e29456205992cebe9fa1604dae0509a6ec20198076560f2a93a0"
+      "checksum": "7883cf64b62252594d58e5558ea29f8de7ed3ca1d9a3182c844f23513eaf7617"
     },
     {
       "name": "ProsperoMgr",
