@@ -318,21 +318,21 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.6.3_v6.6.3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.6.3_v6.6.3.elf",
-      "description": "v6.6.3 by phantomptr",
-      "version": "v6.6.3",
+      "filename": "ps5upload-6.7.1_v6.7.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.7.1_v6.7.1.elf",
+      "description": "v6.7.1 by phantomptr",
+      "version": "v6.7.1",
       "category": "System Utilities",
-      "checksum": "0c03c7648eb99b4c63d662198b6cd71df58ee775522bcd20a3d4527b475802ed"
+      "checksum": "731ce3a827d13bb3a577722c13c9b8ffc7fead9b290144fbcae7db7fc8d08d35"
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-6.6.2_v6.6.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.6.2_v6.6.2 [Pre-release].elf",
-      "description": "v6.6.2 [Pre-release] by phantomptr",
-      "version": "v6.6.2",
+      "filename": "ps5upload-6.7.3_v6.7.3 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.7.3_v6.7.3 [Pre-release].elf",
+      "description": "v6.7.3 [Pre-release] by phantomptr",
+      "version": "v6.7.3",
       "category": "System Utilities",
-      "checksum": "9bd7077f2a80af8c87ff1423771732e8ad99fe7ebfd8f1e7923b6d5f389edc6f"
+      "checksum": "468740692643ecef083da7d761169c09accec4f43b199a64df9c394ecd6b5df3"
     },
     {
       "name": "ps5-linux-loader",
