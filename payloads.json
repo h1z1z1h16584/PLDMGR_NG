@@ -273,12 +273,12 @@
     },
     {
       "name": "ShadowMountPlus",
-      "filename": "shadowmountplus_1.7beta3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/shadowmountplus_1.7beta3.elf",
-      "description": "ShadowMountPlus 1.7beta3 by drakmor",
-      "version": "1.7beta3",
+      "filename": "shadowmountplus_1.7beta5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/shadowmountplus_1.7beta5.elf",
+      "description": "ShadowMountPlus 1.7beta5 by drakmor",
+      "version": "1.7beta5",
       "category": "System Utilities",
-      "checksum": "2a7427e20ba7a70bd8cd01e47eb00ee7ca82db82dff3da7884f48f9c3fcbe95a"
+      "checksum": "0d54a8467ec3544e1c7b365c9f100b2bf42bf4633cb768bde7c8f16b6cfb5375"
     },
     {
       "name": "ps5-date-time-sync",
@@ -319,7 +319,7 @@
     {
       "name": "CheatRunner [Pre-release]",
       "filename": "CheatRunner_v0.16 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/CheatRunner_v0.16 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/CheatRunner_v0.16%20%5BPre-release%5D.elf",
       "description": "v0.16 [Pre-release] by notmaj0r",
       "version": "v0.16",
       "category": "Pre-release",
@@ -328,7 +328,7 @@
     {
       "name": "HearBridge-PS5 [Pre-release]",
       "filename": "HearBridge-PS5-1.1.0-mtk-test_v1.1.0-mtk-test [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/HearBridge-PS5-1.1.0-mtk-test_v1.1.0-mtk-test [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/HearBridge-PS5-1.1.0-mtk-test_v1.1.0-mtk-test%20%5BPre-release%5D.elf",
       "description": "HearBridge PS5 1.1.0 mediatek test [Pre-release] by X-F1REBALL-X",
       "version": "v1.1.0-mtk-test",
       "category": "Pre-release",
@@ -337,7 +337,7 @@
     {
       "name": "ProsperoMgr [Pre-release]",
       "filename": "ProsperoMgr_beta [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ProsperoMgr_beta [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ProsperoMgr_beta%20%5BPre-release%5D.elf",
       "description": "BETA - Prospero Manager [Pre-release] by notmaj0r",
       "version": "beta",
       "category": "Pre-release",
@@ -345,17 +345,17 @@
     },
     {
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus_1.7beta5 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/shadowmountplus_1.7beta5 [Pre-release].elf",
-      "description": "ShadowMountPlus 1.7beta5 [Pre-release] by drakmor",
-      "version": "1.7beta5",
+      "filename": "shadowmountplus_1.7beta4 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/shadowmountplus_1.7beta4%20%5BPre-release%5D.elf",
+      "description": "ShadowMountPlus 1.7beta4 [Pre-release] by drakmor",
+      "version": "1.7beta4",
       "category": "Pre-release",
-      "checksum": "0d54a8467ec3544e1c7b365c9f100b2bf42bf4633cb768bde7c8f16b6cfb5375"
+      "checksum": "fc4e5f715e76660ce34bde2adb10eaf1d069cb2cdf06f7a380896dfb62bd0c4a"
     },
     {
       "name": "etaHEN [Pre-release]",
       "filename": "etaHEN_2.0b-pre [Pre-release].bin",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/etaHEN_2.0b-pre [Pre-release].bin",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/etaHEN_2.0b-pre%20%5BPre-release%5D.bin",
       "description": "etaHEN 2.0b PRE-RELEASE [Pre-release] by etaHEN",
       "version": "2.0b-pre",
       "category": "Pre-release",
@@ -364,7 +364,7 @@
     {
       "name": "ftpsrv [Pre-release]",
       "filename": "ftpsrv-ps5-autopause_1.6-ng-test2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5-autopause_1.6-ng-test2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5-autopause_1.6-ng-test2%20%5BPre-release%5D.elf",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "version": "1.6-ng-test2",
       "category": "Pre-release",
@@ -373,7 +373,7 @@
     {
       "name": "ftpsrv [Pre-release]",
       "filename": "ftpsrv-ps5_1.6-ng-test2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5_1.6-ng-test2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5_1.6-ng-test2%20%5BPre-release%5D.elf",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "version": "1.6-ng-test2",
       "category": "Pre-release",
@@ -382,7 +382,7 @@
     {
       "name": "onionHEN [Pre-release]",
       "filename": "OnionHEN_v0.9.0-beta2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/OnionHEN_v0.9.0-beta2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/OnionHEN_v0.9.0-beta2%20%5BPre-release%5D.elf",
       "description": "OnionHEN v0.9.0-beta2 [Pre-release] by aydencharles",
       "version": "v0.9.0-beta2",
       "category": "Pre-release",
@@ -391,7 +391,7 @@
     {
       "name": "ps5-pkg-manager [Pre-release]",
       "filename": "pkgmgr_v1.2.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pkgmgr_v1.2.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pkgmgr_v1.2.1%20%5BPre-release%5D.elf",
       "description": "v1.2.1 [Pre-release] by itsPLK",
       "version": "v1.2.1",
       "category": "Pre-release",
@@ -400,7 +400,7 @@
     {
       "name": "ps5-webkit-autoloader [Pre-release]",
       "filename": "webkit-autoloader-installer_v0.6.0-pre-4488577 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.6.0-pre-4488577 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.6.0-pre-4488577%20%5BPre-release%5D.elf",
       "description": "v0.6.0-pre-4488577 (pre-release) [Pre-release] by itsPLK",
       "version": "v0.6.0-pre-4488577",
       "category": "Pre-release",
@@ -409,7 +409,7 @@
     {
       "name": "ps5upload [Pre-release]",
       "filename": "ps5upload-6.8.0_v6.8.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.8.0_v6.8.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.8.0_v6.8.0%20%5BPre-release%5D.elf",
       "description": "v6.8.0 [Pre-release] by phantomptr",
       "version": "v6.8.0",
       "category": "Pre-release",
@@ -421,7 +421,7 @@
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/404-etaHEN-2.6.elf",
       "description": "Archived standalone payload: etaHEN-2.6.elf",
       "version": "Static",
-      "category": "Archived (Legacy)",
+      "category": "~ Archived (Legacy)",
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
     },
     {
@@ -430,7 +430,7 @@
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/404-webkit-autoloader-installer_v0.4.0.elf",
       "description": "Archived standalone payload: webkit-autoloader-installer_v0.4.0.elf",
       "version": "Static",
-      "category": "Archived (Legacy)",
+      "category": "~ Archived (Legacy)",
       "checksum": "179d5e52ec3e0f595900b40883c0e10cc1fba1efc275a547f47e828d45d05915"
     }
   ]
