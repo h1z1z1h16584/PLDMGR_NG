@@ -31,11 +31,6 @@ gitea_headers = {
 
 
 def parse_repo_entry(line: str):
-    """
-    Parses a line into (provider, owner, repo):
-      - 'github:owner/repo' or standard GitHub URL -> ('github', owner, repo)
-      - 'etawen:owner/repo' or 'https://git.etawen.dev/owner/repo' -> ('etawen', owner, repo)
-    """
     line = line.strip()
     if not line or line.startswith("#"):
         return None
@@ -64,10 +59,6 @@ def parse_repo_entry(line: str):
 
 
 def fetch_target_releases(provider: str, owner: str, repo: str):
-    """
-    Fetches the latest official release and the latest pre-release
-    from either GitHub or Etawen (Gitea API).
-    """
     if provider == "etawen":
         url = f"https://git.etawen.dev/api/v1/repos/{owner}/{repo}/releases"
         headers = gitea_headers
@@ -178,23 +169,24 @@ def sanitize_filename(name: str) -> str:
 
 def scan_static_404_payloads():
     """
-    Finds all files in payloads/ prefixed with '404-' and registers them
-    under the STATIC_CATEGORY section without checking remote releases.
+    Finds all files in payloads/ starting with '404-' or '404 ' and registers
+    them without checking remote releases.
     """
     static_entries = []
     if not os.path.exists(PAYLOAD_DIR):
         return static_entries
 
     for fname in sorted(os.listdir(PAYLOAD_DIR)):
-        if fname.startswith("404-") and fname.lower().endswith(VALID_EXTENSIONS):
+        # Match '404-', '404_', or '404 '
+        if re.match(r"^404[-_\s]", fname, re.IGNORECASE) and fname.lower().endswith(VALID_EXTENSIONS):
             local_path = os.path.join(PAYLOAD_DIR, fname)
             checksum = compute_sha256(local_path)
             hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{fname}"
 
-            # Remove '404-' prefix and extension for clean UI title
-            clean_name = fname[4:]
+            # Strip the 404 prefix cleanly
+            clean_name = re.sub(r"^404[-_\s]+", "", fname, flags=re.IGNORECASE)
             base, _ = os.path.splitext(clean_name)
-            display_title = base.replace("_", " ").replace("-", " ").title()
+            display_title = base.replace("_", " ").replace("-", " ")
 
             entry = {
                 "name": display_title,
@@ -234,13 +226,7 @@ def main():
     broken_repos = []
     seen_filenames = set()
 
-    # 1. First, load all static '404-' prefixed payloads from payloads/ directory
-    static_payloads = scan_static_404_payloads()
-    for sp in static_payloads:
-        seen_filenames.add(sp["filename"])
-        payload_list.append(sp)
-
-    # 2. Process dynamically synced repositories
+    # 1. Process active repositories FIRST so standard categories lead the tabs
     for provider, owner, repo_name in entries:
         repo_slug = f"{owner}/{repo_name}"
         display_slug = f"{provider}:{repo_slug}"
@@ -347,13 +333,26 @@ def main():
         else:
             payload_list.extend(repo_payloads)
 
-    # Sort payloads: Normal categories first, then Static Archive, and Pre-releases last
-    payload_list.sort(key=lambda x: (
-        x["category"] == "Pre-release",
-        x["category"] == STATIC_CATEGORY,
-        x["category"],
-        x["name"]
-    ))
+    # 2. Append the static 404 payloads AFTER all regular payloads
+    static_payloads = scan_static_404_payloads()
+    for sp in static_payloads:
+        if sp["filename"] not in seen_filenames:
+            seen_filenames.add(sp["filename"])
+            payload_list.append(sp)
+
+    # 3. Sort ordering:
+    # Priority 0: Active payload categories (sorted alphabetically)
+    # Priority 1: Pre-releases
+    # Priority 2: Static/Archived (Legacy) payloads placed dead last
+    def category_sort_rank(item):
+        cat = item.get("category", "")
+        if cat == STATIC_CATEGORY:
+            return (2, cat, item["name"])
+        elif cat == "Pre-release":
+            return (1, cat, item["name"])
+        return (0, cat, item["name"])
+
+    payload_list.sort(key=category_sort_rank)
 
     # Core Rule: "name" must appear before "payloads"
     output_data = {
