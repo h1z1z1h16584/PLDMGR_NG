@@ -9,11 +9,11 @@ import requests
 LINKS_FILE = "links.txt"
 OUTPUT_FILE = "payloads.json"
 BROKEN_REPOS_FILE = "broken_repos.txt"
-PAYLOAD_DIR = "payloads"
+BASE_PAYLOAD_DIR = "payloads"
 REPO_CATALOG_NAME = "Custom Payloads Archive"
 
-# Using '~ ' ensures ASCII sorting pushes this category after 'Z'
-STATIC_CATEGORY = "~ Archived (Legacy)"
+STATIC_CATEGORY = "~ Archived"
+PRE_RELEASE_CATEGORY = "Pre-release"
 
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
 
@@ -107,7 +107,7 @@ def is_ps4_asset(filename: str) -> bool:
 
 def detect_category(repo_slug: str, filename: str, description: str, is_pre: bool) -> str:
     if is_pre:
-        return "Pre-release"
+        return PRE_RELEASE_CATEGORY
 
     search_text = f"{repo_slug} {filename} {description}".lower()
 
@@ -168,40 +168,53 @@ def sanitize_filename(name: str) -> str:
     return re.sub(r'[<>:"/\\|?*]', '_', name)
 
 
-def scan_static_404_payloads():
+def scan_static_archived_payloads():
     """
-    Finds all files in payloads/ starting with '404-' or '404 ' and registers
-    them under the bottom-placed STATIC_CATEGORY without checking remote releases.
+    Scans the static/archived directory (e.g. payloads/~ Archived/ or payloads/static/)
+    for manual, unmanaged binaries.
     """
     static_entries = []
-    if not os.path.exists(PAYLOAD_DIR):
+    # Check both possible directory names
+    possible_dirs = [
+        os.path.join(BASE_PAYLOAD_DIR, STATIC_CATEGORY),
+        os.path.join(BASE_PAYLOAD_DIR, "Archived"),
+        os.path.join(BASE_PAYLOAD_DIR, "static")
+    ]
+
+    target_dir = None
+    for d in possible_dirs:
+        if os.path.exists(d):
+            target_dir = d
+            break
+
+    if not target_dir:
         return static_entries
 
-    for fname in sorted(os.listdir(PAYLOAD_DIR)):
-        if re.match(r"^404[-_\s]", fname, re.IGNORECASE) and fname.lower().endswith(VALID_EXTENSIONS):
-            local_path = os.path.join(PAYLOAD_DIR, fname)
-            checksum = compute_sha256(local_path)
-            
-            # URL-encode the filename for safe downloading by PS5
-            encoded_fname = quote(fname)
-            hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{encoded_fname}"
+    folder_name = os.path.basename(target_dir)
 
-            # Strip the 404 prefix cleanly for title display
-            clean_name = re.sub(r"^404[-_\s]+", "", fname, flags=re.IGNORECASE)
-            base, _ = os.path.splitext(clean_name)
+    for fname in sorted(os.listdir(target_dir)):
+        if fname.lower().endswith(VALID_EXTENSIONS):
+            local_path = os.path.join(target_dir, fname)
+            checksum = compute_sha256(local_path)
+
+            encoded_folder = quote(folder_name)
+            encoded_fname = quote(fname)
+            hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{BASE_PAYLOAD_DIR}/{encoded_folder}/{encoded_fname}"
+
+            base, _ = os.path.splitext(fname)
             display_title = base.replace("_", " ").replace("-", " ")
 
             entry = {
                 "name": display_title,
                 "filename": fname,
                 "url": hosted_url,
-                "description": f"Archived standalone payload: {clean_name}",
+                "description": f"Archived standalone payload: {fname}",
                 "version": "Static",
                 "category": STATIC_CATEGORY,
                 "checksum": checksum
             }
-            static_entries.append(entry)
-            print(f"[+] Loaded static payload: {fname} -> {STATIC_CATEGORY}")
+            static_entries.append((local_path, entry))
+            print(f"[+] Loaded archived payload: {fname} -> {STATIC_CATEGORY}")
 
     return static_entries
 
@@ -211,7 +224,8 @@ def main():
         print(f"Error: {LINKS_FILE} not found.")
         sys.exit(1)
 
-    os.makedirs(PAYLOAD_DIR, exist_ok=True)
+    os.makedirs(BASE_PAYLOAD_DIR, exist_ok=True)
+    os.makedirs(os.path.join(BASE_PAYLOAD_DIR, STATIC_CATEGORY), exist_ok=True)
 
     with open(LINKS_FILE, "r", encoding="utf-8") as f:
         lines = f.readlines()
@@ -229,7 +243,7 @@ def main():
     broken_repos = []
     seen_filenames = set()
 
-    # 1. Process active repositories
+    # 1. Process dynamic remote repositories
     for provider, owner, repo_name in entries:
         repo_slug = f"{owner}/{repo_name}"
         display_slug = f"{provider}:{repo_slug}"
@@ -246,13 +260,16 @@ def main():
         if err:
             print(f"[!] Repo unreachable: {display_slug} ({err})")
             if saved_fallback:
-                print(f"[+] Preserving {len(saved_fallback)} existing local payload(s) for {display_slug}")
+                print(f"[+] Preserving fallback items for {display_slug}")
                 for fb in saved_fallback:
                     fname = fb.get("filename")
-                    if os.path.exists(os.path.join(PAYLOAD_DIR, fname)) and fname not in seen_filenames:
+                    cat = fb.get("category", "Homebrew")
+                    expected_path = os.path.join(BASE_PAYLOAD_DIR, cat, fname)
+                    # Check in category folder or root payloads folder
+                    if (os.path.exists(expected_path) or os.path.exists(os.path.join(BASE_PAYLOAD_DIR, fname))) and fname not in seen_filenames:
                         seen_filenames.add(fname)
                         payload_list.append(fb)
-                broken_repos.append(f"{display_slug} - {err} (Preserved {len(saved_fallback)} stored files)")
+                broken_repos.append(f"{display_slug} - {err} (Preserved stored files)")
             else:
                 broken_repos.append(f"{display_slug} - {err} (No previous files stored)")
             continue
@@ -295,23 +312,30 @@ def main():
                 if file_name in seen_filenames:
                     continue
 
-                local_dest = os.path.join(PAYLOAD_DIR, file_name)
+                # Categorize first to determine target subfolder
+                category = detect_category(repo_slug, orig_filename, desc, is_pre)
 
+                # Dedicated folder per category: payloads/<Category>/
+                category_dir = os.path.join(BASE_PAYLOAD_DIR, category)
+                os.makedirs(category_dir, exist_ok=True)
+                local_dest = os.path.join(category_dir, file_name)
+
+                # Download file into its category folder
                 if not os.path.exists(local_dest):
                     print(f"[+] Downloading: {orig_filename} -> {local_dest}")
                     success = download_binary(download_url, local_dest)
                     if not success:
                         continue
                 else:
-                    print(f"[*] Already cached: {file_name}")
+                    print(f"[*] Already cached: {category}/{file_name}")
 
                 checksum = compute_sha256(local_dest)
                 seen_filenames.add(file_name)
 
-                # Fix: URL encode spaces and brackets so HTTP clients on PS5 don't fail
+                # URL encoding for both category folder and file name
+                encoded_category = quote(category)
                 encoded_filename = quote(file_name)
-                hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{encoded_filename}"
-                category = detect_category(repo_slug, orig_filename, desc, is_pre)
+                hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{BASE_PAYLOAD_DIR}/{encoded_category}/{encoded_filename}"
 
                 payload_entry = {
                     "name": display_name,
@@ -329,7 +353,9 @@ def main():
             if saved_fallback:
                 for fb in saved_fallback:
                     fname = fb.get("filename")
-                    if os.path.exists(os.path.join(PAYLOAD_DIR, fname)) and fname not in seen_filenames:
+                    cat = fb.get("category", "Homebrew")
+                    expected_path = os.path.join(BASE_PAYLOAD_DIR, cat, fname)
+                    if (os.path.exists(expected_path) or os.path.exists(os.path.join(BASE_PAYLOAD_DIR, fname))) and fname not in seen_filenames:
                         seen_filenames.add(fname)
                         payload_list.append(fb)
                 broken_repos.append(f"{display_slug} - No assets in release (Preserved stored files)")
@@ -338,27 +364,28 @@ def main():
         else:
             payload_list.extend(repo_payloads)
 
-    # 2. Append static 404 payloads
-    static_payloads = scan_static_404_payloads()
-    for sp in static_payloads:
-        if sp["filename"] not in seen_filenames:
-            seen_filenames.add(sp["filename"])
-            payload_list.append(sp)
+    # 2. Add static archived payloads from the archived folder
+    static_payloads = scan_static_archived_payloads()
+    for _, sp_data in static_payloads:
+        if sp_data["filename"] not in seen_filenames:
+            seen_filenames.add(sp_data["filename"])
+            payload_list.append(sp_data)
 
     # 3. Sort ordering:
-    # Rank 0: Regular functional categories (A-Z)
-    # Rank 1: Pre-releases
-    # Rank 2: Archived/Static placed at the very end
+    # 0 -> Standard Categories (Alphabetical)
+    # 1 -> Pre-releases
+    # 2 -> ~ Archived (Bottom of list)
     def category_sort_rank(item):
         cat = item.get("category", "")
         if cat == STATIC_CATEGORY:
             return (2, cat, item["name"])
-        elif cat == "Pre-release":
+        elif cat == PRE_RELEASE_CATEGORY:
             return (1, cat, item["name"])
         return (0, cat, item["name"])
 
     payload_list.sort(key=category_sort_rank)
 
+    # Core Rule: "name" must appear before "payloads"
     output_data = {
         "name": REPO_CATALOG_NAME,
         "payloads": payload_list
@@ -371,7 +398,7 @@ def main():
         for b in broken_repos:
             f.write(f"{b}\n")
 
-    print(f"\nDone: {len(payload_list)} total payload(s) indexed in {OUTPUT_FILE}.")
+    print(f"\nDone: {len(payload_list)} total payload(s) stored across category directories.")
 
 
 if __name__ == "__main__":
