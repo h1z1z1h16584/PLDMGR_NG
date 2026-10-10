@@ -255,12 +255,12 @@
     },
     {
       "name": "ps5-pkg-manager",
-      "filename": "pkg-manager_v1.5.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pkg-manager_v1.5.0.elf",
-      "description": "v1.5.0 by itsPLK",
-      "version": "v1.5.0",
+      "filename": "pkg-manager_v1.5.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pkg-manager_v1.5.1.elf",
+      "description": "v1.5.1 by itsPLK",
+      "version": "v1.5.1",
       "category": "System Utilities",
-      "checksum": "fb29a0e3c058cd69e00320668db57704207b827b92b92e0cd23fb5fe7fe1429d"
+      "checksum": "82e3548edcc41419b644482cccaef65689334fc0315dc20247f48b90bf182dca"
     },
     {
       "name": "ps5-pkg-manager [Pre-release]",
