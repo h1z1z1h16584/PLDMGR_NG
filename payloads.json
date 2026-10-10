@@ -425,6 +425,15 @@
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
     },
     {
+      "name": "kstuff 1.13 fpkg dr test5",
+      "filename": "kstuff-1.13-fpkg-dr-test5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff-1.13-fpkg-dr-test5.elf",
+      "description": "Archived standalone payload: kstuff-1.13-fpkg-dr-test5.elf",
+      "version": "v99.0",
+      "category": "~ Archived",
+      "checksum": "829b45fe871dd64fbd53874ae4558076c2f1e1f203fe1ab52db5510d5fc45923"
+    },
+    {
       "name": "lapy jb daemon 99.0",
       "filename": "lapy_jb_daemon-99.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/lapy_jb_daemon-99.0.elf",
@@ -434,10 +443,10 @@
       "checksum": "e8230ac4597b8f0388e75d7515ad1a2e251c4589cc3b8d56a483ffae73627eed"
     },
     {
-      "name": "plk autoloader installer v99.0",
-      "filename": "plk-autoloader-installer_v99.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/plk-autoloader-installer_v99.0.elf",
-      "description": "Archived standalone payload: plk-autoloader-installer_v99.0.elf",
+      "name": "~plk autoloader installer v99.0",
+      "filename": "~plk-autoloader-installer_v99.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/~plk-autoloader-installer_v99.0.elf",
+      "description": "Archived standalone payload: ~plk-autoloader-installer_v99.0.elf",
       "version": "v99.0",
       "category": "~ Archived",
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
