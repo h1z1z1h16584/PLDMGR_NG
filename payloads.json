@@ -317,24 +317,6 @@
       "checksum": "4593fcbd6169b67a4dcbfda8f13b0f0485b9ac93adff19ab515957e2c1fa397b"
     },
     {
-      "name": "Etahen 2.6",
-      "filename": "404-etaHEN-2.6.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/404-etaHEN-2.6.elf",
-      "description": "Archived standalone payload: etaHEN-2.6.elf",
-      "version": "Static",
-      "category": "Archived (Legacy)",
-      "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
-    },
-    {
-      "name": "Webkit Autoloader Installer V0.4.0",
-      "filename": "404-webkit-autoloader-installer_v0.4.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/404-webkit-autoloader-installer_v0.4.0.elf",
-      "description": "Archived standalone payload: webkit-autoloader-installer_v0.4.0.elf",
-      "version": "Static",
-      "category": "Archived (Legacy)",
-      "checksum": "179d5e52ec3e0f595900b40883c0e10cc1fba1efc275a547f47e828d45d05915"
-    },
-    {
       "name": "CheatRunner [Pre-release]",
       "filename": "CheatRunner_v0.16 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/CheatRunner_v0.16 [Pre-release].elf",
@@ -432,6 +414,24 @@
       "version": "v6.8.0",
       "category": "Pre-release",
       "checksum": "a9e2aef4c83dc80f3a6704310437db9bd563b83ff9e825a67ec297646a44dadd"
+    },
+    {
+      "name": "etaHEN 2.6",
+      "filename": "404-etaHEN-2.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/404-etaHEN-2.6.elf",
+      "description": "Archived standalone payload: etaHEN-2.6.elf",
+      "version": "Static",
+      "category": "Archived (Legacy)",
+      "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "name": "webkit autoloader installer v0.4.0",
+      "filename": "404-webkit-autoloader-installer_v0.4.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/404-webkit-autoloader-installer_v0.4.0.elf",
+      "description": "Archived standalone payload: webkit-autoloader-installer_v0.4.0.elf",
+      "version": "Static",
+      "category": "Archived (Legacy)",
+      "checksum": "179d5e52ec3e0f595900b40883c0e10cc1fba1efc275a547f47e828d45d05915"
     }
   ]
 }
