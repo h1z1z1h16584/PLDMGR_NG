@@ -11,6 +11,9 @@ BROKEN_REPOS_FILE = "broken_repos.txt"
 PAYLOAD_DIR = "payloads"
 REPO_CATALOG_NAME = "Custom Payloads Archive"
 
+# Dedicated category for manual/static files
+STATIC_CATEGORY = "Archived (Legacy)"
+
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
 
 token = os.getenv("GITHUB_TOKEN")
@@ -111,10 +114,6 @@ def is_ps4_asset(filename: str) -> bool:
 
 
 def detect_category(repo_slug: str, filename: str, description: str, is_pre: bool) -> str:
-    """
-    Assigns pre-releases to their own isolated 'Pre-release' category section.
-    Otherwise, tags official releases based on purpose keywords.
-    """
     if is_pre:
         return "Pre-release"
 
@@ -177,6 +176,41 @@ def sanitize_filename(name: str) -> str:
     return re.sub(r'[<>:"/\\|?*]', '_', name)
 
 
+def scan_static_404_payloads():
+    """
+    Finds all files in payloads/ prefixed with '404-' and registers them
+    under the STATIC_CATEGORY section without checking remote releases.
+    """
+    static_entries = []
+    if not os.path.exists(PAYLOAD_DIR):
+        return static_entries
+
+    for fname in sorted(os.listdir(PAYLOAD_DIR)):
+        if fname.startswith("404-") and fname.lower().endswith(VALID_EXTENSIONS):
+            local_path = os.path.join(PAYLOAD_DIR, fname)
+            checksum = compute_sha256(local_path)
+            hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{fname}"
+
+            # Remove '404-' prefix and extension for clean UI title
+            clean_name = fname[4:]
+            base, _ = os.path.splitext(clean_name)
+            display_title = base.replace("_", " ").replace("-", " ").title()
+
+            entry = {
+                "name": display_title,
+                "filename": fname,
+                "url": hosted_url,
+                "description": f"Archived standalone payload: {clean_name}",
+                "version": "Static",
+                "category": STATIC_CATEGORY,
+                "checksum": checksum
+            }
+            static_entries.append(entry)
+            print(f"[+] Loaded static payload: {fname} -> {STATIC_CATEGORY}")
+
+    return static_entries
+
+
 def main():
     if not os.path.exists(LINKS_FILE):
         print(f"Error: {LINKS_FILE} not found.")
@@ -200,6 +234,13 @@ def main():
     broken_repos = []
     seen_filenames = set()
 
+    # 1. First, load all static '404-' prefixed payloads from payloads/ directory
+    static_payloads = scan_static_404_payloads()
+    for sp in static_payloads:
+        seen_filenames.add(sp["filename"])
+        payload_list.append(sp)
+
+    # 2. Process dynamically synced repositories
     for provider, owner, repo_name in entries:
         repo_slug = f"{owner}/{repo_name}"
         display_slug = f"{provider}:{repo_slug}"
@@ -279,6 +320,56 @@ def main():
                 seen_filenames.add(file_name)
 
                 hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{file_name}"
+                category = detect_category(repo_slug, orig_filename, desc, is_pre)
 
-                # Isolate pre-releases under the "Pre-release" category section
-                category = detect_
+                payload_entry = {
+                    "name": display_name,
+                    "filename": file_name,
+                    "url": hosted_url,
+                    "description": desc,
+                    "version": tag_name if tag_name else "v1.0",
+                    "category": category,
+                    "checksum": checksum
+                }
+                repo_payloads.append(payload_entry)
+
+        if not repo_payloads:
+            print(f"[!] No valid payload binaries found for {display_slug}")
+            if saved_fallback:
+                for fb in saved_fallback:
+                    fname = fb.get("filename")
+                    if os.path.exists(os.path.join(PAYLOAD_DIR, fname)) and fname not in seen_filenames:
+                        seen_filenames.add(fname)
+                        payload_list.append(fb)
+                broken_repos.append(f"{display_slug} - No assets in release (Preserved stored files)")
+            else:
+                broken_repos.append(f"{display_slug} - No valid binary assets")
+        else:
+            payload_list.extend(repo_payloads)
+
+    # Sort payloads: Normal categories first, then Static Archive, and Pre-releases last
+    payload_list.sort(key=lambda x: (
+        x["category"] == "Pre-release",
+        x["category"] == STATIC_CATEGORY,
+        x["category"],
+        x["name"]
+    ))
+
+    # Core Rule: "name" must appear before "payloads"
+    output_data = {
+        "name": REPO_CATALOG_NAME,
+        "payloads": payload_list
+    }
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
+
+    with open(BROKEN_REPOS_FILE, "w", encoding="utf-8") as f:
+        for b in broken_repos:
+            f.write(f"{b}\n")
+
+    print(f"\nDone: {len(payload_list)} total payload(s) indexed in {OUTPUT_FILE}.")
+
+
+if __name__ == "__main__":
+    main()
