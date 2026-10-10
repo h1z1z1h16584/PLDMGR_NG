@@ -129,12 +129,12 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v1.0.5.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/orbit_store_v1.0.5.elf",
-      "description": "Orbit Store 1.0.5 (Beta) by saawant12",
-      "version": "v1.0.5",
+      "filename": "orbit_store_v1.1.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/orbit_store_v1.1.0.elf",
+      "description": "Orbit Store 1.1.0 (Beta) by saawant12",
+      "version": "v1.1.0",
       "category": "Homebrew",
-      "checksum": "7883cf64b62252594d58e5558ea29f8de7ed3ca1d9a3182c844f23513eaf7617"
+      "checksum": "e7afcd24678828436efc3aa3d58bb88cd0165f7dc39e72fb1ae60cf64037b986"
     },
     {
       "name": "pegasus-dl",
