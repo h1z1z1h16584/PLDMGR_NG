@@ -37,7 +37,7 @@ def parse_repo_entry(line: str):
     if not line or line.startswith("#"):
         return None
 
-    # Etawen (Gitea instance)
+    # Etawen (Gitea / Forgejo instance)
     if "git.etawen.dev" in line.lower() or line.lower().startswith("etawen:"):
         cleaned = re.sub(r"^(?:https?://git\.etawen\.dev/|etawen:)", "", line, flags=re.IGNORECASE)
         cleaned = cleaned.rstrip("/").removesuffix(".git")
@@ -45,7 +45,7 @@ def parse_repo_entry(line: str):
         if len(parts) >= 2:
             return ("etawen", parts[0].strip(), parts[1].strip())
 
-    # GitHub or default owner/repo
+    # GitHub or standard owner/repo
     cleaned = re.sub(
         r"^(?:https?://github\.com/|git@github\.com:|github:)",
         "",
@@ -66,11 +66,9 @@ def fetch_target_releases(provider: str, owner: str, repo: str):
     from either GitHub or Etawen (Gitea API).
     """
     if provider == "etawen":
-        # Gitea / Forgejo API format
         url = f"https://git.etawen.dev/api/v1/repos/{owner}/{repo}/releases"
         headers = gitea_headers
     else:
-        # GitHub REST API format
         url = f"https://api.github.com/repos/{owner}/{repo}/releases"
         headers = github_headers
 
@@ -112,7 +110,14 @@ def is_ps4_asset(filename: str) -> bool:
     return "ps4" in name_lower and "ps5" not in name_lower
 
 
-def detect_category(repo_slug: str, filename: str, description: str) -> str:
+def detect_category(repo_slug: str, filename: str, description: str, is_pre: bool) -> str:
+    """
+    Assigns pre-releases to their own isolated 'Pre-release' category section.
+    Otherwise, tags official releases based on purpose keywords.
+    """
+    if is_pre:
+        return "Pre-release"
+
     search_text = f"{repo_slug} {filename} {description}".lower()
 
     if any(k in search_text for k in ["ftp", "zftpd", "dns", "web", "websrv", "http", "server", "shsrv", "network"]):
@@ -232,8 +237,6 @@ def main():
 
             for asset in assets:
                 orig_filename = asset.get("name", "")
-                
-                # Handle Gitea vs GitHub download URL property
                 download_url = asset.get("browser_download_url") or asset.get("download_url", "")
 
                 if not orig_filename.lower().endswith(VALID_EXTENSIONS):
@@ -276,47 +279,6 @@ def main():
                 seen_filenames.add(file_name)
 
                 hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{file_name}"
-                category = detect_category(repo_slug, orig_filename, desc)
 
-                payload_entry = {
-                    "name": display_name,
-                    "filename": file_name,
-                    "url": hosted_url,
-                    "description": desc,
-                    "version": tag_name if tag_name else "v1.0",
-                    "category": category,
-                    "checksum": checksum
-                }
-                repo_payloads.append(payload_entry)
-
-        if not repo_payloads:
-            print(f"[!] No valid payload binaries found for {display_slug}")
-            if saved_fallback:
-                for fb in saved_fallback:
-                    fname = fb.get("filename")
-                    if os.path.exists(os.path.join(PAYLOAD_DIR, fname)) and fname not in seen_filenames:
-                        seen_filenames.add(fname)
-                        payload_list.append(fb)
-                broken_repos.append(f"{display_slug} - No assets in release (Preserved stored files)")
-            else:
-                broken_repos.append(f"{display_slug} - No valid binary assets")
-        else:
-            payload_list.extend(repo_payloads)
-
-    output_data = {
-        "name": REPO_CATALOG_NAME,
-        "payloads": payload_list
-    }
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output_data, f, indent=2, ensure_ascii=False)
-
-    with open(BROKEN_REPOS_FILE, "w", encoding="utf-8") as f:
-        for b in broken_repos:
-            f.write(f"{b}\n")
-
-    print(f"\nDone: {len(payload_list)} stored payload(s) indexed in {OUTPUT_FILE}.")
-
-
-if __name__ == "__main__":
-    main()
+                # Isolate pre-releases under the "Pre-release" category section
+                category = detect_
