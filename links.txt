@@ -33,3 +33,5 @@ github:saawant12/orbit-store-ps5
 github:notmaj0r/ProsperoMgr
 github:NikoBellikJR31/PS5-Custom-Tool-Manager-
 github:erickdavestech/ps5-dualsense-overlay
+github:X-F1REBALL-X/HearBridge-PS5
+github:
