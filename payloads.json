@@ -111,10 +111,10 @@
     },
     {
       "name": "PS5SX2",
-      "filename": "ps5sx2-aio_vk-285-161.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5sx2-aio_vk-285-161.elf",
-      "description": "PS5SX2 2.01 by Swordpdf",
-      "version": "vk-285-161",
+      "filename": "ps5sx2-aio_vk-285-162.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5sx2-aio_vk-285-162.elf",
+      "description": "PS5SX2 2.02 by Swordpdf",
+      "version": "vk-285-162",
       "category": "Homebrew",
       "checksum": "b52c7a70c266826974314417bc059063b6e8ab0b8cc9537471f65f0e4915560d"
     },
