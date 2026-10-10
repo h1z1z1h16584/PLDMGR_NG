@@ -15,6 +15,9 @@ REPO_CATALOG_NAME = "Custom Payloads Archive"
 STATIC_CATEGORY = "~ Archived"
 PRE_RELEASE_CATEGORY = "Pre-release"
 
+# Pinning version to v99.0 prevents the updater from flagging new versions
+ARCHIVED_VERSION = "v99.0"
+
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
 
 token = os.getenv("GITHUB_TOKEN")
@@ -36,7 +39,6 @@ def parse_repo_entry(line: str):
     if not line or line.startswith("#"):
         return None
 
-    # Etawen (Gitea / Forgejo instance)
     if "git.etawen.dev" in line.lower() or line.lower().startswith("etawen:"):
         cleaned = re.sub(r"^(?:https?://git\.etawen\.dev/|etawen:)", "", line, flags=re.IGNORECASE)
         cleaned = cleaned.rstrip("/").removesuffix(".git")
@@ -44,7 +46,6 @@ def parse_repo_entry(line: str):
         if len(parts) >= 2:
             return ("etawen", parts[0].strip(), parts[1].strip())
 
-    # GitHub or standard owner/repo
     cleaned = re.sub(
         r"^(?:https?://github\.com/|git@github\.com:|github:)",
         "",
@@ -170,11 +171,10 @@ def sanitize_filename(name: str) -> str:
 
 def scan_static_archived_payloads():
     """
-    Scans the static/archived directory (e.g. payloads/~ Archived/ or payloads/static/)
-    for manual, unmanaged binaries.
+    Scans the static/archived directory for manual binaries,
+    assigning them ARCHIVED_VERSION (v99.0) so they can never be updated.
     """
     static_entries = []
-    # Check both possible directory names
     possible_dirs = [
         os.path.join(BASE_PAYLOAD_DIR, STATIC_CATEGORY),
         os.path.join(BASE_PAYLOAD_DIR, "Archived"),
@@ -209,12 +209,12 @@ def scan_static_archived_payloads():
                 "filename": fname,
                 "url": hosted_url,
                 "description": f"Archived standalone payload: {fname}",
-                "version": "Static",
+                "version": ARCHIVED_VERSION,
                 "category": STATIC_CATEGORY,
                 "checksum": checksum
             }
-            static_entries.append((local_path, entry))
-            print(f"[+] Loaded archived payload: {fname} -> {STATIC_CATEGORY}")
+            static_entries.append(entry)
+            print(f"[+] Loaded archived payload: {fname} (v={ARCHIVED_VERSION}) -> {STATIC_CATEGORY}")
 
     return static_entries
 
@@ -243,7 +243,6 @@ def main():
     broken_repos = []
     seen_filenames = set()
 
-    # 1. Process dynamic remote repositories
     for provider, owner, repo_name in entries:
         repo_slug = f"{owner}/{repo_name}"
         display_slug = f"{provider}:{repo_slug}"
@@ -265,7 +264,6 @@ def main():
                     fname = fb.get("filename")
                     cat = fb.get("category", "Homebrew")
                     expected_path = os.path.join(BASE_PAYLOAD_DIR, cat, fname)
-                    # Check in category folder or root payloads folder
                     if (os.path.exists(expected_path) or os.path.exists(os.path.join(BASE_PAYLOAD_DIR, fname))) and fname not in seen_filenames:
                         seen_filenames.add(fname)
                         payload_list.append(fb)
@@ -312,15 +310,11 @@ def main():
                 if file_name in seen_filenames:
                     continue
 
-                # Categorize first to determine target subfolder
                 category = detect_category(repo_slug, orig_filename, desc, is_pre)
-
-                # Dedicated folder per category: payloads/<Category>/
                 category_dir = os.path.join(BASE_PAYLOAD_DIR, category)
                 os.makedirs(category_dir, exist_ok=True)
                 local_dest = os.path.join(category_dir, file_name)
 
-                # Download file into its category folder
                 if not os.path.exists(local_dest):
                     print(f"[+] Downloading: {orig_filename} -> {local_dest}")
                     success = download_binary(download_url, local_dest)
@@ -332,7 +326,6 @@ def main():
                 checksum = compute_sha256(local_dest)
                 seen_filenames.add(file_name)
 
-                # URL encoding for both category folder and file name
                 encoded_category = quote(category)
                 encoded_filename = quote(file_name)
                 hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{BASE_PAYLOAD_DIR}/{encoded_category}/{encoded_filename}"
@@ -364,17 +357,14 @@ def main():
         else:
             payload_list.extend(repo_payloads)
 
-    # 2. Add static archived payloads from the archived folder
+    # 2. Add static payloads locked to v99.0
     static_payloads = scan_static_archived_payloads()
-    for _, sp_data in static_payloads:
-        if sp_data["filename"] not in seen_filenames:
-            seen_filenames.add(sp_data["filename"])
-            payload_list.append(sp_data)
+    for sp in static_payloads:
+        if sp["filename"] not in seen_filenames:
+            seen_filenames.add(sp["filename"])
+            payload_list.append(sp)
 
-    # 3. Sort ordering:
-    # 0 -> Standard Categories (Alphabetical)
-    # 1 -> Pre-releases
-    # 2 -> ~ Archived (Bottom of list)
+    # 3. Sort ordering (Active categories first, Pre-release, ~ Archived last)
     def category_sort_rank(item):
         cat = item.get("category", "")
         if cat == STATIC_CATEGORY:
@@ -385,7 +375,6 @@ def main():
 
     payload_list.sort(key=category_sort_rank)
 
-    # Core Rule: "name" must appear before "payloads"
     output_data = {
         "name": REPO_CATALOG_NAME,
         "payloads": payload_list
@@ -398,7 +387,7 @@ def main():
         for b in broken_repos:
             f.write(f"{b}\n")
 
-    print(f"\nDone: {len(payload_list)} total payload(s) stored across category directories.")
+    print(f"\nDone: {len(payload_list)} payloads indexed. Archived payloads locked to {ARCHIVED_VERSION}.")
 
 
 if __name__ == "__main__":
