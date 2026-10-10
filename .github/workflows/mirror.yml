@@ -1,13 +1,8 @@
 name: Mirror and Store Payloads
 
 on:
-  schedule:
-    # Set to run at minute 23 of every hour to avoid runner congestion
-    - cron: '23 * * * *'
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  # The external cron or manual dispatch handles runs; removed "push" to keep it static
 
 permissions:
   contents: write
@@ -41,4 +36,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add payloads/ payloads.json broken_repos.txt
+          # [skip ci] prevents GitHub Pages and CI pipelines from triggering an update build
           git diff --quiet && git diff --staged --quiet || (git commit -m "Mirror payloads and update catalog [skip ci]" && git push)
