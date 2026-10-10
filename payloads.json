@@ -3,12 +3,12 @@
   "payloads": [
     {
       "name": "CheatRunner",
-      "filename": "CheatRunner_v0.17.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Cheats/CheatRunner_v0.17.2.elf",
-      "description": "v0.17.2 by notmaj0r",
-      "version": "v0.17.2",
+      "filename": "CheatRunner_v0.18.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Cheats/CheatRunner_v0.18.elf",
+      "description": "v0.18 by notmaj0r",
+      "version": "v0.18",
       "category": "Cheats",
-      "checksum": "36ad03e236e6603aaaf05d95ed3399c7b54475a9bceba085cbe02899bc88ae0f"
+      "checksum": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140"
     },
     {
       "name": "AnyPad-PS5-English",
@@ -309,12 +309,12 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.8.1_v6.8.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5upload-6.8.1_v6.8.1.elf",
-      "description": "v6.8.1 by phantomptr",
-      "version": "v6.8.1",
+      "filename": "ps5upload-6.8.2_v6.8.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5upload-6.8.2_v6.8.2.elf",
+      "description": "v6.8.2 by phantomptr",
+      "version": "v6.8.2",
       "category": "System Utilities",
-      "checksum": "4593fcbd6169b67a4dcbfda8f13b0f0485b9ac93adff19ab515957e2c1fa397b"
+      "checksum": "e9cb922ea48f3e8007aefd2862c2d41dd522eea11a92c846b136333ab37e9e0d"
     },
     {
       "name": "CheatRunner [Pre-release]",
@@ -408,12 +408,12 @@
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-6.8.2_v6.8.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-6.8.2_v6.8.2%20%5BPre-release%5D.elf",
-      "description": "v6.8.2 [Pre-release] by phantomptr",
-      "version": "v6.8.2",
+      "filename": "ps5upload-6.8.0_v6.8.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-6.8.0_v6.8.0%20%5BPre-release%5D.elf",
+      "description": "v6.8.0 [Pre-release] by phantomptr",
+      "version": "v6.8.0",
       "category": "Pre-release",
-      "checksum": "e9cb922ea48f3e8007aefd2862c2d41dd522eea11a92c846b136333ab37e9e0d"
+      "checksum": "a9e2aef4c83dc80f3a6704310437db9bd563b83ff9e825a67ec297646a44dadd"
     },
     {
       "name": "etaHEN 99.0",
