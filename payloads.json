@@ -57,12 +57,12 @@
     },
     {
       "name": "pegasus-dl",
-      "filename": "pegasus_dl_v1.10.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pegasus_dl_v1.10.1.elf",
-      "description": "Pegasus DL 1.10.1 by pegasus-ps5",
-      "version": "v1.10.1",
+      "filename": "pegasus_dl_v1.11.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pegasus_dl_v1.11.0.elf",
+      "description": "Pegasus DL 1.11.0 by pegasus-ps5",
+      "version": "v1.11.0",
       "category": "Homebrew",
-      "checksum": "b24fdc62fc6cad14684b214a9c5be6c1221585afbf9493e387ab90f9dee21138"
+      "checksum": "32b69c2089bb545abfabd04d5827444698f9c4f1bc4915d72247cb781e8c23d9"
     },
     {
       "name": "PoorDS4",
@@ -318,21 +318,21 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-6.7.1_v6.7.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.7.1_v6.7.1.elf",
-      "description": "v6.7.1 by phantomptr",
-      "version": "v6.7.1",
-      "category": "System Utilities",
-      "checksum": "731ce3a827d13bb3a577722c13c9b8ffc7fead9b290144fbcae7db7fc8d08d35"
-    },
-    {
-      "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-6.7.3_v6.7.3 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.7.3_v6.7.3 [Pre-release].elf",
-      "description": "v6.7.3 [Pre-release] by phantomptr",
+      "filename": "ps5upload-6.7.3_v6.7.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.7.3_v6.7.3.elf",
+      "description": "v6.7.3 by phantomptr",
       "version": "v6.7.3",
       "category": "System Utilities",
       "checksum": "468740692643ecef083da7d761169c09accec4f43b199a64df9c394ecd6b5df3"
+    },
+    {
+      "name": "ps5upload [Pre-release]",
+      "filename": "ps5upload-6.7.2_v6.7.2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.7.2_v6.7.2 [Pre-release].elf",
+      "description": "v6.7.2 [Pre-release] by phantomptr",
+      "version": "v6.7.2",
+      "category": "System Utilities",
+      "checksum": "4c374114a0dcba6e71029220f2112e275719bc1d48c52bab711ed129cee0c1d3"
     },
     {
       "name": "ps5-linux-loader",
