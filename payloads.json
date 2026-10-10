@@ -4,7 +4,7 @@
     {
       "name": "CheatRunner",
       "filename": "CheatRunner_v0.17.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/CheatRunner_v0.17.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Cheats/CheatRunner_v0.17.2.elf",
       "description": "v0.17.2 by notmaj0r",
       "version": "v0.17.2",
       "category": "Cheats",
@@ -13,7 +13,7 @@
     {
       "name": "AnyPad-PS5-English",
       "filename": "AnyPad-PS5-0.5.5-beta.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/AnyPad-PS5-0.5.5-beta.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Controllers%20%26%20Input/AnyPad-PS5-0.5.5-beta.elf",
       "description": "0.5.5-beta by Mohammad-Aghayan",
       "version": "AnyPad",
       "category": "Controllers & Input",
@@ -22,7 +22,7 @@
     {
       "name": "PoorDS4",
       "filename": "PoorDS4-status_v0.1.0-rc51.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PoorDS4-status_v0.1.0-rc51.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Controllers%20%26%20Input/PoorDS4-status_v0.1.0-rc51.elf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
       "version": "v0.1.0-rc51",
       "category": "Controllers & Input",
@@ -31,7 +31,7 @@
     {
       "name": "PoorDS4",
       "filename": "PoorDS4-stop_v0.1.0-rc51.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PoorDS4-stop_v0.1.0-rc51.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Controllers%20%26%20Input/PoorDS4-stop_v0.1.0-rc51.elf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
       "version": "v0.1.0-rc51",
       "category": "Controllers & Input",
@@ -40,7 +40,7 @@
     {
       "name": "PoorDS4",
       "filename": "PoorDS4rc51_v0.1.0-rc51.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PoorDS4rc51_v0.1.0-rc51.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Controllers%20%26%20Input/PoorDS4rc51_v0.1.0-rc51.elf",
       "description": "PoorDS4 v0.1.0-rc51 by ItsBlurf",
       "version": "v0.1.0-rc51",
       "category": "Controllers & Input",
@@ -49,7 +49,7 @@
     {
       "name": "ps5-dualsense-overlay",
       "filename": "ps5-dualsense-overlay-v1.0.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5-dualsense-overlay-v1.0.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Controllers%20%26%20Input/ps5-dualsense-overlay-v1.0.1.elf",
       "description": "ps5-dualsense-overlay v1.0.1 by erickdavestech",
       "version": "v1.0.1",
       "category": "Controllers & Input",
@@ -58,7 +58,7 @@
     {
       "name": "PS5-Game-Compressor",
       "filename": "game-compressor_v1.0.4.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/game-compressor_v1.0.4.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/game-compressor_v1.0.4.elf",
       "description": "Game Compressor 1.0.4 by juma-sayeh",
       "version": "v1.0.4",
       "category": "Dumping & Backups",
@@ -67,7 +67,7 @@
     {
       "name": "garlic-savemgr",
       "filename": "garlic-savemgr_v1.13.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/garlic-savemgr_v1.13.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/garlic-savemgr_v1.13.1.elf",
       "description": "v1.13.1 by earthonion",
       "version": "v1.13.1",
       "category": "Dumping & Backups",
@@ -76,7 +76,7 @@
     {
       "name": "ps5-app-dumper",
       "filename": "ps5-app-dumper_v2.10.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5-app-dumper_v2.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/ps5-app-dumper_v2.10.elf",
       "description": "PS5 App Dumper 2.00 Beta PS5 App Dumper 2.10 Beta by EchoStretch",
       "version": "v2.10",
       "category": "Dumping & Backups",
@@ -85,7 +85,7 @@
     {
       "name": "unrar-ps5",
       "filename": "unrar_ps5_v1.4.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/unrar_ps5_v1.4.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/unrar_ps5_v1.4.0.elf",
       "description": "v1.4.0 by bizkut",
       "version": "v1.4.0",
       "category": "Dumping & Backups",
@@ -94,7 +94,7 @@
     {
       "name": "HearBridge-PS5",
       "filename": "HearBridge-PS5-1.3.0_v1.3.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/HearBridge-PS5-1.3.0_v1.3.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-PS5-1.3.0_v1.3.0.elf",
       "description": "HearBridge PS5 1.3.0 by X-F1REBALL-X",
       "version": "v1.3.0",
       "category": "Homebrew",
@@ -103,7 +103,7 @@
     {
       "name": "PS-Play",
       "filename": "PSPlay-2.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PSPlay-2.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/PSPlay-2.1.elf",
       "description": "2.1 by MounirHero",
       "version": "2.1",
       "category": "Homebrew",
@@ -112,7 +112,7 @@
     {
       "name": "PS5SX2",
       "filename": "ps5sx2-aio_vk-285-161.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5sx2-aio_vk-285-161.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5sx2-aio_vk-285-161.elf",
       "description": "PS5SX2 2.01 by Swordpdf",
       "version": "vk-285-161",
       "category": "Homebrew",
@@ -121,7 +121,7 @@
     {
       "name": "apr-emu-updater",
       "filename": "apr_emu_updater_v2.0.6.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/apr_emu_updater_v2.0.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/apr_emu_updater_v2.0.6.elf",
       "description": "v2.0.6 by tsuramatsu1",
       "version": "v2.0.6",
       "category": "Homebrew",
@@ -130,7 +130,7 @@
     {
       "name": "orbit-store-ps5",
       "filename": "orbit_store_v1.0.5.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/orbit_store_v1.0.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/orbit_store_v1.0.5.elf",
       "description": "Orbit Store 1.0.5 (Beta) by saawant12",
       "version": "v1.0.5",
       "category": "Homebrew",
@@ -139,7 +139,7 @@
     {
       "name": "pegasus-dl",
       "filename": "pegasus_dl_v1.11.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pegasus_dl_v1.11.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/pegasus_dl_v1.11.0.elf",
       "description": "Pegasus DL 1.11.0 by pegasus-ps5",
       "version": "v1.11.0",
       "category": "Homebrew",
@@ -148,7 +148,7 @@
     {
       "name": "ps5-linux-loader",
       "filename": "ps5-linux-loader_v2.5.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5-linux-loader_v2.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader_v2.5.elf",
       "description": "v2.5 by ps5-linux",
       "version": "v2.5",
       "category": "Homebrew",
@@ -157,7 +157,7 @@
     {
       "name": "PIZZA-HEN",
       "filename": "PIZZA-HEN-v2.00.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PIZZA-HEN-v2.00.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/PIZZA-HEN-v2.00.elf",
       "description": "PIZZA HEN v2.00 - Complete I18N Final Gate by Michele-M-Media",
       "version": "v2.00",
       "category": "Kernel & Exploitation",
@@ -166,7 +166,7 @@
     {
       "name": "elfldr",
       "filename": "elfldr-ps5_v0.26.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/elfldr-ps5_v0.26.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/elfldr-ps5_v0.26.elf",
       "description": "v0.26 by ps5-payload-dev",
       "version": "v0.26",
       "category": "Kernel & Exploitation",
@@ -175,7 +175,7 @@
     {
       "name": "etaHEN",
       "filename": "etaHEN-2.5B.bin",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/etaHEN-2.5B.bin",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/etaHEN-2.5B.bin",
       "description": "etaHEN Update 2.5B by etaHEN",
       "version": "2.5B",
       "category": "Kernel & Exploitation",
@@ -184,7 +184,7 @@
     {
       "name": "kstuff-lite",
       "filename": "kstuff_v1.11.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/kstuff_v1.11.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/kstuff_v1.11.elf",
       "description": "Kstuff Lite 1.11 Beta by EchoStretch",
       "version": "v1.11",
       "category": "Kernel & Exploitation",
@@ -193,7 +193,7 @@
     {
       "name": "onionHEN",
       "filename": "OnionHEN_v0.0.13.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/OnionHEN_v0.0.13.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/OnionHEN_v0.0.13.elf",
       "description": "OnionHEN v0.0.13 by aydencharles",
       "version": "v0.0.13",
       "category": "Kernel & Exploitation",
@@ -202,7 +202,7 @@
     {
       "name": "ps5debug-NG",
       "filename": "ps5debug-NG_v1.3.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5debug-NG_v1.3.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/ps5debug-NG_v1.3.2.elf",
       "description": "ps5debug-NG v1.3.2 by Pharaoh2k",
       "version": "1.3.2",
       "category": "Kernel & Exploitation",
@@ -211,7 +211,7 @@
     {
       "name": "ftpsrv",
       "filename": "ftpsrv-ps5_1.16-ng-stable.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5_1.16-ng-stable.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking/ftpsrv-ps5_1.16-ng-stable.elf",
       "description": "ftpsrv 1.16-ng (stable) by drakmor",
       "version": "1.16-ng-stable",
       "category": "Networking",
@@ -220,7 +220,7 @@
     {
       "name": "nanoDNS",
       "filename": "nanodns_0.4.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/nanodns_0.4.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking/nanodns_0.4.elf",
       "description": "nanoDNS 0.4 by drakmor",
       "version": "0.4",
       "category": "Networking",
@@ -229,7 +229,7 @@
     {
       "name": "ps5-web-file-manager",
       "filename": "web-file-mgr-v1.10.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/web-file-mgr-v1.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking/web-file-mgr-v1.10.elf",
       "description": "Added samba support & Other improvements by owendswang",
       "version": "v1.10",
       "category": "Networking",
@@ -238,16 +238,16 @@
     {
       "name": "ps5-web-file-manager",
       "filename": "wfm-7zip-helper_v1.10.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/wfm-7zip-helper_v1.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking/wfm-7zip-helper_v1.10.elf",
       "description": "Added samba support & Other improvements by owendswang",
       "version": "v1.10",
       "category": "Networking",
-      "checksum": "dc28dfd499a97e389c5dbb6c1915404764d5a8f8d35869d2a7a9f5c98c2bc7ff"
+      "checksum": "dd8bbae4cd44ed20c4cbafc74fdc3271f52b9d7888a0d4f4038a8ae05feb92a4"
     },
     {
       "name": "ps5-webkit-autoloader",
       "filename": "webkit-autoloader-installer_v0.6.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.6.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking/webkit-autoloader-installer_v0.6.1.elf",
       "description": "v0.6.1 by itsPLK",
       "version": "v0.6.1",
       "category": "Networking",
@@ -256,7 +256,7 @@
     {
       "name": "PS5-Custom-Tool-Manager-",
       "filename": "PS5.Custom.Tool.Manager.V1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/PS5.Custom.Tool.Manager.V1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/PS5.Custom.Tool.Manager.V1.elf",
       "description": "PS5 Custom Tool by NikoBellikJR31",
       "version": "Custom",
       "category": "System Utilities",
@@ -265,7 +265,7 @@
     {
       "name": "ProsperoMgr",
       "filename": "ProsperoMgr_v1.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ProsperoMgr_v1.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ProsperoMgr_v1.1.elf",
       "description": "v1.1 by notmaj0r",
       "version": "v1.1",
       "category": "System Utilities",
@@ -274,7 +274,7 @@
     {
       "name": "ShadowMountPlus",
       "filename": "shadowmountplus_1.7beta5.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/shadowmountplus_1.7beta5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/shadowmountplus_1.7beta5.elf",
       "description": "ShadowMountPlus 1.7beta5 by drakmor",
       "version": "1.7beta5",
       "category": "System Utilities",
@@ -283,7 +283,7 @@
     {
       "name": "ps5-date-time-sync",
       "filename": "ps5-date-time-sync_v1.0.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5-date-time-sync_v1.0.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5-date-time-sync_v1.0.0.elf",
       "description": "PS5 Time & Date Sync v1.0.0 by kerrdec97",
       "version": "v1.0.0",
       "category": "System Utilities",
@@ -292,7 +292,7 @@
     {
       "name": "ps5-payload-manager",
       "filename": "pldmgr_v0.5.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pldmgr_v0.5.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pldmgr_v0.5.2.elf",
       "description": "v0.5.2 by itsPLK",
       "version": "v0.5.2",
       "category": "System Utilities",
@@ -301,7 +301,7 @@
     {
       "name": "ps5-pkg-manager",
       "filename": "pkg-manager_v1.5.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pkg-manager_v1.5.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pkg-manager_v1.5.1.elf",
       "description": "v1.5.1 by itsPLK",
       "version": "v1.5.1",
       "category": "System Utilities",
@@ -310,7 +310,7 @@
     {
       "name": "ps5upload",
       "filename": "ps5upload-6.8.1_v6.8.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.8.1_v6.8.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5upload-6.8.1_v6.8.1.elf",
       "description": "v6.8.1 by phantomptr",
       "version": "v6.8.1",
       "category": "System Utilities",
@@ -319,7 +319,7 @@
     {
       "name": "CheatRunner [Pre-release]",
       "filename": "CheatRunner_v0.16 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/CheatRunner_v0.16%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/CheatRunner_v0.16%20%5BPre-release%5D.elf",
       "description": "v0.16 [Pre-release] by notmaj0r",
       "version": "v0.16",
       "category": "Pre-release",
@@ -328,7 +328,7 @@
     {
       "name": "HearBridge-PS5 [Pre-release]",
       "filename": "HearBridge-PS5-1.1.0-mtk-test_v1.1.0-mtk-test [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/HearBridge-PS5-1.1.0-mtk-test_v1.1.0-mtk-test%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/HearBridge-PS5-1.1.0-mtk-test_v1.1.0-mtk-test%20%5BPre-release%5D.elf",
       "description": "HearBridge PS5 1.1.0 mediatek test [Pre-release] by X-F1REBALL-X",
       "version": "v1.1.0-mtk-test",
       "category": "Pre-release",
@@ -337,7 +337,7 @@
     {
       "name": "ProsperoMgr [Pre-release]",
       "filename": "ProsperoMgr_beta [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ProsperoMgr_beta%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ProsperoMgr_beta%20%5BPre-release%5D.elf",
       "description": "BETA - Prospero Manager [Pre-release] by notmaj0r",
       "version": "beta",
       "category": "Pre-release",
@@ -346,7 +346,7 @@
     {
       "name": "ShadowMountPlus [Pre-release]",
       "filename": "shadowmountplus_1.7beta4 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/shadowmountplus_1.7beta4%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta4%20%5BPre-release%5D.elf",
       "description": "ShadowMountPlus 1.7beta4 [Pre-release] by drakmor",
       "version": "1.7beta4",
       "category": "Pre-release",
@@ -355,7 +355,7 @@
     {
       "name": "etaHEN [Pre-release]",
       "filename": "etaHEN_2.0b-pre [Pre-release].bin",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/etaHEN_2.0b-pre%20%5BPre-release%5D.bin",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/etaHEN_2.0b-pre%20%5BPre-release%5D.bin",
       "description": "etaHEN 2.0b PRE-RELEASE [Pre-release] by etaHEN",
       "version": "2.0b-pre",
       "category": "Pre-release",
@@ -364,7 +364,7 @@
     {
       "name": "ftpsrv [Pre-release]",
       "filename": "ftpsrv-ps5-autopause_1.6-ng-test2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5-autopause_1.6-ng-test2%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ftpsrv-ps5-autopause_1.6-ng-test2%20%5BPre-release%5D.elf",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "version": "1.6-ng-test2",
       "category": "Pre-release",
@@ -373,7 +373,7 @@
     {
       "name": "ftpsrv [Pre-release]",
       "filename": "ftpsrv-ps5_1.6-ng-test2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ftpsrv-ps5_1.6-ng-test2%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ftpsrv-ps5_1.6-ng-test2%20%5BPre-release%5D.elf",
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "version": "1.6-ng-test2",
       "category": "Pre-release",
@@ -382,7 +382,7 @@
     {
       "name": "onionHEN [Pre-release]",
       "filename": "OnionHEN_v0.9.0-beta2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/OnionHEN_v0.9.0-beta2%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/OnionHEN_v0.9.0-beta2%20%5BPre-release%5D.elf",
       "description": "OnionHEN v0.9.0-beta2 [Pre-release] by aydencharles",
       "version": "v0.9.0-beta2",
       "category": "Pre-release",
@@ -391,7 +391,7 @@
     {
       "name": "ps5-pkg-manager [Pre-release]",
       "filename": "pkgmgr_v1.2.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/pkgmgr_v1.2.1%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/pkgmgr_v1.2.1%20%5BPre-release%5D.elf",
       "description": "v1.2.1 [Pre-release] by itsPLK",
       "version": "v1.2.1",
       "category": "Pre-release",
@@ -400,7 +400,7 @@
     {
       "name": "ps5-webkit-autoloader [Pre-release]",
       "filename": "webkit-autoloader-installer_v0.6.0-pre-4488577 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/webkit-autoloader-installer_v0.6.0-pre-4488577%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/webkit-autoloader-installer_v0.6.0-pre-4488577%20%5BPre-release%5D.elf",
       "description": "v0.6.0-pre-4488577 (pre-release) [Pre-release] by itsPLK",
       "version": "v0.6.0-pre-4488577",
       "category": "Pre-release",
@@ -409,29 +409,11 @@
     {
       "name": "ps5upload [Pre-release]",
       "filename": "ps5upload-6.8.0_v6.8.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/ps5upload-6.8.0_v6.8.0%20%5BPre-release%5D.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-6.8.0_v6.8.0%20%5BPre-release%5D.elf",
       "description": "v6.8.0 [Pre-release] by phantomptr",
       "version": "v6.8.0",
       "category": "Pre-release",
       "checksum": "a9e2aef4c83dc80f3a6704310437db9bd563b83ff9e825a67ec297646a44dadd"
-    },
-    {
-      "name": "etaHEN 2.6",
-      "filename": "404-etaHEN-2.6.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/404-etaHEN-2.6.elf",
-      "description": "Archived standalone payload: etaHEN-2.6.elf",
-      "version": "Static",
-      "category": "~ Archived (Legacy)",
-      "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
-    },
-    {
-      "name": "webkit autoloader installer v0.4.0",
-      "filename": "404-webkit-autoloader-installer_v0.4.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/404-webkit-autoloader-installer_v0.4.0.elf",
-      "description": "Archived standalone payload: webkit-autoloader-installer_v0.4.0.elf",
-      "version": "Static",
-      "category": "~ Archived (Legacy)",
-      "checksum": "179d5e52ec3e0f595900b40883c0e10cc1fba1efc275a547f47e828d45d05915"
     }
   ]
 }
