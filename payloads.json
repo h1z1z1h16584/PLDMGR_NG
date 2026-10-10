@@ -408,12 +408,30 @@
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-6.8.0_v6.8.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-6.8.0_v6.8.0%20%5BPre-release%5D.elf",
-      "description": "v6.8.0 [Pre-release] by phantomptr",
-      "version": "v6.8.0",
+      "filename": "ps5upload-6.8.2_v6.8.2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-6.8.2_v6.8.2%20%5BPre-release%5D.elf",
+      "description": "v6.8.2 [Pre-release] by phantomptr",
+      "version": "v6.8.2",
       "category": "Pre-release",
-      "checksum": "a9e2aef4c83dc80f3a6704310437db9bd563b83ff9e825a67ec297646a44dadd"
+      "checksum": "e9cb922ea48f3e8007aefd2862c2d41dd522eea11a92c846b136333ab37e9e0d"
+    },
+    {
+      "name": "etaHEN 2.6",
+      "filename": "etaHEN-2.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/etaHEN-2.6.elf",
+      "description": "Archived standalone payload: etaHEN-2.6.elf",
+      "version": "Static",
+      "category": "~ Archived",
+      "checksum": "329a1289e74a83033bc5d624697c7e832133523d439e53186176e5b1ff04f157"
+    },
+    {
+      "name": "webkit autoloader installer v0.4.0",
+      "filename": "webkit-autoloader-installer_v0.4.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/webkit-autoloader-installer_v0.4.0.elf",
+      "description": "Archived standalone payload: webkit-autoloader-installer_v0.4.0.elf",
+      "version": "Static",
+      "category": "~ Archived",
+      "checksum": "179d5e52ec3e0f595900b40883c0e10cc1fba1efc275a547f47e828d45d05915"
     }
   ]
 }
