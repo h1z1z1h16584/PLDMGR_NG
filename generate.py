@@ -3,6 +3,7 @@ import json
 import os
 import re
 import sys
+from urllib.parse import quote
 import requests
 
 LINKS_FILE = "links.txt"
@@ -11,8 +12,8 @@ BROKEN_REPOS_FILE = "broken_repos.txt"
 PAYLOAD_DIR = "payloads"
 REPO_CATALOG_NAME = "Custom Payloads Archive"
 
-# Dedicated category for manual/static files
-STATIC_CATEGORY = "Archived (Legacy)"
+# Using '~ ' ensures ASCII sorting pushes this category after 'Z'
+STATIC_CATEGORY = "~ Archived (Legacy)"
 
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
 
@@ -170,20 +171,22 @@ def sanitize_filename(name: str) -> str:
 def scan_static_404_payloads():
     """
     Finds all files in payloads/ starting with '404-' or '404 ' and registers
-    them without checking remote releases.
+    them under the bottom-placed STATIC_CATEGORY without checking remote releases.
     """
     static_entries = []
     if not os.path.exists(PAYLOAD_DIR):
         return static_entries
 
     for fname in sorted(os.listdir(PAYLOAD_DIR)):
-        # Match '404-', '404_', or '404 '
         if re.match(r"^404[-_\s]", fname, re.IGNORECASE) and fname.lower().endswith(VALID_EXTENSIONS):
             local_path = os.path.join(PAYLOAD_DIR, fname)
             checksum = compute_sha256(local_path)
-            hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{fname}"
+            
+            # URL-encode the filename for safe downloading by PS5
+            encoded_fname = quote(fname)
+            hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{encoded_fname}"
 
-            # Strip the 404 prefix cleanly
+            # Strip the 404 prefix cleanly for title display
             clean_name = re.sub(r"^404[-_\s]+", "", fname, flags=re.IGNORECASE)
             base, _ = os.path.splitext(clean_name)
             display_title = base.replace("_", " ").replace("-", " ")
@@ -226,7 +229,7 @@ def main():
     broken_repos = []
     seen_filenames = set()
 
-    # 1. Process active repositories FIRST so standard categories lead the tabs
+    # 1. Process active repositories
     for provider, owner, repo_name in entries:
         repo_slug = f"{owner}/{repo_name}"
         display_slug = f"{provider}:{repo_slug}"
@@ -305,7 +308,9 @@ def main():
                 checksum = compute_sha256(local_dest)
                 seen_filenames.add(file_name)
 
-                hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{file_name}"
+                # Fix: URL encode spaces and brackets so HTTP clients on PS5 don't fail
+                encoded_filename = quote(file_name)
+                hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{PAYLOAD_DIR}/{encoded_filename}"
                 category = detect_category(repo_slug, orig_filename, desc, is_pre)
 
                 payload_entry = {
@@ -333,7 +338,7 @@ def main():
         else:
             payload_list.extend(repo_payloads)
 
-    # 2. Append the static 404 payloads AFTER all regular payloads
+    # 2. Append static 404 payloads
     static_payloads = scan_static_404_payloads()
     for sp in static_payloads:
         if sp["filename"] not in seen_filenames:
@@ -341,9 +346,9 @@ def main():
             payload_list.append(sp)
 
     # 3. Sort ordering:
-    # Priority 0: Active payload categories (sorted alphabetically)
-    # Priority 1: Pre-releases
-    # Priority 2: Static/Archived (Legacy) payloads placed dead last
+    # Rank 0: Regular functional categories (A-Z)
+    # Rank 1: Pre-releases
+    # Rank 2: Archived/Static placed at the very end
     def category_sort_rank(item):
         cat = item.get("category", "")
         if cat == STATIC_CATEGORY:
@@ -354,7 +359,6 @@ def main():
 
     payload_list.sort(key=category_sort_rank)
 
-    # Core Rule: "name" must appear before "payloads"
     output_data = {
         "name": REPO_CATALOG_NAME,
         "payloads": payload_list
