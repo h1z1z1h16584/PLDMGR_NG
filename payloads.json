@@ -147,12 +147,12 @@
     },
     {
       "name": "orbit-store-ps5",
-      "filename": "orbit_store_v1.1.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/orbit_store_v1.1.0.elf",
-      "description": "Orbit Store 1.1.0 (Beta) by saawant12",
-      "version": "v1.1.0",
+      "filename": "orbit_store_v1.2.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/orbit_store_v1.2.0.elf",
+      "description": "Orbit Store 1.2.0 (Beta) by saawant12",
+      "version": "v1.2.0",
       "category": "Homebrew",
-      "checksum": "e7afcd24678828436efc3aa3d58bb88cd0165f7dc39e72fb1ae60cf64037b986"
+      "checksum": "86778d4fa830b1ff46379d167568c32294764cb05bc06ce6b05edc9db2a91691"
     },
     {
       "name": "pegasus-dl",
@@ -327,12 +327,12 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-7.0.8_v7.0.8.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5upload-7.0.8_v7.0.8.elf",
-      "description": "v7.0.8 by phantomptr",
-      "version": "v7.0.8",
+      "filename": "ps5upload-7.0.10_v7.0.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5upload-7.0.10_v7.0.10.elf",
+      "description": "v7.0.10 by phantomptr",
+      "version": "v7.0.10",
       "category": "System Utilities",
-      "checksum": "085d27825a78bb2066c334506791e2a85e12240c0710db1e649e4bf15f8f4aa4"
+      "checksum": "265cb3d2ed90a29a721a137b6877e680007c7f6041dfe324822c5b260eadc67f"
     },
     {
       "name": "CheatRunner [Pre-release]",
@@ -426,12 +426,12 @@
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.0.10_v7.0.10 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.10_v7.0.10%20%5BPre-release%5D.elf",
-      "description": "v7.0.10 [Pre-release] by phantomptr",
-      "version": "v7.0.10",
+      "filename": "ps5upload-7.0.5_v7.0.5 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.5_v7.0.5%20%5BPre-release%5D.elf",
+      "description": "v7.0.5 [Pre-release] by phantomptr",
+      "version": "v7.0.5",
       "category": "Pre-release",
-      "checksum": "265cb3d2ed90a29a721a137b6877e680007c7f6041dfe324822c5b260eadc67f"
+      "checksum": "c51494fa09fc33a363dc63315ae4302ccdc3dfcfc979caed41d54044844ce99e"
     },
     {
       "name": "etaHEN 99.0",
