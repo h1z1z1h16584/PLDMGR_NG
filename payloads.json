@@ -137,6 +137,15 @@
       "checksum": "4f04464283a6a551883e40e36b59134ecad0e38ecbb7ea89cbec3f91a3bd9122"
     },
     {
+      "name": "librespot-ps5",
+      "filename": "librespot-ps5_v0.1.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/librespot-ps5_v0.1.0.elf",
+      "description": "librespot-ps5 v0.1.0 by stupiditytries",
+      "version": "v0.1.0",
+      "category": "Homebrew",
+      "checksum": "37d571ac23ddb58648a44665f90a5939d06cdda0b71cc77e9d6a5358bb6e1957"
+    },
+    {
       "name": "orbit-store-ps5",
       "filename": "orbit_store_v1.1.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/orbit_store_v1.1.0.elf",
