@@ -66,12 +66,12 @@
     },
     {
       "name": "PS5-LZ4-Compression",
-      "filename": "lz4-compression_v1.3.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/lz4-compression_v1.3.0.elf",
-      "description": "LZ4 Compression v1.3.0 by theghostonline",
-      "version": "v1.3.0",
+      "filename": "lz4-compression_v1.4.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/lz4-compression_v1.4.2.elf",
+      "description": "LZ4 Compression v1.4.2 by theghostonline",
+      "version": "v1.4.2",
       "category": "Dumping & Backups",
-      "checksum": "96735f6783e54c50459ea83f36ac86fa5dbf230b1cb29f27ae3b76a3418992a1"
+      "checksum": "a4ec1695a2d7baa666da746649e1e4a49056ef53c7502455a7bad1e55f563511"
     },
     {
       "name": "garlic-savemgr",
