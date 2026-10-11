@@ -309,12 +309,12 @@
     },
     {
       "name": "ps5upload",
-      "filename": "ps5upload-7.0.1_v7.0.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5upload-7.0.1_v7.0.1.elf",
-      "description": "v7.0.1 by phantomptr",
-      "version": "v7.0.1",
+      "filename": "ps5upload-7.0.6_v7.0.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5upload-7.0.6_v7.0.6.elf",
+      "description": "v7.0.6 by phantomptr",
+      "version": "v7.0.6",
       "category": "System Utilities",
-      "checksum": "cf37ffb531a7dd56fb78d72eb01b5ec44fed40959504581a432b49a8d8352291"
+      "checksum": "1bfbe40a560b06fcbbda9c89f93523218aa9c92bf765e92db9f25a5093c55b00"
     },
     {
       "name": "CheatRunner [Pre-release]",
