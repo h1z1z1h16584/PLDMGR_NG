@@ -65,6 +65,15 @@
       "checksum": "e55e90aaade13b6e0d4316c1597ef90a21b67a06475c3e25de054224bc1e941b"
     },
     {
+      "name": "PS5-LZ4-Compression",
+      "filename": "lz4-compression_v1.3.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/lz4-compression_v1.3.0.elf",
+      "description": "LZ4 Compression v1.3.0 by theghostonline",
+      "version": "v1.3.0",
+      "category": "Dumping & Backups",
+      "checksum": "96735f6783e54c50459ea83f36ac86fa5dbf230b1cb29f27ae3b76a3418992a1"
+    },
+    {
       "name": "garlic-savemgr",
       "filename": "garlic-savemgr_v1.13.1.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/garlic-savemgr_v1.13.1.elf",
@@ -443,10 +452,10 @@
       "checksum": "e8230ac4597b8f0388e75d7515ad1a2e251c4589cc3b8d56a483ffae73627eed"
     },
     {
-      "name": "~plk autoloader installer v99.0",
-      "filename": "~plk-autoloader-installer_v99.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/~plk-autoloader-installer_v99.0.elf",
-      "description": "Archived standalone payload: ~plk-autoloader-installer_v99.0.elf",
+      "name": "webkitplk autoloader v99.0",
+      "filename": "webkitplk-autoloader_v99.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/webkitplk-autoloader_v99.0.elf",
+      "description": "Archived standalone payload: webkitplk-autoloader_v99.0.elf",
       "version": "v99.0",
       "category": "~ Archived",
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
