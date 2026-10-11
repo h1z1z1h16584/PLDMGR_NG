@@ -408,12 +408,12 @@
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-6.8.0_v6.8.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-6.8.0_v6.8.0%20%5BPre-release%5D.elf",
-      "description": "v6.8.0 [Pre-release] by phantomptr",
-      "version": "v6.8.0",
+      "filename": "ps5upload-7.0.1_v7.0.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.1_v7.0.1%20%5BPre-release%5D.elf",
+      "description": "v7.0.1 [Pre-release] by phantomptr",
+      "version": "v7.0.1",
       "category": "Pre-release",
-      "checksum": "a9e2aef4c83dc80f3a6704310437db9bd563b83ff9e825a67ec297646a44dadd"
+      "checksum": "cf37ffb531a7dd56fb78d72eb01b5ec44fed40959504581a432b49a8d8352291"
     },
     {
       "name": "etaHEN 99.0",
