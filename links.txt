@@ -30,6 +30,7 @@ github:ps5-linux/ps5-linux-loader
 github:ps5-payload-dev/elfldr
 github:Mohammad-Aghayan/AnyPad-PS5-English
 github:saawant12/orbit-store-ps5
+github:theghostonline/PS5-LZ4-Compression/
 github:notmaj0r/ProsperoMgr
 github:NikoBellikJR31/PS5-Custom-Tool-Manager-
 github:erickdavestech/ps5-dualsense-overlay
