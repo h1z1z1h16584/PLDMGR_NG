@@ -1,3 +1,4 @@
+from datetime import datetime
 import hashlib
 import json
 import os
@@ -73,6 +74,16 @@ def is_release_prerelease(release: dict) -> bool:
     return any(kw in tag or kw in name for kw in PRE_RELEASE_KEYWORDS)
 
 
+def extract_date(raw_date_str: str) -> str:
+    """Extracts a clean YYYY-MM-DD date string from ISO format."""
+    if not raw_date_str:
+        return ""
+    try:
+        return raw_date_str.split("T")[0]
+    except Exception:
+        return str(raw_date_str)[:10]
+
+
 def fetch_target_releases(provider: str, owner: str, repo: str):
     if provider == "etawen":
         url = f"https://git.etawen.dev/api/v1/repos/{owner}/{repo}/releases"
@@ -135,8 +146,8 @@ def detect_category(repo_slug: str, filename: str, description: str, is_pre: boo
 
     search_text = f"{repo_slug} {filename} {description}".lower()
 
-    if any(k in search_text for k in ["ftp", "zftpd", "dns", "web", "websrv", "http", "server", "shsrv", "network"]):
-        return "Networking"
+    if any(k in search_text for k in ["ftp", "zftpd", "dns", "web", "websrv", "http", "server", "shsrv", "network", "upload"]):
+        return "Networking & Servers"
     if any(k in search_text for k in ["kstuff", "etahen", "hen", "elfldr", "kernel", "klog", "debug", "ps5debug"]):
         return "Kernel & Exploitation"
     if any(k in search_text for k in ["dumper", "dump", "compress", "backup", "savemgr", "unrar", "7zip"]):
@@ -145,7 +156,7 @@ def detect_category(repo_slug: str, filename: str, description: str, is_pre: boo
         return "Cheats"
     if any(k in search_text for k in ["overlay", "dualsense", "controller", "anypad", "ds4"]):
         return "Controllers & Input"
-    if any(k in search_text for k in ["sync", "time", "clock", "mount", "shadowmount", "upload", "manager", "prospero"]):
+    if any(k in search_text for k in ["sync", "time", "clock", "mount", "shadowmount", "manager", "prospero"]):
         return "System Utilities"
 
     return "Homebrew"
@@ -195,7 +206,7 @@ def sanitize_filename(name: str) -> str:
 def scan_static_archived_payloads():
     """
     Scans the static/archived directory for manual binaries,
-    assigning them ARCHIVED_VERSION (v99.0) so they can never be updated.
+    assigning them ARCHIVED_VERSION (v99.0) and extracting the file's modification date.
     """
     static_entries = []
     possible_dirs = [
@@ -220,6 +231,9 @@ def scan_static_archived_payloads():
             local_path = os.path.join(target_dir, fname)
             checksum = compute_sha256(local_path)
 
+            mtime = os.path.getmtime(local_path)
+            file_date = datetime.fromtimestamp(mtime).strftime("%Y-%m-%d")
+
             encoded_folder = quote(folder_name)
             encoded_fname = quote(fname)
             hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{BASE_PAYLOAD_DIR}/{encoded_folder}/{encoded_fname}"
@@ -231,13 +245,16 @@ def scan_static_archived_payloads():
                 "name": display_title,
                 "filename": fname,
                 "url": hosted_url,
+                "source": hosted_url,
+                "source_direct": hosted_url,
                 "description": f"Archived standalone payload: {fname}",
+                "last_update": file_date,
                 "version": ARCHIVED_VERSION,
                 "category": STATIC_CATEGORY,
                 "checksum": checksum
             }
             static_entries.append(entry)
-            print(f"[+] Loaded archived payload: {fname} (v={ARCHIVED_VERSION}) -> {STATIC_CATEGORY}")
+            print(f"[+] Loaded archived payload: {fname} (v={ARCHIVED_VERSION}, date={file_date}) -> {STATIC_CATEGORY}")
 
     return static_entries
 
@@ -298,10 +315,18 @@ def main():
 
         repo_payloads = []
 
+        # Construct web release page url for "source"
+        if provider == "etawen":
+            release_source_page = f"https://git.etawen.dev/{owner}/{repo_name}/releases"
+        else:
+            release_source_page = f"https://github.com/{owner}/{repo_name}/releases"
+
         for release in releases:
             is_pre = release.get("prerelease", False)
             tag_name = release.get("tag_name", "").strip()
             release_title = release.get("name") or tag_name
+            raw_date = release.get("published_at") or release.get("created_at") or ""
+            last_update = extract_date(raw_date)
             assets = release.get("assets", [])
 
             for asset in assets:
@@ -354,11 +379,15 @@ def main():
                 encoded_filename = quote(file_name)
                 hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{BASE_PAYLOAD_DIR}/{encoded_category}/{encoded_filename}"
 
+                # Strict schema layout matching PS5 Payload Manager specifications
                 payload_entry = {
                     "name": display_name,
                     "filename": file_name,
                     "url": hosted_url,
+                    "source": release_source_page,
+                    "source_direct": download_url,
                     "description": desc,
+                    "last_update": last_update,
                     "version": tag_name if tag_name else "v1.0",
                     "category": category,
                     "checksum": checksum
@@ -411,7 +440,7 @@ def main():
         for b in broken_repos:
             f.write(f"{b}\n")
 
-    print(f"\nDone: {len(payload_list)} payloads indexed. Archived payloads locked to {ARCHIVED_VERSION}.")
+    print(f"\nDone: {len(payload_list)} payloads indexed with 'last_update', 'source', and 'source_direct'.")
 
 
 if __name__ == "__main__":
