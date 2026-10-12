@@ -591,15 +591,15 @@
     },
     {
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.0.15_v7.0.15 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.15_v7.0.15%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.0.20_v7.0.20 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.20_v7.0.20%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.15/ps5upload-7.0.15.elf",
-      "description": "v7.0.15 [Pre-release] by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.20/ps5upload-7.0.20.elf",
+      "description": "v7.0.20 [Pre-release] by phantomptr",
       "last_update": "2026-10-12",
-      "version": "v7.0.15",
+      "version": "v7.0.20",
       "category": "Pre-release",
-      "checksum": "e0c2ad7cbb59d283426daae2ac9e0ebab9fd317df3ea687be4d01b8b624c1feb"
+      "checksum": "282c405bfcfe5b6f6ab00a7d7b1a3d784cfa51a6c55c991bb3d40f3ae5e30b58"
     },
     {
       "name": "etaHEN 99.0",
