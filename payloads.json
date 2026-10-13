@@ -387,15 +387,15 @@
     },
     {
       "name": "HearBridge-PS5 [Pre-release]",
-      "filename": "HearBridge-PS5-1.3.1_v1.3.1-beta [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/HearBridge-PS5-1.3.1_v1.3.1-beta%20%5BPre-release%5D.elf",
+      "filename": "HearBridge-PS5-1.3.2_v1.3.2-beta [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/HearBridge-PS5-1.3.2_v1.3.2-beta%20%5BPre-release%5D.elf",
       "source": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases",
-      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.1-beta/HearBridge-PS5-1.3.1.elf",
-      "description": "HearBridge PS5 1.3.1 beta [Pre-release] by X-F1REBALL-X",
+      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.2-beta/HearBridge-PS5-1.3.2.elf",
+      "description": "HearBridge 1.3.2 beta [Pre-release] by X-F1REBALL-X",
       "last_update": "2026-10-13",
-      "version": "v1.3.1-beta",
+      "version": "v1.3.2-beta",
       "category": "Pre-release",
-      "checksum": "7bef2f7abce1a94aac7c76ddb4d09cb01cef754c0b83a06468b83c3f4bd614c7"
+      "checksum": "b034107403d9d22f2a405b9ecfd25c786a5ac729a1de3254ee7452d26cdeb4ce"
     },
     {
       "name": "PoorDS4 [Pre-release]",
