@@ -49,17 +49,17 @@
     {
       "id": "ps5-lz4-compression-lz4-compression",
       "name": "PS5-LZ4-Compression",
-      "filename": "lz4-compression_v1.4.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/lz4-compression_v1.4.2.elf",
+      "filename": "lz4-compression_v1.4.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/lz4-compression_v1.4.3.elf",
       "source": "https://github.com/theghostonline/PS5-LZ4-Compression/releases",
-      "source_direct": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.4.2/lz4-compression.elf",
-      "description": "LZ4 Compression v1.4.2 by theghostonline",
-      "last_update": "2026-10-11",
-      "version": "v1.4.2",
+      "source_direct": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.4.3/lz4-compression.elf",
+      "description": "LZ4 Compression v1.4.3 by theghostonline",
+      "last_update": "2026-10-14",
+      "version": "v1.4.3",
       "author": "theghostonline",
       "category": "Dumping & Backups",
-      "checksum": "a4ec1695a2d7baa666da746649e1e4a49056ef53c7502455a7bad1e55f563511",
-      "release_notes": "# LZ4 Compression 1.4.2\n\n- Fixed the PS5 app freezing when you open History (the clock button, top\n  right). Thanks @delacruzrl for reporting it (#1). Job times now show as\n  \"5 min ago\", \"Yesterday\" and so on.\n- A small Buy Me a Coffee QR code in the corner of the home screen, the same\n  one PS5VR has. Scan it with your phone if the app saved you space.\n\nEverything from 1.4.0 and 1.4.1 is included: bundled LZ4 profiles picked\nautomatically, a games-only library, LZ4 and read speed on `.exfat` images\nwhile the app is open, and the `.ffpfsc` uncompress fix.\n\n## Install\n\n1. Add `lz4-compression.elf` to Payload Manager, so it sits at\n   `/data/pldmgr/payloads/lz4-compression/lz4-compression.elf`.\n2. Unzip `LZ4-Compression-PPSA99420.zip` and copy the `PPSA99420` folder to\n   `/data/homebrew/PPSA99420` over FTP (replace the old one). ShadowMount+\n   adds the `LZ4 Compression` tile (close any running game if it doesn't show\n   up).\n3. Open the tile.\n\nUnofficial, and not affiliated with the projects it builds on. If it saved you\nspace, you can support the cost of building it:\n[Buy Me a Coffee](https://buymeacoffee.com/theghostonline)\n"
+      "checksum": "8116fd6ee61e364ef602a73221006fcaebfdb59a9ed582aea512b55a192ff160",
+      "release_notes": "# LZ4 Compression 1.4.3\n\n- Ghost of Yotei works now. Packed Yotei sat on a black screen because the PS5\n  looks for some files on disk (PlayGo markers, empty language files and a few\n  boot files) and they only existed inside the packs. Those files now stay\n  loose when you pack. Huge thanks to edu-ruiz- on Reddit for finding the\n  file list.\n- Already have a packed game that won't start? Run `Verify LZ4 Packs` on it.\n  It puts those files back on disk from the packs, puts back the right\n  APR-EMU (`fakelib/libSceAmpr.sprx`) if something replaced it, and fixes\n  permissions. No repack needed.\n- Fixed games crashing on launch with SIGBUS or CE-108255-1 when the source\n  files had 0666 permissions (seen on 007 First Light). Everything the app\n  writes is 0777 now. Thanks OmgWhatIsThisss for spotting it.\n\n## Install\n\n1. Add `lz4-compression.elf` to Payload Manager, so it sits at\n   `/data/pldmgr/payloads/lz4-compression/lz4-compression.elf`.\n2. Unzip `LZ4-Compression-PPSA99420.zip` and copy the `PPSA99420` folder to\n   `/data/homebrew/PPSA99420` over FTP (replace the old one). ShadowMount+\n   adds the `LZ4 Compression` tile (close any running game if it doesn't show\n   up).\n3. Open the tile.\n\nUnofficial, and not affiliated with the projects it builds on. If it saved you\nspace, you can support the cost of building it:\n[Buy Me a Coffee](https://buymeacoffee.com/theghostonline)\n"
     },
     {
       "id": "garlic-savemgr-garlic-savemgr",
