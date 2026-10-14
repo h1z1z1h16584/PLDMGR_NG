@@ -339,15 +339,15 @@
     },
     {
       "name": "ps5-payload-manager",
-      "filename": "pldmgr_v0.5.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pldmgr_v0.5.2.elf",
+      "filename": "pldmgr_v0.6.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pldmgr_v0.6.0.elf",
       "source": "https://github.com/itsPLK/ps5-payload-manager/releases",
-      "source_direct": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.2/pldmgr_v0.5.2.elf",
-      "description": "v0.5.2 by itsPLK",
-      "last_update": "2026-09-29",
-      "version": "v0.5.2",
+      "source_direct": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.0/pldmgr_v0.6.0.elf",
+      "description": "v0.6.0 by itsPLK",
+      "last_update": "2026-10-13",
+      "version": "v0.6.0",
       "category": "System Utilities",
-      "checksum": "62b3ba2a4937c2afc502f9a4e7242cca538610ebb4ae2800c7c6f72e7f268e7c"
+      "checksum": "5b31079d81d6467f2754edd1d6dbe63b0306502e135c21a425ecb263e39e2059"
     },
     {
       "name": "ps5-pkg-manager",
@@ -608,7 +608,7 @@
       "source": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/etaHEN-99.0.elf",
       "source_direct": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/etaHEN-99.0.elf",
       "description": "Archived standalone payload: etaHEN-99.0.elf",
-      "last_update": "2026-10-13",
+      "last_update": "2026-10-14",
       "version": "v99.0",
       "category": "~ Archived",
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
@@ -620,7 +620,7 @@
       "source": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff-fpkg-1.13-dr-test6.elf",
       "source_direct": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff-fpkg-1.13-dr-test6.elf",
       "description": "Archived standalone payload: kstuff-fpkg-1.13-dr-test6.elf",
-      "last_update": "2026-10-13",
+      "last_update": "2026-10-14",
       "version": "v99.0",
       "category": "~ Archived",
       "checksum": "b1f60c1ec1685904d396da16710dc9d5676bf0880abf74c65459c886010b9443"
@@ -632,7 +632,7 @@
       "source": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/lapy_jb_daemon-99.0.elf",
       "source_direct": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/lapy_jb_daemon-99.0.elf",
       "description": "Archived standalone payload: lapy_jb_daemon-99.0.elf",
-      "last_update": "2026-10-13",
+      "last_update": "2026-10-14",
       "version": "v99.0",
       "category": "~ Archived",
       "checksum": "e8230ac4597b8f0388e75d7515ad1a2e251c4589cc3b8d56a483ffae73627eed"
@@ -644,7 +644,7 @@
       "source": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/webkitplk-autoloader_v99.0.elf",
       "source_direct": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/webkitplk-autoloader_v99.0.elf",
       "description": "Archived standalone payload: webkitplk-autoloader_v99.0.elf",
-      "last_update": "2026-10-13",
+      "last_update": "2026-10-14",
       "version": "v99.0",
       "category": "~ Archived",
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
