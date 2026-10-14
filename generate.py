@@ -16,7 +16,7 @@ REPO_CATALOG_NAME = "Custom Payloads Archive"
 STATIC_CATEGORY = "~ Archived"
 PRE_RELEASE_CATEGORY = "Pre-release"
 
-# Pinning version to v99.0 prevents the updater from prompting for updates
+# Locking archived payloads to v99.0 prevents update prompts in UI
 ARCHIVED_VERSION = "v99.0"
 
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
@@ -36,12 +36,32 @@ gitea_headers = {
 }
 
 
+def slugify(text: str) -> str:
+    """Creates a stable ID matching [a-z0-9._-]."""
+    text = text.lower()
+    text = re.sub(r"[^a-z0-9._-]+", "-", text)
+    return text.strip("-")
+
+
+def truncate_utf8_bytes(text: str, max_bytes: int = 2044) -> str:
+    """Safely truncates text to fit within a strict UTF-8 byte budget with ellipsis."""
+    if not text:
+        return ""
+    encoded = text.encode("utf-8")
+    if len(encoded) <= max_bytes:
+        return text
+
+    # Truncate and strip broken multi-byte sequences
+    truncated = encoded[:max_bytes].decode("utf-8", errors="ignore")
+    return truncated.rstrip() + "..."
+
+
 def parse_repo_entry(line: str):
     line = line.strip()
     if not line or line.startswith("#"):
         return None
 
-    # Etawen (Gitea / Forgejo instance)
+    # Etawen (Gitea / Forgejo)
     if "git.etawen.dev" in line.lower() or line.lower().startswith("etawen:"):
         cleaned = re.sub(r"^(?:https?://git\.etawen\.dev/|etawen:)", "", line, flags=re.IGNORECASE)
         cleaned = cleaned.rstrip("/").removesuffix(".git")
@@ -49,7 +69,7 @@ def parse_repo_entry(line: str):
         if len(parts) >= 2:
             return ("etawen", parts[0].strip(), parts[1].strip())
 
-    # GitHub or standard owner/repo
+    # GitHub
     cleaned = re.sub(
         r"^(?:https?://github\.com/|git@github\.com:|github:)",
         "",
@@ -65,7 +85,6 @@ def parse_repo_entry(line: str):
 
 
 def is_release_prerelease(release: dict) -> bool:
-    """Returns True if marked as pre-release in metadata or named like one."""
     if release.get("prerelease"):
         return True
 
@@ -75,7 +94,6 @@ def is_release_prerelease(release: dict) -> bool:
 
 
 def extract_date(raw_date_str: str) -> str:
-    """Extracts a clean YYYY-MM-DD date string from ISO format."""
     if not raw_date_str:
         return ""
     try:
@@ -103,10 +121,10 @@ def fetch_target_releases(provider: str, owner: str, repo: str):
         if not isinstance(releases, list):
             return None, "Invalid API payload format"
 
-        # 1. Filter out draft releases
+        # Exclude draft releases
         valid_releases = [r for r in releases if not r.get("draft")]
 
-        # 2. Sort by publication date descending (newest published first)
+        # Sort descending by published_at (newest first)
         valid_releases.sort(
             key=lambda r: r.get("published_at") or r.get("created_at") or "",
             reverse=True
@@ -181,7 +199,7 @@ def compute_sha256(filepath: str) -> str:
     with open(filepath, "rb") as f:
         for chunk in iter(lambda: f.read(65536), b""):
             sha.update(chunk)
-    return sha.hexdigest()
+    return sha.hexdigest().lower()
 
 
 def load_previous_payloads():
@@ -206,7 +224,7 @@ def sanitize_filename(name: str) -> str:
 def scan_static_archived_payloads():
     """
     Scans the static/archived directory for manual binaries,
-    assigning them ARCHIVED_VERSION (v99.0) and extracting the file's modification date.
+    giving them a stable ID, v99.0 version, and file modification date.
     """
     static_entries = []
     possible_dirs = [
@@ -240,8 +258,10 @@ def scan_static_archived_payloads():
 
             base, _ = os.path.splitext(fname)
             display_title = base.replace("_", " ").replace("-", " ")
+            payload_id = slugify(f"archived-{base}")
 
             entry = {
+                "id": payload_id,
                 "name": display_title,
                 "filename": fname,
                 "url": hosted_url,
@@ -250,11 +270,12 @@ def scan_static_archived_payloads():
                 "description": f"Archived standalone payload: {fname}",
                 "last_update": file_date,
                 "version": ARCHIVED_VERSION,
+                "author": "Community Archive",
                 "category": STATIC_CATEGORY,
                 "checksum": checksum
             }
             static_entries.append(entry)
-            print(f"[+] Loaded archived payload: {fname} (v={ARCHIVED_VERSION}, date={file_date}) -> {STATIC_CATEGORY}")
+            print(f"[+] Loaded archived payload: {fname} (id={payload_id}, v={ARCHIVED_VERSION})")
 
     return static_entries
 
@@ -283,7 +304,6 @@ def main():
     broken_repos = []
     seen_filenames = set()
 
-    # 1. Process active repositories
     for provider, owner, repo_name in entries:
         repo_slug = f"{owner}/{repo_name}"
         display_slug = f"{provider}:{repo_slug}"
@@ -315,7 +335,6 @@ def main():
 
         repo_payloads = []
 
-        # Construct web release page url for "source"
         if provider == "etawen":
             release_source_page = f"https://git.etawen.dev/{owner}/{repo_name}/releases"
         else:
@@ -327,6 +346,7 @@ def main():
             release_title = release.get("name") or tag_name
             raw_date = release.get("published_at") or release.get("created_at") or ""
             last_update = extract_date(raw_date)
+            release_notes = truncate_utf8_bytes(release.get("body") or "")
             assets = release.get("assets", [])
 
             for asset in assets:
@@ -351,10 +371,12 @@ def main():
                     display_name = f"{repo_name} [Pre-release]"
                     file_name = sanitize_filename(f"{base_with_version} [Pre-release]{ext}")
                     desc = f"{release_title} [Pre-release] by {owner}"
+                    payload_id = slugify(f"{repo_name}-{base}-prerelease")
                 else:
                     display_name = repo_name
                     file_name = sanitize_filename(f"{base_with_version}{ext}")
                     desc = f"{release_title} by {owner}"
+                    payload_id = slugify(f"{repo_name}-{base}")
 
                 if file_name in seen_filenames:
                     continue
@@ -379,8 +401,8 @@ def main():
                 encoded_filename = quote(file_name)
                 hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{BASE_PAYLOAD_DIR}/{encoded_category}/{encoded_filename}"
 
-                # Strict schema layout matching PS5 Payload Manager specifications
                 payload_entry = {
+                    "id": payload_id,
                     "name": display_name,
                     "filename": file_name,
                     "url": hosted_url,
@@ -389,9 +411,14 @@ def main():
                     "description": desc,
                     "last_update": last_update,
                     "version": tag_name if tag_name else "v1.0",
+                    "author": owner,
                     "category": category,
                     "checksum": checksum
                 }
+
+                if release_notes:
+                    payload_entry["release_notes"] = release_notes
+
                 repo_payloads.append(payload_entry)
 
         if not repo_payloads:
@@ -410,7 +437,7 @@ def main():
         else:
             payload_list.extend(repo_payloads)
 
-    # 2. Add static archived payloads locked to v99.0
+    # 2. Append static archived payloads
     static_payloads = scan_static_archived_payloads()
     for sp in static_payloads:
         if sp["filename"] not in seen_filenames:
@@ -440,7 +467,7 @@ def main():
         for b in broken_repos:
             f.write(f"{b}\n")
 
-    print(f"\nDone: {len(payload_list)} payloads indexed with 'last_update', 'source', and 'source_direct'.")
+    print(f"\nCompleted: {len(payload_list)} payloads saved conforming to PS5 Payload Manager specification.")
 
 
 if __name__ == "__main__":
