@@ -451,19 +451,19 @@
       "release_notes": "# PS5 Time & Date Sync by Deckerr97\n\nInitial public release.\n\nA standalone, one-shot PS5 payload that restores the console date and time using public NTP servers. It is designed for consoles whose CMOS/RTC battery no longer retains the clock after a complete shutdown.\n\n## Features\n\n- Automatic NTP date and time synchronization\n- Published Cloudflare numeric fallbacks when PS5 DNS is unavailable\n- Cloudflare, pool.ntp.org, and Google Public NTP hostname fallbacks\n- NTP endpoint, version, mode, stratum, request timestamp, and date validation\n- Clock read-back verification after updating\n- Preserves the configured PS5 timezone\n- One notification per payload execution\n- No application installation or file modification\n- Automatically exits after completion\n\n## Requirements\n\n- Compatible PS5 exploit and ELF payload loader\n- Internet access with outbound UDP port 123\n- An execution environment that permits `settimeofday`\n\nBuilt using a PS5 Payload SDK package containing firmware definitions through 13.60. Actual runtime compatibility depends on the firmware, exploit, loader, and available permissions.\n\n## Acknowledgements\n\nSpecial thanks to **John Törnblom** and every contributor to the [PS5 Payload SDK](https://github.com/ps5-payload-dev/sdk) for creating and maintaining the toolchain that made this payload possible.\n\n## Build verification\n\n- File: `ps5-date-time-sync.elf`\n- Size: 130,240 bytes\n- SHA-256: `91806229803845930B2173174E1AFEADF509E4C171F6396788F929558FAD6849`"
     },
     {
-      "id": "ps5-payload-manager-pldmgr_v0.6.0",
+      "id": "ps5-payload-manager-pldmgr_v0.6.1",
       "name": "ps5-payload-manager",
-      "filename": "pldmgr_v0.6.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pldmgr_v0.6.0.elf",
+      "filename": "pldmgr_v0.6.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pldmgr_v0.6.1.elf",
       "source": "https://github.com/itsPLK/ps5-payload-manager/releases",
-      "source_direct": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.0/pldmgr_v0.6.0.elf",
-      "description": "v0.6.0 by itsPLK",
-      "last_update": "2026-10-13",
-      "version": "v0.6.0",
+      "source_direct": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.1/pldmgr_v0.6.1.elf",
+      "description": "v0.6.1 by itsPLK",
+      "last_update": "2026-10-14",
+      "version": "v0.6.1",
       "author": "itsPLK",
       "category": "System Utilities",
-      "checksum": "5b31079d81d6467f2754edd1d6dbe63b0306502e135c21a425ecb263e39e2059",
-      "release_notes": "## Changelog\r\n\r\n### 🚀 Features & UX Improvements\r\n* **Repository Browser Overhaul**: Rebuilt **Get Payloads** into a full store experience with a card grid, search, source filtering, and live install status badges.\r\n* **Payload Details**: Added a dedicated details page showing payload README documentation and version info.\r\n* **Cross-Browser Favorites**: Dashboard favorites are now stored on the console, keeping your favorites and custom order synced across all browsers and devices.\r\n* **Controller & History Navigation**: Pressing Back / Circle on your PS5 controller or browser now closes modals, details, and edit modes instead of exiting the browser. Added URL links for direct navigation.\r\n* **UI Polish & Quality of Life**: Refreshed Autoload screen styling with improved auto-saving, redesigned payload launch overlay, support for custom repository payload icons and source badges, and cleaner notification toasts.\r\n* **New Language**:\r\n  * **Dutch** (thanks to JensJ56)\r\n* **Translations**: Updated localization files across all 17 supported languages.\r\n\r\n### 🛠️ Backend & Bug Fixes\r\n* **Autoload Network Resilience**: Fixed repository network timeouts on boot delaying the autoload sequence ([#109](https://github.com/itsPLK/ps5-payload-manager/pull/109), thanks to [kianborg](https://github.com/kianborg)).\r\n* **Fresh PS5 Install Fix**: Fixed installer failing on brand new PS5 systems ([#108](https://github.com/itsPLK/ps5-payload-manager/issues/108)).\r\n* **Security & Verification**: Added checksum verification for repository downloads and restricted actions to POST requests with origin validation.\r\n* **Stability Improvements**: Resolved crashes with large repository catalogs, improved memory handling, fixed connection cleanup, and other minor stability improvements and bug fixes.\r\n\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.5.2...v0.6.0\r\n\r\n\r\n---\r\n\r\n## 📝 How to update\r\nYou do **not** need to manually download or replace your original `pldmgr.elf` file.  \r\nSimply install the..."
+      "checksum": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285",
+      "release_notes": "Full Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.0...v0.6.1"
     },
     {
       "id": "ps5-pkg-manager-pkg-manager_v1.5.1",
