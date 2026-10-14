@@ -2,6 +2,7 @@
   "name": "Custom Payloads Archive",
   "payloads": [
     {
+      "id": "cheatrunner-cheatrunner",
       "name": "CheatRunner",
       "filename": "CheatRunner_v0.18.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Cheats/CheatRunner_v0.18.elf",
@@ -10,10 +11,13 @@
       "description": "v0.18 by notmaj0r",
       "last_update": "2026-10-10",
       "version": "v0.18",
+      "author": "notmaj0r",
       "category": "Cheats",
-      "checksum": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140"
+      "checksum": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
+      "release_notes": "CheatRunner v0.18\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/CheatRunner/blob/main/CHANGELOG.md)\r\n\r\nCheck [GUIDE](https://github.com/notmaj0r/CheatRunner#homebrew-launcher) to setup CheatRunner.zip on Homebrew Launcher.\r\n\r\n⚠️ Before updating to a new CheatRunner version, please follow these steps: [Updating CheatRunner](https://github.com/notmaj0r/CheatRunner#-updating-cheatrunner)\r\n\r\nSpecial Thanks:\r\n\r\n💖 Supporters - those who supported the project through [Ko-Fi](https://ko-fi.com/maj0r) or [Buy Me a Coffee](https://buymeacoffee.com/maj0r).\r\n• primo • lal3x • jawad • anonymous • Maffioh • X-F1REBALL-X • Br0ken4life • Nimrod • l gave a tip! • Someone • johnfugate \r\n\r\n💚 Testers - those who tested early builds of CheatRunner before release."
     },
     {
+      "id": "ps5-dualsense-overlay-ps5-dualsense-overlay-v1.0.1",
       "name": "ps5-dualsense-overlay",
       "filename": "ps5-dualsense-overlay-v1.0.1.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Controllers%20%26%20Input/ps5-dualsense-overlay-v1.0.1.elf",
@@ -22,10 +26,13 @@
       "description": "ps5-dualsense-overlay v1.0.1 by erickdavestech",
       "last_update": "2026-10-04",
       "version": "v1.0.1",
+      "author": "erickdavestech",
       "category": "Controllers & Input",
-      "checksum": "3790c590088b275a8d803c7c46394af6c7e0d8ede2546c0507a05a246fbf9747"
+      "checksum": "3790c590088b275a8d803c7c46394af6c7e0d8ede2546c0507a05a246fbf9747",
+      "release_notes": "On-screen **DualSense controller overlay** for a PS5 running homebrew. Load it once per boot, open any game, and the controller appears bottom-left, lighting up in real time.\n\n## Download\n\n`ps5-dualsense-overlay-v1.0.1.elf` — SHA-256 in `SHA256SUMS.txt`:\n\n```text\n3790c590088b275a8d803c7c46394af6c7e0d8ede2546c0507a05a246fbf9747  ps5-dualsense-overlay-v1.0.1.elf\n```\n\n## What's Changed in v1.0.1\n\n### Fixed\n- **Overlay freeze after Rest Mode (sleep/resume):** Fixed issue where `sceUserServiceGetForegroundUser` returning `0xffffffff` (-1) during console standby or before logging into an account caused pad initialization to permanently fail, leaving the overlay visible on screen but completely frozen.\n- **Controller disconnect / standby recovery:** If `scePadReadState` fails continuously for 15 consecutive frames (e.g. controller turned off, Bluetooth drop, or system suspend), the dead handle is now safely closed via `scePadClose` and re-acquired automatically as soon as the controller is back online.\n\n### Added\n- **Periodic foreground user detection:** The overlay now checks for foreground user account switches every ~2 seconds and re-binds the pad handle when switching local accounts.\n- **Non-blocking pad initialization retry:** Periodic retry every 30 frames (~0.5s) if user or handle was not immediately ready at startup.\n\n## Usage\n\n1. Jailbreak the console as usual (tested with kstuff-lite).\n2. Load `ps5-dualsense-overlay-v1.0.1.elf` with your payload manager, in either of these ways:\n   - **Web portal:** from a PC or phone on the same network, open the payload manager's portal using the console's local IP and upload the `.elf`.\n   - **USB:** copy the `.elf` to a USB drive, connect it to the console and launch it from the payload manager.\n3. Open any game.\n\nLoad it only **once** per boot, and do not run it together with Common FPS or SimpleFPS: they inject into the same system process. To update, reboot and load the new version.\n\n## Compatibility\n\nTested on a PS5 Slim (CFI-2015) with system software 13.60 and..."
     },
     {
+      "id": "ps5-game-compressor-game-compressor",
       "name": "PS5-Game-Compressor",
       "filename": "game-compressor_v1.0.4.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/game-compressor_v1.0.4.elf",
@@ -34,10 +41,13 @@
       "description": "Game Compressor 1.0.4 by juma-sayeh",
       "last_update": "2026-08-21",
       "version": "v1.0.4",
+      "author": "juma-sayeh",
       "category": "Dumping & Backups",
-      "checksum": "e55e90aaade13b6e0d4316c1597ef90a21b67a06475c3e25de054224bc1e941b"
+      "checksum": "e55e90aaade13b6e0d4316c1597ef90a21b67a06475c3e25de054224bc1e941b",
+      "release_notes": "# Game Compressor 1.0.4\n\nGame Compressor 1.0.4 adds a multilingual interface and improves compatibility\nwith firmware 4.51, APR-EMU folder workflows, and ShadowMountPlus launch\nlayouts.\n\nCompared against `v1.0.3`.\n\n## Key Changes\n\n- Added German, French, Arabic, Italian, Spanish, and Simplified Chinese\n  translations, with automatic system-language selection and a saved manual\n  language selector.\n- Added right-to-left layout support for Arabic and localized Game Compressor\n  launcher titles for every supported language.\n- Improved firmware 4.51 browser compatibility and added clearer web-server\n  startup diagnostics.\n- Improved relaunch handling when a previous Game Compressor instance leaves\n  port 5910 open but no longer answers the local HTTP handoff.\n- Added ShadowMountPlus executable discovery under `/data/ps5_autoloader` in\n  addition to Payload Manager locations.\n\n## Fixes\n\n- Fixed `Build AMPR Index` for directly detected game folders so enqueue and\n  worker resolution use the same APR-EMU probe result.\n- Fixed APR-EMU module file permissions for affected deployment and loading\n  paths.\n- Fixed the compression wizard so `Delete after verified` keeps its own\n  free-space and deletion explanation when switching source-preservation\n  options.\n\nSee `CHANGELOG.md` for the full detailed change list.\n"
     },
     {
+      "id": "ps5-lz4-compression-lz4-compression",
       "name": "PS5-LZ4-Compression",
       "filename": "lz4-compression_v1.4.2.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/lz4-compression_v1.4.2.elf",
@@ -46,10 +56,13 @@
       "description": "LZ4 Compression v1.4.2 by theghostonline",
       "last_update": "2026-10-11",
       "version": "v1.4.2",
+      "author": "theghostonline",
       "category": "Dumping & Backups",
-      "checksum": "a4ec1695a2d7baa666da746649e1e4a49056ef53c7502455a7bad1e55f563511"
+      "checksum": "a4ec1695a2d7baa666da746649e1e4a49056ef53c7502455a7bad1e55f563511",
+      "release_notes": "# LZ4 Compression 1.4.2\n\n- Fixed the PS5 app freezing when you open History (the clock button, top\n  right). Thanks @delacruzrl for reporting it (#1). Job times now show as\n  \"5 min ago\", \"Yesterday\" and so on.\n- A small Buy Me a Coffee QR code in the corner of the home screen, the same\n  one PS5VR has. Scan it with your phone if the app saved you space.\n\nEverything from 1.4.0 and 1.4.1 is included: bundled LZ4 profiles picked\nautomatically, a games-only library, LZ4 and read speed on `.exfat` images\nwhile the app is open, and the `.ffpfsc` uncompress fix.\n\n## Install\n\n1. Add `lz4-compression.elf` to Payload Manager, so it sits at\n   `/data/pldmgr/payloads/lz4-compression/lz4-compression.elf`.\n2. Unzip `LZ4-Compression-PPSA99420.zip` and copy the `PPSA99420` folder to\n   `/data/homebrew/PPSA99420` over FTP (replace the old one). ShadowMount+\n   adds the `LZ4 Compression` tile (close any running game if it doesn't show\n   up).\n3. Open the tile.\n\nUnofficial, and not affiliated with the projects it builds on. If it saved you\nspace, you can support the cost of building it:\n[Buy Me a Coffee](https://buymeacoffee.com/theghostonline)\n"
     },
     {
+      "id": "garlic-savemgr-garlic-savemgr",
       "name": "garlic-savemgr",
       "filename": "garlic-savemgr_v1.13.1.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/garlic-savemgr_v1.13.1.elf",
@@ -58,10 +71,12 @@
       "description": "v1.13.1 by earthonion",
       "last_update": "2026-09-19",
       "version": "v1.13.1",
+      "author": "earthonion",
       "category": "Dumping & Backups",
       "checksum": "b0fc2fcdda977d2a1207d77148746859b7ea7f3cfcad02828a7a9b49651807f5"
     },
     {
+      "id": "unrar-ps5-unrar_ps5",
       "name": "unrar-ps5",
       "filename": "unrar_ps5_v1.4.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/unrar_ps5_v1.4.0.elf",
@@ -70,10 +85,13 @@
       "description": "v1.4.0 by bizkut",
       "last_update": "2026-06-18",
       "version": "v1.4.0",
+      "author": "bizkut",
       "category": "Dumping & Backups",
-      "checksum": "2ef04b0bc8fc1932b29da1a53336c40ed0a3f6a945a0746bef2e5dde52149701"
+      "checksum": "2ef04b0bc8fc1932b29da1a53336c40ed0a3f6a945a0746bef2e5dde52149701",
+      "release_notes": "## Changes\n- Add threaded 7z extraction beside existing RAR extraction.\n- Support .7z and multipart .7z.001 archive starts.\n- Add archive_location and archive_password config keys while preserving rar_* aliases.\n- Pass threads= to both UnRAR and 7-Zip extraction paths.\n\n## Verification\n- Built with Docker SDK: docker run --rm -v \"/Users/bizkut/Downloads/PS5/homebrew/unrar-ps5:/work\" -w /work -e PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk ps5-payload-sdk:libcxx make clean all"
     },
     {
+      "id": "hearbridge-ps5-hearbridge-ps5-1.3.0",
       "name": "HearBridge-PS5",
       "filename": "HearBridge-PS5-1.3.0_v1.3.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-PS5-1.3.0_v1.3.0.elf",
@@ -82,10 +100,13 @@
       "description": "HearBridge PS5 1.3.0 by X-F1REBALL-X",
       "last_update": "2026-10-10",
       "version": "v1.3.0",
+      "author": "X-F1REBALL-X",
       "category": "Homebrew",
-      "checksum": "0867d014d0fca7250c0999dab6b575ee480c5f32dd8374e10634f8ff43b4ea5e"
+      "checksum": "0867d014d0fca7250c0999dab6b575ee480c5f32dd8374e10634f8ff43b4ea5e",
+      "release_notes": "**Download:** `HearBridge-PS5-1.3.0.elf` (one file for every PS5, Marvell/NXP and MediaTek)\n\nSend it to your loader on port 9021 like before.\n\n## What's new in 1.3.0\n\n### Game profiles (new)\n\n- HearBridge detects the running game by itself and shows its name and cover art.\n- Each game can have its own sound: EQ, preset, boost, volume and night mode.\n- The game's profile loads by itself when the game starts, and your usual sound comes back when it closes.\n- Each headset keeps its own profile for the same game. For example, the same game can have heavy bass on one headset and a balanced sound on another, and each one loads its own when it connects.\n- Save up to 32 games, with up to 4 headsets per game.\n- If the connected headset has no profile for the game yet, the game's latest profile from another headset is used, without overwriting it.\n- Update Game Profile button: it stays grey and lights up as soon as you change anything in the sound. Press it to save the change for that game and that headset.\n- In Settings, under Sound & games, every saved game shows the headsets saved for it. You can apply or delete the profile of a specific headset.\n\n### Headsets\n\n- Real battery percentage on headsets that report it, plus a low battery alert.\n- Volume from the earbuds: next/previous on earbuds with a case changes the volume, and the slider follows. You can turn this off in Settings.\n- Quick switch between saved headsets in one tap.\n- Better reconnect: headsets come back by themselves after rest mode or a lost link.\n- Sound stops cleanly when the console goes into rest mode and comes back when it wakes up.\n- Better Xbox Wireless Headset support: pairing and reconnecting work much more reliably.\n\n### Sound\n\n- Night mode: quieter explosions, clearer voices.\n- Latency slider with a live estimate of the delay to your ears.\n- More stable connection: sound quality recovers by itself after a short dropout.\n- Lower latency: down to 40 ms.\n\n### Design\n\n- New home screen, bigger and cleaner, with four sections: Headset, Sound, Co..."
     },
     {
+      "id": "ps-play-psplay-2.1",
       "name": "PS-Play",
       "filename": "PSPlay-2.1.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/PSPlay-2.1.elf",
@@ -94,22 +115,43 @@
       "description": "2.1 by MounirHero",
       "last_update": "2026-08-14",
       "version": "2.1",
+      "author": "MounirHero",
       "category": "Homebrew",
-      "checksum": "e3392379d5bc6ca4e44cb0d2a1d8921083b2c3ea480725f68378831874542d8d"
+      "checksum": "e3392379d5bc6ca4e44cb0d2a1d8921083b2c3ea480725f68378831874542d8d",
+      "release_notes": "## New in 2.1 UPDATE\r\n\r\n### Player and UI\r\n- EXIT PLAYBACK? confirmation when pressing CIRCLE in the player —\r\n  and playback returns to the page that started it, not the home menu\r\n- WEB BROWSER tile removed from the main menu\r\n- BROWSE USB now scans all USB ports (usb0-usb3) at once in one list\r\n- Left analog stick navigates every menu like the d-pad; hold it in a\r\n  direction for continuous auto-scroll\r\n- Decoder fluidity: AV1/VP9 UHD software decode skips in-loop filtering\r\n  on non-reference frames (same treatment as HEVC), and live UDP/RTSP\r\n  IPTV streams open with a low-delay, fast-probe configuration\r\n- Network stream anti-freeze pack: PTS discontinuities (HLS playlist\r\n  restarts, IPTV source switches) re-anchor the clock instead of\r\n  exploding the A/V delta; a sustained >3s desync snaps back in sync;\r\n  a stalled audio consumer can no longer deadlock the demux (the oldest\r\n  audio packet is dropped so video keeps flowing); network packet queues\r\n  grew to 384/384; after an underrun playback holds until ~1.5s of video\r\n  is buffered; HTTP gets an 8 MB socket buffer and auto-reconnect on\r\n  4xx/5xx errors\r\n- The bundled FFmpeg already includes every relevant decoder module\r\n  (H.264, HEVC, AV1, VP9, MPEG-2/4, AAC, AC3, E-AC3, DTS, TrueHD, ALAC,\r\n  FLAC, Opus, Vorbis, WMA, PCM) and protocol (HTTP/S, HLS, RTSP, RTP,\r\n  UDP, RTMP, MMSH) — compatibility is limited by CPU speed, not codecs\r\n\r\n### IPTV\r\n- IPTV hub with 3 entries: CHANNEL LIST, CUSTOM URL / STREAM, LOAD M3U FILE\r\n- Dedicated channel list page: TRIANGLE searches channels by name/group,\r\n  SQUARE reloads playlists; channel cap raised to 2500\r\n- M3U scanning now covers `/data/PS Play` plus every subfolder of usb0/usb1\r\n\r\n### Stremio (native addon client) \r\n\r\nthanks to **Stuey-81** for providing his work on [Nuvio-Portable] (https://github.com/Stuey-81/Nuvio-Portable)\r\n\r\n- New STREMIO tile (stylized PC icon): a native Stremio-compatible\r\n  client (Nuvio-style) built into the player — no web engine needed\r\n- MOVIES and SERIES pages with p..."
     },
     {
+      "id": "ps5sx2-ps5sx2installer",
       "name": "PS5SX2",
-      "filename": "ps5sx2-bot_vk-285-163.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5sx2-bot_vk-285-163.elf",
+      "filename": "PS5SX2Installer_vk-285-171.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/PS5SX2Installer_vk-285-171.elf",
       "source": "https://github.com/Swordpdf/PS5SX2/releases",
-      "source_direct": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-163/ps5sx2-bot.elf",
-      "description": "PS5SX2 2.03 by Swordpdf",
-      "last_update": "2026-10-11",
-      "version": "vk-285-163",
+      "source_direct": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-171/PS5SX2Installer.elf",
+      "description": "PS5SX2 2.10 by Swordpdf",
+      "last_update": "2026-10-14",
+      "version": "vk-285-171",
+      "author": "Swordpdf",
       "category": "Homebrew",
-      "checksum": "3420cdb5c826014b22b8ca8fa60a2026f0d9f91d3f5a5b818d4c98373eccb123"
+      "checksum": "6b1be3ea24ec8144b27b2a1f3e279cd17574f3093e9431abf8579dcc6c0bfae9",
+      "release_notes": "**PS5SX2 2.10** (build vk-285-171)\n\n**New**\n- **PS2 discs on the PS5 home screen.** Put a PS2 DVD in the console's drive while you are on the home screen: a tile with the game's name and cover shows up in about 6 seconds, and the PS5's own \"Unsupported Disc\" tile is hidden. Press **✕** on it and the game starts straight from the disc (or from its copy in `games/`, if you made one): no shelf, no question. Take the disc out and the tile goes away.\n- **A \"Reload PS2 Disc\" tile.** If a disc's tile does not come, does not start, or the \"Unsupported Disc\" tile stays: press this tile once. It cleans up after the last game, has ShadowMount+ look again and makes the disc's tile again. A pop-up says \"PS2 disc reloaded.\" a few seconds later.\n- **A question on the shelf.** With PS5SX2 open, a PS2 disc that is not copied yet asks **Play from disc** or **Copy to storage** (**Left / Right** choose, **✕** confirms, **○** is \"not now\"). *Play from disc* starts at once and reads the disc as you play, like a real PS2, so the disc has to stay in. *Copy to storage* copies it first (several minutes) and plays from the copy: faster loading, and the disc can come out. A disc that `games/` already holds starts from its copy with no question. So you can still dump a disc through the shelf, and once it is dumped, starting its game from the tile runs the dump instead of the disc.\n\n**Changed**\n- A PS2 disc put in on the home screen no longer starts PS5SX2 by itself: press its tile.\n- The empty file `nodiscask` in `/data/PCSX2/flags/` brings the 2.03 behaviour back: no question on the shelf, and a disc put in on the home screen is copied and started by itself. Use it if you don't use ShadowMount+, because the tiles need it.\n\n---\n\n## Download\n\n- **`PS5SX2-vk-285-171.zip`**: the app (eboot and files). The installer installs it for you.\n  SHA-256: `226ac24866f0b94566c0680c3b99c0d5abfe8030723f5b28dae20af039c76963`\n- **`PS5SX2Installer.elf`**: the installer, the same file as in 2.00. Send it and it installs this build, and every later on..."
     },
     {
+      "id": "ps5sx2-ps5sxhelper",
+      "name": "PS5SX2",
+      "filename": "PS5SXHelper_vk-285-171.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/PS5SXHelper_vk-285-171.elf",
+      "source": "https://github.com/Swordpdf/PS5SX2/releases",
+      "source_direct": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-171/PS5SXHelper.elf",
+      "description": "PS5SX2 2.10 by Swordpdf",
+      "last_update": "2026-10-14",
+      "version": "vk-285-171",
+      "author": "Swordpdf",
+      "category": "Homebrew",
+      "checksum": "9fa809eb10e1fe5149b2d031f55497d7b050e950ec5aec38bac7ebe1ef6da153",
+      "release_notes": "**PS5SX2 2.10** (build vk-285-171)\n\n**New**\n- **PS2 discs on the PS5 home screen.** Put a PS2 DVD in the console's drive while you are on the home screen: a tile with the game's name and cover shows up in about 6 seconds, and the PS5's own \"Unsupported Disc\" tile is hidden. Press **✕** on it and the game starts straight from the disc (or from its copy in `games/`, if you made one): no shelf, no question. Take the disc out and the tile goes away.\n- **A \"Reload PS2 Disc\" tile.** If a disc's tile does not come, does not start, or the \"Unsupported Disc\" tile stays: press this tile once. It cleans up after the last game, has ShadowMount+ look again and makes the disc's tile again. A pop-up says \"PS2 disc reloaded.\" a few seconds later.\n- **A question on the shelf.** With PS5SX2 open, a PS2 disc that is not copied yet asks **Play from disc** or **Copy to storage** (**Left / Right** choose, **✕** confirms, **○** is \"not now\"). *Play from disc* starts at once and reads the disc as you play, like a real PS2, so the disc has to stay in. *Copy to storage* copies it first (several minutes) and plays from the copy: faster loading, and the disc can come out. A disc that `games/` already holds starts from its copy with no question. So you can still dump a disc through the shelf, and once it is dumped, starting its game from the tile runs the dump instead of the disc.\n\n**Changed**\n- A PS2 disc put in on the home screen no longer starts PS5SX2 by itself: press its tile.\n- The empty file `nodiscask` in `/data/PCSX2/flags/` brings the 2.03 behaviour back: no question on the shelf, and a disc put in on the home screen is copied and started by itself. Use it if you don't use ShadowMount+, because the tiles need it.\n\n---\n\n## Download\n\n- **`PS5SX2-vk-285-171.zip`**: the app (eboot and files). The installer installs it for you.\n  SHA-256: `226ac24866f0b94566c0680c3b99c0d5abfe8030723f5b28dae20af039c76963`\n- **`PS5SX2Installer.elf`**: the installer, the same file as in 2.00. Send it and it installs this build, and every later on..."
+    },
+    {
+      "id": "apr-emu-updater-apr_emu_updater_v2.0.6",
       "name": "apr-emu-updater",
       "filename": "apr_emu_updater_v2.0.6.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/apr_emu_updater_v2.0.6.elf",
@@ -118,10 +160,13 @@
       "description": "v2.0.6 by tsuramatsu1",
       "last_update": "2026-08-29",
       "version": "v2.0.6",
+      "author": "tsuramatsu1",
       "category": "Homebrew",
-      "checksum": "4f04464283a6a551883e40e36b59134ecad0e38ecbb7ea89cbec3f91a3bd9122"
+      "checksum": "4f04464283a6a551883e40e36b59134ecad0e38ecbb7ea89cbec3f91a3bd9122",
+      "release_notes": "## Fixes\r\n- fix launch notification sometimes showing two or four times\r\n- fix shadowmount version not being detected, which showed the global tab and hid the launch notification on beta16\r\n- add revert to the global tab, to remove the shared apr emu"
     },
     {
+      "id": "librespot-ps5-librespot-ps5",
       "name": "librespot-ps5",
       "filename": "librespot-ps5_v0.1.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/librespot-ps5_v0.1.0.elf",
@@ -130,10 +175,13 @@
       "description": "librespot-ps5 v0.1.0 by stupiditytries",
       "last_update": "2026-10-11",
       "version": "v0.1.0",
+      "author": "stupiditytries",
       "category": "Homebrew",
-      "checksum": "37d571ac23ddb58648a44665f90a5939d06cdda0b71cc77e9d6a5358bb6e1957"
+      "checksum": "37d571ac23ddb58648a44665f90a5939d06cdda0b71cc77e9d6a5358bb6e1957",
+      "release_notes": "First release. Spotify Connect on a modified PS5, playing over your games.\n\n## What you need\n\n- A PS5 that can load ELF payloads\n- [klogsrv](https://github.com/ps5-payload-dev/klogsrv) running on the console\n- A USB drive the console plays music from (exFAT or FAT32, not extended storage) with about 8 GB free\n- Spotify Premium, and the Spotify app on a phone on the same network as the console\n\n## How to use it\n\n1. Download `librespot-ps5.elf` below, put it on a USB drive and load it with your payload loader.\n2. On the console, open the **Music** tab in the control centre.\n3. Go to your **external drive**.\n4. Open the folder **Start Librespot** and play **Librespot Streamer**.\n5. In the Spotify app on your phone, open the device list and pick **PS5 Connect**.\n\nThe program makes the folders and tracks itself the first time it runs. If they do not show up in the music list, open any other music folder once and go back.\n\nAfter you press play on the console there are about 14 seconds of silence before the music starts. After that, everything you do in the Spotify app is heard about two seconds later, and the music keeps playing when you start a game.\n\nTo stop, play **Stop Librespot** in the folder **Librespot Controls**, or pause from the phone.\n\n## Known issues\n\n- Track notifications show on the home screen but not yet while a game is in front.\n- Pausing from the console costs about 14 seconds of silence when you resume. Pausing from the phone does not.\n- Next and Previous on the console do nothing useful; use the phone.\n- After 12 hours the stream has to be started again.\n- Tested on one console and one USB drive.\n\nHow it works, the settings and the build steps are in the [README](https://github.com/stupiditytries/librespot-ps5#readme).\n\nNot affiliated with or endorsed by Spotify or Sony.\n"
     },
     {
+      "id": "pegasus-dl-pegasus_dl",
       "name": "pegasus-dl",
       "filename": "pegasus_dl_v1.11.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/pegasus_dl_v1.11.0.elf",
@@ -142,10 +190,13 @@
       "description": "Pegasus DL 1.11.0 by pegasus-ps5",
       "last_update": "2026-10-09",
       "version": "v1.11.0",
+      "author": "pegasus-ps5",
       "category": "Homebrew",
-      "checksum": "32b69c2089bb545abfabd04d5827444698f9c4f1bc4915d72247cb781e8c23d9"
+      "checksum": "32b69c2089bb545abfabd04d5827444698f9c4f1bc4915d72247cb781e8c23d9",
+      "release_notes": "- Parallel downloads now use persistent connections and write ranges directly\n  into the temporary file, avoiding a final segment-copy pass. New configurations\n  default to 16 connections, with a single-stream fallback for incompatible hosts.\n- RAR/RAR5 and 7z archive cache downloads use the same parallel engine. Paused\n  downloads resume from checked checkpoints, and paused extraction restarts from\n  the completed cache without downloading again.\n- Completed RAR caches survive password prompts and wrong passwords. UTF-8\n  passwords and retries for legacy encrypted RAR files are handled correctly.\n- Extraction progress now counts bytes across files. Cancellation and\n  finalization are coordinated to avoid committing cancelled work.\n- Archive replacement failures restore the previous destination, stored RAR\n  entries receive CRC checks, and failed format probes clean up their temporary\n  files.\n"
     },
     {
+      "id": "ps5-linux-loader-ps5-linux-loader",
       "name": "ps5-linux-loader",
       "filename": "ps5-linux-loader_v2.5.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader_v2.5.elf",
@@ -154,10 +205,13 @@
       "description": "v2.5 by ps5-linux",
       "last_update": "2026-09-05",
       "version": "v2.5",
+      "author": "ps5-linux",
       "category": "Homebrew",
-      "checksum": "9fc48733077145d1d204a4c9cdb879baaab1e711a604dd73af0dd4a807d6bc49"
+      "checksum": "9fc48733077145d1d204a4c9cdb879baaab1e711a604dd73af0dd4a807d6bc49",
+      "release_notes": "Added 7.0x support"
     },
     {
+      "id": "pizza-hen-pizza-hen-v2.00",
       "name": "PIZZA-HEN",
       "filename": "PIZZA-HEN-v2.00.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/PIZZA-HEN-v2.00.elf",
@@ -166,10 +220,13 @@
       "description": "PIZZA HEN v2.00 - Complete I18N Final Gate by Michele-M-Media",
       "last_update": "2026-08-24",
       "version": "v2.00",
+      "author": "Michele-M-Media",
       "category": "Kernel & Exploitation",
-      "checksum": "8535d399612d61c50a528b2ae416f2fc3ccfb7480296df99c17302583fb3e345"
+      "checksum": "8535d399612d61c50a528b2ae416f2fc3ccfb7480296df99c17302583fb3e345",
+      "release_notes": "# PIZZA HEN v2.00 — Release Notes\n\nPIZZA HEN v2.00 is the **Complete I18N Final Gate** source checkpoint.\n\nThe release is intentionally focused on completing the user-facing localization layer while preserving the runtime behavior of the R7.25.2.16.1 baseline.\n\n## What changed\n\n- Toolbox translation data completed across **31 locales**.\n- KStuff selector, ShadowMount selector, native ShellUI locale table and service notifications remain covered across 31 locales.\n- Arabic RTL behavior preserved.\n- Previously hard-coded Toolbox descriptions/status labels moved into explicit localization mappings.\n- PoorDS4 and Fan Target / ps5-fan-control Toolbox UI localized across all 31 locales.\n\n## What did not change\n\nThe v2.00 I18N gate was designed to avoid runtime regressions:\n\n- all **91 ELF files** remain byte-identical to the R7.25.2.16.1 baseline;\n- all **127 named JavaScript functions** in `toolbox_launcher.html` remain byte-identical;\n- Package Installer scan/catalog/install functions remain frozen;\n- Debug Services launcher remains byte-identical to the restored bridge;\n- no launch/stop behavior, `/hbldr`, websrv, Package Installer, KStuff, ShadowMount, Fan Control, PoorDS4, Storage, Themes Avatar, CheatRunner or payload-manager runtime logic was changed for this gate.\n\n## Validation\n\nThe included audit records:\n\n- **24/24** complete-I18N gate PASS;\n- **58** Python static tests PASS;\n- JavaScript syntax PASS for Toolbox, Debug Services and ShadowMount selector;\n- KStuff selector JavaScript syntax PASS;\n- release build-script Bash syntax PASS.\n\nSee [`V2_00_COMPLETE_I18N_AUDIT.txt`](V2_00_COMPLETE_I18N_AUDIT.txt) for the exact checkpoint statement.\n\n### Validation wording\n\nThe audit deliberately describes the exact v2.00 checkpoint as **STATIC-PASS** until a WSL build/hardware result is recorded separately. This release note does not upgrade that status by assumption.\n\n## Source checkpoint\n\nThe clean v2.00 source snapshot was first published to GitHub `main` as:\n\n```text\n9b800c4cffbbb7f6baa5e045cc77430b3bf5d11e..."
     },
     {
+      "id": "elfldr-elfldr-ps5",
       "name": "elfldr",
       "filename": "elfldr-ps5_v0.26.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/elfldr-ps5_v0.26.elf",
@@ -178,10 +235,13 @@
       "description": "v0.26 by ps5-payload-dev",
       "last_update": "2026-08-29",
       "version": "v0.26",
+      "author": "ps5-payload-dev",
       "category": "Kernel & Exploitation",
-      "checksum": "ed6d587a057c09d6a95b2176e336d9ffc605e547ac56462128b029e47b8ccea1"
+      "checksum": "ed6d587a057c09d6a95b2176e336d9ffc605e547ac56462128b029e47b8ccea1",
+      "release_notes": "simplify makefile"
     },
     {
+      "id": "etahen-etahen-2.5b",
       "name": "etaHEN",
       "filename": "etaHEN-2.5B.bin",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/etaHEN-2.5B.bin",
@@ -190,10 +250,13 @@
       "description": "etaHEN Update 2.5B by etaHEN",
       "last_update": "2025-12-25",
       "version": "2.5B",
+      "author": "etaHEN",
       "category": "Kernel & Exploitation",
-      "checksum": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e"
+      "checksum": "4845cac45095361b8983b14d6690622183b0dcfbf6d7fda16e161aa91ff0531e",
+      "release_notes": "etaHEN 2.5B Change log\r\n\r\n- Added the option to choose cheats repo source when updating via internet (etaHEN or GoldHEN Repos)\r\n- Added Unpause kstuff on game close option \r\n- Added fewer notifications with new notification type with icon\r\n- Added Manual Fan threshold setting to the etaHEN toolbox settings \r\n- Added (Beta) Game/App dumper to the Game options menu featuring PS5 App Dumper 1.08 by @EchoStretch\r\n- WebMAN Games rewrite with fixed M.2 Support including many different WebMAN Games fixes\r\n- Added custom ★ Delete option to delete game/app patches and more\r\n- *Experimental* PS4 FPS Section"
     },
     {
+      "id": "kstuff-lite-kstuff",
       "name": "kstuff-lite",
       "filename": "kstuff_v1.09.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/kstuff_v1.09.elf",
@@ -202,10 +265,13 @@
       "description": "v1.09 by EchoStretch",
       "last_update": "2026-07-04",
       "version": "v1.09",
+      "author": "EchoStretch",
       "category": "Kernel & Exploitation",
-      "checksum": "ec5212794dc6e44ee8e70fd0549abec6d3dac8c3e03ddbeafd9f869ffe97d4e8"
+      "checksum": "ec5212794dc6e44ee8e70fd0549abec6d3dac8c3e03ddbeafd9f869ffe97d4e8",
+      "release_notes": "**Kstuff Lite 1.09 Beta Supports Firmware 3.00-12.70**\r\n\r\nA huge thanks to @sleirsgoevy for the help and creating this project, and to @zecoxao, @flatz, @idlesauce, @buzzer-re, @Al-Azif, @drakmor and everyone else who contributed. Your work and support are greatly appreciated!\r\n\r\n🔹 Changelog\r\nFixed Disable ASLR on 11.xx and 12.xx Thanks @Pharaoh2k\r\n\r\n📂 Original Source:\r\n[github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb](https://github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb)"
     },
     {
+      "id": "onionhen-onionhen",
       "name": "onionHEN",
       "filename": "OnionHEN_v0.0.13.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/OnionHEN_v0.0.13.elf",
@@ -214,10 +280,13 @@
       "description": "OnionHEN v0.0.13 by aydencharles",
       "last_update": "2026-09-11",
       "version": "v0.0.13",
+      "author": "aydencharles",
       "category": "Kernel & Exploitation",
-      "checksum": "aa3f98847948e2ae8ea600c3f437e28247a0a4f8b73651a046d2859924bf97b3"
+      "checksum": "aa3f98847948e2ae8ea600c3f437e28247a0a4f8b73651a046d2859924bf97b3",
+      "release_notes": "# OnionHEN v0.0.13\n\nOnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, a game overlay, payload management, and background services.\n\n**Supported firmware:** 4.03 – 12.70\n\n## Breaking changes\n\n### elfldr v0.22+ required for this release\n\nv0.0.13 speeds up later boots by caching the decompressed bootstrapper, then asking the external elfldr on port **9021** to load that file through a `file:` URI.\n\nURI loading (`file://`, `http://`, `https://`) was added in [elfldr v0.22](https://github.com/ps5-payload-dev/elfldr/releases/tag/v0.22). Older elfldr builds accept the connection but do not launch the payload, so OnionHEN never starts.\n\nThis is a compatibility bug in v0.0.13. The next OnionHEN release will stop using a URI for this first hop.\n\nUntil then, do one of the following:\n\n1. **Upgrade the external elfldr** on port **9021** to **v0.22 or later**, then send `OnionHEN.elf`.\n2. **Send a current elfldr payload first** so port 9021 is already running a new enough loader, then send `OnionHEN.elf`.\n\n### Built-in FTP server removed\n\nThe built-in FTP server from v0.0.12 is gone. `ftp.autoload` and `ftp.port` are no longer in `config.ini`. Install the replacement [onionHEN-ftpsrv-plugin](https://github.com/OnionBuddies/onionHEN-ftpsrv-plugin) as `/data/OnionHEN/plugins/FTPS00001.elf`. The listener is enabled by default on TCP `1337`.\n\n## Quick start\n\n1. You need an already-jailbroken PS5 and an external `elfldr` (the first-hop loader) listening on port **9021**.\n2. Send `OnionHEN.elf` using a payload sender, such as [itsPLK's PS5 Payload Manager](https://github.com/itsplk/ps5-payload-manager).\n3. Wait for OnionHEN to start. It may take a couple of seconds, so just wait and don't do anything while it is starting.\n4. Open **Settings** on your PS5 to enter the Toolbox, or use the shortcut in the top-right corner of the home screen.\n\n## What's new\n\n### External ELF plugins\n\nOnionHEN can now discover, st..."
     },
     {
+      "id": "ps5debug-ng-ps5debug-ng_v1.3.2",
       "name": "ps5debug-NG",
       "filename": "ps5debug-NG_v1.3.2.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/ps5debug-NG_v1.3.2.elf",
@@ -226,10 +295,13 @@
       "description": "ps5debug-NG v1.3.2 by Pharaoh2k",
       "last_update": "2026-09-23",
       "version": "1.3.2",
+      "author": "Pharaoh2k",
       "category": "Kernel & Exploitation",
-      "checksum": "949b0e6e0fe3f24f4a820319fd76d9ccb92f9770cbb1a64b09a8eca5c1fc9ff3"
+      "checksum": "949b0e6e0fe3f24f4a820319fd76d9ccb92f9770cbb1a64b09a8eca5c1fc9ff3",
+      "release_notes": "# ps5debug-NG v1.3.2\n\nv1.3.0 was the big feature release. **v1.3.2 is the correctness and reliability release** that follows it: writes now prove they landed, three separate session-killing bugs are fixed, a scan comparator that silently returned wrong results is repaired, and firmware support extends through **FW 13.60**.\n\nThere was no separate v1.3.1 download, so **this release also contains everything from v1.3.1** (Turbo Scan cancel).\n\n---\n\n### ⚠️ Read this first: writes are now verified, and that changes what you see\n\nProcess writes used to report success as soon as the write was handed off. They are now **read back and compared before success is reported**, so a write that silently did nothing now correctly reports a failure.\n\n**If you are a client developer:** a write that previously appeared to succeed may now return `CMD_ERROR`. That is the bug surfacing, not a new bug. Servers advertise **capability level `1.1`** so clients can detect the behaviour.\n\n- `CMD_PROC_WRITE` returns terminal `CMD_ERROR` on write or verification failure.\n- Write-multi returns **typed per-entry status codes** (invalid / DMAP / verify / mdbg) so you can tell exactly which entries failed and why, instead of losing the detail in one aggregate result.\n- A proven DMAP mismatch no longer quietly falls through to the mdbg path.\n- **Caveat:** a transfer whose start address ends in `0xFF` backs up one byte to keep the write aligned. That adjacent-byte read-modify-write is not atomic, so it needs a **stable or suspended target** to be safe.\n\n---\n\n### 🛠️ Session-killing bugs fixed\n\n- **Fixed a debug session wedge that required a console reboot.** Toggling a trainer patch while the target was stopped at a breakpoint could deadlock the sole debug worker: an RPC stop was issued against a process the debugger already held ptrace-stopped, so the wait never returned, the worker died, and every reattach afterwards failed (clients reported \"Process not connected\" / already-debugging) until the console was restarted.\n- **Fixed a crash..."
     },
     {
+      "id": "ftpsrv-ftpsrv-ps5",
       "name": "ftpsrv",
       "filename": "ftpsrv-ps5_1.16-ng-stable.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ftpsrv-ps5_1.16-ng-stable.elf",
@@ -238,10 +310,13 @@
       "description": "ftpsrv 1.16-ng (stable) by drakmor",
       "last_update": "2026-09-20",
       "version": "1.16-ng-stable",
+      "author": "drakmor",
       "category": "Networking & Servers",
-      "checksum": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32"
+      "checksum": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32",
+      "release_notes": "- Added LOWER and UPPER commands to recursively change the case of file, directory, and symlink names. The server checks for name collisions before renaming; STOP can cancel the operation.\r\n- Added a virtual /proc directory on PS5 for browsing process lists and details over FTP. DELE /proc/<pid> terminates a process with SIGKILL.\r\n- Added SELF decryption support for PS5 firmware 13.00, 13.20, 13.40, 13.42, and 13.60.\r\n- PS4 support up to 13.52, PS5 up to 13.60"
     },
     {
+      "id": "nanodns-nanodns",
       "name": "nanoDNS",
       "filename": "nanodns_0.4.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/nanodns_0.4.elf",
@@ -250,10 +325,13 @@
       "description": "nanoDNS 0.4 by drakmor",
       "last_update": "2026-08-04",
       "version": "0.4",
+      "author": "drakmor",
       "category": "Networking & Servers",
-      "checksum": "fcfb7d47c3b295560ea1603dc015f7c4950353ef0faca16428bd425680ef1fc5"
+      "checksum": "fcfb7d47c3b295560ea1603dc015f7c4950353ef0faca16428bd425680ef1fc5",
+      "release_notes": "- IPv6 support\r\n- Quiet mode\r\n- Yandex.DNS fix (remove old nanodns.ini)\r\n\r\nFW PS5 1.00-13.60, PS4 1.00-13.52 "
     },
     {
+      "id": "ps5-web-file-manager-web-file-mgr-v1.10",
       "name": "ps5-web-file-manager",
       "filename": "web-file-mgr-v1.10.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/web-file-mgr-v1.10.elf",
@@ -262,10 +340,13 @@
       "description": "Added samba support & Other improvements by owendswang",
       "last_update": "2026-10-05",
       "version": "v1.10",
+      "author": "owendswang",
       "category": "Networking & Servers",
-      "checksum": "409145ec9a1c338ecb5f6f917c3b057c4ba48bfae2e86d621e19dda7ac129bd3"
+      "checksum": "409145ec9a1c338ecb5f6f917c3b057c4ba48bfae2e86d621e19dda7ac129bd3",
+      "release_notes": "**Change logs:**\r\n- Added samba support. Connection info except password is stored in `/data/wfm/config/smb.conf`. Password is stored in `LocalStorage` of the web browser.\r\n- Added meta-data for PKG install. And it supports installing PKG from samba shares.\r\n- Improved multiple transfer speed including HTTP download/upload and copying from/to samba shares.\r\n- Added the filter function for the Name column.\r\n- Added About diag for version brief, credits and licenses. It would show up if you clicked the version string at the bottom right corner.\r\n- [`wfm-7zip-helper.elf`](https://github.com/owendswang/wfm-7zip-helper/releases/tag/v26.03-2) got updated to `v26.03-2`. Improved the write speed to disk drive while extracting."
     },
     {
+      "id": "ps5-web-file-manager-wfm-7zip-helper",
       "name": "ps5-web-file-manager",
       "filename": "wfm-7zip-helper_v1.10.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/wfm-7zip-helper_v1.10.elf",
@@ -274,10 +355,13 @@
       "description": "Added samba support & Other improvements by owendswang",
       "last_update": "2026-10-05",
       "version": "v1.10",
+      "author": "owendswang",
       "category": "Networking & Servers",
-      "checksum": "dd8bbae4cd44ed20c4cbafc74fdc3271f52b9d7888a0d4f4038a8ae05feb92a4"
+      "checksum": "dd8bbae4cd44ed20c4cbafc74fdc3271f52b9d7888a0d4f4038a8ae05feb92a4",
+      "release_notes": "**Change logs:**\r\n- Added samba support. Connection info except password is stored in `/data/wfm/config/smb.conf`. Password is stored in `LocalStorage` of the web browser.\r\n- Added meta-data for PKG install. And it supports installing PKG from samba shares.\r\n- Improved multiple transfer speed including HTTP download/upload and copying from/to samba shares.\r\n- Added the filter function for the Name column.\r\n- Added About diag for version brief, credits and licenses. It would show up if you clicked the version string at the bottom right corner.\r\n- [`wfm-7zip-helper.elf`](https://github.com/owendswang/wfm-7zip-helper/releases/tag/v26.03-2) got updated to `v26.03-2`. Improved the write speed to disk drive while extracting."
     },
     {
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.6.1",
       "name": "ps5-webkit-autoloader",
       "filename": "webkit-autoloader-installer_v0.6.1.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.6.1.elf",
@@ -286,10 +370,13 @@
       "description": "v0.6.1 by itsPLK",
       "last_update": "2026-10-08",
       "version": "v0.6.1",
+      "author": "itsPLK",
       "category": "Networking & Servers",
-      "checksum": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f"
+      "checksum": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
+      "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
+      "id": "ps5upload-ps5upload-7.0.22",
       "name": "ps5upload",
       "filename": "ps5upload-7.0.22_v7.0.22.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.22_v7.0.22.elf",
@@ -298,10 +385,13 @@
       "description": "v7.0.22 by phantomptr",
       "last_update": "2026-10-12",
       "version": "v7.0.22",
+      "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267"
+      "checksum": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267",
+      "release_notes": "- **HDR PNG carries the capture's ICC profile (#448).** 7.0.15 wrote the cICP tag only;\r\n  viewers that go by the ICC profile (and the reporter's) showed the image as SDR. Sony's\r\n  \"ScreenCapturePQ\" profile is now read out of the .jxr and embedded as iCCP in both HDR\r\n  variants, with cICP beside it in the tagged one.\r\n\r\n"
     },
     {
+      "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
       "name": "PS5-Custom-Tool-Manager-",
       "filename": "PS5.Custom.Tool.Manager.V1.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/PS5.Custom.Tool.Manager.V1.elf",
@@ -310,10 +400,28 @@
       "description": "PS5 Custom Tool by NikoBellikJR31",
       "last_update": "2026-06-04",
       "version": "Custom",
+      "author": "NikoBellikJR31",
       "category": "System Utilities",
-      "checksum": "297824ceaf6ea53fde57550adf9b5c2fc44c63ef60e8196ab92d351d1615d9cb"
+      "checksum": "297824ceaf6ea53fde57550adf9b5c2fc44c63ef60e8196ab92d351d1615d9cb",
+      "release_notes": "Version V1 \r\n\r\nV2 en preparation avec changement des formes avec fond transparent ..."
     },
     {
+      "id": "ps5sx2-ps5sxhelper-no-data-mount",
+      "name": "PS5SX2",
+      "filename": "PS5SXHelper-no-data-mount_vk-285-171.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/PS5SXHelper-no-data-mount_vk-285-171.elf",
+      "source": "https://github.com/Swordpdf/PS5SX2/releases",
+      "source_direct": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-171/PS5SXHelper-no-data-mount.elf",
+      "description": "PS5SX2 2.10 by Swordpdf",
+      "last_update": "2026-10-14",
+      "version": "vk-285-171",
+      "author": "Swordpdf",
+      "category": "System Utilities",
+      "checksum": "3fd3707a2eee7cd68a3a019d3fec19e923db444dd0811d90102ddbf26398484f",
+      "release_notes": "**PS5SX2 2.10** (build vk-285-171)\n\n**New**\n- **PS2 discs on the PS5 home screen.** Put a PS2 DVD in the console's drive while you are on the home screen: a tile with the game's name and cover shows up in about 6 seconds, and the PS5's own \"Unsupported Disc\" tile is hidden. Press **✕** on it and the game starts straight from the disc (or from its copy in `games/`, if you made one): no shelf, no question. Take the disc out and the tile goes away.\n- **A \"Reload PS2 Disc\" tile.** If a disc's tile does not come, does not start, or the \"Unsupported Disc\" tile stays: press this tile once. It cleans up after the last game, has ShadowMount+ look again and makes the disc's tile again. A pop-up says \"PS2 disc reloaded.\" a few seconds later.\n- **A question on the shelf.** With PS5SX2 open, a PS2 disc that is not copied yet asks **Play from disc** or **Copy to storage** (**Left / Right** choose, **✕** confirms, **○** is \"not now\"). *Play from disc* starts at once and reads the disc as you play, like a real PS2, so the disc has to stay in. *Copy to storage* copies it first (several minutes) and plays from the copy: faster loading, and the disc can come out. A disc that `games/` already holds starts from its copy with no question. So you can still dump a disc through the shelf, and once it is dumped, starting its game from the tile runs the dump instead of the disc.\n\n**Changed**\n- A PS2 disc put in on the home screen no longer starts PS5SX2 by itself: press its tile.\n- The empty file `nodiscask` in `/data/PCSX2/flags/` brings the 2.03 behaviour back: no question on the shelf, and a disc put in on the home screen is copied and started by itself. Use it if you don't use ShadowMount+, because the tiles need it.\n\n---\n\n## Download\n\n- **`PS5SX2-vk-285-171.zip`**: the app (eboot and files). The installer installs it for you.\n  SHA-256: `226ac24866f0b94566c0680c3b99c0d5abfe8030723f5b28dae20af039c76963`\n- **`PS5SX2Installer.elf`**: the installer, the same file as in 2.00. Send it and it installs this build, and every later on..."
+    },
+    {
+      "id": "prosperomgr-prosperomgr",
       "name": "ProsperoMgr",
       "filename": "ProsperoMgr_v1.1.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ProsperoMgr_v1.1.elf",
@@ -322,10 +430,13 @@
       "description": "v1.1 by notmaj0r",
       "last_update": "2026-09-28",
       "version": "v1.1",
+      "author": "notmaj0r",
       "category": "System Utilities",
-      "checksum": "e7a6bb544adb2fb2a61aa9cc83b0ad15f70b32d7511a3de0f1fb88812f11983c"
+      "checksum": "e7a6bb544adb2fb2a61aa9cc83b0ad15f70b32d7511a3de0f1fb88812f11983c",
+      "release_notes": "Prospero Manager v1.1\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/ProsperoMgr/blob/main/CHANGELOG.md)\r\n\r\nIf you encounter any issues, please report them through [GitHub](https://github.com/notmaj0r/ProsperoMgr/issues) or in our [Discord](https://discord.gg/E4g6fEqp46) server!\r\n\r\n### Special Thanks:\r\n\r\n💖 **Supporters** — *those who supported the project through* [Ko-Fi](https://ko-fi.com/maj0r), [Buy Me a Coffee](https://buymeacoffee.com/maj0r), or [PIX](https://livepix.gg/notmaj0r).\r\n\r\n• Vinas • Someone • Bruno Sanglard • AirKingBR • Marcus • Jeffs • cavalcanti27 • Maffioh\r\n\r\nIf Prospero Manager was useful to you, consider supporting the project development! 🫶\r\n\r\nAll contributions will go toward our goal of acquiring a low-firmware PS5 (1.xx–4.xx) for research, development, and future upgrades."
     },
     {
+      "id": "ps5-date-time-sync-ps5-date-time-sync",
       "name": "ps5-date-time-sync",
       "filename": "ps5-date-time-sync_v1.0.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ps5-date-time-sync_v1.0.0.elf",
@@ -334,10 +445,13 @@
       "description": "PS5 Time & Date Sync v1.0.0 by kerrdec97",
       "last_update": "2026-08-24",
       "version": "v1.0.0",
+      "author": "kerrdec97",
       "category": "System Utilities",
-      "checksum": "91806229803845930b2173174e1afeadf509e4c171f6396788f929558fad6849"
+      "checksum": "91806229803845930b2173174e1afeadf509e4c171f6396788f929558fad6849",
+      "release_notes": "# PS5 Time & Date Sync by Deckerr97\n\nInitial public release.\n\nA standalone, one-shot PS5 payload that restores the console date and time using public NTP servers. It is designed for consoles whose CMOS/RTC battery no longer retains the clock after a complete shutdown.\n\n## Features\n\n- Automatic NTP date and time synchronization\n- Published Cloudflare numeric fallbacks when PS5 DNS is unavailable\n- Cloudflare, pool.ntp.org, and Google Public NTP hostname fallbacks\n- NTP endpoint, version, mode, stratum, request timestamp, and date validation\n- Clock read-back verification after updating\n- Preserves the configured PS5 timezone\n- One notification per payload execution\n- No application installation or file modification\n- Automatically exits after completion\n\n## Requirements\n\n- Compatible PS5 exploit and ELF payload loader\n- Internet access with outbound UDP port 123\n- An execution environment that permits `settimeofday`\n\nBuilt using a PS5 Payload SDK package containing firmware definitions through 13.60. Actual runtime compatibility depends on the firmware, exploit, loader, and available permissions.\n\n## Acknowledgements\n\nSpecial thanks to **John Törnblom** and every contributor to the [PS5 Payload SDK](https://github.com/ps5-payload-dev/sdk) for creating and maintaining the toolchain that made this payload possible.\n\n## Build verification\n\n- File: `ps5-date-time-sync.elf`\n- Size: 130,240 bytes\n- SHA-256: `91806229803845930B2173174E1AFEADF509E4C171F6396788F929558FAD6849`"
     },
     {
+      "id": "ps5-payload-manager-pldmgr_v0.6.0",
       "name": "ps5-payload-manager",
       "filename": "pldmgr_v0.6.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pldmgr_v0.6.0.elf",
@@ -346,10 +460,13 @@
       "description": "v0.6.0 by itsPLK",
       "last_update": "2026-10-13",
       "version": "v0.6.0",
+      "author": "itsPLK",
       "category": "System Utilities",
-      "checksum": "5b31079d81d6467f2754edd1d6dbe63b0306502e135c21a425ecb263e39e2059"
+      "checksum": "5b31079d81d6467f2754edd1d6dbe63b0306502e135c21a425ecb263e39e2059",
+      "release_notes": "## Changelog\r\n\r\n### 🚀 Features & UX Improvements\r\n* **Repository Browser Overhaul**: Rebuilt **Get Payloads** into a full store experience with a card grid, search, source filtering, and live install status badges.\r\n* **Payload Details**: Added a dedicated details page showing payload README documentation and version info.\r\n* **Cross-Browser Favorites**: Dashboard favorites are now stored on the console, keeping your favorites and custom order synced across all browsers and devices.\r\n* **Controller & History Navigation**: Pressing Back / Circle on your PS5 controller or browser now closes modals, details, and edit modes instead of exiting the browser. Added URL links for direct navigation.\r\n* **UI Polish & Quality of Life**: Refreshed Autoload screen styling with improved auto-saving, redesigned payload launch overlay, support for custom repository payload icons and source badges, and cleaner notification toasts.\r\n* **New Language**:\r\n  * **Dutch** (thanks to JensJ56)\r\n* **Translations**: Updated localization files across all 17 supported languages.\r\n\r\n### 🛠️ Backend & Bug Fixes\r\n* **Autoload Network Resilience**: Fixed repository network timeouts on boot delaying the autoload sequence ([#109](https://github.com/itsPLK/ps5-payload-manager/pull/109), thanks to [kianborg](https://github.com/kianborg)).\r\n* **Fresh PS5 Install Fix**: Fixed installer failing on brand new PS5 systems ([#108](https://github.com/itsPLK/ps5-payload-manager/issues/108)).\r\n* **Security & Verification**: Added checksum verification for repository downloads and restricted actions to POST requests with origin validation.\r\n* **Stability Improvements**: Resolved crashes with large repository catalogs, improved memory handling, fixed connection cleanup, and other minor stability improvements and bug fixes.\r\n\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.5.2...v0.6.0\r\n\r\n\r\n---\r\n\r\n## 📝 How to update\r\nYou do **not** need to manually download or replace your original `pldmgr.elf` file.  \r\nSimply install the..."
     },
     {
+      "id": "ps5-pkg-manager-pkg-manager_v1.5.1",
       "name": "ps5-pkg-manager",
       "filename": "pkg-manager_v1.5.1.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pkg-manager_v1.5.1.elf",
@@ -358,10 +475,13 @@
       "description": "v1.5.1 by itsPLK",
       "last_update": "2026-10-10",
       "version": "v1.5.1",
+      "author": "itsPLK",
       "category": "System Utilities",
-      "checksum": "82e3548edcc41419b644482cccaef65689334fc0315dc20247f48b90bf182dca"
+      "checksum": "82e3548edcc41419b644482cccaef65689334fc0315dc20247f48b90bf182dca",
+      "release_notes": "- Added support for PS5 backport patches that previously appeared as unknown packages\n- Show an \"SDK target\" badge for PS5 packages when the executable's SDK version can be read reliably\n- Improved installed-version detection so newer PS5 patches can be installed and already installed updates are correctly recognized\n\nFull Changelog: https://github.com/itsPLK/ps5-pkg-manager/compare/v1.5.0...v1.5.1\n"
     },
     {
+      "id": "anypad-ps5-english-anypad-ps5-0.5.5-beta-prerelease",
       "name": "AnyPad-PS5-English [Pre-release]",
       "filename": "AnyPad-PS5-0.5.5-beta [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/AnyPad-PS5-0.5.5-beta%20%5BPre-release%5D.elf",
@@ -370,10 +490,13 @@
       "description": "0.5.5-beta [Pre-release] by Mohammad-Aghayan",
       "last_update": "2026-10-04",
       "version": "AnyPad",
+      "author": "Mohammad-Aghayan",
       "category": "Pre-release",
-      "checksum": "0947a56630c54d763a5999eb6e89c3382e3ecf0234d782b2956418c1f6f87677"
+      "checksum": "0947a56630c54d763a5999eb6e89c3382e3ecf0234d782b2956418c1f6f87677",
+      "release_notes": "Fix didnt run above firmware 10.01 and up. \r\nFix icon didnt show up in Media \r\nadd English"
     },
     {
+      "id": "cheatrunner-cheatrunner-prerelease",
       "name": "CheatRunner [Pre-release]",
       "filename": "CheatRunner_v0.16 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/CheatRunner_v0.16%20%5BPre-release%5D.elf",
@@ -382,10 +505,13 @@
       "description": "v0.16 [Pre-release] by notmaj0r",
       "last_update": "2026-07-20",
       "version": "v0.16",
+      "author": "notmaj0r",
       "category": "Pre-release",
-      "checksum": "a5483253926a0188c76a68101714cbd9bbc9c2305e0b071fad775d752da995bb"
+      "checksum": "a5483253926a0188c76a68101714cbd9bbc9c2305e0b071fad775d752da995bb",
+      "release_notes": "CheatRunner v0.16\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/CheatRunner/blob/main/CHANGELOG.md)\r\n\r\nCheck [GUIDE](https://github.com/notmaj0r/CheatRunner#homebrew-launcher) to setup CheatRunner.zip on Homebrew Launcher.\r\n\r\n⚠️ Before updating to a new CheatRunner version, please follow these steps: [Updating CheatRunner](https://github.com/notmaj0r/CheatRunner#-updating-cheatrunner)\r\n\r\nSpecial Thanks:\r\n\r\n💖 Supporters - those who supported the project through [Ko-Fi](https://ko-fi.com/maj0r) or [Buy Me a Coffee](https://buymeacoffee.com/maj0r).\r\n• primo • lal3x • jawad • anonymous • Maffioh\r\n\r\n💚 Testers - those who tested early builds of CheatRunner before release."
     },
     {
+      "id": "hearbridge-ps5-hearbridge-ps5-1.3.2-prerelease",
       "name": "HearBridge-PS5 [Pre-release]",
       "filename": "HearBridge-PS5-1.3.2_v1.3.2-beta [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/HearBridge-PS5-1.3.2_v1.3.2-beta%20%5BPre-release%5D.elf",
@@ -394,10 +520,13 @@
       "description": "HearBridge 1.3.2 beta [Pre-release] by X-F1REBALL-X",
       "last_update": "2026-10-13",
       "version": "v1.3.2-beta",
+      "author": "X-F1REBALL-X",
       "category": "Pre-release",
-      "checksum": "b034107403d9d22f2a405b9ecfd25c786a5ac729a1de3254ee7452d26cdeb4ce"
+      "checksum": "b034107403d9d22f2a405b9ecfd25c786a5ac729a1de3254ee7452d26cdeb4ce",
+      "release_notes": "Beta build. Please try it and tell us how it goes in #34 before it becomes the main release.\n\n**Fixed**\n- Controllers no longer drop or refuse to reconnect while HearBridge is running, over Bluetooth or USB (#34). HearBridge now reads much less of the console's Bluetooth traffic and steps aside whenever a controller connects.\n\n**Changed**\n- HearBridge only pairs with headphones and speakers. Controllers, phones, PCs and TVs are left alone.\n- Controllers are blocked automatically. The Headsets page has a new \"Blocked devices\" list where you can block a device by its address or unblock one.\n- AirPods, Galaxy Buds, OnePlus Buds and other earbuds that report an unusual device type still show up and connect.\n- If your headset drops, HearBridge reconnects to it on its own without grabbing other devices.\n\nThis build has extra logging turned on. If something goes wrong, please attach the log from http://<console-ip>:8090/api/diag.\n"
     },
     {
+      "id": "poords4-poords4-status-prerelease",
       "name": "PoorDS4 [Pre-release]",
       "filename": "PoorDS4-status_v0.1.0-rc51 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/PoorDS4-status_v0.1.0-rc51%20%5BPre-release%5D.elf",
@@ -406,10 +535,13 @@
       "description": "PoorDS4 v0.1.0-rc51 [Pre-release] by ItsBlurf",
       "last_update": "2026-09-30",
       "version": "v0.1.0-rc51",
+      "author": "ItsBlurf",
       "category": "Pre-release",
-      "checksum": "d47bb84a6ae05117f095c05b75dfee15d9fbf07864a3e52d0e2e626eab613440"
+      "checksum": "d47bb84a6ae05117f095c05b75dfee15d9fbf07864a3e52d0e2e626eab613440",
+      "release_notes": "PoorDS4 RC51 brings concurrent multi-controller streaming (up to 4 controllers), full support for modular PRX input engines (Control, Forza Horizon 5), UE5 crash and ghost handle fixes (Stellar Blade, Poppy Playtime, Kena, TEKKEN 8), and automatic stale gateway recovery.\n\n### What Changed (since RC44)\n\n- **Concurrent Multi-DS4 Controller Streaming (Slots 0..3)**:\n  - The injected `SceRemotePlay` reader thread now discovers, opens, and polls up to 4 active physical DS4 controller handles concurrently at up to 1000Hz using independent per-slot buffers and atomic sequence counters. All opened handles are cleanly closed when the thread terminates.\n  - Implemented per-slot reader retrieval (`wireless_ds4_remote_reader_read_slot`), allowing independent 120Hz polling of each controller.\n  - Extended the supervisor slot multiplexer (`feed_multi_controller_slots`) to feed physical secondary controllers, simulated pads, and same-user aliases, supporting any combination of physical DS4, simulated DS4, and native DualSense controllers.\n  - Updated `PoorDS4-status.elf` to report exact slot roles dynamically: `Player %u (Physical DS4)`, `Player %u (Primary DS4)`, `Player %u Alias (Primary DS4)`, `Player %u (Simulated DS4)`, `Player %u (Native DualSense)`, or `Unassigned/Empty`.\n\n- **Forza Horizon 5 & Multi-Module Same-User Handle Aliasing**:\n  - Fixed an issue where games with peripheral or wheel plugins (like Forza Horizon 5's `/app0/logiWheel.prx`) open a handle under the same user before the game engine opens its handle. Previously, only handle 0 received translated packets while the engine received handle mismatch errors (`0x80920001`).\n  - Added user ID tracking across the `libScePad` client table. The bridge now feeds primary input to all active non-DualSense handles owned by the user simultaneously, allowing both `logiWheel.prx` and `eboot.bin` to stream input with 0 mismatches.\n\n- **Modular PRX Import Scanning (Fix for Control Ultimate Edition)**:\n  - Fixed `import_scan_error=no_supported_hooks` (`install_result=-4..."
     },
     {
+      "id": "poords4-poords4-stop-prerelease",
       "name": "PoorDS4 [Pre-release]",
       "filename": "PoorDS4-stop_v0.1.0-rc51 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/PoorDS4-stop_v0.1.0-rc51%20%5BPre-release%5D.elf",
@@ -418,10 +550,13 @@
       "description": "PoorDS4 v0.1.0-rc51 [Pre-release] by ItsBlurf",
       "last_update": "2026-09-30",
       "version": "v0.1.0-rc51",
+      "author": "ItsBlurf",
       "category": "Pre-release",
-      "checksum": "ffdce4964f0d34a2b9be7cb65e6ad345d5beb582dcdf94d0214cde6bc79acd0d"
+      "checksum": "ffdce4964f0d34a2b9be7cb65e6ad345d5beb582dcdf94d0214cde6bc79acd0d",
+      "release_notes": "PoorDS4 RC51 brings concurrent multi-controller streaming (up to 4 controllers), full support for modular PRX input engines (Control, Forza Horizon 5), UE5 crash and ghost handle fixes (Stellar Blade, Poppy Playtime, Kena, TEKKEN 8), and automatic stale gateway recovery.\n\n### What Changed (since RC44)\n\n- **Concurrent Multi-DS4 Controller Streaming (Slots 0..3)**:\n  - The injected `SceRemotePlay` reader thread now discovers, opens, and polls up to 4 active physical DS4 controller handles concurrently at up to 1000Hz using independent per-slot buffers and atomic sequence counters. All opened handles are cleanly closed when the thread terminates.\n  - Implemented per-slot reader retrieval (`wireless_ds4_remote_reader_read_slot`), allowing independent 120Hz polling of each controller.\n  - Extended the supervisor slot multiplexer (`feed_multi_controller_slots`) to feed physical secondary controllers, simulated pads, and same-user aliases, supporting any combination of physical DS4, simulated DS4, and native DualSense controllers.\n  - Updated `PoorDS4-status.elf` to report exact slot roles dynamically: `Player %u (Physical DS4)`, `Player %u (Primary DS4)`, `Player %u Alias (Primary DS4)`, `Player %u (Simulated DS4)`, `Player %u (Native DualSense)`, or `Unassigned/Empty`.\n\n- **Forza Horizon 5 & Multi-Module Same-User Handle Aliasing**:\n  - Fixed an issue where games with peripheral or wheel plugins (like Forza Horizon 5's `/app0/logiWheel.prx`) open a handle under the same user before the game engine opens its handle. Previously, only handle 0 received translated packets while the engine received handle mismatch errors (`0x80920001`).\n  - Added user ID tracking across the `libScePad` client table. The bridge now feeds primary input to all active non-DualSense handles owned by the user simultaneously, allowing both `logiWheel.prx` and `eboot.bin` to stream input with 0 mismatches.\n\n- **Modular PRX Import Scanning (Fix for Control Ultimate Edition)**:\n  - Fixed `import_scan_error=no_supported_hooks` (`install_result=-4..."
     },
     {
+      "id": "poords4-poords4rc51-prerelease",
       "name": "PoorDS4 [Pre-release]",
       "filename": "PoorDS4rc51_v0.1.0-rc51 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/PoorDS4rc51_v0.1.0-rc51%20%5BPre-release%5D.elf",
@@ -430,10 +565,13 @@
       "description": "PoorDS4 v0.1.0-rc51 [Pre-release] by ItsBlurf",
       "last_update": "2026-09-30",
       "version": "v0.1.0-rc51",
+      "author": "ItsBlurf",
       "category": "Pre-release",
-      "checksum": "e1b9f257f51678a977edaeafd4ca1f8a03e9df0afda7d5dd84435841fa20795d"
+      "checksum": "e1b9f257f51678a977edaeafd4ca1f8a03e9df0afda7d5dd84435841fa20795d",
+      "release_notes": "PoorDS4 RC51 brings concurrent multi-controller streaming (up to 4 controllers), full support for modular PRX input engines (Control, Forza Horizon 5), UE5 crash and ghost handle fixes (Stellar Blade, Poppy Playtime, Kena, TEKKEN 8), and automatic stale gateway recovery.\n\n### What Changed (since RC44)\n\n- **Concurrent Multi-DS4 Controller Streaming (Slots 0..3)**:\n  - The injected `SceRemotePlay` reader thread now discovers, opens, and polls up to 4 active physical DS4 controller handles concurrently at up to 1000Hz using independent per-slot buffers and atomic sequence counters. All opened handles are cleanly closed when the thread terminates.\n  - Implemented per-slot reader retrieval (`wireless_ds4_remote_reader_read_slot`), allowing independent 120Hz polling of each controller.\n  - Extended the supervisor slot multiplexer (`feed_multi_controller_slots`) to feed physical secondary controllers, simulated pads, and same-user aliases, supporting any combination of physical DS4, simulated DS4, and native DualSense controllers.\n  - Updated `PoorDS4-status.elf` to report exact slot roles dynamically: `Player %u (Physical DS4)`, `Player %u (Primary DS4)`, `Player %u Alias (Primary DS4)`, `Player %u (Simulated DS4)`, `Player %u (Native DualSense)`, or `Unassigned/Empty`.\n\n- **Forza Horizon 5 & Multi-Module Same-User Handle Aliasing**:\n  - Fixed an issue where games with peripheral or wheel plugins (like Forza Horizon 5's `/app0/logiWheel.prx`) open a handle under the same user before the game engine opens its handle. Previously, only handle 0 received translated packets while the engine received handle mismatch errors (`0x80920001`).\n  - Added user ID tracking across the `libScePad` client table. The bridge now feeds primary input to all active non-DualSense handles owned by the user simultaneously, allowing both `logiWheel.prx` and `eboot.bin` to stream input with 0 mismatches.\n\n- **Modular PRX Import Scanning (Fix for Control Ultimate Edition)**:\n  - Fixed `import_scan_error=no_supported_hooks` (`install_result=-4..."
     },
     {
+      "id": "prosperomgr-prosperomgr-prerelease",
       "name": "ProsperoMgr [Pre-release]",
       "filename": "ProsperoMgr_beta [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ProsperoMgr_beta%20%5BPre-release%5D.elf",
@@ -442,10 +580,13 @@
       "description": "BETA - Prospero Manager [Pre-release] by notmaj0r",
       "last_update": "2026-08-25",
       "version": "beta",
+      "author": "notmaj0r",
       "category": "Pre-release",
-      "checksum": "6cde8d8e97478ff43f69d2c6b22ac6512311d83b1d9ceb09d56796b9200c1b3c"
+      "checksum": "6cde8d8e97478ff43f69d2c6b22ac6512311d83b1d9ceb09d56796b9200c1b3c",
+      "release_notes": "**⚠️ NOTE: This is a pre-release of Prospero Manager!**\r\n\r\nThis build may contain bugs, incomplete features, or unexpected behavior.\r\n\r\nIf you encounter any issues, please report them through [GitHub](https://github.com/notmaj0r/ProsperoMgr/issues) or in our [Discord](https://discord.gg/E4g6fEqp46) server!\r\n\r\nThe project will become **fully open source** once it is ready for its official release.\r\n\r\n### Special Thanks\r\n\r\n💖 **Supporters** — *those who supported the project through* [Ko-Fi](https://ko-fi.com/maj0r), [Buy Me a Coffee](https://buymeacoffee.com/maj0r), or [PIX](https://livepix.gg/notmaj0r).\r\n\r\n• Vinas • Someone • Bruno Sanglard • AirKingBR • Marcus\r\n\r\n💚 **Testers** — *those who helped test early builds of Prospero Manager before release.*"
     },
     {
+      "id": "shadowmountplus-shadowmountplus-prerelease",
       "name": "ShadowMountPlus [Pre-release]",
       "filename": "shadowmountplus_1.7-beta5fix1 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7-beta5fix1%20%5BPre-release%5D.elf",
@@ -454,10 +595,13 @@
       "description": "ShadowMountPlus 1.7beta5-fix1 [Pre-release] by drakmor",
       "last_update": "2026-10-10",
       "version": "1.7-beta5fix1",
+      "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5"
+      "checksum": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5",
+      "release_notes": "- **Removed legacy kstuff auto-pause and delay autotuning.** Use the latest version of kstuff and do not use EtaHEN.\r\n- Added per-game and default fakelib modes: Full, Emulators only, and Disabled, configurable through the web UI.\r\n- Prevented libkernel.sprx from entering fakelib overlays, using filtered caches for images and installed PKGs.\r\n- Fixed backport mounting when cleanup files or the fakelib directory are missing; missing files are silently skipped.\r\n- Added read-only access to system fonts `/preinst/common/font` inside game sandboxes.\r\n- Fixed sandbox storage mounts on USB connection/disconnection and disc insertion/ejection. Only mounted `/mnt/usb*`, `/mnt/ext*`, and `/mnt/disc` volumes are exposed.\r\n- Improved game error reporting during the first 60 seconds after launch, including fatal-signal details and crash addresses when available.\r\n- Added automatic ShellCore hook recovery after resume and before game registration.\r\n- Added game versions to compact and full web cards; fixed icons for games on extended storage.\r\n- Improved missing-source handling, localized operation errors, and updated web UI translations.\r\n\r\nfix: displaying PS4 game icons from an external drive in the web interface.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta5...1.7-beta5fix1"
     },
     {
+      "id": "etahen-etahen-prerelease",
       "name": "etaHEN [Pre-release]",
       "filename": "etaHEN_2.0b-pre [Pre-release].bin",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/etaHEN_2.0b-pre%20%5BPre-release%5D.bin",
@@ -466,10 +610,13 @@
       "description": "etaHEN 2.0b PRE-RELEASE [Pre-release] by etaHEN",
       "last_update": "2025-01-31",
       "version": "2.0b-pre",
+      "author": "etaHEN",
       "category": "Pre-release",
-      "checksum": "2c4d85c0839d371b39f3f1ea219ed506df2c61d65f5abbef2a69e4bd51e9b383"
+      "checksum": "2c4d85c0839d371b39f3f1ea219ed506df2c61d65f5abbef2a69e4bd51e9b383",
+      "release_notes": "**Note:** This pre-release version will NOT be updated, any fixes or updates made after this build will be saved & added to the final release\r\n"
     },
     {
+      "id": "ftpsrv-ftpsrv-ps5-autopause-prerelease",
       "name": "ftpsrv [Pre-release]",
       "filename": "ftpsrv-ps5-autopause_1.6-ng-test2 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ftpsrv-ps5-autopause_1.6-ng-test2%20%5BPre-release%5D.elf",
@@ -478,10 +625,13 @@
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "last_update": "2026-06-03",
       "version": "1.6-ng-test2",
+      "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "da65f0c5b5dffd2b803e2521d73e96d35db4ff9711e661f49be5795f72da2cd3"
+      "checksum": "da65f0c5b5dffd2b803e2521d73e96d35db4ff9711e661f49be5795f72da2cd3",
+      "release_notes": "- PS4 GoldenHEN compatability\r\n- /procfs PS5\r\n- LOWER/UPPER commands\r\n\r\n**Full Changelog**: https://github.com/drakmor/ftpsrv/compare/1.16-ng-test1...1.6-ng-test2"
     },
     {
+      "id": "ftpsrv-ftpsrv-ps5-prerelease",
       "name": "ftpsrv [Pre-release]",
       "filename": "ftpsrv-ps5_1.6-ng-test2 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ftpsrv-ps5_1.6-ng-test2%20%5BPre-release%5D.elf",
@@ -490,10 +640,13 @@
       "description": "ftpsrv 1.16-ng-test2 [Pre-release] by drakmor",
       "last_update": "2026-06-03",
       "version": "1.6-ng-test2",
+      "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "6364e0529416f400be123c52acdcda68efd5179d971c060286022131fd047b8e"
+      "checksum": "6364e0529416f400be123c52acdcda68efd5179d971c060286022131fd047b8e",
+      "release_notes": "- PS4 GoldenHEN compatability\r\n- /procfs PS5\r\n- LOWER/UPPER commands\r\n\r\n**Full Changelog**: https://github.com/drakmor/ftpsrv/compare/1.16-ng-test1...1.6-ng-test2"
     },
     {
+      "id": "kstuff-lite-kstuff-prerelease",
       "name": "kstuff-lite [Pre-release]",
       "filename": "kstuff_v1.11 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/kstuff_v1.11%20%5BPre-release%5D.elf",
@@ -502,10 +655,13 @@
       "description": "Kstuff Lite 1.11 Beta [Pre-release] by EchoStretch",
       "last_update": "2026-09-20",
       "version": "v1.11",
+      "author": "EchoStretch",
       "category": "Pre-release",
-      "checksum": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779"
+      "checksum": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
+      "release_notes": "**Kstuff Lite 1.11 Beta Supports Firmware 1.00-13.60**\r\n\r\nA huge thanks to @sleirsgoevy for the help and creating this project, and to @zecoxao, @flatz, @idlesauce, @buzzer-re, @Al-Azif, @drakmor and everyone else who contributed. Your work and support are greatly appreciated!\r\n\r\n🔹 Changelog\r\nAdded 13.xx Support\r\nAdded 1.xx/2.xx Support @drakmor \r\nAdded Fpkg Upto 11.40 @drakmor \r\nPerformance tuning @drakmor\r\nPS4 media app support @drakmor\r\nFixed Fpkg For 11.60 @ArkSama \r\nFixed int3 For 13.xx @idlesauce \r\nAdded Misc Kit Stuff\r\n\r\n** @drakmor put alot of work into fpkg so make sure you thank him.. **\r\n\r\n📂 Original Source:\r\n[github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb](https://github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb)"
     },
     {
+      "id": "onionhen-onionhen-prerelease",
       "name": "onionHEN [Pre-release]",
       "filename": "OnionHEN_v0.9.0-beta2 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/OnionHEN_v0.9.0-beta2%20%5BPre-release%5D.elf",
@@ -514,10 +670,13 @@
       "description": "OnionHEN v0.9.0-beta2 [Pre-release] by aydencharles",
       "last_update": "2026-10-07",
       "version": "v0.9.0-beta2",
+      "author": "aydencharles",
       "category": "Pre-release",
-      "checksum": "dd2e78af126d9d115df147a0f2bff6269de7a3eee5a556e06b6c21726a36f087"
+      "checksum": "dd2e78af126d9d115df147a0f2bff6269de7a3eee5a556e06b6c21726a36f087",
+      "release_notes": "# OnionHEN v0.9.0-beta2\n\n**Beta, for testing only.** This build will have bugs. It can fail to inject, miss the home-screen shortcut, or misbehave on a firmware that v0.0.13 already handled. It is not a stable replacement for [v0.0.13](https://github.com/aydencharles/onionHEN/releases/tag/v0.0.13). If you need the last stable release, stay on v0.0.13.\n\nPlease test a **cold boot**: reboot, run the exploit, start elfldr, then send `OnionHEN.elf` once. Loading it again into a ShellUI that already ran OnionHEN is not a supported test.\n\nWhen you report a problem, include the firmware version, what you did, and `/data/OnionHEN/OnionHEN.log`. For a cheats problem, also include `/data/OnionHEN/OnionHEN_util_daemon.log`.\n\nOnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, a game overlay, payload management, and background services.\n\n**Version:** This is **v0.9.0-beta2**, the next test build after [v0.9.0-beta1](https://github.com/aydencharles/onionHEN/releases/tag/v0.9.0-beta1). Still a beta. This one is mainly a fix for the cheats menu.\n\n**Firmware under test:** 4.03 – 13.60, same as beta1. v0.0.13 covered 4.03 – 12.70. Please try the cheats menu again on 4.03. 13.x still needs testing on real consoles.\n\n## What changed since v0.9.0-beta1\n\n### Cheats\n\n[#97](https://github.com/aydencharles/onionHEN/issues/97) and [#103](https://github.com/aydencharles/onionHEN/issues/103), on firmware 4.03: opening the cheats menu for a game with no cheats took about 40 seconds. After that the home screen died, and the console did nothing until a forced reboot. This happened on v0.0.13 and again on v0.9.0-beta1. It gets in the way when you are only checking whether that game has cheats.\n\nThis build opens that menu in a few seconds, and the home screen stays up. On [#103](https://github.com/aydencharles/onionHEN/issues/103), an early beta2 build was tried and the reporter said the problem is gone.\n\n### Home screen..."
     },
     {
+      "id": "orbit-store-ps5-orbit_store-prerelease",
       "name": "orbit-store-ps5 [Pre-release]",
       "filename": "orbit_store_v1.3.0 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/orbit_store_v1.3.0%20%5BPre-release%5D.elf",
@@ -526,10 +685,13 @@
       "description": "Orbit Store 1.3.0 (Beta) [Pre-release] by saawant12",
       "last_update": "2026-10-13",
       "version": "v1.3.0",
+      "author": "saawant12",
       "category": "Pre-release",
-      "checksum": "553b39e7503ec141f6a015b7939c83e93fe8f05dee176e42c7e3bc026b0ea519"
+      "checksum": "553b39e7503ec141f6a015b7939c83e93fe8f05dee176e42c7e3bc026b0ea519",
+      "release_notes": "**A new look for Orbit, with 400 more games to explore.**\n\n- **400 new games:** 200 PS5 and 200 PS4, bringing Orbit’s catalogue to **1,601 games**: 1,001 PS5 and 600 PS4.\n- **2,085 more download options.** There are 532 links for the new games and **1,553 additional source or format choices for 700 existing games**. The catalogue now offers **4,050 download options** across Archive.org, Vikingfile and AkiraBox. **Our promise remains the same: single-link downloads.**\n- **Three new interfaces across all apps.** Choose **Crossbar**, **Cinema** or **Panorama** in the native PS5 app, browser and Orbit Zero. Store remains the default, and your queue, favourites and settings stay with you when you switch.\n\n## Orbit Store · PS5 browser and native app\n\n- **Browse without page breaks.** Keep scrolling through Discover’s All games, Browse and Library. More items appear as you move through the list.\n- **Controller navigation throughout.** Move between sections, games and their actions, with menus and confirmation panels keeping the selection while they’re open.\n\n## Orbit Zero · Mac, Windows and Linux\n\n- **A refreshed desktop experience.** The new interfaces also cover Console, Downloads, Library and Settings.\n- **More Browse controls.** Show favourites, filter by download size, change the sort order and reset your filters across every interface.\n- **Find your downloaded files.** Download details show the full PS5 destination and the computer location while a cached copy remains.\n\n[Install Orbit Zero on Mac, Windows or Linux](https://github.com/saawant12/orbit-store-ps5/blob/main/guides/orbit-zero-installation.md) · [Set up a PS5 without internet](https://github.com/saawant12/orbit-store-ps5/blob/main/guides/orbit-zero-offline-ps5.md) · [Update Orbit Store on PS5](https://github.com/saawant12/orbit-store-ps5/blob/main/guides/getting-started.md#update-the-tv-app)\n\n<br>\n\n**Crossbar**\n\n![Crossbar Discover in the native app](https://raw.githubusercontent.com/saawant12/orbit-store-ps5/cf4864c56b5500a4c2d12384eb58051..."
     },
     {
+      "id": "ps5-app-dumper-ps5-app-dumper_v2.10-prerelease",
       "name": "ps5-app-dumper [Pre-release]",
       "filename": "ps5-app-dumper_v2.10 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5-app-dumper_v2.10%20%5BPre-release%5D.elf",
@@ -538,10 +700,13 @@
       "description": "PS5 App Dumper 2.00 Beta PS5 App Dumper 2.10 Beta [Pre-release] by EchoStretch",
       "last_update": "2026-10-03",
       "version": "v2.10",
+      "author": "EchoStretch",
       "category": "Pre-release",
-      "checksum": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b"
+      "checksum": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
+      "release_notes": "## Highlights\r\n\r\n**DLC**\r\n- Each title shows how many DLC are installed for it, with names and sizes\r\n- Dump DLC on the running game dumps its DLC alone, next to a dump you made before, without copying the game again\r\n- With several DLC you pick which ones; a picked DLC that is there already is replaced\r\n- DLC dumps now carry their metadata (param.json, icon) from the installed package (#29)\r\n- DLC that only unlock content in the game are never mounted by the console and have nothing to dump; the page says so instead of hiding the button\r\n\r\n**Titles and dumps**\r\n- A DUMPED badge on every title that is dumped somewhere, UNFINISHED for one that was cut short\r\n- New dump folders carry the app title: `PPSA01325-app0_ASTRO's_PLAYROOM` (setting `folder_titles`, on by default)\r\n- Rename on the Dumps page switches every dump to names with or without the title\r\n- Tap a dump's path to copy it, and the Dumps list fits a phone\r\n\r\n**Queue**\r\n- Up to 64 titles instead of 16\r\n\r\n**Fixes**\r\n- Titles stuck at 99 %  were held as installing for good and could not be dumped\r\n- The UNFINISHED badge was drawn far too big\r\n\r\n## Notes\r\n- Dumps made with 2.00 or earlier keep their names and are still recognised. Use Rename on the Dumps page if you want the titles on them too.\r\n- A dump ShadowMount runs a game from is not renamed, because the link points at its folder.\r\n\r\n## Thanks\r\nThanks to @MangoScango for #29, which completes the DLC dumps with their metadata.\r\n\r\n## For developers\r\nBuilt on [webhb](https://github.com/slopmaster33/webhb) 0.4.1. If its download does not work, `webhb-0.4.1.tar.gz` is attached; build with `WEBHB_TARBALL=webhb-0.4.1.tar.gz make`."
     },
     {
+      "id": "ps5-pkg-manager-pkgmgr_v1.2.1-prerelease",
       "name": "ps5-pkg-manager [Pre-release]",
       "filename": "pkgmgr_v1.2.1 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/pkgmgr_v1.2.1%20%5BPre-release%5D.elf",
@@ -550,10 +715,13 @@
       "description": "v1.2.1 [Pre-release] by itsPLK",
       "last_update": "2026-09-22",
       "version": "v1.2.1",
+      "author": "itsPLK",
       "category": "Pre-release",
-      "checksum": "dff50e27f954e78838e97bcddbb5914bd348572a3caa3b2f9a0880e25a0f5fbc"
+      "checksum": "dff50e27f954e78838e97bcddbb5914bd348572a3caa3b2f9a0880e25a0f5fbc",
+      "release_notes": "## Changelog\r\n\r\n### Direct Install\r\n- PKG files can now be installed from another device, such as a PC, directly to the console without a temporary disk copy\r\n\r\n### Networking\r\n- Moved package streaming and Direct Install services to ports `18841` and `18842` to avoid potential conflicts with other homebrew applications. The web interface remains on port `8844`.\r\n\r\n### SMB Streaming\r\n- Improved SMB package streaming performance, reaching approximately 110 MB/s during installs in ideal conditions\r\n- Added streaming diagnostics to help identify network and server bottlenecks\r\n\r\n### Extended USB Storage\r\n- Available-space checks now include extended USB storage (`/mnt/ext0`)\r\n\r\n### Package Badges\r\n- PS4 and PS5 package badges are now shown in package lists\r\n\r\n### Package Detection and Scanning\r\n- Fixed detection of PS5 DLC packages\r\n- Fixed drive scans hiding other packages when an unknown package was present, such as during a copy operation\r\n\r\n---\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-pkg-manager/compare/v1.1.0...v1.2.1"
     },
     {
+      "id": "ps5-web-file-manager-web-file-mgr-v1.8-prerelease",
       "name": "ps5-web-file-manager [Pre-release]",
       "filename": "web-file-mgr-v1.8 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/web-file-mgr-v1.8%20%5BPre-release%5D.elf",
@@ -562,10 +730,13 @@
       "description": "Added archive extract support via 7zip helper [Pre-release] by owendswang",
       "last_update": "2026-09-08",
       "version": "v1.8",
+      "author": "owendswang",
       "category": "Pre-release",
-      "checksum": "c1a688354f00d7b41ec172f930649732b2bc0c77db3d061c533ae4e7252a8a51"
+      "checksum": "c1a688354f00d7b41ec172f930649732b2bc0c77db3d061c533ae4e7252a8a51",
+      "release_notes": "**Change log:**\r\n- Added archive extract support via [7zip helper](https://github.com/owendswang/wfm-7zip-helper) (`.7z`, `.001`, `.zip`, `.zipx`, `.rar`, `.part01.rar`, `.arj`, `.bz2`, `.bzip2`, `.tbz`, `.tbz2`, `.cab`, `.gz`, `.gzip`, `.tgz`, `.tpz`, `.lzh`, `.lha`, `.tar`, `.xz`, `.txz`, `.z`, `.taz`, `.zst`, `.tzst`, `.xar`, `.xip`, `.cpio`, `.lzma`, `.pmd`).\r\n\r\n**How to use `wfm-7zip-helper.elf`:**\r\nPlace it at `/data/wfm/wfm-7zip-helper.elf`. It would be sent to elfldr automatically by the main process when starting up. Or you could launch it manually by sending it to elfldr or via Payload Manager.\r\n\r\n**P.S.,**\r\nBecause this software is licensed as GPLv3+, `Unrar` could not be implemented. So this archive extract function is built seperately as `wfm-7zip-helper.elf`. So for detailed licenses, go check [WFM 7zip helper](https://github.com/owendswang/wfm-7zip-helper)."
     },
     {
+      "id": "ps5-web-file-manager-wfm-7zip-helper-prerelease",
       "name": "ps5-web-file-manager [Pre-release]",
       "filename": "wfm-7zip-helper_v1.8 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/wfm-7zip-helper_v1.8%20%5BPre-release%5D.elf",
@@ -574,10 +745,13 @@
       "description": "Added archive extract support via 7zip helper [Pre-release] by owendswang",
       "last_update": "2026-09-08",
       "version": "v1.8",
+      "author": "owendswang",
       "category": "Pre-release",
-      "checksum": "63b39c35cc2fa236d4511cd1782d41cb87ec08dfdf57e15fdcfe97b414896972"
+      "checksum": "63b39c35cc2fa236d4511cd1782d41cb87ec08dfdf57e15fdcfe97b414896972",
+      "release_notes": "**Change log:**\r\n- Added archive extract support via [7zip helper](https://github.com/owendswang/wfm-7zip-helper) (`.7z`, `.001`, `.zip`, `.zipx`, `.rar`, `.part01.rar`, `.arj`, `.bz2`, `.bzip2`, `.tbz`, `.tbz2`, `.cab`, `.gz`, `.gzip`, `.tgz`, `.tpz`, `.lzh`, `.lha`, `.tar`, `.xz`, `.txz`, `.z`, `.taz`, `.zst`, `.tzst`, `.xar`, `.xip`, `.cpio`, `.lzma`, `.pmd`).\r\n\r\n**How to use `wfm-7zip-helper.elf`:**\r\nPlace it at `/data/wfm/wfm-7zip-helper.elf`. It would be sent to elfldr automatically by the main process when starting up. Or you could launch it manually by sending it to elfldr or via Payload Manager.\r\n\r\n**P.S.,**\r\nBecause this software is licensed as GPLv3+, `Unrar` could not be implemented. So this archive extract function is built seperately as `wfm-7zip-helper.elf`. So for detailed licenses, go check [WFM 7zip helper](https://github.com/owendswang/wfm-7zip-helper)."
     },
     {
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.6.0-pre-4488577-prerelease",
       "name": "ps5-webkit-autoloader [Pre-release]",
       "filename": "webkit-autoloader-installer_v0.6.0-pre-4488577 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/webkit-autoloader-installer_v0.6.0-pre-4488577%20%5BPre-release%5D.elf",
@@ -586,10 +760,13 @@
       "description": "v0.6.0-pre-4488577 (pre-release) [Pre-release] by itsPLK",
       "last_update": "2026-10-07",
       "version": "v0.6.0-pre-4488577",
+      "author": "itsPLK",
       "category": "Pre-release",
-      "checksum": "7b7e2284c331599a6193cb00fa7d5fd227d784ef95ceda32b1485989ff1d6b21"
+      "checksum": "7b7e2284c331599a6193cb00fa7d5fd227d784ef95ceda32b1485989ff1d6b21",
+      "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
+      "id": "ps5upload-ps5upload-7.0.18-prerelease",
       "name": "ps5upload [Pre-release]",
       "filename": "ps5upload-7.0.18_v7.0.18 [Pre-release].elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.18_v7.0.18%20%5BPre-release%5D.elf",
@@ -598,10 +775,13 @@
       "description": "v7.0.18 [Pre-release] by phantomptr",
       "last_update": "2026-10-12",
       "version": "v7.0.18",
+      "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "108ba938e0db7c929217d56761fe332a47a019212f158fb0dba5b3fc5045e168"
+      "checksum": "108ba938e0db7c929217d56761fe332a47a019212f158fb0dba5b3fc5045e168",
+      "release_notes": "\n- **LZ4 packs for games whose ampr_emu is missing or too old.** When the check finds a game\n  that reads through AMPR but ships no `fakelib/libSceAmpr.sprx`, or one that predates asset\n  packs, the LZ4 option now offers \"Put ampr_emu 0.4.2.1 into the image\": the engine fetches\n  drakmor's release once (checked against a known digest, never bundled) and writes it into\n  the image, keeping the game's own copy beside it as `libSceAmpr.sprx.orig`. This is the\n  runtime gap behind #449.\n- **A game that does not use AMPR is told so.** The LZ4 option explains that nothing in such a\n  game could serve asset packs, and points at .ffpfsc, which ShadowMount+ decompresses for any\n  game, instead of just refusing.\n\n"
     },
     {
+      "id": "archived-etahen-99.0",
       "name": "etaHEN 99.0",
       "filename": "etaHEN-99.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/etaHEN-99.0.elf",
@@ -610,10 +790,12 @@
       "description": "Archived standalone payload: etaHEN-99.0.elf",
       "last_update": "2026-10-14",
       "version": "v99.0",
+      "author": "Community Archive",
       "category": "~ Archived",
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
     },
     {
+      "id": "archived-kstuff-fpkg-1.13-dr-test6",
       "name": "kstuff fpkg 1.13 dr test6",
       "filename": "kstuff-fpkg-1.13-dr-test6.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff-fpkg-1.13-dr-test6.elf",
@@ -622,10 +804,12 @@
       "description": "Archived standalone payload: kstuff-fpkg-1.13-dr-test6.elf",
       "last_update": "2026-10-14",
       "version": "v99.0",
+      "author": "Community Archive",
       "category": "~ Archived",
       "checksum": "b1f60c1ec1685904d396da16710dc9d5676bf0880abf74c65459c886010b9443"
     },
     {
+      "id": "archived-lapy_jb_daemon-99.0",
       "name": "lapy jb daemon 99.0",
       "filename": "lapy_jb_daemon-99.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/lapy_jb_daemon-99.0.elf",
@@ -634,10 +818,12 @@
       "description": "Archived standalone payload: lapy_jb_daemon-99.0.elf",
       "last_update": "2026-10-14",
       "version": "v99.0",
+      "author": "Community Archive",
       "category": "~ Archived",
       "checksum": "e8230ac4597b8f0388e75d7515ad1a2e251c4589cc3b8d56a483ffae73627eed"
     },
     {
+      "id": "archived-webkitplk-autoloader_v99.0",
       "name": "webkitplk autoloader v99.0",
       "filename": "webkitplk-autoloader_v99.0.elf",
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/webkitplk-autoloader_v99.0.elf",
@@ -646,6 +832,7 @@
       "description": "Archived standalone payload: webkitplk-autoloader_v99.0.elf",
       "last_update": "2026-10-14",
       "version": "v99.0",
+      "author": "Community Archive",
       "category": "~ Archived",
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
     }
