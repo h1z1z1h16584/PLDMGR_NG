@@ -49,17 +49,17 @@
     {
       "id": "ps5-lz4-compression-lz4-compression",
       "name": "PS5-LZ4-Compression",
-      "filename": "lz4-compression_v1.4.3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/lz4-compression_v1.4.3.elf",
+      "filename": "lz4-compression_v1.5.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/lz4-compression_v1.5.0.elf",
       "source": "https://github.com/theghostonline/PS5-LZ4-Compression/releases",
-      "source_direct": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.4.3/lz4-compression.elf",
-      "description": "LZ4 Compression v1.4.3 by theghostonline",
+      "source_direct": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.5.0/lz4-compression.elf",
+      "description": "LZ4 Compression v1.5.0 by theghostonline",
       "last_update": "2026-10-14",
-      "version": "v1.4.3",
+      "version": "v1.5.0",
       "author": "theghostonline",
       "category": "Dumping & Backups",
-      "checksum": "8116fd6ee61e364ef602a73221006fcaebfdb59a9ed582aea512b55a192ff160",
-      "release_notes": "# LZ4 Compression 1.4.3\n\n- Ghost of Yotei works now. Packed Yotei sat on a black screen because the PS5\n  looks for some files on disk (PlayGo markers, empty language files and a few\n  boot files) and they only existed inside the packs. Those files now stay\n  loose when you pack. Huge thanks to edu-ruiz- on Reddit for finding the\n  file list.\n- Already have a packed game that won't start? Run `Verify LZ4 Packs` on it.\n  It puts those files back on disk from the packs, puts back the right\n  APR-EMU (`fakelib/libSceAmpr.sprx`) if something replaced it, and fixes\n  permissions. No repack needed.\n- Fixed games crashing on launch with SIGBUS or CE-108255-1 when the source\n  files had 0666 permissions (seen on 007 First Light). Everything the app\n  writes is 0777 now. Thanks OmgWhatIsThisss for spotting it.\n\n## Install\n\n1. Add `lz4-compression.elf` to Payload Manager, so it sits at\n   `/data/pldmgr/payloads/lz4-compression/lz4-compression.elf`.\n2. Unzip `LZ4-Compression-PPSA99420.zip` and copy the `PPSA99420` folder to\n   `/data/homebrew/PPSA99420` over FTP (replace the old one). ShadowMount+\n   adds the `LZ4 Compression` tile (close any running game if it doesn't show\n   up).\n3. Open the tile.\n\nUnofficial, and not affiliated with the projects it builds on. If it saved you\nspace, you can support the cost of building it:\n[Buy Me a Coffee](https://buymeacoffee.com/theghostonline)\n"
+      "checksum": "edb4f2c5922bea293cc5c5354bd301fb0bde48856c0d2a8d115801d3c778b3f1",
+      "release_notes": "# LZ4 Compression 1.5.0\n\n- The app updates itself now. When a new version is out you get a popup when\n  you open the app: press Update and it downloads, installs and reopens on its\n  own (engine included). No more FTP for updates after this one.\n- Game reports: every packed game shows how it runs for other people, and\n  `Report how it runs` lets you add yours. Pick an answer, scan the QR code\n  with your phone and send the prefilled report. The more people report, the\n  easier it is to know which games pack fine before you start.\n- The packer and the app are open source under GPL-3.0 now.\n\nEverything from 1.4.3 is included (Ghost of Yotei fix, permission fix,\n`Verify LZ4 Packs` repairs).\n\n## Install\n\nThis is the last manual update:\n\n1. Add `lz4-compression.elf` to Payload Manager, so it sits at\n   `/data/pldmgr/payloads/lz4-compression/lz4-compression.elf`.\n2. Unzip `LZ4-Compression-PPSA99420.zip` and copy the `PPSA99420` folder to\n   `/data/homebrew/PPSA99420` over FTP (replace the old one). ShadowMount+\n   adds the `LZ4 Compression` tile (close any running game if it doesn't show\n   up).\n3. Open the tile.\n\nUnofficial, and not affiliated with the projects it builds on. If it saved you\nspace, you can support the cost of building it:\n[Buy Me a Coffee](https://buymeacoffee.com/theghostonline)\n"
     },
     {
       "id": "garlic-savemgr-garlic-savemgr",
@@ -463,7 +463,7 @@
       "author": "itsPLK",
       "category": "System Utilities",
       "checksum": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285",
-      "release_notes": "Full Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.0...v0.6.1"
+      "release_notes": "## Changelog\r\n\r\n### 🛠️ Backend & Bug Fixes\r\n- Restored automatic Disc Player termination on startup for BD-JB users, which was removed in v0.6.0.  \r\nThis is still useful for users on older BD-JB autoloader builds (lower than v1.4.0).\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.0...v0.6.1"
     },
     {
       "id": "ps5-pkg-manager-pkg-manager_v1.5.1",
