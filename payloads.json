@@ -273,17 +273,17 @@
     {
       "id": "onionhen-onionhen",
       "name": "onionHEN",
-      "filename": "OnionHEN_v0.0.13.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/OnionHEN_v0.0.13.elf",
+      "filename": "OnionHEN_v0.9.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/OnionHEN_v0.9.0.elf",
       "source": "https://github.com/aydencharles/onionHEN/releases",
-      "source_direct": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
-      "description": "OnionHEN v0.0.13 by aydencharles",
-      "last_update": "2026-09-11",
-      "version": "v0.0.13",
+      "source_direct": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0/OnionHEN.elf",
+      "description": "OnionHEN v0.9.0 by aydencharles",
+      "last_update": "2026-10-15",
+      "version": "v0.9.0",
       "author": "aydencharles",
       "category": "Kernel & Exploitation",
-      "checksum": "aa3f98847948e2ae8ea600c3f437e28247a0a4f8b73651a046d2859924bf97b3",
-      "release_notes": "# OnionHEN v0.0.13\n\nOnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, a game overlay, payload management, and background services.\n\n**Supported firmware:** 4.03 – 12.70\n\n## Breaking changes\n\n### elfldr v0.22+ required for this release\n\nv0.0.13 speeds up later boots by caching the decompressed bootstrapper, then asking the external elfldr on port **9021** to load that file through a `file:` URI.\n\nURI loading (`file://`, `http://`, `https://`) was added in [elfldr v0.22](https://github.com/ps5-payload-dev/elfldr/releases/tag/v0.22). Older elfldr builds accept the connection but do not launch the payload, so OnionHEN never starts.\n\nThis is a compatibility bug in v0.0.13. The next OnionHEN release will stop using a URI for this first hop.\n\nUntil then, do one of the following:\n\n1. **Upgrade the external elfldr** on port **9021** to **v0.22 or later**, then send `OnionHEN.elf`.\n2. **Send a current elfldr payload first** so port 9021 is already running a new enough loader, then send `OnionHEN.elf`.\n\n### Built-in FTP server removed\n\nThe built-in FTP server from v0.0.12 is gone. `ftp.autoload` and `ftp.port` are no longer in `config.ini`. Install the replacement [onionHEN-ftpsrv-plugin](https://github.com/OnionBuddies/onionHEN-ftpsrv-plugin) as `/data/OnionHEN/plugins/FTPS00001.elf`. The listener is enabled by default on TCP `1337`.\n\n## Quick start\n\n1. You need an already-jailbroken PS5 and an external `elfldr` (the first-hop loader) listening on port **9021**.\n2. Send `OnionHEN.elf` using a payload sender, such as [itsPLK's PS5 Payload Manager](https://github.com/itsplk/ps5-payload-manager).\n3. Wait for OnionHEN to start. It may take a couple of seconds, so just wait and don't do anything while it is starting.\n4. Open **Settings** on your PS5 to enter the Toolbox, or use the shortcut in the top-right corner of the home screen.\n\n## What's new\n\n### External ELF plugins\n\nOnionHEN can now discover, st..."
+      "checksum": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
+      "release_notes": "# OnionHEN v0.9.0\n\nOnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, a game overlay, payload management, and background services.\n\n**Version:** v0.9.0 is the stable release following v0.9.0-beta1 and v0.9.0-beta2. It brings together their changes since [v0.0.13](https://github.com/aydencharles/onionHEN/releases/tag/v0.0.13).\n\n**Firmware:** Adds support for **13.0-13.6** and **some 5.50 consoles**, alongside the firmware supported by v0.0.13. Please include your exact firmware and console behavior when reporting a problem.\n\n**Download:** `OnionHEN.elf` (Release build; SHA-256: `1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212`).\n\n## What changed since v0.0.13\n\n### Firmware compatibility\n\nThis release adds support for firmware **13.0-13.6** and **some 5.50 consoles**. Reports from real hardware are welcome.\n\n### Cheats\n\nOn firmware 4.03, opening the cheats menu for a game with no cheats could take about 40 seconds, then leave the home screen unresponsive until a forced reboot ([#97](https://github.com/aydencharles/onionHEN/issues/97), [#103](https://github.com/aydencharles/onionHEN/issues/103)). The beta2 fix makes an empty menu return in a few seconds without stalling ShellUI. The reporter on #103 confirmed the problem was gone in an early beta2 build.\n\nLong cheat names are also truncated on UTF-8 boundaries.\n\n### elfldr\n\nv0.0.13 needed elfldr v0.22 because it loaded the cache through a `file:` URI. v0.9.0 sends a normal ELF to port **9021**, so older elfldr builds work again. An external elfldr must still be listening on 9021.\n\n### Also\n\n- The bundled kstuff is **kstuff-lite 1.11**, up from 1.10 in v0.0.13.\n- Toolbox strings cover the remaining PS5 system languages. Startup toasts credit the author and thank contributors; the thanks toast can be turned off in Preferences. The About page lists testers and donors.\n- Daemon, bootstrapper, and ShellUI share `/data/OnionHEN/OnionH..."
     },
     {
       "id": "ps5debug-ng-ps5debug-ng_v1.3.2",
@@ -376,19 +376,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.0.22",
+      "id": "ps5upload-ps5upload-7.0.23",
       "name": "ps5upload",
-      "filename": "ps5upload-7.0.22_v7.0.22.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.22_v7.0.22.elf",
+      "filename": "ps5upload-7.0.23_v7.0.23.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.23_v7.0.23.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.22/ps5upload-7.0.22.elf",
-      "description": "v7.0.22 by phantomptr",
-      "last_update": "2026-10-12",
-      "version": "v7.0.22",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.23/ps5upload-7.0.23.elf",
+      "description": "v7.0.23 by phantomptr",
+      "last_update": "2026-10-15",
+      "version": "v7.0.23",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267",
-      "release_notes": "- **HDR PNG carries the capture's ICC profile (#448).** 7.0.15 wrote the cICP tag only;\r\n  viewers that go by the ICC profile (and the reporter's) showed the image as SDR. Sony's\r\n  \"ScreenCapturePQ\" profile is now read out of the .jxr and embedded as iCCP in both HDR\r\n  variants, with cICP beside it in the tagged one.\r\n\r\n"
+      "checksum": "419b56a10336dda8f4a28672271dfb635e74b05966cc08d44305e70f862dc110",
+      "release_notes": "- **Payload Manager 0.6 works again (#458).** 0.6 refuses changes without its request marker\r\n  and wants POST for launch and delete, and keeps payloads in slots. The fallback launch,\r\n  storing, deleting and \"Load at boot\" now work with 0.6.1 as well as 0.5.2.\r\n- **Games is smooth with a big library (#450).** Covers come as small cached thumbnails\r\n  (about 20 KB instead of 300-700 KB), and screenshot thumbnails load two at a time and stop\r\n  when you leave the screen instead of filling every connection to the console.\r\n- **Hidden home-screen icons stay hidden (#450).** The console shows an app's icon again every\r\n  time it starts; the helper now hides it again a couple of seconds later. Icons hidden with\r\n  earlier versions are picked up.\r\n- **The game page shows where the game runs from (#452):** the image on your external drive,\r\n  not a leftover folder in /data/homebrew.\r\n- **Sending the helper no longer hangs for 15 s** when an old copy is stuck and serving nothing.\r\n- **Android save backups are no longer 0 bytes (#451).** They go to Downloads as\r\n  `<title>-<date>.zip`, and the message says where.\r\n- **Tasks shows speed and ETA (#444)** for transfers, like the Files queue.\r\n- **Convert:** \"backported\" only for real backports (an older SDK than declared is no longer\r\n  called one), the game's ampr_emu 0.3.x version is read (#449), and when LZ4 needs the newer\r\n  runtime it points at the checkbox that adds it.\r\n- **Fast verification by default (#459, thanks quer3q).** Convert checks structure, sizes and\r\n  small files in full and a seeded sample of the rest; \"Full verification\" re-reads every byte.\r\n- **\"Last seen\" is translated (#454, thanks EnriqueWood).**\r\n- **Payloads: export and import playlists**, with the auto-loader choice and your custom repos,\r\n  to share a working setup.\r\n- **Linux packages: the update command to copy (#456).** On Bazzite and other rpm-ostree\r\n  systems, Settings → Updates shows `rpm-ostree uninstall ps5-upload --install <rpm>`; dnf and\r\n  apt installs get theirs.\r\n- **Helpe..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
