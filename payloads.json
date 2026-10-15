@@ -463,7 +463,7 @@
       "author": "itsPLK",
       "category": "System Utilities",
       "checksum": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285",
-      "release_notes": "## Changelog\r\n\r\n### 🛠️ Backend & Bug Fixes\r\n- Restored automatic Disc Player termination on startup for BD-JB users, which was removed in v0.6.0.  \r\nThis is still useful for users on older BD-JB autoloader builds (lower than v1.4.0).\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.0...v0.6.1"
+      "release_notes": "## Changelog\r\n\r\n### 🛠️ Backend & Bug Fixes\r\n- Restored automatic Disc Player termination on startup for BD-JB users, which was removed in v0.6.0.  \r\nThis is still useful for users on older BD-JB autoloader builds (lower than v1.4.0).\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.0...v0.6.1\r\n\r\n---\r\n\r\n## 📝 How to update\r\nYou do **not** need to manually download or replace your original `pldmgr.elf` file.  \r\nSimply install the update directly within the Payload Manager app (from the repository).  \r\nThe updated version will automatically launch on every subsequent startup, regardless of whether you load the old or new `.elf` file initially. "
     },
     {
       "id": "ps5-pkg-manager-pkg-manager_v1.5.1",
