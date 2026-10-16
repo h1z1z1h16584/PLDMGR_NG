@@ -781,19 +781,19 @@
       "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
-      "id": "ps5upload-ps5upload-7.0.24-prerelease",
+      "id": "ps5upload-ps5upload-7.0.29-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.0.24_v7.0.24 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.24_v7.0.24%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.0.29_v7.0.29 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.29_v7.0.29%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.24/ps5upload-7.0.24.elf",
-      "description": "v7.0.24 [Pre-release] by phantomptr",
-      "last_update": "2026-10-15",
-      "version": "v7.0.24",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.29/ps5upload-7.0.29.elf",
+      "description": "v7.0.29 [Pre-release] by phantomptr",
+      "last_update": "2026-10-16",
+      "version": "v7.0.29",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "6f32c33a2f7cf4c119477336379fae574ee5b9bd9426f9f4b335ae52d8c432cb",
-      "release_notes": "\n- **Payloads → Ports: see what is listening on the PS5.** Every port in use, TCP and UDP, with\n  what usually listens there (elfldr, ftpsrv, Payload Manager, nanodns, the ps5upload helper,\n  Remote Play) and whether a PC can reach it or only the console itself. Ports with a web page\n  open in your browser from there. The helper finds them by binding each port and letting go\n  at once, so no payload ever sees a connection; a full pass takes about a second. Needs the\n  7.0.24 helper.\n- **Folder games on a USB drive are no longer described as /data/homebrew folders (#452).**\n\n"
+      "checksum": "fa935b612129c225342cb7016159bfa3d5f4cbef75bb4132ce1e0ade03ae39da",
+      "release_notes": "\n- **Turn a game image or package back into a folder (#469).** Convert → What to make has a third\n  choice, \"A game folder\". It takes any image Convert reads (`.exfat`, `.ffpkg`, `.ffpfs`,\n  `.ffpfsc`) or a `.pkg` made with the default debug passcode (Convert's own packages, and fake\n  packages from other tools when they used that passcode), wherever it is: this computer, a saved server or the PS5. It writes the game's\n  files as a plain folder on this computer, empty folders and the package's icons included,\n  checks them against the source, and only then gives the folder its name, so a stopped or failed\n  run never leaves a folder that looks finished. A 125 GB exFAT image unpacked in 81 s, and a\n  Minecraft package came back file-for-file equal however it was compressed. A retail package, or\n  a fake one made with another passcode, can't be opened and is refused with that reason.\n\n"
     },
     {
       "id": "archived-etahen-99.0",
