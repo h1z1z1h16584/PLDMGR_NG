@@ -106,6 +106,21 @@
       "release_notes": "**Download:** `HearBridge-PS5-1.3.0.elf` (one file for every PS5, Marvell/NXP and MediaTek)\n\nSend it to your loader on port 9021 like before.\n\n## What's new in 1.3.0\n\n### Game profiles (new)\n\n- HearBridge detects the running game by itself and shows its name and cover art.\n- Each game can have its own sound: EQ, preset, boost, volume and night mode.\n- The game's profile loads by itself when the game starts, and your usual sound comes back when it closes.\n- Each headset keeps its own profile for the same game. For example, the same game can have heavy bass on one headset and a balanced sound on another, and each one loads its own when it connects.\n- Save up to 32 games, with up to 4 headsets per game.\n- If the connected headset has no profile for the game yet, the game's latest profile from another headset is used, without overwriting it.\n- Update Game Profile button: it stays grey and lights up as soon as you change anything in the sound. Press it to save the change for that game and that headset.\n- In Settings, under Sound & games, every saved game shows the headsets saved for it. You can apply or delete the profile of a specific headset.\n\n### Headsets\n\n- Real battery percentage on headsets that report it, plus a low battery alert.\n- Volume from the earbuds: next/previous on earbuds with a case changes the volume, and the slider follows. You can turn this off in Settings.\n- Quick switch between saved headsets in one tap.\n- Better reconnect: headsets come back by themselves after rest mode or a lost link.\n- Sound stops cleanly when the console goes into rest mode and comes back when it wakes up.\n- Better Xbox Wireless Headset support: pairing and reconnecting work much more reliably.\n\n### Sound\n\n- Night mode: quieter explosions, clearer voices.\n- Latency slider with a live estimate of the delay to your ears.\n- More stable connection: sound quality recovers by itself after a short dropout.\n- Lower latency: down to 40 ms.\n\n### Design\n\n- New home screen, bigger and cleaner, with four sections: Headset, Sound, Co..."
     },
     {
+      "id": "liveshell-liveshell",
+      "name": "LiveShell",
+      "filename": "liveshell_v1.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.0.elf",
+      "source": "https://github.com/ZiZc3/LiveShell/releases",
+      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.0/liveshell.elf",
+      "description": "LiveShell Engine v1.0 by ZiZc3",
+      "last_update": "2026-10-15",
+      "version": "v1.0",
+      "author": "ZiZc3",
+      "category": "Homebrew",
+      "checksum": "fb3c686e2318bbb83ccf6e445a7224da00ae9009b14362c308b74ea5d120e577",
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.0</h2>\r\n\r\n<p align=\"center\">Animated video wallpapers for the PS5 home screen.</p>\r\n\r\n---\r\n\r\n### What's in it\r\n\r\n- Video wallpaper with seamless loop\r\n- Videos from internal storage and USB\r\n- Dim, Vignette and Haze looks\r\n- Hide in Settings (on by default)\r\n- Smooth fades for Settings and games\r\n- Pause while a game runs, Parallax, Random video\r\n- Home-screen app and a phone / PC upload page\r\n\r\n### How to use\r\n\r\n1. Put `.mp4` files in `/data/LiveShell/video` or in a `liveshell` folder on USB.\r\n2. Load `liveshell.elf`.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC Only 1080p. 4k not supported yet.**\r\n\r\nIf your video doesn't play, convert it on sites like [Video Converter](https://video-converter.com/): **MP4**, codec **H.264**, resolution **1920x1080**, 30 or 60 fps."
+    },
+    {
       "id": "ps-play-psplay-2.1",
       "name": "PS-Play",
       "filename": "PSPlay-2.1.elf",
