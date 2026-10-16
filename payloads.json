@@ -391,19 +391,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.0.29",
+      "id": "ps5upload-ps5upload-7.0.30",
       "name": "ps5upload",
-      "filename": "ps5upload-7.0.29_v7.0.29.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.29_v7.0.29.elf",
+      "filename": "ps5upload-7.0.30_v7.0.30.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.30_v7.0.30.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.29/ps5upload-7.0.29.elf",
-      "description": "v7.0.29 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.30/ps5upload-7.0.30.elf",
+      "description": "v7.0.30 by phantomptr",
       "last_update": "2026-10-16",
-      "version": "v7.0.29",
+      "version": "v7.0.30",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "fa935b612129c225342cb7016159bfa3d5f4cbef75bb4132ce1e0ade03ae39da",
-      "release_notes": "- **Turn a game image or package back into a folder (#469).** Convert → What to make has a third\r\n  choice, \"A game folder\". It takes any image Convert reads (`.exfat`, `.ffpkg`, `.ffpfs`,\r\n  `.ffpfsc`) or a `.pkg` made with the default debug passcode (Convert's own packages, and fake\r\n  packages from other tools when they used that passcode), wherever it is: this computer, a saved server or the PS5. It writes the game's\r\n  files as a plain folder on this computer, empty folders and the package's icons included,\r\n  checks them against the source, and only then gives the folder its name, so a stopped or failed\r\n  run never leaves a folder that looks finished. A 125 GB exFAT image unpacked in 81 s, and a\r\n  Minecraft package came back file-for-file equal however it was compressed. A retail package, or\r\n  a fake one made with another passcode, can't be opened and is refused with that reason.\r\n\r\n"
+      "checksum": "670089a592a9ddcf93039a24897639b12d14277417b35507bba3cbd15031cadf",
+      "release_notes": "- **Files fits on a phone (#470).** On a narrow screen every file and folder row carried up to\r\n  nine action buttons, which pushed the name out entirely, even at the smallest text size. Each\r\n  row now shows its name and size with one ⋮ button that opens the same actions as a menu. The\r\n  selection bar stays on one line, with its actions in a strip you can scroll sideways. The\r\n  Recent paths list is solid instead of see-through (on every screen size). The toolbar, drive\r\n  chips and path bar are tighter, so the list starts higher up. The desktop layout is unchanged.\r\n- **Stop helper (#471).** Connection has a \"Stop helper\" button next to Send helper. It turns\r\n  the helper off on that console and keeps it off: the automatic reconnect leaves the console\r\n  alone until you send the helper again or start something that needs it. The loader stays up,\r\n  so sending payloads still works. It is refused while an upload, download or install is\r\n  running on that console. Measured on a PS5 Pro: the helper exits in under a second.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
