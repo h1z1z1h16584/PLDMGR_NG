@@ -781,19 +781,19 @@
       "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
-      "id": "ps5upload-ps5upload-7.0.24-prerelease",
+      "id": "ps5upload-ps5upload-7.0.27-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.0.24_v7.0.24 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.24_v7.0.24%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.0.27_v7.0.27 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.27_v7.0.27%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.24/ps5upload-7.0.24.elf",
-      "description": "v7.0.24 [Pre-release] by phantomptr",
-      "last_update": "2026-10-15",
-      "version": "v7.0.24",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.27/ps5upload-7.0.27.elf",
+      "description": "v7.0.27 [Pre-release] by phantomptr",
+      "last_update": "2026-10-16",
+      "version": "v7.0.27",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "6f32c33a2f7cf4c119477336379fae574ee5b9bd9426f9f4b335ae52d8c432cb",
-      "release_notes": "\n- **Payloads → Ports: see what is listening on the PS5.** Every port in use, TCP and UDP, with\n  what usually listens there (elfldr, ftpsrv, Payload Manager, nanodns, the ps5upload helper,\n  Remote Play) and whether a PC can reach it or only the console itself. Ports with a web page\n  open in your browser from there. The helper finds them by binding each port and letting go\n  at once, so no payload ever sees a connection; a full pass takes about a second. Needs the\n  7.0.24 helper.\n- **Folder games on a USB drive are no longer described as /data/homebrew folders (#452).**\n\n"
+      "checksum": "855f106a64a6e8a1ec0a3fac65e21585f209c9d6751995def04ee551b90a61ea",
+      "release_notes": "\n- **A stream install no longer fails on the PS5 after ps5upload says it's done.** The PS5\n  downloads a package in pieces and re-reads some of them; ps5upload added up every byte it\n  sent, repeats included, and took that total as \"the console has it all\". On a small package\n  the repeats made up the size of a part never sent, so ps5upload closed the download link\n  first: the app's tile appeared and could even open, but the PS5's Downloads showed it failed,\n  Retry failed too and Cancel removed it. ps5upload now keeps the link open until every byte has\n  been sent at least once. Seen with a 37 MB package on FW 13.60; any size could hit it.\n- **\"Nothing answered on the ELF loader port :9021\" when starting a stream install, then fine\n  on a retry, is fixed.** When an install starts, the app also replaces the console's stock\n  elfldr with its own fixed build, and the loader port is closed for about a second during that\n  swap. An install that started in that second failed. It now waits for the swap to finish, and\n  a loader port that is closed for a moment is tried again for a few seconds before the install\n  gives up.\n\n"
     },
     {
       "id": "archived-etahen-99.0",
