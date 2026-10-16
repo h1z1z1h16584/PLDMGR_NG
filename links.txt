@@ -36,7 +36,7 @@ github:NikoBellikJR31/PS5-Custom-Tool-Manager-
 github:erickdavestech/ps5-dualsense-overlay
 github:X-F1REBALL-X/HearBridge-PS5
 github:stupiditytries/librespot-ps5
-github:
+github:ZiZc3/LiveShell
 github:
 github:
 github:
