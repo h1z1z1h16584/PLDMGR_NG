@@ -108,17 +108,17 @@
     {
       "id": "liveshell-liveshell",
       "name": "LiveShell",
-      "filename": "liveshell_v1.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.0.elf",
+      "filename": "liveshell_v1.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.1.elf",
       "source": "https://github.com/ZiZc3/LiveShell/releases",
-      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.0/liveshell.elf",
-      "description": "LiveShell Engine v1.0 by ZiZc3",
-      "last_update": "2026-10-15",
-      "version": "v1.0",
+      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.1/liveshell.elf",
+      "description": "LiveShell Engine v1.1 by ZiZc3",
+      "last_update": "2026-10-16",
+      "version": "v1.1",
       "author": "ZiZc3",
       "category": "Homebrew",
-      "checksum": "fb3c686e2318bbb83ccf6e445a7224da00ae9009b14362c308b74ea5d120e577",
-      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.0</h2>\r\n\r\n<p align=\"center\">Animated video wallpapers for the PS5 home screen.</p>\r\n\r\n---\r\n\r\n### What's in it\r\n\r\n- Video wallpaper with seamless loop\r\n- Videos from internal storage and USB\r\n- Dim, Vignette and Haze looks\r\n- Hide in Settings (on by default)\r\n- Smooth fades for Settings and games\r\n- Pause while a game runs, Parallax, Random video\r\n- Home-screen app and a phone / PC upload page\r\n\r\n### How to use\r\n\r\n1. Put `.mp4` files in `/data/LiveShell/video` or in a `liveshell` folder on USB.\r\n2. Load `liveshell.elf`.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC Only 1080p. 4k not supported yet.**\r\n\r\nIf your video doesn't play, convert it on sites like [Video Converter](https://video-converter.com/): **MP4**, codec **H.264**, resolution **1920x1080**, 30 or 60 fps."
+      "checksum": "bd3ce1bf6249adafefbb97874dce04963eaa313ce6233e0b3dafb79db85170a2",
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.1</h2>\r\n\r\n<p align=\"center\">A video for every game. Sound. Rest mode.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **A video per game or app**: give any tile its own video in the new **Library** tab. It plays while that tile is highlighted.\r\n- **Sound**: videos with sound now play it.\r\n- **Game music**: a game's own theme keeps playing when its video has no sound or Sound is on Mute, and stays quiet when your video's sound takes over.\r\n- **Main video** switch: turn it off to have videos only on the games you picked.\r\n- **Rest mode**: LiveShell comes back on its own after waking the PS5.\r\n- **Faster start**: load much faster then before.\r\n- **New look** for the app: bigger tabs, smaller banner, a compact Look panel, list view for videos.\r\n\r\n### Fixed\r\n\r\n- Deleting a video that a game used: the game goes back to the main video.\r\n- The app window could stay unreachable after rest mode.\r\n\r\n### How to use\r\n\r\n1. Put `.mp4` files in `/data/LiveShell/video` or in a `liveshell` folder on USB.\r\n2. Load `liveshell.elf`.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC Only 1080p. 4k not supported yet.**\r\n\r\nIf your video doesn't play, drag it onto `convert_for_ps5.bat` from **LiveShell-Converter.zip** and wait until its done."
     },
     {
       "id": "ps-play-psplay-2.1",
