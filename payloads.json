@@ -391,19 +391,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.0.25",
+      "id": "ps5upload-ps5upload-7.0.26",
       "name": "ps5upload",
-      "filename": "ps5upload-7.0.25_v7.0.25.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.25_v7.0.25.elf",
+      "filename": "ps5upload-7.0.26_v7.0.26.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.26_v7.0.26.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.25/ps5upload-7.0.25.elf",
-      "description": "v7.0.25 by phantomptr",
-      "last_update": "2026-10-15",
-      "version": "v7.0.25",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.26/ps5upload-7.0.26.elf",
+      "description": "v7.0.26 by phantomptr",
+      "last_update": "2026-10-16",
+      "version": "v7.0.26",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "35c6b820302bb5ca2d3b270caa808f95b351bf7ca2bc5c0e10daba3204c1e862",
-      "release_notes": "- **Profile no longer offers \"Create User\" (#460).** The PS5 has no create-user call a payload\r\n  can use, and the old button only ever tried to rename the console's first user, which fails\r\n  on a jailbroken console with \"sceUserServiceGetInitialUser failed\". Profile now says to add\r\n  users on the PS5 (Switch User, then Add User). Renaming and deleting users are unchanged.\r\n\r\n"
+      "checksum": "9b08d5a3849a10209be028b63c07a181b10fd146a7cf94fd3185f328e68dea01",
+      "release_notes": "- **Uploaded game and homebrew folders show up with ShadowMount+ again.** ShadowMount+\r\n  registers a folder as soon as its `sce_sys` has been still for 10 seconds; an upload sends\r\n  those small files first, so it tried while `eboot.bin` was still on its way, failed twice and\r\n  gave up on the title for good (measured on a 13.60 console). A game's `param.json` (and a PS4\r\n  game's `param.sfo`) is now put in place only when everything else has arrived, so the folder\r\n  becomes a game exactly when it is complete. Needs the 7.0.26 helper.\r\n- **A stalled or stopped upload can be continued.** A row that has moved no data for 90 seconds\r\n  says so and offers **Restart transfer**; a row that was stopped, or interrupted by closing the\r\n  app, says so and offers **Resume**. Both pick up from what the PS5 already has. **Retry\r\n  failed uploads** now runs them (it only put them back in the list), and its label no longer\r\n  reads \"the retry failed\" in most languages.\r\n- **Large solid .rar uploads no longer fail over and over on a retry.** Resuming one reads\r\n  through everything the PS5 already has before sending anything new; the console took that\r\n  silence for a stalled sender and ended the job after 15 minutes, every time. The app now\r\n  tells the console it is still working. Needs the 7.0.26 helper.\r\n- **A .rar's unpacked size is right** when it holds entries of unknown size (RAR5), which made\r\n  the free-space check before an upload add up to nonsense.\r\n- **Payload Manager: update what you stored.** Payloads stored from the Catalog are remembered,\r\n  and the Payload Manager tab offers **Update** when the catalogue has a newer release: it\r\n  stores the new one in its place and keeps its spot in the boot list. Payloads Payload Manager\r\n  installed from its own repository are left to it. (Desktop and Android, where the catalogue\r\n  is.)\r\n- **Files: drag to move.** Drag a folder onto another folder, or onto the path above the list,\r\n  to move it there (across drives it copies, then removes). Files move the same way in..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -781,19 +781,19 @@
       "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
-      "id": "ps5upload-ps5upload-7.0.26-prerelease",
+      "id": "ps5upload-ps5upload-7.0.24-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.0.26_v7.0.26 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.26_v7.0.26%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.0.24_v7.0.24 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.24_v7.0.24%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.26/ps5upload-7.0.26.elf",
-      "description": "v7.0.26 [Pre-release] by phantomptr",
-      "last_update": "2026-10-16",
-      "version": "v7.0.26",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.24/ps5upload-7.0.24.elf",
+      "description": "v7.0.24 [Pre-release] by phantomptr",
+      "last_update": "2026-10-15",
+      "version": "v7.0.24",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "9b08d5a3849a10209be028b63c07a181b10fd146a7cf94fd3185f328e68dea01",
-      "release_notes": "\n- **Uploaded game and homebrew folders show up with ShadowMount+ again.** ShadowMount+\n  registers a folder as soon as its `sce_sys` has been still for 10 seconds; an upload sends\n  those small files first, so it tried while `eboot.bin` was still on its way, failed twice and\n  gave up on the title for good (measured on a 13.60 console). A game's `param.json` (and a PS4\n  game's `param.sfo`) is now put in place only when everything else has arrived, so the folder\n  becomes a game exactly when it is complete. Needs the 7.0.26 helper.\n- **A stalled or stopped upload can be continued.** A row that has moved no data for 90 seconds\n  says so and offers **Restart transfer**; a row that was stopped, or interrupted by closing the\n  app, says so and offers **Resume**. Both pick up from what the PS5 already has. **Retry\n  failed uploads** now runs them (it only put them back in the list), and its label no longer\n  reads \"the retry failed\" in most languages.\n- **Large solid .rar uploads no longer fail over and over on a retry.** Resuming one reads\n  through everything the PS5 already has before sending anything new; the console took that\n  silence for a stalled sender and ended the job after 15 minutes, every time. The app now\n  tells the console it is still working. Needs the 7.0.26 helper.\n- **A .rar's unpacked size is right** when it holds entries of unknown size (RAR5), which made\n  the free-space check before an upload add up to nonsense.\n- **Payload Manager: update what you stored.** Payloads stored from the Catalog are remembered,\n  and the Payload Manager tab offers **Update** when the catalogue has a newer release: it\n  stores the new one in its place and keeps its spot in the boot list. Payloads Payload Manager\n  installed from its own repository are left to it. (Desktop and Android, where the catalogue\n  is.)\n- **Files: drag to move.** Drag a folder onto another folder, or onto the path above the list,\n  to move it there (across drives it copies, then removes). Files move the same way in the web\n  UI and on A..."
+      "checksum": "6f32c33a2f7cf4c119477336379fae574ee5b9bd9426f9f4b335ae52d8c432cb",
+      "release_notes": "\n- **Payloads → Ports: see what is listening on the PS5.** Every port in use, TCP and UDP, with\n  what usually listens there (elfldr, ftpsrv, Payload Manager, nanodns, the ps5upload helper,\n  Remote Play) and whether a PC can reach it or only the console itself. Ports with a web page\n  open in your browser from there. The helper finds them by binding each port and letting go\n  at once, so no payload ever sees a connection; a full pass takes about a second. Needs the\n  7.0.24 helper.\n- **Folder games on a USB drive are no longer described as /data/homebrew folders (#452).**\n\n"
     },
     {
       "id": "archived-etahen-99.0",
