@@ -6,7 +6,7 @@ etawen:earthonion/garlic-savemgr
 github:bizkut/unrar-ps5
 github:aydencharles/onionHEN
 github:pegasus-ps5/pegasus-dl
-github:ItsBlurf/PoorDS4
+#github:ItsBlurf/PoorDS4
 github:Michele-M-Media/PIZZA-HEN
 github:MounirHero/PS-Play
 github:pegasus-ps5/pegasus-dl
