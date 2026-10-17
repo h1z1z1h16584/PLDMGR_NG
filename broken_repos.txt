@@ -1,2 +1,3 @@
 github:Phoenixx1202/Spectrum-Library - No valid binary assets
+github:theghostonline/PS5-LZ4-Compression - HTTP 404 (Repo or releases not found / deleted) (Preserved stored files)
 github:stupiditytries/librespot-ps5 - No assets in release (Preserved stored files)
