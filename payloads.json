@@ -226,6 +226,21 @@
       "release_notes": "Added 7.0x support"
     },
     {
+      "id": "ps5shopappkg-dpiv2",
+      "name": "ps5shopappkg",
+      "filename": "DPIv2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/DPIv2.elf",
+      "source": "https://github.com/ps5xploit/ps5shopappkg/releases",
+      "source_direct": "https://github.com/ps5xploit/ps5shopappkg/releases/download/DPIv2/DPIv2.elf",
+      "description": "DPIv2.elf v1.0.0 - Direct PKG Installer by ps5xploit",
+      "last_update": "2026-10-11",
+      "version": "DPIv2",
+      "author": "ps5xploit",
+      "category": "Homebrew",
+      "checksum": "556ae30754a97a6380eba97dc876820f2cb9115c612587befacf1e2ef6ba18ee",
+      "release_notes": "# DPIv2.elf - PS5 Shop Appkg Direct PKG Installer\r\nFW 1.00 - 13.60\r\n\r\ndownload pkg files from ps5shopappkg website\r\n\r\n**No etaHEN or onionHEN required.**\r\n\r\n## Usage\r\n1. Start **kstuff** on your PS5.\r\n2. Send `DPIv2.elf` with your payload injector or payloadmanager\r\n3. Open `https://ps5shopappkg.pages.dev` in your browser.\r\n\r\n\r\n\r\n\r\n## Credits\r\nBased on etaHEN's `DirectPKGInstaller.cpp`. \r\nFW 1.00 - 13.60"
+    },
+    {
       "id": "pizza-hen-pizza-hen-v2.00",
       "name": "PIZZA-HEN",
       "filename": "PIZZA-HEN-v2.00.elf",
