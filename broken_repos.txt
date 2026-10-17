@@ -1,1 +1,2 @@
 github:Phoenixx1202/Spectrum-Library - No valid binary assets
+github:stupiditytries/librespot-ps5 - No assets in release (Preserved stored files)
