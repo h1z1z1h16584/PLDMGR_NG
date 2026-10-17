@@ -91,19 +91,19 @@
       "release_notes": "## Changes\n- Add threaded 7z extraction beside existing RAR extraction.\n- Support .7z and multipart .7z.001 archive starts.\n- Add archive_location and archive_password config keys while preserving rar_* aliases.\n- Pass threads= to both UnRAR and 7-Zip extraction paths.\n\n## Verification\n- Built with Docker SDK: docker run --rm -v \"/Users/bizkut/Downloads/PS5/homebrew/unrar-ps5:/work\" -w /work -e PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk ps5-payload-sdk:libcxx make clean all"
     },
     {
-      "id": "hearbridge-ps5-hearbridge-ps5-1.3.0",
+      "id": "hearbridge-ps5-hearbridge-1.3.5",
       "name": "HearBridge-PS5",
-      "filename": "HearBridge-PS5-1.3.0_v1.3.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-PS5-1.3.0_v1.3.0.elf",
+      "filename": "HearBridge-1.3.5_v1.3.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.3.5_v1.3.5.elf",
       "source": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases",
-      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.0/HearBridge-PS5-1.3.0.elf",
-      "description": "HearBridge PS5 1.3.0 by X-F1REBALL-X",
-      "last_update": "2026-10-10",
-      "version": "v1.3.0",
+      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.5/HearBridge-1.3.5.elf",
+      "description": "HearBridge 1.3.5 by X-F1REBALL-X",
+      "last_update": "2026-10-17",
+      "version": "v1.3.5",
       "author": "X-F1REBALL-X",
       "category": "Homebrew",
-      "checksum": "0867d014d0fca7250c0999dab6b575ee480c5f32dd8374e10634f8ff43b4ea5e",
-      "release_notes": "**Download:** `HearBridge-PS5-1.3.0.elf` (one file for every PS5, Marvell/NXP and MediaTek)\n\nSend it to your loader on port 9021 like before.\n\n## What's new in 1.3.0\n\n### Game profiles (new)\n\n- HearBridge detects the running game by itself and shows its name and cover art.\n- Each game can have its own sound: EQ, preset, boost, volume and night mode.\n- The game's profile loads by itself when the game starts, and your usual sound comes back when it closes.\n- Each headset keeps its own profile for the same game. For example, the same game can have heavy bass on one headset and a balanced sound on another, and each one loads its own when it connects.\n- Save up to 32 games, with up to 4 headsets per game.\n- If the connected headset has no profile for the game yet, the game's latest profile from another headset is used, without overwriting it.\n- Update Game Profile button: it stays grey and lights up as soon as you change anything in the sound. Press it to save the change for that game and that headset.\n- In Settings, under Sound & games, every saved game shows the headsets saved for it. You can apply or delete the profile of a specific headset.\n\n### Headsets\n\n- Real battery percentage on headsets that report it, plus a low battery alert.\n- Volume from the earbuds: next/previous on earbuds with a case changes the volume, and the slider follows. You can turn this off in Settings.\n- Quick switch between saved headsets in one tap.\n- Better reconnect: headsets come back by themselves after rest mode or a lost link.\n- Sound stops cleanly when the console goes into rest mode and comes back when it wakes up.\n- Better Xbox Wireless Headset support: pairing and reconnecting work much more reliably.\n\n### Sound\n\n- Night mode: quieter explosions, clearer voices.\n- Latency slider with a live estimate of the delay to your ears.\n- More stable connection: sound quality recovers by itself after a short dropout.\n- Lower latency: down to 40 ms.\n\n### Design\n\n- New home screen, bigger and cleaner, with four sections: Headset, Sound, Co..."
+      "checksum": "34e790936eee274137a20e879fa9bb746c302d017acc2164be6958a8470ac4fe",
+      "release_notes": "What is new\n\n- The HearBridge tile is now in the Media tab. The old tile in the Games tab is removed automatically the first time this version loads.\n- The tile now opens even when there is no internet, and it shows a short message if HearBridge is not loaded yet.\n- HearBridge keeps running even after the internet disconnects, or with no internet at all.\n- The tile and the page are now simply called HearBridge.\n- Added name hints so Huawei FreeClip and FreeBuds are recognised in the scan list.\n- A saved headset should now connect faster after you turn it on or take it out of its case, as long as the HearBridge page is open in a browser.\n- The diagnostics page (/api/diag) now shows the last log lines with times, and the log from the previous run. This makes bug reports much easier to read.\n\nNot fixed in this version\n\n- Controller problems (a controller that does not reconnect, or stays unresponsive after switching users or using headphones). Controllers share the same Bluetooth chip as the console, so they are hard to solve. For now, play with a fully charged controller and turn off controller auto power off in the console settings.\n- Scan finding no devices on MediaTek consoles (#34).\n- AirPods dropouts or stutter in games (#18, #25, #35).\n\nLogs help a lot: /data/hearbridge/hearbridge.log and the page http://<console ip>:8090/api/diag.\n"
     },
     {
       "id": "liveshell-liveshell",
@@ -406,19 +406,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.0.31",
+      "id": "ps5upload-ps5upload-7.0.32",
       "name": "ps5upload",
-      "filename": "ps5upload-7.0.31_v7.0.31.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.31_v7.0.31.elf",
+      "filename": "ps5upload-7.0.32_v7.0.32.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.32_v7.0.32.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.31/ps5upload-7.0.31.elf",
-      "description": "v7.0.31 by phantomptr",
-      "last_update": "2026-10-16",
-      "version": "v7.0.31",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.32/ps5upload-7.0.32.elf",
+      "description": "v7.0.32 by phantomptr",
+      "last_update": "2026-10-17",
+      "version": "v7.0.32",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "4ef3b781ae178bbe402a87a64b6f366d3386d6557306db0f51b46b458ffa7e24",
-      "release_notes": "- **Rest mode is shown as rest mode, not as a problem.** A PS5 in rest mode used to look the\r\n  same as one that was off or broken: a red \"Not connected\", \"Helper isn't running\" on every\r\n  console screen, and Connection's Check blaming the jailbreak or a VPN. The app now asks the\r\n  console the way Remote Play does (it answers \"standby\" while it sleeps), and shows a calm,\r\n  blue \"In rest mode\" in the status bar, the console tabs, Home and the game page. Console screens\r\n  say \"Your PS5 is in rest mode\" with a Wake button when wake is set up. A console that answers\r\n  nothing at all reads \"Not answering\", with the setting it needs to stay reachable in rest mode\r\n  (Settings › System › Power Saving › Features Available in Rest Mode).\r\n- **Nothing fights a sleeping console.** The automatic reconnect no longer pokes a console in rest\r\n  mode every 30 seconds all night; it waits, and sends the helper again once the console is\r\n  awake. Uploads that meet rest mode wait (\"Waiting for the PS5 to wake\") and carry on after the\r\n  wake, without using up their retries; in the browser version they used to fail. Keep-awake skips\r\n  a sleeping console. Measured on both consoles on FW 13.60, including a full rest → wake →\r\n  helper back → rest cycle on the Pro.\r\n\r\n"
+      "checksum": "05f0fd48d3983cd34c03163950f545446a4db0e34eaf3131753e3fb8fbdf1f3d",
+      "release_notes": "- **Rest mode is found on a computer with Wi-Fi and a cable at once.** A Mac on both, sending\r\n  through Wi-Fi, got \"Host is down\" from a sleeping PS5 and showed it as not answering, though\r\n  the same console answered \"standby\" over the cable. The app now asks every network connection\r\n  on the computer that shares the console's network, and treats \"Host is down\" as a reason to ask.\r\n  Wake goes out the same way, so it now reaches a sleeping console from such a computer too\r\n  (Mac, Linux and Android; Windows still uses its default connection).\r\n- **Wake is offered whenever the console isn't awake.** The PS5 power card showed Wake only when\r\n  it had confirmed rest mode; it now shows whenever wake is set up and the console isn't known\r\n  to be awake. The card says \"In rest mode\" or \"Not answering\", and greys out Rest mode, Reboot\r\n  and Shut down while the console sleeps, since those need the helper.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -736,19 +736,19 @@
       "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
-      "id": "ps5upload-ps5upload-7.0.32-prerelease",
+      "id": "ps5upload-ps5upload-7.0.24-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.0.32_v7.0.32 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.32_v7.0.32%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.0.24_v7.0.24 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.0.24_v7.0.24%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.32/ps5upload-7.0.32.elf",
-      "description": "v7.0.32 [Pre-release] by phantomptr",
-      "last_update": "2026-10-17",
-      "version": "v7.0.32",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.24/ps5upload-7.0.24.elf",
+      "description": "v7.0.24 [Pre-release] by phantomptr",
+      "last_update": "2026-10-15",
+      "version": "v7.0.24",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "05f0fd48d3983cd34c03163950f545446a4db0e34eaf3131753e3fb8fbdf1f3d",
-      "release_notes": "\n- **Rest mode is found on a computer with Wi-Fi and a cable at once.** A Mac on both, sending\n  through Wi-Fi, got \"Host is down\" from a sleeping PS5 and showed it as not answering, though\n  the same console answered \"standby\" over the cable. The app now asks every network connection\n  on the computer that shares the console's network, and treats \"Host is down\" as a reason to ask.\n  Wake goes out the same way, so it now reaches a sleeping console from such a computer too\n  (Mac, Linux and Android; Windows still uses its default connection).\n- **Wake is offered whenever the console isn't awake.** The PS5 power card showed Wake only when\n  it had confirmed rest mode; it now shows whenever wake is set up and the console isn't known\n  to be awake. The card says \"In rest mode\" or \"Not answering\", and greys out Rest mode, Reboot\n  and Shut down while the console sleeps, since those need the helper.\n\n"
+      "checksum": "6f32c33a2f7cf4c119477336379fae574ee5b9bd9426f9f4b335ae52d8c432cb",
+      "release_notes": "\n- **Payloads → Ports: see what is listening on the PS5.** Every port in use, TCP and UDP, with\n  what usually listens there (elfldr, ftpsrv, Payload Manager, nanodns, the ps5upload helper,\n  Remote Play) and whether a PC can reach it or only the console itself. Ports with a web page\n  open in your browser from there. The helper finds them by binding each port and letting go\n  at once, so no payload ever sees a connection; a full pass takes about a second. Needs the\n  7.0.24 helper.\n- **Folder games on a USB drive are no longer described as /data/homebrew folders (#452).**\n\n"
     },
     {
       "id": "archived-etahen-99.0",
