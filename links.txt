@@ -39,7 +39,7 @@ github:stupiditytries/librespot-ps5
 github:ZiZc3/LiveShell
 github:arwebSE/LibrePadPS5
 github:knutwurst/ps5-patchdl
-github:
+github:ps5xploit/ps5shopappkg
 github:
 github:
 github:
