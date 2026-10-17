@@ -406,19 +406,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.0.32",
+      "id": "ps5upload-ps5upload-7.0.33",
       "name": "ps5upload",
-      "filename": "ps5upload-7.0.32_v7.0.32.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.32_v7.0.32.elf",
+      "filename": "ps5upload-7.0.33_v7.0.33.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.0.33_v7.0.33.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.32/ps5upload-7.0.32.elf",
-      "description": "v7.0.32 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.33/ps5upload-7.0.33.elf",
+      "description": "v7.0.33 by phantomptr",
       "last_update": "2026-10-17",
-      "version": "v7.0.32",
+      "version": "v7.0.33",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "05f0fd48d3983cd34c03163950f545446a4db0e34eaf3131753e3fb8fbdf1f3d",
-      "release_notes": "- **Rest mode is found on a computer with Wi-Fi and a cable at once.** A Mac on both, sending\r\n  through Wi-Fi, got \"Host is down\" from a sleeping PS5 and showed it as not answering, though\r\n  the same console answered \"standby\" over the cable. The app now asks every network connection\r\n  on the computer that shares the console's network, and treats \"Host is down\" as a reason to ask.\r\n  Wake goes out the same way, so it now reaches a sleeping console from such a computer too\r\n  (Mac, Linux and Android; Windows still uses its default connection).\r\n- **Wake is offered whenever the console isn't awake.** The PS5 power card showed Wake only when\r\n  it had confirmed rest mode; it now shows whenever wake is set up and the console isn't known\r\n  to be awake. The card says \"In rest mode\" or \"Not answering\", and greys out Rest mode, Reboot\r\n  and Shut down while the console sleeps, since those need the helper.\r\n\r\n"
+      "checksum": "39ac03d273afb51bfa3625802acfa9364e3efc3821c9479a5aedfda7bf4cf54c",
+      "release_notes": "- **A PS5 update package installs even when its base game isn't there.** The app refused any\r\n  update whose base game wasn't installed (\"Install the base game first\"), but some PS5 updates\r\n  carry the whole app: a YouTube update package installed fine through the PS5's own debug\r\n  Package Installer while ps5upload refused it. For PS5 packages the app now warns (\"the PS5 may\r\n  still accept it\") and lets the PS5 decide; if it can't, the PS5's own error still shows. PS4\r\n  updates are still refused, since there Sony accepts the request and installs nothing.\r\n  Stream-installed on both consoles (FW 13.60) with YouTube removed first.\r\n- **An install counts as done when its exact bytes are on the console.** Such a package lands as\r\n  the app, not in the updates folder, so the app looked in the wrong place: it called an\r\n  installed copy \"not installed\" and could not confirm a finished install.\r\n- **About links to the website.** About now has a Website link to ps5upload.phantomptr.com, and\r\n  the author's name opens phantomptr.com.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
