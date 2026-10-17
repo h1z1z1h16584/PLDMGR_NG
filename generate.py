@@ -16,8 +16,9 @@ REPO_CATALOG_NAME = "Custom Payloads Archive"
 STATIC_CATEGORY = "~ Archived"
 PRE_RELEASE_CATEGORY = "Pre-release"
 
-# Locking archived payloads to v99.0 prevents update prompts in UI
+# Locking archived payloads prevents update prompts in the manager UI
 ARCHIVED_VERSION = "v99.0"
+ARCHIVED_DATE = "2000-01-01"
 
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
 PRE_RELEASE_KEYWORDS = ("beta", "alpha", "rc", "preview", "test", "fix")
@@ -44,14 +45,13 @@ def slugify(text: str) -> str:
 
 
 def truncate_utf8_bytes(text: str, max_bytes: int = 2044) -> str:
-    """Safely truncates text to fit within a strict UTF-8 byte budget with ellipsis."""
+    """Safely truncates text to fit within the 2047 UTF-8 byte budget."""
     if not text:
         return ""
     encoded = text.encode("utf-8")
     if len(encoded) <= max_bytes:
         return text
 
-    # Truncate and strip broken multi-byte sequences
     truncated = encoded[:max_bytes].decode("utf-8", errors="ignore")
     return truncated.rstrip() + "..."
 
@@ -124,7 +124,7 @@ def fetch_target_releases(provider: str, owner: str, repo: str):
         # Exclude draft releases
         valid_releases = [r for r in releases if not r.get("draft")]
 
-        # Sort descending by published_at (newest first)
+        # Sort descending by published_at (newest published first)
         valid_releases.sort(
             key=lambda r: r.get("published_at") or r.get("created_at") or "",
             reverse=True
@@ -224,7 +224,7 @@ def sanitize_filename(name: str) -> str:
 def scan_static_archived_payloads():
     """
     Scans the static/archived directory for manual binaries,
-    giving them a stable ID, v99.0 version, and file modification date.
+    giving them a stable ID, v99.0 version, and the fixed historical ARCHIVED_DATE.
     """
     static_entries = []
     possible_dirs = [
@@ -249,9 +249,6 @@ def scan_static_archived_payloads():
             local_path = os.path.join(target_dir, fname)
             checksum = compute_sha256(local_path)
 
-            mtime = os.path.getmtime(local_path)
-            file_date = datetime.fromtimestamp(mtime).strftime("%Y-%m-%d")
-
             encoded_folder = quote(folder_name)
             encoded_fname = quote(fname)
             hosted_url = f"https://raw.githubusercontent.com/{gh_repository}/main/{BASE_PAYLOAD_DIR}/{encoded_folder}/{encoded_fname}"
@@ -268,14 +265,14 @@ def scan_static_archived_payloads():
                 "source": hosted_url,
                 "source_direct": hosted_url,
                 "description": f"Archived standalone payload: {fname}",
-                "last_update": file_date,
+                "last_update": ARCHIVED_DATE,
                 "version": ARCHIVED_VERSION,
                 "author": "Community Archive",
                 "category": STATIC_CATEGORY,
                 "checksum": checksum
             }
             static_entries.append(entry)
-            print(f"[+] Loaded archived payload: {fname} (id={payload_id}, v={ARCHIVED_VERSION})")
+            print(f"[+] Loaded archived payload: {fname} (id={payload_id}, date={ARCHIVED_DATE})")
 
     return static_entries
 
@@ -304,6 +301,7 @@ def main():
     broken_repos = []
     seen_filenames = set()
 
+    # 1. Process active repositories
     for provider, owner, repo_name in entries:
         repo_slug = f"{owner}/{repo_name}"
         display_slug = f"{provider}:{repo_slug}"
@@ -467,7 +465,7 @@ def main():
         for b in broken_repos:
             f.write(f"{b}\n")
 
-    print(f"\nCompleted: {len(payload_list)} payloads saved conforming to PS5 Payload Manager specification.")
+    print(f"\nDone: {len(payload_list)} payloads processed. Archived items assigned historical date {ARCHIVED_DATE}.")
 
 
 if __name__ == "__main__":
