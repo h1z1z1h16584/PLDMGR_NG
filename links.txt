@@ -38,7 +38,7 @@ github:X-F1REBALL-X/HearBridge-PS5
 github:stupiditytries/librespot-ps5
 github:ZiZc3/LiveShell
 github:arwebSE/LibrePadPS5
-github:
+github:knutwurst/ps5-patchdl
 github:
 github:
 github:
