@@ -316,6 +316,21 @@
       "release_notes": "# ps5debug-NG v1.3.2\n\nv1.3.0 was the big feature release. **v1.3.2 is the correctness and reliability release** that follows it: writes now prove they landed, three separate session-killing bugs are fixed, a scan comparator that silently returned wrong results is repaired, and firmware support extends through **FW 13.60**.\n\nThere was no separate v1.3.1 download, so **this release also contains everything from v1.3.1** (Turbo Scan cancel).\n\n---\n\n### ⚠️ Read this first: writes are now verified, and that changes what you see\n\nProcess writes used to report success as soon as the write was handed off. They are now **read back and compared before success is reported**, so a write that silently did nothing now correctly reports a failure.\n\n**If you are a client developer:** a write that previously appeared to succeed may now return `CMD_ERROR`. That is the bug surfacing, not a new bug. Servers advertise **capability level `1.1`** so clients can detect the behaviour.\n\n- `CMD_PROC_WRITE` returns terminal `CMD_ERROR` on write or verification failure.\n- Write-multi returns **typed per-entry status codes** (invalid / DMAP / verify / mdbg) so you can tell exactly which entries failed and why, instead of losing the detail in one aggregate result.\n- A proven DMAP mismatch no longer quietly falls through to the mdbg path.\n- **Caveat:** a transfer whose start address ends in `0xFF` backs up one byte to keep the write aligned. That adjacent-byte read-modify-write is not atomic, so it needs a **stable or suspended target** to be safe.\n\n---\n\n### 🛠️ Session-killing bugs fixed\n\n- **Fixed a debug session wedge that required a console reboot.** Toggling a trainer patch while the target was stopped at a breakpoint could deadlock the sole debug worker: an RPC stop was issued against a process the debugger already held ptrace-stopped, so the wait never returned, the worker died, and every reattach afterwards failed (clients reported \"Process not connected\" / already-debugging) until the console was restarted.\n- **Fixed a crash..."
     },
     {
+      "id": "librepadps5-librepadps5",
+      "name": "LibrePadPS5",
+      "filename": "LibrePadPS5_v1.1.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/LibrePadPS5_v1.1.3.elf",
+      "source": "https://github.com/arwebSE/LibrePadPS5/releases",
+      "source_direct": "https://github.com/arwebSE/LibrePadPS5/releases/download/v1.1.3/LibrePadPS5.elf",
+      "description": "LibrePadPS5 v1.1.3 by arwebSE",
+      "last_update": "2026-10-12",
+      "version": "v1.1.3",
+      "author": "arwebSE",
+      "category": "Networking & Servers",
+      "checksum": "736ea4b0a17aafce4ade2b696a6d5d2a8b856b83c6960a3d0ec117e23ba2c2c0",
+      "release_notes": "LibrePadPS5 v1.1.3 fixes the v1.1.2 startup regression that could leave both USB detection and the dashboard unavailable.\n\n* **Startup fixed:** the storage migration no longer requires symbolic links, which the tested PS5 `/data` filesystem rejects. This failure happened before controller and dashboard initialization.\n* **Saved settings preserved:** migration copies settings and Xbox firmware to `/data/LibrePadPS5`, retains an older-version rollback snapshot, and can recover the directory move left by v1.1.2. Stop the old payload before upgrading. Keep your files; no manual folder moves are needed.\n* **Clearer failures:** startup reports the failed operation, path and error number in the notification and loader output, even if the log file cannot be opened.\n\nThe dashboard, preview USB fixes, USB protocol notifications and automatic logout recovery remain included. Internal Bluetooth still starts disabled.\n\nVerified on a PS5 running **12.60**: the published v1.1.2 startup failure, fixed dashboard startup, fresh installation, legacy settings/firmware migration, recovery after an interrupted v1.1.2 directory move, restart, rollback to v1.1.1-preview, duplicate-instance protection and diagnostic downloads. Saved profile settings and Xbox firmware were checked byte for byte against backups. All 21 C/C++ host suites passed with AddressSanitizer/UndefinedBehaviorSanitizer; dashboard checks and combined, no-Xbox-module and standalone Xbox SDK builds passed.\n\nThis is a normal release, and the project is still in early development. Physical controller input was not re-tested for this patch; automatic logout recovery and startup on 11.40/13.60 still need tester confirmation. The earlier working preview has 8BitDo Adapter 2 input confirmation on 13.60. Issues #1 and #3 remain open until their reporters can confirm the fix.\n\nDownload `LibrePadPS5.elf`, its matching Payload Manager JSON and SHA-256 file. The Xbox setup ZIP is optional; existing adapter firmware does not need reinstalling. [Setup](https://github.com/arwebSE..."
+    },
+    {
       "id": "ftpsrv-ftpsrv-ps5",
       "name": "ftpsrv",
       "filename": "ftpsrv-ps5_1.16-ng-stable.elf",
@@ -496,21 +511,6 @@
       "release_notes": "- Added support for PS5 backport patches that previously appeared as unknown packages\n- Show an \"SDK target\" badge for PS5 packages when the executable's SDK version can be read reliably\n- Improved installed-version detection so newer PS5 patches can be installed and already installed updates are correctly recognized\n\nFull Changelog: https://github.com/itsPLK/ps5-pkg-manager/compare/v1.5.0...v1.5.1\n"
     },
     {
-      "id": "anypad-ps5-english-anypad-ps5-0.5.5-beta-prerelease",
-      "name": "AnyPad-PS5-English [Pre-release]",
-      "filename": "AnyPad-PS5-0.5.5-beta [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/AnyPad-PS5-0.5.5-beta%20%5BPre-release%5D.elf",
-      "source": "https://github.com/Mohammad-Aghayan/AnyPad-PS5-English/releases",
-      "source_direct": "https://github.com/S-Mohammad-A/AnyPad-PS5-English/releases/download/AnyPad/AnyPad-PS5-0.5.5-beta.elf",
-      "description": "0.5.5-beta [Pre-release] by Mohammad-Aghayan",
-      "last_update": "2026-10-04",
-      "version": "AnyPad",
-      "author": "Mohammad-Aghayan",
-      "category": "Pre-release",
-      "checksum": "0947a56630c54d763a5999eb6e89c3382e3ecf0234d782b2956418c1f6f87677",
-      "release_notes": "Fix didnt run above firmware 10.01 and up. \r\nFix icon didnt show up in Media \r\nadd English"
-    },
-    {
       "id": "cheatrunner-cheatrunner-prerelease",
       "name": "CheatRunner [Pre-release]",
       "filename": "CheatRunner_v0.16 [Pre-release].elf",
@@ -539,51 +539,6 @@
       "category": "Pre-release",
       "checksum": "b034107403d9d22f2a405b9ecfd25c786a5ac729a1de3254ee7452d26cdeb4ce",
       "release_notes": "Beta build. Please try it and tell us how it goes in #34 before it becomes the main release.\r\n\r\n**Fixed**\r\n- Controllers no longer drop or refuse to reconnect while HearBridge is running, over Bluetooth or USB (#34). HearBridge now reads much less of the console's Bluetooth traffic and steps aside whenever a controller connects.\r\n\r\n**Changed**\r\n- HearBridge only pairs with headphones and speakers. Controllers, phones, PCs and TVs are left alone.\r\n- Controllers are blocked automatically. The Headsets page has a new \"Blocked devices\" list where you can block a device by its address or unblock one.\r\n- AirPods, Galaxy Buds, OnePlus Buds and other earbuds that report an unusual device type still show up and connect.\r\n- If your headset drops, HearBridge reconnects to it on its own without grabbing other devices.\r\n\r\nThis build has extra logging turned on. If something goes wrong, please attach the log from http://<console-ip>:8090/api/diag.\r\n"
-    },
-    {
-      "id": "poords4-poords4-status-prerelease",
-      "name": "PoorDS4 [Pre-release]",
-      "filename": "PoorDS4-status_v0.1.0-rc51 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/PoorDS4-status_v0.1.0-rc51%20%5BPre-release%5D.elf",
-      "source": "https://github.com/ItsBlurf/PoorDS4/releases",
-      "source_direct": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4-status.elf",
-      "description": "PoorDS4 v0.1.0-rc51 [Pre-release] by ItsBlurf",
-      "last_update": "2026-09-30",
-      "version": "v0.1.0-rc51",
-      "author": "ItsBlurf",
-      "category": "Pre-release",
-      "checksum": "d47bb84a6ae05117f095c05b75dfee15d9fbf07864a3e52d0e2e626eab613440",
-      "release_notes": "PoorDS4 RC51 brings concurrent multi-controller streaming (up to 4 controllers), full support for modular PRX input engines (Control, Forza Horizon 5), UE5 crash and ghost handle fixes (Stellar Blade, Poppy Playtime, Kena, TEKKEN 8), and automatic stale gateway recovery.\n\n### What Changed (since RC44)\n\n- **Concurrent Multi-DS4 Controller Streaming (Slots 0..3)**:\n  - The injected `SceRemotePlay` reader thread now discovers, opens, and polls up to 4 active physical DS4 controller handles concurrently at up to 1000Hz using independent per-slot buffers and atomic sequence counters. All opened handles are cleanly closed when the thread terminates.\n  - Implemented per-slot reader retrieval (`wireless_ds4_remote_reader_read_slot`), allowing independent 120Hz polling of each controller.\n  - Extended the supervisor slot multiplexer (`feed_multi_controller_slots`) to feed physical secondary controllers, simulated pads, and same-user aliases, supporting any combination of physical DS4, simulated DS4, and native DualSense controllers.\n  - Updated `PoorDS4-status.elf` to report exact slot roles dynamically: `Player %u (Physical DS4)`, `Player %u (Primary DS4)`, `Player %u Alias (Primary DS4)`, `Player %u (Simulated DS4)`, `Player %u (Native DualSense)`, or `Unassigned/Empty`.\n\n- **Forza Horizon 5 & Multi-Module Same-User Handle Aliasing**:\n  - Fixed an issue where games with peripheral or wheel plugins (like Forza Horizon 5's `/app0/logiWheel.prx`) open a handle under the same user before the game engine opens its handle. Previously, only handle 0 received translated packets while the engine received handle mismatch errors (`0x80920001`).\n  - Added user ID tracking across the `libScePad` client table. The bridge now feeds primary input to all active non-DualSense handles owned by the user simultaneously, allowing both `logiWheel.prx` and `eboot.bin` to stream input with 0 mismatches.\n\n- **Modular PRX Import Scanning (Fix for Control Ultimate Edition)**:\n  - Fixed `import_scan_error=no_supported_hooks` (`install_result=-4..."
-    },
-    {
-      "id": "poords4-poords4-stop-prerelease",
-      "name": "PoorDS4 [Pre-release]",
-      "filename": "PoorDS4-stop_v0.1.0-rc51 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/PoorDS4-stop_v0.1.0-rc51%20%5BPre-release%5D.elf",
-      "source": "https://github.com/ItsBlurf/PoorDS4/releases",
-      "source_direct": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4-stop.elf",
-      "description": "PoorDS4 v0.1.0-rc51 [Pre-release] by ItsBlurf",
-      "last_update": "2026-09-30",
-      "version": "v0.1.0-rc51",
-      "author": "ItsBlurf",
-      "category": "Pre-release",
-      "checksum": "ffdce4964f0d34a2b9be7cb65e6ad345d5beb582dcdf94d0214cde6bc79acd0d",
-      "release_notes": "PoorDS4 RC51 brings concurrent multi-controller streaming (up to 4 controllers), full support for modular PRX input engines (Control, Forza Horizon 5), UE5 crash and ghost handle fixes (Stellar Blade, Poppy Playtime, Kena, TEKKEN 8), and automatic stale gateway recovery.\n\n### What Changed (since RC44)\n\n- **Concurrent Multi-DS4 Controller Streaming (Slots 0..3)**:\n  - The injected `SceRemotePlay` reader thread now discovers, opens, and polls up to 4 active physical DS4 controller handles concurrently at up to 1000Hz using independent per-slot buffers and atomic sequence counters. All opened handles are cleanly closed when the thread terminates.\n  - Implemented per-slot reader retrieval (`wireless_ds4_remote_reader_read_slot`), allowing independent 120Hz polling of each controller.\n  - Extended the supervisor slot multiplexer (`feed_multi_controller_slots`) to feed physical secondary controllers, simulated pads, and same-user aliases, supporting any combination of physical DS4, simulated DS4, and native DualSense controllers.\n  - Updated `PoorDS4-status.elf` to report exact slot roles dynamically: `Player %u (Physical DS4)`, `Player %u (Primary DS4)`, `Player %u Alias (Primary DS4)`, `Player %u (Simulated DS4)`, `Player %u (Native DualSense)`, or `Unassigned/Empty`.\n\n- **Forza Horizon 5 & Multi-Module Same-User Handle Aliasing**:\n  - Fixed an issue where games with peripheral or wheel plugins (like Forza Horizon 5's `/app0/logiWheel.prx`) open a handle under the same user before the game engine opens its handle. Previously, only handle 0 received translated packets while the engine received handle mismatch errors (`0x80920001`).\n  - Added user ID tracking across the `libScePad` client table. The bridge now feeds primary input to all active non-DualSense handles owned by the user simultaneously, allowing both `logiWheel.prx` and `eboot.bin` to stream input with 0 mismatches.\n\n- **Modular PRX Import Scanning (Fix for Control Ultimate Edition)**:\n  - Fixed `import_scan_error=no_supported_hooks` (`install_result=-4..."
-    },
-    {
-      "id": "poords4-poords4rc51-prerelease",
-      "name": "PoorDS4 [Pre-release]",
-      "filename": "PoorDS4rc51_v0.1.0-rc51 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/PoorDS4rc51_v0.1.0-rc51%20%5BPre-release%5D.elf",
-      "source": "https://github.com/ItsBlurf/PoorDS4/releases",
-      "source_direct": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc51/PoorDS4rc51.elf",
-      "description": "PoorDS4 v0.1.0-rc51 [Pre-release] by ItsBlurf",
-      "last_update": "2026-09-30",
-      "version": "v0.1.0-rc51",
-      "author": "ItsBlurf",
-      "category": "Pre-release",
-      "checksum": "e1b9f257f51678a977edaeafd4ca1f8a03e9df0afda7d5dd84435841fa20795d",
-      "release_notes": "PoorDS4 RC51 brings concurrent multi-controller streaming (up to 4 controllers), full support for modular PRX input engines (Control, Forza Horizon 5), UE5 crash and ghost handle fixes (Stellar Blade, Poppy Playtime, Kena, TEKKEN 8), and automatic stale gateway recovery.\n\n### What Changed (since RC44)\n\n- **Concurrent Multi-DS4 Controller Streaming (Slots 0..3)**:\n  - The injected `SceRemotePlay` reader thread now discovers, opens, and polls up to 4 active physical DS4 controller handles concurrently at up to 1000Hz using independent per-slot buffers and atomic sequence counters. All opened handles are cleanly closed when the thread terminates.\n  - Implemented per-slot reader retrieval (`wireless_ds4_remote_reader_read_slot`), allowing independent 120Hz polling of each controller.\n  - Extended the supervisor slot multiplexer (`feed_multi_controller_slots`) to feed physical secondary controllers, simulated pads, and same-user aliases, supporting any combination of physical DS4, simulated DS4, and native DualSense controllers.\n  - Updated `PoorDS4-status.elf` to report exact slot roles dynamically: `Player %u (Physical DS4)`, `Player %u (Primary DS4)`, `Player %u Alias (Primary DS4)`, `Player %u (Simulated DS4)`, `Player %u (Native DualSense)`, or `Unassigned/Empty`.\n\n- **Forza Horizon 5 & Multi-Module Same-User Handle Aliasing**:\n  - Fixed an issue where games with peripheral or wheel plugins (like Forza Horizon 5's `/app0/logiWheel.prx`) open a handle under the same user before the game engine opens its handle. Previously, only handle 0 received translated packets while the engine received handle mismatch errors (`0x80920001`).\n  - Added user ID tracking across the `libScePad` client table. The bridge now feeds primary input to all active non-DualSense handles owned by the user simultaneously, allowing both `logiWheel.prx` and `eboot.bin` to stream input with 0 mismatches.\n\n- **Modular PRX Import Scanning (Fix for Control Ultimate Edition)**:\n  - Fixed `import_scan_error=no_supported_hooks` (`install_result=-4..."
     },
     {
       "id": "prosperomgr-prosperomgr-prerelease",
