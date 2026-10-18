@@ -436,19 +436,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.1.0",
+      "id": "ps5upload-ps5upload-7.1.2",
       "name": "ps5upload",
-      "filename": "ps5upload-7.1.0_v7.1.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.0_v7.1.0.elf",
+      "filename": "ps5upload-7.1.2_v7.1.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.2_v7.1.2.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.0/ps5upload-7.1.0.elf",
-      "description": "v7.1.0 by phantomptr",
-      "last_update": "2026-10-17",
-      "version": "v7.1.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.2/ps5upload-7.1.2.elf",
+      "description": "v7.1.2 by phantomptr",
+      "last_update": "2026-10-18",
+      "version": "v7.1.2",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "f16a99904f194f96a592cc29206843f3641a46ad7df96fabd4cc9851cd8c1d37",
-      "release_notes": "- **PS5Upload Files: manage your files from the couch.** A new PS5Upload Files tile on the\r\n  PS5 home screen opens a page in the PS5 browser that fills the TV. It has four sections:\r\n  **Home** (the running game with Close game, the tasks that are running with Cancel, and your\r\n  drives), **Files**, **Cheats** (switch the running game's cheats on and off) and **Settings**.\r\n  The PS5Upload helper must be loaded. If it isn't, the page tries to show a note that says so\r\n  (from a copy the PS5 browser keeps) and opens by itself once the helper answers. After an\r\n  update, a banner offers to reload.\r\n- **Made for the controller.** ✕ selects, ○ steps back, △ opens an item's actions, and the PS5's\r\n  own pointer works too. Every action also has a button on screen. Three short tips show the\r\n  first time, Help lists the buttons that work on the current screen, and Controls shows which\r\n  buttons your PS5 passes on to the page. Dark, Light, OLED and Peach themes, high contrast,\r\n  the language and full screen are in Settings.\r\n- **Browse and organise.** A path bar with Go to path, pinned and recent folders, and your\r\n  drives, with Eject for USB drives and Unmount for game images (refused while a game is\r\n  running). Sort, filter, show hidden files and select all. Copy, cut and paste, with Replace,\r\n  Keep both or Skip when a name is taken (and Apply to all); rename one item or many at once\r\n  with a pattern (a change of letter case alone works too); new folder; delete; Fix permissions.\r\n- **Look inside files.** Info with folder size; Verify (BLAKE3 and CRC32); Decompress a\r\n  `.ffpfsc` back to its image, with progress. The viewer shows text (with find), JSON, a\r\n  summary of a game's `param.json`, hex, and pictures (step through a folder's images); a game\r\n  folder shows its banner. Search finds files by name in this folder or on all drives (the first\r\n  search builds an index), and Disk usage shows what takes the space.\r\n- **Works with the app on your PC.** File System shows the folders pinned on the console..."
+      "checksum": "dde5731e9423112c243cde2c13165b5992f99e3ec35eb423e2c2bcbfab0ee564",
+      "release_notes": "- **Save data on a shared PS5 shows whose save is whose.** Each save is labelled with its\r\n  owner's name instead of a number, and the screen starts on the user who is signed in at the\r\n  console; \"Whose saves\" switches to another user or to everyone. Back up all and Restore all\r\n  act on the saves shown. A backup saved on your computer is named after the game and the user\r\n  (`PPSA01234-Alice.zip`).\r\n- **USB backups are kept per user.** Backups to a USB drive on the console now go into a folder\r\n  per user (`<game>/<name>-<user id>/<date>/`). Before, every user's backups of a game shared one\r\n  folder, so on a shared console \"Restore all from USB\" could put one user's latest backup into\r\n  another user's save. Backups made before this update are still used when only one user on the\r\n  console has a save of that game.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
