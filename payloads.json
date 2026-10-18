@@ -556,19 +556,19 @@
       "release_notes": "CheatRunner v0.16\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/CheatRunner/blob/main/CHANGELOG.md)\r\n\r\nCheck [GUIDE](https://github.com/notmaj0r/CheatRunner#homebrew-launcher) to setup CheatRunner.zip on Homebrew Launcher.\r\n\r\n⚠️ Before updating to a new CheatRunner version, please follow these steps: [Updating CheatRunner](https://github.com/notmaj0r/CheatRunner#-updating-cheatrunner)\r\n\r\nSpecial Thanks:\r\n\r\n💖 Supporters - those who supported the project through [Ko-Fi](https://ko-fi.com/maj0r) or [Buy Me a Coffee](https://buymeacoffee.com/maj0r).\r\n• primo • lal3x • jawad • anonymous • Maffioh\r\n\r\n💚 Testers - those who tested early builds of CheatRunner before release."
     },
     {
-      "id": "hearbridge-ps5-hearbridge-ps5-1.3.2-prerelease",
+      "id": "hearbridge-ps5-hearbridge-1.3.7-beta.1-prerelease",
       "name": "HearBridge-PS5 [Pre-release]",
-      "filename": "HearBridge-PS5-1.3.2_v1.3.2-beta [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/HearBridge-PS5-1.3.2_v1.3.2-beta%20%5BPre-release%5D.elf",
+      "filename": "HearBridge-1.3.7-beta.1_v1.3.7-beta.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/HearBridge-1.3.7-beta.1_v1.3.7-beta.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases",
-      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.2-beta/HearBridge-PS5-1.3.2.elf",
-      "description": "HearBridge 1.3.2 beta [Pre-release] by X-F1REBALL-X",
-      "last_update": "2026-10-13",
-      "version": "v1.3.2-beta",
+      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.7-beta.1/HearBridge-1.3.7-beta.1.elf",
+      "description": "HearBridge 1.3.7 beta 1 [Pre-release] by X-F1REBALL-X",
+      "last_update": "2026-10-18",
+      "version": "v1.3.7-beta.1",
       "author": "X-F1REBALL-X",
       "category": "Pre-release",
-      "checksum": "b034107403d9d22f2a405b9ecfd25c786a5ac729a1de3254ee7452d26cdeb4ce",
-      "release_notes": "Beta build. Please try it and tell us how it goes in #34 before it becomes the main release.\r\n\r\n**Fixed**\r\n- Controllers no longer drop or refuse to reconnect while HearBridge is running, over Bluetooth or USB (#34). HearBridge now reads much less of the console's Bluetooth traffic and steps aside whenever a controller connects.\r\n\r\n**Changed**\r\n- HearBridge only pairs with headphones and speakers. Controllers, phones, PCs and TVs are left alone.\r\n- Controllers are blocked automatically. The Headsets page has a new \"Blocked devices\" list where you can block a device by its address or unblock one.\r\n- AirPods, Galaxy Buds, OnePlus Buds and other earbuds that report an unusual device type still show up and connect.\r\n- If your headset drops, HearBridge reconnects to it on its own without grabbing other devices.\r\n\r\nThis build has extra logging turned on. If something goes wrong, please attach the log from http://<console-ip>:8090/api/diag.\r\n"
+      "checksum": "7590dc52ec2876855397dd8d44396596b2c13df2a04b4f486c7c86fbeea90477",
+      "release_notes": "This is a test build (beta). It is marked as a pre-release and does not replace the stable version.\n\nWhat changed:\n- Devices that do not report a name are now listed too, with their Bluetooth address and \"Unknown name\". Some devices, such as AirPods, that did not show up before can now appear in the list.\n- Names are now requested for more devices, so more of them show a proper name.\n- The scan time is raised to 15 seconds.\n- Clearer messages in the log about why a device was or was not listed.\n\nIf you had trouble finding your headphones, please try this build and share the log in an issue.\n"
     },
     {
       "id": "prosperomgr-prosperomgr-prerelease",
