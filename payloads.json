@@ -167,6 +167,20 @@
       "release_notes": "**PS5SX2 2.10** (build vk-285-171)\n\n**New**\n- **PS2 discs on the PS5 home screen.** Put a PS2 DVD in the console's drive while you are on the home screen: a tile with the game's name and cover shows up in about 6 seconds, and the PS5's own \"Unsupported Disc\" tile is hidden. Press **✕** on it and the game starts straight from the disc (or from its copy in `games/`, if you made one): no shelf, no question. Take the disc out and the tile goes away.\n- **A \"Reload PS2 Disc\" tile.** If a disc's tile does not come, does not start, or the \"Unsupported Disc\" tile stays: press this tile once. It cleans up after the last game, has ShadowMount+ look again and makes the disc's tile again. A pop-up says \"PS2 disc reloaded.\" a few seconds later.\n- **A question on the shelf.** With PS5SX2 open, a PS2 disc that is not copied yet asks **Play from disc** or **Copy to storage** (**Left / Right** choose, **✕** confirms, **○** is \"not now\"). *Play from disc* starts at once and reads the disc as you play, like a real PS2, so the disc has to stay in. *Copy to storage* copies it first (several minutes) and plays from the copy: faster loading, and the disc can come out. A disc that `games/` already holds starts from its copy with no question. So you can still dump a disc through the shelf, and once it is dumped, starting its game from the tile runs the dump instead of the disc.\n\n**Changed**\n- A PS2 disc put in on the home screen no longer starts PS5SX2 by itself: press its tile.\n- The empty file `nodiscask` in `/data/PCSX2/flags/` brings the 2.03 behaviour back: no question on the shelf, and a disc put in on the home screen is copied and started by itself. Use it if you don't use ShadowMount+, because the tiles need it.\n\n---\n\n## Download\n\n- **`PS5SX2-vk-285-171.zip`**: the app (eboot and files). The installer installs it for you.\n  SHA-256: `226ac24866f0b94566c0680c3b99c0d5abfe8030723f5b28dae20af039c76963`\n- **`PS5SX2Installer.elf`**: the installer, the same file as in 2.00. Send it and it installs this build, and every later on..."
     },
     {
+      "id": "welcomehubactivator-welcomehubactivator-v1.0.0",
+      "name": "WelcomeHubActivator",
+      "filename": "WelcomeHubActivator-v1.0.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/WelcomeHubActivator-v1.0.0.elf",
+      "source": "https://github.com/ghost1372/WelcomeHubActivator/releases",
+      "source_direct": "https://github.com/ghost1372/WelcomeHubActivator/releases/download/v1.0.0/WelcomeHubActivator-v1.0.0.elf",
+      "description": "v1.0.0 by ghost1372",
+      "last_update": "2026-10-18",
+      "version": "v1.0.0",
+      "author": "ghost1372",
+      "category": "Homebrew",
+      "checksum": "3a95fae68a011ad99b660bb6782383a17d6bc4f3d7f50332dcfebc0e7f69aecb"
+    },
+    {
       "id": "apr-emu-updater-apr_emu_updater_v2.0.6",
       "name": "apr-emu-updater",
       "filename": "apr_emu_updater_v2.0.6.elf",
