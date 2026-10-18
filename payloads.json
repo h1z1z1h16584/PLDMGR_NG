@@ -64,16 +64,17 @@
     {
       "id": "garlic-savemgr-garlic-savemgr",
       "name": "garlic-savemgr",
-      "filename": "garlic-savemgr_v1.13.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/garlic-savemgr_v1.13.1.elf",
+      "filename": "garlic-savemgr_v1.14.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/garlic-savemgr_v1.14.0.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.13.1/garlic-savemgr.elf",
-      "description": "v1.13.1 by earthonion",
-      "last_update": "2026-09-19",
-      "version": "v1.13.1",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.14.0/garlic-savemgr.elf",
+      "description": "v1.14.0 by earthonion",
+      "last_update": "2026-10-18",
+      "version": "v1.14.0",
       "author": "earthonion",
       "category": "Dumping & Backups",
-      "checksum": "b0fc2fcdda977d2a1207d77148746859b7ea7f3cfcad02828a7a9b49651807f5"
+      "checksum": "0b96822e3f554666b7fa4ead673c60ef602e5534a9f01a45e94d0580bd6e9edd",
+      "release_notes": "**Multi-save operations + ownership rework** (thanks @sudofrontman, PR #17)\n\n- Fix importing saves with account ID 0x0000000000000000 (zero is a valid account ID)\n- Import / decrypt / encrypt now support multiple saves at once\n- icon0.png image preview in the UI\n- SFO account/user patching now goes through the SFO index instead of hardcoded offsets, with write verification\n- PS4 ownership restore uses a local same-title/same-slot save as the PARAMS template, with clear warnings when full ownership cannot be verified"
     },
     {
       "id": "unrar-ps5-unrar_ps5",
@@ -436,19 +437,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.1.2",
+      "id": "ps5upload-ps5upload-7.1.3",
       "name": "ps5upload",
-      "filename": "ps5upload-7.1.2_v7.1.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.2_v7.1.2.elf",
+      "filename": "ps5upload-7.1.3_v7.1.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.3_v7.1.3.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.2/ps5upload-7.1.2.elf",
-      "description": "v7.1.2 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.3/ps5upload-7.1.3.elf",
+      "description": "v7.1.3 by phantomptr",
       "last_update": "2026-10-18",
-      "version": "v7.1.2",
+      "version": "v7.1.3",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "dde5731e9423112c243cde2c13165b5992f99e3ec35eb423e2c2bcbfab0ee564",
-      "release_notes": "- **Save data on a shared PS5 shows whose save is whose.** Each save is labelled with its\r\n  owner's name instead of a number, and the screen starts on the user who is signed in at the\r\n  console; \"Whose saves\" switches to another user or to everyone. Back up all and Restore all\r\n  act on the saves shown. A backup saved on your computer is named after the game and the user\r\n  (`PPSA01234-Alice.zip`).\r\n- **USB backups are kept per user.** Backups to a USB drive on the console now go into a folder\r\n  per user (`<game>/<name>-<user id>/<date>/`). Before, every user's backups of a game shared one\r\n  folder, so on a shared console \"Restore all from USB\" could put one user's latest backup into\r\n  another user's save. Backups made before this update are still used when only one user on the\r\n  console has a save of that game.\r\n\r\n"
+      "checksum": "74eeaabc600d0b305117f93375010923e5732602d10228c5b6eba2047b22df2b",
+      "release_notes": "- **Payloads: one place for what's on your PS5.** The Payloads screen now has three tabs:\r\n  Catalog, Send and **On your PS5**. On your PS5 shows a card for each payload that is running\r\n  or installed on the console, with its status, Open (for payloads with a web page), Update when a\r\n  newer release is out, and Stop. **Manage** opens that payload's tools in the card:\r\n  ShadowMount+ mounts, the nanoDNS editor, Payload Manager and HearBridge. Old links to the\r\n  separate tabs still work.\r\n- **HearBridge in the catalog and on your PS5.** HearBridge plays the PS5's audio on ordinary\r\n  Bluetooth headphones or speakers. Its card shows the connected headset, battery, link quality,\r\n  latency, volume and the game's profile; Manage sets volume and mute, reconnects, switches\r\n  between saved headsets, scans for new ones, turns night mode on or off, sets latency, and stops\r\n  it. Pairing, EQ and everything else open in HearBridge's own page.\r\n- **Processes & ports.** The Processes screen now has a Ports tab next to it, showing which ports\r\n  are open on the console and what usually listens there (HearBridge and PS5Upload Files\r\n  included).\r\n- **PS5Upload Files: permissions, new files and text editing.** Info → Permissions sets read,\r\n  write and execute for owner, group and others (or the number, like 755), for a folder's\r\n  contents too; drives that don't keep permissions (exFAT, FAT) say so. Create a new file, and\r\n  edit text files up to 1 MiB with the on-screen keyboard. Saving never leaves a half-written\r\n  file, keeps the file's permissions and line endings, and warns when the file changed since\r\n  you opened it.\r\n- **PS5Upload Files: upload and download from your phone or computer.** When you open the page\r\n  from another device (Settings → Allow other devices), Files has **Upload here** to send files\r\n  and folders to the console and **Download** for a file, or a whole folder as one .tar file.\r\n  The usual Skip / Replace / Keep both choices apply, a cancelled upload leaves nothing behind,\r\n  and a stall..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -766,19 +767,19 @@
       "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
-      "id": "ps5upload-ps5upload-7.1.3-prerelease",
+      "id": "ps5upload-ps5upload-7.1.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.1.3_v7.1.3 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.3_v7.1.3%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.1.1_v7.1.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.1_v7.1.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.3/ps5upload-7.1.3.elf",
-      "description": "v7.1.3 [Pre-release] by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.1/ps5upload-7.1.1.elf",
+      "description": "v7.1.1 [Pre-release] by phantomptr",
       "last_update": "2026-10-18",
-      "version": "v7.1.3",
+      "version": "v7.1.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "74eeaabc600d0b305117f93375010923e5732602d10228c5b6eba2047b22df2b",
-      "release_notes": "\n- **Payloads: one place for what's on your PS5.** The Payloads screen now has three tabs:\n  Catalog, Send and **On your PS5**. On your PS5 shows a card for each payload that is running\n  or installed on the console, with its status, Open (for payloads with a web page), Update when a\n  newer release is out, and Stop. **Manage** opens that payload's tools in the card:\n  ShadowMount+ mounts, the nanoDNS editor, Payload Manager and HearBridge. Old links to the\n  separate tabs still work.\n- **HearBridge in the catalog and on your PS5.** HearBridge plays the PS5's audio on ordinary\n  Bluetooth headphones or speakers. Its card shows the connected headset, battery, link quality,\n  latency, volume and the game's profile; Manage sets volume and mute, reconnects, switches\n  between saved headsets, scans for new ones, turns night mode on or off, sets latency, and stops\n  it. Pairing, EQ and everything else open in HearBridge's own page.\n- **Processes & ports.** The Processes screen now has a Ports tab next to it, showing which ports\n  are open on the console and what usually listens there (HearBridge and PS5Upload Files\n  included).\n- **PS5Upload Files: permissions, new files and text editing.** Info → Permissions sets read,\n  write and execute for owner, group and others (or the number, like 755), for a folder's\n  contents too; drives that don't keep permissions (exFAT, FAT) say so. Create a new file, and\n  edit text files up to 1 MiB with the on-screen keyboard. Saving never leaves a half-written\n  file, keeps the file's permissions and line endings, and warns when the file changed since\n  you opened it.\n- **PS5Upload Files: upload and download from your phone or computer.** When you open the page\n  from another device (Settings → Allow other devices), Files has **Upload here** to send files\n  and folders to the console and **Download** for a file, or a whole folder as one .tar file.\n  The usual Skip / Replace / Keep both choices apply, a cancelled upload leaves nothing behind,\n  and a stalled connection is let go..."
+      "checksum": "af29de2be5c5e7ba183df4e0f0e6284da11fa264c0e18ce99a9cdee248e4ca44",
+      "release_notes": "\n- **The app scrolls again on macOS Big Sur.** On Big Sur's older built-in web engine the app\n  window lost its fixed height, so no screen could scroll, and the side bar's rows lost their\n  left padding. The app's styles now carry the older forms that engine understands.\n\n"
     },
     {
       "id": "archived-etahen-99.0",
