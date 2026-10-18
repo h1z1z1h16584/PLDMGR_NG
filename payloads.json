@@ -91,19 +91,19 @@
       "release_notes": "## Changes\n- Add threaded 7z extraction beside existing RAR extraction.\n- Support .7z and multipart .7z.001 archive starts.\n- Add archive_location and archive_password config keys while preserving rar_* aliases.\n- Pass threads= to both UnRAR and 7-Zip extraction paths.\n\n## Verification\n- Built with Docker SDK: docker run --rm -v \"/Users/bizkut/Downloads/PS5/homebrew/unrar-ps5:/work\" -w /work -e PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk ps5-payload-sdk:libcxx make clean all"
     },
     {
-      "id": "hearbridge-ps5-hearbridge-1.3.5",
+      "id": "hearbridge-ps5-hearbridge-1.3.6",
       "name": "HearBridge-PS5",
-      "filename": "HearBridge-1.3.5_v1.3.5.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.3.5_v1.3.5.elf",
+      "filename": "HearBridge-1.3.6_v1.3.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.3.6_v1.3.6.elf",
       "source": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases",
-      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.5/HearBridge-1.3.5.elf",
-      "description": "HearBridge 1.3.5 by X-F1REBALL-X",
-      "last_update": "2026-10-17",
-      "version": "v1.3.5",
+      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.6/HearBridge-1.3.6.elf",
+      "description": "HearBridge 1.3.6 by X-F1REBALL-X",
+      "last_update": "2026-10-18",
+      "version": "v1.3.6",
       "author": "X-F1REBALL-X",
       "category": "Homebrew",
-      "checksum": "34e790936eee274137a20e879fa9bb746c302d017acc2164be6958a8470ac4fe",
-      "release_notes": "What is new\n\n- The HearBridge tile is now in the Media tab. The old tile in the Games tab is removed automatically the first time this version loads.\n- The tile now opens even when there is no internet, and it shows a short message if HearBridge is not loaded yet.\n- HearBridge keeps running even after the internet disconnects, or with no internet at all.\n- The tile and the page are now simply called HearBridge.\n- Added name hints so Huawei FreeClip and FreeBuds are recognised in the scan list.\n- A saved headset should now connect faster after you turn it on or take it out of its case, as long as the HearBridge page is open in a browser.\n- The diagnostics page (/api/diag) now shows the last log lines with times, and the log from the previous run. This makes bug reports much easier to read.\n\nNot fixed in this version\n\n- Controller problems (a controller that does not reconnect, or stays unresponsive after switching users or using headphones). Controllers share the same Bluetooth chip as the console, so they are hard to solve. For now, play with a fully charged controller and turn off controller auto power off in the console settings.\n- Scan finding no devices on MediaTek consoles (#34).\n- AirPods dropouts or stutter in games (#18, #25, #35).\n\nLogs help a lot: /data/hearbridge/hearbridge.log and the page http://<console ip>:8090/api/diag.\n"
+      "checksum": "7b1a1b4a9a44db0723692a83718ebca63ecef38875a53a41328950f2cfa6877c",
+      "release_notes": "- Fixed Bluetooth headphones failing to connect cleanly on consoles with a MediaTek chip (#34).\n"
     },
     {
       "id": "liveshell-liveshell",
@@ -226,6 +226,21 @@
       "release_notes": "Added 7.0x support"
     },
     {
+      "id": "ps5-patchdl-patchdl_0.3.0",
+      "name": "ps5-patchdl",
+      "filename": "patchdl_0.3.0_v0.3.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.0_v0.3.0.elf",
+      "source": "https://github.com/knutwurst/ps5-patchdl/releases",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.0/patchdl_0.3.0.elf",
+      "description": "PatchDL 0.3.0: Pick any version, and downloads that get through by knutwurst",
+      "last_update": "2026-10-18",
+      "version": "v0.3.0",
+      "author": "knutwurst",
+      "category": "Homebrew",
+      "checksum": "60f9b91efe87fb65a8daaafd73b72417f0164d69ef8f6152fbb4647baf594d66",
+      "release_notes": "<p align=\"center\"><img src=\"https://raw.githubusercontent.com/knutwurst/ps5-patchdl/main/docs/images/hero.jpg\" width=\"820\" alt=\"PatchDL in a desktop browser and on a phone\"></p>\n\n## PatchDL 0.3.0\n\n### Pick the version you want\n\nEvery game card now has an **Other versions** button. It lists every patch [Prospero Patches](https://prosperopatches.com/) (PS5) or [Orbis Patches](https://orbispatches.com/) (PS4) knows for the game, with size and the firmware it needs. Versions that run on your console are at the top, ready to download. The ones that need a newer firmware, the installed one and older ones are listed below. Pick one, copy the link on the patch site (the QR code takes you there from the TV), and PatchDL fetches exactly that version from Sony. Only versions newer than the installed one can be picked. Thanks to @bigoroth for asking in #15.\n\n### Downloads that get through\n\n- **Blocked DNS:** PatchDL looks up Sony's servers on its own and never uses the console's DNS settings. If plain DNS is blocked or a filter answers with a dummy address, it switches to encrypted DNS (Cloudflare, Google) and, as a last resort, to the addresses that worked last time. The DNS block that keeps your system from updating stays in place.\n- **Unstable connections:** when a server stalls, PatchDL waits a moment, picks another server and tries again, up to eight times per piece. The card says so while it waits.\n- **No more starting over:** a piece that breaks off continues where it stopped, and so does a download you pause or one that is cut off by a restart of PatchDL.\n- **Update all on big libraries:** queuing more than 16 games works now.\n\nThanks to @Freewheelin123 for the reports and photos in #14 that led here.\n\n### In your language\n\nThe interface speaks English, German, French, Spanish, Italian, Brazilian Portuguese, Japanese, Simplified Chinese, Korean and Russian. It follows your browser; Settings lets you pick another. Native speakers of Japanese, Chinese, Korean or Russian: if something reads odd, please open an issue..."
+    },
+    {
       "id": "ps5shopappkg-dpiv2",
       "name": "ps5shopappkg",
       "filename": "DPIv2.elf",
@@ -314,21 +329,6 @@
       "category": "Kernel & Exploitation",
       "checksum": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212",
       "release_notes": "# OnionHEN v0.9.0\n\nOnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, a game overlay, payload management, and background services.\n\n**Version:** v0.9.0 is the stable release following v0.9.0-beta1 and v0.9.0-beta2. It brings together their changes since [v0.0.13](https://github.com/aydencharles/onionHEN/releases/tag/v0.0.13).\n\n**Firmware:** Adds support for **13.0-13.6** and **some 5.50 consoles**, alongside the firmware supported by v0.0.13. Please include your exact firmware and console behavior when reporting a problem.\n\n**Download:** `OnionHEN.elf` (Release build; SHA-256: `1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212`).\n\n## What changed since v0.0.13\n\n### Firmware compatibility\n\nThis release adds support for firmware **13.0-13.6** and **some 5.50 consoles**. Reports from real hardware are welcome.\n\n### Cheats\n\nOn firmware 4.03, opening the cheats menu for a game with no cheats could take about 40 seconds, then leave the home screen unresponsive until a forced reboot ([#97](https://github.com/aydencharles/onionHEN/issues/97), [#103](https://github.com/aydencharles/onionHEN/issues/103)). The beta2 fix makes an empty menu return in a few seconds without stalling ShellUI. The reporter on #103 confirmed the problem was gone in an early beta2 build.\n\nLong cheat names are also truncated on UTF-8 boundaries.\n\n### elfldr\n\nv0.0.13 needed elfldr v0.22 because it loaded the cache through a `file:` URI. v0.9.0 sends a normal ELF to port **9021**, so older elfldr builds work again. An external elfldr must still be listening on 9021.\n\n### Also\n\n- The bundled kstuff is **kstuff-lite 1.11**, up from 1.10 in v0.0.13.\n- Toolbox strings cover the remaining PS5 system languages. Startup toasts credit the author and thank contributors; the thanks toast can be turned off in Preferences. The About page lists testers and donors.\n- Daemon, bootstrapper, and ShellUI share `/data/OnionHEN/OnionH..."
-    },
-    {
-      "id": "ps5-patchdl-patchdl_0.2.1",
-      "name": "ps5-patchdl",
-      "filename": "patchdl_0.2.1_v0.2.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/patchdl_0.2.1_v0.2.1.elf",
-      "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.2.1/patchdl_0.2.1.elf",
-      "description": "PatchDL 0.2.1: Clear answers when a download fails by knutwurst",
-      "last_update": "2026-10-17",
-      "version": "v0.2.1",
-      "author": "knutwurst",
-      "category": "Kernel & Exploitation",
-      "checksum": "5458739714d93ad807f3720ff3a2107687bf18be6e238c3f531a93f55d3467b7",
-      "release_notes": "<p align=\"center\"><img src=\"https://raw.githubusercontent.com/knutwurst/ps5-patchdl/main/docs/images/hero.jpg\" width=\"820\" alt=\"PatchDL in a desktop browser and on a phone\"></p>\n\n## PatchDL 0.2.1\n\n### Clear answers when a download fails\n\nWhen PatchDL can't get a download going, the game card now says why: the server couldn't be found, the connection failed, Sony's server answered with an error, and so on. Next to it is a **Details** link. It checks the connection to Sony's servers for that game on the spot and shows the result as a short checklist. Below that is a report you can copy straight into a GitHub issue. On the PS5 itself, scan the QR code with your phone and the same report opens there, ready to copy. No typing addresses on the console.\n\n### Sideloaded apps stay as they are\n\nSome apps are Sony-signed but were installed outside the Store, often to keep one exact version. PatchDL now marks them **Sideloaded** and starts with their updates switched off, so **Update all** leaves them alone. Switch updates on for such an app if you really want the new version. Thanks to @yaredcf for spotting this in #11.\n\nRuns on firmware 1.00 to 13.60. Tested on 11.60.\n\n### Install\n\nDownload `patchdl_0.2.1.elf` below, send it to your PS5 with the ELF loader you already use, and open the address from the notification on your TV.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.2.0...v0.2.1\n"
     },
     {
       "id": "ps5debug-ng-ps5debug-ng_v1.3.2",
