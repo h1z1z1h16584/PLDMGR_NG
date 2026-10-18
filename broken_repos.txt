@@ -1,3 +1,4 @@
+etawen:earthonion/garlic-savemgr - Network error: HTTPSConnectionPool(host='git.etawen.dev', port=443): Max retries exceeded with url: /api/v1/repos/earthonion/garlic-savemgr/releases (Caused by ConnectTimeoutError(<HTTPSConnection(host='git.etawen.dev', port=443) at 0x7fe9262c9950>, 'Connection to git.etawen.dev timed out. (connect timeout=15)')) (Preserved stored files)
 github:Phoenixx1202/Spectrum-Library - No valid binary assets
 github:theghostonline/PS5-LZ4-Compression - HTTP 404 (Repo or releases not found / deleted) (Preserved stored files)
 github:stupiditytries/librespot-ps5 - No assets in release (Preserved stored files)
