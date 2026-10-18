@@ -40,7 +40,7 @@ github:ZiZc3/LiveShell
 github:arwebSE/LibrePadPS5
 github:knutwurst/ps5-patchdl
 github:ps5xploit/ps5shopappkg
-github:
+github:ghost1372/WelcomeHubActivator
 github:
 github:
 github:
