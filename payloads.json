@@ -451,19 +451,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.1.4",
+      "id": "ps5upload-ps5upload-7.1.5",
       "name": "ps5upload",
-      "filename": "ps5upload-7.1.4_v7.1.4.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.4_v7.1.4.elf",
+      "filename": "ps5upload-7.1.5_v7.1.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.5_v7.1.5.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.4/ps5upload-7.1.4.elf",
-      "description": "v7.1.4 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.5/ps5upload-7.1.5.elf",
+      "description": "v7.1.5 by phantomptr",
       "last_update": "2026-10-18",
-      "version": "v7.1.4",
+      "version": "v7.1.5",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "71398d65f2f7cd3d0a35ab16f7aee1f51f0f2d2d5b8ab3a184a62b68805cf775",
-      "release_notes": "- **Cheats no longer crash the console.** Switching a cheat on or off could crash the game or the\r\n  whole console on newer firmware (seen with Marvel's Wolverine). Cheats are now written straight\r\n  into the game's memory, the way that works on these firmwares, instead of changing the game's\r\n  memory protection. A cheat now goes on completely or not at all: if any part can't be written,\r\n  the parts already written are put back. Cheats can only change the game itself, never the\r\n  system, and turning one cheat off no longer breaks another that shares code with it. Cheat\r\n  files too large to read are refused instead of being applied in part.\r\n- **Find and download cheats on the console.** In PS5Upload Files, Cheats has **Find cheats**:\r\n  it lists the cheat files for the running game from the same collections the PC app uses,\r\n  marks the one for your game's version, and downloads it straight to the console, where its\r\n  cheats show up at once. If the PS5 can't reach GitHub (for example when DNS blocking is on),\r\n  the page says so.\r\n- **Save backups are named after the game too.** A backup saved on your computer is now named\r\n  like `PPSA01234-Game Name-User.zip`.\r\n\r\n"
+      "checksum": "1d72cb537e93546168a9a6dabd1c535fb96f997d4d921c99b3f8fe32d91a471c",
+      "release_notes": "- **Uploading many small files no longer gets stuck (#475).** Picking hundreds of files in Files\r\n  (for example a Switch firmware folder) stopped after about 30 files with \"the console is busy\"\r\n  and never recovered. The console now lets go of each finished upload, so every file goes\r\n  through: a 240-file, 347 MB folder uploaded in about 2 minutes 20 seconds in testing.\r\n- **PS5Upload Files is now PS5Upload Minion.** Same page and tile, new name; the tile on the\r\n  home screen picks up the new name the next time the helper starts.\r\n- **Payload catalog fixes.** websrv's newest release showed an error instead of the release,\r\n  because its release notes are empty. A payload whose GitHub page has been taken down (such as\r\n  Ghostpad) now says so plainly and keeps offering the version saved in the app. How long ago a\r\n  release was saved reads like \"saved 3 days ago\" instead of a count of seconds.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
