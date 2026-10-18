@@ -348,17 +348,17 @@
     {
       "id": "librepadps5-librepadps5",
       "name": "LibrePadPS5",
-      "filename": "LibrePadPS5_v1.1.3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/LibrePadPS5_v1.1.3.elf",
+      "filename": "LibrePadPS5_v1.1.4.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/LibrePadPS5_v1.1.4.elf",
       "source": "https://github.com/arwebSE/LibrePadPS5/releases",
-      "source_direct": "https://github.com/arwebSE/LibrePadPS5/releases/download/v1.1.3/LibrePadPS5.elf",
-      "description": "LibrePadPS5 v1.1.3 by arwebSE",
-      "last_update": "2026-10-12",
-      "version": "v1.1.3",
+      "source_direct": "https://github.com/arwebSE/LibrePadPS5/releases/download/v1.1.4/LibrePadPS5.elf",
+      "description": "LibrePadPS5 v1.1.4 by arwebSE",
+      "last_update": "2026-10-18",
+      "version": "v1.1.4",
       "author": "arwebSE",
       "category": "Networking & Servers",
-      "checksum": "736ea4b0a17aafce4ade2b696a6d5d2a8b856b83c6960a3d0ec117e23ba2c2c0",
-      "release_notes": "LibrePadPS5 v1.1.3 fixes the v1.1.2 startup regression that could leave both USB detection and the dashboard unavailable.\n\n* **Startup fixed:** the storage migration no longer requires symbolic links, which the tested PS5 `/data` filesystem rejects. This failure happened before controller and dashboard initialization.\n* **Saved settings preserved:** migration copies settings and Xbox firmware to `/data/LibrePadPS5`, retains an older-version rollback snapshot, and can recover the directory move left by v1.1.2. Stop the old payload before upgrading. Keep your files; no manual folder moves are needed.\n* **Clearer failures:** startup reports the failed operation, path and error number in the notification and loader output, even if the log file cannot be opened.\n\nThe dashboard, preview USB fixes, USB protocol notifications and automatic logout recovery remain included. Internal Bluetooth still starts disabled.\n\nVerified on a PS5 running **12.60**: the published v1.1.2 startup failure, fixed dashboard startup, fresh installation, legacy settings/firmware migration, recovery after an interrupted v1.1.2 directory move, restart, rollback to v1.1.1-preview, duplicate-instance protection and diagnostic downloads. Saved profile settings and Xbox firmware were checked byte for byte against backups. All 21 C/C++ host suites passed with AddressSanitizer/UndefinedBehaviorSanitizer; dashboard checks and combined, no-Xbox-module and standalone Xbox SDK builds passed.\n\nThis is a normal release, and the project is still in early development. Physical controller input was not re-tested for this patch; automatic logout recovery and startup on 11.40/13.60 still need tester confirmation. The earlier working preview has 8BitDo Adapter 2 input confirmation on 13.60. Issues #1 and #3 remain open until their reporters can confirm the fix.\n\nDownload `LibrePadPS5.elf`, its matching Payload Manager JSON and SHA-256 file. The Xbox setup ZIP is optional; existing adapter firmware does not need reinstalling. [Setup](https://github.com/arwebSE..."
+      "checksum": "4fb19cbc03c77b9b3604135d92efc35acad4509dca71313cd75241907b9bff36",
+      "release_notes": "# LibrePadPS5 v1.1.4\n\nFixes DualShock 3 USB input, [confirmed working on PS5 firmware 11.40](https://github.com/arwebSE/LibrePadPS5/issues/4#issuecomment-6228485447).\n\n- Fixed controller initialization and input streaming.\n- Improved USB recovery, preserving the assigned user when reconnection succeeds.\n- Added physical-input diagnostics for troubleshooting.\n\nThanks to [h1z1z1h16584](https://github.com/h1z1z1h16584) for DualShock 3 USB testing.\n\nStop the running payload before loading the new ELF. For Payload Manager,\nreplace the ELF and JSON together. Existing settings and Xbox firmware are kept.\n[Setup instructions](https://github.com/arwebSE/LibrePadPS5/blob/main/docs/SETUP.md).\n\nValidation: PS5 SDK build and sanitized USB transport/protocol tests passed.\n"
     },
     {
       "id": "ftpsrv-ftpsrv-ps5",
@@ -766,19 +766,19 @@
       "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
-      "id": "ps5upload-ps5upload-7.1.1-prerelease",
+      "id": "ps5upload-ps5upload-7.1.3-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.1.1_v7.1.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.1_v7.1.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.1.3_v7.1.3 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.3_v7.1.3%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.1/ps5upload-7.1.1.elf",
-      "description": "v7.1.1 [Pre-release] by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.3/ps5upload-7.1.3.elf",
+      "description": "v7.1.3 [Pre-release] by phantomptr",
       "last_update": "2026-10-18",
-      "version": "v7.1.1",
+      "version": "v7.1.3",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "af29de2be5c5e7ba183df4e0f0e6284da11fa264c0e18ce99a9cdee248e4ca44",
-      "release_notes": "\n- **The app scrolls again on macOS Big Sur.** On Big Sur's older built-in web engine the app\n  window lost its fixed height, so no screen could scroll, and the side bar's rows lost their\n  left padding. The app's styles now carry the older forms that engine understands.\n\n"
+      "checksum": "74eeaabc600d0b305117f93375010923e5732602d10228c5b6eba2047b22df2b",
+      "release_notes": "\n- **Payloads: one place for what's on your PS5.** The Payloads screen now has three tabs:\n  Catalog, Send and **On your PS5**. On your PS5 shows a card for each payload that is running\n  or installed on the console, with its status, Open (for payloads with a web page), Update when a\n  newer release is out, and Stop. **Manage** opens that payload's tools in the card:\n  ShadowMount+ mounts, the nanoDNS editor, Payload Manager and HearBridge. Old links to the\n  separate tabs still work.\n- **HearBridge in the catalog and on your PS5.** HearBridge plays the PS5's audio on ordinary\n  Bluetooth headphones or speakers. Its card shows the connected headset, battery, link quality,\n  latency, volume and the game's profile; Manage sets volume and mute, reconnects, switches\n  between saved headsets, scans for new ones, turns night mode on or off, sets latency, and stops\n  it. Pairing, EQ and everything else open in HearBridge's own page.\n- **Processes & ports.** The Processes screen now has a Ports tab next to it, showing which ports\n  are open on the console and what usually listens there (HearBridge and PS5Upload Files\n  included).\n- **PS5Upload Files: permissions, new files and text editing.** Info → Permissions sets read,\n  write and execute for owner, group and others (or the number, like 755), for a folder's\n  contents too; drives that don't keep permissions (exFAT, FAT) say so. Create a new file, and\n  edit text files up to 1 MiB with the on-screen keyboard. Saving never leaves a half-written\n  file, keeps the file's permissions and line endings, and warns when the file changed since\n  you opened it.\n- **PS5Upload Files: upload and download from your phone or computer.** When you open the page\n  from another device (Settings → Allow other devices), Files has **Upload here** to send files\n  and folders to the console and **Download** for a file, or a whole folder as one .tar file.\n  The usual Skip / Replace / Keep both choices apply, a cancelled upload leaves nothing behind,\n  and a stalled connection is let go..."
     },
     {
       "id": "archived-etahen-99.0",
