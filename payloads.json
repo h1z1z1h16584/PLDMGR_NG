@@ -241,19 +241,19 @@
       "release_notes": "Added 7.0x support"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.1",
+      "id": "ps5-patchdl-patchdl_0.3.2",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.1_v0.3.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.1_v0.3.1.elf",
+      "filename": "patchdl_0.3.2_v0.3.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.2_v0.3.2.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.1/patchdl_0.3.1.elf",
-      "description": "PatchDL 0.3.1 by knutwurst",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.2/patchdl_0.3.2.elf",
+      "description": "PatchDL 0.3.2 by knutwurst",
       "last_update": "2026-10-19",
-      "version": "v0.3.1",
+      "version": "v0.3.2",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "57a2476448253a59f969ab5a665e569c865117b8f404854e559d941217774d8a",
-      "release_notes": "Downloads are much faster. PatchDL wrote every small chunk it received straight to disk, and on the PS5 each write costs about the same no matter how small it is, so downloads topped out around 8 to 12 MB/s. Chunks are now collected and written in larger blocks, and the download sockets get a bigger receive buffer.\n\n@nikigx2 found this, measured it in detail and sent the fix in #17. On a gigabit line his downloads went from 8 MB/s to about 117 MB/s.\n\nTested on 11.60.\n\nSend `patchdl_0.3.1.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.0...v0.3.1\n"
+      "checksum": "e3530af4c9ca0c610be0b5ab9a476c1f4b2ea923bf6df7e060ba746bb169c63b",
+      "release_notes": "- You can pick where downloads go. Settings lists the internal storage and every connected drive with its free space. New downloads go to the drive you choose and install from there. Packages that are already downloaded stay where they are and are still found. Thanks to @VerizonLover for the request in #18.\n- The PatchDL tile now sits in the Media section of the home screen, next to other homebrew apps. An existing tile moves there by itself the next time PatchDL starts. Thanks to @bigoroth for the request in #19.\n\nTested on 11.60 with USB drives.\n\nSend `patchdl_0.3.2.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.1...v0.3.2\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
