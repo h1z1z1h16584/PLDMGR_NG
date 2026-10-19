@@ -119,7 +119,7 @@
       "author": "ZiZc3",
       "category": "Homebrew",
       "checksum": "24e43478c0dffa8490e53e981bd98d396ed4914ba8b46f4dba2bba2e4b177e0b",
-      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.4.0</h2>\r\n\r\n<p align=\"center\">4K/2K wallpapers, videos per game only and much more.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **4K wallpapers** 4K and 2K videos (H.264 and HEVC) now play on the home screen.\r\n  - 4K works as the **main wallpaper** and in **PS Store only** mode.\r\n  - **While a game is open** the PS5 gives the home screen no 4K decoder, so a 4K wallpaper **hides** and **comes back by itself** when you close the game.\r\n  - Per game, 4K and 2K videos are not supported.\r\n- **Videos per game only** (Settings, off by default): only games that have their own video show one; every other tile keeps the normal PS5 background.\r\n- Every video has a **✓** or **✕**. A video that won't play says why and you can fix it by using liveShell converter.\r\n- **Badges** on every video in All: its resolution (**4K**, **2K**, **FHD**, **HD**) and whether it **has sound too**.\r\n- **Favorites**: Favorites stay pinned at the top of the list.\r\n- **Discover → Popular**: sort the wallpapers by how often they were downloaded.\r\n- **LiveShell Converter** **4K and 2K** videos now are supported too.\r\n\r\n### Fixed\r\n\r\n- **The video froze or blinked after opening the LiveShell window**.\r\n- **Black screen when going back to Home** with a game open.\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.4.0</h2>\r\n\r\n<p align=\"center\">4K/2K wallpapers, videos per game only and much more.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **4K wallpapers** 4K and 2K videos (H.264 and HEVC) now play on the home screen.\r\n  - 4K works as the **main wallpaper** and in **PS Store only** mode.\r\n  - **While a game is open** the PS5 gives the home screen no 4K decoder, so a 4K wallpaper **hides** and **comes back by itself** when you close the game.\r\n  - Per game, 4K and 2K videos are not supported.\r\n- **Videos per game only** (Settings, off by default): only games that have their own video show one; every other tile keeps the normal PS5 background.\r\n- Every video has a **✓** or **✕**. A video that won't play says why and you can fix it by using liveShell converter.\r\n- **Badges** on every video: its resolution (**4K**, **2K**, **FHD**, **HD**) and whether it **has sound too**.\r\n- **Favorites**: Favorites stay pinned at the top of the list.\r\n- **Discover → Popular**: sort the wallpapers by how often they were downloaded.\r\n- **LiveShell Converter** **4K and 2K** videos now are supported too.\r\n\r\n### Fixed\r\n\r\n- **The video froze or blinked after opening the LiveShell window**.\r\n- **Black screen when going back to Home** with a game open.\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
     },
     {
       "id": "ps-play-psplay-2.1",
@@ -363,17 +363,17 @@
     {
       "id": "librepadps5-librepadps5",
       "name": "LibrePadPS5",
-      "filename": "LibrePadPS5_v1.1.4.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/LibrePadPS5_v1.1.4.elf",
+      "filename": "LibrePadPS5_v1.1.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/LibrePadPS5_v1.1.5.elf",
       "source": "https://github.com/arwebSE/LibrePadPS5/releases",
-      "source_direct": "https://github.com/arwebSE/LibrePadPS5/releases/download/v1.1.4/LibrePadPS5.elf",
-      "description": "LibrePadPS5 v1.1.4 by arwebSE",
+      "source_direct": "https://github.com/arwebSE/LibrePadPS5/releases/download/v1.1.5/LibrePadPS5.elf",
+      "description": "LibrePadPS5 v1.1.5 by arwebSE",
       "last_update": "2026-10-18",
-      "version": "v1.1.4",
+      "version": "v1.1.5",
       "author": "arwebSE",
       "category": "Networking & Servers",
-      "checksum": "4fb19cbc03c77b9b3604135d92efc35acad4509dca71313cd75241907b9bff36",
-      "release_notes": "# LibrePadPS5 v1.1.4\n\nFixes DualShock 3 USB input, [confirmed working on PS5 firmware 11.40](https://github.com/arwebSE/LibrePadPS5/issues/4#issuecomment-6228485447).\n\n- Fixed controller initialization and input streaming.\n- Improved USB recovery, preserving the assigned user when reconnection succeeds.\n- Added physical-input diagnostics for troubleshooting.\n\nThanks to [h1z1z1h16584](https://github.com/h1z1z1h16584) for DualShock 3 USB testing.\n\nStop the running payload before loading the new ELF. For Payload Manager,\nreplace the ELF and JSON together. Existing settings and Xbox firmware are kept.\n[Setup instructions](https://github.com/arwebSE/LibrePadPS5/blob/main/docs/SETUP.md).\n\nValidation: PS5 SDK build and sanitized USB transport/protocol tests passed.\n"
+      "checksum": "58ebe6be46dd8a7b1febe92927765de9113c47d873b1e06b3d2b072ea3359073",
+      "release_notes": "# LibrePadPS5 v1.1.5\r\n\r\n- Redesigned dashboard with dark mode.\r\n- Xbox adapter firmware is built in; no separate setup download needed.\r\n- Xbox Wireless reconnects after service restarts without unplugging the adapter or pressing pairing buttons, including when the controller stays powered on.\r\n"
     },
     {
       "id": "ftpsrv-ftpsrv-ps5",
