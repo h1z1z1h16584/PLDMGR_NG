@@ -451,19 +451,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.1.5",
+      "id": "ps5upload-ps5upload-7.1.6",
       "name": "ps5upload",
-      "filename": "ps5upload-7.1.5_v7.1.5.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.5_v7.1.5.elf",
+      "filename": "ps5upload-7.1.6_v7.1.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.6_v7.1.6.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.5/ps5upload-7.1.5.elf",
-      "description": "v7.1.5 by phantomptr",
-      "last_update": "2026-10-18",
-      "version": "v7.1.5",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.6/ps5upload-7.1.6.elf",
+      "description": "v7.1.6 by phantomptr",
+      "last_update": "2026-10-19",
+      "version": "v7.1.6",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "1d72cb537e93546168a9a6dabd1c535fb96f997d4d921c99b3f8fe32d91a471c",
-      "release_notes": "- **Uploading many small files no longer gets stuck (#475).** Picking hundreds of files in Files\r\n  (for example a Switch firmware folder) stopped after about 30 files with \"the console is busy\"\r\n  and never recovered. The console now lets go of each finished upload, so every file goes\r\n  through: a 240-file, 347 MB folder uploaded in about 2 minutes 20 seconds in testing.\r\n- **PS5Upload Files is now PS5Upload Minion.** Same page and tile, new name; the tile on the\r\n  home screen picks up the new name the next time the helper starts.\r\n- **Payload catalog fixes.** websrv's newest release showed an error instead of the release,\r\n  because its release notes are empty. A payload whose GitHub page has been taken down (such as\r\n  Ghostpad) now says so plainly and keeps offering the version saved in the app. How long ago a\r\n  release was saved reads like \"saved 3 days ago\" instead of a count of seconds.\r\n\r\n"
+      "checksum": "cc3cd53f9047ad6e82c13db246cb77c7399debaa00b57349c37e058b589b3950",
+      "release_notes": "- **Uploading many files from Files is much faster.** Picking several files now sends them to the\r\n  PS5 together instead of one at a time: 240 small files went from over 2 minutes to about 5\r\n  seconds, and 5,000 small files from 44 minutes to under 30 seconds. A pick shows as one task\r\n  with one Cancel, and a stopped upload resumes where it left off.\r\n- **Choose what happens when a name is taken.** Instead of one all-or-nothing Overwrite question,\r\n  each clash offers Skip, Keep both or Replace (Merge for a folder onto a folder), with \"do the\r\n  same for the rest\". Keep both is the default, so Enter never overwrites, and names that differ\r\n  only in upper and lower case count as the same name.\r\n- **Uninstall tells you whether the game is really gone (#476).** Uninstall used to say\r\n  \"Unregistered\" whatever the console answered, and then quietly showed the game again if the\r\n  console had kept it. The helper now checks that the game has actually left the console. If the\r\n  PS5 refused, you see an error with its code, and a game that is still installed stays in the\r\n  list with a note instead of disappearing and coming back.\r\n- **Organize packages finds packages that sit loose in a collection folder.** A .pkg placed\r\n  directly in a collection folder (not in a subfolder) was skipped, and with only loose packages\r\n  Organize said no folder held any. They are now organized into the same Platform › Game ID -\r\n  Title layout inside that folder.\r\n- **The server folder browser opens in front.** In Collection → Folders, \"Add a folder on …\"\r\n  opened its folder browser behind the dialog.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
