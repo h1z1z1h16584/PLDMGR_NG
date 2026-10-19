@@ -109,17 +109,17 @@
     {
       "id": "liveshell-liveshell",
       "name": "LiveShell",
-      "filename": "liveshell_v1.4.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.4.elf",
+      "filename": "liveshell_v1.4.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.4.1.elf",
       "source": "https://github.com/ZiZc3/LiveShell/releases",
-      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.4/liveshell.elf",
-      "description": "LiveShell Engine v1.4.0 by ZiZc3",
-      "last_update": "2026-10-18",
-      "version": "v1.4",
+      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.4.1/liveshell.elf",
+      "description": "LiveShell Engine v1.4.1 by ZiZc3",
+      "last_update": "2026-10-19",
+      "version": "v1.4.1",
       "author": "ZiZc3",
       "category": "Homebrew",
-      "checksum": "24e43478c0dffa8490e53e981bd98d396ed4914ba8b46f4dba2bba2e4b177e0b",
-      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.4.0</h2>\r\n\r\n<p align=\"center\">4K/2K wallpapers, videos per game only and much more.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **4K wallpapers** 4K and 2K videos (H.264 and HEVC) now play on the home screen.\r\n  - 4K works as the **main wallpaper** and in **PS Store only** mode.\r\n  - **While a game is open** the PS5 gives the home screen no 4K decoder, so a 4K wallpaper **hides** and **comes back by itself** when you close the game.\r\n  - Per game, 4K and 2K videos are not supported.\r\n- **Videos per game only** (Settings, off by default): only games that have their own video show one; every other tile keeps the normal PS5 background.\r\n- Every video has a **✓** or **✕**. A video that won't play says why and you can fix it by using liveShell converter.\r\n- **Badges** on every video: its resolution (**4K**, **2K**, **FHD**, **HD**) and whether it **has sound too**.\r\n- **Favorites**: Favorites stay pinned at the top of the list.\r\n- **Discover → Popular**: sort the wallpapers by how often they were downloaded.\r\n- **LiveShell Converter** **4K and 2K** videos now are supported too.\r\n\r\n### Fixed\r\n\r\n- **The video froze or blinked after opening the LiveShell window**.\r\n- **Black screen when going back to Home** with a game open.\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
+      "checksum": "712dc1338b4287f8b9462f81dc56f6e15165621d450f03e3cbba99976a2d25c5",
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.4.1</h2>\r\n\r\n<p align=\"center\">Auto-match, resolution badges in Discover.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **Auto-match (experimental)**: highlight a game that has no video of its own, and the PS5 tells you when Discover has wallpapers for it.\r\n- **Discover badges**: every wallpaper shows **4K**, **2K**, **FHD** on its preview, so you know what you download.\r\n- **Videos per game only** in the **Home screen panel**.\r\n\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
     },
     {
       "id": "ps-play-psplay-2.1",
