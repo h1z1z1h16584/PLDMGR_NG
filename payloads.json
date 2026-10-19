@@ -241,19 +241,19 @@
       "release_notes": "Added 7.0x support"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.0",
+      "id": "ps5-patchdl-patchdl_0.3.1",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.0_v0.3.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.0_v0.3.0.elf",
+      "filename": "patchdl_0.3.1_v0.3.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.1_v0.3.1.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.0/patchdl_0.3.0.elf",
-      "description": "PatchDL 0.3.0 by knutwurst",
-      "last_update": "2026-10-18",
-      "version": "v0.3.0",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.1/patchdl_0.3.1.elf",
+      "description": "PatchDL 0.3.1 by knutwurst",
+      "last_update": "2026-10-19",
+      "version": "v0.3.1",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "60f9b91efe87fb65a8daaafd73b72417f0164d69ef8f6152fbb4647baf594d66",
-      "release_notes": "- Every game card has an Other versions button. It lists the patches [Prospero Patches](https://prosperopatches.com/) (PS5) or [Orbis Patches](https://orbispatches.com/) (PS4) know for the game, with size and required firmware. You can pick any version newer than the installed one that runs on your console, and PatchDL downloads it from Sony. Thanks to @bigoroth for the request in #15.\n- PatchDL no longer relies on a single DNS server. If DNS is blocked or filtered, it falls back to encrypted DNS and then to addresses that worked before. The console's DNS settings stay untouched.\n- A stalled download is retried with a pause in between, up to eight times per piece, and moves to another server if one stops responding.\n- An interrupted piece continues where it stopped instead of starting over, also after a pause or a restart of PatchDL.\n- Update all works with more than 16 games.\n- The interface is available in English, German, French, Spanish, Italian, Brazilian Portuguese, Japanese, Simplified Chinese, Korean and Russian. If you speak Japanese, Chinese, Korean or Russian and something reads wrong, please open an issue.\n- Reworked game cards and larger text.\n- PS4 links with a single piece are accepted, and the search for an older-firmware patch looks through the whole patch history.\n\nThanks to @Freewheelin123 for the reports in #14.\n\nTested on 11.60.\n\nSend `patchdl_0.3.0.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.2.1...v0.3.0\n"
+      "checksum": "57a2476448253a59f969ab5a665e569c865117b8f404854e559d941217774d8a",
+      "release_notes": "Downloads are much faster. PatchDL wrote every small chunk it received straight to disk, and on the PS5 each write costs about the same no matter how small it is, so downloads topped out around 8 to 12 MB/s. Chunks are now collected and written in larger blocks, and the download sockets get a bigger receive buffer.\n\n@nikigx2 found this, measured it in detail and sent the fix in #17. On a gigabit line his downloads went from 8 MB/s to about 117 MB/s.\n\nTested on 11.60.\n\nSend `patchdl_0.3.1.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.0...v0.3.1\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -451,19 +451,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.1.6",
+      "id": "ps5upload-ps5upload-7.1.8",
       "name": "ps5upload",
-      "filename": "ps5upload-7.1.6_v7.1.6.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.6_v7.1.6.elf",
+      "filename": "ps5upload-7.1.8_v7.1.8.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.8_v7.1.8.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.6/ps5upload-7.1.6.elf",
-      "description": "v7.1.6 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.8/ps5upload-7.1.8.elf",
+      "description": "v7.1.8 by phantomptr",
       "last_update": "2026-10-19",
-      "version": "v7.1.6",
+      "version": "v7.1.8",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "cc3cd53f9047ad6e82c13db246cb77c7399debaa00b57349c37e058b589b3950",
-      "release_notes": "- **Uploading many files from Files is much faster.** Picking several files now sends them to the\r\n  PS5 together instead of one at a time: 240 small files went from over 2 minutes to about 5\r\n  seconds, and 5,000 small files from 44 minutes to under 30 seconds. A pick shows as one task\r\n  with one Cancel, and a stopped upload resumes where it left off.\r\n- **Choose what happens when a name is taken.** Instead of one all-or-nothing Overwrite question,\r\n  each clash offers Skip, Keep both or Replace (Merge for a folder onto a folder), with \"do the\r\n  same for the rest\". Keep both is the default, so Enter never overwrites, and names that differ\r\n  only in upper and lower case count as the same name.\r\n- **Uninstall tells you whether the game is really gone (#476).** Uninstall used to say\r\n  \"Unregistered\" whatever the console answered, and then quietly showed the game again if the\r\n  console had kept it. The helper now checks that the game has actually left the console. If the\r\n  PS5 refused, you see an error with its code, and a game that is still installed stays in the\r\n  list with a note instead of disappearing and coming back.\r\n- **Organize packages finds packages that sit loose in a collection folder.** A .pkg placed\r\n  directly in a collection folder (not in a subfolder) was skipped, and with only loose packages\r\n  Organize said no folder held any. They are now organized into the same Platform › Game ID -\r\n  Title layout inside that folder.\r\n- **The server folder browser opens in front.** In Collection → Folders, \"Add a folder on …\"\r\n  opened its folder browser behind the dialog.\r\n\r\n"
+      "checksum": "2e7b45ca91a2aa0b3fb8f6f1478d77d925e6479ec83842f3971543b35d9bfa5f",
+      "release_notes": "- **Convert reads more Kraken-compressed PS5 packages (#477).** Some packages compressed at the\r\n  highest Kraken level stopped Convert with \"kraken: chunk too short\" although they were fine:\r\n  a small piece at the start of a block was refused. They convert now.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -781,19 +781,19 @@
       "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
-      "id": "ps5upload-ps5upload-7.1.1-prerelease",
+      "id": "ps5upload-ps5upload-7.1.7-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.1.1_v7.1.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.1_v7.1.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.1.7_v7.1.7 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.7_v7.1.7%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.1/ps5upload-7.1.1.elf",
-      "description": "v7.1.1 [Pre-release] by phantomptr",
-      "last_update": "2026-10-18",
-      "version": "v7.1.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.7/ps5upload-7.1.7.elf",
+      "description": "v7.1.7 [Pre-release] by phantomptr",
+      "last_update": "2026-10-19",
+      "version": "v7.1.7",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "af29de2be5c5e7ba183df4e0f0e6284da11fa264c0e18ce99a9cdee248e4ca44",
-      "release_notes": "\n- **The app scrolls again on macOS Big Sur.** On Big Sur's older built-in web engine the app\n  window lost its fixed height, so no screen could scroll, and the side bar's rows lost their\n  left padding. The app's styles now carry the older forms that engine understands.\n\n"
+      "checksum": "55286e9212d31e6a0dbda993ce4bb041a0f49486db63b98b8b334d3c4676d3d9",
+      "release_notes": "\n- **Organize packages works on your servers too.** Folders on a saved SMB, FTP, SFTP or WebDAV\n  server can now be organized like folders on this computer: the same preview, the same\n  Platform › Game ID - Title layout, renames only, nothing overwritten, and every run can be\n  undone. A dropped connection stops the run cleanly and it can still be undone once the server is\n  back. Undo refuses if the saved connection now points at a different server. On WebDAV, folders\n  a run empties are left in place.\n- **WebDAV servers that redirect folder addresses work again.** Opening a folder on such a server\n  (Apache, for example) failed with a sign-in error.\n- **Clearer connection errors.** A very short saved password no longer garbles error messages.\n\n"
     },
     {
       "id": "archived-etahen-99.0",
