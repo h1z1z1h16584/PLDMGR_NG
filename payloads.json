@@ -526,19 +526,19 @@
       "release_notes": "# PS5 Time & Date Sync by Deckerr97\n\nInitial public release.\n\nA standalone, one-shot PS5 payload that restores the console date and time using public NTP servers. It is designed for consoles whose CMOS/RTC battery no longer retains the clock after a complete shutdown.\n\n## Features\n\n- Automatic NTP date and time synchronization\n- Published Cloudflare numeric fallbacks when PS5 DNS is unavailable\n- Cloudflare, pool.ntp.org, and Google Public NTP hostname fallbacks\n- NTP endpoint, version, mode, stratum, request timestamp, and date validation\n- Clock read-back verification after updating\n- Preserves the configured PS5 timezone\n- One notification per payload execution\n- No application installation or file modification\n- Automatically exits after completion\n\n## Requirements\n\n- Compatible PS5 exploit and ELF payload loader\n- Internet access with outbound UDP port 123\n- An execution environment that permits `settimeofday`\n\nBuilt using a PS5 Payload SDK package containing firmware definitions through 13.60. Actual runtime compatibility depends on the firmware, exploit, loader, and available permissions.\n\n## Acknowledgements\n\nSpecial thanks to **John Törnblom** and every contributor to the [PS5 Payload SDK](https://github.com/ps5-payload-dev/sdk) for creating and maintaining the toolchain that made this payload possible.\n\n## Build verification\n\n- File: `ps5-date-time-sync.elf`\n- Size: 130,240 bytes\n- SHA-256: `91806229803845930B2173174E1AFEADF509E4C171F6396788F929558FAD6849`"
     },
     {
-      "id": "ps5-payload-manager-pldmgr_v0.6.2",
+      "id": "ps5-payload-manager-pldmgr_v0.6.3",
       "name": "ps5-payload-manager",
-      "filename": "pldmgr_v0.6.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pldmgr_v0.6.2.elf",
+      "filename": "pldmgr_v0.6.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/pldmgr_v0.6.3.elf",
       "source": "https://github.com/itsPLK/ps5-payload-manager/releases",
-      "source_direct": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.2/pldmgr_v0.6.2.elf",
-      "description": "v0.6.2 by itsPLK",
+      "source_direct": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.3/pldmgr_v0.6.3.elf",
+      "description": "v0.6.3 by itsPLK",
       "last_update": "2026-10-19",
-      "version": "v0.6.2",
+      "version": "v0.6.3",
       "author": "itsPLK",
       "category": "System Utilities",
-      "checksum": "0cd5e0cc89ca4db6586dc1ff6f335caa4e33b50951c0ef86f5d1ea971f34e9c5",
-      "release_notes": "## Changelog\r\n\r\n### 🚀 Features & UX Improvements\r\n* **Autoload Return to Dashboard**: Added an optional **Return After Autoload** setting, disabled by default, to return to the dashboard about 3 seconds after all payloads load successfully. Results stay visible if any payload fails or is skipped ([#123](https://github.com/itsPLK/ps5-payload-manager/issues/123)).\r\n* **Dashboard Icon Setting**: Added an option to hide payload icons on the dashboard, leaving more space for text while keeping card sizes unchanged. Icons remain visible in **Get Payloads** ([#131](https://github.com/itsPLK/ps5-payload-manager/issues/131)).\r\n* **Release Details**: Added a collapsible **Release details** section above the README on payload details pages. Release notes are fetched directly from GitHub for the release tag or version offered by the payload catalog ([#133](https://github.com/itsPLK/ps5-payload-manager/issues/133)).\r\n* **New Languages**:\r\n  * **Traditional Chinese**\r\n  * **Romanian**\r\n\r\n### 🛠️ Performance & Bug Fixes\r\n* **Smaller ELF**: Replaced bundled emoji artwork with Twemoji images loaded from a version-pinned public CDN, reducing the payload size. Downloaded emoji are cached for offline reuse ([#130](https://github.com/itsPLK/ps5-payload-manager/issues/130)).\r\n* **Mobile Upload Controls**: Fixed the upload button appearing outside the visible area in portrait mode. Repository controls now wrap to fit narrow screens, including when search is open ([#126](https://github.com/itsPLK/ps5-payload-manager/issues/126)).\r\n* **Payload Icon Caching**: Payload icons and catalog metadata now persist across browser sessions, so cached icons appear immediately when reopening the app instead of waiting for a catalog refresh.\r\n\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.1...v0.6.2\r\n\r\n---\r\n\r\n## 📝 How to update\r\nYou do **not** need to manually download or replace your original `pldmgr.elf` file.  \r\nSimply install the update directly within the Payload Manager app (from the repository)...."
+      "checksum": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
+      "release_notes": "## Changelog\r\n\r\n### 🛠️ Bug Fixes\r\n* Hotfix for v0.6.2: fixed emojis not appearing on PS5.\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.2...v0.6.3"
     },
     {
       "id": "ps5-pkg-manager-pkg-manager_v1.5.1",
