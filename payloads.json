@@ -241,19 +241,19 @@
       "release_notes": "Added 7.0x support"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.2",
+      "id": "ps5-patchdl-patchdl_0.3.3",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.2_v0.3.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.2_v0.3.2.elf",
+      "filename": "patchdl_0.3.3_v0.3.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.3_v0.3.3.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.2/patchdl_0.3.2.elf",
-      "description": "PatchDL 0.3.2 by knutwurst",
-      "last_update": "2026-10-19",
-      "version": "v0.3.2",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.3/patchdl_0.3.3.elf",
+      "description": "PatchDL 0.3.3 by knutwurst",
+      "last_update": "2026-10-20",
+      "version": "v0.3.3",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "e3530af4c9ca0c610be0b5ab9a476c1f4b2ea923bf6df7e060ba746bb169c63b",
-      "release_notes": "- You can pick where downloads go. Settings lists the internal storage and every connected drive with its free space. New downloads go to the drive you choose and install from there. Packages that are already downloaded stay where they are and are still found. Thanks to @VerizonLover for the request in #18.\n- The PatchDL tile now sits in the Media section of the home screen, next to other homebrew apps. An existing tile moves there by itself the next time PatchDL starts. Thanks to @bigoroth for the request in #19.\n\nTested on 11.60 with USB drives.\n\nSend `patchdl_0.3.2.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.1...v0.3.2\n"
+      "checksum": "6aac67ee3e457633fe1f4f2ae17ce3f650a36b6b95c7c15cbeeaaf8de75d11ef",
+      "release_notes": "- Before a download starts, PatchDL checks that there's room to install it afterwards. The console needs about the package's size free again on the game's drive to install an update; on the same drive the download and the install have to fit together. If they don't, the download doesn't start and the game card says how much space is needed. Freeing space or picking another download drive in Settings fixes it.\n- Before an install starts, PatchDL checks the free space on the game's drive and asks before going ahead when it looks too low. Thanks to @pimunozsm for the report in #20.\n\nTested on 11.60.\n\nSend `patchdl_0.3.3.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.2...v0.3.3\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
