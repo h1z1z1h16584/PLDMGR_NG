@@ -363,17 +363,17 @@
     {
       "id": "librepadps5-librepadps5",
       "name": "LibrePadPS5",
-      "filename": "LibrePadPS5_v1.1.5.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/LibrePadPS5_v1.1.5.elf",
+      "filename": "LibrePadPS5_v1.1.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/LibrePadPS5_v1.1.6.elf",
       "source": "https://github.com/arwebSE/LibrePadPS5/releases",
-      "source_direct": "https://github.com/arwebSE/LibrePadPS5/releases/download/v1.1.5/LibrePadPS5.elf",
-      "description": "LibrePadPS5 v1.1.5 by arwebSE",
-      "last_update": "2026-10-18",
-      "version": "v1.1.5",
+      "source_direct": "https://github.com/arwebSE/LibrePadPS5/releases/download/v1.1.6/LibrePadPS5.elf",
+      "description": "LibrePadPS5 v1.1.6 by arwebSE",
+      "last_update": "2026-10-20",
+      "version": "v1.1.6",
       "author": "arwebSE",
       "category": "Networking & Servers",
-      "checksum": "58ebe6be46dd8a7b1febe92927765de9113c47d873b1e06b3d2b072ea3359073",
-      "release_notes": "# LibrePadPS5 v1.1.5\r\n\r\n- Redesigned dashboard with dark mode.\r\n- Xbox adapter firmware is built in; no separate setup download needed.\r\n- Xbox Wireless reconnects after service restarts without unplugging the adapter or pressing pairing buttons, including when the controller stays powered on.\r\n"
+      "checksum": "9feabb53297aed906d7f7583829d9224dca56f42f41b65057150b5970cc13e8e",
+      "release_notes": "# LibrePadPS5 v1.1.6\n\n- Added dashboard translations for Japanese, Spanish, German, French, Swedish and Simplified Chinese alongside English.\n- The dashboard detects supported browser languages and falls back to English. The language menu remembers your choice in that browser; it does not use the PS5 system language.\n- Translated controller controls, advanced settings, setup instructions, accessibility labels and known status/error messages. Language changes preserve the selected controller and unsaved profile edits.\n- Updated mobile layouts for longer translated labels. All translations are included in the offline dashboard bundle.\n\nDownloads: `LibrePadPS5.elf`, Payload Manager metadata `LibrePadPS5.elf.json` and `LibrePadPS5.elf.sha256`.\n\nValidation includes 47 dashboard interaction and translation tests, a production frontend build, repository checks, byte-for-byte verification of the compiled embedded dashboard assets, and all seven Xbox host regression suites with ASan/UBSan. Controller compatibility remains as documented in the [current compatibility guide](../CONTROLLERS.md); this release does not add new hardware compatibility claims.\n"
     },
     {
       "id": "ftpsrv-ftpsrv-ps5",
