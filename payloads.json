@@ -241,19 +241,19 @@
       "release_notes": "Added 7.0x support"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.3",
+      "id": "ps5-patchdl-patchdl_0.3.4",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.3_v0.3.3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.3_v0.3.3.elf",
+      "filename": "patchdl_0.3.4_v0.3.4.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.4_v0.3.4.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.3/patchdl_0.3.3.elf",
-      "description": "PatchDL 0.3.3 by knutwurst",
-      "last_update": "2026-10-20",
-      "version": "v0.3.3",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.4/patchdl_0.3.4.elf",
+      "description": "PatchDL 0.3.4 by knutwurst",
+      "last_update": "2026-10-21",
+      "version": "v0.3.4",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "6aac67ee3e457633fe1f4f2ae17ce3f650a36b6b95c7c15cbeeaaf8de75d11ef",
-      "release_notes": "- Before a download starts, PatchDL checks that there's room to install it afterwards. The console needs about the package's size free again on the game's drive to install an update; on the same drive the download and the install have to fit together. If they don't, the download doesn't start and the game card says how much space is needed. Freeing space or picking another download drive in Settings fixes it.\n- Before an install starts, PatchDL checks the free space on the game's drive and asks before going ahead when it looks too low. Thanks to @pimunozsm for the report in #20.\n\nTested on 11.60.\n\nSend `patchdl_0.3.3.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.2...v0.3.3\n"
+      "checksum": "752a344716e855de5265d1fa4352490ea21203b427d76ac33745174b1719b773",
+      "release_notes": "PatchDL stayed unreachable after a network change. Switching Wi-Fi off and on or pulling the cable dropped its connection, and the page didn't load again until you sent the payload once more. PatchDL now notices this and restarts its web server within a few seconds. Thanks to @FortsAle for the report in #22.\n\nTested on 11.60.\n\nSend `patchdl_0.3.4.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.3...v0.3.4\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
