@@ -109,17 +109,17 @@
     {
       "id": "liveshell-liveshell",
       "name": "LiveShell",
-      "filename": "liveshell_v1.4.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.4.1.elf",
+      "filename": "liveshell_v1.5.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.5.0.elf",
       "source": "https://github.com/ZiZc3/LiveShell/releases",
-      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.4.1/liveshell.elf",
-      "description": "LiveShell Engine v1.4.1 by ZiZc3",
-      "last_update": "2026-10-19",
-      "version": "v1.4.1",
+      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.5.0/liveshell.elf",
+      "description": "LiveShell Engine v1.5.0 by ZiZc3",
+      "last_update": "2026-10-21",
+      "version": "v1.5.0",
       "author": "ZiZc3",
       "category": "Homebrew",
-      "checksum": "712dc1338b4287f8b9462f81dc56f6e15165621d450f03e3cbba99976a2d25c5",
-      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.4.1</h2>\r\n\r\n<p align=\"center\">Auto-match, resolution badges in Discover.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **Auto-match (experimental)**: highlight a game that has no video of its own, and the PS5 tells you when Discover has wallpapers for it.\r\n- **Discover badges**: every wallpaper shows **4K**, **2K**, **FHD** on its preview, so you know what you download.\r\n- **Videos per game only** in the **Home screen panel**.\r\n\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
+      "checksum": "944de46641f16969e216381ab385bd9b4827355094219b2fef713ad6a330fb7d",
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.5.0</h2>\r\n\r\n<p align=\"center\">Playlists, users, resume after a game.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **Playlists**: your wallpaper changes by itself through the videos you pick, every 1, 5, 15, 30 or 60 minutes.\r\n- **Users**: turn LiveShell on or off for each PS5 user and each user keeps their own wallpaper.\r\n- **Convert** (phone / PC page): a video the PS5 will not play (10-bit, VP9, AV1, MPEG-4..) gets a **Convert it** button. Your phone or PC converts it, still better to use LiveShell Converter its faster.\r\n- **Resume after a game** (off by default): Coming back from a game, the video continues where it stopped.\r\n- **Game launch effect**: **Default**, **Cinematic** or **Slow fade**.\r\n- **Colour layer** (Picture): Warm, Cool, Rose, Teal or Violet over the video.\r\n\r\n### Discover\r\n- **2000+ wallpapers**, with **4K** and **1080p** filters.\r\n- **Discover video previews**: hover a wallpaper (PC) or tap Preview (phone), previews not supported on ps5.\r\n\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
     },
     {
       "id": "ps-play-psplay-2.1",
@@ -603,17 +603,17 @@
     {
       "id": "shadowmountplus-shadowmountplus-prerelease",
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus_1.7beta6-fix1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta6-fix1%20%5BPre-release%5D.elf",
+      "filename": "shadowmountplus_1.7beta6-fix2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta6-fix2%20%5BPre-release%5D.elf",
       "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta6-fix1/shadowmountplus.elf",
-      "description": "ShadowMountPlus 1.7beta6-fix1 [Pre-release] by drakmor",
+      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta6-fix2/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta6-fix2 [Pre-release] by drakmor",
       "last_update": "2026-10-21",
-      "version": "1.7beta6-fix1",
+      "version": "1.7beta6-fix2",
       "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "7c00d7ca71f29c12a4201063cfe9c69f21570a91df7e58d67ff6e157c08456a2",
-      "release_notes": "- Improved ShellCore hook reliability and startup handling while waiting for kstuff.\r\n- Fixed sandbox cleanup and mount ownership across process handoffs and relaunches.\r\n- Fixed duplicate-image remount loops across scan roots.\r\n- Restored HTTP service recovery after rest mode and socket loss.\r\n- Enabled background work while FAKE/LAPY apps are running or games are unfocused, while protecting their sources and mounts.\r\n- Added support for backport folders with title ID suffixes and clearer notifications showing the original path.\r\n- Added a per-game Ignore global fakelib option in the web UI, applied on the next launch.\r\n- Updated web UI branding to Shadow Mount+ and added a favicon.\r\n\r\nFix - Fix web UI compatibility with older WebKit\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta6...1.7beta6-fix1"
+      "checksum": "ec87ad20f78be2d7cb82e9d77e72352b079e049baac3c1a211960ccd6f252e62",
+      "release_notes": "- Improved ShellCore hook reliability and startup handling while waiting for kstuff.\r\n- Fixed sandbox cleanup and mount ownership across process handoffs and relaunches.\r\n- Fixed duplicate-image remount loops across scan roots.\r\n- Restored HTTP service recovery after rest mode and socket loss.\r\n- Enabled background work while FAKE/LAPY apps are running or games are unfocused, while protecting their sources and mounts.\r\n- Added support for backport folders with title ID suffixes and clearer notifications showing the original path.\r\n- Added a per-game Ignore global fakelib option in the web UI, applied on the next launch.\r\n- Updated web UI branding to Shadow Mount+ and added a favicon.\r\n\r\nFix1: Fix web UI compatibility with older WebKit\r\nFix2: Fix sandbox /data reuse and preserve game layers across suspend\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta6-fix1...1.7beta6-fix2"
     },
     {
       "id": "etahen-etahen-prerelease",
