@@ -603,17 +603,17 @@
     {
       "id": "shadowmountplus-shadowmountplus-prerelease",
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus_1.7-beta5fix1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7-beta5fix1%20%5BPre-release%5D.elf",
+      "filename": "shadowmountplus_1.7beta6 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta6%20%5BPre-release%5D.elf",
       "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7-beta5fix1/shadowmountplus.elf",
-      "description": "ShadowMountPlus 1.7beta5-fix1 [Pre-release] by drakmor",
-      "last_update": "2026-10-10",
-      "version": "1.7-beta5fix1",
+      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta6/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta6 [Pre-release] by drakmor",
+      "last_update": "2026-10-20",
+      "version": "1.7beta6",
       "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5",
-      "release_notes": "- **Removed legacy kstuff auto-pause and delay autotuning.** Use the latest version of kstuff and do not use EtaHEN.\r\n- Added per-game and default fakelib modes: Full, Emulators only, and Disabled, configurable through the web UI.\r\n- Prevented libkernel.sprx from entering fakelib overlays, using filtered caches for images and installed PKGs.\r\n- Fixed backport mounting when cleanup files or the fakelib directory are missing; missing files are silently skipped.\r\n- Added read-only access to system fonts `/preinst/common/font` inside game sandboxes.\r\n- Fixed sandbox storage mounts on USB connection/disconnection and disc insertion/ejection. Only mounted `/mnt/usb*`, `/mnt/ext*`, and `/mnt/disc` volumes are exposed.\r\n- Improved game error reporting during the first 60 seconds after launch, including fatal-signal details and crash addresses when available.\r\n- Added automatic ShellCore hook recovery after resume and before game registration.\r\n- Added game versions to compact and full web cards; fixed icons for games on extended storage.\r\n- Improved missing-source handling, localized operation errors, and updated web UI translations.\r\n\r\nfix: displaying PS4 game icons from an external drive in the web interface.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta5...1.7-beta5fix1"
+      "checksum": "c2fb6f6bf39a94572f2b34390d5fae7ccd257c734417709a248acb6cd6e18522",
+      "release_notes": "- Improved ShellCore hook reliability and startup handling while waiting for kstuff.\r\n- Fixed sandbox cleanup and mount ownership across process handoffs and relaunches.\r\n- Fixed duplicate-image remount loops across scan roots.\r\n- Restored HTTP service recovery after rest mode and socket loss.\r\n- Enabled background work while FAKE/LAPY apps are running or games are unfocused, while protecting their sources and mounts.\r\n- Added support for backport folders with title ID suffixes and clearer notifications showing the original path.\r\n- Added a per-game Ignore global fakelib option in the web UI, applied on the next launch.\r\n- Updated web UI branding to Shadow Mount+ and added a favicon.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7-beta5fix1...1.7beta6"
     },
     {
       "id": "etahen-etahen-prerelease",
