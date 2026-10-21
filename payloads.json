@@ -603,17 +603,17 @@
     {
       "id": "shadowmountplus-shadowmountplus-prerelease",
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus_1.7beta6-fix2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta6-fix2%20%5BPre-release%5D.elf",
+      "filename": "shadowmountplus_1.7beta7 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta7%20%5BPre-release%5D.elf",
       "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta6-fix2/shadowmountplus.elf",
-      "description": "ShadowMountPlus 1.7beta6-fix2 [Pre-release] by drakmor",
+      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta7/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta7 [Pre-release] by drakmor",
       "last_update": "2026-10-21",
-      "version": "1.7beta6-fix2",
+      "version": "1.7beta7",
       "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "ec87ad20f78be2d7cb82e9d77e72352b079e049baac3c1a211960ccd6f252e62",
-      "release_notes": "- Improved ShellCore hook reliability and startup handling while waiting for kstuff.\r\n- Fixed sandbox cleanup and mount ownership across process handoffs and relaunches.\r\n- Fixed duplicate-image remount loops across scan roots.\r\n- Restored HTTP service recovery after rest mode and socket loss.\r\n- Enabled background work while FAKE/LAPY apps are running or games are unfocused, while protecting their sources and mounts.\r\n- Added support for backport folders with title ID suffixes and clearer notifications showing the original path.\r\n- Added a per-game Ignore global fakelib option in the web UI, applied on the next launch.\r\n- Updated web UI branding to Shadow Mount+ and added a favicon.\r\n\r\nFix1: Fix web UI compatibility with older WebKit\r\nFix2: Fix sandbox /data reuse and preserve game layers across suspend\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta6-fix1...1.7beta6-fix2"
+      "checksum": "a8f9d7f76e8749912508ade0cd5c78076b5bbf1271813c78c80c3d3d9d4777ee",
+      "release_notes": "- Fix sandbox USB recovery after device removal"
     },
     {
       "id": "etahen-etahen-prerelease",
