@@ -64,17 +64,17 @@
     {
       "id": "garlic-savemgr-garlic-savemgr",
       "name": "garlic-savemgr",
-      "filename": "garlic-savemgr_v1.14.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/garlic-savemgr_v1.14.0.elf",
+      "filename": "garlic-savemgr_v1.14.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/garlic-savemgr_v1.14.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.14.0/garlic-savemgr.elf",
-      "description": "v1.14.0 by earthonion",
-      "last_update": "2026-10-18",
-      "version": "v1.14.0",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.14/garlic-savemgr.elf",
+      "description": "v1.14 by earthonion",
+      "last_update": "2026-10-21",
+      "version": "v1.14",
       "author": "earthonion",
       "category": "Dumping & Backups",
-      "checksum": "0b96822e3f554666b7fa4ead673c60ef602e5534a9f01a45e94d0580bd6e9edd",
-      "release_notes": "**Multi-save operations + ownership rework** (thanks @sudofrontman, PR #17)\n\n- Fix importing saves with account ID 0x0000000000000000 (zero is a valid account ID)\n- Import / decrypt / encrypt now support multiple saves at once\n- icon0.png image preview in the UI\n- SFO account/user patching now goes through the SFO index instead of hardcoded offsets, with write verification\n- PS4 ownership restore uses a local same-title/same-slot save as the PARAMS template, with clear warnings when full ownership cannot be verified"
+      "checksum": "57763da9d36ae1cb0c744e90a59a06cb54e4eae0c9a8dec62ce774f892c624b9",
+      "release_notes": "- Fix savedata slot identity and account_id writes for multi-slot games (RE4 Remake, RE Requiem) (#19)\n- Keep Google Drive OAuth usable after settings reload (#20)\n- Restart HTTP listener and auto-backup watcher after rest mode/wake (#21)\n- Online Saves: browse and import community saves from Apollo Save Database (#18)\n- Auto-detect PS4/PS5 platform on encrypt from param.sfo TITLE_ID\n- Batch decrypt collects all saves into a single ZIP\n- Built-in param.sfo viewer\n- Improved PS4 key and mount error reporting"
     },
     {
       "id": "unrar-ps5-unrar_ps5",
