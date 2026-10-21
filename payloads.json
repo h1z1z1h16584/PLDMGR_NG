@@ -538,7 +538,7 @@
       "author": "itsPLK",
       "category": "System Utilities",
       "checksum": "2a42054fd9725e1d9595ff4add95abc30e5b49446fcdcb96c06775a376a841c4",
-      "release_notes": "## Changelog\r\n\r\n### 🛠️ Bug Fixes\r\n* Hotfix for v0.6.2: fixed emojis not appearing on PS5.\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.2...v0.6.3"
+      "release_notes": "## Changelog\r\n\r\n### 🛠️ Bug Fixes\r\n* Hotfix for v0.6.2: fixed emojis not appearing on PS5.\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-payload-manager/compare/v0.6.2...v0.6.3\r\n\r\n---\r\n\r\n## 📝 How to update\r\nYou do **not** need to manually download or replace your original `pldmgr.elf` file.  \r\nSimply install the update directly within the Payload Manager app (from the repository).  \r\nThe updated version will automatically launch on every subsequent startup, regardless of whether you load the old or new `.elf` file initially. "
     },
     {
       "id": "ps5-pkg-manager-pkg-manager_v1.5.1",
@@ -603,17 +603,17 @@
     {
       "id": "shadowmountplus-shadowmountplus-prerelease",
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus_1.7beta6 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta6%20%5BPre-release%5D.elf",
+      "filename": "shadowmountplus_1.7beta6-fix1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta6-fix1%20%5BPre-release%5D.elf",
       "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta6/shadowmountplus.elf",
-      "description": "ShadowMountPlus 1.7beta6 [Pre-release] by drakmor",
-      "last_update": "2026-10-20",
-      "version": "1.7beta6",
+      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta6-fix1/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta6-fix1 [Pre-release] by drakmor",
+      "last_update": "2026-10-21",
+      "version": "1.7beta6-fix1",
       "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "c2fb6f6bf39a94572f2b34390d5fae7ccd257c734417709a248acb6cd6e18522",
-      "release_notes": "- Improved ShellCore hook reliability and startup handling while waiting for kstuff.\r\n- Fixed sandbox cleanup and mount ownership across process handoffs and relaunches.\r\n- Fixed duplicate-image remount loops across scan roots.\r\n- Restored HTTP service recovery after rest mode and socket loss.\r\n- Enabled background work while FAKE/LAPY apps are running or games are unfocused, while protecting their sources and mounts.\r\n- Added support for backport folders with title ID suffixes and clearer notifications showing the original path.\r\n- Added a per-game Ignore global fakelib option in the web UI, applied on the next launch.\r\n- Updated web UI branding to Shadow Mount+ and added a favicon.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7-beta5fix1...1.7beta6"
+      "checksum": "7c00d7ca71f29c12a4201063cfe9c69f21570a91df7e58d67ff6e157c08456a2",
+      "release_notes": "- Improved ShellCore hook reliability and startup handling while waiting for kstuff.\r\n- Fixed sandbox cleanup and mount ownership across process handoffs and relaunches.\r\n- Fixed duplicate-image remount loops across scan roots.\r\n- Restored HTTP service recovery after rest mode and socket loss.\r\n- Enabled background work while FAKE/LAPY apps are running or games are unfocused, while protecting their sources and mounts.\r\n- Added support for backport folders with title ID suffixes and clearer notifications showing the original path.\r\n- Added a per-game Ignore global fakelib option in the web UI, applied on the next launch.\r\n- Updated web UI branding to Shadow Mount+ and added a favicon.\r\n\r\nFix - Fix web UI compatibility with older WebKit\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta6...1.7beta6-fix1"
     },
     {
       "id": "etahen-etahen-prerelease",
