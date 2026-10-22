@@ -241,6 +241,21 @@
       "release_notes": "Added 7.0x support"
     },
     {
+      "id": "ps5-linux-loader-ps5-linux-loader",
+      "name": "ps5-linux-loader",
+      "filename": "ps5-linux-loader_v2026.10.22-all11-13.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader_v2026.10.22-all11-13.elf",
+      "source": "https://github.com/soniciso1/ps5-linux-loader/releases",
+      "source_direct": "https://github.com/soniciso1/ps5-linux-loader/releases/download/v2026.10.22-all11-13/ps5-linux-loader.elf",
+      "description": "ps5-linux-loader all 11.xx + 13.xx by soniciso1",
+      "last_update": "2026-10-22",
+      "version": "v2026.10.22-all11-13",
+      "author": "soniciso1",
+      "category": "Homebrew",
+      "checksum": "2ecaaac60f9575235e064c4800051e839115d10b60fee8446b4d2416a22afc6a",
+      "release_notes": "Linux loader for PS5 with all 11.xx and 13.xx firmware support in one ELF.\n\nSupported:\n- 11.00, 11.20, 11.40, 11.60\n- 13.00, 13.20, 13.40, 13.42, 13.60\n\nThe loader reads the exact firmware build, then selects the matching table and path at runtime. It works on devkits and retail fat/slim consoles, with the 16 GB retail and 32 GB devkit memory maps selected automatically.\n\nBuild: `ps5-linux-loader.elf`\n- size: 313088 bytes\n- md5: `a2413a41d32a8073c43bce550336cd39`\n- sha256: `2ecaaac60f9575235e064c4800051e839115d10b60fee8446b4d2416a22afc6a`\n\nSource: branch `all-11-13` in this repository. It stacks the all-11.xx work on the 11.60 base, adds 13.40/13.42, and keeps the existing 13.00/13.20/13.60 path.\n\nThis build includes the high-firmware I/O fix: the e820 map reserves `0x47f300000-0x8e0000000`, the hypervisor carveout `0x8e0000000-0x8e2000000`, and `0x8e2000000-0x900000000` instead of exposing nonexistent memory as RAM.\n\nFan and boost control use the official TMR/fan path and the `ps5-linux-tools` utility:\n\n```bash\ncd ps5-linux-tools\nsudo ./ps5_control --fan on\nsudo ./ps5_control --boost on\n```\n\nTurn the fan on before boost.\n\nTesting: the 11.00, 11.20 and 11.40 paths each booted Linux 7.2.3 with display on a devkit; the 11.60 and 13.xx paths were hardware-tested previously. This exact combined binary is offline-verified against the decrypted retail/devkit kernels and needs a hardware pass before being treated as proven.\n\nSend it to elfldr on port 9021 after jailbreaking, same as upstream. Rest mode settings and the usual update advice in the README still apply.\n\r\n"
+    },
+    {
       "id": "ps5-patchdl-patchdl_0.3.4",
       "name": "ps5-patchdl",
       "filename": "patchdl_0.3.4_v0.3.4.elf",
