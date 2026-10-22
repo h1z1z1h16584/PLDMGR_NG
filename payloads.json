@@ -109,17 +109,17 @@
     {
       "id": "liveshell-liveshell",
       "name": "LiveShell",
-      "filename": "liveshell_v1.5.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.5.0.elf",
+      "filename": "liveshell_v1.5.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.5.1.elf",
       "source": "https://github.com/ZiZc3/LiveShell/releases",
-      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.5.0/liveshell.elf",
-      "description": "LiveShell Engine v1.5.0 by ZiZc3",
-      "last_update": "2026-10-21",
-      "version": "v1.5.0",
+      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.5.1/liveshell.elf",
+      "description": "LiveShell Engine v1.5.1 by ZiZc3",
+      "last_update": "2026-10-22",
+      "version": "v1.5.1",
       "author": "ZiZc3",
       "category": "Homebrew",
-      "checksum": "944de46641f16969e216381ab385bd9b4827355094219b2fef713ad6a330fb7d",
-      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.5.0</h2>\r\n\r\n<p align=\"center\">Playlists, users, resume after a game.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **Playlists**: your wallpaper changes by itself through the videos you pick, every 1, 5, 15, 30 or 60 minutes.\r\n- **Users**: turn LiveShell on or off for each PS5 user and each user keeps their own wallpaper.\r\n- **Convert** (phone / PC page): a video the PS5 will not play (10-bit, VP9, AV1, MPEG-4..) gets a **Convert it** button. Your phone or PC converts it, still better to use LiveShell Converter its faster.\r\n- **Resume after a game** (off by default): Coming back from a game, the video continues where it stopped.\r\n- **Game launch effect**: **Default**, **Cinematic** or **Slow fade**.\r\n- **Colour layer** (Picture): Warm, Cool, Rose, Teal or Violet over the video.\r\n\r\n### Discover\r\n- **2000+ wallpapers**, with **4K** and **1080p** filters.\r\n- **Discover video previews**: hover a wallpaper (PC) or tap Preview (phone), previews not supported on ps5.\r\n\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
+      "checksum": "ce1aed65a443ad47b3d7c1a0de8c36c5b800e6042c61c0028689257b637a5dd8",
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.5.1</h2>\r\n\r\n<p align=\"center\">OnionHEN fixes, Auto-next and a smoother vignette.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **Auto-next** (Settings and Quick settings, off by default): when a video ends, the next one plays instead of looping. **In order** or **Shuffle** (every video once before any repeats). (#11)\r\n- **Playlists: \"When it ends\"**: next to 1 / 5 / 15 / 30 / 60 min, a playlist can change **when each video ends**. Its Shuffle switch decides the order.\r\n- **Vignette** redone: a smooth fade on all edges with naturally darker corners.\r\n\r\n### Fixes\r\n\r\n- **No wallpaper with OnionHEN** (the app worked, the video did not, #14 the PS5's temporary folder gets run out of space when both run together.\r\n- **After rest mode** the wallpaper comes back with recovery only when OnionHen and Liveshell running the toolbox restart and Shell ui crashes:\r\n  - LiveShell and OnionHEN's toolbox now work together.\r\n- **Self-recovery**: if the home screen does not start the video, or an old LiveShell module is left in it, LiveShell fixes it by itself.\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
     },
     {
       "id": "ps-play-psplay-2.1",
