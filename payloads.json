@@ -676,6 +676,21 @@
       "release_notes": "- PS4 GoldenHEN compatability\r\n- /procfs PS5\r\n- LOWER/UPPER commands\r\n\r\n**Full Changelog**: https://github.com/drakmor/ftpsrv/compare/1.16-ng-test1...1.6-ng-test2"
     },
     {
+      "id": "garlic-savemgr-garlic-savemgr-prerelease",
+      "name": "garlic-savemgr [Pre-release]",
+      "filename": "garlic-savemgr_v1.15-beta1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta1%20%5BPre-release%5D.elf",
+      "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta1/garlic-savemgr.elf",
+      "description": "v1.15-beta1 [Pre-release] by earthonion",
+      "last_update": "2026-10-23",
+      "version": "v1.15-beta1",
+      "author": "earthonion",
+      "category": "Pre-release",
+      "checksum": "9777e49916968b5327be9d3799d25f1d3b810d3c853c448d38c8bbd120124787",
+      "release_notes": "Beta: adds \"Dump All USB\" button to bulk bar — copies every encrypted save across all titles to a USB drive in one click.\n\nTest on console before promoting to stable."
+    },
+    {
       "id": "kstuff-lite-kstuff-prerelease",
       "name": "kstuff-lite [Pre-release]",
       "filename": "kstuff_v1.11 [Pre-release].elf",
