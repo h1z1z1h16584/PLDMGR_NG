@@ -42,8 +42,8 @@ github:knutwurst/ps5-patchdl
 github:ps5xploit/ps5shopappkg
 github:ghost1372/WelcomeHubActivator
 github:soniciso1/ps5-linux-loader
-github:
-github:
+github:srbraboo/ps5-webkit-autoloader
+github:X-F1REBALL-X/wk-autoloader
 github:
 github:
 github:
