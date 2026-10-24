@@ -119,7 +119,7 @@
       "author": "ZiZc3",
       "category": "Homebrew",
       "checksum": "99dd31a3cd3d00133c24ea66d0b797a2e2d7a5a3dce2e4e77f706b870aae5557",
-      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.5.2</h2>\r\n\r\n<p align=\"center\">Discover fixes.</p>\r\n\r\n---\r\n\r\n### Fixes\r\n\r\n- **Discover downloads** `Download failed: send 0x80431073, status 0`.\r\n- **Downloads continue where they stopped.** If the connection drops, LiveShell tries again by itself (up to 3 times) and continues from where it stopped instead of starting over. Press Download again later and it still continues.\r\n- **Discover / All pages:** the next page now starts at its first wallpaper, not at the top of the site."
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.5.2</h2>\r\n\r\n<p align=\"center\">Discover fixes.</p>\r\n\r\n---\r\n\r\n### Fixes\r\n\r\n- **Discover downloads** `Download failed: send 0x80431073, status 0`.\r\n- **Downloads continue where they stopped.** If the connection drops, LiveShell tries again by itself (up to 3 times) and continues from where it stopped instead of starting over. Press Download again later and it still continues.\r\n- **Discover / All pages:** the next page now starts at its first wallpaper, not at the top of the app."
     },
     {
       "id": "ps-play-psplay-2.1",
@@ -496,19 +496,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.1.19",
+      "id": "ps5upload-ps5upload-7.2.0",
       "name": "ps5upload",
-      "filename": "ps5upload-7.1.19_v7.1.19.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.1.19_v7.1.19.elf",
+      "filename": "ps5upload-7.2.0_v7.2.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.2.0_v7.2.0.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.19/ps5upload-7.1.19.elf",
-      "description": "v7.1.19 by phantomptr",
-      "last_update": "2026-10-23",
-      "version": "v7.1.19",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.2.0/ps5upload-7.2.0.elf",
+      "description": "v7.2.0 by phantomptr",
+      "last_update": "2026-10-24",
+      "version": "v7.2.0",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "c5e68afd6c3101a50b6a425350a7d3fec9ab5049cf8bed9ced53f4548598da07",
-      "release_notes": "Update the helper for everything below.\r\n\r\n- **Files on a disc download now (#497).** Downloading a file from a data DVD or Blu-ray in the drive\r\n  (/mnt/disc) failed with \"not allowed\". It works now; the disc stays read-only.\r\n- **Bring up automatically (#479, desktop).** A new switch on Connection's Quick bring-up (and in\r\n  Settings → Console) lets the app connect a saved PS5 by itself: when the console's loader\r\n  (elfldr) is up and the helper isn't running, it runs your bring-up playlist, sends the helper\r\n  and runs your auto-loader, with no clicks. Once each time the console starts, about 90 seconds\r\n  after the loader appears so the console's own autoloader finishes first; after rest mode only\r\n  the helper is sent again. Off by default.\r\n- **Stream several packages at once everywhere (#479).** Picking a game, its update and DLC\r\n  together now also works from a saved server, on Android and from \"From this device\" in the\r\n  browser, and they are queued base game first, then the update, then DLC.\r\n- **Queue icons show right away (#479).** An install that starts as soon as you add it now shows\r\n  the game's icon and name while it runs, not only after it finishes.\r\n- **Look inside any game image on your computer (#479).** Edit image on this computer now opens\r\n  every kind ps5upload reads (.exfat, .ffpkg, .ffpfs, .ffpfsc and debug .pkg) without mounting it,\r\n  on Windows too and in the browser version. Browse folders with their sizes and save any file or\r\n  folder to the computer (checked against the image). For images (not packages) you can also add,\r\n  replace or delete files and write an edited copy next to the original; the copy is read back\r\n  and checked, and the image you opened is never changed.\r\n- **Game Library on the PS5 (#498).** PS5Upload Minion has a new Library section: press Scan and it\r\n  looks through your network shares (NAS or PC) and this PS5's drives for games — .pkg files,\r\n  game folders and disk images — and shows them as a cover grid with title, version, type and the\r\n  sy..."
+      "checksum": "a8a20057b43fae225df7adfdda046911d81886a72fc3223e831c2999db948331",
+      "release_notes": "- **PS5Upload on iPhone.** Every release now includes an iPhone app (`PS5Upload-7.2.0-ios-unsigned.ipa`):\r\n  the same app as on Android, with the engine built in. It is not on the App Store, so you install\r\n  it yourself with AltStore or Sideloadly and an Apple ID (a free one works, no jailbreak). The\r\n  FAQ walks through both. Put games in the app's folder with the Files app, keep the app open\r\n  while it sends, and tell us how it goes: it is new and has had little testing on real iPhones.\r\n- **Text size on the console page (#505).** PS5Upload Minion's Settings has a Text size row\r\n  (75% to 130%), kept per screen so the TV and a computer browser can each have their own.\r\n  Update the helper for this one.\r\n- **Converting a big game shows its progress from the start.** On a very large game the\r\n  \"Check source\" step could sit for many minutes with nothing moving; it now shows how far it is,\r\n  and Stop works there too.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
