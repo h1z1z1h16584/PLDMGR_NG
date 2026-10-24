@@ -119,7 +119,7 @@
       "author": "ZiZc3",
       "category": "Homebrew",
       "checksum": "99dd31a3cd3d00133c24ea66d0b797a2e2d7a5a3dce2e4e77f706b870aae5557",
-      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.5.2</h2>\r\n\r\n<p align=\"center\">Discover downloads fix.</p>\r\n\r\n---\r\n\r\n### Fixes\r\n\r\n- **Discover downloads** `Download failed: send 0x80431073, status 0`."
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.5.2</h2>\r\n\r\n<p align=\"center\">Discover fixes.</p>\r\n\r\n---\r\n\r\n### Fixes\r\n\r\n- **Discover downloads** `Download failed: send 0x80431073, status 0`.\r\n- **Downloads continue where they stopped.** If the connection drops, LiveShell tries again by itself (up to 3 times) and continues from where it stopped instead of starting over. Press Download again later and it still continues.\r\n- **Discover / All pages:** the next page now starts at its first wallpaper, not at the top of the site."
     },
     {
       "id": "ps-play-psplay-2.1",
