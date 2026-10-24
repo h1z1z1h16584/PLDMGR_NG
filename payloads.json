@@ -287,6 +287,36 @@
       "release_notes": "# DPIv2.elf - PS5 Shop Appkg Direct PKG Installer\r\nFW 1.00 - 13.60\r\n\r\ndownload pkg files from ps5shopappkg website\r\n\r\n**No etaHEN or onionHEN required.**\r\n\r\n## Usage\r\n1. Start **kstuff** on your PS5.\r\n2. Send `DPIv2.elf` with your payload injector or payloadmanager\r\n3. Open `https://ps5shopappkg.pages.dev` in your browser.\r\n\r\n\r\n\r\n\r\n## Credits\r\nBased on etaHEN's `DirectPKGInstaller.cpp`. \r\nFW 1.00 - 13.60"
     },
     {
+      "id": "wk-autoloader-wk_autoloader_store_restore_v1.2.0",
+      "name": "wk-autoloader",
+      "filename": "WK_Autoloader_Store_Restore_V1.2.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/WK_Autoloader_Store_Restore_V1.2.0.elf",
+      "source": "https://github.com/X-F1REBALL-X/wk-autoloader/releases",
+      "source_direct": "https://github.com/X-F1REBALL-X/wk-autoloader/releases/download/v1.2.0/WK_Autoloader_Store_Restore_V1.2.0.elf",
+      "description": "WK Autoloader Store 1.2.0 by X-F1REBALL-X",
+      "last_update": "2026-10-23",
+      "version": "v1.2.0",
+      "author": "X-F1REBALL-X",
+      "category": "Homebrew",
+      "checksum": "5a4e59bf3e86c5b38a171048bb3b34cc7518ff85dcd0bb46a0384a864c539d8e",
+      "release_notes": "\r\nChanges since 1.1.4.\r\n\r\n## Cache safety\r\n- Install keeps the existing Store AppCache. No more automatic wipe.\r\n- A backup is made before any cache clear (/data/wkal/appcache_backup/).\r\n- Store Restore clears only the Store AppCache origin, nothing else.\r\n\r\n## Install\r\n- The installer waits for \"Offline cache complete\" before it finishes.\r\n- When the firmware is unknown, the full manifest is used.\r\n\r\n## Speed\r\n- Faster jailbreak: about 3.3s down to about 2.8s (quicker elfldr poll and faster ELF copy).\r\n- Per-stage timing in ms, shown in the log and in Recent.\r\n\r\n## Files\r\n- WK_Autoloader_Store_V1.2.0.elf: send to elfldr on port 9021.\r\n- WK_Autoloader_Store_Restore_V1.2.0.elf: send to elfldr on port 9021, then reboot to restore the PS Store tile.\r\n\r\n\r\n"
+    },
+    {
+      "id": "wk-autoloader-wk_autoloader_store_v1.2.0",
+      "name": "wk-autoloader",
+      "filename": "WK_Autoloader_Store_V1.2.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/WK_Autoloader_Store_V1.2.0.elf",
+      "source": "https://github.com/X-F1REBALL-X/wk-autoloader/releases",
+      "source_direct": "https://github.com/X-F1REBALL-X/wk-autoloader/releases/download/v1.2.0/WK_Autoloader_Store_V1.2.0.elf",
+      "description": "WK Autoloader Store 1.2.0 by X-F1REBALL-X",
+      "last_update": "2026-10-23",
+      "version": "v1.2.0",
+      "author": "X-F1REBALL-X",
+      "category": "Homebrew",
+      "checksum": "3159594f83370b61c306c56b401bd6841f24d1ff2761319828b3aad9d79438c4",
+      "release_notes": "\r\nChanges since 1.1.4.\r\n\r\n## Cache safety\r\n- Install keeps the existing Store AppCache. No more automatic wipe.\r\n- A backup is made before any cache clear (/data/wkal/appcache_backup/).\r\n- Store Restore clears only the Store AppCache origin, nothing else.\r\n\r\n## Install\r\n- The installer waits for \"Offline cache complete\" before it finishes.\r\n- When the firmware is unknown, the full manifest is used.\r\n\r\n## Speed\r\n- Faster jailbreak: about 3.3s down to about 2.8s (quicker elfldr poll and faster ELF copy).\r\n- Per-stage timing in ms, shown in the log and in Recent.\r\n\r\n## Files\r\n- WK_Autoloader_Store_V1.2.0.elf: send to elfldr on port 9021.\r\n- WK_Autoloader_Store_Restore_V1.2.0.elf: send to elfldr on port 9021, then reboot to restore the PS Store tile.\r\n\r\n\r\n"
+    },
+    {
       "id": "pizza-hen-pizza-hen-v2.00",
       "name": "PIZZA-HEN",
       "filename": "PIZZA-HEN-v2.00.elf",
@@ -811,6 +841,21 @@
       "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
     },
     {
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.6.1-kp-fix-prerelease",
+      "name": "ps5-webkit-autoloader [Pre-release]",
+      "filename": "webkit-autoloader-installer_v0.6.1-kp-fix [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/webkit-autoloader-installer_v0.6.1-kp-fix%20%5BPre-release%5D.elf",
+      "source": "https://github.com/srbraboo/ps5-webkit-autoloader/releases",
+      "source_direct": "https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf",
+      "description": "v0.6.1-kp-fix (pre-release) [Pre-release] by srbraboo",
+      "last_update": "2026-10-09",
+      "version": "v0.6.1-kp-fix",
+      "author": "srbraboo",
+      "category": "Pre-release",
+      "checksum": "c53f6f661da565b20d404be166de1d0692af749446a4e0b353d82ff006728861",
+      "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
+    },
+    {
       "id": "ps5upload-ps5upload-7.1.17-prerelease",
       "name": "ps5upload [Pre-release]",
       "filename": "ps5upload-7.1.17_v7.1.17 [Pre-release].elf",
@@ -824,6 +869,21 @@
       "category": "Pre-release",
       "checksum": "37b56b3e5cbe582e1bc33d0cf20ae4a01a4ea30723200750cd444a936cc10bf3",
       "release_notes": "\n- **Disk usage counts everything inside a folder (#495).** A folder's size now includes all its\n  subfolders, so /data and the folders in it show what they really take up. Disk usage counts\n  folders as it goes, with a Stop button, and opening a subfolder afterwards is instant. Links,\n  the system's own folders and other drives mounted inside are left out so nothing is counted\n  twice.\n- **Eject USB drives from File system (#496).** USB drives in File system's drive bar now have\n  an Eject button, like the PS5's own Files page. It works like Eject on Volumes: if the PS5 is\n  still holding the drive, it asks before ejecting anyway. Ejecting the drive you're browsing\n  takes you back to /data.\n\n"
+    },
+    {
+      "id": "wk-autoloader-wk-dual-payload-prerelease",
+      "name": "wk-autoloader [Pre-release]",
+      "filename": "wk-dual-payload_v1.0.4 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/wk-dual-payload_v1.0.4%20%5BPre-release%5D.elf",
+      "source": "https://github.com/X-F1REBALL-X/wk-autoloader/releases",
+      "source_direct": "https://github.com/X-F1REBALL-X/wk-autoloader/releases/download/v1.0.4/wk-dual-payload.elf",
+      "description": "WK Autoloader v1.0.4 (update test) [Pre-release] by X-F1REBALL-X",
+      "last_update": "2026-10-05",
+      "version": "v1.0.4",
+      "author": "X-F1REBALL-X",
+      "category": "Pre-release",
+      "checksum": "b414f1d28c8ea6dfc9869af802863a2054a20486ccf30979bcdbd8af323ef2af",
+      "release_notes": "## WK Autoloader 1.0.4 - update test build\n\nDeveloped by [X-F1REBALL-X](https://github.com/X-F1REBALL-X)\n\n- Same build as 1.0.3, version bumped to 1.0.4 to test the self-update banner\n- Running 1.0.3 on PS5 (`:1022`) should now show the **Update** banner\n- Pages UI moved to 1.0.3 (still one patch behind, so the banner shows there too)\n\nAsset: `wk-dual-payload.elf` (6325504 bytes), sha256 `b414f1d28c8ea6dfc9869af802863a2054a20486ccf30979bcdbd8af323ef2af`\n\n"
     },
     {
       "id": "archived-etahen-99.0",
