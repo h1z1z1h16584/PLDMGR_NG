@@ -496,19 +496,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.5.0",
+      "id": "ps5upload-ps5upload-7.5.1",
       "name": "ps5upload",
-      "filename": "ps5upload-7.5.0_v7.5.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.5.0_v7.5.0.elf",
+      "filename": "ps5upload-7.5.1_v7.5.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.5.1_v7.5.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.0/ps5upload-7.5.0.elf",
-      "description": "v7.5.0 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.1/ps5upload-7.5.1.elf",
+      "description": "v7.5.1 by phantomptr",
       "last_update": "2026-10-24",
-      "version": "v7.5.0",
+      "version": "v7.5.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "57f4bfea3233d4e0094a298b89b165048ceef875937d8fbe9fb0f0572d163d8c",
-      "release_notes": "- **A new look.** PS5Upload has a new logo: a PS5 Pro drawn in black and white, with the name set\r\n  in Titan One. It is the app icon on every platform (macOS, Windows, Linux, Android, iPhone),\r\n  the in-app logo, the PS5 home-screen tile for Minion (it updates the next time the helper is\r\n  sent), the website and its screenshots, and the README. The masters and every image are in\r\n  `branding/`.\r\n\r\n"
+      "checksum": "021c03c15d1b077558f8966ca46f38636f1934c084b930545098167e11abbc7b",
+      "release_notes": "- **Security scan clean-up.** Every finding of the new code scan was reviewed. A damaged game\r\n  image can no longer make the converter reserve a huge buffer before reading it. Every GitHub\r\n  Action the builds use is pinned to an exact commit, and the scan now skips tests, examples and\r\n  developer tools, which never ship. The rest (the engine opening files you choose, and fixed\r\n  protocol constants) are by design and were closed with the reason recorded. So they stay\r\n  fixed: the PR gate now fails on any workflow action not pinned to a commit, a CodeQL gate fails\r\n  any change that leaves a new open alert, and the release script refuses to tag while one is open.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
