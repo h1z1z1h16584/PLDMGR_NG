@@ -496,19 +496,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.2.0",
+      "id": "ps5upload-ps5upload-7.4.1",
       "name": "ps5upload",
-      "filename": "ps5upload-7.2.0_v7.2.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.2.0_v7.2.0.elf",
+      "filename": "ps5upload-7.4.1_v7.4.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.4.1_v7.4.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.2.0/ps5upload-7.2.0.elf",
-      "description": "v7.2.0 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.4.1/ps5upload-7.4.1.elf",
+      "description": "v7.4.1 by phantomptr",
       "last_update": "2026-10-24",
-      "version": "v7.2.0",
+      "version": "v7.4.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "a8a20057b43fae225df7adfdda046911d81886a72fc3223e831c2999db948331",
-      "release_notes": "- **PS5Upload on iPhone.** Every release now includes an iPhone app (`PS5Upload-7.2.0-ios-unsigned.ipa`):\r\n  the same app as on Android, with the engine built in. It is not on the App Store, so you install\r\n  it yourself with AltStore or Sideloadly and an Apple ID (a free one works, no jailbreak). The\r\n  FAQ walks through both. Put games in the app's folder with the Files app, keep the app open\r\n  while it sends, and tell us how it goes: it is new and has had little testing on real iPhones.\r\n- **Text size on the console page (#505).** PS5Upload Minion's Settings has a Text size row\r\n  (75% to 130%), kept per screen so the TV and a computer browser can each have their own.\r\n  Update the helper for this one.\r\n- **Converting a big game shows its progress from the start.** On a very large game the\r\n  \"Check source\" step could sit for many minutes with nothing moving; it now shows how far it is,\r\n  and Stop works there too.\r\n\r\n"
+      "checksum": "b37ff9670fe33162e03b570a58542ddf3966d1ad4e0a3acdc6e1dae5b69c5b8a",
+      "release_notes": "- Dependency updates: Tauri 2.12.5, Tauri CLI 2.12.4, Vite 8.3.5, lucide-react 1.61.0 and\r\n  crc32fast 1.5.3.\r\n- The new security scan no longer flags the Wake screen's made-up sample key, and a test no\r\n  longer trips the repository's old-port check.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -753,17 +753,17 @@
     {
       "id": "orbit-store-ps5-orbit_store-prerelease",
       "name": "orbit-store-ps5 [Pre-release]",
-      "filename": "orbit_store_v1.4.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/orbit_store_v1.4.0%20%5BPre-release%5D.elf",
+      "filename": "orbit_store_v1.5.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/orbit_store_v1.5.0%20%5BPre-release%5D.elf",
       "source": "https://github.com/saawant12/orbit-store-ps5/releases",
-      "source_direct": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.4.0/orbit_store.elf",
-      "description": "Orbit Store 1.4.0 (Beta) [Pre-release] by saawant12",
-      "last_update": "2026-10-22",
-      "version": "v1.4.0",
+      "source_direct": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.5.0/orbit_store.elf",
+      "description": "Orbit Store 1.5.0 (Beta) [Pre-release] by saawant12",
+      "last_update": "2026-10-24",
+      "version": "v1.5.0",
       "author": "saawant12",
       "category": "Pre-release",
-      "checksum": "e43c6272b3519fc2ec8b9373a484f2c2adb9669d7652567661149da741ab6d94",
-      "release_notes": "**More games, better download recovery, and the freedom to download to your computer now and transfer to your PS5 later.**\n\n- **233 games added in recent catalogue updates: 102 PS5 and 131 PS4.** Orbit now includes **1,831 games and 4,506 download options**, with 681 more options since 1.3.5. These catalogue updates are available without reinstalling the apps.\n- **More control over download recovery.** Choose how many times Orbit retries, the delay between attempts, and when a slow download should reconnect. Repeated failures use fewer connections while keeping saved progress.\n- **Larger files through TorBox.** Orbit now sends the request to TorBox instead of blocking it based on its advertised file-size limit. Your account and the source still determine availability; any rejection appears in Downloads.\n- **More in New on Orbit.** Discover now shows up to 40 games in the collection.\n\n## Orbit Zero · Mac, Windows and Linux\n\n- **Download without a PS5.** Choose **Save to → This computer** to download and keep a game locally. Send it to your PS5 later when you’re ready.\n- **Smoother Vikingfile and AkiraBox downloads.** Complete the provider’s verification, then wait. Orbit Zero captures the ready download link and returns automatically, without manually pressing Download.\n- **Refresh expired links with your PS5 offline.** Refresh an interrupted computer download’s link without reconnecting the console or its drive. Orbit checks that it is the same file before continuing from saved progress.\n- **Better transfer recovery.** Resume the PS5 transfer while the computer download continues, or restart a transfer from a retained computer copy. Clearer errors explain when a destination file already exists or a saved PS5 file has changed.\n\n## Orbit Store · Native PS5 app (FFPKG) and browser (ELF)\n\n- **Cleaner extracted game folders.** Redundant wrapper folders are removed when an archive contains a recognised game directory. Other files and folders are preserved.\n- **Clearer native progress and browser errors.**..."
+      "checksum": "9590ef2cfa8764eb96fbe52dec302f1d9c8ba7d51101f031a69ac1279d20e579",
+      "release_notes": "**A major update:** DLCs, game installation support and over 2,000 games now in Orbit.\n\n- **Install without leaving Orbit.** After a PKG or FPKG downloads or transfers, choose **Install on PS5**. If a download has several packages, pick the ones you want. For exFAT, FFPFSC and extracted game folders, Orbit asks ShadowMount to scan for them, if a supported version is running.\n- **We’re starting with 408 add-ons for 43 games.** Browse and download expansions, content packs, activation packages and bundles on the new **Add-ons** page, or from a game’s details.\n- **Over 2,000 games.** This update adds 195 games (188 PS4 and 7 PS5) and 71 more download choices for games already in Orbit. The catalogue now has 2,026 games.\n- **Know what your firmware can run.** Download options show the firmware they need, when it’s known. Options that won’t run on your PS5 are listed last with a warning, and you can still download them.\n\n## Orbit Store · Native PS5 app (FFPKG) and browser (ELF)\n\n- **Update Orbit in one step.** **Update Orbit** updates the TV app and the download service together. If your ELF loader is running, Orbit restarts itself and picks up your downloads where they left off. You can also restart Orbit on its own from Updates.\n- **Download notifications.** Your PS5 tells you when a download finishes or fails, in your console’s language. You can turn this off in settings.\n- **Save a diagnostic report.** In the TV app, **More settings → Save diagnostic report** saves a report you can attach to a bug report, on a USB drive or the PS5’s own storage. It has no game titles, download links, passwords or tokens.\n- **Better download retries.** Downloads resume from the progress saved on your drive, and Retry still works if the partial file was deleted or is empty.\n- **Find the right add-on.** Search by add-on or game name, and filter by platform, type, source and region, in every interface. An add-on’s details show which game it needs, and any version it requires, before you download.\n\n## Orbit Zero ·..."
     },
     {
       "id": "ps5-app-dumper-ps5-app-dumper_v2.10-prerelease",
@@ -856,19 +856,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.1.20-prerelease",
+      "id": "ps5upload-ps5upload-7.4.0-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.1.20_v7.1.20 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.20_v7.1.20%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.4.0_v7.4.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.4.0_v7.4.0%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.20/ps5upload-7.1.20.elf",
-      "description": "v7.1.20 [Pre-release] by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.4.0/ps5upload-7.4.0.elf",
+      "description": "v7.4.0 [Pre-release] by phantomptr",
       "last_update": "2026-10-24",
-      "version": "v7.1.20",
+      "version": "v7.4.0",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "39fa28f42e9a854549f06543bf5cbb9c383b33a4ad8bfa8557b6aa6f6470d07b",
-      "release_notes": "\n- **Covers stay while the helper is down.** When the helper was not running (or the console was in\n  rest mode), every cover asked for in that moment was remembered as \"no artwork\" for 15 minutes.\n  Only a real \"not there\" answer from the console is remembered now.\n- **Stopping a folder upload early works.** Cancelling while a big folder was still being counted\n  used to be ignored, and the whole folder uploaded anyway. The cancel is kept and the upload ends\n  as cancelled.\n- **Big libraries list in full.** A console with more than 256 titles (or app folders) had the rest\n  cut off, and the game pages then showed them as not installed. Every page is read now; the\n  Collection's console view also no longer reports every game as not installed when a folder\n  listing fails or is cut short.\n- **Folder uploads report what was skipped.** A folder upload with \"skip existing\" showed 0 skipped\n  files and the full file count as sent; it now reports what the console already had, like a\n  single-file upload.\n- **Measure how it plays: a failed start cleans up.** If copying the libraries or writing the debug\n  emulator failed halfway, the half-made fakelib2 folder could not be removed by Stop; it is marked\n  from the start and removed on failure now.\n- **Time sync refuses an empty target.** Syncing the clock without NTP and without a time no longer\n  sets the console to 1970; it is refused.\n- **Profile activate refuses a malformed id.** An account id that cannot be read is an error now,\n  instead of being silently replaced by the one derived from the slot.\n- **Unreadable files in a selection are skipped, not fatal.** Uploading a selection of files where\n  one could not be read used to fail the whole job on that file; it is left out (as the log already\n  said) and the rest uploads. A selection with no readable file is refused up front.\n- **Web UI: unknown API paths answer 404.** They used to return the app page with status 200.\n- **Backport scan and Collection scan end on a crash.** A scan whose worker crashed stayed \"run..."
+      "checksum": "17f11956fd819a758c2036147a46b5615f888c5c72ddae728328e501d81a0d38",
+      "release_notes": "\n- **Security scanning on every change.** Every pull request now runs a security scan: known\n  vulnerable Rust and npm dependencies (cargo audit, npm audit) and secrets anywhere in the git\n  history (gitleaks); `make security` runs the same scan locally. CodeQL checks our Rust,\n  TypeScript, Python and workflow code on every change and weekly. Every release file is\n  scanned with ClamAV before it is published, and gets a GitHub build attestation you can verify\n  with `gh attestation verify <file> -R phantomptr/ps5upload` (FAQ: anti-virus).\n- **Dependency fixes.** crypto-bigint 0.7.7 (constant-time fixes, RUSTSEC-2026-0387), zod 4.6.7\n  (memory exhaustion on oversized input, development tooling only), chacha20 0.10.2 (the yanked\n  0.10.1 replaced). Third-party CI actions are pinned to exact commits, and Dependabot waits\n  three days before proposing a new release.\n- **Smaller Android download, 32-bit phones get their own APK.** The Android app is now built\n  per processor: `PS5Upload-<ver>-android.apk` for 64-bit phones and tablets (nearly all of\n  them), `PS5Upload-<ver>-android-armv7.apk` for older 32-bit ones, and release builds leave out\n  debug symbols. The 64-bit download drops from about 115 MB to about 40 MB. A 32-bit phone that\n  updates from inside the app is offered the 64-bit APK once (\"App not installed\"); download\n  the armv7 APK from the Releases page instead.\n- **Installed games in the command palette.** Cmd/Ctrl+K finds every game installed on your\n  saved consoles, not only the ones in Collection, and says which console has it.\n- The Wake screen's sample keys are plain made-up values.\n\n"
     },
     {
       "id": "wk-autoloader-wk-dual-payload-prerelease",
