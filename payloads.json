@@ -856,19 +856,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.1.17-prerelease",
+      "id": "ps5upload-ps5upload-7.1.20-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.1.17_v7.1.17 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.17_v7.1.17%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.1.20_v7.1.20 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.1.20_v7.1.20%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.17/ps5upload-7.1.17.elf",
-      "description": "v7.1.17 [Pre-release] by phantomptr",
-      "last_update": "2026-10-22",
-      "version": "v7.1.17",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.20/ps5upload-7.1.20.elf",
+      "description": "v7.1.20 [Pre-release] by phantomptr",
+      "last_update": "2026-10-24",
+      "version": "v7.1.20",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "37b56b3e5cbe582e1bc33d0cf20ae4a01a4ea30723200750cd444a936cc10bf3",
-      "release_notes": "\n- **Disk usage counts everything inside a folder (#495).** A folder's size now includes all its\n  subfolders, so /data and the folders in it show what they really take up. Disk usage counts\n  folders as it goes, with a Stop button, and opening a subfolder afterwards is instant. Links,\n  the system's own folders and other drives mounted inside are left out so nothing is counted\n  twice.\n- **Eject USB drives from File system (#496).** USB drives in File system's drive bar now have\n  an Eject button, like the PS5's own Files page. It works like Eject on Volumes: if the PS5 is\n  still holding the drive, it asks before ejecting anyway. Ejecting the drive you're browsing\n  takes you back to /data.\n\n"
+      "checksum": "39fa28f42e9a854549f06543bf5cbb9c383b33a4ad8bfa8557b6aa6f6470d07b",
+      "release_notes": "\n- **Covers stay while the helper is down.** When the helper was not running (or the console was in\n  rest mode), every cover asked for in that moment was remembered as \"no artwork\" for 15 minutes.\n  Only a real \"not there\" answer from the console is remembered now.\n- **Stopping a folder upload early works.** Cancelling while a big folder was still being counted\n  used to be ignored, and the whole folder uploaded anyway. The cancel is kept and the upload ends\n  as cancelled.\n- **Big libraries list in full.** A console with more than 256 titles (or app folders) had the rest\n  cut off, and the game pages then showed them as not installed. Every page is read now; the\n  Collection's console view also no longer reports every game as not installed when a folder\n  listing fails or is cut short.\n- **Folder uploads report what was skipped.** A folder upload with \"skip existing\" showed 0 skipped\n  files and the full file count as sent; it now reports what the console already had, like a\n  single-file upload.\n- **Measure how it plays: a failed start cleans up.** If copying the libraries or writing the debug\n  emulator failed halfway, the half-made fakelib2 folder could not be removed by Stop; it is marked\n  from the start and removed on failure now.\n- **Time sync refuses an empty target.** Syncing the clock without NTP and without a time no longer\n  sets the console to 1970; it is refused.\n- **Profile activate refuses a malformed id.** An account id that cannot be read is an error now,\n  instead of being silently replaced by the one derived from the slot.\n- **Unreadable files in a selection are skipped, not fatal.** Uploading a selection of files where\n  one could not be read used to fail the whole job on that file; it is left out (as the log already\n  said) and the rest uploads. A selection with no readable file is refused up front.\n- **Web UI: unknown API paths answer 404.** They used to return the app page with status 200.\n- **Backport scan and Collection scan end on a crash.** A scan whose worker crashed stayed \"run..."
     },
     {
       "id": "wk-autoloader-wk-dual-payload-prerelease",
