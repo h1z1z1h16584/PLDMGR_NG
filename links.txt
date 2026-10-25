@@ -44,7 +44,7 @@ github:ghost1372/WelcomeHubActivator
 github:soniciso1/ps5-linux-loader
 github:srbraboo/ps5-webkit-autoloader
 github:X-F1REBALL-X/wk-autoloader
-github:
+github:abhi245y/spotless
 github:
 github:
 github:
