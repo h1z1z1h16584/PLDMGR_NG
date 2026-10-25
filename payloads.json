@@ -242,18 +242,18 @@
       "release_notes": "Added 7.0x support"
     },
     {
-      "id": "ps5-linux-loader-ps5-linux-loader-10xx",
+      "id": "ps5-linux-loader-ps5-linux-loader-10-13-20261025",
       "name": "ps5-linux-loader",
-      "filename": "ps5-linux-loader-10xx_10.xx-support.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader-10xx_10.xx-support.elf",
+      "filename": "ps5-linux-loader-10-13-20261025_10.xx-support.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader-10-13-20261025_10.xx-support.elf",
       "source": "https://github.com/soniciso1/ps5-linux-loader/releases",
-      "source_direct": "https://github.com/soniciso1/ps5-linux-loader/releases/download/10.xx-support/ps5-linux-loader-10xx.elf",
+      "source_direct": "https://github.com/soniciso1/ps5-linux-loader/releases/download/10.xx-support/ps5-linux-loader-10-13-20261025.elf",
       "description": "Added 10.XX support by soniciso1",
       "last_update": "2026-10-25",
       "version": "10.xx-support",
       "author": "soniciso1",
       "category": "Homebrew",
-      "checksum": "6d7250e148797bd4f50ecd4a74dd475e82c00395d38ef3a43aad98cbadd6f4c2",
+      "checksum": "17679bd43e5435bd407802b5036399a2b961e6845a726dd3b1919f0a5a5af8e6",
       "release_notes": "Added 10.XX support for fat and slim not pro"
     },
     {
