@@ -496,19 +496,19 @@
       "release_notes": "## Changelog\r\n\r\n* **9.05, 11.40 & 11.60**: Added missing offsets to fix Poops support.\r\n  *(Note: Relapse remains unsupported on 9.05 and 11.40)*\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-host_v0.6.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.0...v0.6.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.5.1",
+      "id": "ps5upload-ps5upload-7.5.2",
       "name": "ps5upload",
-      "filename": "ps5upload-7.5.1_v7.5.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.5.1_v7.5.1.elf",
+      "filename": "ps5upload-7.5.2_v7.5.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-7.5.2_v7.5.2.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.1/ps5upload-7.5.1.elf",
-      "description": "v7.5.1 by phantomptr",
-      "last_update": "2026-10-24",
-      "version": "v7.5.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.2/ps5upload-7.5.2.elf",
+      "description": "v7.5.2 by phantomptr",
+      "last_update": "2026-10-25",
+      "version": "v7.5.2",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "021c03c15d1b077558f8966ca46f38636f1934c084b930545098167e11abbc7b",
-      "release_notes": "- **Security scan clean-up.** Every finding of the new code scan was reviewed. A damaged game\r\n  image can no longer make the converter reserve a huge buffer before reading it. Every GitHub\r\n  Action the builds use is pinned to an exact commit, and the scan now skips tests, examples and\r\n  developer tools, which never ship. The rest (the engine opening files you choose, and fixed\r\n  protocol constants) are by design and were closed with the reason recorded. So they stay\r\n  fixed: the PR gate now fails on any workflow action not pinned to a commit, a CodeQL gate fails\r\n  any change that leaves a new open alert, and the release script refuses to tag while one is open.\r\n\r\n"
+      "checksum": "6ad5f22acb9dfb1f977b303c59e7e9c30dc61af302650249fe8fb0078feedde4",
+      "release_notes": "- **Uploads wake a sleeping PS5.** When an upload is waiting for a PS5 in rest mode, the app now\r\n  sends it a wake signal, re-sends the helper once it is up, and carries on. Only for a console\r\n  with wake set up on the Connection screen; turn it off under Settings › Uploads (\"Wake the PS5\r\n  for a waiting upload\").\r\n- **Convert reads big Sony-compressed packages.** Some large PS5 packages (Astro Bot, for one)\r\n  failed in Convert with \"the package's inner image uses a layout this reader does not know\".\r\n  Their layout table marks stretches with no stored data, 256 KiB each, and the reader took\r\n  them for blocks, so every offset after the first one was wrong. It now steps over them: Astro\r\n  Bot's 166,714 files open in seconds and read back correctly.\r\n- **Save backups skip the console's own folders.** The PS5 lists its empty `sce_backup`\r\n  folders among the saves, and automatic backups saved each one as an empty zip (one of them\r\n  twice, since PS4 and PS5 both have one). Only games' saves are backed up now.\r\n- **Where to get the PPR patch for fake packages.** Installing a fake package needs\r\n  `a53_ppr_install_fast.elf`, which has no published download, so the payload catalogue cannot\r\n  offer it. Install Package and the catalogue now link its source, drakmor/ppr-patch.\r\n- **Start all no longer spins on a sleeping PS5.** With two or more uploads queued for a console\r\n  in rest mode, Start all restarted that console over and over without end. The uploads now wait\r\n  for the wake.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -856,19 +856,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-7.5.2-prerelease",
+      "id": "ps5upload-ps5upload-7.4.4-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-7.5.2_v7.5.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.5.2_v7.5.2%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-7.4.4_v7.4.4 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-7.4.4_v7.4.4%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.2/ps5upload-7.5.2.elf",
-      "description": "v7.5.2 [Pre-release] by phantomptr",
-      "last_update": "2026-10-25",
-      "version": "v7.5.2",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v7.4.4/ps5upload-7.4.4.elf",
+      "description": "v7.4.4 [Pre-release] by phantomptr",
+      "last_update": "2026-10-24",
+      "version": "v7.4.4",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "6ad5f22acb9dfb1f977b303c59e7e9c30dc61af302650249fe8fb0078feedde4",
-      "release_notes": "\n- **Uploads wake a sleeping PS5.** When an upload is waiting for a PS5 in rest mode, the app now\n  sends it a wake signal, re-sends the helper once it is up, and carries on. Only for a console\n  with wake set up on the Connection screen; turn it off under Settings › Uploads (\"Wake the PS5\n  for a waiting upload\").\n- **Convert reads big Sony-compressed packages.** Some large PS5 packages (Astro Bot, for one)\n  failed in Convert with \"the package's inner image uses a layout this reader does not know\".\n  Their layout table marks stretches with no stored data, 256 KiB each, and the reader took\n  them for blocks, so every offset after the first one was wrong. It now steps over them: Astro\n  Bot's 166,714 files open in seconds and read back correctly.\n- **Save backups skip the console's own folders.** The PS5 lists its empty `sce_backup`\n  folders among the saves, and automatic backups saved each one as an empty zip (one of them\n  twice, since PS4 and PS5 both have one). Only games' saves are backed up now.\n- **Where to get the PPR patch for fake packages.** Installing a fake package needs\n  `a53_ppr_install_fast.elf`, which has no published download, so the payload catalogue cannot\n  offer it. Install Package and the catalogue now link its source, drakmor/ppr-patch.\n- **Start all no longer spins on a sleeping PS5.** With two or more uploads queued for a console\n  in rest mode, Start all restarted that console over and over without end. The uploads now wait\n  for the wake.\n\n"
+      "checksum": "6ee60f88ab7e35e88ba85ce4714576e7e8a68fb1adcd540fd4a518ffdc2f0f9f",
+      "release_notes": "\n- **Save backups that run on their own.** Automatic save backups now run in the engine, so the\n  Docker web UI has them too, around the clock with no browser open (the desktop app backs up\n  while it runs, as before). Choose a folder (in Docker, one in a mounted volume such as\n  `/data/save-backups`) and how many versions to keep. Each game's page lists its backups under\n  Saves with a Restore button: the save on the PS5 is backed up first, so a restore can be undone.\n  Settings from the desktop app's earlier automatic backups carry over.\n- **Make room for a game.** Clean up → Make room: say how much space you need and on which PS5\n  drive, and it proposes what to clear: leftovers first, then games that can move to another PS5\n  drive, then games your Collection has a copy of to install again. Nothing without a copy is ever\n  suggested for deletion, and every step is listed before anything happens. It is also offered\n  when an install or send is short of space.\n- **Diagnose slow transfers.** Health → Diagnose slow transfers checks how the PS5 and this\n  computer are connected and lists what slows uploads down, with the fix: Wi-Fi on either side, a\n  VPN, a cable stuck at 100 Mb/s, replies that slow down while sending, a packet size (MTU)\n  mismatch, a Docker bridge network, other transfers or a speed limit in the app, and whether the\n  network or the PS5's drive is the slow side. What it cannot measure, it says. The Upload screen\n  offers it when an upload runs far below what your connection managed.\n- **Send to PS5 from Android's share menu.** Share a download link or a package (or a ZIP, 7z or\n  RAR) to PS5Upload and it asks \"Send to <console>?\". A package in your phone's storage installs\n  from where it is; one only the sharing app can read (Drive, Telegram) is copied in first, up to\n  2 GB.\n- **Open with PS5Upload.** `.pkg` and `.fpkg` files open in the desktop app (double-click on Windows\n  and Linux, Open With on macOS, where Apple's Installer stays the default), which asks before it\n  installs.\n-..."
     },
     {
       "id": "spotless-spotless-restore-prerelease",
