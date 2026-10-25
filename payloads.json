@@ -871,6 +871,36 @@
       "release_notes": "\n- **Save backups that run on their own.** Automatic save backups now run in the engine, so the\n  Docker web UI has them too, around the clock with no browser open (the desktop app backs up\n  while it runs, as before). Choose a folder (in Docker, one in a mounted volume such as\n  `/data/save-backups`) and how many versions to keep. Each game's page lists its backups under\n  Saves with a Restore button: the save on the PS5 is backed up first, so a restore can be undone.\n  Settings from the desktop app's earlier automatic backups carry over.\n- **Make room for a game.** Clean up → Make room: say how much space you need and on which PS5\n  drive, and it proposes what to clear: leftovers first, then games that can move to another PS5\n  drive, then games your Collection has a copy of to install again. Nothing without a copy is ever\n  suggested for deletion, and every step is listed before anything happens. It is also offered\n  when an install or send is short of space.\n- **Diagnose slow transfers.** Health → Diagnose slow transfers checks how the PS5 and this\n  computer are connected and lists what slows uploads down, with the fix: Wi-Fi on either side, a\n  VPN, a cable stuck at 100 Mb/s, replies that slow down while sending, a packet size (MTU)\n  mismatch, a Docker bridge network, other transfers or a speed limit in the app, and whether the\n  network or the PS5's drive is the slow side. What it cannot measure, it says. The Upload screen\n  offers it when an upload runs far below what your connection managed.\n- **Send to PS5 from Android's share menu.** Share a download link or a package (or a ZIP, 7z or\n  RAR) to PS5Upload and it asks \"Send to <console>?\". A package in your phone's storage installs\n  from where it is; one only the sharing app can read (Drive, Telegram) is copied in first, up to\n  2 GB.\n- **Open with PS5Upload.** `.pkg` and `.fpkg` files open in the desktop app (double-click on Windows\n  and Linux, Open With on macOS, where Apple's Installer stays the default), which asks before it\n  installs.\n-..."
     },
     {
+      "id": "spotless-spotless-restore-prerelease",
+      "name": "spotless [Pre-release]",
+      "filename": "Spotless-Restore_v0.2.0-beta [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/Spotless-Restore_v0.2.0-beta%20%5BPre-release%5D.elf",
+      "source": "https://github.com/abhi245y/spotless/releases",
+      "source_direct": "https://github.com/abhi245y/spotless/releases/download/v0.2.0-beta/Spotless-Restore.elf",
+      "description": "Spotless 0.2.0-beta [Pre-release] by abhi245y",
+      "last_update": "2026-10-19",
+      "version": "v0.2.0-beta",
+      "author": "abhi245y",
+      "category": "Pre-release",
+      "checksum": "ac9b1d485996af2927b5fd7a2227ff7170a9af58786293df4a6b65490db9e059",
+      "release_notes": "First public beta of Spotless: the native Spotify app on a jailbroken PS5, signed in with your Spotify account, no PSN required.\n\n### What works\n- Sign-in with the on-screen code or Spotify Connect from your phone\n- Home, browsing, songs, videos and the rest of the native app\n- Background playback while gaming\n- Pause, previous and next from the Now Playing card\n- One-time setup that persists across launches and reboots\n- `Spotless-Restore.elf` puts the original app back\n\n### Tested\nFirmware 13.00 with Spotify 01.017.000 (PPSA05688). Other firmware versions are untested; reports welcome. Spotless refuses frontend versions it does not recognise.\n\n### Install\n1. Install Spotify 01.017.000 ([package guide](https://github.com/abhi245y/spotless/blob/main/docs/PACKAGES.md)).\n2. Load `Spotless.elf` with your ELF loader or Payload Manager.\n3. Open Spotify and wait on the login screen for *UI patch installed*.\n4. Close Spotify fully, reopen and sign in.\n\nFull guide: [INSTALL.md](https://github.com/abhi245y/spotless/blob/main/INSTALL.md)\n\n### Known issues\n- **Music > Music sources > Spotify** still shows *Link* and opens Sony's account-linking flow. Spotify itself is signed in and works normally.\n\n### Assets\n- `Spotless.elf`, `Spotless-Restore.elf` and their `.sha256` files\n- `Spotless.meta.json` for loaders that read metadata\n- `merge_pkg.py` and `cleanup_console.py` (optional tools, see the docs)\n- `SHA256SUMS` covering every file\n"
+    },
+    {
+      "id": "spotless-spotless-prerelease",
+      "name": "spotless [Pre-release]",
+      "filename": "Spotless_v0.2.0-beta [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/Spotless_v0.2.0-beta%20%5BPre-release%5D.elf",
+      "source": "https://github.com/abhi245y/spotless/releases",
+      "source_direct": "https://github.com/abhi245y/spotless/releases/download/v0.2.0-beta/Spotless.elf",
+      "description": "Spotless 0.2.0-beta [Pre-release] by abhi245y",
+      "last_update": "2026-10-19",
+      "version": "v0.2.0-beta",
+      "author": "abhi245y",
+      "category": "Pre-release",
+      "checksum": "6ba14304946055f556adc1e495ebc3439bab7b9b66376f59b6c2c33618c6ad16",
+      "release_notes": "First public beta of Spotless: the native Spotify app on a jailbroken PS5, signed in with your Spotify account, no PSN required.\n\n### What works\n- Sign-in with the on-screen code or Spotify Connect from your phone\n- Home, browsing, songs, videos and the rest of the native app\n- Background playback while gaming\n- Pause, previous and next from the Now Playing card\n- One-time setup that persists across launches and reboots\n- `Spotless-Restore.elf` puts the original app back\n\n### Tested\nFirmware 13.00 with Spotify 01.017.000 (PPSA05688). Other firmware versions are untested; reports welcome. Spotless refuses frontend versions it does not recognise.\n\n### Install\n1. Install Spotify 01.017.000 ([package guide](https://github.com/abhi245y/spotless/blob/main/docs/PACKAGES.md)).\n2. Load `Spotless.elf` with your ELF loader or Payload Manager.\n3. Open Spotify and wait on the login screen for *UI patch installed*.\n4. Close Spotify fully, reopen and sign in.\n\nFull guide: [INSTALL.md](https://github.com/abhi245y/spotless/blob/main/INSTALL.md)\n\n### Known issues\n- **Music > Music sources > Spotify** still shows *Link* and opens Sony's account-linking flow. Spotify itself is signed in and works normally.\n\n### Assets\n- `Spotless.elf`, `Spotless-Restore.elf` and their `.sha256` files\n- `Spotless.meta.json` for loaders that read metadata\n- `merge_pkg.py` and `cleanup_console.py` (optional tools, see the docs)\n- `SHA256SUMS` covering every file\n"
+    },
+    {
       "id": "wk-autoloader-wk-dual-payload-prerelease",
       "name": "wk-autoloader [Pre-release]",
       "filename": "wk-dual-payload_v1.0.4 [Pre-release].elf",
