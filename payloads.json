@@ -242,6 +242,21 @@
       "release_notes": "Added 7.0x support"
     },
     {
+      "id": "ps5-linux-loader-ps5-linux-loader-10xx-diag",
+      "name": "ps5-linux-loader",
+      "filename": "ps5-linux-loader-10xx-diag_10.xx-support.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader-10xx-diag_10.xx-support.elf",
+      "source": "https://github.com/soniciso1/ps5-linux-loader/releases",
+      "source_direct": "https://github.com/soniciso1/ps5-linux-loader/releases/download/10.xx-support/ps5-linux-loader-10xx-diag.elf",
+      "description": "Added 10.XX support by soniciso1",
+      "last_update": "2026-10-25",
+      "version": "10.xx-support",
+      "author": "soniciso1",
+      "category": "Homebrew",
+      "checksum": "9b6e05453d4d6ff77b79eb289b9e208d47489bf98edda88948fd1cc6fcd7161e",
+      "release_notes": "Added 10.XX support for fat and slim not pro"
+    },
+    {
       "id": "ps5-linux-loader-ps5-linux-loader-10xx",
       "name": "ps5-linux-loader",
       "filename": "ps5-linux-loader-10xx_10.xx-support.elf",
