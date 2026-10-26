@@ -257,19 +257,19 @@
       "release_notes": "Added 10.XX support for fat and slim not pro"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.4",
+      "id": "ps5-patchdl-patchdl_0.3.5",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.4_v0.3.4.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.4_v0.3.4.elf",
+      "filename": "patchdl_0.3.5_v0.3.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.5_v0.3.5.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.4/patchdl_0.3.4.elf",
-      "description": "PatchDL 0.3.4 by knutwurst",
-      "last_update": "2026-10-21",
-      "version": "v0.3.4",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.5/patchdl_0.3.5.elf",
+      "description": "PatchDL 0.3.5 by knutwurst",
+      "last_update": "2026-10-26",
+      "version": "v0.3.5",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "752a344716e855de5265d1fa4352490ea21203b427d76ac33745174b1719b773",
-      "release_notes": "PatchDL stayed unreachable after a network change. Switching Wi-Fi off and on or pulling the cable dropped its connection, and the page didn't load again until you sent the payload once more. PatchDL now notices this and restarts its web server within a few seconds. Thanks to @FortsAle for the report in #22.\n\nTested on 11.60.\n\nSend `patchdl_0.3.4.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.3...v0.3.4\n"
+      "checksum": "4b560d3cf0937ef4e754e0f353bf9334bf3703109dc16c3a5c86985125c79908",
+      "release_notes": "- Updates now install the way the console's own updates do. Until now the console marked every PS5 game PatchDL updated as a \"fake\" install. You only noticed with disc games: without the disc, the game claimed its data was corrupted instead of asking for the disc. After a restart of the console it now asks for the disc as it should.\n- Downloads and the install notification show the game's name and cover instead of \"PatchDL\".\n- PatchDL remembers links you paste for another version. The next time that version is offered, Download starts it right away, no browser needed. If Sony no longer has it, you get the usual steps again.\n- The game card no longer says the install is finishing for a minute or two after the console is done.\n- Clearer texts while installing, in all ten languages.\n\nI found most of this while digging into #20, thanks to @pimunozsm for the patience and all the details.\n\nTested on 11.60.\n\nSend `patchdl_0.3.5.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.4...v0.3.5\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
