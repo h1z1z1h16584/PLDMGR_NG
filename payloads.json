@@ -109,17 +109,17 @@
     {
       "id": "liveshell-liveshell",
       "name": "LiveShell",
-      "filename": "liveshell_v1.5.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.5.2.elf",
+      "filename": "liveshell_v1.6.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/liveshell_v1.6.0.elf",
       "source": "https://github.com/ZiZc3/LiveShell/releases",
-      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.5.2/liveshell.elf",
-      "description": "LiveShell Engine v1.5.2 by ZiZc3",
-      "last_update": "2026-10-24",
-      "version": "v1.5.2",
+      "source_direct": "https://github.com/ZiZc3/LiveShell/releases/download/v1.6.0/liveshell.elf",
+      "description": "LiveShell Engine v1.6.0 by ZiZc3",
+      "last_update": "2026-10-26",
+      "version": "v1.6.0",
       "author": "ZiZc3",
       "category": "Homebrew",
-      "checksum": "99dd31a3cd3d00133c24ea66d0b797a2e2d7a5a3dce2e4e77f706b870aae5557",
-      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.5.2</h2>\r\n\r\n<p align=\"center\">Discover fixes.</p>\r\n\r\n---\r\n\r\n### Fixes\r\n\r\n- **Discover downloads** `Download failed: send 0x80431073, status 0`.\r\n- **Downloads continue where they stopped.** If the connection drops, LiveShell tries again by itself (up to 3 times) and continues from where it stopped instead of starting over. Press Download again later and it still continues.\r\n- **Discover / All pages:** the next page now starts at its first wallpaper, not at the top of the app.\r\n- 4K and 2K wallpapers were missing their banner picture in the PS5 window.\r\n- **Sound filter in Discover**: a new **Sound** button next to 4K and 1080p shows only wallpapers with sound. Wallpapers with sound also get a small speaker badge."
+      "checksum": "99335e75312d6ffcce91f6a5b659f0191ec057c744b2b3d5b899db5a88b80ac3",
+      "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.6.0</h2>\r\n\r\n<p align=\"center\">Animated avatars.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **Animated avatars** 🎞️\r\n  - Give every PS5 user a **moving profile picture**: an **APNG** (animated PNG) or a **GIF**.\r\n  - It shows **everywhere** the avatar appears: the home screen, your profile, the user switch, and the **login screen**, also after rest mode.\r\n  - Choose it in the new **Avatar** panel or in **Settings → Users**.\r\n  - Put your files in **`/data/LiveShell/avatar/`** or on a USB drive in **`liveshell/avatar/`** Or **upload** one from the phone/PC page.\r\n  - Every pick is prepared on the PS5 so it plays cleanly: GIFs become APNGs because its what ps5 only support.\r\n\r\n<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/avatar-showcase.gif?raw=true\" width=\"720\" alt=\"Animated avatars on the PS5\">\r\n</p>\r\n\r\n- **Discover: download counts**: **Popular** shows how often each wallpaper was downloaded.\r\n- **Discover: over 3,190 wallpapers**: 582 new wallpapers and 244 wallpapers with sound.\r\n- **Now on Payload Manager**: Install it from there and you can update payload easily.\r\n\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n4.**Avatar**: put GIF or APNG in `/data/LiveShell/avatar/`, then open the **Avatar** panel and pick one.\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your video doesn't play, drag it onto convert_for_ps5.bat from LiveShell-Converter.zip and wait until its done."
     },
     {
       "id": "ps-play-psplay-2.1",
