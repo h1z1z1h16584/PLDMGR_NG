@@ -658,7 +658,7 @@
       "author": "drakmor",
       "category": "Pre-release",
       "checksum": "7163472217a2390f5bcbe3b61a96963976f7b7bd84d960b8d926f35b9cbecf28",
-      "release_notes": "- Redesigned the web interface for TV screens and gamepad navigation.\r\n- Added PKG installation from console/external storage and streaming installation from a PC browser (thanks to https://github.com/itsPLK/ps5-pkg-manager/ for the ideas).\r\n- Added installed patch/DLC information and individual removal.\r\n- Added backport installation, replacement and deletion.\r\n- Added support for param.sfo, eboot2.bin and homebrew IDs beyond FAKE/LAPY.\r\n- Enabled LAN access to the API by default.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta7...1.7beta8"
+      "release_notes": "- Redesigned the web interface for TV screens and gamepad navigation.\r\n- Added PKG installation from console/external storage and streaming installation from a PC browser (thanks to https://github.com/itsPLK/ps5-pkg-manager/ for the ideas).\r\n- Added installed patch/DLC information and individual removal.\r\n- Added backport installation, replacement and deletion.\r\n- Added support for param.sfo, eboot2.bin and homebrew IDs beyond FAKE/LAPY.\r\n- Added the ability to install PS4 games from images and folders.\r\n- Enabled LAN access to the API by default.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta7...1.7beta8"
     },
     {
       "id": "etahen-etahen-prerelease",
