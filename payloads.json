@@ -648,17 +648,17 @@
     {
       "id": "shadowmountplus-shadowmountplus-prerelease",
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus_1.7beta8 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta8%20%5BPre-release%5D.elf",
+      "filename": "shadowmountplus_1.7beta9 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta9%20%5BPre-release%5D.elf",
       "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta8/shadowmountplus.elf",
-      "description": "ShadowMountPlus 1.7beta8 [Pre-release] by drakmor",
-      "last_update": "2026-10-26",
-      "version": "1.7beta8",
+      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta9/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta9 [Pre-release] by drakmor",
+      "last_update": "2026-10-27",
+      "version": "1.7beta9",
       "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "7163472217a2390f5bcbe3b61a96963976f7b7bd84d960b8d926f35b9cbecf28",
-      "release_notes": "- Redesigned the web interface for TV screens and gamepad navigation.\r\n- Added PKG installation from console/external storage and streaming installation from a PC browser (thanks to https://github.com/itsPLK/ps5-pkg-manager/ for the ideas).\r\n- Added installed patch/DLC information and individual removal.\r\n- Added backport installation, replacement and deletion.\r\n- Added support for param.sfo, eboot2.bin and homebrew IDs beyond FAKE/LAPY.\r\n- Added the ability to install PS4 games from images and folders.\r\n- Enabled LAN access to the API by default.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta7...1.7beta8"
+      "checksum": "928a5a7e33d2801c1c14a5ed8ad83fcab07957ba3a5daccd382dba67d408b3e2",
+      "release_notes": "- Added SMB2/SMB3 support for network file transfers and installation. \r\n  Big thanks to @owendswang and @john-tornblom for the libraries.\r\n- Added installation of game folders and images into a selected local directory.\r\n- Improved PKG upload speed, SMB transfers and installation reliability.\r\n- Fixed intermittent Input/output error failures during installation.\r\n- Added file deletion and folder creation in the installation browser.\r\n- Added free-space information for local drives and SMB shares.\r\n- Improved mobile and gamepad navigation,\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta8...1.7beta9"
     },
     {
       "id": "etahen-etahen-prerelease",
