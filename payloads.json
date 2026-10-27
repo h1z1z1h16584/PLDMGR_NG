@@ -257,19 +257,19 @@
       "release_notes": "Added 10.XX support for fat and slim not pro"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.7",
+      "id": "ps5-patchdl-patchdl_0.3.8",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.7_v0.3.7.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.7_v0.3.7.elf",
+      "filename": "patchdl_0.3.8_v0.3.8.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.8_v0.3.8.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.7/patchdl_0.3.7.elf",
-      "description": "PatchDL 0.3.7 by knutwurst",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.8/patchdl_0.3.8.elf",
+      "description": "PatchDL 0.3.8 by knutwurst",
       "last_update": "2026-10-27",
-      "version": "v0.3.7",
+      "version": "v0.3.8",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "8201130bb9834860fcfd289ccffec6a45d99becc5678b0bdb0860cf4bd60a888",
-      "release_notes": "- Downloads made with PatchDL before 0.3.5 now get the same check as new ones. Before, 0.3.6 never noticed when such a download didn't fit the installed game, so it didn't offer to replace the game (#20). PatchDL now fetches the missing details from Sony when you press Install. You don't need to download again.\n\nTested on 11.60.\n\nSend `patchdl_0.3.7.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.6...v0.3.7\n\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.6...v0.3.7"
+      "checksum": "200d6af47be76fbb0328e4041f9201bf0be3e59de5d4864878dadefebcfba1f8",
+      "release_notes": "- PS5 games can go back to an older version (#24). Under Other versions, older versions now have a Downgrade button. A PS5 update holds the whole game, so PatchDL removes the installed game and puts the older version on, the same way it handles an update that doesn't fit the installed game. Your saves stay, but a save made with the newer version may not load in the older one. Turn off updates for that game afterwards, or Update all brings it back to the newest version.\n- After an install the card switches straight to the new version. PatchDL still deletes the package, but it no longer shows a Delete button for a minute while it waits to do so.\n\nDowngrade tested on 11.60 with Ghostwire: Tokyo.\n\nSend `patchdl_0.3.8.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.7...v0.3.8\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
