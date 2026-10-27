@@ -257,19 +257,19 @@
       "release_notes": "Added 10.XX support for fat and slim not pro"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.6",
+      "id": "ps5-patchdl-patchdl_0.3.7",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.6_v0.3.6.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.6_v0.3.6.elf",
+      "filename": "patchdl_0.3.7_v0.3.7.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.7_v0.3.7.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.6/patchdl_0.3.6.elf",
-      "description": "PatchDL 0.3.6 by knutwurst",
-      "last_update": "2026-10-26",
-      "version": "v0.3.6",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.7/patchdl_0.3.7.elf",
+      "description": "PatchDL 0.3.7 by knutwurst",
+      "last_update": "2026-10-27",
+      "version": "v0.3.7",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "bc6e52e5486921bb6fab76e1ab1ada1a0178479e2e6f2d18b464d264d6f6d4fc",
-      "release_notes": "- Some disc builds don't take Sony's update because the update builds on a newer base game. Black Myth: Wukong is one of them (#20). PatchDL now checks this before installing. If the update doesn't fit, it asks once, removes the game and installs the update as the whole game. PS5 updates carry the complete game anyway. Your saves stay, and a disc game keeps using its disc as the license.\n- The install notification shows the game's cover in that case too.\n\nTested on 11.60.\n\nSend `patchdl_0.3.6.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.5...v0.3.6\n\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.5...v0.3.6"
+      "checksum": "8201130bb9834860fcfd289ccffec6a45d99becc5678b0bdb0860cf4bd60a888",
+      "release_notes": "- Downloads made with PatchDL before 0.3.5 now get the same check as new ones. Before, 0.3.6 never noticed when such a download didn't fit the installed game, so it didn't offer to replace the game (#20). PatchDL now fetches the missing details from Sony when you press Install. You don't need to download again.\n\nTested on 11.60.\n\nSend `patchdl_0.3.7.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.6...v0.3.7\n\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.6...v0.3.7"
     },
     {
       "id": "ps5shopappkg-dpiv2",
