@@ -871,19 +871,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-8.7.0-prerelease",
+      "id": "ps5upload-ps5upload-8.8.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-8.7.0_v8.7.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.7.0_v8.7.0%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-8.8.1_v8.8.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.8.1_v8.8.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.7.0/ps5upload-8.7.0.elf",
-      "description": "v8.7.0 [Pre-release] by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.1/ps5upload-8.8.1.elf",
+      "description": "v8.8.1 [Pre-release] by phantomptr",
       "last_update": "2026-10-28",
-      "version": "v8.7.0",
+      "version": "v8.8.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "2ed23dcf25ea2ef08d9976b34a399415f991171cc28f014ff0e86a038e7bf789",
-      "release_notes": "\n- **A simpler sidebar: 25 screens became 21, and every feature is still there.** Screens that\n  did overlapping jobs are now one screen each, named by what you do there. Old links,\n  bookmarks, pinned screens and hidden screens carry over by themselves.\n  - **Send to PS5** replaces Upload and Install Package. Drop or pick anything (a game folder,\n    an image, an archive, a package, any file) and the app works out what to do with it,\n    a package's Stream & install included. Below are install from a link or an archive, the\n    queue, and the packages already on the PS5 (USB drives and copies put there before, with\n    Install all).\n  - **Workshop** replaces Convert Games and Game images. Pick a game once; then convert it, or\n    use **Look Inside** to browse an image or package and write an edited copy, or (macOS and\n    Linux) **Open as a Drive**.\n  - **Shared Folders** replaces Network shares and Mesh Drive: your NAS and servers, the shares\n    the PS5 uses, and your Mesh Drives on one page.\n  - **Accounts** replaces Profile and Remote Play: users, account IDs and avatars, then Remote\n    Play's checklist, the sign-in step and the pairing PIN in the order they are done.\n  - **Payloads** (was Payloads & processes): Processes and Ports are one **Running** tab.\n- **Games opens on one list of every game.** **All** shows each game once, wherever its copies\n  are (installed, on the PS5's drives, on this computer), and opens its game page. The other\n  views are named by place: **Installed**, **On PS5 Storage**, **On This Computer**.\n- **Minion: Games and Library are one Games entry,** with an Installed / On Drives & Shares\n  switch.\n- **Home:** Upload and Install PKG are one **Send to PS5** tile; the freed tile sends a payload.\n- Screen names are Title Case in English (Save Data, Clean Up, Activity & Logs, Bug Report).\n\n"
+      "checksum": "54d9feb2bb8f876d829f3305d4aaf90244d48dff0aa94468b26ddec17a6dda56",
+      "release_notes": "\n- **\"Convert…\" opens Workshop with the game picked again.** Since 8.7.0, Convert… from Files,\n  a game page, a Collection card and the Send as One Image card opened an empty Workshop:\n  they still linked to the old Convert screen, and the redirect to Workshop lost the game.\n  They go straight to Workshop now, and a test keeps every link off the old screens.\n- **The web UI and Docker take .zip, .7z and .rar archives (#529).** Pick an archive on the\n  server and it is unpacked on the way to the PS5, as in the desktop app: nothing extra is\n  written next to it on the NAS. The web UI used to refuse archives with \"isn't available in\n  the browser yet\".\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
