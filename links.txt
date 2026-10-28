@@ -45,7 +45,7 @@ github:soniciso1/ps5-linux-loader
 github:srbraboo/ps5-webkit-autoloader
 github:X-F1REBALL-X/wk-autoloader
 github:abhi245y/spotless
-github:
+github:strongt1me/ps5-usb-formatierer
 github:
 github:
 github:
