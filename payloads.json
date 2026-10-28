@@ -257,19 +257,19 @@
       "release_notes": "Added 10.XX support for fat and slim not pro"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.10",
+      "id": "ps5-patchdl-patchdl_0.3.11",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.10_v0.3.10.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.10_v0.3.10.elf",
+      "filename": "patchdl_0.3.11_v0.3.11.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.11_v0.3.11.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.10/patchdl_0.3.10.elf",
-      "description": "PatchDL 0.3.10 by knutwurst",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.11/patchdl_0.3.11.elf",
+      "description": "PatchDL 0.3.11 by knutwurst",
       "last_update": "2026-10-28",
-      "version": "v0.3.10",
+      "version": "v0.3.11",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "4903a63406a7cad5ba47380ff43fb957133d71da6ff883ffa29c9fd55fda08b2",
-      "release_notes": "- Some updates the console turns down for the installed game without an error. It reads the package header and stops, as with Wukong from disc (#20). PatchDL used to show \"finishing\" for that and wait. It now shows the install as stopped, and pressing Install again asks once whether it may put the update on as the whole game. Your saves stay, and a disc game keeps using its disc as the license.\n- A finished PS5 download whose game is gone shows up in the list again, marked Not installed (#24). This happens when a replace removed the game but didn't get to install the new version. Press Install and the download goes on as the whole game. Delete removes it.\n- `/api/pkgmeta/<title id>` shows which base the installed game and the download build on, and why PatchDL couldn't read one of them.\n\nThe list of downloads without a game was tested on 11.60. I couldn't reproduce the turned-down update here, it needs a disc build that doesn't match the update.\n\nSend `patchdl_0.3.10.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.9...v0.3.10\n"
+      "checksum": "c008acd9fd7560a91c895e83a1042a1f5f9a689f910dcd7e57c3739dc378da92",
+      "release_notes": "- On a game installed to the M.2, PatchDL sometimes couldn't read the game's `app.json`, so it never confirmed a finished install and the card stayed on finishing (#24). Reads of a game's files now retry, and when `app.json` stays unreadable, the new version alone confirms the install after 2 minutes. The package is kept in that case.\n- An install PatchDL can't confirm now ends after 5 minutes instead of 15, and the log says why: version missing, `app.json` unreadable, or `app.json` naming another package.\n- `/api/diag/<title id>` collects everything PatchDL knows about one game in one file, for bug reports.\n\nI couldn't test the M.2 part myself, my console has no M.2.\n\nSend `patchdl_0.3.11.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n"
     },
     {
       "id": "ps5-usb-formatierer-usb_format",
@@ -794,21 +794,6 @@
       "category": "Pre-release",
       "checksum": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
       "release_notes": "## Highlights\r\n\r\n**DLC**\r\n- Each title shows how many DLC are installed for it, with names and sizes\r\n- Dump DLC on the running game dumps its DLC alone, next to a dump you made before, without copying the game again\r\n- With several DLC you pick which ones; a picked DLC that is there already is replaced\r\n- DLC dumps now carry their metadata (param.json, icon) from the installed package (#29)\r\n- DLC that only unlock content in the game are never mounted by the console and have nothing to dump; the page says so instead of hiding the button\r\n\r\n**Titles and dumps**\r\n- A DUMPED badge on every title that is dumped somewhere, UNFINISHED for one that was cut short\r\n- New dump folders carry the app title: `PPSA01325-app0_ASTRO's_PLAYROOM` (setting `folder_titles`, on by default)\r\n- Rename on the Dumps page switches every dump to names with or without the title\r\n- Tap a dump's path to copy it, and the Dumps list fits a phone\r\n\r\n**Queue**\r\n- Up to 64 titles instead of 16\r\n\r\n**Fixes**\r\n- Titles stuck at 99 %  were held as installing for good and could not be dumped\r\n- The UNFINISHED badge was drawn far too big\r\n\r\n## Notes\r\n- Dumps made with 2.00 or earlier keep their names and are still recognised. Use Rename on the Dumps page if you want the titles on them too.\r\n- A dump ShadowMount runs a game from is not renamed, because the link points at its folder.\r\n\r\n## Thanks\r\nThanks to @MangoScango for #29, which completes the DLC dumps with their metadata.\r\n\r\n## For developers\r\nBuilt on [webhb](https://github.com/slopmaster33/webhb) 0.4.1. If its download does not work, `webhb-0.4.1.tar.gz` is attached; build with `WEBHB_TARBALL=webhb-0.4.1.tar.gz make`."
-    },
-    {
-      "id": "ps5-patchdl-patchdl_0.3.10-diag-prerelease",
-      "name": "ps5-patchdl [Pre-release]",
-      "filename": "patchdl_0.3.10-diag_v0.3.10-diag [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/patchdl_0.3.10-diag_v0.3.10-diag%20%5BPre-release%5D.elf",
-      "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.10-diag/patchdl_0.3.10-diag.elf",
-      "description": "PatchDL 0.3.10 diagnostic build [Pre-release] by knutwurst",
-      "last_update": "2026-10-28",
-      "version": "v0.3.10-diag",
-      "author": "knutwurst",
-      "category": "Pre-release",
-      "checksum": "1b59fbb72dc18714492f2ea6d57e0205cf55a047f3f461762ccfb09e17afef49",
-      "release_notes": "Diagnostic build for #24, not a regular release. It's 0.3.10 plus `/api/diag/<title id>`, which collects what PatchDL knows about one game and which files the console keeps for it on every drive.\n\nUse it only if I asked you to in an issue. I'll delete this build once the report is in.\n"
     },
     {
       "id": "ps5-pkg-manager-pkgmgr_v1.2.1-prerelease",
