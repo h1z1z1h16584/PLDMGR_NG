@@ -257,19 +257,19 @@
       "release_notes": "Added 10.XX support for fat and slim not pro"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.9",
+      "id": "ps5-patchdl-patchdl_0.3.10",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.9_v0.3.9.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.9_v0.3.9.elf",
+      "filename": "patchdl_0.3.10_v0.3.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.10_v0.3.10.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.9/patchdl_0.3.9.elf",
-      "description": "PatchDL 0.3.9 by knutwurst",
-      "last_update": "2026-10-27",
-      "version": "v0.3.9",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.10/patchdl_0.3.10.elf",
+      "description": "PatchDL 0.3.10 by knutwurst",
+      "last_update": "2026-10-28",
+      "version": "v0.3.10",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "6e5f208899bc3db0351c3372c6441b7f29945dba4ca3400d6386b01151dc6d1c",
-      "release_notes": "- PS4 games can go back to an older version too (#24). A PS4 patch builds on the base game, so PatchDL removes only the installed patch and puts the older one on. The game itself stays. Your saves stay, but a save made with the newer version may not load in the older one.\n- Other versions stays available when a game's updates are switched off. The switch now only keeps the game out of Update all and the normal update button, so you can still pick a version by hand after a downgrade.\n- The game list follows a game you start a download, install or downgrade on. When the game moves between Up to date and Updates, the list switches tab with it, so its progress stays in view.\n- When a game has to be replaced (downgrade, or an update that doesn't fit the disc), PatchDL no longer waits up to half an hour if the console doesn't remove the old version. After a second try it stops with a message to close the game if it's running and try again. Nothing is lost at that point, the game is still there.\n\nPS4 downgrade tested on 11.60 with inFAMOUS First Light, 01.04 down to 01.01.\n\nSend `patchdl_0.3.9.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.8...v0.3.9\n"
+      "checksum": "4903a63406a7cad5ba47380ff43fb957133d71da6ff883ffa29c9fd55fda08b2",
+      "release_notes": "- Some updates the console turns down for the installed game without an error. It reads the package header and stops, as with Wukong from disc (#20). PatchDL used to show \"finishing\" for that and wait. It now shows the install as stopped, and pressing Install again asks once whether it may put the update on as the whole game. Your saves stay, and a disc game keeps using its disc as the license.\n- A finished PS5 download whose game is gone shows up in the list again, marked Not installed (#24). This happens when a replace removed the game but didn't get to install the new version. Press Install and the download goes on as the whole game. Delete removes it.\n- `/api/pkgmeta/<title id>` shows which base the installed game and the download build on, and why PatchDL couldn't read one of them.\n\nThe list of downloads without a game was tested on 11.60. I couldn't reproduce the turned-down update here, it needs a disc build that doesn't match the update.\n\nSend `patchdl_0.3.10.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n**Full Changelog**: https://github.com/knutwurst/ps5-patchdl/compare/v0.3.9...v0.3.10\n"
     },
     {
       "id": "ps5-usb-formatierer-usb_format",
@@ -511,19 +511,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-8.5.1",
+      "id": "ps5upload-ps5upload-8.6.1",
       "name": "ps5upload",
-      "filename": "ps5upload-8.5.1_v8.5.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-8.5.1_v8.5.1.elf",
+      "filename": "ps5upload-8.6.1_v8.6.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-8.6.1_v8.6.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.5.1/ps5upload-8.5.1.elf",
-      "description": "v8.5.1 by phantomptr",
-      "last_update": "2026-10-27",
-      "version": "v8.5.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.6.1/ps5upload-8.6.1.elf",
+      "description": "v8.6.1 by phantomptr",
+      "last_update": "2026-10-28",
+      "version": "v8.6.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "2039eb340f6c09f7fce6bd726ad526adb68e9e924351b21dba74720025267481",
-      "release_notes": "- **Packages with Windows bookkeeping folders convert to game images again (#523, thanks\r\n  frzzyone).** An empty `System Volume Information` folder made the read-back check fail after\r\n  compression. Package sources now omit the same OS junk as game folders and image readers,\r\n  while keeping real empty game folders and the original package's file offsets.\r\n- **Sidebar sections make more sense.** Games & content comes first, then Files & storage;\r\n  **Console** holds the console, its payloads and processes, its profile and Remote Play;\r\n  **Connect** holds Connection, Devices and the Health Check; **Diagnostics** holds Activity &\r\n  logs, Notifications and Shell; **App** holds Settings and Help. \"Edit image on this computer\"\r\n  is now **Game images**.\r\n- **Hundreds of untranslated labels translated** in every language, Mesh Drive among them, and\r\n  a few wrong ones fixed (Chinese \"running\" read as jogging). Persian is now checked like the\r\n  other languages.\r\n\r\n"
+      "checksum": "3e7d67537a2eac9f92ae9330a90682499610b06a5058dd47cb99c2b567c62671",
+      "release_notes": "- **Undo sign-in covers every account slot used.** The copy kept before np-fake-signin now\r\n  also takes a later slot's settings, untouched, when the account moved to another slot since\r\n  the first copy; Undo puts those back too.\r\n- **Restoring a save gives back exactly the save backed up.** A save-details folder that was\r\n  not there at backup time is emptied on restore instead of mixing newer details with the older\r\n  save (the automatic safety backup keeps them).\r\n- **A save's own icon shows for games no longer installed** in Minion's Saves.\r\n- **Download to PS5 from an .lz4 link:** an image that ends before the size its header gives\r\n  is filled out instead of failing after the whole download, and a stream in several parts\r\n  announces the image's full size.\r\n- **\"Unpack on the way\" switches the folder back and forth again** once the PS5's drives are\r\n  known.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
