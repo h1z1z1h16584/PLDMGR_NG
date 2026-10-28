@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.47.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.47.elf",
+      "filename": "usb_format_v2.6.48.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.48.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.47/usb_format.elf",
-      "description": "USB-Formatierer 2.6.47 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.48/usb_format.elf",
+      "description": "USB-Formatierer 2.6.48 by strongt1me",
       "last_update": "2026-10-28",
-      "version": "v2.6.47",
+      "version": "v2.6.48",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "ca21a805cd83b915ec35a4a1011137bae7aab6830daad0ad09fcdecd2651110c",
-      "release_notes": "- Teilkopien eines abgebrochenen Kopierens werden angezeigt (mit Größe) und lassen sich verwerfen (Web und Windows-App).\n- Neu: „Prüfsumme erstellen“ legt neben Abbildern ohne Prüfsumme eine .sha256 an (Format von sha256sum); vorhandene bleiben unberührt.\n- Neu: Spiel-Einzelheiten per Klick/Enter (Web) bzw. Doppelklick (Windows): Titel-ID, Version, Art, Größe, größte Einträge, zugehörige Dateien, Prüfsumme.\n- Duplikate: „Ältere Version auswählen“ bzw. „Ältere Duplikate anhaken“ wählt die ältere Version zum Löschen vor.\n- Weboberfläche: Knopfleisten brechen bei schmaler Anzeige um (PKG-Reiter ragte über den Rand).\n- Entwicklung: Layout-Tests in allen Sprachen (Web und Windows), Tastatur-Test der Weboberfläche, Browser-Test in der CI.\n"
+      "checksum": "6818213ebb292eca07993ade24b75f2fc63accf01c09444e97ed4878a04c137f",
+      "release_notes": "- Neu: „Aufräumen“ findet Verwaistes (Prüfsummen/Dump-Infos ohne Spiel, Backport-Ordner ohne Spiel, leere Spielordner) und löscht nur, was angehakt wird (Web und Windows-App).\n- Neu: Ordner-Spiele bekommen eine Prüfsummenliste (<Name>.manifest.sha256, sha256sum-Format); „Spiele prüfen“ meldet geänderte, fehlende und neue Dateien. Die Liste wird mit dem Spiel kopiert und gelöscht.\n- Neu: Kopieraufträge lassen sich in eine Warteschlange stellen und laufen nacheinander (Web und Windows-App); ein Abbruch leert den Rest.\n- Weboberfläche: Diagnose-Bericht (kopierbar, ohne Seriennummern/Adressen) in der Fußzeile; der Verlauf zeigt die neuen Auftragsarten.\n- Fortschritt: Tempo und Restzeit beginnen bei jedem Schritt (Kopieren, Prüfen, nächstes Spiel) neu.\n- Entwicklung: Selbsttest der gebauten Programme (--selftest: Übersetzungen, Helfer-Prüfsumme, ELF, alle Reiter) in der CI; Layout-, Tastatur- und Browser-Tests.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
