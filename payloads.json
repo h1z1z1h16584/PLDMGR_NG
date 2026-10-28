@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.48.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.48.elf",
+      "filename": "usb_format_v2.6.49.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.49.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.48/usb_format.elf",
-      "description": "USB-Formatierer 2.6.48 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.49/usb_format.elf",
+      "description": "USB-Formatierer 2.6.49 by strongt1me",
       "last_update": "2026-10-28",
-      "version": "v2.6.48",
+      "version": "v2.6.49",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "6818213ebb292eca07993ade24b75f2fc63accf01c09444e97ed4878a04c137f",
-      "release_notes": "- Neu: „Aufräumen“ findet Verwaistes (Prüfsummen/Dump-Infos ohne Spiel, Backport-Ordner ohne Spiel, leere Spielordner) und löscht nur, was angehakt wird (Web und Windows-App).\n- Neu: Ordner-Spiele bekommen eine Prüfsummenliste (<Name>.manifest.sha256, sha256sum-Format); „Spiele prüfen“ meldet geänderte, fehlende und neue Dateien. Die Liste wird mit dem Spiel kopiert und gelöscht.\n- Neu: Kopieraufträge lassen sich in eine Warteschlange stellen und laufen nacheinander (Web und Windows-App); ein Abbruch leert den Rest.\n- Weboberfläche: Diagnose-Bericht (kopierbar, ohne Seriennummern/Adressen) in der Fußzeile; der Verlauf zeigt die neuen Auftragsarten.\n- Fortschritt: Tempo und Restzeit beginnen bei jedem Schritt (Kopieren, Prüfen, nächstes Spiel) neu.\n- Entwicklung: Selbsttest der gebauten Programme (--selftest: Übersetzungen, Helfer-Prüfsumme, ELF, alle Reiter) in der CI; Layout-, Tastatur- und Browser-Tests.\n"
+      "checksum": "ae732a19899b28ce2056e13dfe079c60cd008a976c80696f18b629fffc3a18b5",
+      "release_notes": "- Weboberfläche: Die Warteschlange für Kopieraufträge übersteht ein Neuladen der Seite (im Browser gemerkt).\n- Weboberfläche: In der Ziel-Auswahl stehen „zu wenig Platz“ und „FAT32: keine Dateien über 4 GB“ direkt beim Laufwerk; vorgewählt wird das erste Ziel, auf das es passt.\n- Weboberfläche: Doppelte Spiele mit gleicher Version und genau gleicher Größe werden als wahrscheinliche Kopie erkannt; die überzählige Kopie lässt sich zum Löschen vorwählen.\n- Entwicklung: tools/release.py wartet nach dem Veröffentlichen auf die CI, startet gescheiterte Läufe neu und prüft die angehängten Dateien (--check für ein fertiges Release); der Download der mke2fs-Quellen wiederholt sich bei Netzfehlern.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -663,17 +663,17 @@
     {
       "id": "shadowmountplus-shadowmountplus-prerelease",
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus_1.7beta9 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta9%20%5BPre-release%5D.elf",
+      "filename": "shadowmountplus_1.7beta10 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta10%20%5BPre-release%5D.elf",
       "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta9/shadowmountplus.elf",
-      "description": "ShadowMountPlus 1.7beta9 [Pre-release] by drakmor",
-      "last_update": "2026-10-27",
-      "version": "1.7beta9",
+      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta10/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta10 [Pre-release] by drakmor",
+      "last_update": "2026-10-28",
+      "version": "1.7beta10",
       "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "928a5a7e33d2801c1c14a5ed8ad83fcab07957ba3a5daccd382dba67d408b3e2",
-      "release_notes": "- Added SMB2/SMB3 support for network file transfers and installation. \r\n  Big thanks to @owendswang and @john-tornblom for the libraries.\r\n- Added installation of game folders and images into a selected local directory.\r\n- Improved PKG upload speed, SMB transfers and installation reliability.\r\n- Fixed intermittent Input/output error failures during installation.\r\n- Added file deletion and folder creation in the installation browser.\r\n- Added free-space information for local drives and SMB shares.\r\n- Improved mobile and gamepad navigation,\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta8...1.7beta9"
+      "checksum": "8c6798232ae2a8fbcd209ab97fc4f8d4d47cf23b7eecfaa6349c0bfeb8e4a3d3",
+      "release_notes": "- Added safe USB drive ejection from the web interface.\r\n- Enabled library scans and operations on other games during gameplay while protecting the active game.\r\n- Fixed SMB guest connections and added a guest/authenticated access switch.\r\n- Added a read-only mode for SMB connections.\r\n- Removed forced closure of FPKG games when entering Rest Mode.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta9...1.7beta10"
     },
     {
       "id": "etahen-etahen-prerelease",
