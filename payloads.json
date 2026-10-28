@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.46.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.46.elf",
+      "filename": "usb_format_v2.6.47.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.47.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.46/usb_format.elf",
-      "description": "USB-Formatierer 2.6.46 by strongt1me",
-      "last_update": "2026-10-27",
-      "version": "v2.6.46",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.47/usb_format.elf",
+      "description": "USB-Formatierer 2.6.47 by strongt1me",
+      "last_update": "2026-10-28",
+      "version": "v2.6.47",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "e4dd8667773dd1e1c25af9336f85b4bb2c890339e1833a34c7e3eb4db06b455f",
-      "release_notes": "- Kopieren: Ein abgebrochenes oder fehlgeschlagenes Kopieren lässt seine Teilkopie liegen; dieselbe Auswahl erneut kopieren setzt fort (gleiche Dateien werden per Prüfsumme übernommen, abweichende neu kopiert).\n- Neu: „Spiele prüfen“ – Abbilder werden gegen ihre .sha256-Datei geprüft (Web und Windows-App).\n- Dialoge zeigen den freien Platz danach (Kopieren, Löschen); bei Duplikaten wird die ältere Version gekennzeichnet; die Spieleliste der Weboberfläche ist durchsuchbar.\n- Windows-App: unerwartete Fehler kommen in fehler.log, „Bericht kopieren“ (auch Strg+Umschalt+B).\n- Entwicklung: Browser-Test der Weboberfläche und weitere Tests in der CI; Selbsttest nach dem PS5-Update.\n"
+      "checksum": "ca21a805cd83b915ec35a4a1011137bae7aab6830daad0ad09fcdecd2651110c",
+      "release_notes": "- Teilkopien eines abgebrochenen Kopierens werden angezeigt (mit Größe) und lassen sich verwerfen (Web und Windows-App).\n- Neu: „Prüfsumme erstellen“ legt neben Abbildern ohne Prüfsumme eine .sha256 an (Format von sha256sum); vorhandene bleiben unberührt.\n- Neu: Spiel-Einzelheiten per Klick/Enter (Web) bzw. Doppelklick (Windows): Titel-ID, Version, Art, Größe, größte Einträge, zugehörige Dateien, Prüfsumme.\n- Duplikate: „Ältere Version auswählen“ bzw. „Ältere Duplikate anhaken“ wählt die ältere Version zum Löschen vor.\n- Weboberfläche: Knopfleisten brechen bei schmaler Anzeige um (PKG-Reiter ragte über den Rand).\n- Entwicklung: Layout-Tests in allen Sprachen (Web und Windows), Tastatur-Test der Weboberfläche, Browser-Test in der CI.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -508,7 +508,7 @@
       "author": "itsPLK",
       "category": "Networking & Servers",
       "checksum": "27fd335764270716972faea399a5cc7810b9e49a21abf4966d9759580756cb19",
-      "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: [@tidewell](https://github.com/tidewell), [@notmaj0r](https://github.com/notmaj0r))\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
+      "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
       "id": "ps5upload-ps5upload-8.5.1",
