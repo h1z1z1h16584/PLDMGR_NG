@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.58.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.58.elf",
+      "filename": "usb_format_v2.6.59.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.59.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.58/usb_format.elf",
-      "description": "USB-Formatierer 2.6.58 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.59/usb_format.elf",
+      "description": "USB-Formatierer 2.6.59 by strongt1me",
       "last_update": "2026-10-29",
-      "version": "v2.6.58",
+      "version": "v2.6.59",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "6115a428f430dde9afc862f44d4302cf20c22f80180df46579c093b590358f08",
-      "release_notes": "- PS5-USB-Formatierer: Die Spieleliste stürzte beim Laden der Spielbilder ab, wenn noch keine Verbindung zur PS5 bestand (in 2.6.57 fehlen deshalb die Linux-Fassungen).\n- Enthält alles aus 2.6.57:\n  - Robuster gegen manipulierte Abbilder: „Inhalt vergleichen“ (Abbild gegen Ordner) erkennt Ordnerschleifen und FAT-Schleifen sofort, lässt sich jederzeit abbrechen und begrenzt Speicher und Umfang; Bereiche hinter der gültigen Länge einer exFAT-Datei zählen als Nullen (wie beim Betriebssystem).\n  - Spielbilder: auch große Bilder in UFS2-Abbildern (.ffpkg) werden angezeigt; Spiele ohne Bild fragt die Weboberfläche nicht bei jedem Neuaufbau erneut an.\n  - Auswerfen: der Hinweis „braucht ShadowMountPlus 1.7“ erscheint nur noch, wenn das feststeht; wird ShadowMountPlus erst später gestartet, merkt die Weboberfläche das; die Seriennummer wird mitgeprüft.\n  - PS5-USB-Formatierer: Einstellungen gehen weder bei einer kaputten Einstellungsdatei noch nach einem gescheiterten Speichern (gesperrte Datei) verloren; nach dem Wechsel zu einer anderen PS5 gelten deren Angaben (Auswerfen, Fehlerbericht); nach dem Neuverbinden bleiben Häkchen und Bilder in der Spieleliste sichtbar.\n  - Tests: neue Belastungstests für den Abbild-Leser (zufällig und gezielt verstümmelte exFAT-/UFS2-Abbilder) und die HTTP-API (tausende kaputte Anfragen, fehlerhafte Antworten von ShadowMountPlus) – beide unter AddressSanitizer in der CI.\n"
+      "checksum": "487776c120602e4eb69b5b1cc8726b421c4d906848e6dd9a30686b60ac85684b",
+      "release_notes": "- Neu: „Aktivieren / Deaktivieren …“ (Weboberfläche und PS5-USB-Formatierer): Angehakte Abbilder (.ffpfs, .ffpfsc, .ffpkg, .exfat) bekommen die Endung .off – ShadowMountPlus bindet sie dann nicht mehr ein – bzw. verlieren sie wieder. Es wird nur umbenannt: Inhalt, Rechte, Besitzer und Zeiten bleiben unverändert. Bereits deaktivierte Spiele werden erkannt und als „deaktiviert“ angezeigt; nach dem Aktivieren sucht ShadowMountPlus gleich neu.\n- Deaktivierte Kopien zählen nicht mehr als doppelte Spiele; Prüfen, Prüfsumme anlegen, Kopieren, Löschen und Aufräumen behandeln sie und die Prüfsummen-Datei daneben richtig. Ein laufendes Spiel wird nicht deaktiviert, und eine vorhandene Datei gleichen Namens wird nie überschrieben.\n- Hilfe in allen Sprachen ergänzt.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -511,19 +511,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-9.2.1",
+      "id": "ps5upload-ps5upload-9.2.2",
       "name": "ps5upload",
-      "filename": "ps5upload-9.2.1_v9.2.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.2.1_v9.2.1.elf",
+      "filename": "ps5upload-9.2.2_v9.2.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.2.2_v9.2.2.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.2.1/ps5upload-9.2.1.elf",
-      "description": "v9.2.1 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.2.2/ps5upload-9.2.2.elf",
+      "description": "v9.2.2 by phantomptr",
       "last_update": "2026-10-29",
-      "version": "v9.2.1",
+      "version": "v9.2.2",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "293535f8a55ed74beb729b4eee36e98076b6deee0e78295008b6370bd2d6b8af",
-      "release_notes": "- **Send helper also updates the copy your PS5 starts at boot** (#540, #541). If Payload Manager,\r\n  the WebKit Autoloader or an autoload folder starts ps5upload's helper at every boot, it kept\r\n  starting the old version: Send helper only replaced the copy running in memory, so the \"helper\r\n  is older than this app\" message came back after every restart. Now, once the new helper\r\n  answers, the app finds the stored copies (Payload Manager's storage, `ps5_autoloader` folders on\r\n  the PS5 and its USB drives, etaHEN's payloads folder) and replaces them under the same name, so\r\n  your boot order stays as it is. It tells you what it updated, and how to update by hand anything\r\n  it couldn't. Only files named like the ps5upload helper are touched. The outdated-helper banner\r\n  now says when the old version came from a stored boot copy.\r\n- **GPU clock and real CPU clocks on the Hardware screen.** Read sensors now also shows the GPU\r\n  clock and each CPU core's clock (the row shows the slowest and fastest core; hover for all\r\n  eight), read from the console's power controller. The old \"CPU frequency\" row was a fixed\r\n  reference rate (800 MHz on every console), not the CPU's speed, so it is now called \"Reference\r\n  clock\". The clocks are only read when you press Read sensors, the helper never changes them, and\r\n  if the console's firmware doesn't answer, the rows say so and the helper doesn't ask again until\r\n  it restarts. Tried by others only on firmware 13.20 and 13.60 so far: please report odd numbers.\r\n\r\n"
+      "checksum": "9b7ea36573c7fb7c78ea89d598a01b6cf6e49a52951279abfc8d09aeb6ae3cc5",
+      "release_notes": "\n- **Remote Play Settings always show.** On a wide window the picture grew taller than the\n  screen and Settings opened below it, out of sight, so the button seemed to do nothing. The\n  picture now fits the window height and Settings open above it.\n- **Picture in picture opens in the Mac app.** When the app's own picture-in-picture window\n  didn't open (\"Picture in picture did not open\"), it now uses the system's picture in picture\n  instead: the picture only, and the controller plays while the app is in front.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
