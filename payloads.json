@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.50.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.50.elf",
+      "filename": "usb_format_v2.6.52.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.52.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.50/usb_format.elf",
-      "description": "USB-Formatierer 2.6.50 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.52/usb_format.elf",
+      "description": "USB-Formatierer 2.6.52 by strongt1me",
       "last_update": "2026-10-29",
-      "version": "v2.6.50",
+      "version": "v2.6.52",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "b92852a38bd754d4f572fe1eaaf6fbc84ac171a9cf3fa0f5691d0bf80df2b7d4",
-      "release_notes": "- Neu: „Inhalt vergleichen“ prüft zwei Kopien desselben Spiels Byte für Byte (Abbilder über SHA-256, Ordner Datei für Datei) – in der Weboberfläche am Duplikat-Hinweis, in der Windows-App im Prüfsummen-Menü.\n- Neu: Ordner-Spiele ohne eboot.bin oder Titelbild werden als „unvollständig“ gekennzeichnet; die Einzelheiten nennen, was fehlt.\n- Ziel-Auswahl beim Kopieren: das zuletzt gemessene Lesetempo (Tempo messen) steht beim Laufwerk, unter 40 MB/s als „langsam“; jetzt auch in der Windows-App mit „zu wenig Platz“ und FAT32-Hinweis.\n- Verlauf lässt sich als CSV-Datei speichern (Web und Windows-App); die Windows-App benennt jetzt alle Auftragsarten.\n- Windows-App: die Warteschlange für Kopieraufträge übersteht einen Neustart des Programms.\n- Entwicklung: tools/ps5_deploy.py wartet bis zu 5 Minuten (--wait-loader), wenn der ELF-Loader noch nicht annimmt, statt abzubrechen.\n"
+      "checksum": "82e8b712b987fb312d0524392ffec4b8999df53a9490c1bf15842552fb3cb9a8",
+      "release_notes": "- PC-Programme: Laufen zwei Fenster desselben Programms, überschreibt keines mehr die Einstellungen des anderen (Adresse, Sprache, Warteschlange …).\n- PC-Formatierer: Hängen mehrere baugleiche Sticks ohne Seriennummer am PC, springt die Auswahl nach dem Neuladen nicht mehr still auf einen davon – neu wählen.\n- Linux-Fassung: btrfs-Partitionen auf dem Stick werden erkannt und ausgehängt (vorher dauerhaft „wird gerade benutzt“).\n- Windows: Ein Image, das über ein subst-Laufwerk oder eine Freigabe dieses Rechners (\\\\localhost\\E$\\…) auf dem Ziel-Stick selbst liegt, wird erkannt und nicht auf sich selbst zurückgeschrieben.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -511,19 +511,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-8.8.0",
+      "id": "ps5upload-ps5upload-8.9.0",
       "name": "ps5upload",
-      "filename": "ps5upload-8.8.0_v8.8.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-8.8.0_v8.8.0.elf",
+      "filename": "ps5upload-8.9.0_v8.9.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-8.9.0_v8.9.0.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.0/ps5upload-8.8.0.elf",
-      "description": "v8.8.0 by phantomptr",
-      "last_update": "2026-10-28",
-      "version": "v8.8.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.9.0/ps5upload-8.9.0.elf",
+      "description": "v8.9.0 by phantomptr",
+      "last_update": "2026-10-29",
+      "version": "v8.9.0",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "71e100106f50d25056b998d0e39cefda1b36ca1f3a2b655ec3a45ccbc15a563f",
-      "release_notes": "- **XML game patches, without CheatRunner (#527).** Cheats now also takes game patches in the\r\n  PS-Game-Patch `.xml` format (the one GoldHEN, etaHEN and CheatRunner read): 60 fps unlocks,\r\n  resolution and debug-menu patches and the like.\r\n  - Find them in the cheat browser under **PS-Game-Patch**: the latest release of the repo, one\r\n    file per game. They download to `/data/ps5upload/cheats/xml/`, or import your own\r\n    `<TITLE ID>.xml` with Import.\r\n  - Patches you already have for other tools show up too, from `/data/cheatrunner/patches/xml`\r\n    and `xml_prospero`, `/data/elf-arsenal/patches/xml` and `/data/GoldHEN/patches/xml`. The app\r\n    only reads those folders; removing a game's cheats never deletes from them.\r\n  - Each patch in a file is its own switch, off until you turn it on, and turned back on when\r\n    the game starts again. A patch only goes on for the game version and executable it was\r\n    made for; one for another version is marked and refused. Pattern-scan (`mask`) patches\r\n    and `mask_jump32` detours are supported. As with cheats, a patch is written whole or not\r\n    at all, and only into the game's own code.\r\n- **Minion: back up saves to a USB drive (#528).** With a USB drive plugged in, Saves offers\r\n  **Backups on: Internal drive / USB drive**. Backups, the list of them, Restore and Delete\r\n  follow the place you pick, so a stick can carry backups off the console and back; you still\r\n  pick which backup to restore. The save a restore replaces is always kept on the internal\r\n  drive.\r\n- **Tests:** the AVA1 transfer tests no longer fail now and then on a loaded CI runner\r\n  (their 500 ms timeouts were meant for the dead-connection tests only).\r\n- **Tests:** the browser tests follow 8.7.0's new screen names (Activity & Logs, Send to PS5,\r\n  Workshop); four of them were waiting on the old ones.\r\n\r\n"
+      "checksum": "59e622340d9faf7c8a54e41d303a51f03408c88dbef409e299aea3ffc5c306a0",
+      "release_notes": "- **Games is one list.** Every game shows once, wherever its copies are, and each row names\r\n  the places: Installed, a PS5 drive (ext0, usb0, internal), This computer, or a saved server\r\n  by name, with how many copies are there. Narrow it with Everywhere, Installed, On PS5 drives\r\n  or Your copies. An installed game has Play (or Close game) right on its row.\r\n  - The five tabs are gone. Their tools are under **Manage**: Installed games, Games on the\r\n    PS5's drives, Your copies (folders, servers, organize, clean up, export) and Dump games.\r\n    Old links to the tabs still land there.\r\n  - Play and Close game are now one implementation everywhere. The game page's Play gains what\r\n    Installed games already had: when the console refuses homebrew (0x80940033) it says why,\r\n    and repairs a folder that was sent without execute permission.\r\n- **Dump installed games, decrypted, with ps5-app-dumper.** Under Games → Manage → Dump games:\r\n  unlock the dumper once with the code your TV shows, then dump a game (or a queue of them) to\r\n  a USB drive or the console, start a game for it, and open finished dumps in Files or\r\n  Workshop.\r\n- **Remote Play in the app (beta).** Turn on beta features to get a Play screen that streams\r\n  the console to this computer, with keyboard, controller and touchpad input. Accounts has a\r\n  Play Here button for a console that is set up for Remote Play.\r\n- **Send to PS5 is shorter.**\r\n  - Each queue row shows its steps on one line, \"Upload ✓ › Install 62%\", or Upload › Mount ›\r\n    Add to Home, with the step that failed or did not take marked.\r\n  - What was found in a source (game details, folder size, the time estimate) and the rarely\r\n    used options (speed limit, files to skip) fold to one line each. The folded line still\r\n    shows the essentials, and says so when files are being skipped.\r\n  - \"From a link or an archive\" and \"Already on the PS5\" fold to their headings.\r\n- **Send helper wherever it is missing.** Home's console card, Send to PS5 and every screen\r\n  that..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -871,19 +871,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-8.9.0-prerelease",
+      "id": "ps5upload-ps5upload-8.8.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-8.9.0_v8.9.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.9.0_v8.9.0%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-8.8.1_v8.8.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.8.1_v8.8.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.9.0/ps5upload-8.9.0.elf",
-      "description": "v8.9.0 [Pre-release] by phantomptr",
-      "last_update": "2026-10-29",
-      "version": "v8.9.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.1/ps5upload-8.8.1.elf",
+      "description": "v8.8.1 [Pre-release] by phantomptr",
+      "last_update": "2026-10-28",
+      "version": "v8.8.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "59e622340d9faf7c8a54e41d303a51f03408c88dbef409e299aea3ffc5c306a0",
-      "release_notes": "\n- **Games is one list.** Every game shows once, wherever its copies are, and each row names\n  the places: Installed, a PS5 drive (ext0, usb0, internal), This computer, or a saved server\n  by name, with how many copies are there. Narrow it with Everywhere, Installed, On PS5 drives\n  or Your copies. An installed game has Play (or Close game) right on its row.\n  - The five tabs are gone. Their tools are under **Manage**: Installed games, Games on the\n    PS5's drives, Your copies (folders, servers, organize, clean up, export) and Dump games.\n    Old links to the tabs still land there.\n  - Play and Close game are now one implementation everywhere. The game page's Play gains what\n    Installed games already had: when the console refuses homebrew (0x80940033) it says why,\n    and repairs a folder that was sent without execute permission.\n- **Dump installed games, decrypted, with ps5-app-dumper.** Under Games → Manage → Dump games:\n  unlock the dumper once with the code your TV shows, then dump a game (or a queue of them) to\n  a USB drive or the console, start a game for it, and open finished dumps in Files or\n  Workshop.\n- **Remote Play in the app (beta).** Turn on beta features to get a Play screen that streams\n  the console to this computer, with keyboard, controller and touchpad input. Accounts has a\n  Play Here button for a console that is set up for Remote Play.\n- **Send to PS5 is shorter.**\n  - Each queue row shows its steps on one line, \"Upload ✓ › Install 62%\", or Upload › Mount ›\n    Add to Home, with the step that failed or did not take marked.\n  - What was found in a source (game details, folder size, the time estimate) and the rarely\n    used options (speed limit, files to skip) fold to one line each. The folded line still\n    shows the essentials, and says so when files are being skipped.\n  - \"From a link or an archive\" and \"Already on the PS5\" fold to their headings.\n- **Send helper wherever it is missing.** Home's console card, Send to PS5 and every screen\n  that needs the helper offer S..."
+      "checksum": "54d9feb2bb8f876d829f3305d4aaf90244d48dff0aa94468b26ddec17a6dda56",
+      "release_notes": "\n- **\"Convert…\" opens Workshop with the game picked again.** Since 8.7.0, Convert… from Files,\n  a game page, a Collection card and the Send as One Image card opened an empty Workshop:\n  they still linked to the old Convert screen, and the redirect to Workshop lost the game.\n  They go straight to Workshop now, and a test keeps every link off the old screens.\n- **The web UI and Docker take .zip, .7z and .rar archives (#529).** Pick an archive on the\n  server and it is unpacked on the way to the PS5, as in the desktop app: nothing extra is\n  written next to it on the NAS. The web UI used to refuse archives with \"isn't available in\n  the browser yet\".\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
