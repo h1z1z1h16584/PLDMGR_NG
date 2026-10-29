@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.54.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.54.elf",
+      "filename": "usb_format_v2.6.55.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.55.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.54/usb_format.elf",
-      "description": "USB-Formatierer 2.6.54 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.55/usb_format.elf",
+      "description": "USB-Formatierer 2.6.55 by strongt1me",
       "last_update": "2026-10-29",
-      "version": "v2.6.54",
+      "version": "v2.6.55",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "4353a07aa6f80a8e88becec78367c1c3f068cbe81a4f18fd27c360fe0d4de7b6",
-      "release_notes": "- PS5-USB-Formatierer: Einstellungen von „Am PC – frei formatieren“ (Dateisystem, Bezeichnung, Ordner für Sicherungen …) werden wieder gespeichert – seit 2.6.52 gingen sie verloren, sobald vorher etwas anderes gespeichert wurde. Zwei offene Fenster führen ihre Einstellungen jetzt auch innerhalb eines Bereichs zusammen.\n- Hilfe (alle Sprachen): Tastenkürzel richtig (Strg+1…5 Reiter, Strg+6/7 Betriebsarten, Strg+Umschalt+B Fehlerbericht), „Eigene Aufteilung“ statt „Expertenmodus“, Namen der Betriebsarten wie in der Seitenleiste.\n- „Inhalt vergleichen“ lehnt zweimal dasselbe Spiel ab; die Windows-Warteschlange findet ihr Ziel auch nach einem Wechsel der Betriebsart; der Verlauf als CSV aus der Weboberfläche steht in Ortszeit.\n- Pakete: Die Lizenz des Projekts liegt jetzt auch den Windows-Programmen und den AppImages bei. release.py prüft, dass die App die veröffentlichte ELF enthält.\n- Aufgeräumt: nicht genutzte Entwurfsbilder, ein altes Diagnosewerkzeug und Debug-Dateien aus dem Repository entfernt.\n"
+      "checksum": "4af1ad3fc00c43ab266d3cbb745696b5aeea5df77cf76b872053846c13fe036a",
+      "release_notes": "- Verschleiß erkennen: Liest ein Stick bei „Tempo messen“ (oder beim Formatieren mit Prüfung) deutlich langsamer als bei früheren Messungen, weisen Formatierer und PC-Programme auf möglichen Verschleiß hin. Die PC-Programme tragen das Lesetempo jetzt auch in ihren Verlauf ein.\n- „Inhalt vergleichen“ vergleicht jetzt auch ein Abbild mit einem Spielordner: exFAT- und UFS2-Abbilder (.exfat, .ffpkg) werden Datei für Datei gelesen. Der Abbild-Leser kann dafür große Dateien (UFS2 mit indirekten Blöcken) und Superblöcke an allen üblichen Stellen lesen.\n- ShadowMountPlus 1.7: Spielordner mit eboot2.bin statt eboot.bin gelten nicht mehr als „unvollständig“.\n- Gebaut mit dem PS5-Payload-SDK 0.45 (Kernel-Offsets für Firmware 14.00/14.10).\n- Hilfe (alle Sprachen): „Inhalt vergleichen“ und der Verschleiß-Hinweis beschrieben.\n- Entwicklung: Linux-Fassungen werden in einem Ubuntu-22.04-Container gebaut (GitHub schaltet die 22.04-Läufer ab) und laufen weiter ab glibc 2.35; die CI prüft den PS5-Code zusätzlich mit AddressSanitizer und UBSan; mke2fs.exe wird neu gebaut, sobald sich Quellen oder zig-Fassung ändern; die Übersetzungsprüfungen melden auch deutsche Texte, die gar nicht zum Übersetzen markiert sind.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
