@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.49.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.49.elf",
+      "filename": "usb_format_v2.6.50.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.50.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.49/usb_format.elf",
-      "description": "USB-Formatierer 2.6.49 by strongt1me",
-      "last_update": "2026-10-28",
-      "version": "v2.6.49",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.50/usb_format.elf",
+      "description": "USB-Formatierer 2.6.50 by strongt1me",
+      "last_update": "2026-10-29",
+      "version": "v2.6.50",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "ae732a19899b28ce2056e13dfe079c60cd008a976c80696f18b629fffc3a18b5",
-      "release_notes": "- Weboberfläche: Die Warteschlange für Kopieraufträge übersteht ein Neuladen der Seite (im Browser gemerkt).\n- Weboberfläche: In der Ziel-Auswahl stehen „zu wenig Platz“ und „FAT32: keine Dateien über 4 GB“ direkt beim Laufwerk; vorgewählt wird das erste Ziel, auf das es passt.\n- Weboberfläche: Doppelte Spiele mit gleicher Version und genau gleicher Größe werden als wahrscheinliche Kopie erkannt; die überzählige Kopie lässt sich zum Löschen vorwählen.\n- Entwicklung: tools/release.py wartet nach dem Veröffentlichen auf die CI, startet gescheiterte Läufe neu und prüft die angehängten Dateien (--check für ein fertiges Release); der Download der mke2fs-Quellen wiederholt sich bei Netzfehlern.\n"
+      "checksum": "b92852a38bd754d4f572fe1eaaf6fbc84ac171a9cf3fa0f5691d0bf80df2b7d4",
+      "release_notes": "- Neu: „Inhalt vergleichen“ prüft zwei Kopien desselben Spiels Byte für Byte (Abbilder über SHA-256, Ordner Datei für Datei) – in der Weboberfläche am Duplikat-Hinweis, in der Windows-App im Prüfsummen-Menü.\n- Neu: Ordner-Spiele ohne eboot.bin oder Titelbild werden als „unvollständig“ gekennzeichnet; die Einzelheiten nennen, was fehlt.\n- Ziel-Auswahl beim Kopieren: das zuletzt gemessene Lesetempo (Tempo messen) steht beim Laufwerk, unter 40 MB/s als „langsam“; jetzt auch in der Windows-App mit „zu wenig Platz“ und FAT32-Hinweis.\n- Verlauf lässt sich als CSV-Datei speichern (Web und Windows-App); die Windows-App benennt jetzt alle Auftragsarten.\n- Windows-App: die Warteschlange für Kopieraufträge übersteht einen Neustart des Programms.\n- Entwicklung: tools/ps5_deploy.py wartet bis zu 5 Minuten (--wait-loader), wenn der ELF-Loader noch nicht annimmt, statt abzubrechen.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -871,19 +871,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-8.8.1-prerelease",
+      "id": "ps5upload-ps5upload-8.9.0-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-8.8.1_v8.8.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.8.1_v8.8.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-8.9.0_v8.9.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.9.0_v8.9.0%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.1/ps5upload-8.8.1.elf",
-      "description": "v8.8.1 [Pre-release] by phantomptr",
-      "last_update": "2026-10-28",
-      "version": "v8.8.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.9.0/ps5upload-8.9.0.elf",
+      "description": "v8.9.0 [Pre-release] by phantomptr",
+      "last_update": "2026-10-29",
+      "version": "v8.9.0",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "54d9feb2bb8f876d829f3305d4aaf90244d48dff0aa94468b26ddec17a6dda56",
-      "release_notes": "\n- **\"Convert…\" opens Workshop with the game picked again.** Since 8.7.0, Convert… from Files,\n  a game page, a Collection card and the Send as One Image card opened an empty Workshop:\n  they still linked to the old Convert screen, and the redirect to Workshop lost the game.\n  They go straight to Workshop now, and a test keeps every link off the old screens.\n- **The web UI and Docker take .zip, .7z and .rar archives (#529).** Pick an archive on the\n  server and it is unpacked on the way to the PS5, as in the desktop app: nothing extra is\n  written next to it on the NAS. The web UI used to refuse archives with \"isn't available in\n  the browser yet\".\n\n"
+      "checksum": "59e622340d9faf7c8a54e41d303a51f03408c88dbef409e299aea3ffc5c306a0",
+      "release_notes": "\n- **Games is one list.** Every game shows once, wherever its copies are, and each row names\n  the places: Installed, a PS5 drive (ext0, usb0, internal), This computer, or a saved server\n  by name, with how many copies are there. Narrow it with Everywhere, Installed, On PS5 drives\n  or Your copies. An installed game has Play (or Close game) right on its row.\n  - The five tabs are gone. Their tools are under **Manage**: Installed games, Games on the\n    PS5's drives, Your copies (folders, servers, organize, clean up, export) and Dump games.\n    Old links to the tabs still land there.\n  - Play and Close game are now one implementation everywhere. The game page's Play gains what\n    Installed games already had: when the console refuses homebrew (0x80940033) it says why,\n    and repairs a folder that was sent without execute permission.\n- **Dump installed games, decrypted, with ps5-app-dumper.** Under Games → Manage → Dump games:\n  unlock the dumper once with the code your TV shows, then dump a game (or a queue of them) to\n  a USB drive or the console, start a game for it, and open finished dumps in Files or\n  Workshop.\n- **Remote Play in the app (beta).** Turn on beta features to get a Play screen that streams\n  the console to this computer, with keyboard, controller and touchpad input. Accounts has a\n  Play Here button for a console that is set up for Remote Play.\n- **Send to PS5 is shorter.**\n  - Each queue row shows its steps on one line, \"Upload ✓ › Install 62%\", or Upload › Mount ›\n    Add to Home, with the step that failed or did not take marked.\n  - What was found in a source (game details, folder size, the time estimate) and the rarely\n    used options (speed limit, files to skip) fold to one line each. The folded line still\n    shows the essentials, and says so when files are being skipped.\n  - \"From a link or an archive\" and \"Already on the PS5\" fold to their headings.\n- **Send helper wherever it is missing.** Home's console card, Send to PS5 and every screen\n  that needs the helper offer S..."
     },
     {
       "id": "spotless-spotless-restore-prerelease",
