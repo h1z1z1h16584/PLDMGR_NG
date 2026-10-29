@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.53.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.53.elf",
+      "filename": "usb_format_v2.6.54.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.54.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.53/usb_format.elf",
-      "description": "USB-Formatierer 2.6.53 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.54/usb_format.elf",
+      "description": "USB-Formatierer 2.6.54 by strongt1me",
       "last_update": "2026-10-29",
-      "version": "v2.6.53",
+      "version": "v2.6.54",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "58d6793ce0bed7f41615bea8e33cf7035c2e5fa9b1c4d96590cbe00c691b0436",
-      "release_notes": "Optik-Korrekturen in allen Oberflächen:\n\n- Weboberfläche: Das Suchfeld über der Spieleliste hat jetzt dasselbe Aussehen wie die übrigen Felder (vorher zeichnete der PS5-Browser es eckig und zu niedrig). Angehakte Kästchen zeigen ein echtes Häkchen statt eines Doppelrings, im dunklen Design gut lesbar. Größenangaben kleben nicht mehr an der Bildlaufleiste.\n- Weboberfläche: Dialogknöpfe brechen mit Abstand um, die Knöpfe im Duplikat-Hinweis haben Abstand, der Hinweis „Danach frei“ stößt nicht mehr an den Text darunter, PKG- und Spielstände-Knöpfe sind nicht mehr eingerückt.\n- PC-Programme: Bildlaufleisten erscheinen nur noch, wenn es etwas zu scrollen gibt. Während der Suche nach USB-Datenträgern steht „Suche …“ statt „kein USB-Datenträger gefunden“. Baugleiche Sticks ohne Seriennummer werden auch in „Am PC – für die PS5“ nach dem Neuladen nicht still wieder ausgewählt.\n"
+      "checksum": "4353a07aa6f80a8e88becec78367c1c3f068cbe81a4f18fd27c360fe0d4de7b6",
+      "release_notes": "- PS5-USB-Formatierer: Einstellungen von „Am PC – frei formatieren“ (Dateisystem, Bezeichnung, Ordner für Sicherungen …) werden wieder gespeichert – seit 2.6.52 gingen sie verloren, sobald vorher etwas anderes gespeichert wurde. Zwei offene Fenster führen ihre Einstellungen jetzt auch innerhalb eines Bereichs zusammen.\n- Hilfe (alle Sprachen): Tastenkürzel richtig (Strg+1…5 Reiter, Strg+6/7 Betriebsarten, Strg+Umschalt+B Fehlerbericht), „Eigene Aufteilung“ statt „Expertenmodus“, Namen der Betriebsarten wie in der Seitenleiste.\n- „Inhalt vergleichen“ lehnt zweimal dasselbe Spiel ab; die Windows-Warteschlange findet ihr Ziel auch nach einem Wechsel der Betriebsart; der Verlauf als CSV aus der Weboberfläche steht in Ortszeit.\n- Pakete: Die Lizenz des Projekts liegt jetzt auch den Windows-Programmen und den AppImages bei. release.py prüft, dass die App die veröffentlichte ELF enthält.\n- Aufgeräumt: nicht genutzte Entwurfsbilder, ein altes Diagnosewerkzeug und Debug-Dateien aus dem Repository entfernt.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -511,19 +511,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-8.9.0",
+      "id": "ps5upload-ps5upload-8.10.0",
       "name": "ps5upload",
-      "filename": "ps5upload-8.9.0_v8.9.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-8.9.0_v8.9.0.elf",
+      "filename": "ps5upload-8.10.0_v8.10.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-8.10.0_v8.10.0.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.9.0/ps5upload-8.9.0.elf",
-      "description": "v8.9.0 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.10.0/ps5upload-8.10.0.elf",
+      "description": "v8.10.0 by phantomptr",
       "last_update": "2026-10-29",
-      "version": "v8.9.0",
+      "version": "v8.10.0",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "59e622340d9faf7c8a54e41d303a51f03408c88dbef409e299aea3ffc5c306a0",
-      "release_notes": "- **Games is one list.** Every game shows once, wherever its copies are, and each row names\r\n  the places: Installed, a PS5 drive (ext0, usb0, internal), This computer, or a saved server\r\n  by name, with how many copies are there. Narrow it with Everywhere, Installed, On PS5 drives\r\n  or Your copies. An installed game has Play (or Close game) right on its row.\r\n  - The five tabs are gone. Their tools are under **Manage**: Installed games, Games on the\r\n    PS5's drives, Your copies (folders, servers, organize, clean up, export) and Dump games.\r\n    Old links to the tabs still land there.\r\n  - Play and Close game are now one implementation everywhere. The game page's Play gains what\r\n    Installed games already had: when the console refuses homebrew (0x80940033) it says why,\r\n    and repairs a folder that was sent without execute permission.\r\n- **Dump installed games, decrypted, with ps5-app-dumper.** Under Games → Manage → Dump games:\r\n  unlock the dumper once with the code your TV shows, then dump a game (or a queue of them) to\r\n  a USB drive or the console, start a game for it, and open finished dumps in Files or\r\n  Workshop.\r\n- **Remote Play in the app (beta).** Turn on beta features to get a Play screen that streams\r\n  the console to this computer, with keyboard, controller and touchpad input. Accounts has a\r\n  Play Here button for a console that is set up for Remote Play.\r\n- **Send to PS5 is shorter.**\r\n  - Each queue row shows its steps on one line, \"Upload ✓ › Install 62%\", or Upload › Mount ›\r\n    Add to Home, with the step that failed or did not take marked.\r\n  - What was found in a source (game details, folder size, the time estimate) and the rarely\r\n    used options (speed limit, files to skip) fold to one line each. The folded line still\r\n    shows the essentials, and says so when files are being skipped.\r\n  - \"From a link or an archive\" and \"Already on the PS5\" fold to their headings.\r\n- **Send helper wherever it is missing.** Home's console card, Send to PS5 and every screen\r\n  that..."
+      "checksum": "d863502e034ccb7d632b296305c4cb121b0716619b9cf14b8c6a88c511b6f473",
+      "release_notes": "- **Games is one grid.** The list and its Everywhere / Installed / On PS5 drives / Your copies\r\n  views are gone: Games is the cover grid that \"Your copies\" was, plus the games the selected\r\n  PS5 has installed that you have no copy of (\"On the PS5 only\"). An **Installed** filter sits\r\n  beside Not installed, Update and DLC. Installed games, PS5 drives and Dump games stay under\r\n  Manage.\r\n- **Remote Play** (renamed from Play) keeps playing when you leave its screen: a bar on every\r\n  other screen leads back to it or stops it, and closing or reloading the window keeps the\r\n  session for a minute (setting) to come back to. A dropped connection to the engine\r\n  reconnects by itself, and stopping no longer says \"The connection to the engine dropped\".\r\n  Two windows can show it; the one you look at takes the picture.\r\n  - Less delay: the picture never queues behind a slow page (it skips ahead instead) and\r\n    sound is sent ahead of the picture.\r\n  - Cleaner sound: it plays at the console's 48 kHz through one steady buffer, late packets\r\n    are put back in order, and a lost one is covered instead of clicking. The buffer is a\r\n    setting (Lowest delay / Balanced / Steady on Wi-Fi).\r\n  - Full screen (double-click or the button; Esc leaves), a toolbar on the picture with stats\r\n    on/off, mute, settings and Stop, and a settings panel: picture, frame rate, sound, how long\r\n    to keep playing, pointer capture, vibration, the on-screen controller and your keys.\r\n  - An on-screen controller on phones and tablets (sticks, D-pad, buttons, touchpad); it hides\r\n    when a controller connects.\r\n- **Send to PS5 says it installs packages.** It opens with its three jobs: Install a package\r\n  (.pkg/.fpkg, streamed or uploaded), Copy a game or files, and Install from a link or a drive.\r\n- **Dumping is built in.** Games → Manage → Dump games copies an installed game (and its DLC)\r\n  to a USB drive or the console with ps5upload's own helper; ps5-app-dumper is no longer\r\n  needed. The game is started for it. A plain copy is..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -957,6 +957,20 @@
       "author": "Community Archive",
       "category": "~ Archived",
       "checksum": "b1f60c1ec1685904d396da16710dc9d5676bf0880abf74c65459c886010b9443"
+    },
+    {
+      "id": "archived-kstuff1.13-fpkg-dr-test7-restmode",
+      "name": "kstuff1.13 fpkg dr test7 restmode",
+      "filename": "kstuff1.13-fpkg-dr-test7-restmode.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff1.13-fpkg-dr-test7-restmode.elf",
+      "source": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff1.13-fpkg-dr-test7-restmode.elf",
+      "source_direct": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff1.13-fpkg-dr-test7-restmode.elf",
+      "description": "Archived standalone payload: kstuff1.13-fpkg-dr-test7-restmode.elf",
+      "last_update": "2000-01-01",
+      "version": "v99.0",
+      "author": "Community Archive",
+      "category": "~ Archived",
+      "checksum": "f3995e66993e73348575e218bead7b164016b50833ecb6a45b227f0c50cd1561"
     },
     {
       "id": "archived-lapy_jb_daemon-99.0",
