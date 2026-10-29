@@ -274,17 +274,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.52.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.52.elf",
+      "filename": "usb_format_v2.6.53.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.53.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.52/usb_format.elf",
-      "description": "USB-Formatierer 2.6.52 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.53/usb_format.elf",
+      "description": "USB-Formatierer 2.6.53 by strongt1me",
       "last_update": "2026-10-29",
-      "version": "v2.6.52",
+      "version": "v2.6.53",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "82e8b712b987fb312d0524392ffec4b8999df53a9490c1bf15842552fb3cb9a8",
-      "release_notes": "- PC-Programme: Laufen zwei Fenster desselben Programms, überschreibt keines mehr die Einstellungen des anderen (Adresse, Sprache, Warteschlange …).\n- PC-Formatierer: Hängen mehrere baugleiche Sticks ohne Seriennummer am PC, springt die Auswahl nach dem Neuladen nicht mehr still auf einen davon – neu wählen.\n- Linux-Fassung: btrfs-Partitionen auf dem Stick werden erkannt und ausgehängt (vorher dauerhaft „wird gerade benutzt“).\n- Windows: Ein Image, das über ein subst-Laufwerk oder eine Freigabe dieses Rechners (\\\\localhost\\E$\\…) auf dem Ziel-Stick selbst liegt, wird erkannt und nicht auf sich selbst zurückgeschrieben.\n"
+      "checksum": "58d6793ce0bed7f41615bea8e33cf7035c2e5fa9b1c4d96590cbe00c691b0436",
+      "release_notes": "Optik-Korrekturen in allen Oberflächen:\n\n- Weboberfläche: Das Suchfeld über der Spieleliste hat jetzt dasselbe Aussehen wie die übrigen Felder (vorher zeichnete der PS5-Browser es eckig und zu niedrig). Angehakte Kästchen zeigen ein echtes Häkchen statt eines Doppelrings, im dunklen Design gut lesbar. Größenangaben kleben nicht mehr an der Bildlaufleiste.\n- Weboberfläche: Dialogknöpfe brechen mit Abstand um, die Knöpfe im Duplikat-Hinweis haben Abstand, der Hinweis „Danach frei“ stößt nicht mehr an den Text darunter, PKG- und Spielstände-Knöpfe sind nicht mehr eingerückt.\n- PC-Programme: Bildlaufleisten erscheinen nur noch, wenn es etwas zu scrollen gibt. Während der Suche nach USB-Datenträgern steht „Suche …“ statt „kein USB-Datenträger gefunden“. Baugleiche Sticks ohne Seriennummer werden auch in „Am PC – für die PS5“ nach dem Neuladen nicht still wieder ausgewählt.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
