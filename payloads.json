@@ -289,17 +289,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.59.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.59.elf",
+      "filename": "usb_format_v2.6.60.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.60.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.59/usb_format.elf",
-      "description": "USB-Formatierer 2.6.59 by strongt1me",
-      "last_update": "2026-10-29",
-      "version": "v2.6.59",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.60/usb_format.elf",
+      "description": "USB-Formatierer 2.6.60 by strongt1me",
+      "last_update": "2026-10-30",
+      "version": "v2.6.60",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "487776c120602e4eb69b5b1cc8726b421c4d906848e6dd9a30686b60ac85684b",
-      "release_notes": "- Neu: „Aktivieren / Deaktivieren …“ (Weboberfläche und PS5-USB-Formatierer): Angehakte Abbilder (.ffpfs, .ffpfsc, .ffpkg, .exfat) bekommen die Endung .off – ShadowMountPlus bindet sie dann nicht mehr ein – bzw. verlieren sie wieder. Es wird nur umbenannt: Inhalt, Rechte, Besitzer und Zeiten bleiben unverändert. Bereits deaktivierte Spiele werden erkannt und als „deaktiviert“ angezeigt; nach dem Aktivieren sucht ShadowMountPlus gleich neu.\n- Deaktivierte Kopien zählen nicht mehr als doppelte Spiele; Prüfen, Prüfsumme anlegen, Kopieren, Löschen und Aufräumen behandeln sie und die Prüfsummen-Datei daneben richtig. Ein laufendes Spiel wird nicht deaktiviert, und eine vorhandene Datei gleichen Namens wird nie überschrieben.\n- Hilfe in allen Sprachen ergänzt.\n"
+      "checksum": "26c967045fe8f93d60adc11986a66af78a54d8e6b0c1c8a429b7ca00a9dacb65",
+      "release_notes": "- Spiel-Einzelheiten (Spiel anklicken): zeigt, ob ShadowMountPlus das Spiel eingehängt hat, dazu Patch und DLCs – mit Knöpfen zum Aus- und Einhängen sowie zum Entfernen von Patch bzw. einzelnen DLCs (Weboberfläche und PS5-USB-Formatierer).\n- Doppelte Spiele: „Ältere Version deaktivieren …“ bzw. „Überzählige Kopie deaktivieren …“ – die Abbilder bekommen .off, statt gelöscht zu werden; im PS5-USB-Formatierer „Ältere deaktivieren …“.\n- Nach dem Auswerfen steht beim Laufwerk „kann abgezogen werden“, bis es abgezogen (oder wieder eingebunden) ist; ein wieder eingesteckter Stick erscheint von selbst.\n- Weboberfläche: mehr Abstand der Auswahlkästchen zum Rand; ruhigere Liste beim Aktivieren/Deaktivieren.\n- Entwicklung: release.py lässt vor dem Veröffentlichen auch den Linux-Oberflächentest laufen.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -526,19 +526,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-9.3.0",
+      "id": "ps5upload-ps5upload-9.4.0",
       "name": "ps5upload",
-      "filename": "ps5upload-9.3.0_v9.3.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.3.0_v9.3.0.elf",
+      "filename": "ps5upload-9.4.0_v9.4.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.4.0_v9.4.0.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.3.0/ps5upload-9.3.0.elf",
-      "description": "v9.3.0 by phantomptr",
-      "last_update": "2026-10-29",
-      "version": "v9.3.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.4.0/ps5upload-9.4.0.elf",
+      "description": "v9.4.0 by phantomptr",
+      "last_update": "2026-10-30",
+      "version": "v9.4.0",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "e23000248c639c5c4f1343f84f0ff3a9ef7bde1988e0a7bd6330cbba050ab863",
-      "release_notes": "\n- **Esc no longer throws you out of full screen.** In Remote Play, Esc is Circle (back in most\n  games), and in full screen it also left full screen, so backing out of a menu ended full screen.\n  Now a quick Esc in full screen is Circle, and holding Esc leaves full screen. Chrome and Edge get\n  the same through the browser's keyboard lock; Safari and Firefox still leave full screen on any\n  Esc (Backspace is Circle there).\n- **Every device knows who is using Remote Play.** A PS5 plays Remote Play with one device at a\n  time. When a phone or another computer is playing a console, the Remote Play page on your other\n  devices says so before you start (\"starting here ends it there\"), each of them gets a short\n  note when someone starts, and Connection › Devices shows it as that device's activity.\n- **On phones and tablets the Remote Play page is view only.** The on-screen controller now only\n  appears in full screen, and the page says so; taps and scrolls on the page never press a button\n  on the console. A controller or keyboard connected to the phone or tablet still plays there.\n\n"
+      "checksum": "620a771e34c83c2b84e537307d25e47cead2270c1024db44cf2c340c9c7bb083",
+      "release_notes": "\n- **Backporting uses ShadowMount+'s own controls (1.7beta8 and later).** To write the backport\n  into a game image, the app now asks ShadowMount+ to mount that one game read-write and to\n  unmount it after: it takes well under a second instead of half a minute or more, and no longer\n  fails with \"has not mounted\" when the image isn't mounted, which with ShadowMount+'s default\n  settings is every idle image. ShadowMount+ postpones its scans while the image is held, and\n  `config.ini` is left alone. Tried on a PS5 Pro with ShadowMount+ 1.7beta11. Older versions,\n  or one set to answer only on the console, still get the previous method.\n- **The ShadowMount+ panel shows its exact version** (for example 1.7beta11), read from\n  ShadowMount+ itself.\n- The FAQ explains what ShadowMount+ 1.7beta8+ changed: its control interface is open to the\n  local network by default, and 1.7beta10 stopped closing self-made packages on rest mode.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
