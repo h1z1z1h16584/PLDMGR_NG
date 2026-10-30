@@ -526,19 +526,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-9.4.0",
+      "id": "ps5upload-ps5upload-9.4.1",
       "name": "ps5upload",
-      "filename": "ps5upload-9.4.0_v9.4.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.4.0_v9.4.0.elf",
+      "filename": "ps5upload-9.4.1_v9.4.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.4.1_v9.4.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.4.0/ps5upload-9.4.0.elf",
-      "description": "v9.4.0 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.4.1/ps5upload-9.4.1.elf",
+      "description": "v9.4.1 by phantomptr",
       "last_update": "2026-10-30",
-      "version": "v9.4.0",
+      "version": "v9.4.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "620a771e34c83c2b84e537307d25e47cead2270c1024db44cf2c340c9c7bb083",
-      "release_notes": "\n- **Backporting uses ShadowMount+'s own controls (1.7beta8 and later).** To write the backport\n  into a game image, the app now asks ShadowMount+ to mount that one game read-write and to\n  unmount it after: it takes well under a second instead of half a minute or more, and no longer\n  fails with \"has not mounted\" when the image isn't mounted, which with ShadowMount+'s default\n  settings is every idle image. ShadowMount+ postpones its scans while the image is held, and\n  `config.ini` is left alone. Tried on a PS5 Pro with ShadowMount+ 1.7beta11. Older versions,\n  or one set to answer only on the console, still get the previous method.\n- **The ShadowMount+ panel shows its exact version** (for example 1.7beta11), read from\n  ShadowMount+ itself.\n- The FAQ explains what ShadowMount+ 1.7beta8+ changed: its control interface is open to the\n  local network by default, and 1.7beta10 stopped closing self-made packages on rest mode.\n\n"
+      "checksum": "b276e08c0b82dd29abbe7bbe7b23ed21adafc5a89737f5deba4787ed2ceccad8",
+      "release_notes": "\n- **Remote Play on Linux shows the picture without extra installs (#548).** The Linux `.zip`\n  (AppImage) now carries GStreamer with its H.264 decoder: before, on Arch, CachyOS and other\n  distributions without that decoder, Remote Play failed with \"No decoder found for codec\n  avc1…\", and installing it on the system didn't help the AppImage. The `.deb` and `.rpm` now\n  recommend the decoder packages, so a normal install brings them.\n- **No decoder, no wake.** The app checks for an H.264 decoder before it wakes the console. Without\n  one it ends the session cleanly (it used to retry forever) and says what to install, with the\n  command for Arch, Debian/Ubuntu and Fedora.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -886,19 +886,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-9.4.1-prerelease",
+      "id": "ps5upload-ps5upload-8.8.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-9.4.1_v9.4.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-9.4.1_v9.4.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-8.8.1_v8.8.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.8.1_v8.8.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.4.1/ps5upload-9.4.1.elf",
-      "description": "v9.4.1 [Pre-release] by phantomptr",
-      "last_update": "2026-10-30",
-      "version": "v9.4.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.1/ps5upload-8.8.1.elf",
+      "description": "v8.8.1 [Pre-release] by phantomptr",
+      "last_update": "2026-10-28",
+      "version": "v8.8.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "b276e08c0b82dd29abbe7bbe7b23ed21adafc5a89737f5deba4787ed2ceccad8",
-      "release_notes": "\n- **Remote Play on Linux shows the picture without extra installs (#548).** The Linux `.zip`\n  (AppImage) now carries GStreamer with its H.264 decoder: before, on Arch, CachyOS and other\n  distributions without that decoder, Remote Play failed with \"No decoder found for codec\n  avc1…\", and installing it on the system didn't help the AppImage. The `.deb` and `.rpm` now\n  recommend the decoder packages, so a normal install brings them.\n- **No decoder, no wake.** The app checks for an H.264 decoder before it wakes the console. Without\n  one it ends the session cleanly (it used to retry forever) and says what to install, with the\n  command for Arch, Debian/Ubuntu and Fedora.\n\n"
+      "checksum": "54d9feb2bb8f876d829f3305d4aaf90244d48dff0aa94468b26ddec17a6dda56",
+      "release_notes": "\n- **\"Convert…\" opens Workshop with the game picked again.** Since 8.7.0, Convert… from Files,\n  a game page, a Collection card and the Send as One Image card opened an empty Workshop:\n  they still linked to the old Convert screen, and the redirect to Workshop lost the game.\n  They go straight to Workshop now, and a test keeps every link off the old screens.\n- **The web UI and Docker take .zip, .7z and .rar archives (#529).** Pick an archive on the\n  server and it is unpacked on the way to the PS5, as in the desktop app: nothing extra is\n  written next to it on the NAS. The web UI used to refuse archives with \"isn't available in\n  the browser yet\".\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
