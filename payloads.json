@@ -526,19 +526,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-9.5.1",
+      "id": "ps5upload-ps5upload-9.5.3",
       "name": "ps5upload",
-      "filename": "ps5upload-9.5.1_v9.5.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.5.1_v9.5.1.elf",
+      "filename": "ps5upload-9.5.3_v9.5.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.5.3_v9.5.3.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.5.1/ps5upload-9.5.1.elf",
-      "description": "v9.5.1 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.5.3/ps5upload-9.5.3.elf",
+      "description": "v9.5.3 by phantomptr",
       "last_update": "2026-10-30",
-      "version": "v9.5.1",
+      "version": "v9.5.3",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "6c113d167d7fe4c4f3e036e8556d044ab3b04e7f45fe53778f8dbea158ede8d7",
-      "release_notes": "\n- **Remote Play full screen shows the whole picture.** With **Fit** (the default), the picture is\n  now sized to the screen by the app itself, the way video players letterbox: always the whole\n  picture, with black bars where the screen's shape differs, never cut off. Before, Fit relied on\n  the browser scaling the picture, and full screen could be wider than the visible area (a\n  scrollbar's width on Windows), so an edge could be cut off. **Fill** still crops on purpose and\n  **Stretch** still stretches.\n\n"
+      "checksum": "ae3e5287b6923b718df61c2f28d3ddae2c6d2f2620ed2a6958c6e6cd04a4a4c2",
+      "release_notes": "\n- **Back up your users' information (Accounts).** A new **Back up user information** card\n  downloads a text file with every user on the PS5: their names, user IDs, account IDs (in hex,\n  decimal and the base64 form Remote Play uses), how each account is activated, its sign-in\n  details (online ID, date of birth, age), and step-by-step instructions for giving a new user\n  an old account ID. Saves are tied to the account ID, so after a console reset, or a crash that\n  loses a user, the file is what you need to get your saves back. It holds no passwords or\n  Remote Play keys; keep it private all the same.\n- **Phone screens scroll all the way down.** Payloads, Tasks and Help (FAQ, About, What's new)\n  now leave room under their last row, so nothing stays stuck behind the bottom tab bar.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
