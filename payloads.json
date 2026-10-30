@@ -289,17 +289,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.60.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.60.elf",
+      "filename": "usb_format_v2.6.61.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.61.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.60/usb_format.elf",
-      "description": "USB-Formatierer 2.6.60 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.61/usb_format.elf",
+      "description": "USB-Formatierer 2.6.61 by strongt1me",
       "last_update": "2026-10-30",
-      "version": "v2.6.60",
+      "version": "v2.6.61",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "26c967045fe8f93d60adc11986a66af78a54d8e6b0c1c8a429b7ca00a9dacb65",
-      "release_notes": "- Spiel-Einzelheiten (Spiel anklicken): zeigt, ob ShadowMountPlus das Spiel eingehängt hat, dazu Patch und DLCs – mit Knöpfen zum Aus- und Einhängen sowie zum Entfernen von Patch bzw. einzelnen DLCs (Weboberfläche und PS5-USB-Formatierer).\n- Doppelte Spiele: „Ältere Version deaktivieren …“ bzw. „Überzählige Kopie deaktivieren …“ – die Abbilder bekommen .off, statt gelöscht zu werden; im PS5-USB-Formatierer „Ältere deaktivieren …“.\n- Nach dem Auswerfen steht beim Laufwerk „kann abgezogen werden“, bis es abgezogen (oder wieder eingebunden) ist; ein wieder eingesteckter Stick erscheint von selbst.\n- Weboberfläche: mehr Abstand der Auswahlkästchen zum Rand; ruhigere Liste beim Aktivieren/Deaktivieren.\n- Entwicklung: release.py lässt vor dem Veröffentlichen auch den Linux-Oberflächentest laufen.\n"
+      "checksum": "3260b8a4b728378e4fdcac8e3916d436ca1859cc8cd2a0f181ed5765c6f6c926",
+      "release_notes": "- Weboberfläche an der PS5: L2 und R2 scrollen die Seite nach oben bzw. unten – je fester gedrückt, desto schneller; in Listen und Dialogen zuerst dort.\n- Spiele und PKG: Nach dem Verbinden ist das erste Laufwerk mit Spielen gewählt; leere Listen sagen, was zu tun ist; die Knöpfe zum Kopieren, Verschieben und Löschen erscheinen erst beim Anhaken.\n- Formatieren: erst rot, wenn ein Laufwerk gewählt ist – vorher nur der Hinweis, links (bzw. oben) eins zu wählen (Programm und Weboberfläche). Eine für Spiele vorgewählte SSD wird dort nie übernommen.\n- Spielstände: kürzere Angaben („geändert seit …“, „1 ungesichert“), Datum in der Schreibweise der Sprache statt US-Format, die Spalte reicht bis zum Rand.\n- Werkzeuge: alle Knöpfe in einer Reihe, darunter der Grund, wenn sie gesperrt sind (Programm und Weboberfläche).\n- Das Fenster springt nicht mehr: gleich groß in allen Betriebsarten und auf allen Reitern, auch beim Umschalten auf „Eigene Aufteilung“ (Partitionstabelle mit Knöpfen darunter).\n- Behoben: Die Erklärung zu fPKG/PKG unter der PKG-Liste verschwand, sobald Pakete geladen waren.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -526,19 +526,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-9.5.3",
+      "id": "ps5upload-ps5upload-9.7.0",
       "name": "ps5upload",
-      "filename": "ps5upload-9.5.3_v9.5.3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.5.3_v9.5.3.elf",
+      "filename": "ps5upload-9.7.0_v9.7.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-9.7.0_v9.7.0.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.5.3/ps5upload-9.5.3.elf",
-      "description": "v9.5.3 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.7.0/ps5upload-9.7.0.elf",
+      "description": "v9.7.0 by phantomptr",
       "last_update": "2026-10-30",
-      "version": "v9.5.3",
+      "version": "v9.7.0",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "ae3e5287b6923b718df61c2f28d3ddae2c6d2f2620ed2a6958c6e6cd04a4a4c2",
-      "release_notes": "\n- **Back up your users' information (Accounts).** A new **Back up user information** card\n  downloads a text file with every user on the PS5: their names, user IDs, account IDs (in hex,\n  decimal and the base64 form Remote Play uses), how each account is activated, its sign-in\n  details (online ID, date of birth, age), and step-by-step instructions for giving a new user\n  an old account ID. Saves are tied to the account ID, so after a console reset, or a crash that\n  loses a user, the file is what you need to get your saves back. It holds no passwords or\n  Remote Play keys; keep it private all the same.\n- **Phone screens scroll all the way down.** Payloads, Tasks and Help (FAQ, About, What's new)\n  now leave room under their last row, so nothing stays stuck behind the bottom tab bar.\n\n"
+      "checksum": "dcbbf088c09b45a170600f8ac0e0c890731b85124ecbf1aae144c7149a7b4947",
+      "release_notes": "\n- **Play any game on Remote Play, in one press.** A game's page has **Play on Remote Play** next\n  to Play (for the connected console, once it is set up for Remote Play): the stream starts,\n  waking the console and signing you in, the app waits for its helper to come back, then starts\n  the game on the stream. Each step shows on the picture, with a Cancel. In the stream, the Game\n  panel's **Play something else** lists the console's games (with a search) and starts the one\n  you pick, closing the running one first with your say-so. Anything the console has installed\n  or registered can be started: PS5 and PS4 games, folder games and fake packages.\n- **Drop a package on the stream to install it.** Drag a .pkg or .fpkg onto the picture (the\n  desktop app, or the web UI in a browser): it is installed on the streamed console **when you\n  stop playing** (an install shares the network with the stream and can make it stutter), or at\n  once with **Install now**.\n- **The on-screen controller's touchpad can be pressed.** A finger held on the touchpad strip is\n  now the DualSense's touchpad button, so combos like L1 + R1 + touchpad (to get back to an\n  emulator's menu) work; a finger that slides is still a swipe only.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -886,19 +886,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-9.7.0-prerelease",
+      "id": "ps5upload-ps5upload-8.8.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-9.7.0_v9.7.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-9.7.0_v9.7.0%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-8.8.1_v8.8.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.8.1_v8.8.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v9.7.0/ps5upload-9.7.0.elf",
-      "description": "v9.7.0 [Pre-release] by phantomptr",
-      "last_update": "2026-10-30",
-      "version": "v9.7.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.1/ps5upload-8.8.1.elf",
+      "description": "v8.8.1 [Pre-release] by phantomptr",
+      "last_update": "2026-10-28",
+      "version": "v8.8.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "dcbbf088c09b45a170600f8ac0e0c890731b85124ecbf1aae144c7149a7b4947",
-      "release_notes": "\n- **Play any game on Remote Play, in one press.** A game's page has **Play on Remote Play** next\n  to Play (for the connected console, once it is set up for Remote Play): the stream starts,\n  waking the console and signing you in, the app waits for its helper to come back, then starts\n  the game on the stream. Each step shows on the picture, with a Cancel. In the stream, the Game\n  panel's **Play something else** lists the console's games (with a search) and starts the one\n  you pick, closing the running one first with your say-so. Anything the console has installed\n  or registered can be started: PS5 and PS4 games, folder games and fake packages.\n- **Drop a package on the stream to install it.** Drag a .pkg or .fpkg onto the picture (the\n  desktop app, or the web UI in a browser): it is installed on the streamed console **when you\n  stop playing** (an install shares the network with the stream and can make it stutter), or at\n  once with **Install now**.\n- **The on-screen controller's touchpad can be pressed.** A finger held on the touchpad strip is\n  now the DualSense's touchpad button, so combos like L1 + R1 + touchpad (to get back to an\n  emulator's menu) work; a finger that slides is still a swipe only.\n\n"
+      "checksum": "54d9feb2bb8f876d829f3305d4aaf90244d48dff0aa94468b26ddec17a6dda56",
+      "release_notes": "\n- **\"Convert…\" opens Workshop with the game picked again.** Since 8.7.0, Convert… from Files,\n  a game page, a Collection card and the Send as One Image card opened an empty Workshop:\n  they still linked to the old Convert screen, and the redirect to Workshop lost the game.\n  They go straight to Workshop now, and a test keeps every link off the old screens.\n- **The web UI and Docker take .zip, .7z and .rar archives (#529).** Pick an archive on the\n  server and it is unpacked on the way to the PS5, as in the desktop app: nothing extra is\n  written next to it on the NAS. The web UI used to refuse archives with \"isn't available in\n  the browser yet\".\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
