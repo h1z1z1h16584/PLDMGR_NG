@@ -856,19 +856,19 @@
       "release_notes": "- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 12.20 and 13.60. Thanks to the community (SHARK, Fubc from Discord and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb\r\n\r\n"
     },
     {
-      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.6.0-pre-4488577-prerelease",
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.7.0-dev-8be7994-prerelease",
       "name": "ps5-webkit-autoloader [Pre-release]",
-      "filename": "webkit-autoloader-installer_v0.6.0-pre-4488577 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/webkit-autoloader-installer_v0.6.0-pre-4488577%20%5BPre-release%5D.elf",
+      "filename": "webkit-autoloader-installer_v0.7.0-dev-8be7994_v0.7.0-prerelease-1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/webkit-autoloader-installer_v0.7.0-dev-8be7994_v0.7.0-prerelease-1%20%5BPre-release%5D.elf",
       "source": "https://github.com/itsPLK/ps5-webkit-autoloader/releases",
-      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf",
-      "description": "v0.6.0-pre-4488577 (pre-release) [Pre-release] by itsPLK",
-      "last_update": "2026-10-07",
-      "version": "v0.6.0-pre-4488577",
+      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0-prerelease-1/webkit-autoloader-installer_v0.7.0-dev-8be7994.elf",
+      "description": "v0.7.0 pre-release 1 [Pre-release] by itsPLK",
+      "last_update": "2026-10-31",
+      "version": "v0.7.0-prerelease-1",
       "author": "itsPLK",
       "category": "Pre-release",
-      "checksum": "7b7e2284c331599a6193cb00fa7d5fd227d784ef95ceda32b1485989ff1d6b21",
-      "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `dev`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n## Changelog\r\n\r\n### Unified Architecture & Upstream Remote Loader Base\r\n* **Single Shared Base**: WebKit Autoloader is now built on top of [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), unifying the userland exploit runner, ROP primitives, and payload pipeline across both Poops and Relapse.\r\n* **Developer Iteration & Contributions**: Developers looking to experiment with, test, or improve Poops or Relapse can now do so easily in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) by loading payloads over the network (port 9027). Any improvements made in that repo can be contributed upstream to directly benefit both projects.\r\n\r\n### Dropped umtx2 (FW <= 5.50)\r\n* **Dropped Legacy umtx2 Support**: Support for firmwares 1.00–5.50 via umtx2 has been dropped in this release. That path was not receiving updates and was blocking development and architectural changes.\r\n* **Future Lower Firmware Support**: Support for lower firmwares may be added back in the future if it is added to [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader). Contributions to bring lower firmware support to the new unified base are welcome!\r\n\r\n### Exploit & Stability Improvements\r\n* **Relapse Stability**: Stability and reliability improvements for the Relapse chain.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/22)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.0-pre-4488577.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.0-pre-4488577/webkit-autoloader-installer_v0.6.0-pre-4488577.elf) |\r\n| **Linux / macOS / WS..."
+      "checksum": "4de384c640b2c4e8e5c4fcc7972fdb06185bdfdf8a1c105e1ad4581881c11b7e",
+      "release_notes": "### [Discussion thread](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/24)\r\n\r\n\r\nA lot of internal changes, so need your feedback.\r\nFocused on relapse, but there's also a change from which poops should benefit too.\r\n\r\n---\r\nAutomatically selects the best exploit based on firmware version and network status:\r\n   - **FW > 12.00 and FW <= 13.60**: Relapse (Poops does not support > 12.00)\r\n   - **FW == 9.05**: Poops (Relapse does not support 9.05)\r\n   - **Active network connection**: Relapse\r\n   - **Offline (FW <= 12.00)**: Poops (works without active network connection)\r\n---\r\n\r\nhttps://github.com/user-attachments/assets/6cb3693e-fa96-4176-ba8e-c48480208de0"
     },
     {
       "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.6.1-kp-fix-prerelease",
