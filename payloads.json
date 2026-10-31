@@ -886,19 +886,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-8.8.1-prerelease",
+      "id": "ps5upload-ps5upload-10.1.0-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-8.8.1_v8.8.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.8.1_v8.8.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-10.1.0_v10.1.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-10.1.0_v10.1.0%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.1/ps5upload-8.8.1.elf",
-      "description": "v8.8.1 [Pre-release] by phantomptr",
-      "last_update": "2026-10-28",
-      "version": "v8.8.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.1.0/ps5upload-10.1.0.elf",
+      "description": "v10.1.0 [Pre-release] by phantomptr",
+      "last_update": "2026-10-31",
+      "version": "v10.1.0",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "54d9feb2bb8f876d829f3305d4aaf90244d48dff0aa94468b26ddec17a6dda56",
-      "release_notes": "\n- **\"Convert…\" opens Workshop with the game picked again.** Since 8.7.0, Convert… from Files,\n  a game page, a Collection card and the Send as One Image card opened an empty Workshop:\n  they still linked to the old Convert screen, and the redirect to Workshop lost the game.\n  They go straight to Workshop now, and a test keeps every link off the old screens.\n- **The web UI and Docker take .zip, .7z and .rar archives (#529).** Pick an archive on the\n  server and it is unpacked on the way to the PS5, as in the desktop app: nothing extra is\n  written next to it on the NAS. The web UI used to refuse archives with \"isn't available in\n  the browser yet\".\n\n"
+      "checksum": "2608d338b47438f7702a7be04a7821c637ace1e64fb046e179eb29c5385dfda0",
+      "release_notes": "\n- **Remap controller buttons in Play.** Settings › Controller buttons: choose which PS5 button each\n  button on your controller sends (swap ✕ and ○, turn a button off, put Create on L3...). It works\n  for every controller, and Reset to defaults puts it back.\n- **Sharpening and upscaling is one choice in Play's picture settings:** Off, Sharpen (AMD\n  FidelityFX RCAS) or Upscale to the screen (AMD FSR 1), with Sharpen setting how strong. Your\n  earlier Sharpen and Upscale settings carry over.\n- **The picture is drawn on the graphics card (WebGL) all the time**, so turning a picture tool on\n  or off no longer changes how it is drawn. With every tool off it looks exactly as before. A\n  device without WebGL keeps the old way.\n- **HDR in Play (experimental).** Settings › Video format › HDR asks the PS5 for its HDR stream\n  and shows it in HDR. It is offered only where it can work: an HDR screen, a device that decodes\n  HEVC Main10, and a browser that draws HDR (WebGPU, as in Chrome or Edge). If HDR doesn't work,\n  the app tells you and goes back to Auto. Sharpening, upscaling and colour stay off in HDR.\n- **Play: a DualSense's adaptive triggers** (desktop app). With a DualSense connected to the\n  computer, the console is told it is one, and games set the triggers' resistance as on the PS5.\n  They are let go when the stream ends or the app quits. Settings › Controls › *DualSense effects*.\n- **Play: DualSense haptics over USB** (desktop app). PS5 games' haptics play on the controller\n  plugged in with a cable; over Bluetooth they become rumble instead. On a Mac, set the\n  controller to 4 channels in Audio MIDI Setup for haptics.\n- **Play: motion controls with a DualSense** (desktop app): its gyro and accelerometer reach the\n  console, for gyro aiming and tilt.\n- **A new look for the on-screen controller in Remote Play:** thin light outlines with a faint\n  fill over the game, so the picture shows through. Shoulders stacked in the top corners, a\n  four-key D-pad and the face buttons at mid height, the st..."
     },
     {
       "id": "spotless-spotless-restore-prerelease",
