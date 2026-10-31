@@ -289,17 +289,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.63.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.63.elf",
+      "filename": "usb_format_v2.6.64.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.64.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.63/usb_format.elf",
-      "description": "USB-Formatierer 2.6.63 by strongt1me",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.64/usb_format.elf",
+      "description": "USB-Formatierer 2.6.64 by strongt1me",
       "last_update": "2026-10-31",
-      "version": "v2.6.63",
+      "version": "v2.6.64",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "52c3456a1e12285778081a257b9e3394e284e9164c7b592c15ac181bffb42d48",
-      "release_notes": "- Weboberfläche: Der Knopf oben rechts heißt jetzt „Formatierer ausschalten“ statt „Formatierer stoppen“, ebenso der Dialog („Ausschalten“ / „Weiterlaufen lassen“) und die Meldung danach – in allen Sprachen.\n- Hilfe: Der Hinweis auf den Reiterwechsel mit L1/R1 ist entfernt.\n"
+      "checksum": "9cb7b27d05632335a952433d6a8868863a7f1a84c94a8b3491ec37ed28078820",
+      "release_notes": "- Weboberfläche: Der Reiterwechsel mit L1/R1 ist wieder entfernt – er funktionierte auf der PS5 nicht. L2/R2 scrollen weiterhin.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
