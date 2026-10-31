@@ -526,19 +526,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-10.0.1",
+      "id": "ps5upload-ps5upload-10.0.2",
       "name": "ps5upload",
-      "filename": "ps5upload-10.0.1_v10.0.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-10.0.1_v10.0.1.elf",
+      "filename": "ps5upload-10.0.2_v10.0.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-10.0.2_v10.0.2.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.0.1/ps5upload-10.0.1.elf",
-      "description": "v10.0.1 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.0.2/ps5upload-10.0.2.elf",
+      "description": "v10.0.2 by phantomptr",
       "last_update": "2026-10-31",
-      "version": "v10.0.1",
+      "version": "v10.0.2",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "c5da95b6438a6d68e8c453df8ea84fb0341744f5fc9dae0781371b350450c3cc",
-      "release_notes": "\n- **Share a save with a friend (experimental).** Saves › **Share** saves a PS5 save's contents as\n  a `.zip`; on another PS5, **Use a shared save** puts it into that user's own save of the game,\n  so the console keeps it as theirs: no account ID change needed. Your save is backed up first and\n  put back if anything fails. Both consoles need PS5Upload; PS5 saves only.\n- **Stream & install is back for several packages at once, and leads for one.** Since 8.7.0\n  (when Upload and Install Package became one screen), packages picked or dropped together could\n  only be uploaded first. The list's main button is now **Stream & install** with how many\n  packages there are: they install one after another, a game before its update and DLC whatever\n  order they were picked in (as before 8.7.0), and anything else in the list uploads in the same\n  click. One package's main button is **Stream & install** as well, with\n  **Upload & install** next to it as the fallback.\n- **AppImage downloads.** Each release now also has the bare `.AppImage` (x64 and ARM64) next to\n  the Linux `.zip`, for AppImage managers. On Wayland with an NVIDIA card it restarts itself with\n  the system Wayland library, as the zip's `PS5Upload.sh` does.\n- **Play:** the Console picker is gone from the stream bar (Play uses the console you have\n  selected), **Start** is first in the row, and **Set up Play** stands out with its progress until\n  it's done.\n- **Fixed: on Windows, Play showed the picture enlarged and cut off on the right and bottom,**\n  in every picture size, in the app and in Chromium browsers (Edge, Opera GX). Their hardware\n  HEVC decoding on Windows reports each frame's visible picture smaller than it is, so only its\n  top-left part was drawn (720p was fine; 1080p, coded 1920×1088, was not). The app now reads\n  the real picture size from the stream itself and draws all of it; where a decoder's picture\n  cannot be put right, it switches to software decoding by itself.\n- **Play › Settings: Video decoding (Graphics card / Software) and Vi..."
+      "checksum": "53ad7fe7b446709ccc36bdd9a7109a0f62a38076bb3b8cb9ba5c3c7cce5dc510",
+      "release_notes": "- **Fixed: watching the stream on a phone never showed the picture** (\"The picture could not be\r\n  played here.\"), in H.264 and HEVC alike. A phone opens the watch link as plain `http://`, and\r\n  browsers offer the video decoder the page used only on secure pages, so it worked on the\r\n  computer itself and nowhere else. Phones and tablets now play it through the browser's own\r\n  video player, sound included, a fraction of a second behind the computer.\r\n- **The phone link doesn't open on Android 17?** Android now asks before a browser may reach\r\n  devices on your network: allow your browser **Nearby devices** (Settings › Apps › Chrome ›\r\n  Permissions). The phone panel says so under the link.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -886,19 +886,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-10.0.2-prerelease",
+      "id": "ps5upload-ps5upload-8.8.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-10.0.2_v10.0.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-10.0.2_v10.0.2%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-8.8.1_v8.8.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-8.8.1_v8.8.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.0.2/ps5upload-10.0.2.elf",
-      "description": "v10.0.2 [Pre-release] by phantomptr",
-      "last_update": "2026-10-31",
-      "version": "v10.0.2",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.1/ps5upload-8.8.1.elf",
+      "description": "v8.8.1 [Pre-release] by phantomptr",
+      "last_update": "2026-10-28",
+      "version": "v8.8.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "53ad7fe7b446709ccc36bdd9a7109a0f62a38076bb3b8cb9ba5c3c7cce5dc510",
-      "release_notes": "\n- **Fixed: watching the stream on a phone never showed the picture** (\"The picture could not be\n  played here.\"), in H.264 and HEVC alike. A phone opens the watch link as plain `http://`, and\n  browsers offer the video decoder the page used only on secure pages, so it worked on the\n  computer itself and nowhere else. Phones and tablets now play it through the browser's own\n  video player, sound included, a fraction of a second behind the computer.\n- **The phone link doesn't open on Android 17?** Android now asks before a browser may reach\n  devices on your network: allow your browser **Nearby devices** (Settings › Apps › Chrome ›\n  Permissions). The phone panel says so under the link.\n\n"
+      "checksum": "54d9feb2bb8f876d829f3305d4aaf90244d48dff0aa94468b26ddec17a6dda56",
+      "release_notes": "\n- **\"Convert…\" opens Workshop with the game picked again.** Since 8.7.0, Convert… from Files,\n  a game page, a Collection card and the Send as One Image card opened an empty Workshop:\n  they still linked to the old Convert screen, and the redirect to Workshop lost the game.\n  They go straight to Workshop now, and a test keeps every link off the old screens.\n- **The web UI and Docker take .zip, .7z and .rar archives (#529).** Pick an archive on the\n  server and it is unpacked on the way to the PS5, as in the desktop app: nothing extra is\n  written next to it on the NAS. The web UI used to refuse archives with \"isn't available in\n  the browser yet\".\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
