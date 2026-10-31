@@ -212,6 +212,21 @@
       "release_notes": "## Fixes\r\n- fix launch notification sometimes showing two or four times\r\n- fix shadowmount version not being detected, which showed the global tab and hid the launch notification on beta16\r\n- add revert to the global tab, to remove the shared apr emu"
     },
     {
+      "id": "hush-hush",
+      "name": "hush",
+      "filename": "hush_v1.0.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/hush_v1.0.0.elf",
+      "source": "https://github.com/disco-trooper/hush/releases",
+      "source_direct": "https://github.com/disco-trooper/hush/releases/download/v1.0.0/hush.elf",
+      "description": "Hush 1.0.0 by disco-trooper",
+      "last_update": "2026-10-25",
+      "version": "v1.0.0",
+      "author": "disco-trooper",
+      "category": "Homebrew",
+      "checksum": "5c98dd0881b64eb00e90d58d90056a66193ef8ee50e2d9906a1e298b5a34c352",
+      "release_notes": "## The console stops recording\n\nHush turns off the PlayStation 5's continuous recent-gameplay recording. With\nnothing encoded, there is nothing for the console to save.\n\n### What it does\n\n`SceAvCapture` creates its encoder through `libSceVenc`. Hush resolves that\nlibrary in the live process and points every import slot of\n`sceVencStartEncode` at an existing `xor eax, eax; ret` in the daemon's own code.\nThe call reports success and encodes nothing; compositor, scan-in and output\nswitching are untouched, which is why starting and quitting games keeps working.\n\n* Discovery is symbol based — module and function resolved by name on every\n  start, so nothing is tied to a fixed address.\n* Every write is read back and compared. A run that cannot verify its end state\n  says so instead of claiming success.\n* The gadget and the exact slots are written to `state.txt` atomically before\n  the first change, and merged with what an earlier run redirected.\n* A resident daemon verifies known slots every 20 s, repairs a slot that\n  reverts, rescans every 5 minutes and whenever the capture process is\n  replaced, and logs when the daemon exposes more slots than before\n  (`slot count grew 1 -> 4`).\n\n### Install\n\n```\nsha256sum -c SHA256SUMS      # Linux\nshasum -a 256 -c SHA256SUMS  # macOS\n```\n\nSend `hush.elf` to Payload Manager and load it, or add `local/hush` to the\nautoload list after ShadowMount+. Start a game: *Create → Save Recent Gameplay*\nanswers “Gameplay isn't being recorded”.\n\n### Inspect without changing anything\n\n`mode=check` in `/data/hush/config.ini` reports the firmware version, module\nbase, function address, gadget and every import slot with its current target,\nthen exits without writing a byte. It takes no lock, so it runs alongside the\nresident daemon. On a console where Hush has never run, create that file first,\notherwise the first start writes an `apply` config and patches immediately.\n\n### Turn it off\n\nSet `enabled=0`. Within about twenty seconds Hush restores the original function\nin every slot it ch..."
+    },
+    {
       "id": "librespot-ps5-librespot-ps5",
       "name": "librespot-ps5",
       "filename": "librespot-ps5_v0.1.0.elf",
