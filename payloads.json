@@ -289,17 +289,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.61.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.61.elf",
+      "filename": "usb_format_v2.6.62.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.62.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.61/usb_format.elf",
-      "description": "USB-Formatierer 2.6.61 by strongt1me",
-      "last_update": "2026-10-30",
-      "version": "v2.6.61",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.62/usb_format.elf",
+      "description": "USB-Formatierer 2.6.62 by strongt1me",
+      "last_update": "2026-10-31",
+      "version": "v2.6.62",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "3260b8a4b728378e4fdcac8e3916d436ca1859cc8cd2a0f181ed5765c6f6c926",
-      "release_notes": "- Weboberfläche an der PS5: L2 und R2 scrollen die Seite nach oben bzw. unten – je fester gedrückt, desto schneller; in Listen und Dialogen zuerst dort.\n- Spiele und PKG: Nach dem Verbinden ist das erste Laufwerk mit Spielen gewählt; leere Listen sagen, was zu tun ist; die Knöpfe zum Kopieren, Verschieben und Löschen erscheinen erst beim Anhaken.\n- Formatieren: erst rot, wenn ein Laufwerk gewählt ist – vorher nur der Hinweis, links (bzw. oben) eins zu wählen (Programm und Weboberfläche). Eine für Spiele vorgewählte SSD wird dort nie übernommen.\n- Spielstände: kürzere Angaben („geändert seit …“, „1 ungesichert“), Datum in der Schreibweise der Sprache statt US-Format, die Spalte reicht bis zum Rand.\n- Werkzeuge: alle Knöpfe in einer Reihe, darunter der Grund, wenn sie gesperrt sind (Programm und Weboberfläche).\n- Das Fenster springt nicht mehr: gleich groß in allen Betriebsarten und auf allen Reitern, auch beim Umschalten auf „Eigene Aufteilung“ (Partitionstabelle mit Knöpfen darunter).\n- Behoben: Die Erklärung zu fPKG/PKG unter der PKG-Liste verschwand, sobald Pakete geladen waren.\n"
+      "checksum": "4d3e390eaae7184de51ee21f8695fae33abbe6f0e0b68a74ca5831186a001935",
+      "release_notes": "- Eingehängte Spiele: Kennzeichen „eingehängt“ in der Spieleliste, dazu in der Weboberfläche der Filter „Nur eingehängte“ und im Programm die Sortierung „Eingehängt“.\n- Kachel neu anmelden: Scheitert es an einem eingehängten Spiel, nennt die Meldung das Spiel, und „Aushängen und fortfahren“ erledigt beides in einem Schritt.\n- Weboberfläche an der PS5: L1 und R1 wechseln den Reiter.\n- Weboberfläche: „Beenden“ heißt jetzt „Formatierer stoppen“. Der Dialog erklärt, dass zum Schließen der App die PS-Taste reicht – der Formatierer läuft dann weiter.\n- Die PS5-Benachrichtigung „beendet“ sagt, woher der Befehl kam (Weboberfläche, PC-Programm, Adresse). Jeder Stopp landet in /data/usb_format/quit.log.\n- Diagnose-Bericht: enthält die letzten Stopp-Befehle (ohne Adresse) und auffällige Zeilen aus dem Kernel-Log.\n- Linux-AppImage: „Jetzt aktualisieren“ lädt nur die geänderten Teile (meist etwa ein Siebtel), prüft die Prüfsummen und ersetzt die Datei. Die AppImages enthalten dafür Update-Informationen, auch für AppImageUpdate.\n- ShadowMountPlus-Meldung „ein Spiel ist noch eingehängt“ wird jetzt verständlich angezeigt statt als englische Fehlermeldung.\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
