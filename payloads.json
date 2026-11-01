@@ -541,19 +541,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-10.4.0",
+      "id": "ps5upload-ps5upload-10.4.1",
       "name": "ps5upload",
-      "filename": "ps5upload-10.4.0_v10.4.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-10.4.0_v10.4.0.elf",
+      "filename": "ps5upload-10.4.1_v10.4.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-10.4.1_v10.4.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.4.0/ps5upload-10.4.0.elf",
-      "description": "v10.4.0 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.4.1/ps5upload-10.4.1.elf",
+      "description": "v10.4.1 by phantomptr",
       "last_update": "2026-11-01",
-      "version": "v10.4.0",
+      "version": "v10.4.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "67b26d52fcb3cda8847cf7bf4893076b23f0d8b3f41765e3be64549c11336aae",
-      "release_notes": "\n- **Your computer's keyboard and mouse as the PS5's own, in Remote Play (FW 13.60).** Settings ›\n  Controls has three modes, kept per game: **Controller** (the keys and mouse act as a controller,\n  exactly as before, and the default), **Keyboard & mouse** (the PS5 gets a real keyboard and\n  mouse, for games and apps that support them) and **Mixed** (a real mouse; the keys act as a\n  controller, WASD moves). A button on the stream bar shows the mode and switches it, and\n  Ctrl+Option+M (Ctrl+Alt+M on Windows and Linux) does too. Tested end to end on FW 13.60; other\n  firmwares say it isn't available yet and keep Controller.\n- **Click the picture to give the PS5 your keyboard and mouse; press and let go of Ctrl+Option\n  (Ctrl+Alt) to get them back.** Ctrl+Option with another key still goes to the PS5. They also\n  come back when the window loses focus, Settings or the text box opens, or the stream stops, and\n  everything held on the PS5 is let go first. While they're released, keys work in the app again.\n- **Hard to miss the way out.** The first capture shows a card with the keys to press; a faint\n  \"⌃ ⌥ to release\" stays at the top while captured, and the card comes back when you seem to be\n  trying to get out (Esc twice, ⌘ or the Windows key, pushing against an edge, clicking where the\n  bar is).\n- **Both shortcuts can be changed** in Settings › Controls › Shortcuts: press the new keys, or\n  Reset. A shortcut the app already uses, a single letter, or Esc alone is refused. Hold Esc to\n  release is an option there too.\n- **Phones and tablets as the PS5's touchpad and keyboard.** A Controller / Touchpad switch over\n  the picture: drag moves the pointer, tap clicks, a two-finger tap right-clicks, a two-finger\n  drag scrolls, tap then drag selects. ⌨ opens the phone's keyboard and types on the PS5. The\n  phone-as-controller page has a Touchpad & keyboard tab as well.\n- How it works: the console side is a small companion process the helper starts through the\n  PS5's payload loader (port 9021), so a pr..."
+      "checksum": "7e52589212fb2a5da387d1cdfb5e245909316bab9fe6ae6c5a0e1d15ba34254d",
+      "release_notes": "\n- **Keyboard & mouse in Remote Play now works on every firmware**, not only FW 13.60 (still the\n  one it's tested on). A firmware without the PS5's virtual keyboard and mouse says it isn't\n  available and keeps Controller. If it doesn't start on your console, it isn't tried again on its\n  own: turn Keyboard & mouse (or Mixed) on again to retry, and tell us your firmware.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
