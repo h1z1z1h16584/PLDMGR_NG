@@ -304,17 +304,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.64.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.64.elf",
+      "filename": "usb_format_v2.6.65.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.65.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.64/usb_format.elf",
-      "description": "USB-Formatierer 2.6.64 by strongt1me",
-      "last_update": "2026-10-31",
-      "version": "v2.6.64",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.65/usb_format.elf",
+      "description": "USB-Formatierer 2.6.65 by strongt1me",
+      "last_update": "2026-11-01",
+      "version": "v2.6.65",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "9cb7b27d05632335a952433d6a8868863a7f1a84c94a8b3491ec37ed28078820",
-      "release_notes": "- Weboberfläche: Der Reiterwechsel mit L1/R1 ist wieder entfernt – er funktionierte auf der PS5 nicht. L2/R2 scrollen weiterhin.\n"
+      "checksum": "13844c45ac1fa49affb299ad8a635b9e88cf764474243deb59b263faf02cad80",
+      "release_notes": "## Hinzugefügt\n\n- Changelog auf Englisch (CHANGELOG.en.md).\n- „Was ist neu“ in den PC-Programmen zeigt die Änderungen aller Versionen seit der installierten; in der Weboberfläche zeigt sie ein Klick auf „Neue Version … verfügbar“ ebenfalls an.\n\n## Aktualisieren\n\nAm einfachsten im PS5-USB-Formatierer auf „ELF senden“ klicken. Für die App-Kachel den Ordner `PPSA86920` aus dem ZIP nach `/data/homebrew/` kopieren und in der Weboberfläche „Kachel neu anmelden“ wählen.\n\n| Datei | Zweck |\n|---|---|\n| `PS5-USB-Formatierer.exe` | Windows: an der PS5 (übers Netz) und am PC, mit eingebauter ELF |\n| `USB-Formatierer.exe` | Windows ohne PS5-Funktionen: alle Dateisysteme, Partitionen, Image-Sicherung |\n| `…-x86_64.AppImage`, `…-aarch64.AppImage` | dieselben Programme für Linux (Intel/AMD bzw. ARM64), `.zsync` für „Jetzt aktualisieren“ |\n| `…-linux-x86_64.tar.gz`, `…-linux-aarch64.tar.gz` | Linux als Archiv: entpacken und starten |\n| `usb_format.elf` | Formatierer als Payload für den ELF-Loader (Port 9021) |\n| `PPSA86920.zip` | App-Kachel |\n| `SHA256SUMS` | Prüfsummen aller Dateien |\n\n\n<details><summary>English</summary>\n\n#### Added\n\n- Changelog in English (CHANGELOG.en.md).\n- \"What's new\" in the PC programs shows the changes of every version since the installed one; in the web interface a click on \"New version … available\" shows them as well.\n\n#### Updating\n\nThe easiest way is \"Send ELF\" in the PS5 USB Formatter. For the app tile, copy the folder `PPSA86920` from the ZIP to `/data/homebrew/` and choose \"Re-register tile\" in the web interface. `.exe` for Windows, `.AppImage`/`.tar.gz` for Linux, `usb_format.elf` for the ELF loader (port 9021), `SHA256SUMS` with the checksums.\n\n</details>\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -798,17 +798,17 @@
     {
       "id": "orbit-store-ps5-orbit_store-prerelease",
       "name": "orbit-store-ps5 [Pre-release]",
-      "filename": "orbit_store_v1.8.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/orbit_store_v1.8.2%20%5BPre-release%5D.elf",
+      "filename": "orbit_store_v1.8.3 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/orbit_store_v1.8.3%20%5BPre-release%5D.elf",
       "source": "https://github.com/saawant12/orbit-store-ps5/releases",
-      "source_direct": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.8.2/orbit_store.elf",
-      "description": "Orbit Store 1.8.2 (Beta) [Pre-release] by saawant12",
-      "last_update": "2026-10-31",
-      "version": "v1.8.2",
+      "source_direct": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.8.3/orbit_store.elf",
+      "description": "Orbit Store 1.8.3 (Beta) [Pre-release] by saawant12",
+      "last_update": "2026-11-01",
+      "version": "v1.8.3",
       "author": "saawant12",
       "category": "Pre-release",
-      "checksum": "134cedb380b39f5a010beb1a0834cebb2192ea0e5749c13675b3a64b6dfd3996",
-      "release_notes": "# Orbit Store 1.8.2 (Beta)\n\n**Smoother updates, better download choices and a growing catalogue.**\n\n- **Simpler native updates.** From this version on, updating Orbit from the TV app downloads the app once when it already includes the newest download service. Select **Close and reopen** when it finishes. The reopened app starts its new download service by itself, and your downloads continue.\n- **Game pages start on the right option.** Opening a game from filtered Browse results selects the download option that matches your filters. Otherwise Orbit selects the source and format you downloaded last, then an option that downloads without a verification page.\n\n- **The catalogue now has 2,158 games and 5,045 download options**, plus **626 add-ons with 628 options across 192 base games**.\n\n> **Orbit stays free.** [Orbit Store](https://github.com/saawant12/orbit-store-ps5), [Orbit Zero](https://github.com/saawant12/orbit-store-ps5#orbit-zero-for-mac-windows-and-linux), [Orbit Play](https://github.com/saawant12/orbit-play-ps5) and our upcoming apps are free and will stay free.\n>\n> I’ve been building Orbit in my own time and covering the costs of AI tools, test consoles, hardware and servers. If you’d like to help, you can support Orbit on [GitHub Sponsors](https://github.com/sponsors/saawant12) or [Buy Me a Coffee](https://buymeacoffee.com/saawant12). It’s entirely optional.\n\nWe’re also shipping improvements and bug fixes across our apps:\n\n## Orbit Store · Native PS5 app (FFPKG) and browser (ELF)\n\n- **Easier to read time left.** Downloads longer than an hour show hours and minutes, and long retry waits show minutes.\n- **Clear finished copies and moves.** Library results such as “Copied … · Complete” can now be dismissed.\n- **Downloads start during copies and transfers.** Fixed a bug that kept new and resumed downloads waiting while a game was being copied or moved, or while Orbit Zero was sending a file. These operations reserve their remaining space and protect files in use.\n- **Messages clear after..."
+      "checksum": "59e216d7d5b163a14c8f7ac8fce4962b0af04541a1724236e0efb216a882e124",
+      "release_notes": "**Clearer Browse filters and other improvements.**\n\n- **See how many games match each filter.** Browse dropdowns show game counts alongside each choice. Choices with no matches are dimmed, and the counts update as you change your filters.\n- **Browse by genre.** Choose one or more genres, combine them with your other filters and save the selection for later. We’ve also added a **Turn-based** tag and updated tags for more games.\n- **Know when a backport is included.** After extraction, Orbit recognises a backport by its `fakelib` folder. If the game needs newer firmware, its warning explains where to put the backport for ShadowMount+ using **Library → Files**.\n- The catalogue now has **2,168 games and 5,065 download options**, plus **626 add-ons with 628 options across 192 base games**.\n\n> **Orbit stays free.** [Orbit Store](https://github.com/saawant12/orbit-store-ps5), [Orbit Zero](https://github.com/saawant12/orbit-store-ps5#orbit-zero-for-mac-windows-and-linux), [Orbit Play](https://github.com/saawant12/orbit-play-ps5) and our upcoming apps are free and will stay free.\n>\n> I’ve been building Orbit in my own time and covering the costs of AI tools, test consoles, hardware and servers. If you’d like to help, you can support Orbit on [GitHub Sponsors](https://github.com/sponsors/saawant12) or [Buy Me a Coffee](https://buymeacoffee.com/saawant12). It’s entirely optional.\n\nWe’re also shipping improvements and bug fixes across our apps:\n\n## Orbit Store · Native PS5 app (FFPKG) and browser (ELF)\n\n- **Check your existing copy before downloading again.** If the game is already installed or saved on a drive in another format or version, its page shows that copy’s location and format above **Download anyway**. Available in the browser and the native Store layout.\n- **Bug fixes and improvements.**\n\n## Orbit Zero · Mac, Windows and Linux\n\n- **Covers stay visible after filtering.** Fixed cached artwork disappearing when changing Browse filters.\n- **Backport guidance follows your download.** Downloads show..."
     },
     {
       "id": "ps5-app-dumper-ps5-app-dumper_v2.10-prerelease",
