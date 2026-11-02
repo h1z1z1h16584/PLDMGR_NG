@@ -47,7 +47,7 @@ github:X-F1REBALL-X/wk-autoloader
 github:abhi245y/spotless
 github:strongt1me/ps5-usb-formatierer
 github:disco-trooper/hush
-github:
+github:kvaps/ProsperoWeb
 github:
 github:
 github:
