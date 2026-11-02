@@ -541,19 +541,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-10.7.0",
+      "id": "ps5upload-ps5upload-10.7.1",
       "name": "ps5upload",
-      "filename": "ps5upload-10.7.0_v10.7.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-10.7.0_v10.7.0.elf",
+      "filename": "ps5upload-10.7.1_v10.7.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-10.7.1_v10.7.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.7.0/ps5upload-10.7.0.elf",
-      "description": "v10.7.0 by phantomptr",
-      "last_update": "2026-11-01",
-      "version": "v10.7.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.7.1/ps5upload-10.7.1.elf",
+      "description": "v10.7.1 by phantomptr",
+      "last_update": "2026-11-02",
+      "version": "v10.7.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "bdb3c4fc89d4ecb13c8472f31dbadc0ca9050d3fbcb0a359de4fb745fec49949",
-      "release_notes": "\n- **Add games to Workshop's queue while one converts (For #621).** While a game is being made,\n  games picked or dropped under **① Game**, picked **On the PS5…** or sent with **Convert first**\n  now go into **⑤ Queue** (dropping and the PS5 picker did nothing before) and are made after it,\n  one at a time and in order, without pressing Start. A dropped folder of games adds each game in\n  it, and the game being made is not added again. The first queued game starts once you put the\n  finished game's result away (**Convert another game**), so its Install, Launch and Delete\n  buttons stay until then; after a build that failed, the queue waits for you. This follows\n  **Start the queue when you add something**; with it off they wait for **Convert N queued**.\n  Installs still go on to Upload & Install's queue as before.\n- **Rebuild AMPR index (For #621).** A backported game that reads its files through libSceAmpr\n  needs an `ampr_emu.index` that matches its files, or it can crash or stop at start. Workshop's\n  new **Rebuild AMPR index** makes it again from the game's files, without converting: a folder on\n  this computer or on the PS5 gets it in place (the old one kept once as `ampr_emu.index.bak`,\n  and you are told how many files it lists and whether the old one differed); an `.exfat`,\n  `.ffpkg` or `.ffpfs` image gets an edited copy with it (the image is not changed); a `.ffpfsc`\n  is compressed and read-only, so it offers to convert it again (rebuilding the same image again\n  makes `-edited (2)`). A folder on the PS5 that is a mounted image is refused, so the image is\n  never changed by it. It is only offered for a game that uses libSceAmpr. Thanks to\n  Constantine-HD for both ideas.\n\n"
+      "checksum": "db65ec2b61a6532620eb7b941cf378dadd11a254f05e1dd7b545911f65bfe49e",
+      "release_notes": "\n- **Pairing with the PIN shown on the PS5 tries again by itself (#609).** On a PS5 Pro with FW\n  11.60 the console dropped the connection on the first try (sometimes showing CE-110024-8\n  \"Something went wrong\") and accepted the same PIN on the next. The app now retries a dropped\n  connection twice, two seconds apart; a refused PIN is never retried. If it still fails, the\n  message says to press Pair again, since the same PIN works while the PS5 shows it.\n- Tested by the #609 reporter on FW 11.60: native keyboard & mouse devices start and stop\n  cleanly there too.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
