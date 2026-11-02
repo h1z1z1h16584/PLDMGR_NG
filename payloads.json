@@ -541,19 +541,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-10.7.1",
+      "id": "ps5upload-ps5upload-10.7.2",
       "name": "ps5upload",
-      "filename": "ps5upload-10.7.1_v10.7.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-10.7.1_v10.7.1.elf",
+      "filename": "ps5upload-10.7.2_v10.7.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-10.7.2_v10.7.2.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.7.1/ps5upload-10.7.1.elf",
-      "description": "v10.7.1 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.7.2/ps5upload-10.7.2.elf",
+      "description": "v10.7.2 by phantomptr",
       "last_update": "2026-11-02",
-      "version": "v10.7.1",
+      "version": "v10.7.2",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "db65ec2b61a6532620eb7b941cf378dadd11a254f05e1dd7b545911f65bfe49e",
-      "release_notes": "\n- **Pairing with the PIN shown on the PS5 tries again by itself (#609).** On a PS5 Pro with FW\n  11.60 the console dropped the connection on the first try (sometimes showing CE-110024-8\n  \"Something went wrong\") and accepted the same PIN on the next. The app now retries a dropped\n  connection twice, two seconds apart; a refused PIN is never retried. If it still fails, the\n  message says to press Pair again, since the same PIN works while the PS5 shows it.\n- Tested by the #609 reporter on FW 11.60: native keyboard & mouse devices start and stop\n  cleanly there too.\n\n"
+      "checksum": "afb8b1965796795f308dcc8e27be1a2e80feeaddbb85e3c94823ba46dabeb0d2",
+      "release_notes": "\n- **Switched-on cheats now apply once the game is ready, and stay applied (For #627).** The helper\n  used to try a game's saved cheats once, right when the game started. When the game's code was not\n  loaded yet, that try failed quietly and nothing tried again, so a switch could read On while\n  nothing was applied, until you switched it Off and On. Now each switched-on cheat is tried again\n  every few seconds until the game is ready for it, checked after it is written, and put back if the\n  game undoes it (a loading screen or coming back from rest mode; at most 5 times in 2 minutes).\n  Cheats that don't match the game version, or that the game changed itself, are left alone; a game\n  patch whose code isn't found gives up after about a minute. The crash guard now also watches a\n  cheat that only applies later in the game, and paused games and the engine switch work as before.\n  A cheat its file switches on by itself now stays Off once you turn it off.\n- **See what actually happened to each cheat.** Under each switched-on cheat (Cheats, the game's\n  page, Play's Game panel and Minion › Cheats) a short line says **Applied ✓**, **Waiting for the\n  game to load…**, **Couldn't apply:** and why, or **The game changed this; not touched**. The TV\n  shows one notification when the game's cheats are applied and one for each cheat that couldn't\n  be, with the reason, and the helper's log says why too.\n- Thanks to jass4l for the very detailed report, down to the exact patch, the code path and the logs\n  from the console.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
