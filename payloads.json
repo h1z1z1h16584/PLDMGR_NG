@@ -272,19 +272,19 @@
       "release_notes": "Added 7.0x support"
     },
     {
-      "id": "ps5-linux-loader-ps5-linux-loader-all10-13-20261102",
+      "id": "ps5-linux-loader-ps5-linux-loader-10-13-20261025",
       "name": "ps5-linux-loader",
-      "filename": "ps5-linux-loader-all10-13-20261102_v2026.11.02-all10-13.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader-all10-13-20261102_v2026.11.02-all10-13.elf",
+      "filename": "ps5-linux-loader-10-13-20261025_10.xx-support.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader-10-13-20261025_10.xx-support.elf",
       "source": "https://github.com/soniciso1/ps5-linux-loader/releases",
-      "source_direct": "https://github.com/soniciso1/ps5-linux-loader/releases/download/v2026.11.02-all10-13/ps5-linux-loader-all10-13-20261102.elf",
-      "description": "ps5-linux-loader 10.xx-13.60 (official merge) by soniciso1",
-      "last_update": "2026-11-02",
-      "version": "v2026.11.02-all10-13",
+      "source_direct": "https://github.com/soniciso1/ps5-linux-loader/releases/download/10.xx-support/ps5-linux-loader-10-13-20261025.elf",
+      "description": "Added 10.XX support by soniciso1",
+      "last_update": "2026-10-25",
+      "version": "10.xx-support",
       "author": "soniciso1",
       "category": "Homebrew",
-      "checksum": "10d57dfb2b5979d086322ba4d2f87574d4c53c1fcf976a1c27a44513691928a4",
-      "release_notes": "Merged official ps5-linux-loader main (`e7954b2`) into the custom all-firmware tree.\n\n**Kept:** 8.x/9.x delivery, 12.x kit cave, retail staging, 10.xx support.\n**Added:** official 10.xx path, PS5 Pro 11.xx, CONTRIBUTING, Pro GPU firmware dump offsets (13.20 `0x25141D0`, 13.60 `0x25243F0`).\n\n**Fixes in this build:**\n- `PS5_PRO_GPU_FW_OFFSET` added to `offset_list` (`0x1E8`) and both Pro tables\n- `<errno.h>` included in `loader.c`\n- duplicate `FW_1160` branch removed from `shellcode_kernel/main.c`\n- zero-stat read-until-EOF fallback restored (was defined but unused)\n- 8.x/9.x cave pre-copy made reachable\n\n**Firmware:** 8.xx, 9.xx, 10.00/10.01/10.20/10.40/10.60, 11.00/11.20/11.40/11.60, 12.00-12.70, 13.00/13.20/13.40/13.42/13.60; PS5 Pro per README.\n\nBuilt from `9ed838c`. SHA-256 of asset: `10d57dfb2b5979d086322ba4d2f87574d4c53c1fcf976a1c27a44513691928a4`."
+      "checksum": "17679bd43e5435bd407802b5036399a2b961e6845a726dd3b1919f0a5a5af8e6",
+      "release_notes": "Added 10.XX support for fat and slim not pro"
     },
     {
       "id": "ps5-patchdl-patchdl_0.3.11",
