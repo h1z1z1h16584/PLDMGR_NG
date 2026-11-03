@@ -214,17 +214,17 @@
     {
       "id": "hush-hush",
       "name": "hush",
-      "filename": "hush_v1.1.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/hush_v1.1.0.elf",
+      "filename": "hush_v1.1.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/hush_v1.1.1.elf",
       "source": "https://github.com/disco-trooper/hush/releases",
-      "source_direct": "https://github.com/disco-trooper/hush/releases/download/v1.1.0/hush.elf",
-      "description": "Hush 1.1.0 by disco-trooper",
+      "source_direct": "https://github.com/disco-trooper/hush/releases/download/v1.1.1/hush.elf",
+      "description": "Hush 1.1.1 by disco-trooper",
       "last_update": "2026-11-03",
-      "version": "v1.1.0",
+      "version": "v1.1.1",
       "author": "disco-trooper",
       "category": "Homebrew",
-      "checksum": "7ce9356eaf28d3fa2e3cfcd6b93300e5321c385d087409912ae3b29e6855a8d3",
-      "release_notes": "## Recording off, Remote Play on\n\nHush 1.0 stopped the console's continuous recording, but Remote Play goes through\nthe same encoder, so with Hush loaded a stream never got a picture\n([#3](https://github.com/disco-trooper/hush/issues/3)). 1.1.0 adds a mode that\nkeeps both.\n\n### `hold_s`\n\n```ini\nhold_s=30\n```\n\nThe console builds the recording encoder once, early in a game, and does not\nretry when that fails. With `hold_s=N`, Hush patches `sceVencStartEncode` when a\ngame process appears, holds the patch for N seconds, then restores every slot.\nRecording stays off for that whole game session — *Save Recent Gameplay* still\nanswers “Gameplay isn't being recorded” — and the encoder is free for Remote\nPlay afterwards.\n\nMeasured on 13.60 with Kingdom Come: Deliverance II: armed within a second of the\ngame starting, four slots redirected, four restored 30 s later, no clip saved,\nand a stream of the running game had its picture.\n\n`hold_s=0` is the default and keeps the 1.0 behaviour: the patch stays for as\nlong as Hush runs.\n\n### Know before you use it\n\n* **Don't connect during the window.** A stream started in the first N seconds\n  of a game gets no picture and leaves the console on “still finishing the last\n  Remote Play session” until it is restarted.\n* **Load Hush before the game.** A game that is already running is skipped; it\n  is covered from its next start.\n* **If a title still records,** its recorder started after the window. Raise\n  `hold_s` (60, then 120); a new value applies from the next game start.\n* Only one title on one firmware has been measured. Reports from other games are\n  welcome.\n\n### Also in this release\n\n* In hold mode `config.ini` is re-read every second, so `enabled=0` restores and\n  exits within a second.\n* On start, slots that still point at the stub — left by a run killed mid-window\n  — are found and restored even without `state.txt`.\n* A failed restore is logged and retried; a replaced capture daemon is detected.\n* `rescan_s` defaults to 60 instead of 300, so slots that ap..."
+      "checksum": "e58045cc39bb2301a4966e3c043eb75cabc45a0e5e39bb09b0b4151f57767f78",
+      "release_notes": "## A leftover `state.txt` no longer looks like a live patch\n\n`/data/hush/state.txt` exists while the patch is in place and is deleted once\nevery slot is restored. Tools read it that way: PS5Upload's upcoming hold-mode\nsupport ([phantomptr/ps5upload#651](https://github.com/phantomptr/ps5upload/issues/651))\nwaits for the file to go before starting a stream.\n\nA reboot drops the patch but not the file. After a boot with `hold_s=0`, a\nconsole switched to hold mode kept the old `state.txt` until the first game's\nwindow ended. Until then every stream would wait and pause for nothing.\n\nIn hold mode Hush now checks on start, and on `enabled=0`, whether any slot is\nredirected. If none is, it deletes the leftover file and logs:\n\n```\nremoved a stale /data/hush/state.txt: no slot is redirected\n```\n\nChecked on 13.60 with a planted `state.txt` from an earlier boot: removed at start.\n\nNothing else changed. With `hold_s=0` the next start patches again and rewrites\nthe file, as before.\n\n### Install\n\n```\nsha256sum -c SHA256SUMS      # Linux\nshasum -a 256 -c SHA256SUMS  # macOS\n```\n\nReplace `hush.elf` in Payload Manager. Existing `config.ini` files keep working.\n\n### Build\n\n```\ne58045cc39bb2301a4966e3c043eb75cabc45a0e5e39bb09b0b4151f57767f78  hush.elf\n```\n\nReproducible with the same toolchain (`-Wl,--build-id=none`): two clean builds of\nthis tag gave this exact binary. Built with Homebrew clang/LLD 23.1.4.\n"
     },
     {
       "id": "librespot-ps5-librespot-ps5",
