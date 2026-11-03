@@ -272,19 +272,19 @@
       "release_notes": "Added 7.0x support"
     },
     {
-      "id": "ps5-linux-loader-ps5-linux-loader-10-13-20261025",
+      "id": "ps5-linux-loader-ps5-linux-loader-all10-13-20261102",
       "name": "ps5-linux-loader",
-      "filename": "ps5-linux-loader-10-13-20261025_10.xx-support.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader-10-13-20261025_10.xx-support.elf",
+      "filename": "ps5-linux-loader-all10-13-20261102_v2026.11.02-all10-13.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ps5-linux-loader-all10-13-20261102_v2026.11.02-all10-13.elf",
       "source": "https://github.com/soniciso1/ps5-linux-loader/releases",
-      "source_direct": "https://github.com/soniciso1/ps5-linux-loader/releases/download/10.xx-support/ps5-linux-loader-10-13-20261025.elf",
-      "description": "Added 10.XX support by soniciso1",
-      "last_update": "2026-10-25",
-      "version": "10.xx-support",
+      "source_direct": "https://github.com/soniciso1/ps5-linux-loader/releases/download/v2026.11.02-all10-13/ps5-linux-loader-all10-13-20261102.elf",
+      "description": "ps5-linux-loader 10.xx-13.60 (official merge, current SDK) by soniciso1",
+      "last_update": "2026-11-03",
+      "version": "v2026.11.02-all10-13",
       "author": "soniciso1",
       "category": "Homebrew",
-      "checksum": "17679bd43e5435bd407802b5036399a2b961e6845a726dd3b1919f0a5a5af8e6",
-      "release_notes": "Added 10.XX support for fat and slim not pro"
+      "checksum": "10d57dfb2b5979d086322ba4d2f87574d4c53c1fcf976a1c27a44513691928a4",
+      "release_notes": "Merged official ps5-linux-loader main (`e7954b2`) into the custom all-firmware tree, built with the current `ps5-payload-dev/sdk` release.\n\n**Verified on 13.60 PS5 Pro:** loader enters standby, wake boots Linux, `CPU0: AMD Custom Zen 2 (Viola)`, Pro GPU firmware dump writes all eight `viola_*.bin` files.\n\n**Kept:** 8.x/9.x delivery, 12.x kit cave, retail staging, 10.xx support.\n**Added:** official 10.xx path, PS5 Pro 11.xx, CONTRIBUTING, Pro GPU firmware dump offsets (13.20 `0x25141D0`, 13.60 `0x25243F0`).\n\n**Fixes:**\n- `PS5_PRO_GPU_FW_OFFSET` added to `offset_list` (`0x1E8`) and both Pro tables\n- `<errno.h>` included in `loader.c`\n- duplicate `FW_1160` branch removed\n- zero-stat read-until-EOF fallback restored\n- 8.x/9.x cave pre-copy made reachable\n\n**Build note:** must be built with the current ps5-payload-dev SDK. The older bundled SDK produces ELFs that die with SIGILL in `payload.elf`.\n\nBuilt from `cee600d` (tree = `9ed838c`). SHA-256 of asset: `89160e96cd850ef2bb430c118afb2e9bc527a5af6158eb10525bd6c5b97e3682`."
     },
     {
       "id": "ps5-patchdl-patchdl_0.3.12",
