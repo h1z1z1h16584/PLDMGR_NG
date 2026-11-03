@@ -4,17 +4,17 @@
     {
       "id": "cheatrunner-cheatrunner",
       "name": "CheatRunner",
-      "filename": "CheatRunner_v0.18.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Cheats/CheatRunner_v0.18.elf",
+      "filename": "CheatRunner_v0.18.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Cheats/CheatRunner_v0.18.1.elf",
       "source": "https://github.com/notmaj0r/CheatRunner/releases",
-      "source_direct": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.18/CheatRunner.elf",
-      "description": "v0.18 by notmaj0r",
-      "last_update": "2026-10-10",
-      "version": "v0.18",
+      "source_direct": "https://github.com/notmaj0r/CheatRunner/releases/download/v0.18.1/CheatRunner.elf",
+      "description": "v0.18.1 by notmaj0r",
+      "last_update": "2026-11-03",
+      "version": "v0.18.1",
       "author": "notmaj0r",
       "category": "Cheats",
-      "checksum": "4ae1ea4e37b2e67d5487355ddf671f166861ed6dceea348c048ad060770c0140",
-      "release_notes": "CheatRunner v0.18\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/CheatRunner/blob/main/CHANGELOG.md)\r\n\r\nCheck [GUIDE](https://github.com/notmaj0r/CheatRunner#homebrew-launcher) to setup CheatRunner.zip on Homebrew Launcher.\r\n\r\n⚠️ Before updating to a new CheatRunner version, please follow these steps: [Updating CheatRunner](https://github.com/notmaj0r/CheatRunner#-updating-cheatrunner)\r\n\r\nSpecial Thanks:\r\n\r\n💖 Supporters - those who supported the project through [Ko-Fi](https://ko-fi.com/maj0r) or [Buy Me a Coffee](https://buymeacoffee.com/maj0r).\r\n• primo • lal3x • jawad • anonymous • Maffioh • X-F1REBALL-X • Br0ken4life • Nimrod • l gave a tip! • Someone • johnfugate \r\n\r\n💚 Testers - those who tested early builds of CheatRunner before release.\r\n\r\n❤️ If this project was useful to you, consider supporting the project development! 🫶\r\n\r\nAll contributions will go toward our goal of acquiring a low-firmware PS5 (1.xx–4.xx) for research & development."
+      "checksum": "80535260027983f09fc9d131e11e13591de61ef5eeea458825598263862d2ce8",
+      "release_notes": "CheatRunner v0.18.1\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/CheatRunner/blob/main/CHANGELOG.md)\r\n\r\n⚠️ Before updating to a new CheatRunner version, please follow these steps: [Updating CheatRunner](https://github.com/notmaj0r/CheatRunner#-updating-cheatrunner)\r\n\r\n### Special Thanks:\r\n\r\n💖 **Supporters** — *those who supported the project through* [Ko-Fi](https://ko-fi.com/maj0r), [Buy Me a Coffee](https://buymeacoffee.com/maj0r), or [PIX](https://livepix.gg/notmaj0r).\r\n\r\n• Vinas • Someone • Bruno Sanglard • AirKingBR • Marcus • Jeffs • cavalcanti27 • Maffioh • PCYGOR • Lucas Clinio Maraia • primo • lal3x • jawad • anonymous • X-F1REBALL-X • Br0ken4life • Nimrod • I gave a tip! • johnfugate • Loxias • Shambhala222 • Zahir Tarafder • Wender • Heymimd • Android_Loads • LOCATELLI • Tiago G DE LIRA • Giih77777 • mvlira • PauloSantos • Waleed • Doubleq • gas17 • PS5FOREVA\r\n\r\n💚 Testers - those who tested early builds of CheatRunner before release.\r\n\r\n❤️ If this project was useful to you, consider supporting the project development! 🫶\r\n\r\nAll contributions will go toward our goal of acquiring a low-firmware PS5 (1.xx–4.xx) for research & development."
     },
     {
       "id": "ps5-dualsense-overlay-ps5-dualsense-overlay-v1.0.1",
