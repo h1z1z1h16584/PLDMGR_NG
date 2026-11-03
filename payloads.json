@@ -841,34 +841,34 @@
       "release_notes": "## Changelog\r\n\r\n### Direct Install\r\n- PKG files can now be installed from another device, such as a PC, directly to the console without a temporary disk copy\r\n\r\n### Networking\r\n- Moved package streaming and Direct Install services to ports `18841` and `18842` to avoid potential conflicts with other homebrew applications. The web interface remains on port `8844`.\r\n\r\n### SMB Streaming\r\n- Improved SMB package streaming performance, reaching approximately 110 MB/s during installs in ideal conditions\r\n- Added streaming diagnostics to help identify network and server bottlenecks\r\n\r\n### Extended USB Storage\r\n- Available-space checks now include extended USB storage (`/mnt/ext0`)\r\n\r\n### Package Badges\r\n- PS4 and PS5 package badges are now shown in package lists\r\n\r\n### Package Detection and Scanning\r\n- Fixed detection of PS5 DLC packages\r\n- Fixed drive scans hiding other packages when an unknown package was present, such as during a copy operation\r\n\r\n---\r\n\r\nFull Changelog: https://github.com/itsPLK/ps5-pkg-manager/compare/v1.1.0...v1.2.1"
     },
     {
-      "id": "ps5-web-file-manager-web-file-mgr-v1.13-rc1-prerelease",
+      "id": "ps5-web-file-manager-web-file-mgr-v1.13-rc2-prerelease",
       "name": "ps5-web-file-manager [Pre-release]",
-      "filename": "web-file-mgr-v1.13-rc1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/web-file-mgr-v1.13-rc1%20%5BPre-release%5D.elf",
+      "filename": "web-file-mgr-v1.13-rc2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/web-file-mgr-v1.13-rc2%20%5BPre-release%5D.elf",
       "source": "https://github.com/owendswang/ps5-web-file-manager/releases",
-      "source_direct": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc1/web-file-mgr-v1.13-rc1.elf",
+      "source_direct": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc2/web-file-mgr-v1.13-rc2.elf",
       "description": "Added fullscreen/restore function for testing/feedback [Pre-release] by owendswang",
       "last_update": "2026-10-29",
-      "version": "v1.13-rc1",
+      "version": "v1.13-rc2",
       "author": "owendswang",
       "category": "Pre-release",
-      "checksum": "8c9456a10ddde61dd0247b9171e71a285b955096ca7eb8e4ae3bdbe94f38f605",
-      "release_notes": "- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 12.20 and 13.60. Thanks to the community (SHARK, Fubc from Discord and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb\r\n\r\n"
+      "checksum": "91f8e7f52183ce624651b779016bb48cbe7adaad278833a1191ad2e8fc6fbfe3",
+      "release_notes": "- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n- Revert 'force install every time when it starts'. Now it would skip install when detected icon and param files like before. (Issue #34, #28)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 10.01, 12.20 and 13.60. It would cause ShellUI crash when restoring as I tested on FW 11.60.\r\nThanks to the community (SHARK, Fubc from Discord, 兵山上的来客 from QQ and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb"
     },
     {
       "id": "ps5-web-file-manager-wfm-7zip-helper-prerelease",
       "name": "ps5-web-file-manager [Pre-release]",
-      "filename": "wfm-7zip-helper_v1.13-rc1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/wfm-7zip-helper_v1.13-rc1%20%5BPre-release%5D.elf",
+      "filename": "wfm-7zip-helper_v1.13-rc2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/wfm-7zip-helper_v1.13-rc2%20%5BPre-release%5D.elf",
       "source": "https://github.com/owendswang/ps5-web-file-manager/releases",
-      "source_direct": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc1/wfm-7zip-helper.elf",
+      "source_direct": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc2/wfm-7zip-helper.elf",
       "description": "Added fullscreen/restore function for testing/feedback [Pre-release] by owendswang",
       "last_update": "2026-10-29",
-      "version": "v1.13-rc1",
+      "version": "v1.13-rc2",
       "author": "owendswang",
       "category": "Pre-release",
       "checksum": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825",
-      "release_notes": "- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 12.20 and 13.60. Thanks to the community (SHARK, Fubc from Discord and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb\r\n\r\n"
+      "release_notes": "- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n- Revert 'force install every time when it starts'. Now it would skip install when detected icon and param files like before. (Issue #34, #28)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 10.01, 12.20 and 13.60. It would cause ShellUI crash when restoring as I tested on FW 11.60.\r\nThanks to the community (SHARK, Fubc from Discord, 兵山上的来客 from QQ and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb"
     },
     {
       "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.7.0-dev-3a34c3b-prerelease",
