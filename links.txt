@@ -48,7 +48,7 @@ github:abhi245y/spotless
 github:strongt1me/ps5-usb-formatierer
 github:disco-trooper/hush
 github:kvaps/ProsperoWeb
-github:
+github:MasterShivnath007/ytps5-sponsorblock
 github:
 github:
 github:
