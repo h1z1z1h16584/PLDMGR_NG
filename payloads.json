@@ -753,17 +753,17 @@
     {
       "id": "garlic-savemgr-garlic-savemgr-prerelease",
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.15-beta1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta1%20%5BPre-release%5D.elf",
+      "filename": "garlic-savemgr_v1.15-beta2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta2%20%5BPre-release%5D.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta1/garlic-savemgr.elf",
-      "description": "v1.15-beta1 [Pre-release] by earthonion",
-      "last_update": "2026-10-23",
-      "version": "v1.15-beta1",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta2/garlic-savemgr.elf",
+      "description": "v1.15-beta2 [Pre-release] by earthonion",
+      "last_update": "2026-11-04",
+      "version": "v1.15-beta2",
       "author": "earthonion",
       "category": "Pre-release",
-      "checksum": "9777e49916968b5327be9d3799d25f1d3b810d3c853c448d38c8bbd120124787",
-      "release_notes": "Beta: adds \"Dump All USB\" button to bulk bar — copies every encrypted save across all titles to a USB drive in one click.\n\nTest on console before promoting to stable."
+      "checksum": "f3733b5ee291fb89dd515b659f34273dad437e054b8abb50a1d7f69d812c11b3",
+      "release_notes": "Compute PARAMS HMAC from OpenPsId instead of scraping existing SFOs. Fix PARAMS blob layout and FORMAT data_len."
     },
     {
       "id": "kstuff-lite-kstuff-prerelease",
