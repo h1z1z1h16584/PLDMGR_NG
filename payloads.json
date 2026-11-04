@@ -362,6 +362,21 @@
       "release_notes": "﻿Changes since 1.2.0.\n\n## Upgrade note\nIf an older WK Autoloader Store is already installed, send **Restore** first, reboot, then install 1.2.1. That clears leftovers so the new AppCache can fill cleanly.\n\n## Auto-start\n- Delay can be set to 0s (start immediately, no countdown).\n- Choosing 0 is saved as 0 and is not rewritten to the default.\n- If the console is already jailbroken, the UI shows that state instead of running the chain again.\n\n## Cache\n- First Store open after install shows a clear offline-cache fill percent.\n- Later opens use the stable AppCache and start instantly from memory.\n\n## Restore\n- Puts the PlayStation Store tile back.\n- Also removes leftover WK Autoloader app folders and cache data (no backups kept).\n\n## Files\n- WK_Autoloader_Store_V1.2.1.elf: send to elfldr on port 9021.\n- WK_Autoloader_Store_Restore_V1.2.1.elf: send to elfldr on port 9021, then reboot.\r\n"
     },
     {
+      "id": "ytps5-sponsorblock-ytps5",
+      "name": "ytps5-sponsorblock",
+      "filename": "ytps5_v1.1.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ytps5_v1.1.0.elf",
+      "source": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases",
+      "source_direct": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases/download/v1.1.0/ytps5.elf",
+      "description": "ytps5 1.1.0 by MasterShivnath007",
+      "last_update": "2026-11-04",
+      "version": "v1.1.0",
+      "author": "MasterShivnath007",
+      "category": "Homebrew",
+      "checksum": "9c19f09872a70f86099edb9a2e8da39de318ec23f58998f0306bdcb2151d04fb",
+      "release_notes": "![ytps5 Settings inside the YouTube app](https://raw.githubusercontent.com/MasterShivnath007/ytps5-sponsorblock/main/docs/media/demo.gif)\n\n**Block YouTube ads and skip sponsor segments in the official PS5 video app — one ELF, no package install, no app replacement.**\n\n## Install in two minutes\n\n**You need:** a jailbroken PS5 on **firmware 8.20** with YouTube **`01.000.003`** (any `PPSA0165x` build; tested on `PPSA01652`).\n\n1. Download **`ytps5.elf`** below (about 9 MB).\n2. Add it in **Payload Manager → local payloads**.\n3. Run **`ytps5`** and wait for the toast `ytps5: waiting for PPSA01652`.\n4. Open the app (`PPSA01652`) — it freezes for a moment, then shows `ytps5: hook installed`.\n5. Change settings inside the app: **Settings → ytps5 Settings**.\n\nSite and docs: https://mastershivnath007.github.io/ytps5-sponsorblock/\n\n---\n\n## ytps5 1.1.0\n\nThis release adds a config file so you can choose **which official PS5 video app** ytps5 patches.\n\n### New: `/data/ytps5-sponsorblock/config.txt`\n\nThe injector creates the file with comments on first run:\n\n```ini\npatch_title=PPSA01652   # PPSA01650 | PPSA01651 | PPSA01652 | AUTO\nallow_y2jb=0            # 1 = allow patching PPSA01650/PPSA01651\n```\n\n- **Default stays safe:** `PPSA01652` (clean player), Y2JB apps untouched.\n- **`PPSA01650`/`PPSA01651` are refused unless you set `allow_y2jb=1`.**\n- **`AUTO`** matches any `PPSA0165x`, but still refuses Y2JB titles without the opt-in.\n- Edit over FTP (port `2121`) or the console file manager, then restart `ytps5.elf`.\n- Toasts now name the app being waited for / patched.\n\n### Other\n\n- `config.example.txt` included in the zip.\n- `make dist` now self-cleans stale archives and creates the `tools/` and `docs/` folders.\n- Docs, site and bug-report template updated.\n- `version.json` and the in-app update check bumped to `1.1.0`.\n\n### Compatibility\n\nTested on **PS5 firmware 8.20** with YouTube **`01.000.003`** on **`PPSA01652`**. Every `PPSA0165x` build on the test console reports `01.000.003`, and any of them can be patched by..."
+    },
+    {
       "id": "pizza-hen-pizza-hen-v2.00",
       "name": "PIZZA-HEN",
       "filename": "PIZZA-HEN-v2.00.elf",
