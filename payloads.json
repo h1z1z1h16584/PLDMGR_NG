@@ -768,17 +768,17 @@
     {
       "id": "garlic-savemgr-garlic-savemgr-prerelease",
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.15-beta6 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta6%20%5BPre-release%5D.elf",
+      "filename": "garlic-savemgr_v1.15-beta7 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta7%20%5BPre-release%5D.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta6/garlic-savemgr.elf",
-      "description": "v1.15-beta6 [Pre-release] by earthonion",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta7/garlic-savemgr.elf",
+      "description": "v1.15-beta7 [Pre-release] by earthonion",
       "last_update": "2026-11-05",
-      "version": "v1.15-beta6",
+      "version": "v1.15-beta7",
       "author": "earthonion",
       "category": "Pre-release",
-      "checksum": "af6e31fb07e5260f20ef118cb0d140445e7897bc55757f55c2d9499d91beb257",
-      "release_notes": "Fix: UI now passes SAVEDATA_BLOCKS to create_pfs so saves use native size."
+      "checksum": "b38bcbeeb918fea0a70ce11a4f4ca7ca6bd589931bb8b3abb30d99c9ae3adda9",
+      "release_notes": "Fix: 1 SAVEDATA_BLOCK = 32KB, not 64KB. Prior change doubled every save image."
     },
     {
       "id": "kstuff-lite-kstuff-prerelease",
@@ -916,19 +916,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-10.2.1-prerelease",
+      "id": "ps5upload-ps5upload-11.2.2-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-10.2.1_v10.2.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-10.2.1_v10.2.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-11.2.2_v11.2.2 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.2.2_v11.2.2%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.2.1/ps5upload-10.2.1.elf",
-      "description": "v10.2.1 [Pre-release] by phantomptr",
-      "last_update": "2026-11-01",
-      "version": "v10.2.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.2/ps5upload-11.2.2.elf",
+      "description": "v11.2.2 [Pre-release] by phantomptr",
+      "last_update": "2026-11-05",
+      "version": "v11.2.2",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "e497814706b2c1b914e6e6906e37884c233a0c1dde4d4d3e12ac2e53503bd00c",
-      "release_notes": "\n- **Fixed: Play crashed on a Mac with a DualSense connected.** The app quit while starting or\n  stopping Remote Play, often several times in a row (10.1.0 and 10.2.0). The controller is now\n  read from one place for the whole session, so starting and stopping streams is safe again.\n\n"
+      "checksum": "39d313fab53cfcafd4a0e049ea3a13cb4092d5c3ab8be7709ef783f3978632e4",
+      "release_notes": "\n- macOS: automatic updates and Install and restart work again. Since 11.1.0 they failed with \"could not open the .dmg\", because the download showed a license agreement that the updater couldn't accept. This version installs by itself from 11.1.0 or newer once it's offered.\n- Updates: when an update doesn't install, the box now says to quit PS5Upload before replacing the app by hand and has a Quit button. Closing the window can leave the app running, which is why your system said it was still open.\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
