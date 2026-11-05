@@ -768,17 +768,16 @@
     {
       "id": "garlic-savemgr-garlic-savemgr-prerelease",
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.15-beta8 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta8%20%5BPre-release%5D.elf",
+      "filename": "garlic-savemgr_v1.15-beta9 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta9%20%5BPre-release%5D.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta8/garlic-savemgr.elf",
-      "description": "v1.15-beta8 [Pre-release] by earthonion",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta9/garlic-savemgr.elf",
+      "description": "v1.15-beta9 [Pre-release] by earthonion",
       "last_update": "2026-11-05",
-      "version": "v1.15-beta8",
+      "version": "v1.15-beta9",
       "author": "earthonion",
       "category": "Pre-release",
-      "checksum": "b1efd3066156a0ac4c5f47504a4d1e4b79f3e3f523c3c6e296a3acc53b98364f",
-      "release_notes": "Stop touching zeroed param.sfo — no regen, no account patch, no resign. Just encrypt."
+      "checksum": "88ed2c04be0f20342a6e83eef7a97c8f3de9f15359f5859e00083e534888a062"
     },
     {
       "id": "kstuff-lite-kstuff-prerelease",
