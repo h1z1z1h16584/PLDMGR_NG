@@ -364,17 +364,17 @@
     {
       "id": "ytps5-sponsorblock-ytps5",
       "name": "ytps5-sponsorblock",
-      "filename": "ytps5_v1.1.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ytps5_v1.1.0.elf",
+      "filename": "ytps5_v1.2.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ytps5_v1.2.0.elf",
       "source": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases",
-      "source_direct": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases/download/v1.1.0/ytps5.elf",
-      "description": "ytps5 1.1.0 by MasterShivnath007",
-      "last_update": "2026-11-04",
-      "version": "v1.1.0",
+      "source_direct": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases/download/v1.2.0/ytps5.elf",
+      "description": "v1.2.0 — firmware-agnostic (8.20 and 11.40 verified) by MasterShivnath007",
+      "last_update": "2026-11-05",
+      "version": "v1.2.0",
       "author": "MasterShivnath007",
       "category": "Homebrew",
-      "checksum": "9c19f09872a70f86099edb9a2e8da39de318ec23f58998f0306bdcb2151d04fb",
-      "release_notes": "![ytps5 Settings inside the YouTube app](https://raw.githubusercontent.com/MasterShivnath007/ytps5-sponsorblock/main/docs/media/demo.gif)\n\n**Block YouTube ads and skip sponsor segments in the official PS5 video app — one ELF, no package install, no app replacement.**\n\n## Install in two minutes\n\n**You need:** a jailbroken PS5 on **firmware 8.20** with YouTube **`01.000.003`** (any `PPSA0165x` build; tested on `PPSA01652`).\n\n1. Download **`ytps5.elf`** below (about 9 MB).\n2. Add it in **Payload Manager → local payloads**.\n3. Run **`ytps5`** and wait for the toast `ytps5: waiting for PPSA01652`.\n4. Open the app (`PPSA01652`) — it freezes for a moment, then shows `ytps5: hook installed`.\n5. Change settings inside the app: **Settings → ytps5 Settings**.\n\nSite and docs: https://mastershivnath007.github.io/ytps5-sponsorblock/\n\n---\n\n## ytps5 1.1.0\n\nThis release adds a config file so you can choose **which official PS5 video app** ytps5 patches.\n\n### New: `/data/ytps5-sponsorblock/config.txt`\n\nThe injector creates the file with comments on first run:\n\n```ini\npatch_title=PPSA01652   # PPSA01650 | PPSA01651 | PPSA01652 | AUTO\nallow_y2jb=0            # 1 = allow patching PPSA01650/PPSA01651\n```\n\n- **Default stays safe:** `PPSA01652` (clean player), Y2JB apps untouched.\n- **`PPSA01650`/`PPSA01651` are refused unless you set `allow_y2jb=1`.**\n- **`AUTO`** matches any `PPSA0165x`, but still refuses Y2JB titles without the opt-in.\n- Edit over FTP (port `2121`) or the console file manager, then restart `ytps5.elf`.\n- Toasts now name the app being waited for / patched.\n\n### Other\n\n- `config.example.txt` included in the zip.\n- `make dist` now self-cleans stale archives and creates the `tools/` and `docs/` folders.\n- Docs, site and bug-report template updated.\n- `version.json` and the in-app update check bumped to `1.1.0`.\n\n### Compatibility\n\nTested on **PS5 firmware 8.20** with YouTube **`01.000.003`** on **`PPSA01652`**. Every `PPSA0165x` build on the test console reports `01.000.003`, and any of them can be patched by..."
+      "checksum": "bbbf486e1e5c632916a22f86381e2948cbefd8d8bbd3ffa33978b954499b1036",
+      "release_notes": "**Firmware-agnostic release — 8.20 and 11.40 verified.**\n\nKernel addresses are now resolved at runtime from the PS5 payload SDK, so the\nsame ELF follows firmware **1.00 through 13.60** instead of a hard-coded\ntable. The kernel layer is firmware-agnostic; the app-side hook still matches\nthe `HTMLScriptExecute` signature of the YouTube build.\n\n## Verified on real hardware\n\n- PS5 **8.20**, YouTube `01.000.003` (`PPSA01652`)\n- PS5 **11.40**, YouTube `01.000.003` (`PPSA01652`) — community test\n\n## What changed\n\n- `allproc` / `root_vnode` come from the SDK's `KERNEL_ADDRESS_*` values;\n  proc fields use `KERNEL_OFFSET_PROC_P_*`.\n- 12.x and 13.x added to the fallback table: 1.00–13.60 is complete (67\n  versions checked).\n- Process walks are bounded; unknown firmware now stops with a clear\n  notification instead of walking a bad pointer.\n- Memory writes are chunked, retried after `mprotect`, then tried through\n  `kernel_proc_copyin`, with a `write[...]` line per region in the log.\n- The app is resumed instead of staying frozen if a pre-hook write fails.\n\n## Install\n\n1. Download `ytps5.elf`.\n2. Payload Manager → local payloads → add `ytps5.elf`.\n3. Run it and wait for **`ytps5: waiting for PPSA01652`**.\n4. Open YouTube (`PPSA01652`).\n\n## Notes\n\n- `PPSA01650`/`PPSA01651` are refused by default (Y2JB daily drivers). Opt in\n  with `allow_y2jb=1` in `/data/ytps5-sponsorblock/config.txt`.\n- Other firmware: the kernel layer should attach from 1.00 to 13.60, but the\n  app build may differ. If it stops at `target not found`, send\n  `/data/ytps5-sponsorblock/injector.log`.\n- Not affiliated with Sony, Google or YouTube. No app packages, keys, DRM\n  tools or copyrighted files are distributed.\n\nSHA-256 of `ytps5.elf`: `bbbf486e1e5c632916a22f86381e2948cbefd8d8bbd3ffa33978b954499b1036`\n"
     },
     {
       "id": "pizza-hen-pizza-hen-v2.00",
@@ -974,21 +974,6 @@
       "category": "Pre-release",
       "checksum": "b414f1d28c8ea6dfc9869af802863a2054a20486ccf30979bcdbd8af323ef2af",
       "release_notes": "## WK Autoloader 1.0.4 - update test build\n\nDeveloped by [X-F1REBALL-X](https://github.com/X-F1REBALL-X)\n\n- Same build as 1.0.3, version bumped to 1.0.4 to test the self-update banner\n- Running 1.0.3 on PS5 (`:1022`) should now show the **Update** banner\n- Pages UI moved to 1.0.3 (still one patch behind, so the banner shows there too)\n\nAsset: `wk-dual-payload.elf` (6325504 bytes), sha256 `b414f1d28c8ea6dfc9869af802863a2054a20486ccf30979bcdbd8af323ef2af`\n\n"
-    },
-    {
-      "id": "ytps5-sponsorblock-ytps5-injector-prerelease",
-      "name": "ytps5-sponsorblock [Pre-release]",
-      "filename": "ytps5-injector_v1.2.0-beta.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ytps5-injector_v1.2.0-beta.2%20%5BPre-release%5D.elf",
-      "source": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases",
-      "source_direct": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases/download/v1.2.0-beta.2/ytps5-injector.elf",
-      "description": "v1.2.0-beta.2 — firmware-agnostic test build (1.00–13.60) [Pre-release] by MasterShivnath007",
-      "last_update": "2026-11-05",
-      "version": "v1.2.0-beta.2",
-      "author": "MasterShivnath007",
-      "category": "Pre-release",
-      "checksum": "2e4f0062dc372bbdf28abefe86aa37ae8cfb9dbdc6d38ccd846dc96db599e77e",
-      "release_notes": "**Experimental firmware-agnostic build — testers wanted.**\n\nThis is the first build that is not tied to one firmware. Kernel addresses\nare resolved at runtime from the PS5 payload SDK, so the same ELF follows\nfirmware **1.00 through 13.60** instead of a hard-coded table.\n\n## What changed\n\n- `allproc` and `root_vnode` now come from the SDK's runtime\n  `KERNEL_ADDRESS_*` values; proc fields use `KERNEL_OFFSET_PROC_P_*`.\n- Process walks are bounded, and the pid is re-read through the struct. An\n  unknown firmware now stops with a notification instead of walking a bad\n  pointer and hanging.\n- 12.x and 13.x added to the fallback table: 1.00 to 13.60 is now complete\n  (67 versions checked).\n- Memory writes are chunked into 4 KB, retried after `mprotect`, and then\n  tried through `kernel_proc_copyin`, with one `write[...]` log line per\n  region that includes the protection, error number and verification.\n- If a pre-hook write fails, the app is resumed instead of staying frozen.\n\n## Verified\n\nFirmware **8.20**, YouTube `01.000.003` (`PPSA01652`): attach, target\nscan, all six writes, hook installed, **1 script injected**.\n\n## Still unverified\n\n- **Firmware 11.40:** this build targets the `write failed` reported in\n  issue #1. It should now either succeed or name the exact failing region in\n  `injector.log`. Not confirmed yet.\n- **12.x / 13.x:** the kernel addresses are covered by the SDK, but the\n  YouTube app build on those firmwares may use a different\n  `HTMLScriptExecute` signature. If so, it stops safely at\n  `target not found`.\n\n## If you test it\n\nRun `ytps5.elf` as usual. If it fails, send\n`/data/ytps5-sponsorblock/injector.log`. The log now contains\n`build: fw-agnostic diag`, `sdk: fw=`, `sections:`, and one\n`write[...]` line per region.\n\nSHA-256 of `ytps5.elf`: `5a63a26262cbc91782cc463679596c100cf8b4d0293624a68643c3745484f594`\n"
     },
     {
       "id": "ytps5-sponsorblock-ytps5-prerelease",
