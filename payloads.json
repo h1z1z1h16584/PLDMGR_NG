@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.2.1",
+      "id": "ps5upload-ps5upload-11.2.2",
       "name": "ps5upload",
-      "filename": "ps5upload-11.2.1_v11.2.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-11.2.1_v11.2.1.elf",
+      "filename": "ps5upload-11.2.2_v11.2.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-11.2.2_v11.2.2.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.1/ps5upload-11.2.1.elf",
-      "description": "v11.2.1 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.2/ps5upload-11.2.2.elf",
+      "description": "v11.2.2 by phantomptr",
       "last_update": "2026-11-05",
-      "version": "v11.2.1",
+      "version": "v11.2.2",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "98daecdc73a47e83ee9a9845536771e6c3125b0d1c238eb5d427faeecb16063b",
-      "release_notes": "\n- Queue: when rest mode or a lost connection interrupts a queue you started, the whole queue now carries on when the console is back. It used to run only the interrupted row, and the rest waited for you to press Start.\n- Queue: a file on an SMB share that fails to close no longer stops the next file from opening.\n- Remote Play: if this device can't decode the stream's sound, the stream now says so, instead of playing nothing with no explanation.\n\n"
+      "checksum": "39d313fab53cfcafd4a0e049ea3a13cb4092d5c3ab8be7709ef783f3978632e4",
+      "release_notes": "\n- macOS: automatic updates and Install and restart work again. Since 11.1.0 they failed with \"could not open the .dmg\", because the download showed a license agreement that the updater couldn't accept. This version installs by itself from 11.1.0 or newer once it's offered.\n- Updates: when an update doesn't install, the box now says to quit PS5Upload before replacing the app by hand and has a Quit button. Closing the window can leave the app running, which is why your system said it was still open.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -916,19 +916,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.2.2-prerelease",
+      "id": "ps5upload-ps5upload-10.2.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-11.2.2_v11.2.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.2.2_v11.2.2%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-10.2.1_v10.2.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-10.2.1_v10.2.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.2/ps5upload-11.2.2.elf",
-      "description": "v11.2.2 [Pre-release] by phantomptr",
-      "last_update": "2026-11-05",
-      "version": "v11.2.2",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.2.1/ps5upload-10.2.1.elf",
+      "description": "v10.2.1 [Pre-release] by phantomptr",
+      "last_update": "2026-11-01",
+      "version": "v10.2.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "39d313fab53cfcafd4a0e049ea3a13cb4092d5c3ab8be7709ef783f3978632e4",
-      "release_notes": "\n- macOS: automatic updates and Install and restart work again. Since 11.1.0 they failed with \"could not open the .dmg\", because the download showed a license agreement that the updater couldn't accept. This version installs by itself from 11.1.0 or newer once it's offered.\n- Updates: when an update doesn't install, the box now says to quit PS5Upload before replacing the app by hand and has a Quit button. Closing the window can leave the app running, which is why your system said it was still open.\n\n"
+      "checksum": "e497814706b2c1b914e6e6906e37884c233a0c1dde4d4d3e12ac2e53503bd00c",
+      "release_notes": "\n- **Fixed: Play crashed on a Mac with a DualSense connected.** The app quit while starting or\n  stopping Remote Play, often several times in a row (10.1.0 and 10.2.0). The controller is now\n  read from one place for the whole session, so starting and stopping streams is safe again.\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
