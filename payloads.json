@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.2.0",
+      "id": "ps5upload-ps5upload-11.2.1",
       "name": "ps5upload",
-      "filename": "ps5upload-11.2.0_v11.2.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-11.2.0_v11.2.0.elf",
+      "filename": "ps5upload-11.2.1_v11.2.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-11.2.1_v11.2.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.0/ps5upload-11.2.0.elf",
-      "description": "v11.2.0 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.1/ps5upload-11.2.1.elf",
+      "description": "v11.2.1 by phantomptr",
       "last_update": "2026-11-05",
-      "version": "v11.2.0",
+      "version": "v11.2.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "66539c82919f04657762f044bb8f4693057278c1061adfa71f8e31ca3e4bf5ed",
-      "release_notes": "\n- New **MCP & API** page in the sidebar. Claude Code, Codex and OpenCode get one-click Add, Update and Remove, plus the commands to copy. Gemini CLI, Cursor, Claude Desktop and curl have setup to copy. It lists all 128 agent tools with search, and every API route with a curl line, and two API calls can be run right there. OpenCode has no remove command, so its card says what to delete.\n- Agents stay up to date by themselves: when the app updates, new tools appear the next time you start a session in your agent. If the engine's address changes, the app tells you when it starts and Update fixes it in one click.\n\n"
+      "checksum": "98daecdc73a47e83ee9a9845536771e6c3125b0d1c238eb5d427faeecb16063b",
+      "release_notes": "\n- Queue: when rest mode or a lost connection interrupts a queue you started, the whole queue now carries on when the console is back. It used to run only the interrupted row, and the rest waited for you to press Start.\n- Queue: a file on an SMB share that fails to close no longer stops the next file from opening.\n- Remote Play: if this device can't decode the stream's sound, the stream now says so, instead of playing nothing with no explanation.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -768,17 +768,17 @@
     {
       "id": "garlic-savemgr-garlic-savemgr-prerelease",
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.15-beta5 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta5%20%5BPre-release%5D.elf",
+      "filename": "garlic-savemgr_v1.15-beta6 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta6%20%5BPre-release%5D.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta5/garlic-savemgr.elf",
-      "description": "v1.15-beta5 [Pre-release] by earthonion",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta6/garlic-savemgr.elf",
+      "description": "v1.15-beta6 [Pre-release] by earthonion",
       "last_update": "2026-11-05",
-      "version": "v1.15-beta5",
+      "version": "v1.15-beta6",
       "author": "earthonion",
       "category": "Pre-release",
-      "checksum": "5475b1d671fb185f1ec0eb21036dfed9afdd38b66f75068c6cd3b1d5bc185aa8",
-      "release_notes": "Use exact SAVEDATA_BLOCKS size for PFS images."
+      "checksum": "af6e31fb07e5260f20ef118cb0d140445e7897bc55757f55c2d9499d91beb257",
+      "release_notes": "Fix: UI now passes SAVEDATA_BLOCKS to create_pfs so saves use native size."
     },
     {
       "id": "kstuff-lite-kstuff-prerelease",
