@@ -976,6 +976,36 @@
       "release_notes": "## WK Autoloader 1.0.4 - update test build\n\nDeveloped by [X-F1REBALL-X](https://github.com/X-F1REBALL-X)\n\n- Same build as 1.0.3, version bumped to 1.0.4 to test the self-update banner\n- Running 1.0.3 on PS5 (`:1022`) should now show the **Update** banner\n- Pages UI moved to 1.0.3 (still one patch behind, so the banner shows there too)\n\nAsset: `wk-dual-payload.elf` (6325504 bytes), sha256 `b414f1d28c8ea6dfc9869af802863a2054a20486ccf30979bcdbd8af323ef2af`\n\n"
     },
     {
+      "id": "ytps5-sponsorblock-ytps5-injector-prerelease",
+      "name": "ytps5-sponsorblock [Pre-release]",
+      "filename": "ytps5-injector_v1.2.0-beta.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ytps5-injector_v1.2.0-beta.1%20%5BPre-release%5D.elf",
+      "source": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases",
+      "source_direct": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases/download/v1.2.0-beta.1/ytps5-injector.elf",
+      "description": "v1.2.0-beta.1 — FW 11.40 test build (experimental) [Pre-release] by MasterShivnath007",
+      "last_update": "2026-11-05",
+      "version": "v1.2.0-beta.1",
+      "author": "MasterShivnath007",
+      "category": "Pre-release",
+      "checksum": "3464ce66fb9e18fc92f81f3516c569c11cd49550dabe6d240798b0dc6dba8cfa",
+      "release_notes": "**Experimental test build — firmware 11.40.** Not the current stable release.\n\nThe 1.1.0 build bundles a libhijacker offset table that stops at firmware\n10.60. On 11.40 (`sdk_version 0x11400005`) every offset resolved to `-1`, so\nthe process walk hung at `ytps5: attaching` and the hook never ran.\n\nThis build adds the 11.00 / 11.20 / 11.40 / 11.60 cases, taken from the PS5\npayload SDK's own `crt/kernel.c` table and `kstuff-lite`'s\n`prosper0gdb/offsets/11_40.h`. The firmware 8.20 path is unchanged.\n\n**What to send back if it fails:** `/data/ytps5-sponsorblock/injector.log`.\nThe line `libhijacker offsets: allproc=...` should now show real values\ninstead of `0xffffffffffffffff`, and the log should get past `attaching`.\n\n**Caveats**\n\n- Untested on real 11.40 hardware. A wrong kernel offset can hang or panic\n  the console; you run this at your own risk.\n- The YouTube app build on 11.40 may differ from the tested `01.000.003`, so\n  the hook target scan can still fail after a successful attach.\n- `ytps5.elf` is the normal single-file installer. `ytps5-injector.elf` is\n  the inner payload, only useful if you know you need it.\n"
+    },
+    {
+      "id": "ytps5-sponsorblock-ytps5-prerelease",
+      "name": "ytps5-sponsorblock [Pre-release]",
+      "filename": "ytps5_v1.2.0-beta.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ytps5_v1.2.0-beta.1%20%5BPre-release%5D.elf",
+      "source": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases",
+      "source_direct": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases/download/v1.2.0-beta.1/ytps5.elf",
+      "description": "v1.2.0-beta.1 — FW 11.40 test build (experimental) [Pre-release] by MasterShivnath007",
+      "last_update": "2026-11-05",
+      "version": "v1.2.0-beta.1",
+      "author": "MasterShivnath007",
+      "category": "Pre-release",
+      "checksum": "1c9d47e76aa844ce9c06b764c90fe34cc5e58b2fc94b585c3e6bfe49b91b8ae5",
+      "release_notes": "**Experimental test build — firmware 11.40.** Not the current stable release.\n\nThe 1.1.0 build bundles a libhijacker offset table that stops at firmware\n10.60. On 11.40 (`sdk_version 0x11400005`) every offset resolved to `-1`, so\nthe process walk hung at `ytps5: attaching` and the hook never ran.\n\nThis build adds the 11.00 / 11.20 / 11.40 / 11.60 cases, taken from the PS5\npayload SDK's own `crt/kernel.c` table and `kstuff-lite`'s\n`prosper0gdb/offsets/11_40.h`. The firmware 8.20 path is unchanged.\n\n**What to send back if it fails:** `/data/ytps5-sponsorblock/injector.log`.\nThe line `libhijacker offsets: allproc=...` should now show real values\ninstead of `0xffffffffffffffff`, and the log should get past `attaching`.\n\n**Caveats**\n\n- Untested on real 11.40 hardware. A wrong kernel offset can hang or panic\n  the console; you run this at your own risk.\n- The YouTube app build on 11.40 may differ from the tested `01.000.003`, so\n  the hook target scan can still fail after a successful attach.\n- `ytps5.elf` is the normal single-file installer. `ytps5-injector.elf` is\n  the inner payload, only useful if you know you need it.\n"
+    },
+    {
       "id": "archived-etahen-99.0",
       "name": "etaHEN 99.0",
       "filename": "etaHEN-99.0.elf",
