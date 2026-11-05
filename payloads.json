@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.2.2",
+      "id": "ps5upload-ps5upload-11.2.3",
       "name": "ps5upload",
-      "filename": "ps5upload-11.2.2_v11.2.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-11.2.2_v11.2.2.elf",
+      "filename": "ps5upload-11.2.3_v11.2.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-11.2.3_v11.2.3.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.2/ps5upload-11.2.2.elf",
-      "description": "v11.2.2 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.3/ps5upload-11.2.3.elf",
+      "description": "v11.2.3 by phantomptr",
       "last_update": "2026-11-05",
-      "version": "v11.2.2",
+      "version": "v11.2.3",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "39d313fab53cfcafd4a0e049ea3a13cb4092d5c3ab8be7709ef783f3978632e4",
-      "release_notes": "\n- macOS: automatic updates and Install and restart work again. Since 11.1.0 they failed with \"could not open the .dmg\", because the download showed a license agreement that the updater couldn't accept. This version installs by itself from 11.1.0 or newer once it's offered.\n- Updates: when an update doesn't install, the box now says to quit PS5Upload before replacing the app by hand and has a Quit button. Closing the window can leave the app running, which is why your system said it was still open.\n\n"
+      "checksum": "0a0fd1cd7946e5bd364dfaaadc0e7b01c35c33fd48302385378ff743646b129a",
+      "release_notes": "\n- Play Together: a friend's picture no longer freezes about 10 seconds after joining. It hit friends on plain `http` links (LAN and Tailscale) until they reloaded. The Watch party on phones gets the same fix. (#649)\n- Play Together: on a phone, the buttons no longer sit on top of the console's \"Who's using this controller?\" menu. A small note at the top says what to do instead. (#649)\n- Play Together: **Block PS & Create for friends** is now on by default, so a friend can't quit your game or start a console update by accident. They can still press PS once to pick a user, and you can turn it off. (#649)\n- Play Together: playing on your TV leaves room for 2 friends, and the panel and FAQ now say why: a PS5 takes 4 controllers, and the stream's user holds one. (#649)\n- Helper: sending it through Payload Manager 0.6.3 no longer fails with HTTP 500 when an earlier copy is stored there. Storing a payload by hand after you confirm replacing it works too. (#679)\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
