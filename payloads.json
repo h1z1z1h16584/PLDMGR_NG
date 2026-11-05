@@ -768,17 +768,16 @@
     {
       "id": "garlic-savemgr-garlic-savemgr-prerelease",
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.15-beta2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta2%20%5BPre-release%5D.elf",
+      "filename": "garlic-savemgr_v1.15-beta4 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta4%20%5BPre-release%5D.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta2/garlic-savemgr.elf",
-      "description": "v1.15-beta2 [Pre-release] by earthonion",
-      "last_update": "2026-11-04",
-      "version": "v1.15-beta2",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta4/garlic-savemgr.elf",
+      "description": "v1.15-beta4 [Pre-release] by earthonion",
+      "last_update": "2026-11-05",
+      "version": "v1.15-beta4",
       "author": "earthonion",
       "category": "Pre-release",
-      "checksum": "f3733b5ee291fb89dd515b659f34273dad437e054b8abb50a1d7f69d812c11b3",
-      "release_notes": "Compute PARAMS HMAC from OpenPsId instead of scraping existing SFOs. Fix PARAMS blob layout and FORMAT data_len."
+      "checksum": "808599e129652b37d2d643a639d4e66dcabe585355ba12e4276f297cdbb94ee8"
     },
     {
       "id": "kstuff-lite-kstuff-prerelease",
