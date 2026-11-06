@@ -915,19 +915,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-10.2.1-prerelease",
+      "id": "ps5upload-ps5upload-11.2.5-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-10.2.1_v10.2.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-10.2.1_v10.2.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-11.2.5_v11.2.5 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.2.5_v11.2.5%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v10.2.1/ps5upload-10.2.1.elf",
-      "description": "v10.2.1 [Pre-release] by phantomptr",
-      "last_update": "2026-11-01",
-      "version": "v10.2.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.5/ps5upload-11.2.5.elf",
+      "description": "v11.2.5 [Pre-release] by phantomptr",
+      "last_update": "2026-11-06",
+      "version": "v11.2.5",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "e497814706b2c1b914e6e6906e37884c233a0c1dde4d4d3e12ac2e53503bd00c",
-      "release_notes": "\n- **Fixed: Play crashed on a Mac with a DualSense connected.** The app quit while starting or\n  stopping Remote Play, often several times in a row (10.1.0 and 10.2.0). The controller is now\n  read from one place for the whole session, so starting and stopping streams is safe again.\n\n"
+      "checksum": "a2c51a140fe3c701edc854decfe0cc120ec155bd8f99c9d49feac8cb5d057f80",
+      "release_notes": "\n- Hardware: Read sensors works while a game runs. It used to wait 30 seconds and bring back only the temperatures, because the measured CPU clock doesn't answer during a game. Now the fan, GPU and core clocks come back in about 2 seconds, then almost at once, and only the measured clock waits until the game is closed.\n- Play Together: with Picture on this device off, the first friend uses the stream's own controller, so there's room for 3 friends beside your DualSense on the TV. If you turn the picture back on, they keep that controller until they leave. (#687)\n- iPhone: built with Xcode 27.1, so the app should fill the iPhone Duo's screen, folded and unfolded, and change layout without restarting. (#675)\n- Phones: the top bar is no longer cut off on a screen with no space above it, and stays clear of the status bar when held sideways.\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
