@@ -915,19 +915,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.2.7-prerelease",
+      "id": "ps5upload-ps5upload-11.2.8-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-11.2.7_v11.2.7 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.2.7_v11.2.7%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-11.2.8_v11.2.8 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.2.8_v11.2.8%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.7/ps5upload-11.2.7.elf",
-      "description": "v11.2.7 [Pre-release] by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.8/ps5upload-11.2.8.elf",
+      "description": "v11.2.8 [Pre-release] by phantomptr",
       "last_update": "2026-11-06",
-      "version": "v11.2.7",
+      "version": "v11.2.8",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "b1e3c2998b950fdd1451755f195738b30fe5093425e6e7008be3c5ba50f25c94",
-      "release_notes": "\n- iPhone and iPad app: full screen no longer asks iOS for its own web full screen. That put Apple's X on top of L2, and opening the keyboard from the Touchpad made the screen jump. (#675)\n- Phones and tablets: the on-screen controller's parts no longer sit on each other. The Controller/Touchpad switch overlapped L2 and R2 on most phones, and on a folded iPhone Duo or a short screen the sticks ran into the D-pad and the face buttons. (#675)\n- iPhone Duo: dialogs and Notifications stay clear of the column of system icons, so their buttons can be reached. In full screen the picture stays centered and uses the full width, and with a controller connected it sits in the middle when held upright. (#675)\n- Convert: `.exfat` and `.ffpkg` names are kept short enough to mount. A long folder name used to build fine and then fail to mount.\n- Convert: an LZ4-packed game keeps its `ampr_emu.index` when made into a package or a plain image. Replacing it dropped the files inside the packs.\n- Convert: making a game folder from an image also replaces a stale `ampr_emu.index`, as images and packages already did.\n- Convert: an `.exfat` with a decomposed file name, usually from a Mac, is refused with a message instead of building a game that can't find its files.\n- Packages build and verify a little faster: the CRC check is about five times quicker.\n\n"
+      "checksum": "a76ae6f70ee8cb0b536ee39f60855cee627a01f33271699020ee35989a9a8f37",
+      "release_notes": "\n- Convert: a game whose executables are plain unsigned ELFs now gets them fake-signed in the package, image or game folder you make, because the console won't start a plain ELF. Your source isn't changed. A game folder sent as it is stays as it is.\n- Convert: more packages can be read. Patches and updates, and packages built with PSVIETHOA FPKG Builder, were refused when they used smaller blocks, byte shuffling (PFS v3) or a different layout mark.\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
