@@ -541,19 +541,19 @@
       "release_notes": "**Change logs:**\r\n- Changed 'Manage SMB' to 'Manage Paths', which allows you to add custom paths, not only SMB share folders. (Issue #23)\r\n- Poppup and other optimization.\r\n\r\n`wfm-7zip-helper.elf` updated to [v26.04-0](https://github.com/owendswang/wfm-7zip-helper/releases/tag/v26.04-0)."
     },
     {
-      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.6.2",
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.7.0",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.6.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.6.2.elf",
+      "filename": "webkit-autoloader-installer_v0.7.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.7.0.elf",
       "source": "https://github.com/itsPLK/ps5-webkit-autoloader/releases",
-      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf",
-      "description": "v0.6.2 by itsPLK",
-      "last_update": "2026-10-28",
-      "version": "v0.6.2",
+      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0/webkit-autoloader-installer_v0.7.0.elf",
+      "description": "v0.7.0 by itsPLK",
+      "last_update": "2026-11-06",
+      "version": "v0.7.0",
       "author": "itsPLK",
       "category": "Networking & Servers",
-      "checksum": "27fd335764270716972faea399a5cc7810b9e49a21abf4966d9759580756cb19",
-      "release_notes": "## Changelog\r\n\r\n- Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.6\r\n  - includes bundled [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) v0.6.3\r\n- Updated [ps5-elfldr](https://github.com/itsPLK/ps5-elfldr) to v0.27\r\n- Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.1.2\r\n  - Added Relapse support for FW 11.40 (credit: @tidewell @notmaj0r)\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/23)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.2.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.2.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.2.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-host_v0.6.2.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.6.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.6.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.6.1...v0.6.2\r\n"
+      "checksum": "10cb38baae078e41f252cffb0d356829c89ee63fd3234f1fd1e6b19f81eab1c7",
+      "release_notes": "## Changelog\r\nMost of this release is changes in [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader), the shared base this project builds on. Main changes:\r\n\r\n* **Switched Relapse to [notmaj0r](https://github.com/notmaj0r)'s [Lua implementation](https://github.com/notmaj0r/remote_lua_loader)**: Adapted to run through the remote loader's new Lua runtime (LuaK1t)\r\n* **Fixed freezes/hangs during loading**: Resolved several causes of the loader hanging or freezing mid-load in the shared exploit runner.\r\n* **Modular AppCache loading**: Replaced the monolithic single-file HTML bundle (with payloads inlined as base64) with a modular architecture staged into AppCache, cutting build artifact sizes substantially (`host.py` ~11.9MB → ~3.7MB, installer `.elf` ~3.9MB → ~2.1MB).\r\n* **Automatic exploit selection**: Automatically selects the best exploit based on firmware version and network status:\r\n  - **FW > 12.00 and FW <= 13.60**: Relapse (Poops does not support > 12.00)\r\n  - **FW == 9.05**: Poops (Relapse does not support 9.05)\r\n  - **Active network connection**: Relapse\r\n  - **Offline (FW <= 12.00)**: Poops (works without active network connection)\r\n\r\n### Dependencies\r\n* Updated [ps5-webkit-remote-loader](https://github.com/itsPLK/ps5-webkit-remote-loader) to v0.2.1\r\n* Updated [ps5-unified-autoloader](https://github.com/itsPLK/ps5-unified-autoloader) to v0.1.7\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/26)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.0.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0/webkit-autoloader-installer_v0.7.0.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.0.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0/webkit-autoloader-h..."
     },
     {
       "id": "ps5upload-ps5upload-11.2.6",
