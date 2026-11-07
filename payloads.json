@@ -915,19 +915,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.2.9-prerelease",
+      "id": "ps5upload-ps5upload-11.3.0-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-11.2.9_v11.2.9 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.2.9_v11.2.9%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-11.3.0_v11.3.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.3.0_v11.3.0%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.9/ps5upload-11.2.9.elf",
-      "description": "v11.2.9 [Pre-release] by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.3.0/ps5upload-11.3.0.elf",
+      "description": "v11.3.0 [Pre-release] by phantomptr",
       "last_update": "2026-11-07",
-      "version": "v11.2.9",
+      "version": "v11.3.0",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "fa0d4c9f8385c2744357b389526e8a923256c73b46362fcaecfee2c530f1e3b8",
-      "release_notes": "\n- iPhone Duo: with the phone open and sideways, the stream now uses the whole height it can. Large system insets at the top and bottom cut the picture to a band across the middle, losing the top and bottom of the game. (#675)\n- iPhone Duo: when folded, the tabs move into the empty column under the system icons, which gives the page its height back. (#675)\n- iPhone and iPad app: during a stream the app asks iOS to send the controller's PS button to the console instead of opening the Games overlay. iOS only agrees if your controller's Home button setting lets the app decide. The menu in full screen also has a PS button now, which always works. (#675)\n\n"
+      "checksum": "db1d0e2be1d14fea08b42a9289e20ebe8609011f288b29b7dd73c957b2616ffd",
+      "release_notes": "\n- New: Backup & Restore (Console section). Choose what to keep on your computer: saves, payload settings, screenshots and clips, homebrew and other folders in /data, each with its size. It says what it leaves out and why: installed games, because copying them back doesn't install them, and the console's own system files. (#707)\n- Restoring after a reset: settings and folders go straight back. A save goes into that user's own save of the game, so start each game once and save; any that aren't ready are listed, and running the restore again is safe. Saves only open on the PS5 that made them. (#707)\n- New guide, \"If your PS5 won't start\": the Safe Mode options in the order to try them, which ones erase your data, how to set up the USB drive, and why reinstalling from Sony's file can end a jailbreak. (#707)\n\n- Saves: restoring a backup made before a reset no longer stops at \"this backup is another user's save\". Restore from a zip now puts it into the save you picked, the way Restore to another user does, and works with no automatic backup folder set: the save it replaces is kept next to the backup. Start the game once as that user first.\n- Saves: a failed restore or copy no longer shows under \"Couldn't list saves\".\n- Saves: Copy to › Another console, for PS5 saves and the Switch, PS2 and PS1 emulators' saves. Pick the console, then the user or folder there. The save there is backed up first and put back if anything fails, and it won't run while the game is running on either console. Not for PS4-format saves yet. (#709)\n- Sources: an FTP server's listing no longer hides files with a date the app couldn't read, such as a month in another language, and the log now says if a line still can't be read.\n- Remote Play pairing: a failed Pair now clears the PIN it asked the PS5 for, a PS5 that hangs up without answering gets tried again, and the app asks in the way other clients do before falling back to how it asked before. This may not be enough for everyone hitting \"closed the connection\". (#704)\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
