@@ -768,16 +768,16 @@
     {
       "id": "garlic-savemgr-garlic-savemgr-prerelease",
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.15-beta12 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta12%20%5BPre-release%5D.elf",
+      "filename": "garlic-savemgr_v1.15-beta13 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta13%20%5BPre-release%5D.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta12/garlic-savemgr.elf",
-      "description": "v1.15-beta12 [Pre-release] by earthonion",
-      "last_update": "2026-11-06",
-      "version": "v1.15-beta12",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta13/garlic-savemgr.elf",
+      "description": "v1.15-beta13 [Pre-release] by earthonion",
+      "last_update": "2026-11-08",
+      "version": "v1.15-beta13",
       "author": "earthonion",
       "category": "Pre-release",
-      "checksum": "52ada30119d4f40800047f6bb8ece2beb15f836b3f3c74fda100e80fb54da30e"
+      "checksum": "4292a104f5ce3698738d4b8db36986e8ad5f081694f2e612979b6d1aa2157b8c"
     },
     {
       "id": "kstuff-lite-kstuff-prerelease",
