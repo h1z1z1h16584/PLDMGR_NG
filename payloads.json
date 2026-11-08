@@ -915,19 +915,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.5.1-prerelease",
+      "id": "ps5upload-ps5upload-12.0.0-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-11.5.1_v11.5.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.5.1_v11.5.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-12.0.0_v12.0.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.0.0_v12.0.0%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.5.1/ps5upload-11.5.1.elf",
-      "description": "v11.5.1 [Pre-release] by phantomptr",
-      "last_update": "2026-11-07",
-      "version": "v11.5.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.0.0/ps5upload-12.0.0.elf",
+      "description": "v12.0.0 [Pre-release] by phantomptr",
+      "last_update": "2026-11-08",
+      "version": "v12.0.0",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "e6059aafb53eb48b8bc0ce31f2f0db3b0b5e58d97fea7b7cf813e66a5086b08c",
-      "release_notes": "\n- Keyboard & mouse in Play: a double click in a game no longer switches full screen and drops the mouse; only one started from the free cursor does. Ctrl+R and F5 reach the game instead of being swallowed (the app still never reloads). In a window, Esc gives the mouse back (the browser always does that); the stream now says so and suggests full screen, where a quick Esc goes to the game.\n- Accounts: an avatar that is a JPEG named .png shows instead of the placeholder. (#718)\n\n"
+      "checksum": "ec3da9d9a20a9141e722bc1101ade6e6264cbd147566e866f3f823143e9b28a3",
+      "release_notes": "\nTailscale, built in:\n\n- Play your PS5 from anywhere through your own Tailscale network, with no Tailscale app on the PS5 or a VPN router. Sign in once in Settings › Tailscale, then use Connection › \"Put this PS5 on Tailscale\".\n- On Tailscale, the PS5 only answers to Remote Play and PS5Upload, nothing else.\n- Settings and the console's Tailscale panel say in plain words when something is wrong: sign-in refused, signed out, server unreachable, or a key that has expired or is about to.\n\nPlay Together:\n\n- Play together has its own page, with Start and Invite.\n- A friend can play as a profile you pick, such as a guest, so the game uses that profile's saves and trophies and nothing pops up on the TV.\n- A friend who reconnects gets the same profile back.\n- When an internet friend or phone would play as you, the Allow box says so and asks a second time.\n- The phone controller and the watch link now work over the internet too. A phone that reconnects is let back in only with the token it got when you allowed it.\n- Third-party controllers (8BitDo and other popular pads) are mapped correctly, and a friend can check their controller and set it up from the invite page.\n\nConvert:\n\n- Save to a server: an image or folder can be written straight to a NAS or server over SMB, NFS, FTP, SFTP or WebDAV.\n- Convert can now make PS4 fake packages (.pkg).\n- Not yet tried on a PS5.\n\nPayloads:\n\n- Payloads can keep themselves up to date, and stay in step with Payload Manager when you use it.\n\nAgents (MCP):\n\n- A switch in the app decides whether AI agents can only look or can change things too. When agents can only look, they can't see invite or phone-link secrets.\n\nFixes and smaller changes:\n\n- Remote Play: L2 and R2 are real triggers again. A half pull reached the PS5 as a full press in the app, browsers, phones, the Windows DualSense reader and Android; now the PS5 gets how far you pull.\n- Mac app: the controller's PS button reaches the PS5 again during Remote Play. macOS was taking it for its own Games overlay while every other..."
     },
     {
       "id": "spotless-spotless-restore-prerelease",
