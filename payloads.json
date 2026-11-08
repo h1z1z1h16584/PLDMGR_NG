@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.5.2",
+      "id": "ps5upload-ps5upload-11.6.0",
       "name": "ps5upload",
-      "filename": "ps5upload-11.5.2_v11.5.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-11.5.2_v11.5.2.elf",
+      "filename": "ps5upload-11.6.0_v11.6.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-11.6.0_v11.6.0.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.5.2/ps5upload-11.5.2.elf",
-      "description": "v11.5.2 by phantomptr",
-      "last_update": "2026-11-07",
-      "version": "v11.5.2",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.6.0/ps5upload-11.6.0.elf",
+      "description": "v11.6.0 by phantomptr",
+      "last_update": "2026-11-08",
+      "version": "v11.6.0",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "1c2a6fe82de8438219c01c8c866deffd2b88ec3896bccb649601ef1fe1bc84c5",
-      "release_notes": "Remote Play on older Macs (#720, #683):\r\n\r\n- Picture: the system media player fallback now works inside the app. The app's own security rules blocked it, so it failed and retried in a loop; that's fixed, a player that still fails gives up after three tries with one error, and Settings › Video decoding has a new choice, System media player, to go straight to it.\r\n- Sound: where the system can't decode the PS5's Opus sound (macOS 13 and older Safari), the app now decodes it itself (opus-decoder, WebAssembly), in the app and for Play Together friends in Safari. Not yet confirmed on a macOS 13 Mac.\r\n\r\nPlay Together (#720):\r\n\r\n- Player 1 (a friend on this stream's own controller, playing as your PS5 user) is now a setting, off by default. With it on, the Allow prompt and the player card say so, and the friend's page says they play as your user. Turning the picture back on, restarting Play or a friend rejoining gives the controller back to you at once, moving the friend to their own controller. A phone linked as a controller keeps the seat even while it's idle.\r\n- Clearer steps for friends: they press PS on their own controller and pick Quick Play or their user on the TV; the host does nothing.\r\n\r\niPhone and iPad (#722):\r\n\r\n- Full screen hides the status bar (the clock), and brings it back when you leave.\r\n- The Controller/Touchpad switch fades out in full screen and comes back for a moment on a tap on the picture. Settings › Play: \"Show the Controller/Touchpad switch in full screen\" hides it there altogether.\r\n\r\nAlso:\r\n\r\n- Installing an add-on (DLC) is no longer refused with \"move the game out of the scan folder\" when its base game runs from a ShadowMount+ image. A package already on the PS5 came with no category, and the check took it for a full game. (#721)\r\n- A build only ever clears its own leftover files (.partial, .lz4spool) before starting.\r\n\r\n"
+      "checksum": "13dca53b2216d920ad94b9564cba68fd085d4ea0f1f0193be5b5299c9872e67e",
+      "release_notes": "\nPlay Together over the internet:\n\n- Friends no longer need to be on your Wi-Fi. When you invite, choose Internet, and the link works from anywhere: a phone on mobile data, a friend's home. A small server at hub.phantomptr.com only introduces the two sides; the game's picture, sound and controls go straight between you and your friend, never through it.\n- The link carries your app's fingerprint, so a friend can only ever connect to you.\n- Most home routers work as they are. Where yours allows it, the app opens a port on it for the session (UPnP / NAT-PMP / PCP). Settings › Play Together has the server address and these options.\n- Not yet tried from outside a home network: tell us how it goes.\n\nConvert:\n\n- Save to: The PS5, straight. An image is written to the PS5 as it's built, with no copy on this computer and no upload afterwards. A dropped connection or a restart picks up where it stopped, and the image is checked on the PS5 when it's done. For .exfat, .ffpkg and .ffpfs images, and .exfat with zstd packs.\n- PS4 updates: pick a PS4 game and its update, and Convert merges them into one image or folder of the game at the update's version. It checks that the update belongs to the game and is newer.\n- PS4 add-ons (DLC) with files become a folder of their data. A licence-only add-on says there's nothing to convert.\n- A .ffpkg, .ffpfs or .ffpfsc build that stops partway (a crash, the app closed) now goes on from where it stopped, as .exfat already did. Every byte is read back afterwards, and a game that changed in between is built again from the start.\n\nNone of the Convert changes have been tried on a PS5 yet.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -915,19 +915,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-11.6.0-prerelease",
+      "id": "ps5upload-ps5upload-11.5.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-11.6.0_v11.6.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.6.0_v11.6.0%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-11.5.1_v11.5.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-11.5.1_v11.5.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.6.0/ps5upload-11.6.0.elf",
-      "description": "v11.6.0 [Pre-release] by phantomptr",
-      "last_update": "2026-11-08",
-      "version": "v11.6.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v11.5.1/ps5upload-11.5.1.elf",
+      "description": "v11.5.1 [Pre-release] by phantomptr",
+      "last_update": "2026-11-07",
+      "version": "v11.5.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "13dca53b2216d920ad94b9564cba68fd085d4ea0f1f0193be5b5299c9872e67e",
-      "release_notes": "\nPlay Together over the internet:\n\n- Friends no longer need to be on your Wi-Fi. When you invite, choose Internet, and the link works from anywhere: a phone on mobile data, a friend's home. A small server at hub.phantomptr.com only introduces the two sides; the game's picture, sound and controls go straight between you and your friend, never through it.\n- The link carries your app's fingerprint, so a friend can only ever connect to you.\n- Most home routers work as they are. Where yours allows it, the app opens a port on it for the session (UPnP / NAT-PMP / PCP). Settings › Play Together has the server address and these options.\n- Not yet tried from outside a home network: tell us how it goes.\n\nConvert:\n\n- Save to: The PS5, straight. An image is written to the PS5 as it's built, with no copy on this computer and no upload afterwards. A dropped connection or a restart picks up where it stopped, and the image is checked on the PS5 when it's done. For .exfat, .ffpkg and .ffpfs images, and .exfat with zstd packs.\n- PS4 updates: pick a PS4 game and its update, and Convert merges them into one image or folder of the game at the update's version. It checks that the update belongs to the game and is newer.\n- PS4 add-ons (DLC) with files become a folder of their data. A licence-only add-on says there's nothing to convert.\n- A .ffpkg, .ffpfs or .ffpfsc build that stops partway (a crash, the app closed) now goes on from where it stopped, as .exfat already did. Every byte is read back afterwards, and a game that changed in between is built again from the start.\n\nNone of the Convert changes have been tried on a PS5 yet.\n\n"
+      "checksum": "e6059aafb53eb48b8bc0ce31f2f0db3b0b5e58d97fea7b7cf813e66a5086b08c",
+      "release_notes": "\n- Keyboard & mouse in Play: a double click in a game no longer switches full screen and drops the mouse; only one started from the free cursor does. Ctrl+R and F5 reach the game instead of being swallowed (the app still never reloads). In a window, Esc gives the mouse back (the browser always does that); the stream now says so and suggests full screen, where a quick Esc goes to the game.\n- Accounts: an avatar that is a JPEG named .png shows instead of the placeholder. (#718)\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
