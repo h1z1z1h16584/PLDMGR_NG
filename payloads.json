@@ -603,17 +603,17 @@
     {
       "id": "prosperomgr-prosperomgr",
       "name": "ProsperoMgr",
-      "filename": "ProsperoMgr_v1.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ProsperoMgr_v1.1.elf",
+      "filename": "ProsperoMgr_v1.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/ProsperoMgr_v1.2.elf",
       "source": "https://github.com/notmaj0r/ProsperoMgr/releases",
-      "source_direct": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.1/ProsperoMgr.elf",
-      "description": "v1.1 by notmaj0r",
-      "last_update": "2026-09-28",
-      "version": "v1.1",
+      "source_direct": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.2/ProsperoMgr.elf",
+      "description": "v1.2 by notmaj0r",
+      "last_update": "2026-11-09",
+      "version": "v1.2",
       "author": "notmaj0r",
       "category": "System Utilities",
-      "checksum": "e7a6bb544adb2fb2a61aa9cc83b0ad15f70b32d7511a3de0f1fb88812f11983c",
-      "release_notes": "Prospero Manager v1.1\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/ProsperoMgr/blob/main/CHANGELOG.md)\r\n\r\nIf you encounter any issues, please report them through [GitHub](https://github.com/notmaj0r/ProsperoMgr/issues) or in our [Discord](https://discord.gg/E4g6fEqp46) server!\r\n\r\n### Special Thanks:\r\n\r\n💖 **Supporters** — *those who supported the project through* [Ko-Fi](https://ko-fi.com/maj0r), [Buy Me a Coffee](https://buymeacoffee.com/maj0r), or [PIX](https://livepix.gg/notmaj0r).\r\n\r\n• Vinas • Someone • Bruno Sanglard • AirKingBR • Marcus • Jeffs • cavalcanti27 • Maffioh\r\n\r\nIf Prospero Manager was useful to you, consider supporting the project development! 🫶\r\n\r\nAll contributions will go toward our goal of acquiring a low-firmware PS5 (1.xx–4.xx) for research, development, and future upgrades."
+      "checksum": "127394cc4f1ac7347fea509e010e80bab7b5ee13d820665474cdc3928d173bce",
+      "release_notes": "# Prospero Manager v1.2\r\n\r\nThe biggest update so far: a new **Media** page, a **Games / Apps** library, right-click menus, Back/Forward navigation, safe USB removal, a much faster PKG install, and a lot of polish for phones and the PS5 browser.\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/ProsperoMgr/blob/main/CHANGELOG.md)\r\n\r\nIf you encounter any issues, please report them through [GitHub](https://github.com/notmaj0r/ProsperoMgr/issues) or in our [Discord](https://discord.gg/E4g6fEqp46) server!\r\n\r\n---\r\n\r\n## ✨ Highlights\r\n\r\n### 🖼️ Media — your screenshots and clips, in the browser\r\n- Every capture from the PS5, grouped by game in the **Albums** tab or by day in **All media**, with covers, sizes, and game names.\r\n- A viewer with previous/next, and **Download** for one file, a selection, or **one ZIP**.\r\n- **Select all** and **Delete** captures straight from Prospero. A delete removes the capture from the console's own gallery too, and a clean-up button removes entries whose image no longer exists.\r\n\r\n### 🏠 Home — games and apps, apart\r\n- Installed **games** and **apps/homebrew** now have their own tabs. Streaming apps no longer show up as games.\r\n- A **play-time chip** on every cover (`33 min`, `5 h 20 min`), like the console's home screen.\r\n- Launch your apps from Prospero: web-based homebrew (CheatRunner, ShadowMount+, the Homebrew Launcher) opens in the console's browser.\r\n- The Firmware and IP now sit in the welcome card.\r\n\r\n### 🖱️ Right-click opens the options\r\nRight-click a file, a payload card, a save, a save backup, or a custom repository and you get the same menu as the three-dot button. The whole payload card is now clickable, not only its top half.\r\n\r\n### ◀ ▶ Back and Forward\r\nEvery folder you open in Files is a history step, and so are the Media tabs and albums and the Install PKG methods. Use your mouse's side buttons, or **L1 / R1** in the PS5 browser, to go back and forward. Back also closes dialogs and menus.\r\n\r\n### 🔌 Safe removal for USB dri..."
     },
     {
       "id": "ps5-date-time-sync-ps5-date-time-sync",
