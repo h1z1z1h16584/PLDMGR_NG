@@ -768,16 +768,17 @@
     {
       "id": "garlic-savemgr-garlic-savemgr-prerelease",
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.15-beta15 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta15%20%5BPre-release%5D.elf",
+      "filename": "garlic-savemgr_v1.15-beta16 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta16%20%5BPre-release%5D.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta15/garlic-savemgr.elf",
-      "description": "v1.15-beta15 [Pre-release] by earthonion",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta16/garlic-savemgr.elf",
+      "description": "v1.15-beta16 [Pre-release] by earthonion",
       "last_update": "2026-11-08",
-      "version": "v1.15-beta15",
+      "version": "v1.15-beta16",
       "author": "earthonion",
       "category": "Pre-release",
-      "checksum": "7e6a494eb3d19964e912d9a991014e398d115db36b25b3ab8c31c1bc9dae5758"
+      "checksum": "d6a6048e6b5b56a30d07c926155b18d4b95e07b96dbf7631d1e8ded765880471",
+      "release_notes": "Adds chives.json geometry export and native CoW rebuilding, strict PS5PARAM finalization, and backward-compatible PS5IMAGE and regular-SFO recovery. Based on source shared by Skiller."
     },
     {
       "id": "kstuff-lite-kstuff-prerelease",
@@ -915,19 +916,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.0.0-prerelease",
+      "id": "ps5upload-ps5upload-12.1.0-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-12.0.0_v12.0.0 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.0.0_v12.0.0%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-12.1.0_v12.1.0 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.1.0_v12.1.0%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.0.0/ps5upload-12.0.0.elf",
-      "description": "v12.0.0 [Pre-release] by phantomptr",
-      "last_update": "2026-11-08",
-      "version": "v12.0.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.1.0/ps5upload-12.1.0.elf",
+      "description": "v12.1.0 [Pre-release] by phantomptr",
+      "last_update": "2026-11-09",
+      "version": "v12.1.0",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "ec3da9d9a20a9141e722bc1101ade6e6264cbd147566e866f3f823143e9b28a3",
-      "release_notes": "\nTailscale, built in:\n\n- Play your PS5 from anywhere through your own Tailscale network, with no Tailscale app on the PS5 or a VPN router. Sign in once in Settings › Tailscale, then use Connection › \"Put this PS5 on Tailscale\".\n- On Tailscale, the PS5 only answers to Remote Play and PS5Upload, nothing else.\n- Settings and the console's Tailscale panel say in plain words when something is wrong: sign-in refused, signed out, server unreachable, or a key that has expired or is about to.\n\nPlay Together:\n\n- Play together has its own page, with Start and Invite.\n- A friend can play as a profile you pick, such as a guest, so the game uses that profile's saves and trophies and nothing pops up on the TV.\n- A friend who reconnects gets the same profile back.\n- When an internet friend or phone would play as you, the Allow box says so and asks a second time.\n- The phone controller and the watch link now work over the internet too. A phone that reconnects is let back in only with the token it got when you allowed it.\n- Third-party controllers (8BitDo and other popular pads) are mapped correctly, and a friend can check their controller and set it up from the invite page.\n\nConvert:\n\n- Save to a server: an image or folder can be written straight to a NAS or server over SMB, NFS, FTP, SFTP or WebDAV.\n- Convert can now make PS4 fake packages (.pkg).\n- Not yet tried on a PS5.\n\nPayloads:\n\n- Payloads can keep themselves up to date, and stay in step with Payload Manager when you use it.\n\nAgents (MCP):\n\n- A switch in the app decides whether AI agents can only look or can change things too. When agents can only look, they can't see invite or phone-link secrets.\n\nFixes and smaller changes:\n\n- Remote Play: L2 and R2 are real triggers again. A half pull reached the PS5 as a full press in the app, browsers, phones, the Windows DualSense reader and Android; now the PS5 gets how far you pull.\n- Mac app: the controller's PS button reaches the PS5 again during Remote Play. macOS was taking it for its own Games overlay while every other..."
+      "checksum": "c7235dc594c00e04fa0d946ffe18ca3d93d8505affd621669e357e79ef48af80",
+      "release_notes": "\nPlay Together:\n\n- One invite link works everywhere. A friend on your Wi-Fi connects over your home network, a friend on Tailscale over Tailscale, anyone else directly over the internet; the app picks the best way by itself. Settings › App › Play Together: \"Invites work: Anywhere\" or \"Only on my Wi-Fi\".\n- Over the internet the picture now comes as a video stream the browser plays smoothly: on a link that loses a few packets it goes from a few frames a second to a steady 60. If a friend's connection can't carry your stream, the panel tells you to lower its quality.\n- Without internet, the invite becomes a Wi-Fi link by itself, and a friend whose page can't reach the invite service gets \"Open on this Wi-Fi\".\n- The panel shows how each friend is connected: home network, Tailscale or internet, and the delay.\n\nShare (new):\n\n- Each game and Collection item has Share: send a friend your saves, screenshots and clips, which cheats are on, your controls, a note, and homebrew apps (folder, image or package). Your friend opens the link, accepts, you allow, and it goes straight between you.\n- PS5Upload only shares homebrew: a retail game, its updates and add-ons can't be shared, in any format.\n\nTailscale:\n\n- Your home network always comes first; Tailscale is only used when the PS5 doesn't answer at home.\n- Already using the Tailscale app? PS5Upload can use it instead of signing in on its own.\n- Pause Tailscale on the PS5 or on this device without signing out, from Settings, Connection, Home, or the console's own page.\n- Only devices you add can reach the PS5 over Tailscale.\n- Names are your device's name plus \"-ps5u\"; rename any time. Renew a key without losing the address.\n- Its address shows in the console list and on Home; Connection's check runs over Tailscale too; a notice says when a console switches to Tailscale and back. Big uploads over a slow path ask first.\n- A guided setup, and \"Try Tailscale now\" from home.\n- Things Tailscale can't carry (waking a resting PS5, sending payloads, some installs) now say so i..."
     },
     {
       "id": "spotless-spotless-restore-prerelease",
