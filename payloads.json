@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.4",
+      "id": "ps5upload-ps5upload-12.4.5",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.4_v12.4.4.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.4_v12.4.4.elf",
+      "filename": "ps5upload-12.4.5_v12.4.5.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.5_v12.4.5.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.4/ps5upload-12.4.4.elf",
-      "description": "v12.4.4 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.5/ps5upload-12.4.5.elf",
+      "description": "v12.4.5 by phantomptr",
       "last_update": "2026-11-10",
-      "version": "v12.4.4",
+      "version": "v12.4.5",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "c6a57b7a562cafdf974b91011db5f945518cfa9c56a796048e3f27f04c6323ac",
-      "release_notes": "\nTransfers:\n\n- The check that reads files back on the PS5 now runs while a large file is still arriving, so it adds almost no time: a 4 GiB file to a PS5 Pro took 60 s with the check, against 83 s in 12.4.3 and about 62 s with no check.\n- The check now reads from the drive itself, not from a copy still held in the console's memory, so it can catch a fault on the drive.\n\n"
+      "checksum": "72fef6dcd299aa927b3df800dcc13f166f84eef7b8e403004cb6f4c33ece0b77",
+      "release_notes": "\nPlay Together:\n\n- Fixed friends' picture lagging behind, even on a fast home network. On a quiet screen (a menu) the stream sends very little, and the app wrongly took that as a slow connection. When the game got busy again, it held the picture back while it caught up, so friends fell seconds behind. Friends on your home network now get the full rate all the time, and friends over the internet get it back as soon as their connection shows it can carry it.\n- After \"Lower quality\" restarts the stream, Play Together now reopens by itself instead of saying it couldn't start.\n- When the PS5 accepts a Remote Play start but never finishes it, the app now says so and what to check (the TV may be asking something, or a game started by another user may be holding it up), instead of only \"The stream stopped\".\n- The stream's status bar no longer shows 0.0 Mbit/s and a decode time of 0 ms when the system's media player shows the picture. The light bar's dot is now visible on the dark bar too.\n- A friend whose connection can't keep up with the stream no longer falls further and further behind. Their picture now skips ahead to a fresh one, so the delay stays short instead of growing to several seconds. You and other friends aren't affected. A very slow connection still shows a choppy picture; lowering the quality (offered in the Play Together panel) is the fix for that.\n\nConvert:\n\n- The image options now explain the asset packs (LZ4, zstd): why they aren't offered for a game, and that a packed game only plays when ShadowMount+ mounts it. A \"Which image should I make?\" note explains the image types and compression in plain words.\n\nGames:\n\n- Disk images that ShadowMount+ mounts under the game's name are now linked to their game, so they show its title and cover instead of \"not linked to a game\". Thanks to kh-mitya.\n- On a game's page, the Consoles card no longer squeezes a console's name into a column one letter wide. Thanks to kh-mitya.\n\nPS5 helper:\n\n- After PS5Upload updates its helper in a Payload Manager slot, Payload Ma..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -916,19 +916,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.5-prerelease",
+      "id": "ps5upload-ps5upload-12.4.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-12.4.5_v12.4.5 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.4.5_v12.4.5%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-12.4.1_v12.4.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.4.1_v12.4.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.5/ps5upload-12.4.5.elf",
-      "description": "v12.4.5 [Pre-release] by phantomptr",
-      "last_update": "2026-11-10",
-      "version": "v12.4.5",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.1/ps5upload-12.4.1.elf",
+      "description": "v12.4.1 [Pre-release] by phantomptr",
+      "last_update": "2026-11-09",
+      "version": "v12.4.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "72fef6dcd299aa927b3df800dcc13f166f84eef7b8e403004cb6f4c33ece0b77",
-      "release_notes": "\nPlay Together:\n\n- Fixed friends' picture lagging behind, even on a fast home network. On a quiet screen (a menu) the stream sends very little, and the app wrongly took that as a slow connection. When the game got busy again, it held the picture back while it caught up, so friends fell seconds behind. Friends on your home network now get the full rate all the time, and friends over the internet get it back as soon as their connection shows it can carry it.\n- After \"Lower quality\" restarts the stream, Play Together now reopens by itself instead of saying it couldn't start.\n- When the PS5 accepts a Remote Play start but never finishes it, the app now says so and what to check (the TV may be asking something, or a game started by another user may be holding it up), instead of only \"The stream stopped\".\n- The stream's status bar no longer shows 0.0 Mbit/s and a decode time of 0 ms when the system's media player shows the picture. The light bar's dot is now visible on the dark bar too.\n- A friend whose connection can't keep up with the stream no longer falls further and further behind. Their picture now skips ahead to a fresh one, so the delay stays short instead of growing to several seconds. You and other friends aren't affected. A very slow connection still shows a choppy picture; lowering the quality (offered in the Play Together panel) is the fix for that.\n\nConvert:\n\n- The image options now explain the asset packs (LZ4, zstd): why they aren't offered for a game, and that a packed game only plays when ShadowMount+ mounts it. A \"Which image should I make?\" note explains the image types and compression in plain words.\n\nGames:\n\n- Disk images that ShadowMount+ mounts under the game's name are now linked to their game, so they show its title and cover instead of \"not linked to a game\". Thanks to kh-mitya.\n- On a game's page, the Consoles card no longer squeezes a console's name into a column one letter wide. Thanks to kh-mitya.\n\nPS5 helper:\n\n- After PS5Upload updates its helper in a Payload Manager slot, Payload Ma..."
+      "checksum": "fd3f6679bba4f3246ef83fa4cc747a614b449ad1b9dcfabb0b0069751a609ed4",
+      "release_notes": "> **Please update to [12.4.2](https://github.com/phantomptr/ps5upload/releases/tag/v12.4.2).** It fixes how the helper handles rest mode and starting at boot, among other things.\n\nRemote Play:\n\n- Play connects again after another device or a controller at the console took the session over, or right after a Stop. Before, PS5Upload could keep failing until the PS5 was restarted while other apps got in. It now asks the PS5 to start the same way other Remote Play apps do.\n\nInstalling:\n\n- Add-ons (DLC) no longer sit at 99%. An add-on is now treated as an add-on even when its package doesn't say so, the check after installing ends within about a minute, and an add-on that leaves no files says to look for it in the game's add-ons on the PS5.\n\nPS5 helper and rest mode:\n\n- While the console goes to rest and for a minute after it wakes, the helper holds its background work (fan, cheats, home-screen tile and icon fixes, its own checks) and pauses Tailscale, then picks up again. Tailscale can no longer get stuck in a busy loop when the network goes away.\n- Each rest and wake is written to a small log on the console (power.log), collected by the Bug Report, so a console that switches off in rest can be traced.\n\nGame frame rate:\n\n- While a capture runs, Stop capture is red with a Recording label beside it.\n\n\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
