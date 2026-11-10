@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.2",
+      "id": "ps5upload-ps5upload-12.4.3",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.2_v12.4.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.2_v12.4.2.elf",
+      "filename": "ps5upload-12.4.3_v12.4.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.3_v12.4.3.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.2/ps5upload-12.4.2.elf",
-      "description": "v12.4.2 by phantomptr",
-      "last_update": "2026-11-09",
-      "version": "v12.4.2",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.3/ps5upload-12.4.3.elf",
+      "description": "v12.4.3 by phantomptr",
+      "last_update": "2026-11-10",
+      "version": "v12.4.3",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "06dbb9022bcb71cb95178c29c9da39ae6e60d17becf9c1ff8938c98bd15fa8ef",
-      "release_notes": "> ⚠️ **If you turned on Tailscale on your PS5:** in rare cases the console can switch itself off while it is in rest mode. A fix is coming in the next version. Until then, turn Tailscale off on the PS5 (Connection › your PS5's card › Tailscale) when you don't need to reach it from away.\n\n\nPS5 helper and rest mode:\n\n- The helper now notices a rest started from the console's own menu (or when the PS5 goes to rest by itself), not just one PS5Upload asks for. Before, such a rest could slip past it, so Tailscale stayed connected through rest and the helper's after-wake care never ran.\n\nHelper at boot (Payload Manager):\n\n- \"Load the PS5Upload helper at boot\" keeps the helper in Payload Manager's boot list: it checks the list really changed, puts the helper back on the next connection if it's missing, and offers to turn on Payload Manager's own boot list when that is off. Before, the helper could be stored but never started at boot, so Minion didn't run after a restart.\n\nPayloads:\n\n- Updates are offered for betas and lettered releases too (ShadowMount+ 1.7beta10 to beta11, etaHEN 2.5B to 2.5C), with no more offers to go back to an older version.\n- PS5 builds are picked over PS4 ones (ftpsrv, klogsrv), and Remote Play Unlock gets its normal release, not the testing one.\n- Payloads you stored in Payload Manager by hand are recognised, and Payload Manager has an Update all button that keeps each payload's place in the boot list.\n- Ghostpad and HearBridge are gone from the payload list: their projects are no longer online.\n\nWorkshop:\n\n- Picking an Output folder now turns off \"Save each next to its source\", so your folder is used. Before, the folder was ignored while that box was ticked.\n\nRemote Play:\n\n- Wake & sign in asks the PS5 to start the same way it did before 12.4.1.\n\n\n"
+      "checksum": "417eed905cce4be9b82a57e225c2a8eb094267418727578dfee95cb13108ed49",
+      "release_notes": "\nPS5 helper and rest mode:\n\n- Fixed a rare problem where a PS5 with Tailscale turned on could switch itself off while in rest mode. The helper's Tailscale now closes all its connections the moment the console starts going to rest, whatever starts it (PS5Upload, the console's menu, the console resting by itself, or a background download wake), and opens them again once the console is awake and settled. Each step is written to the console's power.log.\n\nTransfers:\n\n- Large files are now checked on the PS5 after they're written: the console reads each one back from its drive and compares it with what was sent, and a file that doesn't match is sent again. It can be turned off in Settings (\"Check files on the PS5 after writing\").\n- A resumed conversion checks its whole image, so a source file edited between runs can't leave old and new data mixed.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
