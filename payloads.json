@@ -511,34 +511,34 @@
       "release_notes": "- IPv6 support\r\n- Quiet mode\r\n- Yandex.DNS fix (remove old nanodns.ini)\r\n\r\nFW PS5 1.00-13.60, PS4 1.00-13.52 "
     },
     {
-      "id": "ps5-web-file-manager-web-file-mgr-v1.12",
+      "id": "ps5-web-file-manager-web-file-mgr-v1.14",
       "name": "ps5-web-file-manager",
-      "filename": "web-file-mgr-v1.12.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/web-file-mgr-v1.12.elf",
+      "filename": "web-file-mgr-v1.14.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/web-file-mgr-v1.14.elf",
       "source": "https://github.com/owendswang/ps5-web-file-manager/releases",
-      "source_direct": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.12/web-file-mgr-v1.12.elf",
-      "description": "Able to add custom path for path switching at the top-right corner by owendswang",
-      "last_update": "2026-10-22",
-      "version": "v1.12",
+      "source_direct": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
+      "description": "Added FTP and WebDAV support by owendswang",
+      "last_update": "2026-11-10",
+      "version": "v1.14",
       "author": "owendswang",
       "category": "Networking & Servers",
-      "checksum": "f3461eb967da7afbbf0420d3294fbc8f999cc2ad53a756bed413aa80c7cfa67a",
-      "release_notes": "**Change logs:**\r\n- Changed 'Manage SMB' to 'Manage Paths', which allows you to add custom paths, not only SMB share folders. (Issue #23)\r\n- Poppup and other optimization.\r\n\r\n`wfm-7zip-helper.elf` updated to [v26.04-0](https://github.com/owendswang/wfm-7zip-helper/releases/tag/v26.04-0)."
+      "checksum": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231",
+      "release_notes": "**Change logs:**\r\n- Added FTP and WebDAV support through 'Manage Paths'. (the payload file size becomes bigger because of this new feature, it doesn't support TLS to reduce the payload file size.)\r\n- Added a star button to folder hover actions for quickly saving shortcuts to 'Manage Paths'. (Issue #39)\r\n- Updated browser fullscreen/restore integration to upstream [v0.1](https://github.com/owendswang/ps5-web-browser-fullscreen/releases/tag/v0.1) using its release configuration. (It still got ShellUI crash on FW 11.60 as I tested.)\r\n- Avoided unnecessary rename calls when moving files across storage devices. (Issue #10)\r\n\r\nNothing changed for `wfm-7zip-helper.elf`."
     },
     {
       "id": "ps5-web-file-manager-wfm-7zip-helper",
       "name": "ps5-web-file-manager",
-      "filename": "wfm-7zip-helper_v1.12.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/wfm-7zip-helper_v1.12.elf",
+      "filename": "wfm-7zip-helper_v1.14.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/wfm-7zip-helper_v1.14.elf",
       "source": "https://github.com/owendswang/ps5-web-file-manager/releases",
-      "source_direct": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.12/wfm-7zip-helper.elf",
-      "description": "Able to add custom path for path switching at the top-right corner by owendswang",
-      "last_update": "2026-10-22",
-      "version": "v1.12",
+      "source_direct": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/wfm-7zip-helper.elf",
+      "description": "Added FTP and WebDAV support by owendswang",
+      "last_update": "2026-11-10",
+      "version": "v1.14",
       "author": "owendswang",
       "category": "Networking & Servers",
       "checksum": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825",
-      "release_notes": "**Change logs:**\r\n- Changed 'Manage SMB' to 'Manage Paths', which allows you to add custom paths, not only SMB share folders. (Issue #23)\r\n- Poppup and other optimization.\r\n\r\n`wfm-7zip-helper.elf` updated to [v26.04-0](https://github.com/owendswang/wfm-7zip-helper/releases/tag/v26.04-0)."
+      "release_notes": "**Change logs:**\r\n- Added FTP and WebDAV support through 'Manage Paths'. (the payload file size becomes bigger because of this new feature, it doesn't support TLS to reduce the payload file size.)\r\n- Added a star button to folder hover actions for quickly saving shortcuts to 'Manage Paths'. (Issue #39)\r\n- Updated browser fullscreen/restore integration to upstream [v0.1](https://github.com/owendswang/ps5-web-browser-fullscreen/releases/tag/v0.1) using its release configuration. (It still got ShellUI crash on FW 11.60 as I tested.)\r\n- Avoided unnecessary rename calls when moving files across storage devices. (Issue #10)\r\n\r\nNothing changed for `wfm-7zip-helper.elf`."
     },
     {
       "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.7.1",
@@ -868,7 +868,7 @@
       "author": "owendswang",
       "category": "Pre-release",
       "checksum": "91f8e7f52183ce624651b779016bb48cbe7adaad278833a1191ad2e8fc6fbfe3",
-      "release_notes": "- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n- Revert 'force install every time when it starts'. Now it would skip install when detected icon and param files like before. (Issue #34, #28)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 10.01, 12.20 and 13.60. It would cause ShellUI crash when restoring as I tested on FW 11.60.\r\nThanks to the community (SHARK, Fubc from Discord, 兵山上的来客 from QQ and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb"
+      "release_notes": "**Change logs:**\r\n- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n- Revert 'force install every time when it starts'. Now it would skip install when detected icon and param files like before. (Issue #34, #28)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 10.01, 12.20 and 13.60. It would cause ShellUI crash when restoring as I tested on FW 11.60.\r\nThanks to the community (SHARK, Fubc from Discord, 兵山上的来客 from QQ and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb"
     },
     {
       "id": "ps5-web-file-manager-wfm-7zip-helper-prerelease",
@@ -883,7 +883,7 @@
       "author": "owendswang",
       "category": "Pre-release",
       "checksum": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825",
-      "release_notes": "- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n- Revert 'force install every time when it starts'. Now it would skip install when detected icon and param files like before. (Issue #34, #28)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 10.01, 12.20 and 13.60. It would cause ShellUI crash when restoring as I tested on FW 11.60.\r\nThanks to the community (SHARK, Fubc from Discord, 兵山上的来客 from QQ and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb"
+      "release_notes": "**Change logs:**\r\n- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n- Revert 'force install every time when it starts'. Now it would skip install when detected icon and param files like before. (Issue #34, #28)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 10.01, 12.20 and 13.60. It would cause ShellUI crash when restoring as I tested on FW 11.60.\r\nThanks to the community (SHARK, Fubc from Discord, 兵山上的来客 from QQ and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb"
     },
     {
       "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.7.0-dev-3a34c3b-prerelease",
