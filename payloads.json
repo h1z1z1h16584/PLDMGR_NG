@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.5",
+      "id": "ps5upload-ps5upload-12.4.6",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.5_v12.4.5.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.5_v12.4.5.elf",
+      "filename": "ps5upload-12.4.6_v12.4.6.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.6_v12.4.6.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.5/ps5upload-12.4.5.elf",
-      "description": "v12.4.5 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.6/ps5upload-12.4.6.elf",
+      "description": "v12.4.6 by phantomptr",
       "last_update": "2026-11-10",
-      "version": "v12.4.5",
+      "version": "v12.4.6",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "72fef6dcd299aa927b3df800dcc13f166f84eef7b8e403004cb6f4c33ece0b77",
-      "release_notes": "\nPlay Together:\n\n- Fixed friends' picture lagging behind, even on a fast home network. On a quiet screen (a menu) the stream sends very little, and the app wrongly took that as a slow connection. When the game got busy again, it held the picture back while it caught up, so friends fell seconds behind. Friends on your home network now get the full rate all the time, and friends over the internet get it back as soon as their connection shows it can carry it.\n- After \"Lower quality\" restarts the stream, Play Together now reopens by itself instead of saying it couldn't start.\n- When the PS5 accepts a Remote Play start but never finishes it, the app now says so and what to check (the TV may be asking something, or a game started by another user may be holding it up), instead of only \"The stream stopped\".\n- The stream's status bar no longer shows 0.0 Mbit/s and a decode time of 0 ms when the system's media player shows the picture. The light bar's dot is now visible on the dark bar too.\n- A friend whose connection can't keep up with the stream no longer falls further and further behind. Their picture now skips ahead to a fresh one, so the delay stays short instead of growing to several seconds. You and other friends aren't affected. A very slow connection still shows a choppy picture; lowering the quality (offered in the Play Together panel) is the fix for that.\n\nConvert:\n\n- The image options now explain the asset packs (LZ4, zstd): why they aren't offered for a game, and that a packed game only plays when ShadowMount+ mounts it. A \"Which image should I make?\" note explains the image types and compression in plain words.\n\nGames:\n\n- Disk images that ShadowMount+ mounts under the game's name are now linked to their game, so they show its title and cover instead of \"not linked to a game\". Thanks to kh-mitya.\n- On a game's page, the Consoles card no longer squeezes a console's name into a column one letter wide. Thanks to kh-mitya.\n\nPS5 helper:\n\n- After PS5Upload updates its helper in a Payload Manager slot, Payload Ma..."
+      "checksum": "541ce3ff11d17374db93bcc5fb868ccf0cd2fffc05cc7382a6a03fc350bb94c3",
+      "release_notes": "\nPhone app:\n\n- Fixed text squeezed into a column one letter wide in some menus on phones (Network Shares, Shared Folders and others). When a label and its buttons don't fit side by side, the buttons now move below the label.\n\nNetwork shares:\n\n- Fixed \"Can't reach NFS: that program isn't available on this port\" with many NFS servers (Linux, NAS, Windows). The app now finds the server's mount service over UDP as well as TCP, and when it still can't, the message says which service and port to check.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
