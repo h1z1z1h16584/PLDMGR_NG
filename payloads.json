@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.3",
+      "id": "ps5upload-ps5upload-12.4.4",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.3_v12.4.3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.3_v12.4.3.elf",
+      "filename": "ps5upload-12.4.4_v12.4.4.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.4_v12.4.4.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.3/ps5upload-12.4.3.elf",
-      "description": "v12.4.3 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.4/ps5upload-12.4.4.elf",
+      "description": "v12.4.4 by phantomptr",
       "last_update": "2026-11-10",
-      "version": "v12.4.3",
+      "version": "v12.4.4",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "417eed905cce4be9b82a57e225c2a8eb094267418727578dfee95cb13108ed49",
-      "release_notes": "\nPS5 helper and rest mode:\n\n- Fixed a rare problem where a PS5 with Tailscale turned on could switch itself off while in rest mode. The helper's Tailscale now closes all its connections the moment the console starts going to rest, whatever starts it (PS5Upload, the console's menu, the console resting by itself, or a background download wake), and opens them again once the console is awake and settled. Each step is written to the console's power.log.\n\nTransfers:\n\n- Large files are now checked on the PS5 after they're written: the console reads each one back from its drive and compares it with what was sent, and a file that doesn't match is sent again. It can be turned off in Settings (\"Check files on the PS5 after writing\").\n- A resumed conversion checks its whole image, so a source file edited between runs can't leave old and new data mixed.\n\n"
+      "checksum": "c6a57b7a562cafdf974b91011db5f945518cfa9c56a796048e3f27f04c6323ac",
+      "release_notes": "\nTransfers:\n\n- The check that reads files back on the PS5 now runs while a large file is still arriving, so it adds almost no time: a 4 GiB file to a PS5 Pro took 60 s with the check, against 83 s in 12.4.3 and about 62 s with no check.\n- The check now reads from the drive itself, not from a copy still held in the console's memory, so it can catch a fault on the drive.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
