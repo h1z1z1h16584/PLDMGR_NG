@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.7",
+      "id": "ps5upload-ps5upload-12.4.8",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.7_v12.4.7.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.7_v12.4.7.elf",
+      "filename": "ps5upload-12.4.8_v12.4.8.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.8_v12.4.8.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.7/ps5upload-12.4.7.elf",
-      "description": "v12.4.7 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.8/ps5upload-12.4.8.elf",
+      "description": "v12.4.8 by phantomptr",
       "last_update": "2026-11-11",
-      "version": "v12.4.7",
+      "version": "v12.4.8",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "721d9dbca1e05c73aa58bdf4fe5093b4caf35f775a1d8702b080920ecb2111ab",
-      "release_notes": "\nPlay Together:\n\n- Fixed the picture stuttering for friends on your home network, mostly at higher quality (like the default 15 Mbit/s). 12.4.5 only got part of the way: the app still held the picture to about 8 Mbit/s on a fast network and dropped pictures whenever the game got busy. Friends on your home network now always get the full rate while the connection stays clean. Tested on a PS5 Pro at 15 Mbit/s: no dropped pictures.\n\nFiles:\n\n- Extract can now put an archive's contents in any folder on the PS5, on any drive: from an external drive to the internal one, for example, and into a folder you name. The extract dialog has an \"Extract to\" choice (it still starts at the archive's own folder), shows the free space on the chosen drive, and offers to merge if that folder already exists. This works on the console's own file page too.\n\n"
+      "checksum": "053154034ffdb5057a08a962b68a26708270c78da966ef0a9f433c3f6de860fc",
+      "release_notes": "\nFiles:\n\n- Extracting a RAR archive on the PS5 no longer fails with \"Declared dictionary size is not supported\". Archives packed with a large dictionary (up to 4 GB, common for big games) now extract on the console. Tested on a PS5 Pro with a 4 GB-dictionary multi-part archive.\n\nUpload:\n\n- \"Send it as one game image\" now builds the image in Workshop's Output folder, and shows it with a Change button. Before, it always built it in your Downloads folder, with no way to pick another drive.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
