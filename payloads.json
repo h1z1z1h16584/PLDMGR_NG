@@ -768,17 +768,16 @@
     {
       "id": "garlic-savemgr-garlic-savemgr-prerelease",
       "name": "garlic-savemgr [Pre-release]",
-      "filename": "garlic-savemgr_v1.15-beta16 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta16%20%5BPre-release%5D.elf",
+      "filename": "garlic-savemgr_v1.15-beta22 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/garlic-savemgr_v1.15-beta22%20%5BPre-release%5D.elf",
       "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
-      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta16/garlic-savemgr.elf",
-      "description": "v1.15-beta16 [Pre-release] by earthonion",
-      "last_update": "2026-11-08",
-      "version": "v1.15-beta16",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta22/garlic-savemgr.elf",
+      "description": "v1.15-beta22 [Pre-release] by earthonion",
+      "last_update": "2026-11-11",
+      "version": "v1.15-beta22",
       "author": "earthonion",
       "category": "Pre-release",
-      "checksum": "d6a6048e6b5b56a30d07c926155b18d4b95e07b96dbf7631d1e8ded765880471",
-      "release_notes": "Adds chives.json geometry export and native CoW rebuilding, strict PS5PARAM finalization, and backward-compatible PS5IMAGE and regular-SFO recovery. Based on source shared by Skiller."
+      "checksum": "fb8e0860161e3235e57bc9239d61d2b6483cf45395253745c05d34a3c9ebf1ca"
     },
     {
       "id": "kstuff-lite-kstuff-prerelease",
