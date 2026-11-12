@@ -797,17 +797,17 @@
     {
       "id": "onionhen-onionhen-prerelease",
       "name": "onionHEN [Pre-release]",
-      "filename": "OnionHEN_v0.9.0-beta2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/OnionHEN_v0.9.0-beta2%20%5BPre-release%5D.elf",
+      "filename": "OnionHEN_nightly [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/OnionHEN_nightly%20%5BPre-release%5D.elf",
       "source": "https://github.com/aydencharles/onionHEN/releases",
-      "source_direct": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0-beta2/OnionHEN.elf",
-      "description": "OnionHEN v0.9.0-beta2 [Pre-release] by aydencharles",
-      "last_update": "2026-10-07",
-      "version": "v0.9.0-beta2",
+      "source_direct": "https://github.com/aydencharles/onionHEN/releases/download/nightly/OnionHEN.elf",
+      "description": "Nightly build (39683d3) [Pre-release] by aydencharles",
+      "last_update": "2026-11-12",
+      "version": "nightly",
       "author": "aydencharles",
       "category": "Pre-release",
-      "checksum": "dd2e78af126d9d115df147a0f2bff6269de7a3eee5a556e06b6c21726a36f087",
-      "release_notes": "# OnionHEN v0.9.0-beta2\n\n**Beta, for testing only.** This build will have bugs. It can fail to inject, miss the home-screen shortcut, or misbehave on a firmware that v0.0.13 already handled. It is not a stable replacement for [v0.0.13](https://github.com/aydencharles/onionHEN/releases/tag/v0.0.13). If you need the last stable release, stay on v0.0.13.\n\nPlease test a **cold boot**: reboot, run the exploit, start elfldr, then send `OnionHEN.elf` once. Loading it again into a ShellUI that already ran OnionHEN is not a supported test.\n\nWhen you report a problem, include the firmware version, what you did, and `/data/OnionHEN/OnionHEN.log`. For a cheats problem, also include `/data/OnionHEN/OnionHEN_util_daemon.log`.\n\nOnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, a game overlay, payload management, and background services.\n\n**Version:** This is **v0.9.0-beta2**, the next test build after [v0.9.0-beta1](https://github.com/aydencharles/onionHEN/releases/tag/v0.9.0-beta1). Still a beta. This one is mainly a fix for the cheats menu.\n\n**Firmware under test:** 4.03 – 13.60, same as beta1. v0.0.13 covered 4.03 – 12.70. Please try the cheats menu again on 4.03. 13.x still needs testing on real consoles.\n\n## What changed since v0.9.0-beta1\n\n### Cheats\n\n[#97](https://github.com/aydencharles/onionHEN/issues/97) and [#103](https://github.com/aydencharles/onionHEN/issues/103), on firmware 4.03: opening the cheats menu for a game with no cheats took about 40 seconds. After that the home screen died, and the console did nothing until a forced reboot. This happened on v0.0.13 and again on v0.9.0-beta1. It gets in the way when you are only checking whether that game has cheats.\n\nThis build opens that menu in a few seconds, and the home screen stays up. On [#103](https://github.com/aydencharles/onionHEN/issues/103), an early beta2 build was tried and the reporter said the problem is gone.\n\n### Home screen..."
+      "checksum": "d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e",
+      "release_notes": "Automated **Release** build of `main` at [`39683d3`](https://github.com/aydencharles/onionHEN/commit/39683d33b43296df2701cd824204526e3d16e375), built 2026-11-12 04:24 UTC.\n\nThis is an untested development build. Use the latest stable release unless you want to try new changes early.\n\n- Changes since v0.9.0: [`v0.9.0...39683d3`](https://github.com/aydencharles/onionHEN/compare/v0.9.0...39683d33b43296df2701cd824204526e3d16e375)\n- `OnionHEN.elf` SHA-256: `d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e`\n"
     },
     {
       "id": "orbit-store-ps5-orbit_store-prerelease",
