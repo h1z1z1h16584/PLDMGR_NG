@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.13",
+      "id": "ps5upload-ps5upload-12.4.14",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.13_v12.4.13.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.13_v12.4.13.elf",
+      "filename": "ps5upload-12.4.14_v12.4.14.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.14_v12.4.14.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.13/ps5upload-12.4.13.elf",
-      "description": "v12.4.13 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.14/ps5upload-12.4.14.elf",
+      "description": "v12.4.14 by phantomptr",
       "last_update": "2026-11-12",
-      "version": "v12.4.13",
+      "version": "v12.4.14",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "be4879657d76ad8880b3176a215387462776569b9d6e077f29b2ff544d43338a",
-      "release_notes": "\nCheats:\n\n- Cheats that write to many places, like a game's \"Master Code\", now apply. A cheat could hold 32 places and about 8 KB of text, and anything bigger was refused with \"cheat has more locations than the engine can hold\". It can now hold up to 4096. The Master Code for The Blood of Dawnwalker has 37, and the game's other cheats need it switched on first. For #811.\n\nFiles:\n\n- Files downloaded from the PS5, such as video clips and screenshots, now keep their date and time from the PS5. Before, they showed the time of the download. Zip downloads keep the dates too. For #812.\n\n"
+      "checksum": "17dc0827d3d49701534a8b2f7dca337ec88f213eb825ed028763be5eeec72f7e",
+      "release_notes": "\nShare:\n\n- The Share page now lines up with the rest of the app. The box for opening a friend's link sits on the left like the other pages, and beside it are three short steps on how sharing works, with a button to choose a game to share from, and your past shares (now always shown, even when there are none yet).\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
