@@ -304,17 +304,17 @@
     {
       "id": "ps5-usb-formatierer-usb_format",
       "name": "ps5-usb-formatierer",
-      "filename": "usb_format_v2.6.65.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.65.elf",
+      "filename": "usb_format_v2.6.66.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb_format_v2.6.66.elf",
       "source": "https://github.com/strongt1me/ps5-usb-formatierer/releases",
-      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.65/usb_format.elf",
-      "description": "USB-Formatierer 2.6.65 by strongt1me",
-      "last_update": "2026-11-01",
-      "version": "v2.6.65",
+      "source_direct": "https://github.com/strongt1me/ps5-usb-formatierer/releases/download/v2.6.66/usb_format.elf",
+      "description": "USB-Formatierer 2.6.66 by strongt1me",
+      "last_update": "2026-11-12",
+      "version": "v2.6.66",
       "author": "strongt1me",
       "category": "Homebrew",
-      "checksum": "13844c45ac1fa49affb299ad8a635b9e88cf764474243deb59b263faf02cad80",
-      "release_notes": "## Hinzugefügt\n\n- Changelog auf Englisch (CHANGELOG.en.md).\n- „Was ist neu“ in den PC-Programmen zeigt die Änderungen aller Versionen seit der installierten; in der Weboberfläche zeigt sie ein Klick auf „Neue Version … verfügbar“ ebenfalls an.\n\n## Aktualisieren\n\nAm einfachsten im PS5-USB-Formatierer auf „ELF senden“ klicken. Für die App-Kachel den Ordner `PPSA86920` aus dem ZIP nach `/data/homebrew/` kopieren und in der Weboberfläche „Kachel neu anmelden“ wählen.\n\n| Datei | Zweck |\n|---|---|\n| `PS5-USB-Formatierer.exe` | Windows: an der PS5 (übers Netz) und am PC, mit eingebauter ELF |\n| `USB-Formatierer.exe` | Windows ohne PS5-Funktionen: alle Dateisysteme, Partitionen, Image-Sicherung |\n| `…-x86_64.AppImage`, `…-aarch64.AppImage` | dieselben Programme für Linux (Intel/AMD bzw. ARM64), `.zsync` für „Jetzt aktualisieren“ |\n| `…-linux-x86_64.tar.gz`, `…-linux-aarch64.tar.gz` | Linux als Archiv: entpacken und starten |\n| `usb_format.elf` | Formatierer als Payload für den ELF-Loader (Port 9021) |\n| `PPSA86920.zip` | App-Kachel |\n| `SHA256SUMS` | Prüfsummen aller Dateien |\n\n\n<details><summary>English</summary>\n\n#### Added\n\n- Changelog in English (CHANGELOG.en.md).\n- \"What's new\" in the PC programs shows the changes of every version since the installed one; in the web interface a click on \"New version … available\" shows them as well.\n\n#### Updating\n\nThe easiest way is \"Send ELF\" in the PS5 USB Formatter. For the app tile, copy the folder `PPSA86920` from the ZIP to `/data/homebrew/` and choose \"Re-register tile\" in the web interface. `.exe` for Windows, `.AppImage`/`.tar.gz` for Linux, `usb_format.elf` for the ELF loader (port 9021), `SHA256SUMS` with the checksums.\n\n</details>\n"
+      "checksum": "29eb6fdcf47142f298f630295014718825081ca2bd75cd4b074e58a88d9849b0",
+      "release_notes": "## Geändert\n\n- PS5-App: Beim Start gilt die Systemsprache der PS5; gibt es sie in der App nicht, Englisch (vorher Deutsch). Eine in der App gewählte Sprache gilt bis zum nächsten Start des Formatierers.\n\n## Aktualisieren\n\nAm einfachsten im PS5-USB-Formatierer auf „ELF senden“ klicken. Für die App-Kachel den Ordner `PPSA86920` aus dem ZIP nach `/data/homebrew/` kopieren und in der Weboberfläche „Kachel neu anmelden“ wählen.\n\n| Datei | Zweck |\n|---|---|\n| `PS5-USB-Formatierer.exe` | Windows: an der PS5 (übers Netz) und am PC, mit eingebauter ELF |\n| `USB-Formatierer.exe` | Windows ohne PS5-Funktionen: alle Dateisysteme, Partitionen, Image-Sicherung |\n| `…-x86_64.AppImage`, `…-aarch64.AppImage` | dieselben Programme für Linux (Intel/AMD bzw. ARM64), `.zsync` für „Jetzt aktualisieren“ |\n| `…-linux-x86_64.tar.gz`, `…-linux-aarch64.tar.gz` | Linux als Archiv: entpacken und starten |\n| `usb_format.elf` | Formatierer als Payload für den ELF-Loader (Port 9021) |\n| `PPSA86920.zip` | App-Kachel |\n| `SHA256SUMS` | Prüfsummen aller Dateien |\n\n\n<details><summary>English</summary>\n\n#### Changed\n\n- PS5 app: at start the PS5 system language is used; if the app does not have it, English (previously German). A language chosen in the app applies until the formatter starts again.\n\n#### Updating\n\nThe easiest way is \"Send ELF\" in the PS5 USB Formatter. For the app tile, copy the folder `PPSA86920` from the ZIP to `/data/homebrew/` and choose \"Re-register tile\" in the web interface. `.exe` for Windows, `.AppImage`/`.tar.gz` for Linux, `usb_format.elf` for the ELF loader (port 9021), `SHA256SUMS` with the checksums.\n\n</details>\n"
     },
     {
       "id": "ps5shopappkg-dpiv2",
