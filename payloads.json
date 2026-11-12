@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.9",
+      "id": "ps5upload-ps5upload-12.4.10",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.9_v12.4.9.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.9_v12.4.9.elf",
+      "filename": "ps5upload-12.4.10_v12.4.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.10_v12.4.10.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.9/ps5upload-12.4.9.elf",
-      "description": "v12.4.9 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.10/ps5upload-12.4.10.elf",
+      "description": "v12.4.10 by phantomptr",
       "last_update": "2026-11-11",
-      "version": "v12.4.9",
+      "version": "v12.4.10",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "58b8686c04ee703a1cb0a3c00b945caae1f9ec8bbf1a8f42f19947c274983596",
-      "release_notes": "\nUpload:\n\n- Upload with unpacking on the way now takes tar archives: `.tar`, `.tar.zst`/`.tzst`, `.tar.gz`/`.tgz`, `.tar.xz`/`.txz` and `.tar.bz2`/`.tbz2`, plus a single `.zst` file and zip archives compressed with zstd. They're unpacked on your computer or phone as they're sent, so the PS5 gets the files, not the archive. zstd unpacks at over 1 GB/s on a recent computer, so your network sets the speed. A plain `.tar` isn't decoded at all, and an interrupted upload picks up inside the file it stopped at.\n- An archive packed with zstd's \"long\" mode that needs more memory than this device can give is refused with a message that says how much it needs, instead of running out of memory.\n\n"
+      "checksum": "c51f52398aa9a9b0c78b5561010dffbaf198511f3daf8388bcf293918810f483",
+      "release_notes": "\nThis release is the result of a full review of the app, the engine and the PS5 helper. Most of it is small fixes for rare cases.\n\nPlay Together:\n\n- Fixed the picture skipping for friends at higher quality (like the default 15 Mbit/s) when the game is busy. The app could only send about two thirds of what a 15 Mbit/s picture needs, so pictures were dropped. In our test on this computer at 15 Mbit/s, about half the pictures were dropped before and none after.\n- On a home connection that can't carry the quality you chose, the app now backs off by itself instead of flooding the link. Lowering the quality is still the fix for a slow link.\n- The numbers shown for a friend's connection (lost packets, round trip) were sometimes the sound's, not the picture's. Fixed.\n- On a phone, starting Play Together keeps trying while the game is still starting, and says what it found if it can't.\n\nFiles and the console shell:\n\n- Actions in Console Files, Saves and game rows always act on the folder that was open when you asked, even if you browsed elsewhere while a dialog was up.\n- \"Show on TV\" no longer changes the folder under a text file you're editing.\n- Moving something onto a drive's mount point is refused instead of attempted.\n- The shell's `mv` works from the folder you're in, never renames across drives, and says so when the file isn't there. `cat` and similar commands refuse devices and pipes.\n- Changing permissions on a whole folder skips links.\n- Mounting an image twice at once, or onto a folder that's already a mount point, is refused. Unmounting an image can no longer unmount the drive underneath it.\n\nAccounts and saves:\n\n- Delete User now asks whether to delete that user's saves too. The default keeps them.\n- If a save was left open when the helper was updated or re-sent, the next one you open closes it first and keeps its copy (as `.unsaved` in `/data/ps5upload/save_open`). Before, the new save was mounted on top of the old one.\n\nInstalls, Convert and Workshop:\n\n- If the app can't confirm an install finished, it..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
