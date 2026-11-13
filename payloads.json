@@ -556,19 +556,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.15",
+      "id": "ps5upload-ps5upload-12.4.16",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.15_v12.4.15.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.15_v12.4.15.elf",
+      "filename": "ps5upload-12.4.16_v12.4.16.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.16_v12.4.16.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.15/ps5upload-12.4.15.elf",
-      "description": "v12.4.15 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.16/ps5upload-12.4.16.elf",
+      "description": "v12.4.16 by phantomptr",
       "last_update": "2026-11-13",
-      "version": "v12.4.15",
+      "version": "v12.4.16",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "e70e8c6fcc8f0f833f71e9c631d9be809cd567e31f7d7e8e8ecf3e4e5f87f8e6",
-      "release_notes": "\nPlay Together:\n\n- \"Block PS & Create for friends\" now does what it says: a friend gets one press of PS to pick a user on the TV, and once they pick one (PS, then ✕), PS and Create are off for them. Before, both kept working for the first minute after joining, and again for a minute whenever their controller was set up again, such as after the stream restarted. A friend who closes the user picker without choosing is also no longer locked out, and Create is off while they pick. (#720)\n\nShare:\n\n- The Share page now uses the whole window, like the other pages.\n- Opening a second share link while the Share page is already showing now puts that link in the box. Before, it was dropped and the box kept the first one.\n\n"
+      "checksum": "e533fae01c1277a5504bc2d74fbb05544f9cc2070c1e7f6aae7a6e03e0e54fc3",
+      "release_notes": "\nUploads:\n\n- The check that reads large files back on the PS5 now also checks a part of a file that had to be sent twice, once its second copy reaches the drive, so a fault in that second write is caught (AVA1 1.0.10).\n\nSecurity:\n\n- The console shell (the Shell page) can no longer read, change, move or delete the folders where the helper keeps this console's identity key and your saved network-share passwords. Every other file tool already refused them.\n\nShare:\n\n- The \"Expires in\" time on a share link counted down twice as fast as it should, so a link with hours left could look as if it was about to expire.\n- On Windows, a shared file or folder named like a Windows device (such as `NUL.pkg` or `CON`) is now saved under a safe name instead of failing to arrive.\n\nGames:\n\n- When the grid reuses a tile for another game while its cover is still loading, the old game's cover no longer appears on the new one.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
