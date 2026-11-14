@@ -272,19 +272,19 @@
       "release_notes": "Built with the current ps5-payload-dev SDK.\n\n**Added**\n- `PS5_PRO_GPU_FW_OFFSET` for 11.00/11.20, 11.40, 11.60, all 12.x, and 13.40/13.42 (13.20 and 13.60 unchanged), so the Pro GPU firmware dump runs on the remaining supported firmware.\n- `KIT_RETAIL_PRO` guard: Pro kits below firmware 11.00 are rejected before any table is selected.\n- Comments record that Pro tables come from retail 16 GB images only; devkit (32 GB) values are never used for Pro.\n\n**Verified** on 13.60 PS5 Pro: armed standby, wake booted Linux, `AMD Custom Zen 2 (Viola)`, 8 `viola_*.bin` dumped.\n\nOffsets for 11.00-11.60, 12.00-12.70 and 13.40/13.42 were derived from retail decrypted kernels and cross-checked byte-for-byte against devkit kernels (identical code at every FUN_*/GAD_* offset). Hardware boot on those firmware versions is not yet tested.\n\nSHA-256: `03a8f761e1ef8a4702be0818b55b9dc37361e3c4d515bc52fd59e19c2b130d49`"
     },
     {
-      "id": "ps5-patchdl-patchdl_0.3.12",
+      "id": "ps5-patchdl-patchdl_0.3.13",
       "name": "ps5-patchdl",
-      "filename": "patchdl_0.3.12_v0.3.12.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.12_v0.3.12.elf",
+      "filename": "patchdl_0.3.13_v0.3.13.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/patchdl_0.3.13_v0.3.13.elf",
       "source": "https://github.com/knutwurst/ps5-patchdl/releases",
-      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.12/patchdl_0.3.12.elf",
-      "description": "PatchDL 0.3.12 by knutwurst",
-      "last_update": "2026-11-02",
-      "version": "v0.3.12",
+      "source_direct": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.13/patchdl_0.3.13.elf",
+      "description": "PatchDL 0.3.13 by knutwurst",
+      "last_update": "2026-11-14",
+      "version": "v0.3.13",
       "author": "knutwurst",
       "category": "Homebrew",
-      "checksum": "a8aeb6039825188561b7346bb6f0c9244f72d7be1412dc7dd6c2bea0dd3f396a",
-      "release_notes": "- Updates now install right after the download by default. This applies to new setups; if you saved your settings before, PatchDL keeps your choice, and you can turn on \"Install after download\" in the settings.\n- Astro's Playroom is no longer marked experimental. On a freshly reset console PatchDL downloaded and installed it without problems.\n- Donations now go through Ko-fi: [ko-fi.com/knutwurst](https://ko-fi.com/knutwurst).\n\nSend `patchdl_0.3.12.elf` to your PS5 with your ELF loader and open the address from the notification.\n\nSHA-256 of `patchdl_0.3.12.elf`: `a8aeb6039825188561b7346bb6f0c9244f72d7be1412dc7dd6c2bea0dd3f396a`\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n"
+      "checksum": "257cce632b9ad701094dad3f8c0206ff87ab6b417415a57ebfd558c5ee3b0c50",
+      "release_notes": "Someone republished PatchDL 0.3.12 as \"Updater Games\" and replaced my name with theirs in every file: [B4ckd0orl/Updater-Games](https://github.com/B4ckd0orl/Updater-Games) ([my request to fix it](https://github.com/B4ckd0orl/Updater-Games/issues/1)). This release makes the authorship visible in PatchDL itself.\n\n- The settings page now ends with an About box: copyright, license, a link to the source, and where the ELF was built. Official builds say \"Built from knutwurst/ps5-patchdl\".\n- PatchDL now has additional terms under section 7 of the GPL, see [NOTICE](https://github.com/knutwurst/ps5-patchdl/blob/main/NOTICE). Forks are welcome, but they keep my copyright notices and the attribution in the About box, and say that they are a modified version of PatchDL.\n\nSend `patchdl_0.3.13.elf` to your PS5 with your ELF loader and open the address from the notification.\n\nSHA-256 of `patchdl_0.3.13.elf`: `257cce632b9ad701094dad3f8c0206ff87ab6b417415a57ebfd558c5ee3b0c50`\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n"
     },
     {
       "id": "ps5-usb-formatierer-usb_format",
