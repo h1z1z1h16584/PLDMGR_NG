@@ -900,19 +900,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.1-prerelease",
+      "id": "ps5upload-ps5upload-12.4.20-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-12.4.1_v12.4.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.4.1_v12.4.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-12.4.20_v12.4.20 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.4.20_v12.4.20%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.1/ps5upload-12.4.1.elf",
-      "description": "v12.4.1 [Pre-release] by phantomptr",
-      "last_update": "2026-11-09",
-      "version": "v12.4.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.20/ps5upload-12.4.20.elf",
+      "description": "v12.4.20 [Pre-release] by phantomptr",
+      "last_update": "2026-11-14",
+      "version": "v12.4.20",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "fd3f6679bba4f3246ef83fa4cc747a614b449ad1b9dcfabb0b0069751a609ed4",
-      "release_notes": "> **Please update to [12.4.2](https://github.com/phantomptr/ps5upload/releases/tag/v12.4.2).** It fixes how the helper handles rest mode and starting at boot, among other things.\n\nRemote Play:\n\n- Play connects again after another device or a controller at the console took the session over, or right after a Stop. Before, PS5Upload could keep failing until the PS5 was restarted while other apps got in. It now asks the PS5 to start the same way other Remote Play apps do.\n\nInstalling:\n\n- Add-ons (DLC) no longer sit at 99%. An add-on is now treated as an add-on even when its package doesn't say so, the check after installing ends within about a minute, and an add-on that leaves no files says to look for it in the game's add-ons on the PS5.\n\nPS5 helper and rest mode:\n\n- While the console goes to rest and for a minute after it wakes, the helper holds its background work (fan, cheats, home-screen tile and icon fixes, its own checks) and pauses Tailscale, then picks up again. Tailscale can no longer get stuck in a busy loop when the network goes away.\n- Each rest and wake is written to a small log on the console (power.log), collected by the Bug Report, so a console that switches off in rest can be traced.\n\nGame frame rate:\n\n- While a capture runs, Stop capture is red with a Recording label beside it.\n\n\n\n"
+      "checksum": "23584161eb851eca7185ede538387da8a280cfc84092e0c3dff488e41975cbba",
+      "release_notes": "\n- **Payloads:** add a whole list of payloads at once with **Payload sources**: paste the address of a list in Payload Manager's format and its payloads show up in the catalogue. A payload is only shown when the list gives its checksum, and a download that doesn't match is refused (#829).\n- **Extract on the PS5:** extracting archives, RAR sets most of all, is much faster: the extractor now writes to the drive in large pieces instead of many small ones, and the RAR decoder works faster. Not yet timed on a console (#826).\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
