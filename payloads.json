@@ -284,7 +284,7 @@
       "author": "knutwurst",
       "category": "Homebrew",
       "checksum": "a8aeb6039825188561b7346bb6f0c9244f72d7be1412dc7dd6c2bea0dd3f396a",
-      "release_notes": "- Updates now install right after the download by default. This applies to new setups; if you saved your settings before, PatchDL keeps your choice, and you can turn on \"Install after download\" in the settings.\n- Astro's Playroom is no longer marked experimental. On a freshly reset console PatchDL downloaded and installed it without problems.\n- Donations now go through Ko-fi: [ko-fi.com/knutwurst](https://ko-fi.com/knutwurst).\n\nSend `patchdl_0.3.12.elf` to your PS5 with your ELF loader and open the address from the notification.\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n"
+      "release_notes": "- Updates now install right after the download by default. This applies to new setups; if you saved your settings before, PatchDL keeps your choice, and you can turn on \"Install after download\" in the settings.\n- Astro's Playroom is no longer marked experimental. On a freshly reset console PatchDL downloaded and installed it without problems.\n- Donations now go through Ko-fi: [ko-fi.com/knutwurst](https://ko-fi.com/knutwurst).\n\nSend `patchdl_0.3.12.elf` to your PS5 with your ELF loader and open the address from the notification.\n\nSHA-256 of `patchdl_0.3.12.elf`: `a8aeb6039825188561b7346bb6f0c9244f72d7be1412dc7dd6c2bea0dd3f396a`\n\n<sub>PatchDL downloads official, unmodified updates for games already installed on your console. Not affiliated with Sony Interactive Entertainment.</sub>\n\n"
     },
     {
       "id": "ps5-usb-formatierer-usb_format",
@@ -541,19 +541,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.18",
+      "id": "ps5upload-ps5upload-12.4.19",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.18_v12.4.18.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.18_v12.4.18.elf",
+      "filename": "ps5upload-12.4.19_v12.4.19.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.19_v12.4.19.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.18/ps5upload-12.4.18.elf",
-      "description": "v12.4.18 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.19/ps5upload-12.4.19.elf",
+      "description": "v12.4.19 by phantomptr",
       "last_update": "2026-11-14",
-      "version": "v12.4.18",
+      "version": "v12.4.19",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "36f7d3a1982b372e6d63d4de6528492a3f2c85366d7b88ff091d760212c7d03e",
-      "release_notes": "\nPlay Together:\n\n- The invite panel now says what your router did for friends on other networks: it opened a port, it opened one but another router or your provider sits in front of it, or it opened none. When it didn't, the panel says which UDP port to forward to this computer (#822).\n- The port friends connect to now stays the same every time, so a port you forward on your router keeps working. You can pick your own in Settings › App › Play Together.\n\nTailscale:\n\n- Pausing Tailscale on a PS5 that is off or not answering is no longer lost: the app keeps the pause and applies it as soon as the PS5 answers again. Switching it back on cancels it. A pause already stays through restarting the app, sending the helper again and restarting the PS5.\n\n"
+      "checksum": "cd3765ab9c643190bb3ca00b40de0dee5a90d6f5f0f1085d0decd056c5d91889",
+      "release_notes": "\n- **Cheats:** switching a cheat on or off could fail with \"location 1: bad offset\" and garbled text, even with a correct cheat file. Fixed (#824).\n- **Cheats:** the cheat list counts switched-on cheats correctly for games with more than one cheat file.\n- **Cheats:** a cheat file with an extra section after its cheat list no longer shows a phantom cheat, and a `}` in a cheat's name no longer cuts it short.\n- **Cheats:** a cheat that was switched but couldn't be saved now says so, instead of \"could not switch\".\n- **Cheats:** a very large cheat file can no longer use up the helper's memory.\n- **Minion › Saves:** switching user while saves are still loading no longer shows the other user's backups, and an old error goes away once saves load.\n- **Minion › Files:** big reads and downloads are no longer cut off on a slow drive or weak Wi-Fi. Running out of memory now says so instead of \"not allowed\".\n- **Minion › Home:** the \"USB drive plugged in\" card is spaced properly in the PS5 browser.\n- Writing a file onto a folder's name is refused cleanly, and a full drive is reported as full.\n\nNone of these were tried on a console yet.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
