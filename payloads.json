@@ -77,19 +77,19 @@
       "release_notes": "## Changes\n- Add threaded 7z extraction beside existing RAR extraction.\n- Support .7z and multipart .7z.001 archive starts.\n- Add archive_location and archive_password config keys while preserving rar_* aliases.\n- Pass threads= to both UnRAR and 7-Zip extraction paths.\n\n## Verification\n- Built with Docker SDK: docker run --rm -v \"/Users/bizkut/Downloads/PS5/homebrew/unrar-ps5:/work\" -w /work -e PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk ps5-payload-sdk:libcxx make clean all"
     },
     {
-      "id": "hearbridge-ps5-hearbridge-1.4.1",
+      "id": "hearbridge-ps5-hearbridge-1.4.2",
       "name": "HearBridge-PS5",
-      "filename": "HearBridge-1.4.1_v1.4.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.4.1_v1.4.1.elf",
+      "filename": "HearBridge-1.4.2_v1.4.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.4.2_v1.4.2.elf",
       "source": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases",
-      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.1/HearBridge-1.4.1.elf",
-      "description": "HearBridge 1.4.1 by X-F1REBALL-X",
+      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.2/HearBridge-1.4.2.elf",
+      "description": "HearBridge 1.4.2 by X-F1REBALL-X",
       "last_update": "2026-11-15",
-      "version": "v1.4.1",
+      "version": "v1.4.2",
       "author": "X-F1REBALL-X",
       "category": "Homebrew",
-      "checksum": "3996f6b10fd4c3fec02802e26ae6c68368f1719c50eddd0205453f232f666053",
-      "release_notes": "HearBridge 1.4.1\n\n- switching between the console chip and usb dongles (or usb to usb) is much faster now, about 5-8s instead of ~60s or failing\n- rebadged realtek dongles like tp-link ub600 and asus bt600 now get their firmware and work. thanks @jamesst20\n- fixed the build breaking on newer compilers (#43). thanks @keravyn-ops\n- mediatek dongles find devices better\n- more speakers show up in the list (unnamed ones, airpods, car audio). tvs stay hidden\n- fixed audio going silent while the page says Streaming (#40), it restarts the stream by itself now\n- the web page is on port 6767 now\n- less log spam\n\nto install, send HearBridge-1.4.1.elf to your elf loader on port 9021"
+      "checksum": "565bb15656efad8d5561c2e397eac89002f12955fb2c6b65dc3475017613e434",
+      "release_notes": "**HearBridge 1.4.2**\n\nnew interface\n- new layout with a menu on the side: home, headsets, sound & games, connection and backup\n- quick settings on home: eq presets, night mode and save for the running game\n- clear screen when no headset is connected, with one tap to connect the last one\n- fits the tv screen with no scrolling at 720p, 1080p and 4k\n- works on phones and small browser windows, with a fixed bottom menu\n- add to home screen on your phone, with the hearbridge icon and full screen"
     },
     {
       "id": "liveshell-liveshell-fast",
