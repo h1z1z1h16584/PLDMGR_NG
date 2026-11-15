@@ -77,19 +77,19 @@
       "release_notes": "## Changes\n- Add threaded 7z extraction beside existing RAR extraction.\n- Support .7z and multipart .7z.001 archive starts.\n- Add archive_location and archive_password config keys while preserving rar_* aliases.\n- Pass threads= to both UnRAR and 7-Zip extraction paths.\n\n## Verification\n- Built with Docker SDK: docker run --rm -v \"/Users/bizkut/Downloads/PS5/homebrew/unrar-ps5:/work\" -w /work -e PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk ps5-payload-sdk:libcxx make clean all"
     },
     {
-      "id": "hearbridge-ps5-hearbridge-1.4.0",
+      "id": "hearbridge-ps5-hearbridge-1.4.1",
       "name": "HearBridge-PS5",
-      "filename": "HearBridge-1.4.0_v1.4.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.4.0_v1.4.0.elf",
+      "filename": "HearBridge-1.4.1_v1.4.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.4.1_v1.4.1.elf",
       "source": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases",
-      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.0/HearBridge-1.4.0.elf",
-      "description": "HearBridge 1.4.0 by X-F1REBALL-X",
-      "last_update": "2026-10-30",
-      "version": "v1.4.0",
+      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.1/HearBridge-1.4.1.elf",
+      "description": "HearBridge 1.4.1 by X-F1REBALL-X",
+      "last_update": "2026-11-15",
+      "version": "v1.4.1",
       "author": "X-F1REBALL-X",
       "category": "Homebrew",
-      "checksum": "0c78332ac317541da12cb5998d1cab7f5b1b2778b3e835c4213b62278515d186",
-      "release_notes": "USB Bluetooth adapter support and a lighter single-screen UI.\n\n## What's new\n\n- **USB Bluetooth adapters.** HearBridge can use a USB stick instead of the console chip. Realtek RTL8761BU sticks are supported with bundled firmware, and CSR8510 sticks work too. The console chip is still used when no adapter is plugged in.\n- **Adapter picker in Settings.** Choose Auto, the console chip, or a USB adapter and switch right away. Pairing is shared across adapters, so you do not have to pair the same headset again after changing sticks.\n- **Single-screen UI.** The home page fits a 1920×1080 TV with no scrolling: larger controls for the headset, volume and latency, and a Details panel for equalizer, codecs and the log.\n\nThanks to [@jamesst20](https://github.com/jamesst20) for the original USB / Realtek RTL8761BU groundwork in #45.\n\n**Download:** `HearBridge-1.4.0.elf`\n\nSend it to your ELF loader on port 9021, then open `http://<console-ip>:8090`.\n\nSHA-256: `0c78332ac317541da12cb5998d1cab7f5b1b2778b3e835c4213b62278515d186`"
+      "checksum": "3996f6b10fd4c3fec02802e26ae6c68368f1719c50eddd0205453f232f666053",
+      "release_notes": "HearBridge 1.4.1\n\n- switching between the console chip and usb dongles (or usb to usb) is much faster now, about 5-8s instead of ~60s or failing\n- rebadged realtek dongles like tp-link ub600 and asus bt600 now get their firmware and work. thanks @jamesst20\n- fixed the build breaking on newer compilers (#43). thanks @keravyn-ops\n- mediatek dongles find devices better\n- more speakers show up in the list (unnamed ones, airpods, car audio). tvs stay hidden\n- fixed audio going silent while the page says Streaming (#40), it restarts the stream by itself now\n- the web page is on port 6767 now\n- less log spam\n\nto install, send HearBridge-1.4.1.elf to your elf loader on port 9021"
     },
     {
       "id": "liveshell-liveshell-fast",
