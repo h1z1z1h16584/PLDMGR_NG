@@ -541,19 +541,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.4.20",
+      "id": "ps5upload-ps5upload-12.4.21",
       "name": "ps5upload",
-      "filename": "ps5upload-12.4.20_v12.4.20.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.20_v12.4.20.elf",
+      "filename": "ps5upload-12.4.21_v12.4.21.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.4.21_v12.4.21.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.20/ps5upload-12.4.20.elf",
-      "description": "v12.4.20 by phantomptr",
-      "last_update": "2026-11-14",
-      "version": "v12.4.20",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.21/ps5upload-12.4.21.elf",
+      "description": "v12.4.21 by phantomptr",
+      "last_update": "2026-11-15",
+      "version": "v12.4.21",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "23584161eb851eca7185ede538387da8a280cfc84092e0c3dff488e41975cbba",
-      "release_notes": "\n- **Payloads:** add a whole list of payloads at once with **Payload sources**: paste the address of a list in Payload Manager's format and its payloads show up in the catalogue. A payload is only shown when the list gives its checksum, and a download that doesn't match is refused (#829).\n- **Extract on the PS5:** extracting archives, RAR sets most of all, is much faster: the extractor now writes to the drive in large pieces instead of many small ones, and the RAR decoder works faster. Not yet timed on a console (#826).\n\n"
+      "checksum": "c7a9a0f143ace22f59465ac85924518c4b21eaec9f50429718f73b9b80292843",
+      "release_notes": "\n- **Remove PS5Upload from a PS5:** a new button in Settings › This PS5 takes PS5Upload off a console you are done with. The PS5Upload Minion tile, PS5Upload's own files on the PS5 and the copies of the helper your loaders start at boot all go, and icons it hid are shown again. Games, saves and other payloads stay, and you can keep the save backups made on the PS5. The copy of your account kept from Play's offline sign-in (to undo it) always stays. Sending the helper again afterwards connects straight away. A folder of PS5Upload's that the PS5 still has in use (like the Minion tile's) is left in place rather than deleted. Before this, a deleted Minion tile came back whenever the helper started again.\n- **Play setup:** the rest-mode step (Stay Connected to the Internet, Turning On PS5 from Network) is now marked optional. It is only needed to start Play while the PS5 is in rest mode; if you turn the console on yourself, you can skip it.\n- **Payload Manager:** keeping the stored helper up to date could write the helper over PS5Upload's own copy of elfldr in Payload Manager (`ps5upload-elfldr.elf`). That file is no longer touched.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
