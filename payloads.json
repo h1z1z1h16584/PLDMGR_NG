@@ -62,6 +62,21 @@
       "release_notes": "# LZ4 Compression 1.5.0\n\n- The app updates itself now. When a new version is out you get a popup when\n  you open the app: press Update and it downloads, installs and reopens on its\n  own (engine included). No more FTP for updates after this one.\n- Game reports: every packed game shows how it runs for other people, and\n  `Report how it runs` lets you add yours. Pick an answer, scan the QR code\n  with your phone and send the prefilled report. The more people report, the\n  easier it is to know which games pack fine before you start.\n- The packer and the app are open source under GPL-3.0 now.\n\nEverything from 1.4.3 is included (Ghost of Yotei fix, permission fix,\n`Verify LZ4 Packs` repairs).\n\n## Install\n\nThis is the last manual update:\n\n1. Add `lz4-compression.elf` to Payload Manager, so it sits at\n   `/data/pldmgr/payloads/lz4-compression/lz4-compression.elf`.\n2. Unzip `LZ4-Compression-PPSA99420.zip` and copy the `PPSA99420` folder to\n   `/data/homebrew/PPSA99420` over FTP (replace the old one). ShadowMount+\n   adds the `LZ4 Compression` tile (close any running game if it doesn't show\n   up).\n3. Open the tile.\n\nUnofficial, and not affiliated with the projects it builds on. If it saved you\nspace, you can support the cost of building it:\n[Buy Me a Coffee](https://buymeacoffee.com/theghostonline)\n"
     },
     {
+      "id": "ps5-app-dumper-ps5-app-dumper_v2.10",
+      "name": "ps5-app-dumper",
+      "filename": "ps5-app-dumper_v2.10.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/ps5-app-dumper_v2.10.elf",
+      "source": "https://github.com/EchoStretch/ps5-app-dumper/releases",
+      "source_direct": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.10/ps5-app-dumper_v2.10.elf",
+      "description": "PS5 App Dumper 2.00 Beta PS5 App Dumper 2.10 Beta by EchoStretch",
+      "last_update": "2026-10-03",
+      "version": "v2.10",
+      "author": "EchoStretch",
+      "category": "Dumping & Backups",
+      "checksum": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
+      "release_notes": "## Highlights\r\n\r\n**DLC**\r\n- Each title shows how many DLC are installed for it, with names and sizes\r\n- Dump DLC on the running game dumps its DLC alone, next to a dump you made before, without copying the game again\r\n- With several DLC you pick which ones; a picked DLC that is there already is replaced\r\n- DLC dumps now carry their metadata (param.json, icon) from the installed package (#29)\r\n- DLC that only unlock content in the game are never mounted by the console and have nothing to dump; the page says so instead of hiding the button\r\n\r\n**Titles and dumps**\r\n- A DUMPED badge on every title that is dumped somewhere, UNFINISHED for one that was cut short\r\n- New dump folders carry the app title: `PPSA01325-app0_ASTRO's_PLAYROOM` (setting `folder_titles`, on by default)\r\n- Rename on the Dumps page switches every dump to names with or without the title\r\n- Tap a dump's path to copy it, and the Dumps list fits a phone\r\n\r\n**Queue**\r\n- Up to 64 titles instead of 16\r\n\r\n**Fixes**\r\n- Titles stuck at 99 %  were held as installing for good and could not be dumped\r\n- The UNFINISHED badge was drawn far too big\r\n\r\n## Notes\r\n- Dumps made with 2.00 or earlier keep their names and are still recognised. Use Rename on the Dumps page if you want the titles on them too.\r\n- A dump ShadowMount runs a game from is not renamed, because the link points at its folder.\r\n\r\n## Thanks\r\nThanks to @MangoScango for #29, which completes the DLC dumps with their metadata.\r\n\r\n## For developers\r\nBuilt on [webhb](https://github.com/slopmaster33/webhb) 0.4.1. If its download does not work, `webhb-0.4.1.tar.gz` is attached; build with `WEBHB_TARBALL=webhb-0.4.1.tar.gz make`."
+    },
+    {
       "id": "unrar-ps5-unrar_ps5",
       "name": "unrar-ps5",
       "filename": "unrar_ps5_v1.4.0.elf",
@@ -242,6 +257,21 @@
       "release_notes": "First release. Spotify Connect on a modified PS5, playing over your games.\n\n## What you need\n\n- A PS5 that can load ELF payloads\n- [klogsrv](https://github.com/ps5-payload-dev/klogsrv) running on the console\n- A USB drive the console plays music from (exFAT or FAT32, not extended storage) with about 8 GB free\n- Spotify Premium, and the Spotify app on a phone on the same network as the console\n\n## How to use it\n\n1. Download `librespot-ps5.elf` below, put it on a USB drive and load it with your payload loader.\n2. On the console, open the **Music** tab in the control centre.\n3. Go to your **external drive**.\n4. Open the folder **Start Librespot** and play **Librespot Streamer**.\n5. In the Spotify app on your phone, open the device list and pick **PS5 Connect**.\n\nThe program makes the folders and tracks itself the first time it runs. If they do not show up in the music list, open any other music folder once and go back.\n\nAfter you press play on the console there are about 14 seconds of silence before the music starts. After that, everything you do in the Spotify app is heard about two seconds later, and the music keeps playing when you start a game.\n\nTo stop, play **Stop Librespot** in the folder **Librespot Controls**, or pause from the phone.\n\n## Known issues\n\n- Track notifications show on the home screen but not yet while a game is in front.\n- Pausing from the console costs about 14 seconds of silence when you resume. Pausing from the phone does not.\n- Next and Previous on the console do nothing useful; use the phone.\n- After 12 hours the stream has to be started again.\n- Tested on one console and one USB drive.\n\nHow it works, the settings and the build steps are in the [README](https://github.com/stupiditytries/librespot-ps5#readme).\n\nNot affiliated with or endorsed by Spotify or Sony.\n"
     },
     {
+      "id": "orbit-store-ps5-orbit_store",
+      "name": "orbit-store-ps5",
+      "filename": "orbit_store_v1.9.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/orbit_store_v1.9.1.elf",
+      "source": "https://github.com/saawant12/orbit-store-ps5/releases",
+      "source_direct": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.9.1/orbit_store.elf",
+      "description": "Orbit Store 1.9.1 (Beta) by saawant12",
+      "last_update": "2026-11-15",
+      "version": "v1.9.1",
+      "author": "saawant12",
+      "category": "Homebrew",
+      "checksum": "88caf08827cd8141fc18e1d293480633343e0f6f92aa9a43e07de8ee5a497738",
+      "release_notes": "> **🎉 OrbitNet is coming soon: online multiplayer for jailbroken PS5s.** From the developer of Orbit. Follow along at [getorbitnet.com](https://getorbitnet.com).\n\n- **ZSTD comes to Orbit.** Find ZSTD games with the Format filter and see the format in download details, across the PS5 browser and native app's four layouts. Orbit unpacks the outer archive and keeps the ZSTD game assets ready for a compatible loader and runtime.\n- **More download choices.** Orbit now has **2,714 games with 5,679 download options**, plus **631 add-ons with 633 options across 197 base games**.\n\nWe’re also shipping improvements and bug fixes across our apps:\n\n## Orbit Store · Native PS5 app (FFPKG) and browser (ELF)\n\n- **More reliable installation and app updates.** Installation history no longer prevents new installs when it fills up. The native app installer also handles an already-registered Orbit app more reliably.\n\n## Orbit Zero · Mac, Windows and Linux\n\n- **Let your PS5 handle the download.** Set **Settings → Downloads → Download preference** to **Prefer PS5**. With Orbit Zero 1.9.1, Vikingfile and AkiraBox verification opens on your computer. Zero sends the ready link to Orbit on your PS5, which checks it and downloads the game directly. If the link cannot be used there, Zero can download and transfer the files instead.\n- **One app for PS5 and PS4.** Pair either console and keep a separate profile for its connection, games and downloads. Switch between consoles without pairing again, once unfinished console transfers are finished or cancelled.\n\n> **Orbit stays free.** [Orbit Store](https://github.com/saawant12/orbit-store-ps5), [Orbit Zero](https://github.com/saawant12/orbit-store-ps5#orbit-zero-for-mac-windows-and-linux), [Orbit Play](https://github.com/saawant12/orbit-play-ps5) and our upcoming apps are free and will stay free.\n>\n> I’ve been building Orbit in my own time and covering the costs of AI tools, test consoles, hardware and servers. If you’d like to help, you can [support Orbit via crypto](https://g..."
+    },
+    {
       "id": "pegasus-dl-pegasus_dl",
       "name": "pegasus-dl",
       "filename": "pegasus_dl_v1.11.0.elf",
@@ -315,6 +345,21 @@
       "category": "Homebrew",
       "checksum": "ab5d02f14114deb4b9c466236a7ec213bf527dae1490277dee7ae12e1343b6d7",
       "release_notes": "## Hinzugefügt\n\n- Diagnosebericht: Endete der Formatierer ohne Stopp-Befehl, erkennt der nächste Start, warum – PS5 neu gestartet oder ausgeschaltet, Ruhemodus bzw. Uhr gestellt, oder abgestürzt bzw. von außen beendet (Abschnitt „Unexpected ends“, auch in `tools/ps5_deploy.py status`).\n\n## Aktualisieren\n\nAm einfachsten im PS5-USB-Formatierer auf „ELF senden“ klicken. Für die App-Kachel den Ordner `PPSA86920` aus dem ZIP nach `/data/homebrew/` kopieren und in der Weboberfläche „Kachel neu anmelden“ wählen.\n\n| Datei | Zweck |\n|---|---|\n| `PS5-USB-Formatierer.exe` | Windows: an der PS5 (übers Netz) und am PC, mit eingebauter ELF |\n| `USB-Formatierer.exe` | Windows ohne PS5-Funktionen: alle Dateisysteme, Partitionen, Image-Sicherung |\n| `…-x86_64.AppImage`, `…-aarch64.AppImage` | dieselben Programme für Linux (Intel/AMD bzw. ARM64), `.zsync` für „Jetzt aktualisieren“ |\n| `…-linux-x86_64.tar.gz`, `…-linux-aarch64.tar.gz` | Linux als Archiv: entpacken und starten |\n| `usb_format.elf` | Formatierer als Payload für den ELF-Loader (Port 9021) |\n| `PPSA86920.zip` | App-Kachel |\n| `SHA256SUMS` | Prüfsummen aller Dateien |\n\n\n<details><summary>English</summary>\n\n#### Added\n\n- Diagnostic report: if the formatter ended without a stop command, the next start detects why – the PS5 was restarted or switched off, went into rest mode or had its clock set, or the formatter crashed or was killed (section \"Unexpected ends\", also in `tools/ps5_deploy.py status`).\n\n#### Updating\n\nThe easiest way is \"Send ELF\" in the PS5 USB Formatter. For the app tile, copy the folder `PPSA86920` from the ZIP to `/data/homebrew/` and choose \"Re-register tile\" in the web interface. `.exe` for Windows, `.AppImage`/`.tar.gz` for Linux, `usb_format.elf` for the ELF loader (port 9021), `SHA256SUMS` with the checksums.\n\n</details>\n"
+    },
+    {
+      "id": "ps5-y2jb-autoloader-usb-y2jb-installer",
+      "name": "ps5-y2jb-autoloader",
+      "filename": "usb-y2jb-installer_latest.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/usb-y2jb-installer_latest.elf",
+      "source": "https://github.com/h1z1z1h16584/ps5-y2jb-autoloader/releases",
+      "source_direct": "https://github.com/h1z1z1h16584/ps5-y2jb-autoloader/releases/download/latest/usb-y2jb-installer.elf",
+      "description": "v1.0-feda857 by h1z1z1h16584",
+      "last_update": "2026-11-04",
+      "version": "latest",
+      "author": "h1z1z1h16584",
+      "category": "Homebrew",
+      "checksum": "4fec4fde4cce04732f913123804583b64fe727ea6b877bb1dd992e45fd82829d",
+      "release_notes": "## v1.0-feda857\r\n\r\n\r\n- `download0.dat` — raw UFS2 image (~321 MB). FTP to `/user/download/PPSA0165*/`.\r\n- `download0.dat.zip` — same image, zipped (~1–2 MB). **Extract before use.**\r\n- `y2jb_update.zip` — place on the root of a USB drive to update the autoloader.\r\n- `usb-y2jb-installer.elf` — standalone payload to install `download0.dat` from USB. [Guide](https://github.com/h1z1z1h16584/ps5-y2jb-autoloader#default-recommended-usb-installer-payload)"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -423,17 +468,17 @@
     {
       "id": "kstuff-lite-kstuff",
       "name": "kstuff-lite",
-      "filename": "kstuff_v1.09.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/kstuff_v1.09.elf",
+      "filename": "kstuff_v1.11.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Kernel%20%26%20Exploitation/kstuff_v1.11.elf",
       "source": "https://github.com/EchoStretch/kstuff-lite/releases",
-      "source_direct": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.09/kstuff.elf",
-      "description": "v1.09 by EchoStretch",
-      "last_update": "2026-07-04",
-      "version": "v1.09",
+      "source_direct": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.11/kstuff.elf",
+      "description": "Kstuff Lite 1.11 Beta by EchoStretch",
+      "last_update": "2026-09-20",
+      "version": "v1.11",
       "author": "EchoStretch",
       "category": "Kernel & Exploitation",
-      "checksum": "ec5212794dc6e44ee8e70fd0549abec6d3dac8c3e03ddbeafd9f869ffe97d4e8",
-      "release_notes": "**Kstuff Lite 1.09 Beta Supports Firmware 3.00-12.70**\r\n\r\nA huge thanks to @sleirsgoevy for the help and creating this project, and to @zecoxao, @flatz, @idlesauce, @buzzer-re, @Al-Azif, @drakmor and everyone else who contributed. Your work and support are greatly appreciated!\r\n\r\n🔹 Changelog\r\nFixed Disable ASLR on 11.xx and 12.xx Thanks @Pharaoh2k\r\n\r\n📂 Original Source:\r\n[github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb](https://github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb)"
+      "checksum": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
+      "release_notes": "**Kstuff Lite 1.11 Beta Supports Firmware 1.00-13.60**\r\n\r\nA huge thanks to @sleirsgoevy for the help and creating this project, and to @zecoxao, @flatz, @idlesauce, @buzzer-re, @Al-Azif, @drakmor and everyone else who contributed. Your work and support are greatly appreciated!\r\n\r\n🔹 Changelog\r\nAdded 13.xx Support\r\nAdded 1.xx/2.xx Support @drakmor \r\nAdded Fpkg Upto 11.40 @drakmor \r\nPerformance tuning @drakmor\r\nPS4 media app support @drakmor\r\nFixed Fpkg For 11.60 @ArkSama \r\nFixed int3 For 13.xx @idlesauce \r\nAdded Misc Kit Stuff\r\n\r\n** @drakmor put alot of work into fpkg so make sure you thank him.. **\r\n\r\n📂 Original Source:\r\n[github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb](https://github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb)"
     },
     {
       "id": "onionhen-onionhen",
@@ -616,6 +661,21 @@
       "release_notes": "# Prospero Manager v1.2.1\r\n\r\nA polish update on top of v1.2: **logos** for payloads and repositories, a clearer and safer **PKG install**, games recognised by what is inside their folder, and better behaviour when the network changes or goes away.\r\n\r\nSee the full changelog here: [Changelog](https://github.com/notmaj0r/ProsperoMgr/blob/main/CHANGELOG.md)\r\n\r\nIf you encounter any issues, please report them through [GitHub](https://github.com/notmaj0r/ProsperoMgr/issues) or in our [Discord](https://discord.gg/E4g6fEqp46) server!\r\n\r\n---\r\n\r\n## ✨ Highlights\r\n\r\n### 📦 Install PKG, made clearer\r\n- **Choose PKG files…** on the PS5 opens a picker where you tick **several packages at once**, with their sizes and a **Select all** for each folder. Your ticks stay while you move between folders.\r\n- A new **review step**: each game shows its cover, name, title ID, package count and total size. Every package shows its type (**Game**, **Update** or **DLC**) in colour, with version, size and file name, numbered in install order. Warnings sit in their own box (an update no longer warns about a missing base game that is in the same list), and the storage check shows what is free, what is needed and what is left.\r\n- **Base game first, for real:** an update or DLC now waits until its base game has **finished installing** on the console, not just until the console accepted it. If the base game fails, its updates are skipped with a clear reason and the other games carry on.\r\n\r\n### 🖼️ Logos for payloads\r\n- **Payload Repositories**, the **Payloads** page and the **Autoloader** (steps, the list to add from, and the live run timeline) show each project's logo when it has one.\r\n- Logos come from the Payload Manager mirror, or from the repository itself (`sce_sys/icon0.png`, `assets/icon0.png`, `logo.png`...).\r\n- They are **saved on the console**, so they still show **without internet**.\r\n- Payload Manager downloads (including `.bin` files such as **etaHEN**) now show up in the Payloads page, marked **From Payload Manager**, and..."
     },
     {
+      "id": "shadowmountplus-shadowmountplus",
+      "name": "ShadowMountPlus",
+      "filename": "shadowmountplus_1.7beta12.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/shadowmountplus_1.7beta12.elf",
+      "source": "https://github.com/drakmor/ShadowMountPlus/releases",
+      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta12/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta12 by drakmor",
+      "last_update": "2026-11-08",
+      "version": "1.7beta12",
+      "author": "drakmor",
+      "category": "System Utilities",
+      "checksum": "8755172ec9bef1bff5453ea75606e0caf7c41b5963f94f5a1087e7e8c6d9b1bd",
+      "release_notes": "- Introduced configuration format v2, with separate config.ini and profiles.ini, automatic migration, and runtime reloads.\r\n- Improved mount and launch recovery, including safer cleanup of sandbox layers and handling for M.2 storage.\r\n- Made library scans more resilient to inaccessible folders and source changes.\r\n- Improved metadata and filename handling for PS4 trophies, sce_sys files, and dynamic libraries.\r\n- Added browser back navigation, an option to disable startup library notifications, and better support for long image mount paths.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta11...1.7beta12"
+    },
+    {
       "id": "ps5-date-time-sync-ps5-date-time-sync",
       "name": "ps5-date-time-sync",
       "filename": "ps5-date-time-sync_v1.0.0.elf",
@@ -708,17 +768,17 @@
     {
       "id": "shadowmountplus-shadowmountplus-prerelease",
       "name": "ShadowMountPlus [Pre-release]",
-      "filename": "shadowmountplus_1.7beta12 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta12%20%5BPre-release%5D.elf",
+      "filename": "shadowmountplus_1.7beta8 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/shadowmountplus_1.7beta8%20%5BPre-release%5D.elf",
       "source": "https://github.com/drakmor/ShadowMountPlus/releases",
-      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta12/shadowmountplus.elf",
-      "description": "ShadowMountPlus 1.7beta12 [Pre-release] by drakmor",
-      "last_update": "2026-11-08",
-      "version": "1.7beta12",
+      "source_direct": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta8/shadowmountplus.elf",
+      "description": "ShadowMountPlus 1.7beta8 [Pre-release] by drakmor",
+      "last_update": "2026-10-26",
+      "version": "1.7beta8",
       "author": "drakmor",
       "category": "Pre-release",
-      "checksum": "8755172ec9bef1bff5453ea75606e0caf7c41b5963f94f5a1087e7e8c6d9b1bd",
-      "release_notes": "- Introduced configuration format v2, with separate config.ini and profiles.ini, automatic migration, and runtime reloads.\r\n- Improved mount and launch recovery, including safer cleanup of sandbox layers and handling for M.2 storage.\r\n- Made library scans more resilient to inaccessible folders and source changes.\r\n- Improved metadata and filename handling for PS4 trophies, sce_sys files, and dynamic libraries.\r\n- Added browser back navigation, an option to disable startup library notifications, and better support for long image mount paths.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta11...1.7beta12"
+      "checksum": "7163472217a2390f5bcbe3b61a96963976f7b7bd84d960b8d926f35b9cbecf28",
+      "release_notes": "- Redesigned the web interface for TV screens and gamepad navigation.\r\n- Added PKG installation from console/external storage and streaming installation from a PC browser (thanks to https://github.com/itsPLK/ps5-pkg-manager/ for the ideas).\r\n- Added installed patch/DLC information and individual removal.\r\n- Added backport installation, replacement and deletion.\r\n- Added support for param.sfo, eboot2.bin and homebrew IDs beyond FAKE/LAPY.\r\n- Added the ability to install PS4 games from images and folders.\r\n- Enabled LAN access to the API by default.\r\n\r\n**Full Changelog**: https://github.com/drakmor/ShadowMountPlus/compare/1.7beta7...1.7beta8"
     },
     {
       "id": "etahen-etahen-prerelease",
@@ -780,21 +840,6 @@
       "checksum": "bef727f10a276e4797a16875eb31cb48da7e3e5bb06a0c1dcab46963ddc139f1"
     },
     {
-      "id": "kstuff-lite-kstuff-prerelease",
-      "name": "kstuff-lite [Pre-release]",
-      "filename": "kstuff_v1.11 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/kstuff_v1.11%20%5BPre-release%5D.elf",
-      "source": "https://github.com/EchoStretch/kstuff-lite/releases",
-      "source_direct": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.11/kstuff.elf",
-      "description": "Kstuff Lite 1.11 Beta [Pre-release] by EchoStretch",
-      "last_update": "2026-09-20",
-      "version": "v1.11",
-      "author": "EchoStretch",
-      "category": "Pre-release",
-      "checksum": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
-      "release_notes": "**Kstuff Lite 1.11 Beta Supports Firmware 1.00-13.60**\r\n\r\nA huge thanks to @sleirsgoevy for the help and creating this project, and to @zecoxao, @flatz, @idlesauce, @buzzer-re, @Al-Azif, @drakmor and everyone else who contributed. Your work and support are greatly appreciated!\r\n\r\n🔹 Changelog\r\nAdded 13.xx Support\r\nAdded 1.xx/2.xx Support @drakmor \r\nAdded Fpkg Upto 11.40 @drakmor \r\nPerformance tuning @drakmor\r\nPS4 media app support @drakmor\r\nFixed Fpkg For 11.60 @ArkSama \r\nFixed int3 For 13.xx @idlesauce \r\nAdded Misc Kit Stuff\r\n\r\n** @drakmor put alot of work into fpkg so make sure you thank him.. **\r\n\r\n📂 Original Source:\r\n[github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb](https://github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb)"
-    },
-    {
       "id": "onionhen-onionhen-prerelease",
       "name": "onionHEN [Pre-release]",
       "filename": "OnionHEN_nightly [Pre-release].elf",
@@ -808,36 +853,6 @@
       "category": "Pre-release",
       "checksum": "d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e",
       "release_notes": "Automated **Release** build of `main` at [`86c79cf`](https://github.com/aydencharles/onionHEN/commit/86c79cf7c8bfa98045956ec9041eb7e5412e1641), built 2026-11-15 23:22 UTC.\n\nThis is an untested development build. Use the latest stable release unless you want to try new changes early.\n\n- Changes since the previous nightly: [`39683d3...86c79cf`](https://github.com/aydencharles/onionHEN/compare/39683d33b43296df2701cd824204526e3d16e375...86c79cf7c8bfa98045956ec9041eb7e5412e1641)\n- Changes since v0.9.0: [`v0.9.0...86c79cf`](https://github.com/aydencharles/onionHEN/compare/v0.9.0...86c79cf7c8bfa98045956ec9041eb7e5412e1641)\n- `OnionHEN.elf` SHA-256: `db56838865c42e01bae921c197e4753d9388de4ff2930937be5f3666be5be19d`\n"
-    },
-    {
-      "id": "orbit-store-ps5-orbit_store-prerelease",
-      "name": "orbit-store-ps5 [Pre-release]",
-      "filename": "orbit_store_v1.9.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/orbit_store_v1.9.1%20%5BPre-release%5D.elf",
-      "source": "https://github.com/saawant12/orbit-store-ps5/releases",
-      "source_direct": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.9.1/orbit_store.elf",
-      "description": "Orbit Store 1.9.1 (Beta) [Pre-release] by saawant12",
-      "last_update": "2026-11-15",
-      "version": "v1.9.1",
-      "author": "saawant12",
-      "category": "Pre-release",
-      "checksum": "88caf08827cd8141fc18e1d293480633343e0f6f92aa9a43e07de8ee5a497738",
-      "release_notes": "> **🎉 OrbitNet is coming soon: online multiplayer for jailbroken PS5s.** From the developer of Orbit. Follow along at [getorbitnet.com](https://getorbitnet.com).\n\n- **ZSTD comes to Orbit.** Find ZSTD games with the Format filter and see the format in download details, across the PS5 browser and native app's four layouts. Orbit unpacks the outer archive and keeps the ZSTD game assets ready for a compatible loader and runtime.\n- **More download choices.** Orbit now has **2,714 games with 5,679 download options**, plus **631 add-ons with 633 options across 197 base games**.\n\nWe’re also shipping improvements and bug fixes across our apps:\n\n## Orbit Store · Native PS5 app (FFPKG) and browser (ELF)\n\n- **More reliable installation and app updates.** Installation history no longer prevents new installs when it fills up. The native app installer also handles an already-registered Orbit app more reliably.\n\n## Orbit Zero · Mac, Windows and Linux\n\n- **Let your PS5 handle the download.** Set **Settings → Downloads → Download preference** to **Prefer PS5**. With Orbit Zero 1.9.1, Vikingfile and AkiraBox verification opens on your computer. Zero sends the ready link to Orbit on your PS5, which checks it and downloads the game directly. If the link cannot be used there, Zero can download and transfer the files instead.\n- **One app for PS5 and PS4.** Pair either console and keep a separate profile for its connection, games and downloads. Switch between consoles without pairing again, once unfinished console transfers are finished or cancelled.\n\n> **Orbit stays free.** [Orbit Store](https://github.com/saawant12/orbit-store-ps5), [Orbit Zero](https://github.com/saawant12/orbit-store-ps5#orbit-zero-for-mac-windows-and-linux), [Orbit Play](https://github.com/saawant12/orbit-play-ps5) and our upcoming apps are free and will stay free.\n>\n> I’ve been building Orbit in my own time and covering the costs of AI tools, test consoles, hardware and servers. If you’d like to help, you can [support Orbit via crypto](https://g..."
-    },
-    {
-      "id": "ps5-app-dumper-ps5-app-dumper_v2.10-prerelease",
-      "name": "ps5-app-dumper [Pre-release]",
-      "filename": "ps5-app-dumper_v2.10 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5-app-dumper_v2.10%20%5BPre-release%5D.elf",
-      "source": "https://github.com/EchoStretch/ps5-app-dumper/releases",
-      "source_direct": "https://github.com/EchoStretch/ps5-app-dumper/releases/download/v2.10/ps5-app-dumper_v2.10.elf",
-      "description": "PS5 App Dumper 2.00 Beta PS5 App Dumper 2.10 Beta [Pre-release] by EchoStretch",
-      "last_update": "2026-10-03",
-      "version": "v2.10",
-      "author": "EchoStretch",
-      "category": "Pre-release",
-      "checksum": "c850f1df6f2787824d6ddeeed69ce4144e00569b32135973401c2985cfb0345b",
-      "release_notes": "## Highlights\r\n\r\n**DLC**\r\n- Each title shows how many DLC are installed for it, with names and sizes\r\n- Dump DLC on the running game dumps its DLC alone, next to a dump you made before, without copying the game again\r\n- With several DLC you pick which ones; a picked DLC that is there already is replaced\r\n- DLC dumps now carry their metadata (param.json, icon) from the installed package (#29)\r\n- DLC that only unlock content in the game are never mounted by the console and have nothing to dump; the page says so instead of hiding the button\r\n\r\n**Titles and dumps**\r\n- A DUMPED badge on every title that is dumped somewhere, UNFINISHED for one that was cut short\r\n- New dump folders carry the app title: `PPSA01325-app0_ASTRO's_PLAYROOM` (setting `folder_titles`, on by default)\r\n- Rename on the Dumps page switches every dump to names with or without the title\r\n- Tap a dump's path to copy it, and the Dumps list fits a phone\r\n\r\n**Queue**\r\n- Up to 64 titles instead of 16\r\n\r\n**Fixes**\r\n- Titles stuck at 99 %  were held as installing for good and could not be dumped\r\n- The UNFINISHED badge was drawn far too big\r\n\r\n## Notes\r\n- Dumps made with 2.00 or earlier keep their names and are still recognised. Use Rename on the Dumps page if you want the titles on them too.\r\n- A dump ShadowMount runs a game from is not renamed, because the link points at its folder.\r\n\r\n## Thanks\r\nThanks to @MangoScango for #29, which completes the DLC dumps with their metadata.\r\n\r\n## For developers\r\nBuilt on [webhb](https://github.com/slopmaster33/webhb) 0.4.1. If its download does not work, `webhb-0.4.1.tar.gz` is attached; build with `WEBHB_TARBALL=webhb-0.4.1.tar.gz make`."
     },
     {
       "id": "ps5-pkg-manager-pkgmgr_v1.2.1-prerelease",
@@ -915,21 +930,6 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5-y2jb-autoloader-usb-y2jb-installer-prerelease",
-      "name": "ps5-y2jb-autoloader [Pre-release]",
-      "filename": "usb-y2jb-installer_latest [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/usb-y2jb-installer_latest%20%5BPre-release%5D.elf",
-      "source": "https://github.com/h1z1z1h16584/ps5-y2jb-autoloader/releases",
-      "source_direct": "https://github.com/h1z1z1h16584/ps5-y2jb-autoloader/releases/download/latest/usb-y2jb-installer.elf",
-      "description": "v1.0-feda857 [Pre-release] by h1z1z1h16584",
-      "last_update": "2026-11-04",
-      "version": "latest",
-      "author": "h1z1z1h16584",
-      "category": "Pre-release",
-      "checksum": "4fec4fde4cce04732f913123804583b64fe727ea6b877bb1dd992e45fd82829d",
-      "release_notes": "## v1.0-feda857\r\n\r\n\r\n- `download0.dat` — raw UFS2 image (~321 MB). FTP to `/user/download/PPSA0165*/`.\r\n- `download0.dat.zip` — same image, zipped (~1–2 MB). **Extract before use.**\r\n- `y2jb_update.zip` — place on the root of a USB drive to update the autoloader.\r\n- `usb-y2jb-installer.elf` — standalone payload to install `download0.dat` from USB. [Guide](https://github.com/h1z1z1h16584/ps5-y2jb-autoloader#default-recommended-usb-installer-payload)"
-    },
-    {
       "id": "ps5upload-ps5upload-12.4.1-prerelease",
       "name": "ps5upload [Pre-release]",
       "filename": "ps5upload-12.4.1_v12.4.1 [Pre-release].elf",
@@ -973,21 +973,6 @@
       "category": "Pre-release",
       "checksum": "6ba14304946055f556adc1e495ebc3439bab7b9b66376f59b6c2c33618c6ad16",
       "release_notes": "First public beta of Spotless: the native Spotify app on a jailbroken PS5, signed in with your Spotify account, no PSN required.\n\n### What works\n- Sign-in with the on-screen code or Spotify Connect from your phone\n- Home, browsing, songs, videos and the rest of the native app\n- Background playback while gaming\n- Pause, previous and next from the Now Playing card\n- One-time setup that persists across launches and reboots\n- `Spotless-Restore.elf` puts the original app back\n\n### Tested\nFirmware 13.00 with Spotify 01.017.000 (PPSA05688). Other firmware versions are untested; reports welcome. Spotless refuses frontend versions it does not recognise.\n\n### Install\n1. Install Spotify 01.017.000 ([package guide](https://github.com/abhi245y/spotless/blob/main/docs/PACKAGES.md)).\n2. Load `Spotless.elf` with your ELF loader or Payload Manager.\n3. Open Spotify and wait on the login screen for *UI patch installed*.\n4. Close Spotify fully, reopen and sign in.\n\nFull guide: [INSTALL.md](https://github.com/abhi245y/spotless/blob/main/INSTALL.md)\n\n### Known issues\n- **Music > Music sources > Spotify** still shows *Link* and opens Sony's account-linking flow. Spotify itself is signed in and works normally.\n\n### Assets\n- `Spotless.elf`, `Spotless-Restore.elf` and their `.sha256` files\n- `Spotless.meta.json` for loaders that read metadata\n- `merge_pkg.py` and `cleanup_console.py` (optional tools, see the docs)\n- `SHA256SUMS` covering every file\n"
-    },
-    {
-      "id": "wk-autoloader-wk-dual-payload-prerelease",
-      "name": "wk-autoloader [Pre-release]",
-      "filename": "wk-dual-payload_v1.0.4 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/wk-dual-payload_v1.0.4%20%5BPre-release%5D.elf",
-      "source": "https://github.com/X-F1REBALL-X/wk-autoloader/releases",
-      "source_direct": "https://github.com/X-F1REBALL-X/wk-store/releases/download/v1.0.4/wk-dual-payload.elf",
-      "description": "WK Autoloader v1.0.4 (update test) [Pre-release] by X-F1REBALL-X",
-      "last_update": "2026-10-05",
-      "version": "v1.0.4",
-      "author": "X-F1REBALL-X",
-      "category": "Pre-release",
-      "checksum": "b414f1d28c8ea6dfc9869af802863a2054a20486ccf30979bcdbd8af323ef2af",
-      "release_notes": "## WK Autoloader 1.0.4 - update test build\n\nDeveloped by [X-F1REBALL-X](https://github.com/X-F1REBALL-X)\n\n- Same build as 1.0.3, version bumped to 1.0.4 to test the self-update banner\n- Running 1.0.3 on PS5 (`:1022`) should now show the **Update** banner\n- Pages UI moved to 1.0.3 (still one patch behind, so the banner shows there too)\n\nAsset: `wk-dual-payload.elf` (6325504 bytes), sha256 `b414f1d28c8ea6dfc9869af802863a2054a20486ccf30979bcdbd8af323ef2af`\n\n"
     },
     {
       "id": "ytps5-sponsorblock-ytps5-prerelease",
