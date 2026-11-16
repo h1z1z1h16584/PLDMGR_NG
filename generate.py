@@ -21,7 +21,13 @@ ARCHIVED_VERSION = "v99.0"
 ARCHIVED_DATE = "2000-01-01"
 
 VALID_EXTENSIONS = (".elf", ".bin", ".prx", ".lua")
-PRE_RELEASE_KEYWORDS = ("beta", "alpha", "rc", "preview", "test", "fix")
+
+# Match pre-release identifiers only as standalone tokens in tag names
+# (prevents false positives on words like "Latest", "Hotfix", or "Source")
+PRE_RELEASE_PATTERN = re.compile(
+    r"(?:^|[-_.\s])(alpha|beta|rc\d*|pre|preview)(?:[-_.\s]|\d|$)",
+    re.IGNORECASE,
+)
 
 token = os.getenv("GITHUB_TOKEN")
 gh_repository = os.getenv("GITHUB_REPOSITORY", "your-username/your-repo")
@@ -85,12 +91,13 @@ def parse_repo_entry(line: str):
 
 
 def is_release_prerelease(release: dict) -> bool:
-    if release.get("prerelease"):
+    # 1. Trust the explicit API flag from GitHub / Gitea first
+    if release.get("prerelease") is True:
         return True
 
-    tag = release.get("tag_name", "").lower()
-    name = (release.get("name") or "").lower()
-    return any(kw in tag or kw in name for kw in PRE_RELEASE_KEYWORDS)
+    # 2. Fall back to inspecting only the tag_name using strict token boundaries
+    tag = release.get("tag_name", "").strip()
+    return bool(PRE_RELEASE_PATTERN.search(tag))
 
 
 def extract_date(raw_date_str: str) -> str:
@@ -339,7 +346,7 @@ def main():
             release_source_page = f"https://github.com/{owner}/{repo_name}/releases"
 
         for release in releases:
-            is_pre = release.get("prerelease", False)
+            is_pre = is_release_prerelease(release)
             tag_name = release.get("tag_name", "").strip()
             release_title = release.get("name") or tag_name
             raw_date = release.get("published_at") or release.get("created_at") or ""
