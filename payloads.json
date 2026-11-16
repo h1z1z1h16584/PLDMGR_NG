@@ -786,13 +786,13 @@
       "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/OnionHEN_nightly%20%5BPre-release%5D.elf",
       "source": "https://github.com/aydencharles/onionHEN/releases",
       "source_direct": "https://github.com/aydencharles/onionHEN/releases/download/nightly/OnionHEN.elf",
-      "description": "Nightly build (39683d3) [Pre-release] by aydencharles",
+      "description": "Nightly build (86c79cf) [Pre-release] by aydencharles",
       "last_update": "2026-11-12",
       "version": "nightly",
       "author": "aydencharles",
       "category": "Pre-release",
       "checksum": "d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e",
-      "release_notes": "Automated **Release** build of `main` at [`39683d3`](https://github.com/aydencharles/onionHEN/commit/39683d33b43296df2701cd824204526e3d16e375), built 2026-11-12 04:24 UTC.\n\nThis is an untested development build. Use the latest stable release unless you want to try new changes early.\n\n- Changes since v0.9.0: [`v0.9.0...39683d3`](https://github.com/aydencharles/onionHEN/compare/v0.9.0...39683d33b43296df2701cd824204526e3d16e375)\n- `OnionHEN.elf` SHA-256: `d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e`\n"
+      "release_notes": "Automated **Release** build of `main` at [`86c79cf`](https://github.com/aydencharles/onionHEN/commit/86c79cf7c8bfa98045956ec9041eb7e5412e1641), built 2026-11-15 23:22 UTC.\n\nThis is an untested development build. Use the latest stable release unless you want to try new changes early.\n\n- Changes since the previous nightly: [`39683d3...86c79cf`](https://github.com/aydencharles/onionHEN/compare/39683d33b43296df2701cd824204526e3d16e375...86c79cf7c8bfa98045956ec9041eb7e5412e1641)\n- Changes since v0.9.0: [`v0.9.0...86c79cf`](https://github.com/aydencharles/onionHEN/compare/v0.9.0...86c79cf7c8bfa98045956ec9041eb7e5412e1641)\n- `OnionHEN.elf` SHA-256: `db56838865c42e01bae921c197e4753d9388de4ff2930937be5f3666be5be19d`\n"
     },
     {
       "id": "orbit-store-ps5-orbit_store-prerelease",
