@@ -49,8 +49,8 @@ github:strongt1me/ps5-usb-formatierer
 github:disco-trooper/hush
 github:kvaps/ProsperoWeb
 github:MasterShivnath007/ytps5-sponsorblock
-github:
-github:
+github:Gezine/BD-JB5/
+github:h1z1z1h16584/ps5-y2jb-autoloader
 github:
 github:
 github:
