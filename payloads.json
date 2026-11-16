@@ -77,6 +77,21 @@
       "release_notes": "## Changes\n- Add threaded 7z extraction beside existing RAR extraction.\n- Support .7z and multipart .7z.001 archive starts.\n- Add archive_location and archive_password config keys while preserving rar_* aliases.\n- Pass threads= to both UnRAR and 7-Zip extraction paths.\n\n## Verification\n- Built with Docker SDK: docker run --rm -v \"/Users/bizkut/Downloads/PS5/homebrew/unrar-ps5:/work\" -w /work -e PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk ps5-payload-sdk:libcxx make clean all"
     },
     {
+      "id": "bd-jb5-bdj_unpatch_1360",
+      "name": "BD-JB5",
+      "filename": "bdj_unpatch_1360_2.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/bdj_unpatch_1360_2.0.elf",
+      "source": "https://github.com/Gezine/BD-JB5/releases",
+      "source_direct": "https://github.com/Gezine/BD-JB5/releases/download/2.0/bdj_unpatch_1360.elf",
+      "description": "BD-JB5 2.0 by Gezine",
+      "last_update": "2026-08-04",
+      "version": "2.0",
+      "author": "Gezine",
+      "category": "Homebrew",
+      "checksum": "22bae58b6214832c99457d56fc97676ce8eef1d626fbaf50b6a69508e5c1e18e",
+      "release_notes": "\r\nRead README for instruction\r\nhttps://github.com/Gezine/BD-JB5\r\n\r\n"
+    },
+    {
       "id": "hearbridge-ps5-hearbridge-1.4.2",
       "name": "HearBridge-PS5",
       "filename": "HearBridge-1.4.2_v1.4.2.elf",
@@ -898,6 +913,21 @@
       "category": "Pre-release",
       "checksum": "c53f6f661da565b20d404be166de1d0692af749446a4e0b353d82ff006728861",
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
+    },
+    {
+      "id": "ps5-y2jb-autoloader-usb-y2jb-installer-prerelease",
+      "name": "ps5-y2jb-autoloader [Pre-release]",
+      "filename": "usb-y2jb-installer_latest [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/usb-y2jb-installer_latest%20%5BPre-release%5D.elf",
+      "source": "https://github.com/h1z1z1h16584/ps5-y2jb-autoloader/releases",
+      "source_direct": "https://github.com/h1z1z1h16584/ps5-y2jb-autoloader/releases/download/latest/usb-y2jb-installer.elf",
+      "description": "v1.0-feda857 [Pre-release] by h1z1z1h16584",
+      "last_update": "2026-11-04",
+      "version": "latest",
+      "author": "h1z1z1h16584",
+      "category": "Pre-release",
+      "checksum": "4fec4fde4cce04732f913123804583b64fe727ea6b877bb1dd992e45fd82829d",
+      "release_notes": "## v1.0-feda857\r\n\r\n\r\n- `download0.dat` — raw UFS2 image (~321 MB). FTP to `/user/download/PPSA0165*/`.\r\n- `download0.dat.zip` — same image, zipped (~1–2 MB). **Extract before use.**\r\n- `y2jb_update.zip` — place on the root of a USB drive to update the autoloader.\r\n- `usb-y2jb-installer.elf` — standalone payload to install `download0.dat` from USB. [Guide](https://github.com/h1z1z1h16584/ps5-y2jb-autoloader#default-recommended-usb-installer-payload)"
     },
     {
       "id": "ps5upload-ps5upload-12.4.1-prerelease",
