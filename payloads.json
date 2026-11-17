@@ -900,19 +900,19 @@
       "release_notes": "**Change logs:**\r\n- Added a PS5-only fullscreen/restore button beside the exit button. \r\n- Tried to fix the error when moving multiple files at the same time in the same disk partition. (Issue #31)\r\n- Revert 'force install every time when it starts'. Now it would skip install when detected icon and param files like before. (Issue #34, #28)\r\n\r\nFullscreen is **experimental** and currently verified on firmware 4.03, 7.00, 7.61, 10.01, 12.20 and 13.60. It would cause ShellUI crash when restoring as I tested on FW 11.60.\r\nThanks to the community (SHARK, Fubc from Discord, 兵山上的来客 from QQ and the others from GitHub) for testing and feedback for the fixed offsets of those firmware versions. Please report your firmware version and whether fullscreen and restore work correctly in [Issues](https://github.com/owendswang/ps5-web-file-manager/issues). If a diagnostic file is generated, attach `/data/web-browser-fullscreen.ini` to your report.\r\n\r\nNothing changed for `wfm-7zip-helper.elf`.\r\n\r\n\r\nhttps://github.com/user-attachments/assets/6f03a5a7-3544-495e-b0e0-c29a557000bb"
     },
     {
-      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.8.0-pre-627ba8c-prerelease",
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.8.0-pre-0850478-prerelease",
       "name": "ps5-webkit-autoloader [Pre-release]",
-      "filename": "webkit-autoloader-installer_v0.8.0-pre-627ba8c [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/webkit-autoloader-installer_v0.8.0-pre-627ba8c%20%5BPre-release%5D.elf",
+      "filename": "webkit-autoloader-installer_v0.8.0-pre-0850478 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/webkit-autoloader-installer_v0.8.0-pre-0850478%20%5BPre-release%5D.elf",
       "source": "https://github.com/itsPLK/ps5-webkit-autoloader/releases",
-      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-627ba8c/webkit-autoloader-installer_v0.8.0-pre-627ba8c.elf",
-      "description": "v0.8.0-pre-627ba8c (pre-release) [Pre-release] by itsPLK",
-      "last_update": "2026-11-16",
-      "version": "v0.8.0-pre-627ba8c",
+      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-0850478/webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
+      "description": "v0.8.0-pre-0850478 (pre-release 2) [Pre-release] by itsPLK",
+      "last_update": "2026-11-17",
+      "version": "v0.8.0-pre-0850478",
       "author": "itsPLK",
       "category": "Pre-release",
-      "checksum": "e12b69b53e1486412b834ca68f948b78d8182dccefd4e3f2f1db89a2ae666e5c",
-      "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `wobkot`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n### [Discussion thread](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/28)\r\n\r\nNow based on @ufm42's wobkot ([84ac4a7](https://github.com/ufm42/wobkot/tree/84ac4a76021a461270948fba72937767f90ec2f0)).\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.8.0-pre-627ba8c.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-627ba8c/webkit-autoloader-installer_v0.8.0-pre-627ba8c.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.8.0-pre-627ba8c.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-627ba8c/webkit-autoloader-host_v0.8.0-pre-627ba8c.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.8.0-pre-627ba8c.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-627ba8c/webkit-autoloader-host_v0.8.0-pre-627ba8c.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.1](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.1)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.1...v0.8.0-pre-627ba8c\r\n"
+      "checksum": "d5929a1a8aa31ba7c6fd86eb501650b3be11d9f370adaada3d1abd236473356e",
+      "release_notes": "> [!WARNING]\r\n> This is a **pre-release / test build** from branch `wobkot`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\r\n\r\n### [Discussion thread](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/29)\r\n\r\nNow based on @ufm42's wobkot ([2419c5a](https://github.com/ufm42/wobkot/tree/2419c5a8a01b7587cde67e6605cc00843869e99d)).\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.8.0-pre-0850478.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-0850478/webkit-autoloader-installer_v0.8.0-pre-0850478.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.8.0-pre-0850478.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-0850478/webkit-autoloader-host_v0.8.0-pre-0850478.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.8.0-pre-0850478.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-0850478/webkit-autoloader-host_v0.8.0-pre-0850478.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.8.0-pre-627ba8c](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.8.0-pre-627ba8c)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.8.0-pre-627ba8c...v0.8.0-pre-0850478\r\n"
     },
     {
       "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.6.1-kp-fix-prerelease",
