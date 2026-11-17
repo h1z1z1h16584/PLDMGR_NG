@@ -601,19 +601,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.1",
+      "id": "ps5upload-ps5upload-12.6.3",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.1_v12.6.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.1_v12.6.1.elf",
+      "filename": "ps5upload-12.6.3_v12.6.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.3_v12.6.3.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.1/ps5upload-12.6.1.elf",
-      "description": "v12.6.1 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.3/ps5upload-12.6.3.elf",
+      "description": "v12.6.3 by phantomptr",
       "last_update": "2026-11-17",
-      "version": "v12.6.1",
+      "version": "v12.6.3",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "0ad7e0d05985b2f9969bc71117bb4cafd28c4764d7d8ed91e96a140bef17f508",
-      "release_notes": "Every disk in the file browser, a note when Kraken Mount needs an update, and the frame rate on older firmware.\r\n\r\n**Changed**\r\n- **Every disk in the file browser:** when the app browses the computer the engine runs on (the web UI, Docker, or a phone using a PC), it now lists every mounted disk next to the home folder: other internal disks, USB drives and network shares on Linux, the disks in /Volumes on a Mac, and every drive letter on Windows. Before, only the home folder was there.\r\n- **Kraken Mount older than 0.2.1:** the Kraken Mount cards (Install package, and Payloads › On your PS5) now say when it should be updated. Kraken Mount 0.2.1 gives a mounted package the save data image, artwork and trophy files a package keeps only inside it, so saves and trophies work for packages Convert makes.\r\n\r\n**Fixes**\r\n- **Game frame rate on older firmware:** on some consoles (seen on firmware 4.x) the PS5 answers the frame count request but the count never moves, so the frame rate always read 0 and a capture filled up with zeros. It now says the frame rate can't be read on that console's firmware, and keeps no rows of zeros. A game that really stalls after showing frames is still recorded as 0. (#848)\r\n\r\n"
+      "checksum": "9e640b760fe7ae79f2dd7a7dfefda6720bbbf79ac4219a02b6f199df71e74c5d",
+      "release_notes": "A clear way to replace a game that's already on the PS5, and faster checks behind the scenes.\r\n\r\n**Changed**\r\n- **Already on the PS5? Replace it right there.** When an upload finds its game already in that folder on the PS5, the failed row now has **Replace** (it asks first, naming what gets deleted) and **Upload somewhere else**, instead of a message telling you to \"choose Override\" with no button to press. When the whole folder had already arrived, Replace puts it in place without sending it again. Before an upload, the question now reads \"Already on the PS5: … in …\" with **Replace**, **Resume**, **Another folder** and Cancel. The word \"Override\" is gone from the app.\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
