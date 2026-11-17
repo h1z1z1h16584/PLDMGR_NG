@@ -601,19 +601,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.0",
+      "id": "ps5upload-ps5upload-12.6.1",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.0_v12.6.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.0_v12.6.0.elf",
+      "filename": "ps5upload-12.6.1_v12.6.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.1_v12.6.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.0/ps5upload-12.6.0.elf",
-      "description": "v12.6.0 by phantomptr",
-      "last_update": "2026-11-16",
-      "version": "v12.6.0",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.1/ps5upload-12.6.1.elf",
+      "description": "v12.6.1 by phantomptr",
+      "last_update": "2026-11-17",
+      "version": "v12.6.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "a57fe14b5c3ec449208a90b68a798498653fce259a36f691f366376aa2b93df1",
-      "release_notes": "Keep saves in step between two PS5s, copy a `.pkg` instead of installing it, and payloads now come from you: the app no longer downloads them. Checked with the automated tests; not yet tried on a PS5 unless it says so.\r\n\r\n**New**\r\n- **Save sync between two PS5s** (Saves › Save sync): pair a user on one PS5 with a user on the other, press **Check now**, and see for each game whether the saves are in step, newer on one side, or changed on both. **Sync selected** copies the newer save across; the save it replaces is backed up first. When you close a game whose save changed, the app asks whether to send it to the other PS5. Nothing is ever copied without you saying so, a console that is off or resting is never woken, and when both sides changed you choose which one to keep.\r\n- **Copy a `.pkg` as a file:** on the Upload screen each package can be **Installed** (as before) or **Copied as a file** to a folder, for Kraken Mount and anyone who keeps packages on a drive. The choice is remembered. When Kraken Mount runs, the folder it scans is filled in.\r\n- **USB payload stick:** add payload files from this computer, not only ones already in the app.\r\n\r\n**Changed**\r\n- **The app no longer downloads payloads.** Get kstuff, ShadowMount+ and the others from their project pages and send the file. The Catalog is now a guide with each payload's project page and **Send a file…**; the setup wizard asks you to pick your kstuff and ShadowMount+ files. Copies the app already saved keep working. \"X is out\" notices stay and link to the project page.\r\n- **Front light buttons are back** (Hardware). On some consoles the light doesn't change (seen on a PS5 on firmware 13.60), but owners of other consoles told us it works for them. (#840)\r\n- **Payloads › On your PS5:** two kstuff builds the console can't tell apart now show as one \"kstuff-lite\" card that says so; Kraken Mount gets its own card, even when the console lists it as `payload.elf`; and each unnamed `payload.elf` has its own card, so **Stop** ends only that one. (#846)..."
+      "checksum": "0ad7e0d05985b2f9969bc71117bb4cafd28c4764d7d8ed91e96a140bef17f508",
+      "release_notes": "Every disk in the file browser, a note when Kraken Mount needs an update, and the frame rate on older firmware.\r\n\r\n**Changed**\r\n- **Every disk in the file browser:** when the app browses the computer the engine runs on (the web UI, Docker, or a phone using a PC), it now lists every mounted disk next to the home folder: other internal disks, USB drives and network shares on Linux, the disks in /Volumes on a Mac, and every drive letter on Windows. Before, only the home folder was there.\r\n- **Kraken Mount older than 0.2.1:** the Kraken Mount cards (Install package, and Payloads › On your PS5) now say when it should be updated. Kraken Mount 0.2.1 gives a mounted package the save data image, artwork and trophy files a package keeps only inside it, so saves and trophies work for packages Convert makes.\r\n\r\n**Fixes**\r\n- **Game frame rate on older firmware:** on some consoles (seen on firmware 4.x) the PS5 answers the frame count request but the count never moves, so the frame rate always read 0 and a capture filled up with zeros. It now says the frame rate can't be read on that console's firmware, and keeps no rows of zeros. A game that really stalls after showing frames is still recorded as 0. (#848)\r\n\r\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -930,19 +930,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.1-prerelease",
+      "id": "ps5upload-ps5upload-12.4.1-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-12.6.1_v12.6.1 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.6.1_v12.6.1%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-12.4.1_v12.4.1 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.4.1_v12.4.1%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.1/ps5upload-12.6.1.elf",
-      "description": "v12.6.1 [Pre-release] by phantomptr",
-      "last_update": "2026-11-17",
-      "version": "v12.6.1",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.1/ps5upload-12.4.1.elf",
+      "description": "v12.4.1 [Pre-release] by phantomptr",
+      "last_update": "2026-11-09",
+      "version": "v12.4.1",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "0ad7e0d05985b2f9969bc71117bb4cafd28c4764d7d8ed91e96a140bef17f508",
-      "release_notes": "\nEvery disk in the file browser, a note when Kraken Mount needs an update, and the frame rate on older firmware.\n\n**Changed**\n- **Every disk in the file browser:** when the app browses the computer the engine runs on (the web UI, Docker, or a phone using a PC), it now lists every mounted disk next to the home folder: other internal disks, USB drives and network shares on Linux, the disks in /Volumes on a Mac, and every drive letter on Windows. Before, only the home folder was there.\n- **Kraken Mount older than 0.2.1:** the Kraken Mount cards (Install package, and Payloads › On your PS5) now say when it should be updated. Kraken Mount 0.2.1 gives a mounted package the save data image, artwork and trophy files a package keeps only inside it, so saves and trophies work for packages Convert makes.\n\n**Fixes**\n- **Game frame rate on older firmware:** on some consoles (seen on firmware 4.x) the PS5 answers the frame count request but the count never moves, so the frame rate always read 0 and a capture filled up with zeros. It now says the frame rate can't be read on that console's firmware, and keeps no rows of zeros. A game that really stalls after showing frames is still recorded as 0. (#848)\n\n"
+      "checksum": "fd3f6679bba4f3246ef83fa4cc747a614b449ad1b9dcfabb0b0069751a609ed4",
+      "release_notes": "> **Please update to [12.4.2](https://github.com/phantomptr/ps5upload/releases/tag/v12.4.2).** It fixes how the helper handles rest mode and starting at boot, among other things.\n\nRemote Play:\n\n- Play connects again after another device or a controller at the console took the session over, or right after a Stop. Before, PS5Upload could keep failing until the PS5 was restarted while other apps got in. It now asks the PS5 to start the same way other Remote Play apps do.\n\nInstalling:\n\n- Add-ons (DLC) no longer sit at 99%. An add-on is now treated as an add-on even when its package doesn't say so, the check after installing ends within about a minute, and an add-on that leaves no files says to look for it in the game's add-ons on the PS5.\n\nPS5 helper and rest mode:\n\n- While the console goes to rest and for a minute after it wakes, the helper holds its background work (fan, cheats, home-screen tile and icon fixes, its own checks) and pauses Tailscale, then picks up again. Tailscale can no longer get stuck in a busy loop when the network goes away.\n- Each rest and wake is written to a small log on the console (power.log), collected by the Bug Report, so a console that switches off in rest can be traced.\n\nGame frame rate:\n\n- While a capture runs, Stop capture is red with a Recording label beside it.\n\n\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
