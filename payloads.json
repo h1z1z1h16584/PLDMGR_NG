@@ -930,19 +930,19 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.2-prerelease",
+      "id": "ps5upload-ps5upload-12.6.8-prerelease",
       "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-12.6.2_v12.6.2 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.6.2_v12.6.2%20%5BPre-release%5D.elf",
+      "filename": "ps5upload-12.6.8_v12.6.8 [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.6.8_v12.6.8%20%5BPre-release%5D.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.2/ps5upload-12.6.2.elf",
-      "description": "v12.6.2 [Pre-release] by phantomptr",
-      "last_update": "2026-11-17",
-      "version": "v12.6.2",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.8/ps5upload-12.6.8.elf",
+      "description": "v12.6.8 [Pre-release] by phantomptr",
+      "last_update": "2026-11-18",
+      "version": "v12.6.8",
       "author": "phantomptr",
       "category": "Pre-release",
-      "checksum": "85fb68760b16a958ded77becf2cba14581af375f4988594bfddfde5fa1a749ad",
-      "release_notes": "\nClearer Payloads › On your PS5, and what to do with PS5 fake packages on newer firmware.\n\n**Changed**\n- **Payloads › On your PS5 shows each payload once, and says who started it.** A payload saved in your Payload Manager list that is running now shows on its own row (\"● Running · PID\", where it came from, Stop) instead of a second card below. What's left below sits under **Also running**, and every running payload says where it came from: your Payload Manager list, PS5Upload's own helper, the payload loader, or started outside Payload Manager (your jailbreak, an autoloader or a file you sent). The Payload Manager card reads \"4 saved · 2 running\" when closed, and each Payloads tab says what it's for: On your PS5 is your payloads, Running is every process on the PS5. (#846)\n- **PS5 fake packages on firmware above 11.60:** an installed PS5 fake package still doesn't start there, and the app now says what to do instead: mount the package with **Kraken Mount**, and the game plays straight from the `.pkg` with nothing installed. Full support for installed packages on that firmware, through the A53 patches, is coming. The Install, Convert and launch messages, the README and the FAQ all say so.\n\n"
+      "checksum": "782508beeac6219df8a75517f02aa114dcfb3fab8d2efb28149770aaf9d87435",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.8-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.8-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.8-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.8-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.8-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.8-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.8-android.apk` (older 32-bit phones: `PS5Upload-12.6.8-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.8-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.8-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Fixes**\n- **Remote Play on Linux: no more green band under the picture at 1080p.** On some PCs the bottom of the picture came out as a solid green strip covering part of the PS5's menu. The app now checks that each frame came through whole, and if it didn't, it switches to a way of drawing the picture that does. Not yet tried on an affected PC: if you still see the band, please send a bug report from the Bug Report page.\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
