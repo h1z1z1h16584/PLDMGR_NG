@@ -601,19 +601,19 @@
       "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.8",
+      "id": "ps5upload-ps5upload-12.6.11",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.8_v12.6.8.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.8_v12.6.8.elf",
+      "filename": "ps5upload-12.6.11_v12.6.11.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.11_v12.6.11.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.8/ps5upload-12.6.8.elf",
-      "description": "v12.6.8 by phantomptr",
-      "last_update": "2026-11-18",
-      "version": "v12.6.8",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.11/ps5upload-12.6.11.elf",
+      "description": "v12.6.11 by phantomptr",
+      "last_update": "2026-11-19",
+      "version": "v12.6.11",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "782508beeac6219df8a75517f02aa114dcfb3fab8d2efb28149770aaf9d87435",
-      "release_notes": "<!-- downloads -->\r\n### Which file do I download?\r\n\r\n| For | Download |\r\n|---|---|\r\n| Windows | `PS5Upload-12.6.8-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.8-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.8-win-x64.zip`) |\r\n| Mac | `PS5Upload-12.6.8-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.8-mac-x64.dmg` (Intel) |\r\n| Linux | `PS5Upload-12.6.8-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\r\n| Android | `PS5Upload-12.6.8-android.apk` (older 32-bit phones: `PS5Upload-12.6.8-android-armv7.apk`) |\r\n| iPhone | `PS5Upload-12.6.8-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\r\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.8-<system>`: not the app, it has no window |\r\n\r\n<!-- /downloads -->\r\n\r\n\r\n**Fixes**\r\n- **Remote Play on Linux: no more green band under the picture at 1080p.** On some PCs the bottom of the picture came out as a solid green strip covering part of the PS5's menu. The app now checks that each frame came through whole, and if it didn't, it switches to a way of drawing the picture that does. Not yet tried on an affected PC: if you still see the band, please send a bug report from the Bug Report page.\r\n\r\n"
+      "checksum": "c41ae74fb2cab8c6980b428a115b16d40dfbabde4627131b4fd5afea94a0dd3a",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.11-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.11-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.11-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.11-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.11-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.11-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.11-android.apk` (older 32-bit phones: `PS5Upload-12.6.11-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.11-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.11-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Fixes**\n- **Extracting a RAR that doesn't fit is refused at the start, not at 99% (#869).** A 150 GB multi-part RAR extracted for over two hours, then failed because the drive was full. The PS5 now adds up the files in the archive first, which takes a few seconds, and says right away when the drive has too little room. This works for RARs that are not \"solid\" (the usual kind for games); a solid one is still checked file by file as before. Not yet tried on a console.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
