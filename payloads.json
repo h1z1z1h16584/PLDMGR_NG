@@ -107,19 +107,34 @@
       "release_notes": "\r\nRead README for instruction\r\nhttps://github.com/Gezine/BD-JB5\r\n\r\n"
     },
     {
-      "id": "hearbridge-ps5-hearbridge-1.4.2",
+      "id": "hearbridge-ps5-esp32-s3-ps5-audio-sink",
       "name": "HearBridge-PS5",
-      "filename": "HearBridge-1.4.2_v1.4.2.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.4.2_v1.4.2.elf",
+      "filename": "ESP32-S3-PS5-Audio-Sink_v1.4.3.bin",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/ESP32-S3-PS5-Audio-Sink_v1.4.3.bin",
       "source": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases",
-      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.2/HearBridge-1.4.2.elf",
-      "description": "HearBridge 1.4.2 by X-F1REBALL-X",
-      "last_update": "2026-11-15",
-      "version": "v1.4.2",
+      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.3/ESP32-S3-PS5-Audio-Sink.bin",
+      "description": "HearBridge 1.4.3 by X-F1REBALL-X",
+      "last_update": "2026-11-19",
+      "version": "v1.4.3",
       "author": "X-F1REBALL-X",
       "category": "Homebrew",
-      "checksum": "565bb15656efad8d5561c2e397eac89002f12955fb2c6b65dc3475017613e434",
-      "release_notes": "**HearBridge 1.4.2**\n\nnew interface\n- new layout with a menu on the side: home, headsets, sound & games, connection and backup\n- quick settings on home: eq presets, night mode and save for the running game\n- clear screen when no headset is connected, with one tap to connect the last one\n- fits the tv screen with no scrolling at 720p, 1080p and 4k\n- works on phones and small browser windows, with a fixed bottom menu\n- add to home screen on your phone, with the hearbridge icon and full screen"
+      "checksum": "ac9a46603ca93a6227c7f4bc26cc63788a18576f4475f4034b56a5e41f69ec9d",
+      "release_notes": "**HearBridge 1.4.3**\n\n- Headset connect and disconnect auto mode works\n- Interface layout updates for TV use\n- Optional ESP32-S3 board: plugs into the PS5 over USB and shows up as headphones, so Tempest 3D Audio can turn on while HearBridge still sends the sound to your real Bluetooth headset\n\nFlash file for the ESP32-S3: **ESP32-S3-PS5-Audio-Sink.bin** (write at offset 0x0 on the UART port).\nBoard: **ESP32-S3 DevKitC-1** (N16R8 tested)."
+    },
+    {
+      "id": "hearbridge-ps5-hearbridge-1.4.3",
+      "name": "HearBridge-PS5",
+      "filename": "HearBridge-1.4.3_v1.4.3.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/HearBridge-1.4.3_v1.4.3.elf",
+      "source": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases",
+      "source_direct": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.3/HearBridge-1.4.3.elf",
+      "description": "HearBridge 1.4.3 by X-F1REBALL-X",
+      "last_update": "2026-11-19",
+      "version": "v1.4.3",
+      "author": "X-F1REBALL-X",
+      "category": "Homebrew",
+      "checksum": "cc3ed39ee208ab76d0da2b3e99596a7037474f6d7238f98452c23130bdc7f379",
+      "release_notes": "**HearBridge 1.4.3**\n\n- Headset connect and disconnect auto mode works\n- Interface layout updates for TV use\n- Optional ESP32-S3 board: plugs into the PS5 over USB and shows up as headphones, so Tempest 3D Audio can turn on while HearBridge still sends the sound to your real Bluetooth headset\n\nFlash file for the ESP32-S3: **ESP32-S3-PS5-Audio-Sink.bin** (write at offset 0x0 on the UART port).\nBoard: **ESP32-S3 DevKitC-1** (N16R8 tested)."
     },
     {
       "id": "liveshell-liveshell-fast",
