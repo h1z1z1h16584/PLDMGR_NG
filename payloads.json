@@ -974,6 +974,21 @@
       "release_notes": "> [!WARNING]\n> This is a **pre-release / test build** from branch `main`. It is intended for early testing and may contain bugs, experimental features, or unfinished changes.\n\n## Downloads\n\n| Platform | File |\n|---|---|\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.6.1-kp-fix.elf](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-installer_v0.6.1-kp-fix.elf) |\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.py](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.py) |\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.6.1-kp-fix.exe](https://github.com/srbraboo/ps5-webkit-autoloader/releases/download/v0.6.1-kp-fix/webkit-autoloader-host_v0.6.1-kp-fix.exe) |\n\n---\n\n**Full Changelog** (since [v0.5.2-kp-fix](https://github.com/srbraboo/ps5-webkit-autoloader/releases/tag/v0.5.2-kp-fix)): https://github.com/srbraboo/ps5-webkit-autoloader/compare/v0.5.2-kp-fix...v0.6.1-kp-fix\n"
     },
     {
+      "id": "ps5-wh-widgets-wh_bridge-prerelease",
+      "name": "ps5-wh-widgets [Pre-release]",
+      "filename": "wh_bridge_26.11.20beta [Pre-release].elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/wh_bridge_26.11.20beta%20%5BPre-release%5D.elf",
+      "source": "https://github.com/geodox/ps5-wh-widgets/releases",
+      "source_direct": "https://github.com/geodox/ps5-wh-widgets/releases/download/26.11.20beta/wh_bridge.elf",
+      "description": "26.11.20 beta [Pre-release] by geodox",
+      "last_update": "2026-11-20",
+      "version": "26.11.20beta",
+      "author": "geodox",
+      "category": "Pre-release",
+      "checksum": "79880bc9f8e28273e7168e0f44db4055fd8982457f72c26fc1a2c58905b4dc6a",
+      "release_notes": "## 26.11.20 beta\r\n\r\n### New in Welcome Hub Settings\r\n- **Telemetry:** choose **Hide custom widgets** (the default) or **Off**.\r\n  - Hide custom widgets: the Welcome Hub reports as usual, without your custom widgets.\r\n  - Off: no telemetry is sent from the console's interface code.\r\n  - The setting covers the whole console and takes effect immediately in the Welcome Hub. Sign out and back in to apply it everywhere.\r\n- **Widget Data:** shows what each widget has saved for you, with its size and whether the widget is still installed. You can delete one widget's data, or the data of every widget you've removed.\r\n\r\n### Widgets\r\n- **Home Assistant:**\r\n  - Your entities are now cards showing an icon, the state and the name.\r\n  - Cards of entities that are on, open, unlocked, playing or heating are brighter.\r\n  - **Cards per row** in Options: 1, 2 or 3. An XL tile shows twice as many.\r\n  - When there are more cards than fit, the title shows the range, such as `1-9 of 18`. Inside the tile, Down on the last row and Up on the first scroll to the rest.\r\n- **Payload Launcher:** payload pages are now cards, with **Cards per row** set to 1 or 2. It scrolls the same way as Home Assistant.\r\n- **Payload Monitor:** a long list turns pages by itself every few seconds. L1 / R1 page it while the tile is focused.\r\n\r\n### Fixes and polish\r\n- Moving inside a widget no longer plays the \"can't move\" sound on every press. You hear the move sound, and the \"can't move\" sound only at an edge.\r\n- Closing a widget's page returns focus to that widget, on the same item if you opened it from inside.\r\n- The key guide bar drawn inside a focused tile is gone by default. The hub's own Options hint below the tile stays.\r\n\r\n### For widget makers\r\n- `wh.usePages(total, perPage, {interval, pause})` pages a long list on a tile you can't enter, with automatic turning plus L1 / R1.\r\n- `wh.Focusable` has a new `autoSelect` prop for scrolling a window of items. See *Input and focus*.\r\n- `wh.register(Component, {keyGuide})`: the key guide bar inside the tile..."
+    },
+    {
       "id": "ps5upload-ps5upload-12.6.17-prerelease",
       "name": "ps5upload [Pre-release]",
       "filename": "ps5upload-12.6.17_v12.6.17 [Pre-release].elf",
