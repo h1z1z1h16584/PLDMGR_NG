@@ -52,8 +52,8 @@ github:MasterShivnath007/ytps5-sponsorblock
 github:Gezine/BD-JB5/
 github:h1z1z1h16584/ps5-y2jb-autoloader
 github:h1z1z1h16584/ps5-webkit-autoloader
-github:
-github:
+github:geodox/ps5-wh-widgets
+github:ghost1372/WelcomeHubActivator
 github:
 github:
 github:
