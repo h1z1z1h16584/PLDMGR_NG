@@ -388,7 +388,7 @@
       "author": "h1z1z1h16584",
       "category": "Homebrew",
       "checksum": "4fec4fde4cce04732f913123804583b64fe727ea6b877bb1dd992e45fd82829d",
-      "release_notes": "## v1.0-feda857\r\n\r\n\r\n- `download0.dat` — raw UFS2 image (~321 MB). FTP to `/user/download/PPSA0165*/`.\r\n- `download0.dat.zip` — same image, zipped (~1–2 MB). **Extract before use.**\r\n- `y2jb_update.zip` — place on the root of a USB drive to update the autoloader.\r\n- `usb-y2jb-installer.elf` — standalone payload to install `download0.dat` from USB. [Guide](https://github.com/h1z1z1h16584/ps5-y2jb-autoloader#default-recommended-usb-installer-payload)"
+      "release_notes": "## v1.0-feda857\r\nThis version run under 4 seconds.\r\n\r\n- `download0.dat` — raw UFS2 image (~321 MB). FTP to `/user/download/PPSA0165*/`.\r\n- `download0.dat.zip` — same image, zipped (~1–2 MB). **Extract before use.**\r\n- `y2jb_update.zip` — place on the root of a USB drive to update the autoloader.\r\n- `usb-y2jb-installer.elf` — standalone payload to install `download0.dat` from USB. [Guide](https://github.com/h1z1z1h16584/ps5-y2jb-autoloader#default-recommended-usb-installer-payload)"
     },
     {
       "id": "ps5shopappkg-dpiv2",
@@ -642,22 +642,22 @@
       "author": "h1z1z1h16584",
       "category": "Networking & Servers",
       "checksum": "60d1eef3845b9e346b0624ea944121023f5153b6ef0e78da4ff93128c64aea10",
-      "release_notes": "This is an automated build containing only the installer ELF payload. The unified-autoloader submodule is pinned to v0.1.5-915a65e."
+      "release_notes": "This is an automated build containing only the installer ELF payload. This version run under 4 seconds (wobkot)."
     },
     {
-      "id": "ps5upload-ps5upload-12.6.15",
+      "id": "ps5upload-ps5upload-12.6.16",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.15_v12.6.15.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.15_v12.6.15.elf",
+      "filename": "ps5upload-12.6.16_v12.6.16.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.16_v12.6.16.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.15/ps5upload-12.6.15.elf",
-      "description": "v12.6.15 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.16/ps5upload-12.6.16.elf",
+      "description": "v12.6.16 by phantomptr",
       "last_update": "2026-11-20",
-      "version": "v12.6.15",
+      "version": "v12.6.16",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "593eda1e48d31a5b754da3ccbec046ce6c8e70048aead762fc8f631543a6acd2",
-      "release_notes": "<!-- downloads -->\r\n### Which file do I download?\r\n\r\n| For | Download |\r\n|---|---|\r\n| Windows | `PS5Upload-12.6.15-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.15-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.15-win-x64.zip`) |\r\n| Mac | `PS5Upload-12.6.15-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.15-mac-x64.dmg` (Intel) |\r\n| Linux | `PS5Upload-12.6.15-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\r\n| Android | `PS5Upload-12.6.15-android.apk` (older 32-bit phones: `PS5Upload-12.6.15-android-armv7.apk`) |\r\n| iPhone | `PS5Upload-12.6.15-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\r\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.15-<system>`: not the app, it has no window |\r\n\r\n<!-- /downloads -->\r\n\r\n\r\n**New**\r\n- **Run Play Together on your own server (#881).** If you host the engine yourself (for example in Docker behind a reverse proxy with HTTPS), it can now run its own Play Together hub and serve the friends' pages itself. It is off unless you turn it on, it listens on its own port, and that port serves only the hub and the friends' pages, never the engine's controls. See SELF_HOSTING.md. Nothing changes for anyone who doesn't turn it on.\r\n- **Your own hub and friends' page address are kept (#881).** A custom hub address, STUN servers and a new \"Guest page address\" setting now survive an engine restart, and can be set once for a Docker container with environment variables. Settings shows whether each one is the default, your setting, or set on the server, and warns when your own pages are paired with the official hub, which only accepts its own pages.\r\n\r\n- **Updates are quieter.** A new version shows as a small dot on Settings (the More tab on phones) and a row at the top of Settings, instead of a banner across the screen. It still downloads by itself and installs when you quit. A banner, one line only, is left for the two cases that need you: the PS5 runs a newer helper than..."
+      "checksum": "e02f0251c60e3de979e99b37b2f5276f7887a535223f78f35daf73735cea6576",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.16-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.16-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.16-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.16-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.16-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.16-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.16-android.apk` (older 32-bit phones: `PS5Upload-12.6.16-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.16-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.16-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**New**\n- **The window opens where you left it.** The desktop app now remembers the main window's size, position and whether it was maximized. If that screen is no longer connected, or the window would not fit, it opens centred on your main screen at a size that fits.\n- **Network share backups can also keep a copy on a PS5 drive (#885).** \"Backups to a network share\" now has its own \"Also keep a copy on a PS5 drive\" option with a drive picker, and its own \"Versions to keep on the PS5 drive\" (for example 1 on the M.2). Each run updates both the share and the drive, from the engine, with no computer folder and no app open. If the share can't be reached, the drive still gets its copy and the share is tried again next time.\n- **Save backups can be organised by user (#886).** A new \"Folder layout\" option for automatic and network share backups: \"By user\" keeps each person's backups in a folder with their name and account ID, split into Encrypted (backups that restore on this PS5) and Decrypted (files for a friend or another PS5), and into PS4 and PS5, optionally with the game's name on each game folder. \"Save as a file for a friend or another PS5\" then offers that user's Decrypted folder first, and you..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
