@@ -62,6 +62,20 @@
       "release_notes": "# LZ4 Compression 1.5.0\n\n- The app updates itself now. When a new version is out you get a popup when\n  you open the app: press Update and it downloads, installs and reopens on its\n  own (engine included). No more FTP for updates after this one.\n- Game reports: every packed game shows how it runs for other people, and\n  `Report how it runs` lets you add yours. Pick an answer, scan the QR code\n  with your phone and send the prefilled report. The more people report, the\n  easier it is to know which games pack fine before you start.\n- The packer and the app are open source under GPL-3.0 now.\n\nEverything from 1.4.3 is included (Ghost of Yotei fix, permission fix,\n`Verify LZ4 Packs` repairs).\n\n## Install\n\nThis is the last manual update:\n\n1. Add `lz4-compression.elf` to Payload Manager, so it sits at\n   `/data/pldmgr/payloads/lz4-compression/lz4-compression.elf`.\n2. Unzip `LZ4-Compression-PPSA99420.zip` and copy the `PPSA99420` folder to\n   `/data/homebrew/PPSA99420` over FTP (replace the old one). ShadowMount+\n   adds the `LZ4 Compression` tile (close any running game if it doesn't show\n   up).\n3. Open the tile.\n\nUnofficial, and not affiliated with the projects it builds on. If it saved you\nspace, you can support the cost of building it:\n[Buy Me a Coffee](https://buymeacoffee.com/theghostonline)\n"
     },
     {
+      "id": "garlic-savemgr-garlic-savemgr",
+      "name": "garlic-savemgr",
+      "filename": "garlic-savemgr_v2.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Dumping%20%26%20Backups/garlic-savemgr_v2.0.elf",
+      "source": "https://git.etawen.dev/earthonion/garlic-savemgr/releases",
+      "source_direct": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v2.0/garlic-savemgr.elf",
+      "description": "v2.0 by earthonion",
+      "last_update": "2026-11-20",
+      "version": "v2.0",
+      "author": "earthonion",
+      "category": "Dumping & Backups",
+      "checksum": "805902a1ef3d54854850518b11602e0ab973192e0338fc30b28a3a9e4aae5be6"
+    },
+    {
       "id": "ps5-app-dumper-ps5-app-dumper_v2.10",
       "name": "ps5-app-dumper",
       "filename": "ps5-app-dumper_v2.10.elf",
