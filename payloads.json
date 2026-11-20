@@ -601,19 +601,19 @@
       "release_notes": "**Change logs:**\r\n- Added FTP and WebDAV support through 'Manage Paths'. (the payload file size becomes bigger because of this new feature, it doesn't support TLS to reduce the payload file size.)\r\n- Added a star button to folder hover actions for quickly saving shortcuts to 'Manage Paths'. (Issue #39)\r\n- Updated browser fullscreen/restore integration to upstream [v0.1](https://github.com/owendswang/ps5-web-browser-fullscreen/releases/tag/v0.1) using its release configuration. (It still got ShellUI crash on FW 11.60 as I tested.)\r\n- Avoided unnecessary rename calls when moving files across storage devices. (Issue #10)\r\n\r\nNothing changed for `wfm-7zip-helper.elf`."
     },
     {
-      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.7.1",
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.8.0",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.7.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.7.1.elf",
+      "filename": "webkit-autoloader-installer_v0.8.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.8.0.elf",
       "source": "https://github.com/itsPLK/ps5-webkit-autoloader/releases",
-      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf",
-      "description": "v0.7.1 by itsPLK",
-      "last_update": "2026-11-08",
-      "version": "v0.7.1",
+      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0/webkit-autoloader-installer_v0.8.0.elf",
+      "description": "v0.8.0 by itsPLK",
+      "last_update": "2026-11-20",
+      "version": "v0.8.0",
       "author": "itsPLK",
       "category": "Networking & Servers",
-      "checksum": "df60538570e9811bb0b4652a3fdb3e1a35ec3455b3ca7c80edc4140c5bb47ce2",
-      "release_notes": "## Changelog\r\n\r\n* **Fixed Poops stability**: A stability fix for Relapse in v0.7.0 was unintentionally affecting Poops, causing slower runs and more kernel panics.\r\n* **Cleaned up Poops logging**: Poops now shows cleaner, less noisy output.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/27)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.7.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.7.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.7.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-host_v0.7.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.7.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.7.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.7.0...v0.7.1\r\n"
+      "checksum": "015959f76c48e45df2b331ee2a6b52096afa3c2f9f1cbf9a29e67be699a6455b",
+      "release_notes": "## Changelog\r\n\r\n* **Migrated to Wobkot**: Now uses @ufm42's [Wobkot](https://github.com/ufm42/wobkot)\r\n  base and Relapse implementation as the preferred exploit,\r\n  with Poops used automatically as the fallback where appropriate.\r\n  This expands supported firmware to **6.00–13.60**.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/30)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.8.0.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0/webkit-autoloader-installer_v0.8.0.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.8.0.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0/webkit-autoloader-host_v0.8.0.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.8.0.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0/webkit-autoloader-host_v0.8.0.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.8.0-pre-0850478](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.8.0-pre-0850478)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.8.0-pre-0850478...v0.8.0\r\n"
     },
     {
       "id": "ps5upload-ps5upload-12.6.13",
