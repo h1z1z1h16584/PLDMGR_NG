@@ -616,6 +616,21 @@
       "release_notes": "## Changelog\r\n\r\n### Dependencies\r\n* Updated Wobkot to [`38ad28e`](https://github.com/ufm42/wobkot/tree/38ad28e)\r\n  - Added Relapse support for FW 5.00, 5.02, 5.10, and 5.50.\r\n  - Updated offsets for FW 6.00, 6.02, 13.40, and 13.60.\r\n\r\nThis expands supported firmware to **5.00–13.60**.\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/30)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.8.1.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.1/webkit-autoloader-installer_v0.8.1.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.8.1.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.1/webkit-autoloader-host_v0.8.1.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.8.1.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.1/webkit-autoloader-host_v0.8.1.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.8.0](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.8.0)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.8.0...v0.8.1\r\n"
     },
     {
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.8",
+      "name": "ps5-webkit-autoloader",
+      "filename": "webkit-autoloader-installer_v0.8.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.8.elf",
+      "source": "https://github.com/h1z1z1h16584/ps5-webkit-autoloader/releases",
+      "source_direct": "https://github.com/h1z1z1h16584/ps5-webkit-autoloader/releases/download/0.8/webkit-autoloader-installer_v0.8.elf",
+      "description": "v0.8 (ELF Only Build) by h1z1z1h16584",
+      "last_update": "2026-11-20",
+      "version": "0.8",
+      "author": "h1z1z1h16584",
+      "category": "Networking & Servers",
+      "checksum": "1faf4c4352650d19602b213752c8dd8ee4ab7eb68ed15e30db392fb84d1d9de8",
+      "release_notes": "This is an automated build containing only the installer ELF payload. The unified-autoloader submodule is pinned to v0.1.5-915a65e.\r\n\r\n"
+    },
+    {
       "id": "ps5upload-ps5upload-12.6.13",
       "name": "ps5upload",
       "filename": "ps5upload-12.6.13_v12.6.13.elf",
