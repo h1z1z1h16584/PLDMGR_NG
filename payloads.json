@@ -645,19 +645,19 @@
       "release_notes": "Added support for older firmwares. Now supports 5.XX to 13.XX using wobkot. Runs under 4 seconds."
     },
     {
-      "id": "ps5upload-ps5upload-12.6.21",
+      "id": "ps5upload-ps5upload-12.6.22",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.21_v12.6.21.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.21_v12.6.21.elf",
+      "filename": "ps5upload-12.6.22_v12.6.22.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.22_v12.6.22.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.21/ps5upload-12.6.21.elf",
-      "description": "v12.6.21 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.22/ps5upload-12.6.22.elf",
+      "description": "v12.6.22 by phantomptr",
       "last_update": "2026-11-22",
-      "version": "v12.6.21",
+      "version": "v12.6.22",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "a6766a847adcf9b60011b95fa775ec35b58fd32a2fa5c0259019074366de1aae",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.21-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.21-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.21-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.21-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.21-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.21-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.21-android.apk` (older 32-bit phones: `PS5Upload-12.6.21-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.21-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.21-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Workshop**\n- **Clearer AMPR choices in Convert (#828).** The asset pack choice and the emulator now sit together under Asset packs, and only combinations that start are offered. A game that doesn't use AMPR shows no emulator options. zstd packs always get the emulator that reads zstd, and LZ4 packs always get ampr_emu 0.4.2.1, so a game can no longer end up with an emulator that can't read its packs (which made some converted games close at start). The engine corrects that mix too, including for \"Add the AMPR emulator\" on a game already in packs. \"Rebuild AMPR index\" is hidden for games in LZ4 packs, where it doesn't apply.\n\n"
+      "checksum": "166e103c26c094122395f696604f27139aeed2a00c2056c964471344ab76fdab",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.22-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.22-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.22-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.22-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.22-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.22-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.22-android.apk` (older 32-bit phones: `PS5Upload-12.6.22-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.22-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.22-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Uploads**\n- **The check on the PS5 after an upload shows its progress (#873).** Before a big file counts as done, the PS5 reads it back from its drive to check it. When the drive can't keep up while the file is still arriving, part of that check is left for after the last byte, which on a 70–160 GB game can take several minutes, and the row said the PS5 had reported no progress. It now shows \"Checking on the PS5: X of Y\" with the time left, and the no-progress warning stays off while the check moves.\n- **A stopped upload that you resume isn't checked twice (#873).** The part the PS5 had already checked before the Stop isn't read again, as long as the helper wasn't restarted in between and the file hasn't changed since. Tried on a PS5: a 20 GB upload stopped at 10 GB and resumed checked only the new 10 GB.\n\n**Other**\n- **Clear all in the notification bell (#911).** Thanks @Dang3rZone.\n- **Security:** updated the `url` library for a newly published advisory (RUSTSEC-2026-0592).\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
