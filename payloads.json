@@ -645,19 +645,19 @@
       "release_notes": "Added support for older firmwares. Now supports 5.XX to 13.XX using wobkot. Runs under 4 seconds."
     },
     {
-      "id": "ps5upload-ps5upload-12.6.16",
+      "id": "ps5upload-ps5upload-12.6.18",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.16_v12.6.16.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.16_v12.6.16.elf",
+      "filename": "ps5upload-12.6.18_v12.6.18.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.18_v12.6.18.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.16/ps5upload-12.6.16.elf",
-      "description": "v12.6.16 by phantomptr",
-      "last_update": "2026-11-20",
-      "version": "v12.6.16",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.18/ps5upload-12.6.18.elf",
+      "description": "v12.6.18 by phantomptr",
+      "last_update": "2026-11-22",
+      "version": "v12.6.18",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "e02f0251c60e3de979e99b37b2f5276f7887a535223f78f35daf73735cea6576",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.16-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.16-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.16-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.16-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.16-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.16-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.16-android.apk` (older 32-bit phones: `PS5Upload-12.6.16-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.16-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.16-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**New**\n- **The window opens where you left it.** The desktop app now remembers the main window's size, position and whether it was maximized. If that screen is no longer connected, or the window would not fit, it opens centred on your main screen at a size that fits.\n- **Network share backups can also keep a copy on a PS5 drive (#885).** \"Backups to a network share\" now has its own \"Also keep a copy on a PS5 drive\" option with a drive picker, and its own \"Versions to keep on the PS5 drive\" (for example 1 on the M.2). Each run updates both the share and the drive, from the engine, with no computer folder and no app open. If the share can't be reached, the drive still gets its copy and the share is tried again next time.\n- **Save backups can be organised by user (#886).** A new \"Folder layout\" option for automatic and network share backups: \"By user\" keeps each person's backups in a folder with their name and account ID, split into Encrypted (backups that restore on this PS5) and Decrypted (files for a friend or another PS5), and into PS4 and PS5, optionally with the game's name on each game folder. \"Save as a file for a friend or another PS5\" then offers that user's Decrypted folder first, and you..."
+      "checksum": "6a1264fc02d39617c19b8cbe1afa381d6cb002c235e45cceebb310ba512aa4c1",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.18-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.18-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.18-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.18-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.18-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.18-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.18-android.apk` (older 32-bit phones: `PS5Upload-12.6.18-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.18-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.18-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Fixes**\n- **The PS5 helper is no longer replaced by itself (#903).** Two consoles crashed when the app sent a new helper over a running one by itself, and the cause isn't known yet. Automatic helper updates are switched off until it is. Sending the helper yourself works as before: press Send helper when the app says a newer one is available.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
