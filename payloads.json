@@ -645,19 +645,19 @@
       "release_notes": "Added support for older firmwares. Now supports 5.XX to 13.XX using wobkot. Runs under 4 seconds."
     },
     {
-      "id": "ps5upload-ps5upload-12.6.19",
+      "id": "ps5upload-ps5upload-12.6.20",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.19_v12.6.19.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.19_v12.6.19.elf",
+      "filename": "ps5upload-12.6.20_v12.6.20.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.20_v12.6.20.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.19/ps5upload-12.6.19.elf",
-      "description": "v12.6.19 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.20/ps5upload-12.6.20.elf",
+      "description": "v12.6.20 by phantomptr",
       "last_update": "2026-11-22",
-      "version": "v12.6.19",
+      "version": "v12.6.20",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "66f7b2d34031c9851e1bc2d2bc55a0edef96d5a046fa9c52d3fde206e235671f",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.19-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.19-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.19-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.19-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.19-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.19-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.19-android.apk` (older 32-bit phones: `PS5Upload-12.6.19-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.19-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.19-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**New**\n- **Backup progress, and continue after an interruption (#895).** Both backup cards have a Backup progress button: saves and size done, speed, time left, and each game and user's state on the network share, the PS5 drive and this computer, with Retry for failed ones and Cancel. The backup's state is kept by the app's engine, so after a crash, a disconnect or a closed app the card says where it stopped, with Continue backup to do only what is left. Earlier runs are listed too.\n- **Back up folders on the PS5 too (#899).** \"Also back up these folders on the PS5\" on both backup cards: pick a folder where an app keeps its saves (a port or an emulator, for example under /data), and it's zipped with every backup, with the same number of versions, kept per PS5, and can be restored to the same place (what is there is kept first). Trophies and play time are not included: they belong to your account and the console's database, and restoring them can break them.\n- **Extract here (#891).** The Extract dialog can unpack straight into the current folder. If something with the same name is already there, it asks once: Keep both, Skip existing or Replace.\n- **Playlist steps from the PS5 or a network share..."
+      "checksum": "5572fb617974ff87dec40e6a2034e35eac41c94e35f191a079cf79b7162194eb",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.20-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.20-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.20-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.20-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.20-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.20-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.20-android.apk` (older 32-bit phones: `PS5Upload-12.6.20-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.20-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.20-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Fixes**\n- **With the app using an engine on another computer, a PS5 added by its Tailscale address shows up (#907).** It was saved on the engine but never reached the app's list, so its card never appeared. The app now adds it straight away. The same goes for Add in Settings › Tailscale and in \"Found on your Tailscale network\". With a remote engine, the home network scan in Add a PS5 also runs on the engine's computer, so it no longer lists a PS5 as answering that the engine can't reach. Thanks to the reporter for the diagnosis.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
