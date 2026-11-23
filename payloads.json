@@ -630,19 +630,19 @@
       "release_notes": "## Changelog\r\n\r\n### Dependencies\r\n* Updated Wobkot to [`452046e`](https://github.com/ufm42/wobkot/tree/452046e)\r\n  - Added Relapse support for FW 3.00, 3.10, 3.20, 4.00, 4.02, 4.03, 4.50, and 4.51.\r\n\r\nThis expands supported firmware to **3.00–13.60**.\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.8.4.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.4/webkit-autoloader-installer_v0.8.4.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.8.4.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.4/webkit-autoloader-host_v0.8.4.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.8.4.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.4/webkit-autoloader-host_v0.8.4.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.8.3](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.8.3)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.8.3...v0.8.4\r\n"
     },
     {
-      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.9.1",
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.9.2",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.9.1.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.9.1.elf",
+      "filename": "webkit-autoloader-installer_v0.9.2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.9.2.elf",
       "source": "https://github.com/h1z1z1h16584/ps5-webkit-autoloader/releases",
-      "source_direct": "https://github.com/h1z1z1h16584/ps5-webkit-autoloader/releases/download/0.9.1/webkit-autoloader-installer_v0.9.1.elf",
-      "description": "v0.9.1 (ELF Only Build) by h1z1z1h16584",
-      "last_update": "2026-11-21",
-      "version": "0.9.1",
+      "source_direct": "https://github.com/h1z1z1h16584/ps5-webkit-autoloader/releases/download/0.9.2/webkit-autoloader-installer_v0.9.2.elf",
+      "description": "v0.9.2 (ELF Only Build) by h1z1z1h16584",
+      "last_update": "2026-11-23",
+      "version": "0.9.2",
       "author": "h1z1z1h16584",
       "category": "Networking & Servers",
-      "checksum": "f16e92ae821b9341d4b1fb905e104ca7d1566ea1833bd3d09b25a406b7f22829",
-      "release_notes": "Added support for older firmwares. Now supports 5.XX to 13.XX using wobkot. Runs under 4 seconds."
+      "checksum": "d7887a5f87f02f8f1410aeb61c26d4beadb37f4a76ab63237db4b4e338c9d770",
+      "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
       "id": "ps5upload-ps5upload-12.6.23",
