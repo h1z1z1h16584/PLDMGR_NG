@@ -645,19 +645,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.23",
+      "id": "ps5upload-ps5upload-12.6.24",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.23_v12.6.23.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.23_v12.6.23.elf",
+      "filename": "ps5upload-12.6.24_v12.6.24.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.24_v12.6.24.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.23/ps5upload-12.6.23.elf",
-      "description": "v12.6.23 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.24/ps5upload-12.6.24.elf",
+      "description": "v12.6.24 by phantomptr",
       "last_update": "2026-11-23",
-      "version": "v12.6.23",
+      "version": "v12.6.24",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "68a4c2135477aa0d2a9f396565c50cac7d672bbc0f158e718986616a14c6b71b",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.23-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.23-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.23-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.23-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.23-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.23-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.23-android.apk` (older 32-bit phones: `PS5Upload-12.6.23-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.23-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.23-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Uploads**\n- **Add to queue streams packages too.** On Upload & Install, Add to queue used to copy a .pkg or .fpkg to the PS5 before installing it. It now adds it as a Stream & install, the same as the main button, but waits for Start queue. To copy a package first, use Upload & install.\n\n**Windows**\n- **A clear message when Windows blocks the engine (#914).** Smart App Control and app-control policies only run code-signed programs, and PS5Upload's Windows builds aren't signed yet, so the engine couldn't start and the app showed a generic hint. It now says Windows blocked it and what you can do: ask your administrator to allow the PS5Upload folder, turn Smart App Control off, or use the Docker version from a browser. RAR extraction blocked the same way says so too.\n\n**Docker**\n- **Folders the container can't use are named at startup.** If the data folder, the staging folder or a browse folder isn't writable (or readable) by the container's user, the log says which folder, that the container runs as user 65532, and the `chown` command that fixes it. The health check's data folder line gives the same fix.\n\n**Payloads**\n- **On your PS5 lists your payloads first.** The payloads saved in Payload Manag..."
+      "checksum": "d39590efb253c80d8121c4e6c28db794c582d144d8b81a434e404a51c724f026",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.24-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.24-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.24-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.24-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.24-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.24-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.24-android.apk` (older 32-bit phones: `PS5Upload-12.6.24-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.24-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.24-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Play Together**\n- **\"Press PS, then pick Quick Play on the TV\" no longer stays over a friend's game (#916).** The app only learns that a friend picked a user when it sees PS and then ✕, so a pick made any other way left that hint, and the buttons with it, on top of the picture in full screen for the whole session. It now holds the screen for 30 seconds at most, then hides like the other buttons.\n\n**Uploads**\n- **Stream & install on a package already waiting in the queue starts it.** A package added with Add to queue and then sent with Stream & install joined the waiting row but didn't start it.\n\n**Other**\n- **Thank you** to Sponge Bob, Kornakkel and two anonymous supporters, now on the Thanks & Support page.\n- Two Remote Play messages no longer name another app.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
