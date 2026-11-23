@@ -615,19 +615,19 @@
       "release_notes": "**Change logs:**\r\n- Added FTP and WebDAV support through 'Manage Paths'. (the payload file size becomes bigger because of this new feature, it doesn't support TLS to reduce the payload file size.)\r\n- Added a star button to folder hover actions for quickly saving shortcuts to 'Manage Paths'. (Issue #39)\r\n- Updated browser fullscreen/restore integration to upstream [v0.1](https://github.com/owendswang/ps5-web-browser-fullscreen/releases/tag/v0.1) using its release configuration. (It still got ShellUI crash on FW 11.60 as I tested.)\r\n- Avoided unnecessary rename calls when moving files across storage devices. (Issue #10)\r\n\r\nNothing changed for `wfm-7zip-helper.elf`."
     },
     {
-      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.8.3",
+      "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.8.4",
       "name": "ps5-webkit-autoloader",
-      "filename": "webkit-autoloader-installer_v0.8.3.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.8.3.elf",
+      "filename": "webkit-autoloader-installer_v0.8.4.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/webkit-autoloader-installer_v0.8.4.elf",
       "source": "https://github.com/itsPLK/ps5-webkit-autoloader/releases",
-      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.3/webkit-autoloader-installer_v0.8.3.elf",
-      "description": "v0.8.3 by itsPLK",
-      "last_update": "2026-11-21",
-      "version": "v0.8.3",
+      "source_direct": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.4/webkit-autoloader-installer_v0.8.4.elf",
+      "description": "v0.8.4 by itsPLK",
+      "last_update": "2026-11-23",
+      "version": "v0.8.4",
       "author": "itsPLK",
       "category": "Networking & Servers",
-      "checksum": "f4b0dee9af572ea1cb77aaf1e6fc5bf8ef520fc0a0a30753dd94a5cbdc04dd8e",
-      "release_notes": "## Changelog\r\n\r\n### Dependencies\r\n* Updated Wobkot to [`8abe4a9`](https://github.com/ufm42/wobkot/tree/8abe4a9)\r\n  - Updated offsets for FW 5.00, 5.02, 5.10, 5.50, 6.00, 6.02, and 6.50.\r\n\r\n\r\n---\r\n\r\n### [Setup Instructions - see README](https://github.com/itsPLK/ps5-webkit-autoloader#setup-instructions)\r\n\r\n[Discussion thread for this release](https://github.com/itsPLK/ps5-webkit-autoloader/discussions/30)\r\n\r\n---\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.8.3.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.3/webkit-autoloader-installer_v0.8.3.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.8.3.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.3/webkit-autoloader-host_v0.8.3.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.8.3.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.3/webkit-autoloader-host_v0.8.3.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.8.2](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.8.2)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.8.2...v0.8.3\r\n"
+      "checksum": "6224b1d4e221b3dcae1f198883ee998f16c824e518112e64189c5d1d376ed8d6",
+      "release_notes": "## Changelog\r\n\r\n### Dependencies\r\n* Updated Wobkot to [`452046e`](https://github.com/ufm42/wobkot/tree/452046e)\r\n  - Added Relapse support for FW 3.00, 3.10, 3.20, 4.00, 4.02, 4.03, 4.50, and 4.51.\r\n\r\nThis expands supported firmware to **3.00–13.60**.\r\n\r\n## Downloads\r\n\r\n| Platform | File |\r\n|---|---|\r\n| **PS5** (installer payload) | [webkit-autoloader-installer_v0.8.4.elf](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.4/webkit-autoloader-installer_v0.8.4.elf) |\r\n| **Linux / macOS / WSL** (installer-host) | [webkit-autoloader-host_v0.8.4.py](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.4/webkit-autoloader-host_v0.8.4.py) |\r\n| **Windows** (installer-host) | [webkit-autoloader-host_v0.8.4.exe](https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.4/webkit-autoloader-host_v0.8.4.exe) |\r\n\r\n---\r\n\r\n**Full Changelog** (since [v0.8.3](https://github.com/itsPLK/ps5-webkit-autoloader/releases/tag/v0.8.3)): https://github.com/itsPLK/ps5-webkit-autoloader/compare/v0.8.3...v0.8.4\r\n"
     },
     {
       "id": "ps5-webkit-autoloader-webkit-autoloader-installer_v0.9.1",
@@ -645,19 +645,19 @@
       "release_notes": "Added support for older firmwares. Now supports 5.XX to 13.XX using wobkot. Runs under 4 seconds."
     },
     {
-      "id": "ps5upload-ps5upload-12.6.22",
+      "id": "ps5upload-ps5upload-12.6.23",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.22_v12.6.22.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.22_v12.6.22.elf",
+      "filename": "ps5upload-12.6.23_v12.6.23.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.23_v12.6.23.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.22/ps5upload-12.6.22.elf",
-      "description": "v12.6.22 by phantomptr",
-      "last_update": "2026-11-22",
-      "version": "v12.6.22",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.23/ps5upload-12.6.23.elf",
+      "description": "v12.6.23 by phantomptr",
+      "last_update": "2026-11-23",
+      "version": "v12.6.23",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "166e103c26c094122395f696604f27139aeed2a00c2056c964471344ab76fdab",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.22-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.22-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.22-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.22-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.22-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.22-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.22-android.apk` (older 32-bit phones: `PS5Upload-12.6.22-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.22-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.22-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Uploads**\n- **The check on the PS5 after an upload shows its progress (#873).** Before a big file counts as done, the PS5 reads it back from its drive to check it. When the drive can't keep up while the file is still arriving, part of that check is left for after the last byte, which on a 70–160 GB game can take several minutes, and the row said the PS5 had reported no progress. It now shows \"Checking on the PS5: X of Y\" with the time left, and the no-progress warning stays off while the check moves.\n- **A stopped upload that you resume isn't checked twice (#873).** The part the PS5 had already checked before the Stop isn't read again, as long as the helper wasn't restarted in between and the file hasn't changed since. Tried on a PS5: a 20 GB upload stopped at 10 GB and resumed checked only the new 10 GB.\n\n**Other**\n- **Clear all in the notification bell (#911).** Thanks @Dang3rZone.\n- **Security:** updated the `url` library for a newly published advisory (RUSTSEC-2026-0592).\n\n"
+      "checksum": "68a4c2135477aa0d2a9f396565c50cac7d672bbc0f158e718986616a14c6b71b",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.23-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.23-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.23-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.23-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.23-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.23-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.23-android.apk` (older 32-bit phones: `PS5Upload-12.6.23-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.23-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.23-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Uploads**\n- **Add to queue streams packages too.** On Upload & Install, Add to queue used to copy a .pkg or .fpkg to the PS5 before installing it. It now adds it as a Stream & install, the same as the main button, but waits for Start queue. To copy a package first, use Upload & install.\n\n**Windows**\n- **A clear message when Windows blocks the engine (#914).** Smart App Control and app-control policies only run code-signed programs, and PS5Upload's Windows builds aren't signed yet, so the engine couldn't start and the app showed a generic hint. It now says Windows blocked it and what you can do: ask your administrator to allow the PS5Upload folder, turn Smart App Control off, or use the Docker version from a browser. RAR extraction blocked the same way says so too.\n\n**Docker**\n- **Folders the container can't use are named at startup.** If the data folder, the staging folder or a browse folder isn't writable (or readable) by the container's user, the log says which folder, that the container runs as user 65532, and the `chown` command that fixes it. The health check's data folder line gives the same fix.\n\n**Payloads**\n- **On your PS5 lists your payloads first.** The payloads saved in Payload Manag..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
