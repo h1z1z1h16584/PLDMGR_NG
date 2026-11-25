@@ -1078,6 +1078,20 @@
       "checksum": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
     },
     {
+      "id": "archived-kstuff-dr-1.15-test2",
+      "name": "kstuff dr 1.15 test2",
+      "filename": "kstuff-dr-1.15-test2.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff-dr-1.15-test2.elf",
+      "source": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff-dr-1.15-test2.elf",
+      "source_direct": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/~%20Archived/kstuff-dr-1.15-test2.elf",
+      "description": "Archived standalone payload: kstuff-dr-1.15-test2.elf",
+      "last_update": "2000-01-01",
+      "version": "v99.0",
+      "author": "Community Archive",
+      "category": "~ Archived",
+      "checksum": "cb6827c77e1f8d449987121762cfb5ee8d5ded4e212346ea4995f028fdf3c3d9"
+    },
+    {
       "id": "archived-kstuff-fpkg-1.13-dr-test6",
       "name": "kstuff fpkg 1.13 dr test6",
       "filename": "kstuff-fpkg-1.13-dr-test6.elf",
