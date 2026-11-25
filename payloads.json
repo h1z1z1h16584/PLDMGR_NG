@@ -645,19 +645,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.26",
+      "id": "ps5upload-ps5upload-12.6.27",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.26_v12.6.26.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.26_v12.6.26.elf",
+      "filename": "ps5upload-12.6.27_v12.6.27.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.27_v12.6.27.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.26/ps5upload-12.6.26.elf",
-      "description": "v12.6.26 by phantomptr",
-      "last_update": "2026-11-24",
-      "version": "v12.6.26",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.27/ps5upload-12.6.27.elf",
+      "description": "v12.6.27 by phantomptr",
+      "last_update": "2026-11-25",
+      "version": "v12.6.27",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "19da4e310383d9152cb96f078ae63e4207dec42ac8793a81719505605253eb13",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.26-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.26-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.26-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.26-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.26-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.26-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.26-android.apk` (older 32-bit phones: `PS5Upload-12.6.26-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.26-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.26-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Cheats**\n- **PS4 games' cheats can be switched on (#920).** In a PS4 game, the app looked for the game's code in the wrong place, so every switch answered \"the game's code is not loaded yet\". It now uses the PS4 game's own code. As before, nothing is written unless every location holds the cheat's original bytes, so a cheat for another version of the game is still refused.\n\n**Play**\n- **A PS5 that isn't jailbroken can use Remote Play (#921).** Play › Set up now says so when the helper isn't answering and opens pairing with the PIN the PS5 shows, with a note on what to type for the account ID. Play Together, starting a game from the app and the console checks still need the helper.\n\n"
+      "checksum": "db18b4299ce969c6df2adaccddc5014cc80406eac3ec783cbbacd9f0d39c14f9",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.27-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.27-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.27-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.27-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.27-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.27-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.27-android.apk` (older 32-bit phones: `PS5Upload-12.6.27-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.27-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.27-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Install**\n- **PS4 add-ons install even when their title ID differs from the game's (#924).** Some games use a different title ID for their add-ons than for the game itself (Dead or Alive 5 Last Round: game CUSA01778, add-ons CUSA01601). The app refused those add-ons with \"the base game is not on this PS5\", even though the PS5 installs them fine. Add-ons are no longer checked for a base game; the PS5 decides. Updates still are, because the PS5 accepts an update without its game and then installs nothing.\n\n**Files**\n- **Long names are readable on a phone (#923).** On a narrow screen a long file or folder name now wraps onto up to three lines, with its type and size underneath, instead of being cut off after a few characters. Wider windows keep one line per row.\n\n**Play**\n- **\"Server shutting down\" is explained.** When the PS5 ends the stream because something else took over (a controller at the console was used, another device started Remote Play, or the PS5 was turned off), the app now says that in plain words and tells you to press Start to play here again.\n\n**Your servers**\n- **Editing a server while it signs in uses the new settings.** If you changed or removed a server connection while the ap..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -763,6 +763,21 @@
       "category": "System Utilities",
       "checksum": "82e3548edcc41419b644482cccaef65689334fc0315dc20247f48b90bf182dca",
       "release_notes": "- Added support for PS5 backport patches that previously appeared as unknown packages\n- Show an \"SDK target\" badge for PS5 packages when the executable's SDK version can be read reliably\n- Improved installed-version detection so newer PS5 patches can be installed and already installed updates are correctly recognized\n\nFull Changelog: https://github.com/itsPLK/ps5-pkg-manager/compare/v1.5.0...v1.5.1\n"
+    },
+    {
+      "id": "ps5-playtime-tracker-gowithme.club_v1.1.0",
+      "name": "ps5-playtime-tracker",
+      "filename": "gowithme.club_v1.1.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/gowithme.club_v1.1.0.elf",
+      "source": "https://github.com/gowithme-club/ps5-playtime-tracker/releases",
+      "source_direct": "https://github.com/gowithme-club/ps5-playtime-tracker/releases/download/v1.1.0/gowithme.club_v1.1.0.elf",
+      "description": "PS5 playtime tracker 1.1.0 by gowithme-club",
+      "last_update": "2026-11-17",
+      "version": "v1.1.0",
+      "author": "gowithme-club",
+      "category": "System Utilities",
+      "checksum": "be03f18b60255618d62ec20bdb15f2e7aa556e4410cc76a6396dec5906d8ce2d",
+      "release_notes": "- A gowithme.club tile in Media. It shows the pairing code with a QR code that opens gowithme.club/ps5 on a phone with the code filled in; once the console is linked, it shows the last report and the owner's profile as a link and a QR code. The page follows the console's language.\n- Notifications carry the gowithme.club icon and no longer say \"Debug\".\n- The pairing code is shown for 20 minutes. After that the payload says the console is not linked and stays quiet; \"Show code\" on the tile or loading the payload again brings a new one. Before, the code repeated every 10 seconds for as long as the payload ran.\n- A console removed on the site shows \"console unlinked\" and no new code.\n- Without a connection the payload says it cannot get a code.\n\n**Install:** see the [README](https://github.com/gowithme-club/ps5-playtime-tracker#install). To update, load the new file; the console stays linked and the tile appears in Media on the first start.\n\n| File | SHA-256 |\n| --- | --- |\n| `gowithme.club_v1.1.0.elf` | `be03f18b60255618d62ec20bdb15f2e7aa556e4410cc76a6396dec5906d8ce2d` |\n"
     },
     {
       "id": "cheatrunner-cheatrunner-prerelease",
