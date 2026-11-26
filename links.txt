@@ -56,7 +56,7 @@ github:geodox/ps5-wh-widgets
 github:ghost1372/WelcomeHubActivator
 github:gowithme-club/ps5-playtime-tracker
 github:HSgod/ps5-fpsunlocker-gta6
-github:
+github:zerodayofficial/NoUpdate
 github:
 github:
 github:
