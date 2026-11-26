@@ -316,19 +316,19 @@
       "release_notes": "- Parallel downloads now use persistent connections and write ranges directly\n  into the temporary file, avoiding a final segment-copy pass. New configurations\n  default to 16 connections, with a single-stream fallback for incompatible hosts.\n- RAR/RAR5 and 7z archive cache downloads use the same parallel engine. Paused\n  downloads resume from checked checkpoints, and paused extraction restarts from\n  the completed cache without downloading again.\n- Completed RAR caches survive password prompts and wrong passwords. UTF-8\n  passwords and retries for legacy encrypted RAR files are handled correctly.\n- Extraction progress now counts bytes across files. Cancellation and\n  finalization are coordinated to avoid committing cancelled work.\n- Archive replacement failures restore the previous destination, stored RAR\n  entries receive CRC checks, and failed format probes clean up their temporary\n  files.\n"
     },
     {
-      "id": "ps5-fpsunlocker-gta6-gtavi.unlockfps_v1.13",
+      "id": "ps5-fpsunlocker-gta6-gtavi.unlockfps_v1.14",
       "name": "ps5-fpsunlocker-gta6",
-      "filename": "GTAVI.UnlockFPS_v1.13.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/GTAVI.UnlockFPS_v1.13.elf",
+      "filename": "GTAVI.UnlockFPS_v1.14.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/GTAVI.UnlockFPS_v1.14.elf",
       "source": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases",
-      "source_direct": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.13/GTAVI.UnlockFPS_v1.13.elf",
-      "description": "GTAVI Unlock FPS v1.13 by HSgod",
+      "source_direct": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.14/GTAVI.UnlockFPS_v1.14.elf",
+      "description": "GTAVI Unlock FPS v1.14 by HSgod",
       "last_update": "2026-11-26",
-      "version": "v1.13",
+      "version": "v1.14",
       "author": "HSgod",
       "category": "Homebrew",
-      "checksum": "fd62a56fb170b071a97f93f1c39023b53647d791e5b14769ef674b98d217afe4",
-      "release_notes": "### Changes\n- **Optional background daemon mode (`daemon=1` in `fps.txt`):** stays running in the background after jailbreak with no 10-minute timeout, automatically reloads `fps.txt` and re-patches GTAVI across game restarts (`daemon=0` remains the default one-shot mode).\n- **Relaxed `res_pct` range to `25..100`:** `50` (`1920×1080`) remains the default; intermediate values between 1080p and 1440p are supported (e.g. `55` = `2112×1188`, `60` = `2304×1296`, `67` = stock `2560×1440`), and `25..49` (e.g. `33` ≈ `720p`) is available as an optional experimental range.\n- Documented out-of-range config behavior (logs a warning and falls back to defaults) in README."
+      "checksum": "9d7b726369407cd1ca1030dfc4bd705d01f27ebf0bf564a7d100c1599db14904",
+      "release_notes": "> **PS5 Pro Update:** This update adds **PSSR** resolution scaling for **PS5 Pro**. PS5 Fat/Slim users can stay on **v1.13** (nothing changes for base PS5).\r\n\r\n### Changes\r\n- **Added PS5 Pro PSSR `res_pct` scaling (`0x62e6bc5`):** patches `PSSR::GetRenderDimensions()` so `res_pct` in `/data/gtavi-unlockfps/fps.txt` now scales internal render resolution on **PS5 Pro** while keeping native **PSSR** upscaling (instead of falling back to `TAA2U`). Set `res_pct=0` to keep stock PSSR behavior.\r\n- Confirmed working on PS5 Pro (down to `res_pct=25`; `50`–`60` recommended for the best balance of sharpness and FPS)."
     },
     {
       "id": "ps5-linux-loader-ps5-linux-loader",
@@ -780,19 +780,19 @@
       "release_notes": "- Added support for PS5 backport patches that previously appeared as unknown packages\n- Show an \"SDK target\" badge for PS5 packages when the executable's SDK version can be read reliably\n- Improved installed-version detection so newer PS5 patches can be installed and already installed updates are correctly recognized\n\nFull Changelog: https://github.com/itsPLK/ps5-pkg-manager/compare/v1.5.0...v1.5.1\n"
     },
     {
-      "id": "ps5-playtime-tracker-gowithme.club_v1.2.0",
+      "id": "ps5-playtime-tracker-gowithme.club_v1.3.0",
       "name": "ps5-playtime-tracker",
-      "filename": "gowithme.club_v1.2.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/gowithme.club_v1.2.0.elf",
+      "filename": "gowithme.club_v1.3.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/gowithme.club_v1.3.0.elf",
       "source": "https://github.com/gowithme-club/ps5-playtime-tracker/releases",
-      "source_direct": "https://github.com/gowithme-club/ps5-playtime-tracker/releases/download/v1.2.0/gowithme.club_v1.2.0.elf",
-      "description": "PS5 playtime tracker 1.2.0 by gowithme-club",
+      "source_direct": "https://github.com/gowithme-club/ps5-playtime-tracker/releases/download/v1.3.0/gowithme.club_v1.3.0.elf",
+      "description": "PS5 playtime tracker 1.3.0 by gowithme-club",
       "last_update": "2026-11-26",
-      "version": "v1.2.0",
+      "version": "v1.3.0",
       "author": "gowithme-club",
       "category": "System Utilities",
-      "checksum": "164291f9a3fc13a6baf89c37cb506c72f6160686c9193817d29cf1d314ca14a0",
-      "release_notes": "- The tile has its own background on the home screen: what gowithme.club is, with the marks of the platforms it reads and of Telegram and Discord.\n- The first time the tile is opened, a welcome screen shows what gowithme.club does with the animated diagram from the site's front page; its button goes on to linking. Once pressed, or once the console is linked, it does not come back.\n- Before the console is linked, the code sits under the QR code.\n- The tile's page links the repository on GitHub.\n- Once linked, the tile shows the gowithme.club profile of whoever is signed in on the console, with what that profile has recorded: hours, games and trophies. Before, it always showed the console's owner.\n- A profile on the console that no one has linked yet gets a code on the tile, entered at gowithme.club/ps5 like the pairing code, so whoever plays on it gets their own games. A notification says so once per run, and another one when the profile is linked.\n- An unlinked console no longer gets the code every 10 seconds. Two reminders, at the start and two minutes later, say \"Link this PS5\" and send people to the tile, which shows the code and the QR code. With the tile deleted the code still repeats, since nothing else shows it.\n- Notifications put the news in the large line and the rest in the small one above it (\"Tracker started\" under \"gowithme.club\"). Before, a long line wrapped and the code had no small line.\n- Pressing PS on a notification opens the tile's page, as with a trophy.\n- On a console set to Russian the payload's notifications are in Russian; every other language keeps English.\n\n**Install:** see the [README](https://github.com/gowithme-club/ps5-playtime-tracker#install). To update, load the new file; the console stays linked.\n\n| File | SHA-256 |\n| --- | --- |\n| `gowithme.club_v1.2.0.elf` | `164291f9a3fc13a6baf89c37cb506c72f6160686c9193817d29cf1d314ca14a0` |\n"
+      "checksum": "513f07e596d143bd25a408aabc8e3630a05713c91cab9702d39fad138eb4f5cf",
+      "release_notes": "- When a newer release is out, the tile's footer shows \"Update to 1.3.1\" in green beside the version, linking to the release, and a notification says so once per version.\n- A game left loaded in the background no longer counts as played. The console keeps a game in memory after you go to the home screen, start another game or switch users; the payload now follows the system's own record of when a game is played. Before, a copy of the payload started after a switch could credit the loaded game to the new user.\n- Local co-op: every profile signed in on the console gets the game, each from the moment they joined, and \"playing now\" shows all of them. Before, only the profile that started the game got it.\n\n**Install:** see the [README](https://github.com/gowithme-club/ps5-playtime-tracker#install). To update, load the new file; the console stays linked. From this version on, the tile says when a newer one is out.\n\n| File | SHA-256 |\n| --- | --- |\n| `gowithme.club_v1.3.0.elf` | `513f07e596d143bd25a408aabc8e3630a05713c91cab9702d39fad138eb4f5cf` |\n"
     },
     {
       "id": "cheatrunner-cheatrunner-prerelease",
@@ -927,21 +927,6 @@
       "category": "Pre-release",
       "checksum": "d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e",
       "release_notes": "Automated **Release** build of `main` at [`86c79cf`](https://github.com/aydencharles/onionHEN/commit/86c79cf7c8bfa98045956ec9041eb7e5412e1641), built 2026-11-15 23:22 UTC.\n\nThis is an untested development build. Use the latest stable release unless you want to try new changes early.\n\n- Changes since the previous nightly: [`39683d3...86c79cf`](https://github.com/aydencharles/onionHEN/compare/39683d33b43296df2701cd824204526e3d16e375...86c79cf7c8bfa98045956ec9041eb7e5412e1641)\n- Changes since v0.9.0: [`v0.9.0...86c79cf`](https://github.com/aydencharles/onionHEN/compare/v0.9.0...86c79cf7c8bfa98045956ec9041eb7e5412e1641)\n- `OnionHEN.elf` SHA-256: `db56838865c42e01bae921c197e4753d9388de4ff2930937be5f3666be5be19d`\n"
-    },
-    {
-      "id": "ps5-fpsunlocker-gta6-gtavi.unlockfps_v1.14-prerelease",
-      "name": "ps5-fpsunlocker-gta6 [Pre-release]",
-      "filename": "GTAVI.UnlockFPS_v1.14 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/GTAVI.UnlockFPS_v1.14%20%5BPre-release%5D.elf",
-      "source": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases",
-      "source_direct": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.14/GTAVI.UnlockFPS_v1.14.elf",
-      "description": "GTAVI Unlock FPS v1.14 [Pre-release] by HSgod",
-      "last_update": "2026-11-26",
-      "version": "v1.14",
-      "author": "HSgod",
-      "category": "Pre-release",
-      "checksum": "9d7b726369407cd1ca1030dfc4bd705d01f27ebf0bf564a7d100c1599db14904",
-      "release_notes": "> **PS5 Pro Pre-Release Only:** This update only adds experimental **PSSR** resolution scaling for **PS5 Pro**. PS5 Fat/Slim users can stay on **v1.13** (nothing changes for base PS5).\n\n### Changes\n- **Experimental PSSR `res_pct` scaling for PS5 Pro (`0x62e6bc5`):** patches `PSSR::GetRenderDimensions()` so `res_pct` in `/data/gtavi-unlockfps/fps.txt` scales internal render resolution on PS5 Pro while keeping native **PSSR** upscaling (instead of falling back to `TAA2U`). Set `res_pct=0` to keep stock PSSR behavior.\n\n### Testers Needed (PS5 Pro)\nI do not own a PS5 Pro to test this live. If you have a **PS5 Pro**, please test `v1.14` with different `res_pct` values (e.g. `50`, `55`, `60`, `67`, `0`) and **open an Issue** to report whether PSSR scaling works cleanly (FPS, sharpness, any glitches, or log from `/data/gtavi-unlockfps/gtavi-unlockfps.log`)."
     },
     {
       "id": "ps5-pkg-manager-pkgmgr_v1.2.1-prerelease",
