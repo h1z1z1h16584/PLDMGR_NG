@@ -780,19 +780,19 @@
       "release_notes": "- Added support for PS5 backport patches that previously appeared as unknown packages\n- Show an \"SDK target\" badge for PS5 packages when the executable's SDK version can be read reliably\n- Improved installed-version detection so newer PS5 patches can be installed and already installed updates are correctly recognized\n\nFull Changelog: https://github.com/itsPLK/ps5-pkg-manager/compare/v1.5.0...v1.5.1\n"
     },
     {
-      "id": "ps5-playtime-tracker-gowithme.club_v1.1.0",
+      "id": "ps5-playtime-tracker-gowithme.club_v1.2.0",
       "name": "ps5-playtime-tracker",
-      "filename": "gowithme.club_v1.1.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/gowithme.club_v1.1.0.elf",
+      "filename": "gowithme.club_v1.2.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/System%20Utilities/gowithme.club_v1.2.0.elf",
       "source": "https://github.com/gowithme-club/ps5-playtime-tracker/releases",
-      "source_direct": "https://github.com/gowithme-club/ps5-playtime-tracker/releases/download/v1.1.0/gowithme.club_v1.1.0.elf",
-      "description": "PS5 playtime tracker 1.1.0 by gowithme-club",
-      "last_update": "2026-11-17",
-      "version": "v1.1.0",
+      "source_direct": "https://github.com/gowithme-club/ps5-playtime-tracker/releases/download/v1.2.0/gowithme.club_v1.2.0.elf",
+      "description": "PS5 playtime tracker 1.2.0 by gowithme-club",
+      "last_update": "2026-11-26",
+      "version": "v1.2.0",
       "author": "gowithme-club",
       "category": "System Utilities",
-      "checksum": "be03f18b60255618d62ec20bdb15f2e7aa556e4410cc76a6396dec5906d8ce2d",
-      "release_notes": "- A gowithme.club tile in Media. It shows the pairing code with a QR code that opens gowithme.club/ps5 on a phone with the code filled in; once the console is linked, it shows the last report and the owner's profile as a link and a QR code. The page follows the console's language.\n- Notifications carry the gowithme.club icon and no longer say \"Debug\".\n- The pairing code is shown for 20 minutes. After that the payload says the console is not linked and stays quiet; \"Show code\" on the tile or loading the payload again brings a new one. Before, the code repeated every 10 seconds for as long as the payload ran.\n- A console removed on the site shows \"console unlinked\" and no new code.\n- Without a connection the payload says it cannot get a code.\n\n**Install:** see the [README](https://github.com/gowithme-club/ps5-playtime-tracker#install). To update, load the new file; the console stays linked and the tile appears in Media on the first start.\n\n| File | SHA-256 |\n| --- | --- |\n| `gowithme.club_v1.1.0.elf` | `be03f18b60255618d62ec20bdb15f2e7aa556e4410cc76a6396dec5906d8ce2d` |\n"
+      "checksum": "164291f9a3fc13a6baf89c37cb506c72f6160686c9193817d29cf1d314ca14a0",
+      "release_notes": "- The tile has its own background on the home screen: what gowithme.club is, with the marks of the platforms it reads and of Telegram and Discord.\n- The first time the tile is opened, a welcome screen shows what gowithme.club does with the animated diagram from the site's front page; its button goes on to linking. Once pressed, or once the console is linked, it does not come back.\n- Before the console is linked, the code sits under the QR code.\n- The tile's page links the repository on GitHub.\n- Once linked, the tile shows the gowithme.club profile of whoever is signed in on the console, with what that profile has recorded: hours, games and trophies. Before, it always showed the console's owner.\n- A profile on the console that no one has linked yet gets a code on the tile, entered at gowithme.club/ps5 like the pairing code, so whoever plays on it gets their own games. A notification says so once per run, and another one when the profile is linked.\n- An unlinked console no longer gets the code every 10 seconds. Two reminders, at the start and two minutes later, say \"Link this PS5\" and send people to the tile, which shows the code and the QR code. With the tile deleted the code still repeats, since nothing else shows it.\n- Notifications put the news in the large line and the rest in the small one above it (\"Tracker started\" under \"gowithme.club\"). Before, a long line wrapped and the code had no small line.\n- Pressing PS on a notification opens the tile's page, as with a trophy.\n- On a console set to Russian the payload's notifications are in Russian; every other language keeps English.\n\n**Install:** see the [README](https://github.com/gowithme-club/ps5-playtime-tracker#install). To update, load the new file; the console stays linked.\n\n| File | SHA-256 |\n| --- | --- |\n| `gowithme.club_v1.2.0.elf` | `164291f9a3fc13a6baf89c37cb506c72f6160686c9193817d29cf1d314ca14a0` |\n"
     },
     {
       "id": "cheatrunner-cheatrunner-prerelease",
