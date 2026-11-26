@@ -645,19 +645,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.30",
+      "id": "ps5upload-ps5upload-12.6.31",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.30_v12.6.30.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.30_v12.6.30.elf",
+      "filename": "ps5upload-12.6.31_v12.6.31.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.31_v12.6.31.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.30/ps5upload-12.6.30.elf",
-      "description": "v12.6.30 by phantomptr",
-      "last_update": "2026-11-25",
-      "version": "v12.6.30",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.31/ps5upload-12.6.31.elf",
+      "description": "v12.6.31 by phantomptr",
+      "last_update": "2026-11-26",
+      "version": "v12.6.31",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "722badeb0943b624660a6614a403cfba46ed28094701ab3a49655037d5a8e6a9",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.30-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.30-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.30-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.30-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.30-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.30-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.30-android.apk` (older 32-bit phones: `PS5Upload-12.6.30-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.30-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.30-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Files on phones**\n- **Back closes what's open first (#932).** On Android, Back used to leave Files even with a menu open. Now it closes the open menu or dialog, then leaves selection, then goes up one folder, and only leaves Files at the top of a drive.\n- **More room for your files (#936).** On a phone, the top of Files is now one compact bar that stays put while you scroll: the folder name, Search, the drive switcher and ⋮ for the rest, with the path below it (beside it when the phone is sideways).\n- **Long-press to select.** Checkboxes stay hidden until you long-press a row (or pick ⋮ → Select). While selecting, the top bar shows the count and Select all, and a bar at the bottom offers Copy, Move, Rename, Delete and More. Tablets and computers look the same as before.\n\n**Play Together on a TV (#926)**\n- **The join screen works with a TV remote.** The arrows move between buttons, OK presses one, and the first useful button already has focus. Back steps out in order: it closes a dialog, then shows the buttons, then leaves full screen. During the game the remote's arrows and OK play the game.\n- **On Android TV**, the app's first screen offers a big \"Join Play Together\" button, the game open..."
+      "checksum": "57bc3a0df33226c7f37c9d870aa21ec549dedb2414c09e8c47e647d14f125e45",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.31-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.31-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.31-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.31-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.31-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.31-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.31-android.apk` (older 32-bit phones: `PS5Upload-12.6.31-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.31-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.31-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Upload & Install**\n- **Change a fake package's name before installing it (#937).** Pick one package and edit \"Name on the PS5\". The name is changed inside the package, in place, without rebuilding it, and checked afterwards. Packages signed by Sony, split packages and packages on a server are refused.\n- **Stream & install no longer sits at 0% in silence (#942).** Before it starts, the app checks that the PS5 can reach this computer. If it can't, or the PS5 never fetches any of the package, the install stops with the likely cause (most often this computer's firewall) and offers Retry via upload.\n\n**Convert**\n- **Free an archive's space while it unpacks (dangerous, off by default).** For a drive with no room for the archive and the unpacked game together. A .zip is freed file by file, a .7z block by block, and a multi-part .rar part by part; other archives are deleted once unpacked and checked. The archive is deleted for good: if anything fails on the way, you keep only what was unpacked so far. It asks every time, and it is for one game only.\n- **\".pkg\" now says what it is:** a fake package (FPKG).\n- **The PS5's own Convert page has the unpack options too.** For a .pkg of a packed game: unpack th..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
