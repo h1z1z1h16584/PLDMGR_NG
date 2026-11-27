@@ -181,6 +181,21 @@
       "release_notes": "<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/icon0.png?raw=true\" width=\"120\" alt=\"LiveShell Engine\">\r\n</p>\r\n\r\n<h2 align=\"center\">LiveShell Engine v1.7.0</h2>\r\n\r\n<p align=\"center\">Animated tiles, 4K per game.</p>\r\n\r\n---\r\n\r\n### What's new\r\n\r\n- **Animated tiles** 🎞️\r\n  - Your **game and app icons move** on the home screen: give any tile an **APNG** (animated PNG) or a **GIF**.\r\n  - Works on **any game or app**, and on the **PlayStation Store** tile too.\r\n  - Choose it in **Library → pick a game → Animated Tile**. **Original icon** gives the normal icon back.\r\n  - Put your files in **`/data/LiveShell/icons/`** or on a USB drive in **`liveshell/icons/`** or **`icons/`**. Or **upload** one from the phone/PC page.\r\n  - Shown at **512 x 512**, like the PS5's own icons. GIFs become APNGs because it's what the PS5 only supports.\r\n\r\n<p align=\"center\">\r\n  <img src=\"https://github.com/ZiZc3/LiveShell/blob/main/assets/tiles-showcase.gif?raw=true\" width=\"720\" alt=\"Animated tiles on the PS5\">\r\n</p>\r\n\r\n- **4K per game**: a game can now have a **4K** video of its own too.\r\n- **PS4 games support** 🎮: PS4 games now show in the **Library**, so they can have their own **Live Background** and **Animated Tile** too.\r\n- **New Library look**: a clean grid with big icons, filters (**Live Background**, **Animated Tile**, **Default**) and the **PlayStation Store** tile.\r\n- **New video picker**: video covers with **4K / 2K / FHD / HD** badges, **4K / 1080p** filters and a **search**.\r\n- **Search in your videos** on the home-screen app.\r\n- **Phone/PC page**: the same new Library and video picker.\r\n- **Discover**: the list not found error fixed.\r\n\r\n### How to use\r\n1. Put .mp4 files in /data/LiveShell/video or in a liveshell folder on USB.\r\n2. Load liveshell.elf.\r\n3. Open the **LiveShell Engine** (Media).\r\n4. **Animated tile**: put GIF or APNG in `/data/LiveShell/icons/`, then **Library → pick a game → Animated Tile** and pick one.\r\n\r\n**Supported: H.264 and HEVC up to 4K.**\r\n\r\nIf your vi..."
     },
     {
+      "id": "noupdate-noupdate",
+      "name": "NoUpdate",
+      "filename": "NoUpdate_v1.0.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/NoUpdate_v1.0.0.elf",
+      "source": "https://github.com/zerodayofficial/NoUpdate/releases",
+      "source_direct": "https://github.com/zerodayofficial/NoUpdate/releases/download/v1.0.0/NoUpdate.elf",
+      "description": "NoUpdate v1.0.0 by zerodayofficial",
+      "last_update": "2026-11-21",
+      "version": "v1.0.0",
+      "author": "zerodayofficial",
+      "category": "Homebrew",
+      "checksum": "ff2443663899210b5a8aebf1fcac6c953d266f2ae10f2b8521866dce7df9d3cd",
+      "release_notes": "Updated NoUpdate payload and matching source (22 November 2026).\n\n- Replaced NoUpdate.elf and SHA256SUMS.txt; both checksums verified.\n- Updated the source and README to match the new manual-launch behavior. This build disables the old OnionHEN autostart marker instead of creating one.\n- Dynamic title scanning, notifications and detailed klog reporting; persistent metadata backups and verification.\n- Firmware range targeted in code: 6.xx through 13.60. Tested on PS5 firmware 10.01 only; other versions remain unverified.\n- Intended for offline single-player use on your own console. An update bypass does not add missing firmware features or guarantee game compatibility.\n\nSHA-256 (NoUpdate.elf): FF2443663899210B5A8AEBF1FCAC6C953D266F2AE10F2B8521866DCE7DF9D3CD"
+    },
+    {
       "id": "ps-play-psplay-2.1",
       "name": "PS-Play",
       "filename": "PSPlay-2.1.elf",
@@ -660,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.33",
+      "id": "ps5upload-ps5upload-12.6.34",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.33_v12.6.33.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.33_v12.6.33.elf",
+      "filename": "ps5upload-12.6.34_v12.6.34.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.34_v12.6.34.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.33/ps5upload-12.6.33.elf",
-      "description": "v12.6.33 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.34/ps5upload-12.6.34.elf",
+      "description": "v12.6.34 by phantomptr",
       "last_update": "2026-11-26",
-      "version": "v12.6.33",
+      "version": "v12.6.34",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "2ad3f7ae4d4b5a05346e4eb22ef80df397dbf4165f2c9b9cd5a2565f73cfa539",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.33-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.33-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.33-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.33-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.33-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.33-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.33-android.apk` (older 32-bit phones: `PS5Upload-12.6.33-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.33-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.33-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Fake PS5 packages**\n- **Two ways to play them, explained side by side.** Install the package (on firmware 11.61 to 13.60 with the latest kstuff, which supports fake packages up to 13.60), or mount it with Kraken Mount. Upload & Install, Convert, the hint after a game doesn't start, the Payloads catalog, the FAQ and the website now all say this the same way, and the note is information rather than a warning.\n\n**Files on a phone (#936)**\n- **The header stays put** when the list is pulled past its ends.\n- **Copy and Move use a bar at the bottom.** Staged items show there with Paste here and Cancel, and a short message says when they are copied or moved. Pasted items leave the clipboard. Back still goes up folders while something is staged, and lets go of it at the top of the drive.\n\n**Upload & Install**\n- **The console page's queue no longer says \"Stopped part-way\" while an upload is still running (#945).** After a reload it checks again before giving up, and picks up uploads that are still going or that finished meanwhile. The same fix stops a second upload starting beside a running one in Files.\n\n**Cheats**\n- **PS4 cheats find the game's code (#946).** A PS4 game now always gets a place to look,..."
+      "checksum": "5d0761c6014f83a166070402fb58fc21bdb0014287896fa206c2945ab9c7092c",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.34-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.34-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.34-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.34-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.34-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.34-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.34-android.apk` (older 32-bit phones: `PS5Upload-12.6.34-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.34-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.34-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Payloads**\n- **Your own payload sources are back.** In Payloads, add a GitHub, Gitea or Forgejo project that publishes payload files, and pick the file once (for example `kstuff.elf`). Its card shows the release you have, says when a newer one is out, and has Download, Update and Send to PS5. Nothing happens on its own: it checks only when you open Payloads or press Check, downloads only when you press Download, and before sending shows the file, its release, size and checksum. Only add projects you trust. The built-in list stays a guide with links.\n\n**Files**\n- **Two panes on a wide screen (#952).** Turn on Two panes to keep the PS5 on one side and this computer, a saved server or another console on the other, and copy or move between them. Phones and tablets stay as they were.\n- **Copy or move from the PS5 to a saved server (#953),** in Move to… and on the console's own page. A move deletes the original only after the copy is checked, and keeps a folder that holds links, which a share can't hold.\n\n**Convert**\n- **Closing the page no longer marks a running build \"Interrupted\" (#954).** The build keeps going; the reopened page picks it up or shows it finished. The queue's next game, and the in..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
