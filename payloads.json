@@ -331,19 +331,19 @@
       "release_notes": "- Parallel downloads now use persistent connections and write ranges directly\n  into the temporary file, avoiding a final segment-copy pass. New configurations\n  default to 16 connections, with a single-stream fallback for incompatible hosts.\n- RAR/RAR5 and 7z archive cache downloads use the same parallel engine. Paused\n  downloads resume from checked checkpoints, and paused extraction restarts from\n  the completed cache without downloading again.\n- Completed RAR caches survive password prompts and wrong passwords. UTF-8\n  passwords and retries for legacy encrypted RAR files are handled correctly.\n- Extraction progress now counts bytes across files. Cancellation and\n  finalization are coordinated to avoid committing cancelled work.\n- Archive replacement failures restore the previous destination, stored RAR\n  entries receive CRC checks, and failed format probes clean up their temporary\n  files.\n"
     },
     {
-      "id": "ps5-fpsunlocker-gta6-gtavi.unlockfps_v1.14",
+      "id": "ps5-fpsunlocker-gta6-gtavi.unlockfps_v1.15",
       "name": "ps5-fpsunlocker-gta6",
-      "filename": "GTAVI.UnlockFPS_v1.14.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/GTAVI.UnlockFPS_v1.14.elf",
+      "filename": "GTAVI.UnlockFPS_v1.15.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Homebrew/GTAVI.UnlockFPS_v1.15.elf",
       "source": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases",
-      "source_direct": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.14/GTAVI.UnlockFPS_v1.14.elf",
-      "description": "GTAVI Unlock FPS v1.14 by HSgod",
-      "last_update": "2026-11-26",
-      "version": "v1.14",
+      "source_direct": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.15/GTAVI.UnlockFPS_v1.15.elf",
+      "description": "GTAVI Unlock FPS v1.15 by HSgod",
+      "last_update": "2026-11-27",
+      "version": "v1.15",
       "author": "HSgod",
       "category": "Homebrew",
-      "checksum": "9d7b726369407cd1ca1030dfc4bd705d01f27ebf0bf564a7d100c1599db14904",
-      "release_notes": "> **PS5 Pro Update:** This update adds **PSSR** resolution scaling for **PS5 Pro**. PS5 Fat/Slim users can stay on **v1.13** (nothing changes for base PS5).\r\n\r\n### Changes\r\n- **Added PS5 Pro PSSR `res_pct` scaling (`0x62e6bc5`):** patches `PSSR::GetRenderDimensions()` so `res_pct` in `/data/gtavi-unlockfps/fps.txt` now scales internal render resolution on **PS5 Pro** while keeping native **PSSR** upscaling (instead of falling back to `TAA2U`). Set `res_pct=0` to keep stock PSSR behavior.\r\n- Confirmed working on PS5 Pro (down to `res_pct=25`; `50`–`60` recommended for the best balance of sharpness and FPS)."
+      "checksum": "09258095452838e6e38e2e5301dc534eb215f48e1288e1a980b555d1e82eb48b",
+      "release_notes": "### Changes\r\n- **120 Hz Flip-Rate Support (`refresh_hz=120`):** Patches GTAVI's hardcoded 60 Hz constants in `sceVideoOutSetFlipRate` to `120 Hz`. When forcing **120 Hz output**, `fps=40` locks cleanly at **40 FPS** (`120 / 3`), along with 30 / 60 / 120 FPS. Default: `60` (stock).\r\n- **Experimental Output Buffer Resolution (`output_res`):** Optionally overrides the swapchain output resolution (`0` = stock 4K [default], `1440` = native `2560×1440`, `1080` = native `1920×1080`) for 1440p/1080p displays or extra GPU headroom on base PS5.\r\n- **Experimental PS5 Pro Half-Res RT Reflections (`pro_rt_half=1`):** Lowers PS5 Pro's RT Reflections from full-res (Tier 3) to half-res (matching base PS5) for extra FPS and RT pool headroom while keeping **PSSR** and intact ocean water. Default: `0` (stock).\r\n- **Removed `rt_reflections=0`:** Removed the RT Reflections off-switch as it caused ocean/water visual glitches (existing lines in `fps.txt` are safely ignored).\r\n- **PS5 Payload Manager Support (`repo.json`):** Added a custom repository source so you can download and update directly inside **PS5 Payload Manager**.\r\n- Cleaned up `README.md` for readability.\r\n\r\n> **Note:** All new options are opt-in and disabled by default (`refresh_hz=60`, `output_res=0`, `pro_rt_half=0`), so default behavior is unchanged from v1.14. Feedback from testing the new experimental options in **Issues** is very welcome!"
     },
     {
       "id": "ps5-linux-loader-ps5-linux-loader",
