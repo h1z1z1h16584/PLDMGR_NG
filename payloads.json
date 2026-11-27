@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.34",
+      "id": "ps5upload-ps5upload-12.6.35",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.34_v12.6.34.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.34_v12.6.34.elf",
+      "filename": "ps5upload-12.6.35_v12.6.35.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.35_v12.6.35.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.34/ps5upload-12.6.34.elf",
-      "description": "v12.6.34 by phantomptr",
-      "last_update": "2026-11-26",
-      "version": "v12.6.34",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.35/ps5upload-12.6.35.elf",
+      "description": "v12.6.35 by phantomptr",
+      "last_update": "2026-11-27",
+      "version": "v12.6.35",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "5d0761c6014f83a166070402fb58fc21bdb0014287896fa206c2945ab9c7092c",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.34-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.34-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.34-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.34-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.34-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.34-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.34-android.apk` (older 32-bit phones: `PS5Upload-12.6.34-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.34-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.34-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Payloads**\n- **Your own payload sources are back.** In Payloads, add a GitHub, Gitea or Forgejo project that publishes payload files, and pick the file once (for example `kstuff.elf`). Its card shows the release you have, says when a newer one is out, and has Download, Update and Send to PS5. Nothing happens on its own: it checks only when you open Payloads or press Check, downloads only when you press Download, and before sending shows the file, its release, size and checksum. Only add projects you trust. The built-in list stays a guide with links.\n\n**Files**\n- **Two panes on a wide screen (#952).** Turn on Two panes to keep the PS5 on one side and this computer, a saved server or another console on the other, and copy or move between them. Phones and tablets stay as they were.\n- **Copy or move from the PS5 to a saved server (#953),** in Move to… and on the console's own page. A move deletes the original only after the copy is checked, and keeps a folder that holds links, which a share can't hold.\n\n**Convert**\n- **Closing the page no longer marks a running build \"Interrupted\" (#954).** The build keeps going; the reopened page picks it up or shows it finished. The queue's next game, and the in..."
+      "checksum": "bb3113bbe1d1ad5863153abe7df7102eee4440dd25d776a84c09e81f7166c654",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.35-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.35-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.35-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.35-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.35-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.35-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.35-android.apk` (older 32-bit phones: `PS5Upload-12.6.35-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.35-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.35-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Files on a phone**\n- **Name and path fields get the full width (#936).** New folder, New file, Rename, Download from a link and Go to path no longer squeeze the text box: on a phone the field takes the width of the card and its buttons sit on their own line, so you can see what you type and the buttons never break mid-word. Tablets and computers look as before.\n\n**Convert**\n- **A running build is found again even if the page closed within seconds of starting it (#954).** The link to the build is saved at once instead of with the next progress update.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
