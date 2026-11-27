@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.35",
+      "id": "ps5upload-ps5upload-12.6.36",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.35_v12.6.35.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.35_v12.6.35.elf",
+      "filename": "ps5upload-12.6.36_v12.6.36.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.36_v12.6.36.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.35/ps5upload-12.6.35.elf",
-      "description": "v12.6.35 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.36/ps5upload-12.6.36.elf",
+      "description": "v12.6.36 by phantomptr",
       "last_update": "2026-11-27",
-      "version": "v12.6.35",
+      "version": "v12.6.36",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "bb3113bbe1d1ad5863153abe7df7102eee4440dd25d776a84c09e81f7166c654",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.35-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.35-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.35-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.35-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.35-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.35-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.35-android.apk` (older 32-bit phones: `PS5Upload-12.6.35-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.35-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.35-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Files on a phone**\n- **Name and path fields get the full width (#936).** New folder, New file, Rename, Download from a link and Go to path no longer squeeze the text box: on a phone the field takes the width of the card and its buttons sit on their own line, so you can see what you type and the buttons never break mid-word. Tablets and computers look as before.\n\n**Convert**\n- **A running build is found again even if the page closed within seconds of starting it (#954).** The link to the build is saved at once instead of with the next progress update.\n\n"
+      "checksum": "8de76f5628061c5c76c1bb919c7d7a88bf45bcca50c8a74ecc22228b29432525",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.36-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.36-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.36-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.36-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.36-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.36-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.36-android.apk` (older 32-bit phones: `PS5Upload-12.6.36-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.36-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.36-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Play Together over the internet**\n- **Friends joining from Firefox, a VPN or IPv6 are no longer turned away.** Their browser sends more connection details than the hub allowed per minute, so the hub closed the join and the page said it couldn't reach the hub. The hub now allows a realistic amount for every browser and for several devices behind one home connection, and the join page sends only the details the app can use.\n- The hub answers its address with a trailing slash too, tells search crawlers to stay away, and counts which limit stopped a connection, so problems like this show up straight away.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
