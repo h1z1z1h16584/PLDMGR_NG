@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.39",
+      "id": "ps5upload-ps5upload-12.6.40",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.39_v12.6.39.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.39_v12.6.39.elf",
+      "filename": "ps5upload-12.6.40_v12.6.40.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.40_v12.6.40.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.39/ps5upload-12.6.39.elf",
-      "description": "v12.6.39 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.40/ps5upload-12.6.40.elf",
+      "description": "v12.6.40 by phantomptr",
       "last_update": "2026-11-27",
-      "version": "v12.6.39",
+      "version": "v12.6.40",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "a34cc67a2bd6f573d53d72afe947154514ab3dbccdf69189393623aa189240d3",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.39-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.39-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.39-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.39-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.39-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.39-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.39-android.apk` (older 32-bit phones: `PS5Upload-12.6.39-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.39-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.39-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Play Together**\n- **A friend joining can no longer end your game by taking your PS5 user.** When a friend's controller connected, the PS5 asked who was using it with your user picked, and pressing ✕ moved your user to them, which ended your Remote Play. A friend's plain ✕ is now held back until they move off your user, and their page says not to pick it. If the PS5 still ends your stream that way, the app starts it again by itself.\n\n**Remote Play**\n- **Show or hide the on-screen controller from the stream.** A button on the stream's bar on a computer, and in the stream menu on a phone or tablet (also in full screen). It was only in Settings before.\n\n**Games**\n- **Uninstall can also delete the game's files.** For a game played from a folder or a disk image, Uninstall asks whether to keep them or delete them too (it shows the size), and deletes only after the uninstall worked; an image is unmounted first. An installed fake package, or a game whose files are already gone, uninstalls as before.\n- **The console's page shows the real title and cover of disk images on a network share (#963)**, and lists several copies of one game as one. Compressed `.ffpfsc` images show their title id with \"Title n..."
+      "checksum": "d43d24fbe3030466168838bbd9040978cb1c235240b9b0ca4037ff04b81f2c0a",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.40-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.40-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.40-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.40-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.40-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.40-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.40-android.apk` (older 32-bit phones: `PS5Upload-12.6.40-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.40-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.40-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Play Together**\n- **Full screen on an iPhone or iPad.** iOS browsers can't put a web page in full screen, so the guest page and the controller page hid their Full screen button there. It's back: it fills the page with the game, and the first time it explains how to get the whole screen (add the page to your Home Screen and open it from there; it rejoins the same game).\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
