@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.40",
+      "id": "ps5upload-ps5upload-12.6.41",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.40_v12.6.40.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.40_v12.6.40.elf",
+      "filename": "ps5upload-12.6.41_v12.6.41.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.41_v12.6.41.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.40/ps5upload-12.6.40.elf",
-      "description": "v12.6.40 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.41/ps5upload-12.6.41.elf",
+      "description": "v12.6.41 by phantomptr",
       "last_update": "2026-11-27",
-      "version": "v12.6.40",
+      "version": "v12.6.41",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "d43d24fbe3030466168838bbd9040978cb1c235240b9b0ca4037ff04b81f2c0a",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.40-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.40-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.40-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.40-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.40-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.40-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.40-android.apk` (older 32-bit phones: `PS5Upload-12.6.40-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.40-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.40-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Play Together**\n- **Full screen on an iPhone or iPad.** iOS browsers can't put a web page in full screen, so the guest page and the controller page hid their Full screen button there. It's back: it fills the page with the game, and the first time it explains how to get the whole screen (add the page to your Home Screen and open it from there; it rejoins the same game).\n\n"
+      "checksum": "fd9d731cd1ccde7b8f9b81c9b9f0a61a7821585bdae68c158eb92a1269804e87",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.41-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.41-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.41-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.41-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.41-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.41-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.41-android.apk` (older 32-bit phones: `PS5Upload-12.6.41-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.41-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.41-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Play Together**\n- **Your Play Together switches are kept for next time.** Block PS & Create, \"A friend can play as me on Player 1\", the number of players and the other host switches are saved, also across restarts, instead of going back to their defaults.\n- **Turning the phone sideways goes full screen in a browser**, on the friend's page and the controller page, as it already did in the app. On an Android phone the browser's bars go away; on an iPhone the page folds Safari's bars away as far as iOS allows (for the whole screen there, add the page to the Home Screen).\n- Each PS press a friend makes after picking a user is noted in the log, saying whether it went to the PS5, so \"PS does nothing\" can be traced.\n\n**Web pages**\n- **Added to a phone's Home Screen, every PS5Upload page shows the PS5Upload logo and the name \"PS5Upload\"**: the web UI (Docker or self-hosted), a friend's Play Together page, the controller page and the console's own page, in Safari, Chrome and other phone browsers. Remove an icon you added before and add it again to get the new one.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
