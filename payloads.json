@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.45",
+      "id": "ps5upload-ps5upload-12.6.46",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.45_v12.6.45.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.45_v12.6.45.elf",
+      "filename": "ps5upload-12.6.46_v12.6.46.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.46_v12.6.46.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.45/ps5upload-12.6.45.elf",
-      "description": "v12.6.45 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.46/ps5upload-12.6.46.elf",
+      "description": "v12.6.46 by phantomptr",
       "last_update": "2026-11-28",
-      "version": "v12.6.45",
+      "version": "v12.6.46",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "fd1fcc4ad845e55fb8f84f6666471a4c0af650f9cd6132e7370e27ebbc415030",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.45-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.45-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.45-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.45-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.45-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.45-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.45-android.apk` (older 32-bit phones: `PS5Upload-12.6.45-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.45-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.45-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**PS5Upload Minion**\n- **Save backup times show the PS5's own time (#978).** On some consoles the page still showed backup times in UTC (3 hours ahead in Recife). Minion now reads the time zone the way the PS5's own clock does, and falls back to the old way when it can't. If times still look wrong, **Settings › Time zone** lets you pick your UTC offset by hand. Needs the new helper.\n\n**Play Together**\n- **When a friend's controller does nothing on \"Who's using this controller?\"** (reported on an early-firmware PS5), the helper log now says whether the PS5 took or refused that controller's input, so a bug report from the host shows where it stops. The friend's guide says to ask the host for one.\n\n**Installs**\n- The message for a 0x80B2 install error is in plain words now, in every language.\n\n"
+      "checksum": "d762e1e3c65f36ed2d1cacce129a612c4777755684560b600a1e216dd445813a",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.46-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.46-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.46-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.46-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.46-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.46-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.46-android.apk` (older 32-bit phones: `PS5Upload-12.6.46-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.46-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.46-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Installs**\n- **Deleting a package right after installing it from the console gives its space back (#979).** The installer kept the package open for 10 minutes after the install (longer if the PS5 skipped part of it), so the space stayed used after the delete. It now opens the package only while the PS5 is reading it.\n\n**Clean up**\n- **Space no file uses (#979).** For an M.2 or USB drive, **Check** compares the space the drive counts as used with what its files take, and says how much no file holds. It reads names and sizes only.\n\n**Save sync**\n- **Save sync no longer stops working until a restart** when you pressed Send while its once-a-minute check was running.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
