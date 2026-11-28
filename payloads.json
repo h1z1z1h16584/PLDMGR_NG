@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.44",
+      "id": "ps5upload-ps5upload-12.6.45",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.44_v12.6.44.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.44_v12.6.44.elf",
+      "filename": "ps5upload-12.6.45_v12.6.45.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.45_v12.6.45.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.44/ps5upload-12.6.44.elf",
-      "description": "v12.6.44 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.45/ps5upload-12.6.45.elf",
+      "description": "v12.6.45 by phantomptr",
       "last_update": "2026-11-28",
-      "version": "v12.6.44",
+      "version": "v12.6.45",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "144c5f714328dea2b260f3b169df041c2e0fa69e35e0ca5309c7a697dc947ecd",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.44-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.44-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.44-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.44-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.44-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.44-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.44-android.apk` (older 32-bit phones: `PS5Upload-12.6.44-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.44-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.44-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**TV mode (#976)**\n- **A Remote Play-first screen for TVs.** On Android TV and Google TV the app opens in TV mode: your console as one large card with **Play** (it wakes the console if it's resting) or **Resume**, the essential picture, sound and controller settings, and remote access through Tailscale. Everything works with a TV remote or controller, with large buttons and a clear highlight, and Back goes where you expect. Transfers, installs, files and tools are one press away under **Full app**. Settings › App › General turns TV mode on for any device.\n\n**Files**\n- **Folder sizes, without scanning in the background (#974).** A folder shows its size when it's already known (for example \"48.2 GiB · 2 days ago\"), from \"What takes space?\", clean-up scans or an earlier measure. **Measure size** (a folder's menu) and **Measure everything here** measure on request, one folder at a time, pausing while anything else runs on that console; a packed game shows the space it really takes. A size is forgotten when PS5Upload changes something inside the folder. \"Keep folder sizes fresh\" (off by default) re-measures folders you open, at most once a day.\n- Going back in the second pane of the two-pane view..."
+      "checksum": "fd1fcc4ad845e55fb8f84f6666471a4c0af650f9cd6132e7370e27ebbc415030",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.45-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.45-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.45-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.45-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.45-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.45-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.45-android.apk` (older 32-bit phones: `PS5Upload-12.6.45-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.45-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.45-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**PS5Upload Minion**\n- **Save backup times show the PS5's own time (#978).** On some consoles the page still showed backup times in UTC (3 hours ahead in Recife). Minion now reads the time zone the way the PS5's own clock does, and falls back to the old way when it can't. If times still look wrong, **Settings › Time zone** lets you pick your UTC offset by hand. Needs the new helper.\n\n**Play Together**\n- **When a friend's controller does nothing on \"Who's using this controller?\"** (reported on an early-firmware PS5), the helper log now says whether the PS5 took or refused that controller's input, so a bug report from the host shows where it stops. The friend's guide says to ask the host for one.\n\n**Installs**\n- The message for a 0x80B2 install error is in plain words now, in every language.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
