@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.46",
+      "id": "ps5upload-ps5upload-13.0.0",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.46_v12.6.46.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.46_v12.6.46.elf",
+      "filename": "ps5upload-13.0.0_v13.0.0.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-13.0.0_v13.0.0.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.46/ps5upload-12.6.46.elf",
-      "description": "v12.6.46 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v13.0.0/ps5upload-13.0.0.elf",
+      "description": "v13.0.0 by phantomptr",
       "last_update": "2026-11-28",
-      "version": "v12.6.46",
+      "version": "v13.0.0",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "d762e1e3c65f36ed2d1cacce129a612c4777755684560b600a1e216dd445813a",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.46-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.46-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.46-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.46-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.46-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.46-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.46-android.apk` (older 32-bit phones: `PS5Upload-12.6.46-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.46-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.46-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Installs**\n- **Deleting a package right after installing it from the console gives its space back (#979).** The installer kept the package open for 10 minutes after the install (longer if the PS5 skipped part of it), so the space stayed used after the delete. It now opens the package only while the PS5 is reading it.\n\n**Clean up**\n- **Space no file uses (#979).** For an M.2 or USB drive, **Check** compares the space the drive counts as used with what its files take, and says how much no file holds. It reads names and sizes only.\n\n**Save sync**\n- **Save sync no longer stops working until a restart** when you pressed Send while its once-a-minute check was running.\n\n"
+      "checksum": "6e703e0fb0e58ccfa91c277d4ec5469b459ef5df2904433c54295ce1ba13e1cc",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-13.0.0-win-x64-setup.exe` (ARM PCs: `PS5Upload-13.0.0-win-arm64-setup.exe`; to run without installing: `PS5Upload-13.0.0-win-x64.zip`) |\n| Mac | `PS5Upload-13.0.0-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-13.0.0-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-13.0.0-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-13.0.0-android.apk` (older 32-bit phones: `PS5Upload-13.0.0-android-armv7.apk`) |\n| iPhone | `PS5Upload-13.0.0-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-13.0.0-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Help us test**\n- 13.0.0 brings a lot that runs on the PS5: Play Rooms, PS5Upload Play, Minion's queue, save sync, freeing space while extracting and the USB adapter. They have been tried on only a few consoles, so your reports matter. If something goes wrong, open **Bug Report** in the sidebar, save the zip and post it on GitHub (the \"Remote Play, Play Room or PS5Upload Play problem\" form asks the useful questions) or on Discord. For a Play Room, make it on the computer or phone that hosts the room.\n- Bug reports now carry the Play Room's state (listed or not, locked, how many are blocked), PS5Upload Play's connection (paired, connected, app version) and the USB adapter's state: counts and states only, never chat, names or addresses.\n\n**Terms, privacy and credits**\n- About › Disclaimer, Minion's About and Rules & responsibility, and PS5Upload Play's new Terms & privacy screen (△ on Rules & responsibility) say plainly: PS5Upload is unofficial and not affiliated with Sony, comes with no warranty, and isn't liable for lost data, damage, bans or account actions; you're responsible for what you install, copy and share; what stays on your devices and what the Play Rooms hub briefly sees; donations are volun..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
@@ -1032,21 +1032,6 @@
       "category": "Pre-release",
       "checksum": "b7bbbadf0a2372e4259d362397f86d88a9114d7eb3eb42df7df88b848988aaef",
       "release_notes": "# Welcome Hub Bridge — `26.11.22 beta`\r\n\r\n## Highlights\r\n\r\n### Built-in Widget Store\r\n- **Browse, install, update, and remove widgets with one click** — no FTP needed.\r\n- Open from **Welcome Hub Settings → Widget Store** on the PS5, or visit **`http://<ps5-ip>:8098/`** (`/__store`) from any phone, tablet, or PC on your local network (or `http://127.0.0.1:8098/__store` in the console browser / BrowserPS5).\r\n- Loads the official [`widgets.json`](https://raw.githubusercontent.com/geodox/ps5-wh-widgets/main/widgets.json) catalog and supports **custom `widgets.json` sources** (persisted in `/data/wh-widgets/.store.json`). See [`docs/sdk/widget-repos.md`](https://github.com/geodox/ps5-wh-widgets/blob/main/docs/sdk/widget-repos.md) to publish your own widget repo.\r\n- Auto-reload pauses while you are actively installing/uninstalling in the Store so you aren't pulled out of the browser; click **Reload Welcome Hub** when finished to apply all changes immediately.\r\n- **Security:** Only the Widget Store UI/actions and `/__reload` are reachable over the LAN. Every file-serving and internal endpoint (`/__launch`, `/__notify`, `/__wget`, `/__wset`, `/__log`, `/__stats`, `/__backgrounds`, `/__bg/*`, widget assets) remains strictly `127.0.0.1`-only (`403 Forbidden` on LAN).\r\n\r\n### Clean Automatic Welcome Hub Reload\r\n- Installing `wh_bridge.elf` or editing widgets in `/data/wh-widgets/` now **automatically reloads the embedded Welcome Hub** in place — no sign-out, no payload restart, and no `SceShellUI` kill required.\r\n- Added **Widget Store**, **Reload Welcome Hub**, **Telemetry**, and **Widget Data** directly above **Showcase Mode** in **Welcome Hub Settings** (with automatic fallback placement on 11.20 / 11.40).\r\n\r\n### Widgets & SDK\r\n- **New sample widget — `network-info`:** Shows local IP, Wi-Fi / wired link status, signal strength, band/channel, and optional SSID toggle — completely offline.\r\n- **`console-stats`:** Added optional **SoC power (GFX / CPU / total W) & CPU/GFX clocks** via `/dev/mp1` in `/__stats`..."
-    },
-    {
-      "id": "ps5upload-ps5upload-12.6.17-prerelease",
-      "name": "ps5upload [Pre-release]",
-      "filename": "ps5upload-12.6.17_v12.6.17 [Pre-release].elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Pre-release/ps5upload-12.6.17_v12.6.17%20%5BPre-release%5D.elf",
-      "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.17/ps5upload-12.6.17.elf",
-      "description": "v12.6.17 [Pre-release] by phantomptr",
-      "last_update": "2026-11-20",
-      "version": "v12.6.17",
-      "author": "phantomptr",
-      "category": "Pre-release",
-      "checksum": "2bf4c7ebee49c06e0517040a68f6e6458826bcaca49f435c6151aeb108c65ee4",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.17-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.17-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.17-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.17-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.17-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.17-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.17-android.apk` (older 32-bit phones: `PS5Upload-12.6.17-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.17-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.17-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Fixes**\n- **Copying files into a running game's temporary folder works (#889).** Some games' add-on guides have you copy folders into the game's temporary folder on the internal drive while the game runs (`/app_temp0/...`). PS5Upload refused that with \"console refused the transfer (9)\", because that folder was not on the PS5 helper's list of places it may write to. It is now. Not yet tried on a console.\n\n"
     },
     {
       "id": "spotless-spotless-restore-prerelease",
