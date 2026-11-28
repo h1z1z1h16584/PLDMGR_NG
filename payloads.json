@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-13.0.0",
+      "id": "ps5upload-ps5upload-13.0.1",
       "name": "ps5upload",
-      "filename": "ps5upload-13.0.0_v13.0.0.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-13.0.0_v13.0.0.elf",
+      "filename": "ps5upload-13.0.1_v13.0.1.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-13.0.1_v13.0.1.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v13.0.0/ps5upload-13.0.0.elf",
-      "description": "v13.0.0 by phantomptr",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v13.0.1/ps5upload-13.0.1.elf",
+      "description": "v13.0.1 by phantomptr",
       "last_update": "2026-11-28",
-      "version": "v13.0.0",
+      "version": "v13.0.1",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "6e703e0fb0e58ccfa91c277d4ec5469b459ef5df2904433c54295ce1ba13e1cc",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-13.0.0-win-x64-setup.exe` (ARM PCs: `PS5Upload-13.0.0-win-arm64-setup.exe`; to run without installing: `PS5Upload-13.0.0-win-x64.zip`) |\n| Mac | `PS5Upload-13.0.0-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-13.0.0-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-13.0.0-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-13.0.0-android.apk` (older 32-bit phones: `PS5Upload-13.0.0-android-armv7.apk`) |\n| iPhone | `PS5Upload-13.0.0-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-13.0.0-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Help us test**\n- 13.0.0 brings a lot that runs on the PS5: Play Rooms, PS5Upload Play, Minion's queue, save sync, freeing space while extracting and the USB adapter. They have been tried on only a few consoles, so your reports matter. If something goes wrong, open **Bug Report** in the sidebar, save the zip and post it on GitHub (the \"Remote Play, Play Room or PS5Upload Play problem\" form asks the useful questions) or on Discord. For a Play Room, make it on the computer or phone that hosts the room.\n- Bug reports now carry the Play Room's state (listed or not, locked, how many are blocked), PS5Upload Play's connection (paired, connected, app version) and the USB adapter's state: counts and states only, never chat, names or addresses.\n\n**Terms, privacy and credits**\n- About › Disclaimer, Minion's About and Rules & responsibility, and PS5Upload Play's new Terms & privacy screen (△ on Rules & responsibility) say plainly: PS5Upload is unofficial and not affiliated with Sony, comes with no warranty, and isn't liable for lost data, damage, bans or account actions; you're responsible for what you install, copy and share; what stays on your devices and what the Play Rooms hub briefly sees; donations are volun..."
+      "checksum": "7f052f795af19eb0bd2548d84c0bf3f56661e8b728877bf2aeb30fbd5e486410",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-13.0.1-win-x64-setup.exe` (ARM PCs: `PS5Upload-13.0.1-win-arm64-setup.exe`; to run without installing: `PS5Upload-13.0.1-win-x64.zip`) |\n| Mac | `PS5Upload-13.0.1-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-13.0.1-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-13.0.1-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-13.0.1-android.apk` (older 32-bit phones: `PS5Upload-13.0.1-android-armv7.apk`) |\n| iPhone | `PS5Upload-13.0.1-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-13.0.1-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n- The self-hosted web UI (Docker) image is back: 13.0.0's web UI image didn't build, so `docker pull` still gave 12.6.46. Nothing else changes from 13.0.0.\n\n"
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
