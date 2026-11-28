@@ -675,19 +675,19 @@
       "release_notes": "Added support for older firmwares. Now supports 3.XX to 13.XX using wobkot. Runs under 4 seconds.\r\n\r\n"
     },
     {
-      "id": "ps5upload-ps5upload-12.6.43",
+      "id": "ps5upload-ps5upload-12.6.44",
       "name": "ps5upload",
-      "filename": "ps5upload-12.6.43_v12.6.43.elf",
-      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.43_v12.6.43.elf",
+      "filename": "ps5upload-12.6.44_v12.6.44.elf",
+      "url": "https://raw.githubusercontent.com/h1z1z1h16584/PLDMGR_NG/main/payloads/Networking%20%26%20Servers/ps5upload-12.6.44_v12.6.44.elf",
       "source": "https://github.com/phantomptr/ps5upload/releases",
-      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.43/ps5upload-12.6.43.elf",
-      "description": "v12.6.43 by phantomptr",
-      "last_update": "2026-11-27",
-      "version": "v12.6.43",
+      "source_direct": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.44/ps5upload-12.6.44.elf",
+      "description": "v12.6.44 by phantomptr",
+      "last_update": "2026-11-28",
+      "version": "v12.6.44",
       "author": "phantomptr",
       "category": "Networking & Servers",
-      "checksum": "8b8bfc0fcdf74e92a6a0c1eb934ead27b94a4cb75f0ff09658a3b7d1cc599a7f",
-      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.43-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.43-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.43-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.43-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.43-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.43-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.43-android.apk` (older 32-bit phones: `PS5Upload-12.6.43-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.43-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.43-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**Install from archives**\n- **Choose what to install or unpack from an archive (#969).** When a .zip, .7z, .rar or tar holds several packages or folders (a game, its update and add-ons), \"Choose files…\" lists what's inside with checkboxes; only what you tick is installed, uploaded or unpacked. Packages inside a .zip show their game, version and type first. Extract on the PS5 (in the app and on the console's own page) can leave out top-level items the same way.\n\n**Fake packages (Workshop)**\n- **The Workshop won't build a package the PS5 can't open.** The PS5 limits how large a fake package it will open: on firmware 13.x the package plus the add-on space the game reserves must stay under 450 GiB (256 GiB on 7 to 10, and so on). Before any work, the check shows how much room is left, and a package that wouldn't fit is refused with the reason and a \"Make a game image instead\" button.\n- **Leave out the AMPR emulator from a game that isn't in asset packs.** Offered when the check says it's safe (the library in the game is the emulator, and nothing points at packs), off by default; otherwise it says why the emulator stays.\n- While a game is being checked, the options line says so, instead of \"Check a g..."
+      "checksum": "144c5f714328dea2b260f3b169df041c2e0fa69e35e0ca5309c7a697dc947ecd",
+      "release_notes": "<!-- downloads -->\n### Which file do I download?\n\n| For | Download |\n|---|---|\n| Windows | `PS5Upload-12.6.44-win-x64-setup.exe` (ARM PCs: `PS5Upload-12.6.44-win-arm64-setup.exe`; to run without installing: `PS5Upload-12.6.44-win-x64.zip`) |\n| Mac | `PS5Upload-12.6.44-mac-arm64.dmg` (Apple Silicon) or `PS5Upload-12.6.44-mac-x64.dmg` (Intel) |\n| Linux | `PS5Upload-12.6.44-linux-x64.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, Bazzite); ARM: the `linux-arm64` files |\n| Android | `PS5Upload-12.6.44-android.apk` (older 32-bit phones: `PS5Upload-12.6.44-android-armv7.apk`) |\n| iPhone | `PS5Upload-12.6.44-ios-unsigned.ipa`, installed with AltStore or Sideloadly (see the README) |\n| Engine only (servers, Docker, advanced) | `ps5upload-engine-12.6.44-<system>`: not the app, it has no window |\n\n<!-- /downloads -->\n\n\n**TV mode (#976)**\n- **A Remote Play-first screen for TVs.** On Android TV and Google TV the app opens in TV mode: your console as one large card with **Play** (it wakes the console if it's resting) or **Resume**, the essential picture, sound and controller settings, and remote access through Tailscale. Everything works with a TV remote or controller, with large buttons and a clear highlight, and Back goes where you expect. Transfers, installs, files and tools are one press away under **Full app**. Settings › App › General turns TV mode on for any device.\n\n**Files**\n- **Folder sizes, without scanning in the background (#974).** A folder shows its size when it's already known (for example \"48.2 GiB · 2 days ago\"), from \"What takes space?\", clean-up scans or an earlier measure. **Measure size** (a folder's menu) and **Measure everything here** measure on request, one folder at a time, pausing while anything else runs on that console; a packed game shows the space it really takes. A size is forgotten when PS5Upload changes something inside the folder. \"Keep folder sizes fresh\" (off by default) re-measures folders you open, at most once a day.\n- Going back in the second pane of the two-pane view..."
     },
     {
       "id": "ps5-custom-tool-manager--ps5.custom.tool.manager.v1",
